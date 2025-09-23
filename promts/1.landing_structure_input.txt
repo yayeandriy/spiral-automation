@@ -1,0 +1,11 @@
+Landing
+- Zones: a zone is major part of landing, there could be up to 5 zones on the landing. 
+The best desc of zone is that a zone could be a separate web page without (or almost without) 
+lost of sence.
+— Sections: a section is building brick of a zone. A section has a complete story inside.
+— Blocks: a block is building part of a section. One block is a one message. 
+It could be any kind of content: text, image, video, gif, etc.
+
+There is a source with a list of links to landings. 
+Go through each of them and as a result create json file with detailed desc of 
+generalizes types of zones, sections and blocks. 

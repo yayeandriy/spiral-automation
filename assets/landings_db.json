@@ -1,0 +1,446 @@
+[
+  {
+    "object": "database",
+    "id": "268c3aed-7a1a-80e0-ad23-ef4442f0f87c",
+    "cover": null,
+    "icon": {
+      "type": "emoji",
+      "emoji": "🚧"
+    },
+    "created_time": "2025-09-08T09:04:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_time": "2025-09-19T11:35:00.000Z",
+    "title": [
+      {
+        "type": "text",
+        "text": {
+          "content": "Landings",
+          "link": null
+        },
+        "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+        },
+        "plain_text": "Landings",
+        "href": null
+      }
+    ],
+    "description": [
+      {
+        "type": "text",
+        "text": {
+          "content": "Manage and execute projects from start to finish.",
+          "link": null
+        },
+        "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+        },
+        "plain_text": "Manage and execute projects from start to finish.",
+        "href": null
+      }
+    ],
+    "is_inline": false,
+    "properties": {
+      "publish_state": {
+        "id": "%40tjQ",
+        "name": "publish_state",
+        "description": null,
+        "type": "select",
+        "select": {
+          "options": [
+            {
+              "id": "gTF|",
+              "name": "Published",
+              "color": "default",
+              "description": null
+            },
+            {
+              "id": "?HRx",
+              "name": "Pending",
+              "color": "blue",
+              "description": null
+            },
+            {
+              "id": "oQB?",
+              "name": "Draft",
+              "color": "red",
+              "description": null
+            },
+            {
+              "id": "::s:",
+              "name": "Started",
+              "color": "purple",
+              "description": null
+            },
+            {
+              "id": "L\\qK",
+              "name": "Backlog",
+              "color": "default",
+              "description": null
+            }
+          ]
+        }
+      },
+      "tools": {
+        "id": "BuAM",
+        "name": "tools",
+        "description": null,
+        "type": "multi_select",
+        "multi_select": {
+          "options": [
+            {
+              "id": "XlSb",
+              "name": "High precision lenses",
+              "color": "green",
+              "description": null
+            },
+            {
+              "id": "I>GQ",
+              "name": "Mobile",
+              "color": "blue",
+              "description": null
+            },
+            {
+              "id": "yWGO",
+              "name": "DSR camera",
+              "color": "purple",
+              "description": null
+            },
+            {
+              "id": "ICpe",
+              "name": "Hololens",
+              "color": "pink",
+              "description": null
+            }
+          ]
+        }
+      },
+      "precision": {
+        "id": "IaGg",
+        "name": "precision",
+        "description": null,
+        "type": "select",
+        "select": {
+          "options": [
+            {
+              "id": "VbTD",
+              "name": "4",
+              "color": "orange",
+              "description": null
+            },
+            {
+              "id": "cmZG",
+              "name": "3",
+              "color": "yellow",
+              "description": null
+            },
+            {
+              "id": "^aW`",
+              "name": "2",
+              "color": "green",
+              "description": null
+            },
+            {
+              "id": "Ob>[",
+              "name": "1",
+              "color": "blue",
+              "description": null
+            }
+          ]
+        }
+      },
+      "start_date": {
+        "id": "UJBe",
+        "name": "start_date",
+        "description": null,
+        "type": "date",
+        "date": {}
+      },
+      "Publish": {
+        "id": "XTP_",
+        "name": "Publish",
+        "description": null,
+        "type": "button",
+        "button": {}
+      },
+      "budget": {
+        "id": "YAJW",
+        "name": "budget",
+        "description": null,
+        "type": "select",
+        "select": {
+          "options": [
+            {
+              "id": ":goN",
+              "name": "100",
+              "color": "blue",
+              "description": null
+            },
+            {
+              "id": "HW>z",
+              "name": "200",
+              "color": "yellow",
+              "description": null
+            },
+            {
+              "id": "[n|:",
+              "name": "300",
+              "color": "default",
+              "description": null
+            },
+            {
+              "id": "cSt]",
+              "name": "400",
+              "color": "gray",
+              "description": null
+            },
+            {
+              "id": "hM^a",
+              "name": "500",
+              "color": "red",
+              "description": null
+            }
+          ]
+        }
+      },
+      "script": {
+        "id": "%5DTK%3C",
+        "name": "script",
+        "description": null,
+        "type": "files",
+        "files": {}
+      },
+      "status": {
+        "id": "f%5CI%3C",
+        "name": "status",
+        "description": null,
+        "type": "select",
+        "select": {
+          "options": [
+            {
+              "id": "sOus",
+              "name": "Research",
+              "color": "brown",
+              "description": null
+            },
+            {
+              "id": "YaSR",
+              "name": "POC",
+              "color": "red",
+              "description": null
+            },
+            {
+              "id": "VVKT",
+              "name": "Pilot",
+              "color": "pink",
+              "description": null
+            },
+            {
+              "id": "[DuF",
+              "name": "Product",
+              "color": "default",
+              "description": null
+            }
+          ]
+        }
+      },
+      "desc": {
+        "id": "h%3Ebw",
+        "name": "desc",
+        "description": null,
+        "type": "rich_text",
+        "rich_text": {}
+      },
+      "timeline": {
+        "id": "hgf%5E",
+        "name": "timeline",
+        "description": null,
+        "type": "multi_select",
+        "multi_select": {
+          "options": [
+            {
+              "id": "N~XM",
+              "name": "2018",
+              "color": "green",
+              "description": null
+            },
+            {
+              "id": "xU~J",
+              "name": "2019",
+              "color": "yellow",
+              "description": null
+            },
+            {
+              "id": "lXMo",
+              "name": "2020",
+              "color": "brown",
+              "description": null
+            },
+            {
+              "id": "aMOp",
+              "name": "2021",
+              "color": "gray",
+              "description": null
+            },
+            {
+              "id": "J@|p",
+              "name": "2022",
+              "color": "blue",
+              "description": null
+            },
+            {
+              "id": "EPS`",
+              "name": "2023",
+              "color": "purple",
+              "description": null
+            },
+            {
+              "id": "{D?l",
+              "name": "2024",
+              "color": "red",
+              "description": null
+            },
+            {
+              "id": "N^{W",
+              "name": "2025",
+              "color": "default",
+              "description": null
+            },
+            {
+              "id": "\\^Ty",
+              "name": "2026",
+              "color": "orange",
+              "description": null
+            }
+          ]
+        }
+      },
+      "motto": {
+        "id": "s%3Cb%3E",
+        "name": "motto",
+        "description": null,
+        "type": "rich_text",
+        "rich_text": {}
+      },
+      "footer": {
+        "id": "u%7BYy",
+        "name": "footer",
+        "description": null,
+        "type": "rich_text",
+        "rich_text": {}
+      },
+      "industries": {
+        "id": "%7CEoQ",
+        "name": "industries",
+        "description": null,
+        "type": "multi_select",
+        "multi_select": {
+          "options": [
+            {
+              "id": ">ScP",
+              "name": "Construction",
+              "color": "orange",
+              "description": null
+            },
+            {
+              "id": "?:R@",
+              "name": "Manufacturing",
+              "color": "pink",
+              "description": null
+            },
+            {
+              "id": "Rosa",
+              "name": "Aviation",
+              "color": "default",
+              "description": null
+            },
+            {
+              "id": "dIZe",
+              "name": "Electronics",
+              "color": "purple",
+              "description": null
+            }
+          ]
+        }
+      },
+      "technologies": {
+        "id": "%7DifY",
+        "name": "technologies",
+        "description": null,
+        "type": "multi_select",
+        "multi_select": {
+          "options": [
+            {
+              "id": "YKAm",
+              "name": "Quantum dots",
+              "color": "yellow",
+              "description": null
+            },
+            {
+              "id": ">RAf",
+              "name": "Object detection",
+              "color": "brown",
+              "description": null
+            },
+            {
+              "id": "SWmh",
+              "name": "AR",
+              "color": "default",
+              "description": null
+            },
+            {
+              "id": ">xin",
+              "name": "AI Detection",
+              "color": "purple",
+              "description": null
+            },
+            {
+              "id": "}LA@",
+              "name": "Computer Vision",
+              "color": "gray",
+              "description": null
+            },
+            {
+              "id": "EhgC",
+              "name": "MR",
+              "color": "blue",
+              "description": null
+            }
+          ]
+        }
+      },
+      "title": {
+        "id": "title",
+        "name": "title",
+        "description": null,
+        "type": "title",
+        "title": {}
+      }
+    },
+    "parent": {
+      "type": "page_id",
+      "page_id": "273c3aed-7a1a-80e2-843e-d08cd40249f9"
+    },
+    "url": "https://www.notion.so/268c3aed7a1a80e0ad23ef4442f0f87c",
+    "public_url": null,
+    "archived": false,
+    "in_trash": false,
+    "request_id": "9de4dc04-56ea-4a0f-a7c5-5c37ee06920f"
+  }
+]

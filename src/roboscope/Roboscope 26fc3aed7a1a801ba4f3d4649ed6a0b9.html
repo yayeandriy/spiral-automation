@@ -1,0 +1,696 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Roboscope</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(128, 125, 120, 1);
+	fill: rgba(128, 125, 120, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(204, 121, 47, 1);
+	fill: rgba(204, 121, 47, 1);
+}
+.highlight-yellow {
+	color: rgba(195, 148, 67, 1);
+	fill: rgba(195, 148, 67, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(63, 126, 190, 1);
+	fill: rgba(63, 126, 190, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(179, 84, 136, 1);
+	fill: rgba(179, 84, 136, 1);
+}
+.highlight-red {
+	color: rgba(201, 85, 73, 1);
+	fill: rgba(201, 85, 73, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 111, 200, 0.09);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(128, 125, 120, 1);
+	fill: rgba(128, 125, 120, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(204, 121, 47, 1);
+	fill: rgba(204, 121, 47, 1);
+}
+.block-color-yellow {
+	color: rgba(195, 148, 67, 1);
+	fill: rgba(195, 148, 67, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(63, 126, 190, 1);
+	fill: rgba(63, 126, 190, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(179, 84, 136, 1);
+	fill: rgba(179, 84, 136, 1);
+}
+.block-color-red {
+	color: rgba(201, 85, 73, 1);
+	fill: rgba(201, 85, 73, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(232, 242, 250, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 99, 174, 0.172); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="26fc3aed-7a1a-801b-a4f3-d4649ed6a0b9" class="page sans"><header><h1 class="page-title">Roboscope</h1><p class="page-description"></p></header><div class="page-body"><p id="275c3aed-7a1a-800b-8f16-e9d9b6fa70a7" class="">
+</p><p id="275c3aed-7a1a-8046-8c63-cc84ee438fbd" class="">
+</p><p id="272c3aed-7a1a-801e-ac98-c2be89625265" class="">
+</p><p id="275c3aed-7a1a-8012-b8a4-f5d06b03c6a4" class="">
+</p><figure id="275c3aed-7a1a-8068-9ffb-c887cffae337" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/Roboscopegif1_long.gif"><img style="width:360px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/Roboscopegif1_long.gif"/></a></figure><figure id="275c3aed-7a1a-802b-bfe4-dc3ddf6cdbcb" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/roboscope_gif1.gif"><img style="width:360px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/roboscope_gif1.gif"/></a></figure><figure id="275c3aed-7a1a-80ac-b6b6-ee936c5bee23" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/roboscope_img1.png"><img style="width:710px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/roboscope_img1.png"/></a></figure><figure id="275c3aed-7a1a-80a1-a5ef-e657fe7243b3" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/roboscope_gif2.gif"><img style="width:576px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/roboscope_gif2.gif"/></a></figure><p id="272c3aed-7a1a-80a8-b93b-fb9eed07b343" class="">
+</p><p id="275c3aed-7a1a-8067-a19a-ef1888d6ae9c" class="">Introduction</p><p id="275c3aed-7a1a-80fd-8307-f11116eeaa12" class="">Wind turbine blade production follows a precise sequence of steps including shell lay-up, resin infusion, and curing—each governed by stringent acceptance standards. However, when inspectors rely on tape measures, calipers and paper check-sheets to record faults such as wrinkles, delamination and foreign inclusions, the process often breaks down: defects can be recorded inaccurately or incompletely, assessment criteria drift between different factories, handovers of complex repairs to engineering teams become confused and delayed, and there is no centralised repository for inspection data to support trend analysis or root-cause</p><p id="275c3aed-7a1a-80f0-907c-dcdafb281342" class="">investigations.</p><p id="275c3aed-7a1a-8089-b238-cec0c09db98e" class="">Roboscope is a digital system designed for technicians conducting visual inspections of shells and other components between infusion and closure. With a simple smartphone app, operators point at each defect and Roboscope’s on-device computer-vision model immediately captures its exact dimensions and spatial coordinates relative to the leading edge and blade root. As defects are recorded, the app cross-references the blade’s current lay-up stage and the configured XFMEA risk framework to surface tailored repair instructions, while all annotated data and high-resolution images are streamed in real time via a REST API to a centralized engineering portal. In that portal, teams review progress against interactive 3D blade models, filter by defect type or severity, investigate individual records, and export consolidated logs for ERP or MES integration.</p><p id="275c3aed-7a1a-80c2-8137-d5b669687cd1" class="">By combining augmented-reality-based capture with advanced telemetry and centralized analytics, Roboscope streamlines visual inspections, cuts cycle times, and raises overall manufacturing efficiency throughout the blade-production lifecycle.</p><figure id="275c3aed-7a1a-80f6-a7e7-f382bfd743d7" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image2.png"><img style="width:700px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image2.png"/></a></figure><p id="275c3aed-7a1a-80f2-956a-f2c510bfde4c" class="">2</p><p id="275c3aed-7a1a-80a5-bf48-f135e9fd296a" class="">System startup</p><p id="275c3aed-7a1a-809f-a7a1-c58b94b73b98" class=""><em>Mobile app</em></p><p id="275c3aed-7a1a-80e6-b129-c07b164aa93f" class="">1.Download from the App Store</p><p id="275c3aed-7a1a-808a-9f09-eeae0dc206ef" class="">2.Tap “Request code with email”</p><p id="275c3aed-7a1a-80a6-bc0c-dd260b42916e" class="">3.Enter your registered email address, tap “Enter”; code will be sent to that email shortly 4.Enter it and you will be redirected to the home screen</p><figure id="275c3aed-7a1a-8010-b8d4-f8c6b7aa934b" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image3.png"><img style="width:700px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image3.png"/></a></figure><p id="275c3aed-7a1a-80f7-be8e-d6dad08225ed" class=""><em>Web portal</em></p><p id="275c3aed-7a1a-80f4-bc0e-dc5e6314a09c" class="">1.Access demo version of the web portal via 2.Press “Request code”</p><p id="275c3aed-7a1a-8012-94fd-d664ad52df21" class="">3.Enter your registered email address, tap “Enter”; code will be sent to that email shortly 4.Enter it, press “Go”, and you will be redirected to the list of your inspections</p><figure id="275c3aed-7a1a-8017-8b6c-f8c195096554" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image4.png"><img style="width:700px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image4.png"/></a></figure><p id="275c3aed-7a1a-80e2-9d70-c0c800077e03" class="">3</p><p id="275c3aed-7a1a-80f1-9ff8-c2ecd161987c" class="">User guide for demo version</p><p id="275c3aed-7a1a-807a-8d03-de62c7885dc0" class="">In this proof-of-concept you alternate between two roles — the Quality Inspector on the shop floor (mobile app) and the Engineer in the office (web portal). If you’re the only participant, simply switch between the two views on your device and browser.</p><p id="275c3aed-7a1a-80ec-8ab9-df48df00d128" class="">SHOP FLOOR</p><p id="275c3aed-7a1a-80db-8013-ccdb5627b6b8" class="">1.Start a New Inspection</p><p id="275c3aed-7a1a-80d1-b53e-dcb337c4b424" class="">oLaunch Roboscope, tap the + icon, choose Inspection, pick a part type, then tap Create →Start.</p><p id="275c3aed-7a1a-80d1-94e4-d4ee83851577" class="">oYou will enter the screen with your camera on.</p><figure id="275c3aed-7a1a-80d3-b3e1-fad801b1a9cb" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image5.png"><img style="width:220px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image5.png"/></a></figure><figure id="275c3aed-7a1a-8029-a1ec-c1012a3569ba" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image6.png"><img style="width:299px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image6.png"/></a></figure><figure id="275c3aed-7a1a-8064-b2e4-d5afe1f52aad" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image7.png"><img style="width:299px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image7.png"/></a></figure><p id="275c3aed-7a1a-8084-a452-eee147880401" class="">4</p><p id="275c3aed-7a1a-80bc-a6a3-c6e7ab660a82" class="">2.Place the AR origin</p><p id="275c3aed-7a1a-802a-841e-ea76a8a142df" class="">oStart a new session outside the shell.</p><p id="275c3aed-7a1a-8037-8547-def3c930136d" class="">oWalk into the shell with the app on, in the camera screen, so that the system can “see” the root of the blade.</p><p id="275c3aed-7a1a-8005-b08f-fde0bd849d17" class="">oGo 3-4 meters inside the shell, turn around and aim the crosshair at the bottom of the root; tap Place Origin.</p><p id="275c3aed-7a1a-80c6-8036-d9fa97afdbd5" class="">oThree coloured axes and the blade model should appear.</p><p id="275c3aed-7a1a-809c-9c3e-d1f4bcadeb58" class="">oYou can hide model by tapping icon.</p><figure id="275c3aed-7a1a-80ee-9e87-f1fee63021cc" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image8.png"><img style="width:700px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image8.png"/></a></figure><figure id="275c3aed-7a1a-80a5-a549-c4cbab5ccfee" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image9.png"><img style="width:220px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image9.png"/></a></figure><figure id="275c3aed-7a1a-803e-a31b-e4547d5c38da" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image10.png"><img style="width:220px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image10.png"/></a></figure><p id="275c3aed-7a1a-804a-9c1e-cd00a93cd256" class="">5</p><p id="275c3aed-7a1a-8078-b5b0-e225df0a768a" class="">3.Mark Defects</p><p id="275c3aed-7a1a-8083-a6f6-f7ece2d32fb2" class="">oAim at a fault and tap Add defect; a persistent red rectangle appears — tap Save. You may place multiple markers.</p><p id="275c3aed-7a1a-80a8-8e69-db1ddc672c7d" class="">oTap-and-hold one finger on a marker to resize, two fingers to move.</p><figure id="275c3aed-7a1a-80b3-93d8-da21d5a625cb" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image10.png"><img style="width:220px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image10.png"/></a></figure><figure id="275c3aed-7a1a-8060-ac26-e3644f0fc5af" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image11.png"><img style="width:220px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image11.png"/></a></figure><figure id="275c3aed-7a1a-8076-b672-e1b341342a20" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image12.png"><img style="width:220px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image12.png"/></a></figure><p id="275c3aed-7a1a-80d7-b6ff-d450e51ef9dc" class="">6</p><p id="275c3aed-7a1a-80e3-b22d-f443ef9b364d" class="">4.Annotate &amp; Photograph</p><p id="275c3aed-7a1a-80fd-ad0a-fe6df8faf2e2" class="">oTap the marker’s panel to open the form, select type/depth, then Save. Tap the camera icon to snap high-res images; wait 2–3 s for the preview.</p><p id="275c3aed-7a1a-80f1-a153-f6801f105f97" class=""><em>Note: Always create markers “inside” the shell (forward from origin) so that the lay-up and repair views work correctly.</em></p><figure id="275c3aed-7a1a-80b1-8d77-f43710aa00fd" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image13.png"><img style="width:299px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image13.png"/></a></figure><figure id="275c3aed-7a1a-80fe-9c86-d43eace4b156" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image14.png"><img style="width:220px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image14.png"/></a></figure><figure id="275c3aed-7a1a-80aa-9225-d74d3b7432f0" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image15.png"><img style="width:220px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image15.png"/></a></figure><p id="275c3aed-7a1a-800b-9aff-e09c7d16ba6d" class="">7</p><p id="275c3aed-7a1a-8063-b55c-cadd553d4173" class="">5.View Lay-up &amp; Repair</p><p id="275c3aed-7a1a-8011-b6e6-ceef1545b3cb" class="">oOpen a marker with depth &gt; 1, tap Layup to see the top X plies, then Repair for the</p><p id="275c3aed-7a1a-80fd-be45-f50b1781a803" class="">grinding layout. If an error appears, move the marker until it sits within the shell.</p><p id="275c3aed-7a1a-801d-92e8-fddcb6ac0ed0" class=""><em>Note: Error States: If “Layup” or “Repair” fail, shift the marker to ensure it’s “within”</em></p><p id="275c3aed-7a1a-8062-813d-d120d3547017" class=""><em>the scanned volume.</em></p><figure id="275c3aed-7a1a-80a3-a501-ff0d6536c588" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image16.png"><img style="width:220px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image16.png"/></a></figure><figure id="275c3aed-7a1a-80ef-b4ac-c3da131b6129" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image17.png"><img style="width:220px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image17.png"/></a></figure><figure id="275c3aed-7a1a-80a8-b808-c5dc4cf1794a" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image18.png"><img style="width:220px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image18.png"/></a></figure><figure id="275c3aed-7a1a-806e-94c7-c7938dea4c30" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image19.png"><img style="width:299px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image19.png"/></a></figure><p id="275c3aed-7a1a-80af-9add-c1e10362f6b3" class="">8</p><p id="275c3aed-7a1a-8008-8814-f910a828a540" class="">6.Review &amp; Close</p><p id="275c3aed-7a1a-80fe-8e72-f0ec26442a41" class="">oTap Defects (∨ badge) to list or hide all markers. Tap the notepad icon in the</p><p id="275c3aed-7a1a-80fb-ae82-cb26e409f3be" class="">bottom right for a top-down 3D view (pinch to zoom, two-finger pan). To finish, tap</p><p id="275c3aed-7a1a-80c6-9220-e6088da6b62a" class="">Back to Home → Inspections; swipe left on any session to delete.</p><figure id="275c3aed-7a1a-80a0-8f56-d79ebbb6bbbd" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image20.png"><img style="width:220px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image20.png"/></a></figure><figure id="275c3aed-7a1a-802a-b339-de8d36dabdbe" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image21.png"><img style="width:220px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image21.png"/></a></figure><figure id="275c3aed-7a1a-80cd-a59b-cddb4f5c7deb" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image22.png"><img style="width:220px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image22.png"/></a></figure><figure id="275c3aed-7a1a-80ec-bf64-ef0e6b7aded5" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image23.png"><img style="width:299px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image23.png"/></a></figure><p id="275c3aed-7a1a-8060-a8bb-e40b46e34c62" class="">9</p><p id="275c3aed-7a1a-806a-9acb-f0fbf301a67f" class="">ENGINEERING OFFICE</p><p id="275c3aed-7a1a-8009-ad00-f435d8f5a936" class="">7.Evaluate Inspection Progress</p><p id="275c3aed-7a1a-80c0-9536-de4d9a870b59" class="">oSign In (see System Startup chapter).</p><p id="275c3aed-7a1a-80c0-a332-d65dab6bf659" class="">oCheck your inspection sessions: Select an inspection, then click defects on the map or list to view images and data. (In this demo, marker fields are read-only.)</p><p id="275c3aed-7a1a-8079-a039-d5fe9d71bd4d" class="">oExport &amp; Feedback: Use the portal’s export function for CSV/PDF logs. For real deployments, you can also update marker parameters, add notes or upload reference files.</p><figure id="275c3aed-7a1a-80ff-be5c-fe068e4b6556" class="image"><a href="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image24.png"><img style="width:700px" src="Roboscope%2026fc3aed7a1a801ba4f3d4649ed6a0b9/image24.png"/></a></figure><p id="275c3aed-7a1a-8018-8332-f4a4dfdf2adb" class=""><strong>Tips &amp; Troubleshooting</strong></p><p id="275c3aed-7a1a-809b-924f-e3a20ed8a68a" class="">1.Lighting: Maintain ≥ 600 lux for reliable AR tracking.</p><p id="275c3aed-7a1a-80e1-a364-c923397ea38a" class="">2.Resume: Only the latest session can be resumed; older sessions must be deleted and</p><p id="275c3aed-7a1a-80d7-944b-dad0db8357c3" class="">restarted.</p><p id="275c3aed-7a1a-8073-84b7-fabbf56d93f0" class="">3.Origin Placement: Always position at or beyond the blade root for correct spatial</p><p id="275c3aed-7a1a-8086-a77e-c1f87c215f7c" class="">references.</p><p id="275c3aed-7a1a-80bb-8fa5-cb19069cba95" class="">Thank you for hosting us a second time at the LM Wind facility in Bangalore on January 10th. This proposal letter summarises five AR use cases explored alongside the wider roadmap of the AR solutions:</p><p id="275c3aed-7a1a-80c1-98fa-c6930e396e14" class="">1. Full mould grid</p><p id="275c3aed-7a1a-809a-88cd-eb0a88562159" class="">2. Ply markers, start and end</p><p id="275c3aed-7a1a-80c2-a866-d982ee37ecc3" class="">3. Markers for rib positioning</p><p id="275c3aed-7a1a-80b2-9e59-f8a5544673ea" class="">4. Markers for resin tube positioning</p><p id="275c3aed-7a1a-8025-8725-de068cb9a796" class="">5. Circular hologram for checking root fitting circularity</p><p id="275c3aed-7a1a-8093-8487-e81c0e499e81" class="">Each of these are explained separately in the appendix. Cases 1 and 2 have the highest potential in our opinion as they will be able to demonstrate the unique benefits of the headset in relatively short amount of time.</p><p id="275c3aed-7a1a-8075-ac64-ed1157c12a3b" class="">We recalculated the price for the project down to USD 22,000 for two cases combined. We will be able to start the project upon receipt of 10% down payment and receipt of 3D model of applicable tool surface. Expected timing is as follows: 1. delivered at t0+4wks and 2. delivered at t0+10wks.</p><p id="275c3aed-7a1a-80cc-bebc-db6a445e9eee" class="">Please let me know if any other support will be needed from our side and looking forward to your response.</p><p id="275c3aed-7a1a-80e8-93f4-c9c287ffa7a5" class="">
+</p><p id="275c3aed-7a1a-8094-82bd-d2071305c00f" class="">This update incorporates various improvements based on &quot;requests from the population&quot;. The system now utilizes only two primary modes for defect placement and adjustment: <strong>Two points</strong> and <strong>Edge Mod</strong>.</p><p id="275c3aed-7a1a-8077-affc-c418a9f14a94" class=""><strong>General System Enhancements</strong></p><table id="275c3aed-7a1a-8072-9041-caa318ba8de9" class="simple-table"><tbody><tr id="275c3aed-7a1a-8050-9f38-e5c3355aa960"><td id="gEwl" class="">Feature</td><td id="UtG`" class="">Description</td><td id="pUPH" class="">Source(s)</td></tr><tr id="275c3aed-7a1a-80d7-aae6-c662cd4b61d9"><td id="gEwl" class=""><strong>Modes</strong></td><td id="UtG`" class="">The system now operates with only <strong>Two points</strong> mode and <strong>Edge Mod</strong>.</td><td id="pUPH" class=""></td></tr><tr id="275c3aed-7a1a-8013-afe1-d82fbeb4f2b5"><td id="gEwl" class=""><strong>Sensitivity</strong></td><td id="UtG`" class="">The sensor sensitivity (&quot;sensibility&quot;) has been improved, leading to <strong>better recognition of surfaces</strong>.</td><td id="pUPH" class=""></td></tr><tr id="275c3aed-7a1a-80c2-8fcd-e95fc9c6742f"><td id="gEwl" class=""><strong>Marker Appearance</strong></td><td id="UtG`" class="">In Two Points Mode, the markers are now displayed as a large sphere (&quot;болда&quot;).</td><td id="pUPH" class=""></td></tr><tr id="275c3aed-7a1a-8062-91ad-d52d1c919d0a"><td id="gEwl" class=""><strong>Haptic Feedback</strong></td><td id="UtG`" class="">The system provides <strong>haptic feedback</strong> (the screen shakes or &quot;clicks&quot;). Note: This feedback may not function while video recording.</td><td id="pUPH" class=""></td></tr><tr id="275c3aed-7a1a-80f1-9ff4-eb0e1f15e89c"><td id="gEwl" class=""><strong>Tracking while Locked</strong></td><td id="UtG`" class="">A notable feature is that if you <strong>lock an axis</strong> (e.g., X or Z), the system still continues to <strong>track the underlying surface</strong>. It maintains the locked axis while simultaneously moving along the surface.</td><td id="pUPH" class=""></td></tr></tbody></table><p id="275c3aed-7a1a-8095-9372-f708b410c371" class=""><strong>Two Points Mode (Point Adjustment)</strong></p><p id="275c3aed-7a1a-802d-b4f6-c9d0d4e3854a" class="">While the general operation of the Two Points Mode has not significantly changed, the ability to adjust the points has been enhanced:</p><p id="275c3aed-7a1a-802e-be08-e64773d2094c" class="">1. <strong>Adjustment, Not Replacement:</strong> The system now focuses on <strong>adjustment</strong> of existing points, rather than full replacement.</p><p id="275c3aed-7a1a-806d-b1ee-c4094b11d7da" class="">2. <strong>Moving Points:</strong> You can now <strong>move any of the points</strong>.</p><p id="275c3aed-7a1a-807e-a0cd-c9fcaf2a0d1f" class="">3. <strong>Locking Axes:</strong> Points can be <strong>locked</strong> on specific axes (e.g., Z).</p><p id="275c3aed-7a1a-80e7-8cef-f839f3b57f54" class="">4. <strong>Placement and Snapping:</strong></p><p id="275c3aed-7a1a-80bf-b50f-dd3d03333c2e" class="">◦ The point works best when directed at the <strong>H</strong> (likely referring to an edge or corner). Directing it at the H ensures it places the marker <strong>&quot;perfectly straight&quot;</strong> and centered.</p><p id="275c3aed-7a1a-8080-9d19-d9a4c166c3e1" class="">◦ The system will <strong>&quot;snipe&quot; (snap)</strong> to the surface, even in free mode.</p><p id="275c3aed-7a1a-80c2-9bae-ef9e9a296628" class="">◦ Points can be <strong>dragged</strong> for placement.</p><p id="275c3aed-7a1a-8065-b304-d746d1a8f3cf" class="">5. <strong>Angle Maintenance:</strong> If the second point is not moved, the placement angle will generally remain unchanged.</p><p id="275c3aed-7a1a-8007-9e0a-c549dadede26" class="">6. <strong>Known Issue (Y-Axis):</strong> Movement along the Y-axis is currently non-functional. This is because attempting to move the point on the Y-axis lifts it above the surface. This issue is slated for correction.</p><p id="275c3aed-7a1a-8033-a0e3-ecedbdb5412d" class=""><strong>Edge Mode (Edge Mod)</strong></p><p id="275c3aed-7a1a-8066-898c-d560ecbe15cf" class="">The Edge Mode is designed for placing markers specifically along edges:</p><ul id="275c3aed-7a1a-803e-a8cb-f56975d10053" class="bulleted-list"><li style="list-style-type:disc"><strong>Status:</strong> Edge Mod is currently described as <strong>&quot;raw&quot;</strong> (&quot;сыроватый&quot;) and should be treated as <strong>experimental</strong>. It is advised not to consider it fully workable yet.</li></ul><ul id="275c3aed-7a1a-80e6-99ab-db5f95e8f3c8" class="bulleted-list"><li style="list-style-type:disc"><strong>Functionality:</strong> In this mode, the system attempts to find the intended edge surface and place the marker.</li></ul><ul id="275c3aed-7a1a-80eb-ac70-eeec252cf0e9" class="bulleted-list"><li style="list-style-type:disc"><strong>Current Limitations:</strong> The system sometimes fails to locate the surface when attempting placement.</li></ul><p id="275c3aed-7a1a-8099-bf59-d8af73657bb9" class=""><strong>Two Points Mode Enhancements</strong></p><table id="275c3aed-7a1a-80e0-bbfb-e1dbffa7e0b8" class="simple-table"><tbody><tr id="275c3aed-7a1a-80af-b0fb-e5fa3e47f35d"><td id="xHN}" class="">Feature Illustrated</td><td id="]ZF]" class="">Illustrative Gramme/Action</td><td id="Tc@t" class="">Source(s)</td></tr><tr id="275c3aed-7a1a-8060-9ccf-fa2c0527ea9d"><td id="xHN}" class=""><strong>New Marker Appearance</strong></td><td id="]ZF]" class="">The marker appearing on screen as a <strong>&quot;large sphere&quot; (&quot;болда&quot;)</strong> upon initial selection in Two Points Mode.</td><td id="Tc@t" class=""></td></tr><tr id="275c3aed-7a1a-8002-9185-d4fd007afd2d"><td id="xHN}" class=""><strong>Dragging and Placement</strong></td><td id="]ZF]" class="">The user <strong>dragging (&quot;тащим&quot;)</strong> the marker to the desired location, followed by the successful placement resulting in the phrase, <strong>&quot;Раз. Хоп. Чики-пуки&quot;</strong>.</td><td id="Tc@t" class=""></td></tr><tr id="275c3aed-7a1a-808a-ab0e-d17d43b82f48"><td id="xHN}" class=""><strong>Precise Placement via H</strong></td><td id="]ZF]" class="">Aiming the crosshair at the <strong>&quot;H&quot;</strong> (corner/edge), resulting in the marker being placed <strong>&quot;perfectly straight&quot;</strong> and centered (&quot;идеально ровненько ставит. Смотри, по центру всё&quot;). This demonstrates the improved sensor sensitivity (&quot;сенсибилити&quot;).</td><td id="Tc@t" class=""></td></tr><tr id="275c3aed-7a1a-80ff-b972-f7e7d1e42bf1"><td id="xHN}" class=""><strong>Snapping to Surface</strong></td><td id="]ZF]" class="">Placing a point in free mode while observing the system <strong>&quot;sniping&quot; (&quot;снайпиться&quot;) to the surface</strong>.</td><td id="Tc@t" class=""></td></tr><tr id="275c3aed-7a1a-80c5-b414-dc3c178d5124"><td id="xHN}" class=""><strong>Adjusting Existing Points</strong></td><td id="]ZF]" class="">The action of <strong>moving any of the existing points (&quot;двигать любую из точек&quot;)</strong>, demonstrating <strong>adjustment</strong> of the &quot;little balls&quot; (&quot;шарики&quot;) rather than full replacement.</td><td id="Tc@t" class=""></td></tr><tr id="275c3aed-7a1a-8032-a1d2-cd52055334c1"><td id="xHN}" class=""><strong>Locking Axes</strong></td><td id="]ZF]" class="">The action of <strong>locking an axis</strong> (e.g., Z), then moving the point.</td><td id="Tc@t" class=""></td></tr></tbody></table><p id="275c3aed-7a1a-8052-a0ed-f77527ba29a6" class=""><strong>General System &amp; Tracking Improvements</strong></p><table id="275c3aed-7a1a-8038-9c96-d33044a34e54" class="simple-table"><tbody><tr id="275c3aed-7a1a-80d7-9209-ed75d6ea8d93"><td id="tw\m" class="">Feature Illustrated</td><td id="Y~gF" class="">Illustrative Gramme/Action</td><td id="^Q:}" class="">Source(s)</td></tr><tr id="275c3aed-7a1a-8094-af35-f9644243bce3"><td id="tw\m" class=""><strong>Locking Axis + Surface Tracking</strong></td><td id="Y~gF" class="">The demonstration where an axis is <strong>locked (&quot;локируешь&quot;)</strong> (e.g., X or Z), yet the interface shows the system <strong>&quot;continuing to track the surface&quot;</strong> (&quot;продолжает трекать поверхность&quot;) simultaneously.</td><td id="^Q:}" class=""></td></tr><tr id="275c3aed-7a1a-80e9-b5a9-e5ad7cefd6e7"><td id="tw\m" class=""><strong>Haptic Feedback</strong></td><td id="Y~gF" class="">The visual confirmation that the <strong>screen shakes or &quot;clicks&quot; (&quot;трясётся экран,&quot; &quot;щёлкает&quot;)</strong> when actions occur (noting that this is absent during video recording).</td><td id="^Q:}" class=""></td></tr></tbody></table><p id="275c3aed-7a1a-805f-b6e9-fbed28bd98f7" class=""><strong>Edge Mod</strong></p><table id="275c3aed-7a1a-80df-ac16-d60bbe3ca915" class="simple-table"><tbody><tr id="275c3aed-7a1a-80e4-a90d-f224fea96035"><td id="Pa?x" class="">Feature Illustrated</td><td id="rY}Q" class="">Illustrative Gramme/Action</td><td id="=;aE" class="">Source(s)</td></tr><tr id="275c3aed-7a1a-80df-8025-cca898373de6"><td id="Pa?x" class=""><strong>Successful Edge Placement</strong></td><td id="rY}Q" class="">A scene where Edge Mod successfully finds the intended location (&quot;он нашёл это&quot;) and <strong>places the marker (&quot;то он плейсит&quot;)</strong>.</td><td id="=;aE" class=""></td></tr><tr id="275c3aed-7a1a-809f-bd89-fac0f2552832"><td id="Pa?x" class=""><strong>Experimental/Raw Behavior</strong></td><td id="rY}Q" class="">The demonstration of the system <strong>failing to locate the surface</strong> (&quot;не находит её вообще&quot;) when attempting to use Edge Mod on a specific structure (&quot;на вот этой штуке&quot;).</td><td id="=;aE" class=""></td></tr></tbody></table><p id="275c3aed-7a1a-80ea-a5a6-f684f76ab7de" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

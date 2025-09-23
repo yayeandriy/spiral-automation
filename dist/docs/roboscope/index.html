@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roboscope User Guide - Spiral Technology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+                        'mono': ['SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'monospace'],
+                    },
+                    colors: {
+                        'vercel-fg': '#000000',
+                        'vercel-bg': '#ffffff',
+                        'vercel-gray': '#666666',
+                        'vercel-light-gray': '#999999',
+                        'vercel-border': '#eaeaea',
+                        'vercel-success': '#0070f3',
+                        'vercel-error': '#ee0000',
+                        'vercel-warning': '#f5a623',
+                        'vercel-accent-1': '#fafafa',
+                        'vercel-accent-2': '#eaeaea',
+                        'vercel-accent-3': '#999999',
+                        'vercel-accent-4': '#888888',
+                        'vercel-accent-5': '#666666',
+                        'vercel-accent-6': '#444444',
+                        'vercel-accent-7': '#333333',
+                        'vercel-accent-8': '#111111',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .code-block {
+            background: #fafafa;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            font-family: 'SF Mono', Monaco, Inconsolata, 'Roboto Mono', monospace;
+        }
+        .nav-active {
+            color: #0070f3;
+            font-weight: 600;
+        }
+        .callout-info {
+            background: linear-gradient(90deg, rgba(0, 112, 243, 0.1) 0%, rgba(0, 112, 243, 0.05) 100%);
+            border-left: 3px solid #0070f3;
+        }
+        .callout-warning {
+            background: linear-gradient(90deg, rgba(245, 166, 35, 0.1) 0%, rgba(245, 166, 35, 0.05) 100%);
+            border-left: 3px solid #f5a623;
+        }
+        .callout-error {
+            background: linear-gradient(90deg, rgba(238, 0, 0, 0.1) 0%, rgba(238, 0, 0, 0.05) 100%);
+            border-left: 3px solid #ee0000;
+        }
+        .step-number {
+            background: #0070f3;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="font-inter antialiased text-vercel-fg bg-vercel-bg">
+    <header class="border-b border-vercel-border">
+        <div class="max-w-7xl mx-auto px-6 py-8">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-3xl font-bold text-vercel-fg">Roboscope</h1>
+                    <p class="text-vercel-gray mt-1">Digital AR System for Wind Turbine Blade Inspection</p>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-vercel-accent-1 text-vercel-accent-6 border border-vercel-border">
+                        v2.0
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-6 py-8">
+        <div class="flex gap-8">
+            <!-- Sidebar Navigation -->
+            <nav class="hidden lg:block w-64 flex-shrink-0">
+                <div class="sticky top-8">
+                    <div class="space-y-1">
+                        <a href="#overview" class="block px-3 py-2 text-sm font-medium text-vercel-gray hover:text-vercel-fg hover:bg-vercel-accent-1 rounded-lg transition-colors">Overview</a>
+                        <a href="#system-startup" class="block px-3 py-2 text-sm font-medium text-vercel-gray hover:text-vercel-fg hover:bg-vercel-accent-1 rounded-lg transition-colors">System Startup</a>
+                        <a href="#shop-floor" class="block px-3 py-2 text-sm font-medium text-vercel-gray hover:text-vercel-fg hover:bg-vercel-accent-1 rounded-lg transition-colors">Shop Floor Operations</a>
+                        <a href="#engineering" class="block px-3 py-2 text-sm font-medium text-vercel-gray hover:text-vercel-fg hover:bg-vercel-accent-1 rounded-lg transition-colors">Engineering Portal</a>
+                        <a href="#ar-features" class="block px-3 py-2 text-sm font-medium text-vercel-gray hover:text-vercel-fg hover:bg-vercel-accent-1 rounded-lg transition-colors">AR Features</a>
+                        <a href="#use-cases" class="block px-3 py-2 text-sm font-medium text-vercel-gray hover:text-vercel-fg hover:bg-vercel-accent-1 rounded-lg transition-colors">Use Cases</a>
+                        <a href="#troubleshooting" class="block px-3 py-2 text-sm font-medium text-vercel-gray hover:text-vercel-fg hover:bg-vercel-accent-1 rounded-lg transition-colors">Troubleshooting</a>
+                        <a href="#support" class="block px-3 py-2 text-sm font-medium text-vercel-gray hover:text-vercel-fg hover:bg-vercel-accent-1 rounded-lg transition-colors">Support</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Mobile Navigation -->
+            <nav class="lg:hidden w-full mb-8">
+                <div class="border border-vercel-border rounded-lg p-4 bg-vercel-accent-1">
+                    <h3 class="text-sm font-semibold text-vercel-fg mb-3">Table of Contents</h3>
+                    <div class="grid grid-cols-2 gap-2 text-sm">
+                        <a href="#overview" class="text-vercel-success hover:underline">Overview</a>
+                        <a href="#system-startup" class="text-vercel-success hover:underline">System Startup</a>
+                        <a href="#shop-floor" class="text-vercel-success hover:underline">Shop Floor Operations</a>
+                        <a href="#engineering" class="text-vercel-success hover:underline">Engineering Portal</a>
+                        <a href="#ar-features" class="text-vercel-success hover:underline">AR Features</a>
+                        <a href="#use-cases" class="text-vercel-success hover:underline">Use Cases</a>
+                        <a href="#troubleshooting" class="text-vercel-success hover:underline">Troubleshooting</a>
+                        <a href="#support" class="text-vercel-success hover:underline">Support</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="flex-1 min-w-0">
+                <div class="prose prose-vercel max-w-none">
+
+            <section id="overview" class="mb-16">
+                <h1 class="text-4xl font-bold text-vercel-fg mb-4">System Overview</h1>
+                <p class="text-xl text-vercel-gray mb-8 leading-relaxed">Roboscope is a digital augmented reality system designed for technicians conducting visual inspections of wind turbine blade shells and other components between infusion and closure.</p>
+                
+                <div class="callout-info p-4 rounded-lg mb-8">
+                    <p class="text-sm text-vercel-fg m-0">This revolutionary system transforms traditional manual inspection processes into precise, digital workflows, eliminating the need for manual measurement tools.</p>
+                </div>
+                
+                <h2 class="text-2xl font-semibold text-vercel-fg mb-4 mt-12">What is Roboscope?</h2>
+                <p class="text-vercel-gray mb-6 leading-relaxed">Roboscope addresses the critical challenges in wind turbine blade production where inspectors traditionally rely on tape measures, calipers, and paper check-sheets. The system provides:</p>
+                
+                <ul class="space-y-2 mb-8">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-vercel-success mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-vercel-gray">Precise AR-based defect marking and measurement</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-vercel-success mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-vercel-gray">Real-time dimensional capture with spatial coordinates</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-vercel-success mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-vercel-gray">Automated repair instruction generation</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-vercel-success mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-vercel-gray">Centralized engineering portal for data analysis</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-vercel-success mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-vercel-gray">Integration with ERP and MES systems</span>
+                    </li>
+                </ul>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
+                    <div class="text-center p-6 border border-vercel-border rounded-lg">
+                        <div class="text-3xl font-bold text-vercel-success mb-2">AR</div>
+                        <div class="text-sm text-vercel-gray">Augmented Reality Inspection</div>
+                    </div>
+                    <div class="text-center p-6 border border-vercel-border rounded-lg">
+                        <div class="text-3xl font-bold text-vercel-success mb-2">3D</div>
+                        <div class="text-sm text-vercel-gray">Spatial Coordinates</div>
+                    </div>
+                    <div class="text-center p-6 border border-vercel-border rounded-lg">
+                        <div class="text-3xl font-bold text-vercel-success mb-2">Live</div>
+                        <div class="text-sm text-vercel-gray">Data Streaming</div>
+                    </div>
+                    <div class="text-center p-6 border border-vercel-border rounded-lg">
+                        <div class="text-3xl font-bold text-vercel-success mb-2">API</div>
+                        <div class="text-sm text-vercel-gray">System Integration</div>
+                    </div>
+                </div>
+
+                <h2 class="text-2xl font-semibold text-vercel-fg mb-6 mt-12">Key Benefits</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="border border-vercel-border rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-vercel-fg mb-2 flex items-center">
+                            <span class="mr-2">🎯</span>
+                            Precision Measurement
+                        </h3>
+                        <p class="text-vercel-gray text-sm">Captures exact dimensions and spatial coordinates relative to the leading edge and blade root, eliminating measurement errors.</p>
+                    </div>
+                    
+                    <div class="border border-vercel-border rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-vercel-fg mb-2 flex items-center">
+                            <span class="mr-2">📱</span>
+                            Mobile Integration
+                        </h3>
+                        <p class="text-vercel-gray text-sm">Simple smartphone app that operators can use to point at defects for immediate capture and analysis.</p>
+                    </div>
+                    
+                    <div class="border border-vercel-border rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-vercel-fg mb-2 flex items-center">
+                            <span class="mr-2">🔄</span>
+                            Real-time Processing
+                        </h3>
+                        <p class="text-vercel-gray text-sm">On-device computer vision model processes data instantly, with real-time streaming to centralized systems.</p>
+                    </div>
+                    
+                    <div class="border border-vercel-border rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-vercel-fg mb-2 flex items-center">
+                            <span class="mr-2">📊</span>
+                            Centralized Analytics
+                        </h3>
+                        <p class="text-vercel-gray text-sm">Engineering portal provides interactive 3D blade models, filtering capabilities, and comprehensive reporting.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="system-startup" class="mb-16">
+                <h1 class="text-4xl font-bold text-vercel-fg mb-4">System Startup</h1>
+                <p class="text-xl text-vercel-gray mb-8 leading-relaxed">Get started with Roboscope by setting up both the mobile application and web portal components.</p>
+                
+                <h2 class="text-2xl font-semibold text-vercel-fg mb-6 mt-12">Mobile App Setup</h2>
+                <div class="space-y-4 mb-12">
+                    <div class="flex items-start">
+                        <div class="step-number mr-4 mt-1">1</div>
+                        <div>
+                            <h3 class="text-lg font-medium text-vercel-fg mb-1">Download App</h3>
+                            <p class="text-vercel-gray">Download Roboscope from the App Store</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="step-number mr-4 mt-1">2</div>
+                        <div>
+                            <h3 class="text-lg font-medium text-vercel-fg mb-1">Request Access Code</h3>
+                            <p class="text-vercel-gray">Tap "Request code with email" on the main screen</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="step-number mr-4 mt-1">3</div>
+                        <div>
+                            <h3 class="text-lg font-medium text-vercel-fg mb-1">Enter Email</h3>
+                            <p class="text-vercel-gray">Enter your registered email address and tap "Enter" - code will be sent shortly</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="step-number mr-4 mt-1">4</div>
+                        <div>
+                            <h3 class="text-lg font-medium text-vercel-fg mb-1">Activate Account</h3>
+                            <p class="text-vercel-gray">Enter the received code and you'll be redirected to the home screen</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-2xl font-semibold text-vercel-fg mb-6">Web Portal Setup</h2>
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-start">
+                        <div class="step-number mr-4 mt-1">1</div>
+                        <div>
+                            <h3 class="text-lg font-medium text-vercel-fg mb-1">Access Portal</h3>
+                            <p class="text-vercel-gray">Navigate to the demo version of the web portal</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="step-number mr-4 mt-1">2</div>
+                        <div>
+                            <h3 class="text-lg font-medium text-vercel-fg mb-1">Request Portal Code</h3>
+                            <p class="text-vercel-gray">Press "Request code" on the login screen</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="step-number mr-4 mt-1">3</div>
+                        <div>
+                            <h3 class="text-lg font-medium text-vercel-fg mb-1">Email Verification</h3>
+                            <p class="text-vercel-gray">Enter your registered email address and tap "Enter" - code will be sent to your email</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="step-number mr-4 mt-1">4</div>
+                        <div>
+                            <h3 class="text-lg font-medium text-vercel-fg mb-1">Access Dashboard</h3>
+                            <p class="text-vercel-gray">Enter the code, press "Go", and you'll be redirected to your inspections list</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="callout-info p-4 rounded-lg">
+                    <p class="text-sm text-vercel-fg m-0">
+                        <strong>Note:</strong> The demo version allows you to alternate between two roles - Quality Inspector (mobile app) and Engineer (web portal). You can switch between views on the same device if you're the only participant.
+                    </p>
+                </div>
+            </section>
+
+            <section id="shop-floor" class="mb-16">
+                <h1 class="text-4xl font-bold text-vercel-fg mb-4">Shop Floor Operations</h1>
+                <p class="text-xl text-vercel-gray mb-8 leading-relaxed">Step-by-step guide for quality inspectors conducting AR-based defect inspections on the shop floor.</p>
+                
+                <div class="border border-vercel-border rounded-lg p-4 mb-8 bg-vercel-accent-1">
+                    <div class="flex items-center text-vercel-fg font-medium">
+                        <span class="mr-2">👷</span>
+                        Quality Inspector Role
+                    </div>
+                </div>
+                    
+                <h2 class="text-2xl font-semibold text-vercel-fg mb-4">Step 1: Start New Inspection</h2>
+                <div class="code-block p-4 mb-6">
+                    <p class="text-sm text-vercel-fg mb-2"><strong>Action:</strong> Launch Roboscope → Tap the + icon → Choose Inspection → Pick part type → Tap Create → Start</p>
+                    <p class="text-sm text-vercel-gray m-0"><strong>Result:</strong> Camera screen activates for inspection</p>
+                </div>
+
+                <h2 class="text-2xl font-semibold text-vercel-fg mb-4">Step 2: Place AR Origin</h2>
+                <div class="code-block p-4 mb-4">
+                    <p class="text-sm text-vercel-fg mb-2"><strong>Setup:</strong> Start session outside the shell, then walk into the shell with app camera active</p>
+                    <p class="text-sm text-vercel-fg mb-2"><strong>Positioning:</strong> Go 3-4 meters inside shell, turn around, aim crosshair at bottom of root</p>
+                    <p class="text-sm text-vercel-fg mb-2"><strong>Action:</strong> Tap "Place Origin"</p>
+                    <p class="text-sm text-vercel-gray m-0"><strong>Result:</strong> Three colored axes and blade model appear (model can be hidden via icon)</p>
+                </div>
+
+                <div class="callout-error p-4 rounded-lg mb-6">
+                    <p class="text-sm text-vercel-fg m-0">
+                        <strong>Critical:</strong> Always position the origin at or beyond the blade root for correct spatial references.
+                    </p>
+                </div>
+
+                <h2 class="text-2xl font-semibold text-vercel-fg mb-4">Step 3: Mark Defects</h2>
+                <div class="code-block p-4 mb-6">
+                    <p class="text-sm text-vercel-fg mb-2"><strong>Detection:</strong> Aim at a fault and tap "Add defect"</p>
+                    <p class="text-sm text-vercel-fg mb-2"><strong>Marking:</strong> A persistent red rectangle appears → Tap "Save"</p>
+                    <p class="text-sm text-vercel-fg mb-2"><strong>Adjustment:</strong> Tap-and-hold one finger to resize, two fingers to move</p>
+                    <p class="text-sm text-vercel-gray m-0"><strong>Multiple Markers:</strong> You can place multiple markers as needed</p>
+                </div>
+
+                <h2 class="text-2xl font-semibold text-vercel-fg mb-4">Step 4: Annotate & Photograph</h2>
+                <div class="code-block p-4 mb-4">
+                    <p class="text-sm text-vercel-fg mb-2"><strong>Annotation:</strong> Tap marker panel → Open form → Select type/depth → Save</p>
+                    <p class="text-sm text-vercel-gray m-0"><strong>Photography:</strong> Tap camera icon → Snap high-resolution images → Wait 2-3 seconds for preview</p>
+                </div>
+
+                <div class="callout-warning p-4 rounded-lg mb-6">
+                    <p class="text-sm text-vercel-fg m-0">
+                        <strong>Important:</strong> Always create markers "inside" the shell (forward from origin) so that lay-up and repair views work correctly.
+                    </p>
+                </div>
+
+                <h2 class="text-2xl font-semibold text-vercel-fg mb-4">Step 5: View Lay-up & Repair</h2>
+                <div class="code-block p-4 mb-6">
+                    <p class="text-sm text-vercel-fg mb-2"><strong>Access:</strong> Open marker with depth > 1 → Tap "Layup" to see top X plies</p>
+                    <p class="text-sm text-vercel-fg mb-2"><strong>Repair View:</strong> Tap "Repair" for grinding layout</p>
+                    <p class="text-sm text-vercel-gray m-0"><strong>Error Handling:</strong> If error appears, move marker until it sits within the shell</p>
+                </div>
+
+                <h2 class="text-2xl font-semibold text-vercel-fg mb-4">Step 6: Review & Close</h2>
+                <div class="code-block p-4 mb-6">
+                    <p class="text-sm text-vercel-fg mb-2"><strong>Review:</strong> Tap "Defects" (badge) to list or hide all markers</p>
+                    <p class="text-sm text-vercel-fg mb-2"><strong>3D View:</strong> Tap notepad icon for top-down 3D view (pinch to zoom, two-finger pan)</p>
+                    <p class="text-sm text-vercel-gray m-0"><strong>Finish:</strong> Tap "Back to Home" → "Inspections" → Swipe left to delete sessions</p>
+                </div>
+            </section>
+
+            <section id="engineering" class="mb-16">
+                <h1 class="text-4xl font-bold text-vercel-fg mb-4">Engineering Portal</h1>
+                <p class="text-xl text-vercel-gray mb-8 leading-relaxed">Web-based dashboard for engineers to analyze inspection data and manage quality control workflows.</p>
+                
+                <div class="border border-vercel-border rounded-lg p-4 mb-8 bg-vercel-accent-1">
+                    <div class="flex items-center text-vercel-fg font-medium">
+                        <span class="mr-2">👨‍💼</span>
+                        Engineering Office Role
+                    </div>
+                </div>
+                    
+                <h2 class="text-2xl font-semibold text-vercel-fg mb-4">Evaluate Inspection Progress</h2>
+                <div class="code-block p-4 mb-6">
+                    <p class="text-sm text-vercel-fg mb-2"><strong>Access:</strong> Sign in using the system startup process</p>
+                    <p class="text-sm text-vercel-fg mb-2"><strong>Review:</strong> Check inspection sessions → Select inspection → Click defects on map or list</p>
+                    <p class="text-sm text-vercel-gray m-0"><strong>Analysis:</strong> View images and data for each marked defect</p>
+                </div>
+
+                <div class="callout-info p-4 rounded-lg mb-8">
+                    <p class="text-sm text-vercel-fg m-0">
+                        <strong>Demo Note:</strong> In the demo version, marker fields are read-only for demonstration purposes.
+                    </p>
+                </div>
+
+                <h2 class="text-2xl font-semibold text-vercel-fg mb-4">Export & Integration</h2>
+                <div class="code-block p-4 mb-8">
+                    <p class="text-sm text-vercel-fg mb-2"><strong>Export Functions:</strong> Use portal's export function for CSV/PDF logs</p>
+                    <p class="text-sm text-vercel-fg mb-2"><strong>Production Features:</strong> In real deployments, you can update marker parameters, add notes, and upload reference files</p>
+                    <p class="text-sm text-vercel-gray m-0"><strong>Integration:</strong> Data can be streamed to ERP or MES systems via REST API</p>
+                </div>
+
+                <h2 class="text-2xl font-semibold text-vercel-fg mb-6">Data Analysis Features</h2>
+                <ul class="space-y-2 mb-8">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-vercel-success mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-vercel-gray">Interactive 3D blade models with defect visualization</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-vercel-success mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-vercel-gray">Filter by defect type, severity, or inspection date</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-vercel-success mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-vercel-gray">Individual record investigation with high-resolution images</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-vercel-success mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-vercel-gray">Consolidated logs for system integration</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-vercel-success mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-vercel-gray">Progress tracking against manufacturing timelines</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-vercel-success mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-vercel-gray">Trend analysis and root-cause investigation tools</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="troubleshooting" class="mb-16">
+                <h1 class="text-4xl font-bold text-vercel-fg mb-4">Troubleshooting</h1>
+                <p class="text-xl text-vercel-gray mb-8 leading-relaxed">Common issues and their solutions when working with Roboscope AR inspection system.</p>
+                
+                <h2 class="text-2xl font-semibold text-vercel-fg mb-4">AR Tracking Issues</h2>
+                <div class="callout-error p-4 rounded-lg mb-4">
+                    <p class="text-sm text-vercel-fg m-0">
+                        <strong>Issue:</strong> AR tracking fails or becomes unstable
+                    </p>
+                </div>
+                <ul class="space-y-2 mb-8">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-vercel-success mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-vercel-gray">Ensure adequate lighting (≥ 600 lux recommended)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-vercel-success mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-vercel-gray">Check for reflective surfaces that may interfere with tracking</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-vercel-success mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-vercel-gray">Restart the AR session if tracking becomes inconsistent</span>
+                    </li>
+                </ul>
+
+                <h2 class="text-2xl font-semibold text-vercel-fg mb-4">System Requirements</h2>
+                <div class="border border-vercel-border rounded-lg overflow-hidden mb-8">
+                    <table class="w-full">
+                        <tbody class="divide-y divide-vercel-border">
+                            <tr>
+                                <td class="px-4 py-3 text-sm font-medium text-vercel-fg bg-vercel-accent-1">Lighting</td>
+                                <td class="px-4 py-3 text-sm text-vercel-gray">Minimum 600 lux for reliable AR tracking</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 text-sm font-medium text-vercel-fg bg-vercel-accent-1">Device</td>
+                                <td class="px-4 py-3 text-sm text-vercel-gray">Modern smartphone with ARKit/ARCore support</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 text-sm font-medium text-vercel-fg bg-vercel-accent-1">Space</td>
+                                <td class="px-4 py-3 text-sm text-vercel-gray">Clear workspace inside blade shell for movement</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 text-sm font-medium text-vercel-fg bg-vercel-accent-1">Network</td>
+                                <td class="px-4 py-3 text-sm text-vercel-gray">Stable connection for real-time data streaming</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="support" class="mb-16">
+                <h1 class="text-4xl font-bold text-vercel-fg mb-4">Support & Resources</h1>
+                <p class="text-xl text-vercel-gray mb-8 leading-relaxed">Get help and access comprehensive resources for implementing Roboscope in your manufacturing environment.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="border border-vercel-border rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-vercel-fg mb-2 flex items-center">
+                            <span class="mr-2">📧</span>
+                            Technical Support
+                        </h3>
+                        <p class="text-vercel-gray text-sm mb-3">Contact our specialized team for technical issues and configuration support.</p>
+                        <code class="text-xs bg-vercel-accent-1 px-2 py-1 rounded text-vercel-success">info@spiral.technology</code>
+                    </div>
+                    
+                    <div class="border border-vercel-border rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-vercel-fg mb-2 flex items-center">
+                            <span class="mr-2">🏭</span>
+                            On-site Training
+                        </h3>
+                        <p class="text-vercel-gray text-sm">Comprehensive training programs for quality inspectors and engineering teams in your facility.</p>
+                    </div>
+                    
+                    <div class="border border-vercel-border rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-vercel-fg mb-2 flex items-center">
+                            <span class="mr-2">🔧</span>
+                            Custom Configuration
+                        </h3>
+                        <p class="text-vercel-gray text-sm">Tailored setup services for specific blade designs and manufacturing processes.</p>
+                    </div>
+                    
+                    <div class="border border-vercel-border rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-vercel-fg mb-2 flex items-center">
+                            <span class="mr-2">📊</span>
+                            Integration Support
+                        </h3>
+                        <p class="text-vercel-gray text-sm">API integration assistance for ERP, MES, and quality management systems.</p>
+                    </div>
+                </div>
+
+                <div class="callout-info p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-vercel-fg mb-2">Ready to Transform Your Inspection Process?</h3>
+                    <p class="text-sm text-vercel-fg m-0">Contact our team to schedule a demonstration and discuss your specific wind turbine manufacturing requirements. We'll help you implement Roboscope for enhanced quality control and operational efficiency.</p>
+                </div>
+            </section>
+
+            <section id="ar-features" class="mb-16">
+                <h2 class="text-secondary text-3xl mb-6 border-b-4 border-primary pb-2">5. AR Features & Modes</h2>
+                
+                <h3 class="text-secondary-light text-2xl my-6">Core AR Capabilities</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 my-8">
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
+                        <h4 class="text-secondary mb-2 text-xl">Spatial Tracking</h4>
+                        <p>Advanced AR tracking maintains precise spatial coordinates relative to blade geometry, ensuring consistent measurements across inspection sessions.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
+                        <h4 class="text-secondary mb-2 text-xl">Surface Recognition</h4>
+                        <p>Improved sensor sensitivity provides better recognition of surfaces, enabling accurate defect placement even on complex blade geometries.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
+                        <h4 class="text-secondary mb-2 text-xl">Haptic Feedback</h4>
+                        <p>System provides haptic feedback (screen vibration) when actions are completed successfully, enhancing user experience and confirmation.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-secondary-light text-2xl my-6">Inspection Modes</h3>
+                
+                <h4 class="text-secondary text-xl my-4">Two Points Mode</h4>
+                <div class="bg-gray-50 p-6 rounded-lg my-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex justify-between py-2 border-b border-gray-200">
+                            <span class="font-semibold text-primary">Marker Display:</span>
+                            <span>Large sphere visualization for precise placement</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-gray-200">
+                            <span class="font-semibold text-primary">Point Adjustment:</span>
+                            <span>Move and adjust existing points rather than full replacement</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-gray-200">
+                            <span class="font-semibold text-primary">Axis Locking:</span>
+                            <span>Lock specific axes (X, Y, Z) while maintaining surface tracking</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-gray-200">
+                            <span class="font-semibold text-primary">Surface Snapping:</span>
+                            <span>Automatic snapping to detected surfaces for accurate placement</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-green-50 border-l-4 border-green-400 p-4 mb-6">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <span class="text-green-400 text-xl">💡</span>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-green-700">
+                                <strong>Pro Tip:</strong> Direct the crosshair at corner edges (H-points) for perfectly straight and centered marker placement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-secondary text-xl my-4">Edge Mode (Experimental)</h4>
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <span class="text-yellow-400 text-xl">⚠️</span>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-yellow-700">
+                                <strong>Status:</strong> Edge Mode is currently experimental and should be treated as a development feature. It may not function consistently in all scenarios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-4 rounded-lg border-l-4 border-primary mb-4">
+                    <p><strong>Purpose:</strong> Designed for placing markers specifically along blade edges</p>
+                    <p><strong>Functionality:</strong> System attempts to find intended edge surface for marker placement</p>
+                    <p><strong>Limitations:</strong> May fail to locate surface in certain conditions</p>
+                </div>
+
+                <h3 class="text-secondary-light text-2xl my-6">Advanced Features</h3>
+                <ul class="benefits-list list-none my-4 space-y-2">
+                    <li class="py-2 pl-8 relative">Continuous surface tracking even when axes are locked</li>
+                    <li class="py-2 pl-8 relative">Real-time coordinate calculation relative to blade root</li>
+                    <li class="py-2 pl-8 relative">Automatic defect categorization based on visual characteristics</li>
+                    <li class="py-2 pl-8 relative">Integration with XFMEA risk framework for repair instructions</li>
+                    <li class="py-2 pl-8 relative">High-resolution image capture with defect overlay annotations</li>
+                </ul>
+            </section>
+
+            <section id="use-cases" class="bg-white my-8 p-8 rounded-xl shadow-lg">
+                <h2 class="text-secondary text-3xl mb-6 border-b-4 border-primary pb-2">6. Industrial Use Cases</h2>
+                
+                <h3 class="text-secondary-light text-2xl my-6">Wind Turbine Manufacturing Applications</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-8">
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg border border-blue-200">
+                        <h4 class="text-secondary text-lg mb-3">Full Mould Grid</h4>
+                        <p class="text-sm">AR overlay of complete mould grid system for precise component placement and alignment verification during blade assembly.</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg border border-green-200">
+                        <h4 class="text-secondary text-lg mb-3">Ply Markers</h4>
+                        <p class="text-sm">Start and end markers for composite ply placement, ensuring accurate layup according to engineering specifications.</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg border border-purple-200">
+                        <h4 class="text-secondary text-lg mb-3">Rib Positioning</h4>
+                        <p class="text-sm">Precise markers for internal rib positioning within blade shells, critical for structural integrity and performance.</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-6 rounded-lg border border-yellow-200">
+                        <h4 class="text-secondary text-lg mb-3">Resin Tube Positioning</h4>
+                        <p class="text-sm">Accurate placement markers for resin infusion tube positioning, ensuring optimal resin flow during manufacturing.</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-lg border border-indigo-200">
+                        <h4 class="text-secondary text-lg mb-3">Root Fitting Circularity</h4>
+                        <p class="text-sm">Circular hologram projections for checking root fitting circularity and dimensional accuracy.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-secondary-light text-2xl my-6">Defect Types Detected</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
+                        <h4 class="text-secondary mb-2 text-xl">Wrinkles</h4>
+                        <p>Detection and measurement of fabric wrinkles in composite layers, with automatic severity assessment.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
+                        <h4 class="text-secondary mb-2 text-xl">Delamination</h4>
+                        <p>Identification of layer separation issues with precise boundary mapping and depth analysis.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
+                        <h4 class="text-secondary mb-2 text-xl">Foreign Inclusions</h4>
+                        <p>Detection of foreign objects or materials within the composite structure.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
+                        <h4 class="text-secondary mb-2 text-xl">Surface Defects</h4>
+                        <p>Comprehensive surface quality analysis including scratches, dents, and coating irregularities.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-secondary-light text-2xl my-6">Quality Control Benefits</h3>
+                <ul class="benefits-list list-none my-4 space-y-2">
+                    <li class="py-2 pl-8 relative">Eliminates measurement errors from manual tools</li>
+                    <li class="py-2 pl-8 relative">Provides consistent assessment criteria across factories</li>
+                    <li class="py-2 pl-8 relative">Streamlines complex repair handovers to engineering teams</li>
+                    <li class="py-2 pl-8 relative">Creates centralized repository for trend analysis</li>
+                    <li class="py-2 pl-8 relative">Supports root-cause investigations with historical data</li>
+                    <li class="py-2 pl-8 relative">Reduces cycle times and improves manufacturing efficiency</li>
+                </ul>
+            </section>
+
+            <section id="troubleshooting" class="bg-white my-8 p-8 rounded-xl shadow-lg">
+                <h2 class="text-secondary text-3xl mb-6 border-b-4 border-primary pb-2">7. Troubleshooting</h2>
+                
+                <h3 class="text-secondary-light text-2xl my-6">Common Issues and Solutions</h3>
+                
+                <h4 class="text-secondary text-xl my-4">AR Tracking Problems</h4>
+                <div class="bg-red-50 border-l-4 border-red-400 p-4 mb-4">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <span class="text-red-400 text-xl">⚠️</span>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-red-700">
+                                <strong>Issue:</strong> AR tracking fails or becomes unstable
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="benefits-list list-none my-4 space-y-2">
+                    <li class="py-2 pl-8 relative">Ensure adequate lighting (≥ 600 lux recommended)</li>
+                    <li class="py-2 pl-8 relative">Check for reflective surfaces that may interfere with tracking</li>
+                    <li class="py-2 pl-8 relative">Restart the AR session if tracking becomes inconsistent</li>
+                    <li class="py-2 pl-8 relative">Verify that the origin was placed correctly at the blade root</li>
+                </ul>
+
+                <h4 class="text-secondary text-xl my-4">Marker Placement Issues</h4>
+                <div class="bg-red-50 border-l-4 border-red-400 p-4 mb-4">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <span class="text-red-400 text-xl">⚠️</span>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-red-700">
+                                <strong>Issue:</strong> Markers not placing correctly or appearing in wrong locations
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="benefits-list list-none my-4 space-y-2">
+                    <li class="py-2 pl-8 relative">Ensure markers are placed "inside" the shell (forward from origin)</li>
+                    <li class="py-2 pl-8 relative">For Two Points Mode, aim at corner edges (H-points) for best results</li>
+                    <li class="py-2 pl-8 relative">Check that surface tracking is active before placing markers</li>
+                    <li class="py-2 pl-8 relative">Move markers if lay-up or repair views show errors</li>
+                </ul>
+
+                <h4 class="text-secondary text-xl my-4">Edge Mode Limitations</h4>
+                <div class="bg-orange-50 border-l-4 border-orange-400 p-4 mb-4">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <span class="text-orange-400 text-xl">⚡</span>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-orange-700">
+                                <strong>Known Issue:</strong> Edge Mode may fail to locate surfaces
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="benefits-list list-none my-4 space-y-2">
+                    <li class="py-2 pl-8 relative">Edge Mode is experimental - use Two Points Mode for critical inspections</li>
+                    <li class="py-2 pl-8 relative">If Edge Mode fails, switch to Two Points Mode for reliable placement</li>
+                    <li class="py-2 pl-8 relative">Report Edge Mode issues to support for future improvements</li>
+                </ul>
+
+                <h4 class="text-secondary text-xl my-4">Y-Axis Movement Issues</h4>
+                <div class="bg-red-50 border-l-4 border-red-400 p-4 mb-4">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <span class="text-red-400 text-xl">⚠️</span>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-red-700">
+                                <strong>Known Limitation:</strong> Y-axis movement may lift markers above surface
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="benefits-list list-none my-4 space-y-2">
+                    <li class="py-2 pl-8 relative">Avoid moving markers along Y-axis when possible</li>
+                    <li class="py-2 pl-8 relative">Use X and Z axis adjustments for most positioning needs</li>
+                    <li class="py-2 pl-8 relative">This limitation is scheduled for correction in future updates</li>
+                </ul>
+
+                <h3 class="text-secondary-light text-2xl my-6">Best Practices</h3>
+                <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <span class="text-blue-400 text-xl">💡</span>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-blue-700 mb-2">
+                                <strong>For Optimal Performance:</strong>
+                            </p>
+                            <ul class="text-sm text-blue-700 space-y-1">
+                                <li>• Maintain consistent lighting conditions throughout inspection</li>
+                                <li>• Place origin accurately at blade root before starting</li>
+                                <li>• Only the latest session can be resumed - delete older sessions</li>
+                                <li>• Position origin at or beyond blade root for correct spatial references</li>
+                                <li>• Use Two Points Mode for critical measurements</li>
+                                <li>• Take multiple photos of each defect from different angles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-secondary-light text-2xl my-6">System Requirements</h3>
+                <div class="bg-gray-50 p-6 rounded-lg my-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex justify-between py-2 border-b border-gray-200">
+                            <span class="font-semibold text-primary">Lighting:</span>
+                            <span>Minimum 600 lux for reliable AR tracking</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-gray-200">
+                            <span class="font-semibold text-primary">Device:</span>
+                            <span>Modern smartphone with ARKit/ARCore support</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-gray-200">
+                            <span class="font-semibold text-primary">Space:</span>
+                            <span>Clear workspace inside blade shell for movement</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-gray-200">
+                            <span class="font-semibold text-primary">Network:</span>
+                            <span>Stable connection for real-time data streaming</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="support" class="bg-white my-8 p-8 rounded-xl shadow-lg">
+                <h2 class="text-secondary text-3xl mb-6 border-b-4 border-primary pb-2">8. Support & Resources</h2>
+                
+                <h3 class="text-secondary-light text-2xl my-6">Getting Help</h3>
+                <p class="mb-6">Spiral Technology provides comprehensive support for Roboscope users in wind turbine manufacturing:</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
+                        <h4 class="text-secondary mb-2 text-xl">📧 Technical Support</h4>
+                        <p>Contact our specialized team at <strong>info@spiral.technology</strong> for technical issues and configuration support.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
+                        <h4 class="text-secondary mb-2 text-xl">🏭 On-site Training</h4>
+                        <p>Comprehensive training programs for quality inspectors and engineering teams in your facility.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
+                        <h4 class="text-secondary mb-2 text-xl">🔧 Custom Configuration</h4>
+                        <p>Tailored setup services for specific blade designs and manufacturing processes.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
+                        <h4 class="text-secondary mb-2 text-xl">📊 Integration Support</h4>
+                        <p>API integration assistance for ERP, MES, and quality management systems.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-secondary-light text-2xl my-6">Training Programs</h3>
+                <ul class="benefits-list list-none my-4 space-y-2">
+                    <li class="py-2 pl-8 relative">Quality inspector certification programs</li>
+                    <li class="py-2 pl-8 relative">Engineering portal administration training</li>
+                    <li class="py-2 pl-8 relative">AR technology fundamentals workshops</li>
+                    <li class="py-2 pl-8 relative">System integration and API training</li>
+                    <li class="py-2 pl-8 relative">Troubleshooting and maintenance procedures</li>
+                </ul>
+
+                <h3 class="text-secondary-light text-2xl my-6">Documentation & Resources</h3>
+                <ul class="benefits-list list-none my-4 space-y-2">
+                    <li class="py-2 pl-8 relative">Comprehensive API documentation for developers</li>
+                    <li class="py-2 pl-8 relative">Video tutorials for common inspection scenarios</li>
+                    <li class="py-2 pl-8 relative">Best practices guides for wind turbine manufacturing</li>
+                    <li class="py-2 pl-8 relative">Regular software updates and feature releases</li>
+                    <li class="py-2 pl-8 relative">Industry-specific use case studies</li>
+                </ul>
+
+                <h3 class="text-secondary-light text-2xl my-6">Professional Services</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
+                        <h4 class="text-secondary mb-2 text-lg">Implementation Services</h4>
+                        <p>Complete project implementation including system configuration, training, and go-live support starting at USD 22,000.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
+                        <h4 class="text-secondary mb-2 text-lg">Custom Development</h4>
+                        <p>Tailored AR solutions for specific manufacturing requirements and blade designs.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
+                        <h4 class="text-secondary mb-2 text-lg">Ongoing Support</h4>
+                        <p>Maintenance contracts, system updates, and continuous optimization services.</p>
+                    </div>
+                </div>
+
+                <div class="bg-green-50 border-l-4 border-green-400 p-4 mb-6">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <span class="text-green-400 text-xl">🚀</span>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-green-700">
+                                <strong>Ready to Transform Your Inspection Process?</strong> Contact our team to schedule a demonstration and discuss your specific wind turbine manufacturing requirements. We'll help you implement Roboscope for enhanced quality control and operational efficiency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="border-t border-vercel-border mt-16">
+        <div class="max-w-7xl mx-auto px-6 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-vercel-gray text-sm">&copy; 2025 Spiral Technology. All rights reserved.</p>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="mailto:info@spiral.technology" class="text-vercel-gray hover:text-vercel-fg text-sm transition-colors">Contact</a>
+                    <a href="#" class="text-vercel-gray hover:text-vercel-fg text-sm transition-colors">Support</a>
+                    <a href="#" class="text-vercel-gray hover:text-vercel-fg text-sm transition-colors">Documentation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

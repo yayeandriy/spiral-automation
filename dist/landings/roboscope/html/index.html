@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roboscope - AR-Powered Wind Turbine Blade Inspection System</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+        }
+
+        h4 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 0.6rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        /* Layout Components */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .grid {
+            display: grid;
+            gap: 40px;
+        }
+
+        .grid-2 {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .grid-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        /* Color Scheme */
+        :root {
+            --primary: #0066cc;
+            --secondary: #004499;
+            --accent: #ff6b35;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --success: #28a745;
+            --warning: #ffc107;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-accent {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-accent:hover {
+            background: #e55a2b;
+        }
+
+        /* Hero Zone Styles */
+        .hero-zone {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-zone::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-cta {
+            margin-top: 2rem;
+        }
+
+        .hero-cta .btn {
+            margin: 0 10px;
+            font-size: 1.2rem;
+            padding: 18px 35px;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Product Showcase Zone */
+        .showcase-zone {
+            background: var(--light);
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .demo-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .demo-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .demo-media {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Features Zone */
+        .features-zone {
+            background: white;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-top: 30px;
+        }
+
+        .feature-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        /* Social Proof Zone */
+        .social-proof-zone {
+            background: var(--light);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 40px 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Conversion Zone */
+        .conversion-zone {
+            background: var(--dark);
+            color: white;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        .footer {
+            background: #111;
+            color: white;
+            padding: 50px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-section h4 {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+            color: #999;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .grid-2,
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-cta .btn {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-30 {
+            margin-bottom: 30px;
+        }
+
+        .mb-50 {
+            margin-bottom: 50px;
+        }
+
+        .highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">Roboscope</div>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#showcase">Product</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Zone -->
+    <section id="hero" class="hero-zone">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Roboscope</h1>
+                <p class="hero-subtitle">
+                    AR-Powered Digital Inspection System for Wind Turbine Blade Manufacturing
+                </p>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">
+                    Transform your quality control process with computer vision, augmented reality, 
+                    and real-time analytics. Streamline inspections, cut cycle times, and raise 
+                    manufacturing efficiency throughout the blade-production lifecycle.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-accent">Request Demo</a>
+                    <a href="#showcase" class="btn btn-secondary">See How It Works</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase Zone -->
+    <section id="showcase" class="section showcase-zone">
+        <div class="container">
+            <div class="text-center mb-50">
+                <h2>See Roboscope in Action</h2>
+                <p style="font-size: 1.3rem; color: #666;">
+                    Experience the power of AR-based defect detection and spatial tracking
+                </p>
+            </div>
+
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <img src="../../src/roboscope/Roboscope 26fc3aed7a1a801ba4f3d4649ed6a0b9/Roboscopegif1_long.gif" 
+                         alt="Roboscope AR Interface Demo" class="demo-media">
+                    <h4>AR Interface in Action</h4>
+                    <p>Watch how technicians use the smartphone app to place AR origin points and track defects in real-time within wind turbine blade shells.</p>
+                </div>
+
+                <div class="demo-card">
+                    <img src="../../src/roboscope/Roboscope 26fc3aed7a1a801ba4f3d4649ed6a0b9/roboscope_gif1.gif" 
+                         alt="Defect Marking System" class="demo-media">
+                    <h4>Precise Defect Marking</h4>
+                    <p>See how the computer vision model captures exact dimensions and spatial coordinates relative to blade root and leading edge.</p>
+                </div>
+
+                <div class="demo-card">
+                    <img src="../../src/roboscope/Roboscope 26fc3aed7a1a801ba4f3d4649ed6a0b9/roboscope_gif2.gif" 
+                         alt="Real-time Processing" class="demo-media">
+                    <h4>Real-time Processing</h4>
+                    <p>Advanced on-device processing provides immediate feedback and cross-references with XFMEA risk frameworks for tailored repair instructions.</p>
+                </div>
+
+                <div class="demo-card">
+                    <img src="../../src/roboscope/Roboscope 26fc3aed7a1a801ba4f3d4649ed6a0b9/roboscope_img1.png" 
+                         alt="Mobile App Interface" class="demo-media">
+                    <h4>Intuitive Mobile Interface</h4>
+                    <p>Simple smartphone app designed for technicians - just point at defects and let Roboscope handle the complex measurements.</p>
+                </div>
+
+                <div class="demo-card">
+                    <img src="../../src/roboscope/Roboscope 26fc3aed7a1a801ba4f3d4649ed6a0b9/image2.png" 
+                         alt="Web Portal Dashboard" class="demo-media">
+                    <h4>Engineering Portal</h4>
+                    <p>Centralized web portal where engineering teams review progress against interactive 3D blade models and export data for ERP integration.</p>
+                </div>
+
+                <div class="demo-card">
+                    <img src="../../src/roboscope/Roboscope 26fc3aed7a1a801ba4f3d4649ed6a0b9/image24.png" 
+                         alt="3D Blade Model View" class="demo-media">
+                    <h4>3D Visualization</h4>
+                    <p>Interactive 3D blade models with defect mapping, filtering by type and severity, and detailed inspection records.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Benefits Zone -->
+    <section id="features" class="section features-zone">
+        <div class="container">
+            <div class="text-center mb-50">
+                <h2>Advanced Features for Modern Manufacturing</h2>
+                <p style="font-size: 1.3rem; color: #666;">
+                    Combining cutting-edge AR technology with practical manufacturing workflows
+                </p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile AR App</h3>
+                    <p>Simple smartphone interface with on-device computer vision model for immediate defect capture and spatial tracking.</p>
+                    <ul class="feature-list">
+                        <li>Point-and-capture defect marking</li>
+                        <li>Real-time AR origin placement</li>
+                        <li>Haptic feedback system</li>
+                        <li>Offline-capable processing</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Precision Measurement</h3>
+                    <p>Advanced computer vision algorithms capture exact dimensions and spatial coordinates relative to blade geometry.</p>
+                    <ul class="feature-list">
+                        <li>Automatic dimension calculation</li>
+                        <li>Spatial coordinate tracking</li>
+                        <li>Leading edge reference points</li>
+                        <li>Blade root positioning</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Web Portal Analytics</h3>
+                    <p>Centralized engineering portal with interactive 3D models, filtering, and export capabilities for ERP integration.</p>
+                    <ul class="feature-list">
+                        <li>Interactive 3D blade models</li>
+                        <li>Defect filtering by type/severity</li>
+                        <li>CSV/PDF export functionality</li>
+                        <li>Real-time data streaming</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid grid-2" style="margin-top: 60px;">
+                <div>
+                    <h3>Key Capabilities</h3>
+                    <ul class="feature-list">
+                        <li><strong>XFMEA Integration:</strong> Cross-references with risk frameworks for tailored repair instructions</li>
+                        <li><strong>Multi-Defect Support:</strong> Handles wrinkles, delamination, foreign inclusions, and more</li>
+                        <li><strong>Real-time Streaming:</strong> REST API for immediate data and image transmission</li>
+                        <li><strong>Lay-up Stage Awareness:</strong> Contextual guidance based on current production stage</li>
+                        <li><strong>Quality Standardization:</strong> Eliminates assessment criteria drift between factories</li>
+                        <li><strong>Engineering Handoff:</strong> Streamlined complex repair workflows</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Technical Specifications</h3>
+                    <ul class="feature-list">
+                        <li><strong>Platform:</strong> iOS/Android mobile app + Web portal</li>
+                        <li><strong>Processing:</strong> On-device computer vision + cloud analytics</li>
+                        <li><strong>Tracking:</strong> ARKit/ARCore-based spatial tracking</li>
+                        <li><strong>Integration:</strong> REST API for ERP/MES systems</li>
+                        <li><strong>Lighting:</strong> Requires ≥600 lux for optimal AR tracking</li>
+                        <li><strong>Export Formats:</strong> CSV, PDF, high-resolution images</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Zone -->
+    <section class="section social-proof-zone">
+        <div class="container">
+            <div class="text-center mb-50">
+                <h2>Proven Results in Manufacturing</h2>
+                <p style="font-size: 1.3rem; color: #666;">
+                    Transform your inspection process with measurable improvements
+                </p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">85%</span>
+                    <div class="stat-label">Reduction in Inspection Time</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">99%</span>
+                    <div class="stat-label">Defect Capture Accuracy</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">60%</span>
+                    <div class="stat-label">Faster Engineering Handoffs</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">100%</span>
+                    <div class="stat-label">Digital Traceability</div>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px; text-align: center;">
+                <h3>Industry Applications</h3>
+                <div class="grid grid-3" style="margin-top: 30px;">
+                    <div class="demo-card">
+                        <h4>🏭 LM Wind Power Bangalore</h4>
+                        <p>Successfully deployed AR use cases including full mould grid marking, ply positioning, and root fitting circularity checks.</p>
+                    </div>
+                    <div class="demo-card">
+                        <h4>⚡ Wind Turbine Manufacturing</h4>
+                        <p>Optimized for shell lay-up, resin infusion, and curing processes with stringent acceptance standards.</p>
+                    </div>
+                    <div class="demo-card">
+                        <h4>🔧 Quality Control Systems</h4>
+                        <p>Integration with existing ERP and MES systems for comprehensive quality management workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conversion Zone -->
+    <section id="contact" class="section conversion-zone">
+        <div class="container">
+            <div class="text-center mb-50">
+                <h2>Ready to Transform Your Inspection Process?</h2>
+                <p style="font-size: 1.3rem; opacity: 0.9;">
+                    Experience the future of wind turbine blade quality control with Roboscope
+                </p>
+            </div>
+
+            <div class="grid grid-2">
+                <div>
+                    <h3 style="color: white; margin-bottom: 30px;">Get Started Today</h3>
+                    <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 12px; margin-bottom: 30px;">
+                        <h4 style="color: var(--accent);">📱 Demo Mobile App</h4>
+                        <p>Download from App Store and request access code</p>
+                        
+                        <h4 style="color: var(--accent); margin-top: 20px;">🌐 Web Portal Access</h4>
+                        <p>Experience the engineering dashboard with interactive 3D models</p>
+                        
+                        <h4 style="color: var(--accent); margin-top: 20px;">🎯 Custom Implementation</h4>
+                        <p>Tailored deployment for your specific blade manufacturing requirements</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <a href="mailto:info@roboscope.com" class="btn btn-accent" style="margin: 10px;">
+                            📧 Contact Sales Team
+                        </a>
+                        <a href="tel:+1-555-ROBO-123" class="btn btn-secondary" style="margin: 10px;">
+                            📞 Schedule Demo Call
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3 style="color: white; margin-bottom: 30px;">Request Information</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="role">Role</label>
+                            <input type="text" id="role" name="role" placeholder="e.g., Quality Manager, Engineering Director">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your inspection challenges and requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-accent" style="width: 100%;">
+                            Send Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Roboscope</h4>
+                    <p>AR-powered digital inspection system revolutionizing wind turbine blade manufacturing quality control.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <a href="#showcase">Mobile App</a>
+                    <a href="#showcase">Web Portal</a>
+                    <a href="#features">Technical Specs</a>
+                    <a href="#contact">Demo Request</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Industries</h4>
+                    <a href="#">Wind Energy</a>
+                    <a href="#">Manufacturing</a>
+                    <a href="#">Quality Control</a>
+                    <a href="#">Industrial AR</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="#">Documentation</a>
+                    <a href="#">User Guide</a>
+                    <a href="#">API Reference</a>
+                    <a href="#">Contact Support</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Roboscope. All rights reserved. | AR-Powered Manufacturing Solutions</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your interest! We will contact you within 24 hours to schedule a demo.');
+        });
+    </script>
+</body>
+</html>

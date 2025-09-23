@@ -1,0 +1,498 @@
+{
+  "landing_page_structure_analysis": {
+    "overview": {
+      "description": "Analysis of 18 landing pages to identify generalized patterns of zones, sections, and blocks",
+      "taxonomy": {
+        "zones": "Major parts of a landing page (up to 5 per landing, could be separate web pages)",
+        "sections": "Building bricks with complete stories within zones",
+        "blocks": "Individual messages - text, image, video, etc."
+      }
+    },
+    
+    "generalized_zone_types": {
+      "hero_zone": {
+        "description": "Primary landing zone that captures immediate attention",
+        "typical_sections": [
+          "hero_section",
+          "navigation_section",
+          "call_to_action_section"
+        ],
+        "common_blocks": [
+          "main_headline",
+          "subheadline", 
+          "hero_image_or_video",
+          "primary_cta_button",
+          "navigation_menu",
+          "logo"
+        ],
+        "examples_from_analysis": [
+          "Lindy.ai: 'Put your work on autopilot' with AI agent showcase",
+          "Vercel: 'Ship at the speed of code' with developer platform hero",
+          "Apple MacBook Air: 'Speed of lightness' with product visualization",
+          "Framer: 'Build better sites, faster' with design tool showcase"
+        ]
+      },
+      
+      "features_benefits_zone": {
+        "description": "Zone showcasing product capabilities and value propositions",
+        "typical_sections": [
+          "features_overview_section",
+          "benefits_section",
+          "capabilities_section",
+          "use_cases_section"
+        ],
+        "common_blocks": [
+          "feature_headline",
+          "feature_description",
+          "feature_icon_or_image",
+          "benefit_statement",
+          "use_case_example",
+          "demo_video_or_gif"
+        ],
+        "examples_from_analysis": [
+          "Railway: Infrastructure features with deployment, scaling, monitoring",
+          "Dart AI: Task management, roadmaps, documents sections",
+          "Theneo: API documentation features with automation and collaboration",
+          "Stereolabs: 3D vision capabilities for logistics automation"
+        ]
+      },
+      
+      "social_proof_zone": {
+        "description": "Zone establishing credibility through testimonials, logos, and validation",
+        "typical_sections": [
+          "testimonials_section",
+          "customer_logos_section",
+          "case_studies_section",
+          "reviews_section"
+        ],
+        "common_blocks": [
+          "customer_quote",
+          "customer_name_title",
+          "customer_photo",
+          "company_logo",
+          "rating_stars",
+          "case_study_preview",
+          "usage_statistics"
+        ],
+        "examples_from_analysis": [
+          "Jasper: Customer testimonials with photos and company positions",
+          "Dart AI: Extensive user quotes from CEOs, engineers, managers",
+          "ElevenLabs: Enterprise logos (Cisco, Epic Games, Twilio)",
+          "Framer: Team testimonials with company logos (Miro)"
+        ]
+      },
+      
+      "product_showcase_zone": {
+        "description": "Detailed product demonstration and specifications",
+        "typical_sections": [
+          "product_gallery_section",
+          "specifications_section",
+          "demo_section",
+          "comparison_section"
+        ],
+        "common_blocks": [
+          "product_image",
+          "specification_list",
+          "demo_video",
+          "interactive_element",
+          "comparison_table",
+          "technical_details",
+          "performance_metrics"
+        ],
+        "examples_from_analysis": [
+          "Apple iPhone: Detailed camera system, performance specs, design showcase",
+          "Supernote: E-notebook features with handwriting demos",
+          "YouMind: AI creation tools with visual examples",
+          "Animant: 3D presentation features with interactive demos"
+        ]
+      },
+      
+      "conversion_zone": {
+        "description": "Final push for user action with pricing, signup, and contact options",
+        "typical_sections": [
+          "pricing_section",
+          "signup_section",
+          "contact_section",
+          "footer_section"
+        ],
+        "common_blocks": [
+          "pricing_table",
+          "signup_form",
+          "contact_form",
+          "secondary_cta_button",
+          "footer_links",
+          "contact_information",
+          "legal_links",
+          "social_media_links"
+        ],
+        "examples_from_analysis": [
+          "Vercel: Pricing tiers with feature comparisons",
+          "Burner: Subscription details with feature list",
+          "VidAU: Contact sales and demo request options",
+          "FreshTech: Contact form with service descriptions"
+        ]
+      }
+    },
+    
+    "generalized_section_types": {
+      "hero_section": {
+        "purpose": "Capture immediate attention and communicate primary value proposition",
+        "typical_blocks": [
+          "main_headline",
+          "supporting_subheadline",
+          "hero_visual",
+          "primary_cta_button"
+        ]
+      },
+      
+      "navigation_section": {
+        "purpose": "Provide site navigation and brand identification",
+        "typical_blocks": [
+          "logo",
+          "navigation_menu",
+          "login_signup_buttons",
+          "search_bar"
+        ]
+      },
+      
+      "features_overview_section": {
+        "purpose": "Present key product features in digestible format",
+        "typical_blocks": [
+          "section_headline",
+          "feature_grid",
+          "feature_icons",
+          "feature_descriptions"
+        ]
+      },
+      
+      "testimonials_section": {
+        "purpose": "Build trust through customer validation",
+        "typical_blocks": [
+          "testimonial_quote",
+          "customer_attribution",
+          "customer_photo",
+          "company_logo"
+        ]
+      },
+      
+      "pricing_section": {
+        "purpose": "Present pricing options and drive purchase decisions",
+        "typical_blocks": [
+          "pricing_headline",
+          "pricing_cards",
+          "feature_comparison",
+          "pricing_cta_buttons"
+        ]
+      },
+      
+      "demo_section": {
+        "purpose": "Show product in action to reduce friction",
+        "typical_blocks": [
+          "demo_video",
+          "screenshot_gallery",
+          "interactive_demo",
+          "demo_cta_button"
+        ]
+      },
+      
+      "integration_section": {
+        "purpose": "Show compatibility and ecosystem connections",
+        "typical_blocks": [
+          "integration_logos",
+          "integration_description",
+          "api_documentation_link",
+          "marketplace_link"
+        ]
+      },
+      
+      "faq_section": {
+        "purpose": "Address common questions and concerns",
+        "typical_blocks": [
+          "faq_question",
+          "faq_answer",
+          "expandable_accordion",
+          "contact_support_link"
+        ]
+      },
+      
+      "footer_section": {
+        "purpose": "Provide comprehensive site navigation and legal information",
+        "typical_blocks": [
+          "footer_menu",
+          "contact_information",
+          "social_media_links",
+          "legal_links",
+          "newsletter_signup"
+        ]
+      }
+    },
+    
+    "generalized_block_types": {
+      "text_blocks": {
+        "headline_primary": {
+          "purpose": "Main attention-grabbing message",
+          "characteristics": "Large, bold, benefit-focused",
+          "examples": ["Put your work on autopilot", "Speed of lightness", "The only truly AI-native project management tool"]
+        },
+        "headline_secondary": {
+          "purpose": "Supporting or section-specific headlines",
+          "characteristics": "Medium size, descriptive, feature-focused",
+          "examples": ["Intelligent task management", "Unibody enclosure", "Generate Stripe-like API docs"]
+        },
+        "body_text": {
+          "purpose": "Detailed explanations and descriptions",
+          "characteristics": "Paragraph format, informative, benefit-oriented",
+          "examples": ["MacBook Air delivers up to 18 hours of battery life", "Dart connects with your other tools"]
+        },
+        "list_items": {
+          "purpose": "Structured information presentation",
+          "characteristics": "Bulleted or numbered, scannable, feature-focused",
+          "examples": ["Unlimited calls & texts", "48MP Fusion camera system"]
+        }
+      },
+      
+      "visual_blocks": {
+        "hero_image": {
+          "purpose": "Primary visual impact and product showcase",
+          "characteristics": "Large, high-quality, product-focused",
+          "examples": ["MacBook Air in Sky Blue", "AI agent dashboard interface"]
+        },
+        "feature_icons": {
+          "purpose": "Visual representation of features or benefits",
+          "characteristics": "Simple, recognizable, consistent style",
+          "examples": ["Infinity icon for unlimited features", "Diamond icons for premium features"]
+        },
+        "product_screenshots": {
+          "purpose": "Show actual product interface or usage",
+          "characteristics": "Real interface, annotated, contextual",
+          "examples": ["Dart task management interface", "Theneo API documentation view"]
+        },
+        "demo_videos": {
+          "purpose": "Dynamic product demonstration",
+          "characteristics": "Short, focused, feature-specific",
+          "examples": ["iPhone camera zoom demonstration", "3D model rotation in Animant"]
+        },
+        "customer_photos": {
+          "purpose": "Humanize testimonials and social proof",
+          "characteristics": "Professional headshots, diverse representation",
+          "examples": ["Customer testimonial photos in Dart", "Team member photos in Framer"]
+        }
+      },
+      
+      "interactive_blocks": {
+        "cta_buttons": {
+          "primary": {
+            "purpose": "Main conversion action",
+            "characteristics": "Prominent, action-oriented, contrasting color",
+            "examples": ["Get Started", "Buy MacBook Air", "Sign Up Free"]
+          },
+          "secondary": {
+            "purpose": "Alternative or supporting actions",
+            "characteristics": "Less prominent, exploratory, outline style",
+            "examples": ["Learn More", "Watch Demo", "Contact Sales"]
+          }
+        },
+        "forms": {
+          "purpose": "Capture user information or enable actions",
+          "characteristics": "Simple, minimal fields, clear labels",
+          "examples": ["Email signup", "Contact form", "Demo request"]
+        },
+        "navigation_menus": {
+          "purpose": "Site structure and page access",
+          "characteristics": "Organized, hierarchical, accessible",
+          "examples": ["Main navigation", "Footer menus", "Dropdown menus"]
+        }
+      },
+      
+      "social_proof_blocks": {
+        "testimonial_quotes": {
+          "purpose": "Customer validation in their own words",
+          "characteristics": "Quotation marks, personal language, specific benefits",
+          "examples": ["I've been using Dart for months now, and it is my #1 tool"]
+        },
+        "company_logos": {
+          "purpose": "Brand association and credibility",
+          "characteristics": "Grayscale or brand colors, recognizable brands",
+          "examples": ["Cisco, Epic Games, Twilio logos", "Y Combinator, Atlassian logos"]
+        },
+        "statistics": {
+          "purpose": "Quantified social proof and usage metrics",
+          "characteristics": "Large numbers, contextual qualifiers",
+          "examples": ["15,000 companies", "23x faster performance"]
+        },
+        "ratings_reviews": {
+          "purpose": "Third-party validation scores",
+          "characteristics": "Star ratings, review counts, platform attribution",
+          "examples": ["5-star ratings", "Product Hunt badges"]
+        }
+      }
+    },
+    
+    "industry_specific_patterns": {
+      "saas_b2b_platforms": {
+        "common_zones": ["hero_zone", "features_benefits_zone", "social_proof_zone", "conversion_zone"],
+        "key_sections": ["integration_section", "demo_section", "pricing_section"],
+        "examples": ["Lindy.ai", "Railway", "Dart AI", "Theneo", "Vercel"]
+      },
+      
+      "consumer_hardware": {
+        "common_zones": ["hero_zone", "product_showcase_zone", "social_proof_zone", "conversion_zone"],
+        "key_sections": ["specifications_section", "comparison_section", "accessories_section"],
+        "examples": ["Apple MacBook Air", "Apple iPhone 17 Pro", "Supernote"]
+      },
+      
+      "ai_ml_tools": {
+        "common_zones": ["hero_zone", "features_benefits_zone", "demo_showcase_zone", "conversion_zone"],
+        "key_sections": ["capabilities_section", "use_cases_section", "api_documentation_section"],
+        "examples": ["ElevenLabs", "VidAU", "YouMind", "Jasper"]
+      },
+      
+      "creative_tools": {
+        "common_zones": ["hero_zone", "features_benefits_zone", "showcase_zone", "community_zone"],
+        "key_sections": ["gallery_section", "templates_section", "collaboration_section"],
+        "examples": ["Framer", "Animant"]
+      },
+      
+      "mobile_apps": {
+        "common_zones": ["hero_zone", "features_benefits_zone", "social_proof_zone", "download_zone"],
+        "key_sections": ["app_store_links_section", "feature_preview_section", "privacy_section"],
+        "examples": ["Burner"]
+      },
+      
+      "development_services": {
+        "common_zones": ["hero_zone", "services_zone", "portfolio_zone", "contact_zone"],
+        "key_sections": ["services_overview_section", "portfolio_section", "contact_form_section"],
+        "examples": ["FreshTech Global", "Stereolabs"]
+      }
+    },
+    
+    "layout_patterns": {
+      "single_page_scroll": {
+        "description": "All content on one page with smooth scrolling navigation",
+        "typical_structure": ["hero_zone", "features_zone", "social_proof_zone", "conversion_zone"],
+        "examples": ["Dart AI", "Burner", "Animant"]
+      },
+      
+      "multi_section_detailed": {
+        "description": "Extensive content with detailed product information",
+        "typical_structure": ["hero_zone", "product_showcase_zone", "specifications_zone", "comparison_zone", "conversion_zone"],
+        "examples": ["Apple MacBook Air", "Apple iPhone 17 Pro"]
+      },
+      
+      "demo_focused": {
+        "description": "Emphasis on showing product in action",
+        "typical_structure": ["hero_zone", "demo_zone", "features_zone", "conversion_zone"],
+        "examples": ["ElevenLabs", "Theneo", "VidAU"]
+      },
+      
+      "feature_grid": {
+        "description": "Features presented in organized grid layouts",
+        "typical_structure": ["hero_zone", "features_grid_zone", "integration_zone", "conversion_zone"],
+        "examples": ["Railway", "Framer", "Vercel"]
+      }
+    },
+    
+    "conversion_optimization_patterns": {
+      "multiple_cta_placement": {
+        "description": "Strategic placement of call-to-action buttons throughout the page",
+        "examples": ["Hero section + Features section + Footer", "Every major section has a CTA"]
+      },
+      
+      "progressive_disclosure": {
+        "description": "Information revealed gradually to reduce cognitive load",
+        "examples": ["Feature overview → Detailed specs → Pricing", "High-level benefits → Technical details"]
+      },
+      
+      "social_proof_integration": {
+        "description": "Customer validation woven throughout the page",
+        "examples": ["Logo bars after hero", "Testimonials between features", "Case studies as proof points"]
+      },
+      
+      "urgency_scarcity": {
+        "description": "Time-sensitive offers or limited availability messaging",
+        "examples": ["Limited time offers", "Early access", "Beta availability"]
+      }
+    },
+    
+    "mobile_responsive_patterns": {
+      "navigation_collapse": {
+        "description": "Desktop navigation condensed to hamburger menus",
+        "implementation": "Mobile-first responsive design"
+      },
+      
+      "content_stacking": {
+        "description": "Side-by-side content becomes vertically stacked",
+        "implementation": "CSS Grid and Flexbox layouts"
+      },
+      
+      "touch_optimized_ctas": {
+        "description": "Larger touch targets for mobile interactions",
+        "implementation": "Minimum 44px touch targets"
+      },
+      
+      "simplified_forms": {
+        "description": "Reduced form fields and streamlined input",
+        "implementation": "Progressive profiling and smart defaults"
+      }
+    },
+    
+    "performance_considerations": {
+      "image_optimization": {
+        "description": "Compressed images with appropriate formats",
+        "examples": ["WebP format usage", "Lazy loading implementation"]
+      },
+      
+      "above_fold_priority": {
+        "description": "Critical content loaded first",
+        "examples": ["Hero section optimization", "Critical CSS inlining"]
+      },
+      
+      "progressive_enhancement": {
+        "description": "Core functionality works without JavaScript",
+        "examples": ["Semantic HTML structure", "CSS-only interactions"]
+      }
+    },
+    
+    "accessibility_patterns": {
+      "semantic_structure": {
+        "description": "Proper HTML5 semantic elements",
+        "examples": ["Header, main, section, article tags", "Heading hierarchy"]
+      },
+      
+      "keyboard_navigation": {
+        "description": "Full functionality via keyboard",
+        "examples": ["Tab order", "Focus indicators", "Skip links"]
+      },
+      
+      "screen_reader_support": {
+        "description": "Alternative text and ARIA labels",
+        "examples": ["Image alt text", "Button labels", "Form labels"]
+      }
+    },
+    
+    "analysis_summary": {
+      "total_pages_analyzed": 18,
+      "primary_patterns_identified": {
+        "zones": 5,
+        "sections": 9,
+        "blocks": 20
+      },
+      "industry_categories": {
+        "saas_b2b": 5,
+        "consumer_hardware": 3,
+        "ai_ml_tools": 4,
+        "creative_tools": 2,
+        "mobile_apps": 1,
+        "development_services": 3
+      },
+      "key_insights": [
+        "Hero zones universally focus on clear value propositions",
+        "Social proof appears in 90% of analyzed pages",
+        "Multiple CTA placement is standard across all industries",
+        "Feature demonstration through visuals is critical for technical products",
+        "Mobile-first responsive design is universal",
+        "Integration showcases are essential for B2B SaaS platforms"
+      ]
+    }
+  }
+}

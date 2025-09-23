@@ -1,0 +1,740 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Notion Page Properties Patch Schema",
+  "description": "JSON Schema for patching Notion page properties based on Notion API v2023-06-13",
+  "type": "object",
+  "properties": {
+    "properties": {
+      "type": "object",
+      "description": "Properties to update on the page",
+      "patternProperties": {
+        "^.*$": {
+          "oneOf": [
+            {
+              "title": "Title Property",
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/richTextObject"
+                  }
+                }
+              },
+              "required": ["title"],
+              "additionalProperties": false
+            },
+            {
+              "title": "Rich Text Property",
+              "type": "object",
+              "properties": {
+                "rich_text": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/richTextObject"
+                  }
+                }
+              },
+              "required": ["rich_text"],
+              "additionalProperties": false
+            },
+            {
+              "title": "Number Property",
+              "type": "object",
+              "properties": {
+                "number": {
+                  "type": ["number", "null"]
+                }
+              },
+              "required": ["number"],
+              "additionalProperties": false
+            },
+            {
+              "title": "Select Property",
+              "type": "object",
+              "properties": {
+                "select": {
+                  "oneOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "description": "Name of the select option"
+                        }
+                      },
+                      "required": ["name"],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "description": "ID of the select option"
+                        }
+                      },
+                      "required": ["id"],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": ["select"],
+              "additionalProperties": false
+            },
+            {
+              "title": "Multi-select Property",
+              "type": "object",
+              "properties": {
+                "multi_select": {
+                  "type": "array",
+                  "items": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "description": "Name of the multi-select option"
+                          }
+                        },
+                        "required": ["name"],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "description": "ID of the multi-select option"
+                          }
+                        },
+                        "required": ["id"],
+                        "additionalProperties": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "required": ["multi_select"],
+              "additionalProperties": false
+            },
+            {
+              "title": "Date Property",
+              "type": "object",
+              "properties": {
+                "date": {
+                  "oneOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "start": {
+                          "type": "string",
+                          "format": "date-time",
+                          "description": "ISO 8601 date string"
+                        },
+                        "end": {
+                          "type": ["string", "null"],
+                          "format": "date-time",
+                          "description": "ISO 8601 date string for end of range"
+                        },
+                        "time_zone": {
+                          "type": ["string", "null"],
+                          "description": "IANA time zone name"
+                        }
+                      },
+                      "required": ["start"],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": ["date"],
+              "additionalProperties": false
+            },
+            {
+              "title": "Checkbox Property",
+              "type": "object",
+              "properties": {
+                "checkbox": {
+                  "type": "boolean"
+                }
+              },
+              "required": ["checkbox"],
+              "additionalProperties": false
+            },
+            {
+              "title": "URL Property",
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": ["string", "null"],
+                  "format": "uri"
+                }
+              },
+              "required": ["url"],
+              "additionalProperties": false
+            },
+            {
+              "title": "Email Property",
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": ["string", "null"],
+                  "format": "email"
+                }
+              },
+              "required": ["email"],
+              "additionalProperties": false
+            },
+            {
+              "title": "Phone Number Property",
+              "type": "object",
+              "properties": {
+                "phone_number": {
+                  "type": ["string", "null"]
+                }
+              },
+              "required": ["phone_number"],
+              "additionalProperties": false
+            },
+            {
+              "title": "People Property",
+              "type": "object",
+              "properties": {
+                "people": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "object": {
+                        "type": "string",
+                        "enum": ["user"]
+                      },
+                      "id": {
+                        "type": "string",
+                        "description": "User ID"
+                      }
+                    },
+                    "required": ["object", "id"],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": ["people"],
+              "additionalProperties": false
+            },
+            {
+              "title": "Files Property",
+              "type": "object",
+              "properties": {
+                "files": {
+                  "type": "array",
+                  "items": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "external": {
+                            "type": "object",
+                            "properties": {
+                              "url": {
+                                "type": "string",
+                                "format": "uri"
+                              }
+                            },
+                            "required": ["url"],
+                            "additionalProperties": false
+                          }
+                        },
+                        "required": ["name", "external"],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "file_upload": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "description": "File upload ID from Notion's file upload API"
+                              }
+                            },
+                            "required": ["id"],
+                            "additionalProperties": false
+                          }
+                        },
+                        "required": ["file_upload"],
+                        "additionalProperties": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "required": ["files"],
+              "additionalProperties": false
+            },
+            {
+              "title": "Relation Property",
+              "type": "object",
+              "properties": {
+                "relation": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "description": "Page ID of related page"
+                      }
+                    },
+                    "required": ["id"],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": ["relation"],
+              "additionalProperties": false
+            },
+            {
+              "title": "Status Property",
+              "type": "object",
+              "properties": {
+                "status": {
+                  "oneOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "description": "Name of the status option"
+                        }
+                      },
+                      "required": ["name"],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "description": "ID of the status option"
+                        }
+                      },
+                      "required": ["id"],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": ["status"],
+              "additionalProperties": false
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "icon": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["emoji"]
+            },
+            "emoji": {
+              "type": "string",
+              "description": "Unicode emoji character"
+            }
+          },
+          "required": ["type", "emoji"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["external"]
+            },
+            "external": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              },
+              "required": ["url"],
+              "additionalProperties": false
+            }
+          },
+          "required": ["type", "external"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["file_upload"]
+            },
+            "file_upload": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "File upload ID from Notion's file upload API"
+                }
+              },
+              "required": ["id"],
+              "additionalProperties": false
+            }
+          },
+          "required": ["type", "file_upload"],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Page icon (not nested under properties)"
+    },
+    "cover": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["external"]
+            },
+            "external": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              },
+              "required": ["url"],
+              "additionalProperties": false
+            }
+          },
+          "required": ["type", "external"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["file_upload"]
+            },
+            "file_upload": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "File upload ID from Notion's file upload API"
+                }
+              },
+              "required": ["id"],
+              "additionalProperties": false
+            }
+          },
+          "required": ["type", "file_upload"],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Page cover image (not nested under properties)"
+    }
+  },
+  "definitions": {
+    "richTextObject": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["text", "mention", "equation"]
+        },
+        "text": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string"
+            },
+            "link": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "url": {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                  },
+                  "required": ["url"],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": ["content"],
+          "additionalProperties": false
+        },
+        "mention": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["user", "page", "database", "date", "link_preview", "template_mention"]
+            }
+          },
+          "additionalProperties": true
+        },
+        "equation": {
+          "type": "object",
+          "properties": {
+            "expression": {
+              "type": "string"
+            }
+          },
+          "required": ["expression"],
+          "additionalProperties": false
+        },
+        "annotations": {
+          "type": "object",
+          "properties": {
+            "bold": {
+              "type": "boolean"
+            },
+            "italic": {
+              "type": "boolean"
+            },
+            "strikethrough": {
+              "type": "boolean"
+            },
+            "underline": {
+              "type": "boolean"
+            },
+            "code": {
+              "type": "boolean"
+            },
+            "color": {
+              "type": "string",
+              "enum": [
+                "default", "gray", "brown", "orange", "yellow", "green", 
+                "blue", "purple", "pink", "red", "gray_background", 
+                "brown_background", "orange_background", "yellow_background", 
+                "green_background", "blue_background", "purple_background", 
+                "pink_background", "red_background"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "plain_text": {
+          "type": "string"
+        },
+        "href": {
+          "type": ["string", "null"],
+          "format": "uri"
+        }
+      },
+      "required": ["type"],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "text"
+              }
+            }
+          },
+          "then": {
+            "required": ["text"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "mention"
+              }
+            }
+          },
+          "then": {
+            "required": ["mention"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "equation"
+              }
+            }
+          },
+          "then": {
+            "required": ["equation"]
+          }
+        }
+      ]
+    },
+    "colorEnum": {
+      "type": "string",
+      "enum": [
+        "default", "gray", "brown", "orange", "yellow", 
+        "green", "blue", "purple", "pink", "red"
+      ]
+    },
+    "selectOption": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Option name"
+        },
+        "color": {
+          "$ref": "#/definitions/colorEnum"
+        }
+      },
+      "required": ["name"],
+      "additionalProperties": false
+    },
+    "multiSelectOption": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Option name"
+        },
+        "color": {
+          "$ref": "#/definitions/colorEnum"
+        }
+      },
+      "required": ["name"],
+      "additionalProperties": false
+    }
+  },
+  "examples": [
+    {
+      "properties": {
+        "Title": {
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Updated Page Title",
+                "link": null
+              }
+            }
+          ]
+        },
+        "Description": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "This is a description with ",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              }
+            },
+            {
+              "type": "text",
+              "text": {
+                "content": "bold text",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              }
+            }
+          ]
+        },
+        "Status": {
+          "select": {
+            "name": "In Progress"
+          }
+        },
+        "Tags": {
+          "multi_select": [
+            {
+              "name": "Important"
+            },
+            {
+              "name": "Draft"
+            }
+          ]
+        },
+        "Priority": {
+          "number": 1
+        },
+        "Due Date": {
+          "date": {
+            "start": "2023-12-31",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Completed": {
+          "checkbox": false
+        },
+        "Website": {
+          "url": "https://example.com"
+        },
+        "Email": {
+          "email": "contact@example.com"
+        },
+        "Phone": {
+          "phone_number": "+1-555-0123"
+        }
+      },
+      "icon": {
+        "type": "emoji",
+        "emoji": "📝"
+      }
+    }
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVIS - Automated Visual Inspection System | Portable Computer Vision for Manufacturing</title>
+    <meta name="description" content="Revolutionary portable computer vision system for high-mix, low-volume manufacturing. 10mm accuracy, 24-hour setup, iPhone compatibility. Transform your quality control.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2563eb;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav a:hover {
+            color: #2563eb;
+        }
+        
+        .cta-button {
+            background: #2563eb;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #1d4ed8;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8rem 0 4rem;
+            text-align: center;
+            margin-top: 80px;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #2563eb;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #2563eb;
+        }
+        
+        .hero-visual {
+            margin-top: 2rem;
+        }
+        
+        .hero-visual img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        /* Problem Statement */
+        .problem-statement {
+            padding: 4rem 0;
+            background: #f8fafc;
+        }
+        
+        .problem-statement h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #1f2937;
+        }
+        
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .problem-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            text-align: center;
+        }
+        
+        .problem-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Solution Overview */
+        .solution-overview {
+            padding: 4rem 0;
+        }
+        
+        .solution-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .solution-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #1f2937;
+        }
+        
+        .solution-text p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #4b5563;
+        }
+        
+        .solution-features {
+            list-style: none;
+        }
+        
+        .solution-features li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .solution-features li::before {
+            content: "✓";
+            color: #10b981;
+            font-weight: bold;
+            margin-right: 0.75rem;
+            font-size: 1.2rem;
+        }
+        
+        .solution-visual video {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 4rem 0;
+            background: #f8fafc;
+        }
+        
+        .features h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #1f2937;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        
+        .feature-card p {
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        
+        /* Demo Section */
+        .demo-section {
+            padding: 4rem 0;
+        }
+        
+        .demo-section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #1f2937;
+        }
+        
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .demo-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+        }
+        
+        .demo-item video,
+        .demo-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .demo-content {
+            padding: 1.5rem;
+        }
+        
+        .demo-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+        
+        .demo-content p {
+            color: #4b5563;
+            font-size: 0.95rem;
+        }
+        
+        /* Technical Specs */
+        .tech-specs {
+            padding: 4rem 0;
+            background: #f8fafc;
+        }
+        
+        .tech-specs h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #1f2937;
+        }
+        
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .spec-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            text-align: center;
+        }
+        
+        .spec-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+        
+        .spec-label {
+            font-size: 1.1rem;
+            color: #4b5563;
+            font-weight: 500;
+        }
+        
+        /* Use Cases */
+        .use-cases {
+            padding: 4rem 0;
+        }
+        
+        .use-cases h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #1f2937;
+        }
+        
+        .use-cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .use-case-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .use-case-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .use-case-card p {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 4rem 0;
+            background: #1f2937;
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #111827;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .footer p {
+            opacity: 0.7;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .solution-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .hero-buttons,
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">AVIS</div>
+                <nav class="nav">
+                    <a href="#features">Features</a>
+                    <a href="#demo">Demo</a>
+                    <a href="#specs">Specifications</a>
+                    <a href="#use-cases">Use Cases</a>
+                </nav>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Automated Visual Inspection System</h1>
+            <p class="subtitle">Revolutionary portable computer vision for high-mix, low-volume manufacturing. Transform your quality control with 10mm accuracy and 24-hour setup.</p>
+            
+            <div class="hero-buttons">
+                <a href="#demo" class="btn-primary">Watch Demo</a>
+                <a href="#contact" class="btn-secondary">Schedule Demo</a>
+            </div>
+            
+            <div class="hero-visual">
+                <img src="avis_src/AVIS src 26fc3aed7a1a80d89e25c23cae375015/Picture1.png" alt="AVIS System Overview" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section class="problem-statement">
+        <div class="container">
+            <h2>Manufacturing Quality Control Challenges</h2>
+            <div class="problem-grid">
+                <div class="problem-item">
+                    <div class="problem-icon">⚙️</div>
+                    <h3>High-Mix, Low-Volume Complexity</h3>
+                    <p>Traditional inspection systems struggle with diverse product lines and small batch sizes, requiring extensive setup and programming.</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon">⏱️</div>
+                    <h3>Time-Consuming Setup</h3>
+                    <p>Conventional systems require weeks or months to configure, making them impractical for agile manufacturing environments.</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon">💰</div>
+                    <h3>High Implementation Costs</h3>
+                    <p>Expensive hardware and specialized expertise create barriers to entry for many manufacturers seeking quality automation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Overview -->
+    <section class="solution-overview">
+        <div class="container">
+            <div class="solution-content">
+                <div class="solution-text">
+                    <h2>Meet AVIS: Your Portable Quality Control Solution</h2>
+                    <p>AVIS revolutionizes manufacturing inspection with portable computer vision technology that adapts to your production needs, not the other way around.</p>
+                    
+                    <ul class="solution-features">
+                        <li>Portable and flexible deployment</li>
+                        <li>10mm inspection accuracy</li>
+                        <li>24-hour setup and configuration</li>
+                        <li>iPhone compatibility for easy operation</li>
+                        <li>AI-powered defect detection</li>
+                        <li>Real-time quality feedback</li>
+                    </ul>
+                </div>
+                <div class="solution-visual">
+                    <video controls>
+                        <source src="avis_src/AVIS src 26fc3aed7a1a80d89e25c23cae375015/assembly_extended_1-VEED.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Powerful Features for Modern Manufacturing</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">📱</span>
+                    <h3>iPhone Integration</h3>
+                    <p>Leverage your existing iPhone hardware for high-quality imaging and processing, reducing equipment costs and complexity.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎯</span>
+                    <h3>10mm Precision</h3>
+                    <p>Achieve consistent 10mm accuracy across all inspection tasks, ensuring reliable quality control for critical components.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Rapid Deployment</h3>
+                    <p>Get up and running in just 24 hours with our streamlined setup process and intuitive configuration tools.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🔄</span>
+                    <h3>Adaptive Learning</h3>
+                    <p>AI algorithms continuously improve inspection accuracy by learning from your specific manufacturing environment.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📊</span>
+                    <h3>Real-time Analytics</h3>
+                    <p>Monitor quality metrics in real-time with comprehensive dashboards and automated reporting capabilities.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🏭</span>
+                    <h3>Flexible Integration</h3>
+                    <p>Seamlessly integrate with existing production lines and quality management systems for unified operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo-section" id="demo">
+        <div class="container">
+            <h2>See AVIS in Action</h2>
+            <div class="demo-grid">
+                <div class="demo-item">
+                    <video controls>
+                        <source src="avis_src/AVIS src 26fc3aed7a1a80d89e25c23cae375015/assembly_extended_3-VEED.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="demo-content">
+                        <h3>Assembly Inspection</h3>
+                        <p>Watch AVIS detect missing components and verify proper assembly in real-time manufacturing scenarios.</p>
+                    </div>
+                </div>
+                
+                <div class="demo-item">
+                    <img src="avis_src/AVIS src 26fc3aed7a1a80d89e25c23cae375015/misplacement.gif" alt="Misplacement Detection Demo" />
+                    <div class="demo-content">
+                        <h3>Misplacement Detection</h3>
+                        <p>Advanced computer vision algorithms identify component misplacement with sub-millimeter precision.</p>
+                    </div>
+                </div>
+                
+                <div class="demo-item">
+                    <video controls>
+                        <source src="avis_src/AVIS src 26fc3aed7a1a80d89e25c23cae375015/video3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="demo-content">
+                        <h3>Surface Condition Analysis</h3>
+                        <p>Comprehensive surface inspection detecting scratches, dents, and other quality issues automatically.</p>
+                    </div>
+                </div>
+                
+                <div class="demo-item">
+                    <img src="avis_src/AVIS src 26fc3aed7a1a80d89e25c23cae375015/foreign_object.gif" alt="Foreign Object Detection" />
+                    <div class="demo-content">
+                        <h3>Foreign Object Detection</h3>
+                        <p>Instantly identify foreign objects and contamination that could compromise product quality.</p>
+                    </div>
+                </div>
+                
+                <div class="demo-item">
+                    <video controls>
+                        <source src="avis_src/AVIS src 26fc3aed7a1a80d89e25c23cae375015/video7.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="demo-content">
+                        <h3>Multi-Angle Inspection</h3>
+                        <p>Comprehensive 360-degree inspection capabilities ensure no defects go undetected.</p>
+                    </div>
+                </div>
+                
+                <div class="demo-item">
+                    <img src="avis_src/AVIS src 26fc3aed7a1a80d89e25c23cae375015/Picture2.png" alt="System Interface" />
+                    <div class="demo-content">
+                        <h3>Intuitive Interface</h3>
+                        <p>User-friendly dashboard provides clear visibility into inspection results and system performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="tech-specs" id="specs">
+        <div class="container">
+            <h2>Technical Specifications</h2>
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <div class="spec-value">10mm</div>
+                    <div class="spec-label">Inspection Accuracy</div>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-value">24hrs</div>
+                    <div class="spec-label">Setup Time</div>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-value">iPhone</div>
+                    <div class="spec-label">Compatible Hardware</div>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-value">Real-time</div>
+                    <div class="spec-label">Processing Speed</div>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-value">AI-Powered</div>
+                    <div class="spec-label">Detection Engine</div>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-value">Portable</div>
+                    <div class="spec-label">Deployment Model</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="use-cases" id="use-cases">
+        <div class="container">
+            <h2>Perfect for Your Industry</h2>
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <h3>Electronic Assembly</h3>
+                    <p>Verify component placement, solder quality, and connection integrity in electronic manufacturing processes.</p>
+                </div>
+                <div class="use-case-card">
+                    <h3>Automotive Parts</h3>
+                    <p>Ensure precision in automotive component manufacturing with reliable quality control and defect detection.</p>
+                </div>
+                <div class="use-case-card">
+                    <h3>Medical Devices</h3>
+                    <p>Meet stringent quality requirements for medical device manufacturing with traceable inspection records.</p>
+                </div>
+                <div class="use-case-card">
+                    <h3>Aerospace Components</h3>
+                    <p>Critical inspection for aerospace parts where precision and reliability are absolutely essential.</p>
+                </div>
+                <div class="use-case-card">
+                    <h3>Consumer Products</h3>
+                    <p>Maintain consistent quality across diverse consumer product lines with flexible inspection protocols.</p>
+                </div>
+                <div class="use-case-card">
+                    <h3>Custom Manufacturing</h3>
+                    <p>Adapt to unique manufacturing requirements with customizable inspection parameters and workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Ready to Transform Your Quality Control?</h2>
+            <p>Join leading manufacturers who have revolutionized their inspection processes with AVIS.</p>
+            
+            <div class="cta-buttons">
+                <a href="mailto:info@avis-inspection.com" class="btn-primary">Schedule Demo</a>
+                <a href="tel:+1-555-AVIS-TECH" class="btn-secondary">Call Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AVIS - Automated Visual Inspection System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = '#fff';
+                header.style.backdropFilter = 'none';
+            }
+        });
+
+        // Auto-play videos when they come into view
+        const videos = document.querySelectorAll('video');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.play();
+                } else {
+                    entry.target.pause();
+                }
+            });
+        }, { threshold: 0.5 });
+
+        videos.forEach(video => {
+            observer.observe(video);
+        });
+    </script>
+</body>
+</html>

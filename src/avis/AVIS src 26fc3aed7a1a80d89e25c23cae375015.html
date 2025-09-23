@@ -1,0 +1,731 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>AVIS.src</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(128, 125, 120, 1);
+	fill: rgba(128, 125, 120, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(204, 121, 47, 1);
+	fill: rgba(204, 121, 47, 1);
+}
+.highlight-yellow {
+	color: rgba(195, 148, 67, 1);
+	fill: rgba(195, 148, 67, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(63, 126, 190, 1);
+	fill: rgba(63, 126, 190, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(179, 84, 136, 1);
+	fill: rgba(179, 84, 136, 1);
+}
+.highlight-red {
+	color: rgba(201, 85, 73, 1);
+	fill: rgba(201, 85, 73, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 111, 200, 0.09);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(128, 125, 120, 1);
+	fill: rgba(128, 125, 120, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(204, 121, 47, 1);
+	fill: rgba(204, 121, 47, 1);
+}
+.block-color-yellow {
+	color: rgba(195, 148, 67, 1);
+	fill: rgba(195, 148, 67, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(63, 126, 190, 1);
+	fill: rgba(63, 126, 190, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(179, 84, 136, 1);
+	fill: rgba(179, 84, 136, 1);
+}
+.block-color-red {
+	color: rgba(201, 85, 73, 1);
+	fill: rgba(201, 85, 73, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(232, 242, 250, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 99, 174, 0.172); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="26fc3aed-7a1a-80d8-9e25-c23cae375015" class="page sans"><header><h1 class="page-title">AVIS.src</h1><p class="page-description"></p></header><div class="page-body"><p id="26fc3aed-7a1a-802f-b911-cb9a82d7c856" class="">Files: <a href="https://drive.google.com/drive/u/1/folders/1rnCS2Uq0pwiu4vPd1H8ncdaCGmNRGI80">https://drive.google.com/drive/u/1/folders/1rnCS2Uq0pwiu4vPd1H8ncdaCGmNRGI80</a></p><p id="271c3aed-7a1a-8095-b2ed-d873de6f5252" class="">
+</p><p id="271c3aed-7a1a-805e-bb42-e35e5e1e64e3" class="">
+</p><h1 id="271c3aed-7a1a-8080-9e5f-fec81edd5f63" class="">AVIS</h1><p id="271c3aed-7a1a-807f-a5da-e930727b00b8" class="">Automated Visual Inspection System</p><h1 id="271c3aed-7a1a-8059-920c-d518fc3785fb" class="">Portable computer vision for high-mix, low-volume manufacturing</h1><h2 id="271c3aed-7a1a-8005-ab23-fa033575fbee" class="">Verify component configuration, markings, and surface condition in real time — using the cameras your teams already own.</h2><p id="271c3aed-7a1a-8063-b234-d745d9f2fb52" class=""><br/></p><figure id="271c3aed-7a1a-80ef-b2ee-da8e13ab2ec3"><div class="source"><a href="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/assembly_extended_3-VEED.mp4">attachment:c9c5bbec-719b-4a4c-a81a-1ef0d2cce0f3:assembly_extended_3-VEED.mp4</a></div></figure><p id="271c3aed-7a1a-8012-b4a0-ee414945528d" class="">
+</p><p id="271c3aed-7a1a-8009-a12b-cf55c745657e" class="">
+</p><h2 id="271c3aed-7a1a-807e-bc9d-e835f30dab1f" class="">Short Value Proposition</h2><ul id="271c3aed-7a1a-80da-acc4-f19e0b772feb" class="bulleted-list"><li style="list-style-type:disc">Your Smartphone is Now a Precision Inspection System</li></ul><ul id="271c3aed-7a1a-807e-90cb-ee71c6f1966f" class="bulleted-list"><li style="list-style-type:disc">Inspect Complex Assemblies in Seconds, Not Minutes</li></ul><ul id="271c3aed-7a1a-80ff-ae88-ca28d4b3ca26" class="bulleted-list"><li style="list-style-type:disc">Real-Time Assembly Verification at Production Speed</li></ul><ul id="271c3aed-7a1a-80b9-ba52-c42ec819102d" class="bulleted-list"><li style="list-style-type:disc">The Assembly Inspector That Never Blinks</li></ul><p id="271c3aed-7a1a-8043-a22e-f33c0cf33ccb" class="">
+</p><ul id="271c3aed-7a1a-80e2-ac77-c3e40f085579" class="bulleted-list"><li style="list-style-type:disc">Automated Visual Inspection for Complex Assemblies</li></ul><p id="271c3aed-7a1a-8099-9003-e7eb3c86c65f" class="">
+</p><figure id="271c3aed-7a1a-8080-9891-e5f9b87bc94d" class="image"><a href="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/Picture1.png"><img style="width:288px" src="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/Picture1.png"/></a></figure><p id="271c3aed-7a1a-805a-9951-f42432b9846a" class="">
+</p><p id="271c3aed-7a1a-8044-b18e-e0f9838e3de1" class="">
+</p><p id="271c3aed-7a1a-80ef-8d6e-edd1520732a4" class="">
+</p><h2 id="271c3aed-7a1a-80a0-937e-d5ba3b993371" class="">Longer Value Proposition</h2><ul id="271c3aed-7a1a-800f-9897-e649ce5411d9" class="bulleted-list"><li style="list-style-type:disc">Verify assemblies with millimeter precision using any smartphone or tablet. Get instant pass/fail decisions with complete digital documentation.</li></ul><ul id="271c3aed-7a1a-80d4-9f42-d34cdca4a784" class="bulleted-list"><li style="list-style-type:disc">Deploy in days, not months. No programming, no specialized hardware, no lengthy training. Just consistent, traceable quality control that scales with your production.</li></ul><ul id="271c3aed-7a1a-8071-9a6b-f114d6cf603d" class="bulleted-list"><li style="list-style-type:disc">Real-time verification of complex configurations. Consistent accuracy across every shift. Complete digital documentation. All through the device in your pocket.</li></ul><ul id="271c3aed-7a1a-8086-9fc8-d6c27a88adff" class="bulleted-list"><li style="list-style-type:disc">AI-driven visual inspection that adapts to high-mix, low-volume production. Fast to deploy, simple to use, and reliable across every operator and every shift.</li></ul><p id="271c3aed-7a1a-80aa-a8eb-dcf0869e404d" class="">
+</p><h2 id="271c3aed-7a1a-8055-a2d5-e74fffce33f3" class="">Game-Changer for HMLV Manufacturing</h2><p id="271c3aed-7a1a-80b8-b149-dc004d883df0" class="">High-mix, low-volume production creates a unique inspection challenge: too many product variations, and not enough scale to justify traditional machine vision. Fixed-camera systems demand custom programming, fixtures, and calibration for each SKU — overhead that quickly breaks the economics of short runs. Manual inspection, meanwhile, struggles with variability and knowledge transfer across shifts.</p><p id="271c3aed-7a1a-80be-b94b-e3b29458859a" class="">Our approach is different. The system is <strong>mobile-first</strong>: it runs on smartphones and tablets, resilient to jitter, rotation, and operator movement. Inspections can happen directly at the machine, inside complex structures, or anywhere on the shop floor.</p><p id="271c3aed-7a1a-807c-87b9-d8eb63e9086f" class="">Just as importantly, it is built for <strong>rapid retooling</strong>. New product families are configured in less than 24 hours, and new variants in about an hour, enabled by synthetic training instead of months of sample collection. This makes automated visual inspection practical for batch runs of tens or hundreds, not just tens of thousands.</p><p id="271c3aed-7a1a-8056-ba33-f8020620d7af" class="">For HMLV manufacturers, it means automated inspection that finally fits the way production really works — <strong>flexible, portable, and economically viable</strong> across the full product mix.</p><p id="271c3aed-7a1a-80c0-b0e8-ea24cf76e179" class="">
+</p><h2 id="271c3aed-7a1a-807c-9e32-e663da34b748" class="">Key HMLV Inspection Challenges</h2><ul id="271c3aed-7a1a-8026-aafe-d6e87f51d126" class="bulleted-list"><li style="list-style-type:disc"><strong>Excessive Setup</strong> — Tooling and calibration overhead slows short runs.</li></ul><ul id="271c3aed-7a1a-8099-a525-dae5a93b0fb9" class="bulleted-list"><li style="list-style-type:disc"><strong>Knowledge Silos</strong> — Critical expertise locked with a few senior inspectors.</li></ul><ul id="271c3aed-7a1a-8017-aba8-d52ac101191b" class="bulleted-list"><li style="list-style-type:disc"><strong>Weak ROI</strong> — Automation economics break down at low volumes.</li></ul><ul id="271c3aed-7a1a-8005-bdae-d175f1bea423" class="bulleted-list"><li style="list-style-type:disc"><strong>Inconsistent Quality</strong> — Results vary widely across shifts and teams.</li></ul><ul id="271c3aed-7a1a-80bf-8054-e7c678c35b68" class="bulleted-list"><li style="list-style-type:disc"><strong>FAI Delays</strong> — First article checks hold up production flow.</li></ul><ul id="271c3aed-7a1a-8039-9004-e4c00c8262de" class="bulleted-list"><li style="list-style-type:disc"><strong>Paper Burden</strong> — Manual records and reporting drain inspection time.</li></ul><p id="271c3aed-7a1a-8010-8691-f9d5fdeba59a" class="">
+</p><p id="271c3aed-7a1a-809f-94af-c679f6d3a273" class="">
+</p><p id="271c3aed-7a1a-8015-bb40-d0986c2001c4" class="">
+</p><h2 id="271c3aed-7a1a-80b1-ba95-ea93145e8c72" class="">AVIS Capabilities</h2><ul id="271c3aed-7a1a-80dc-af8f-c61de3091358" class="bulleted-list"><li style="list-style-type:disc">Assemblies: Detects missing or extra components, incorrect orientation, and positional misalignment.</li></ul><ul id="271c3aed-7a1a-802c-91b5-dfff9a11689d" class="bulleted-list"><li style="list-style-type:disc">Surface Condition: Identifies scratches, dents, paint pinholes, and coating defects.</li></ul><ul id="271c3aed-7a1a-804d-ba8f-c0f69a21f930" class="bulleted-list"><li style="list-style-type:disc">Markings &amp; Text: Validates identification labels, serial numbers, and other text-based markings.</li></ul><p id="271c3aed-7a1a-8030-b79c-d68d98600544" class="">
+</p><p id="271c3aed-7a1a-800f-be5e-cbfe2fec91b0" class="">
+</p><h2 id="271c3aed-7a1a-809f-8d4e-dffc79629e42" class="">Benefits</h2><ul id="271c3aed-7a1a-805f-8a1a-f98eea2c7f39" class="bulleted-list"><li style="list-style-type:disc">Operational accuracy — Assurance that every build matches its intended configuration, reducing costly rework and escapes.</li></ul><ul id="271c3aed-7a1a-80af-92d3-d4638f01ee90" class="bulleted-list"><li style="list-style-type:disc">Faster decisions — Instant accept/rework signals let teams act immediately and keep production flowing.</li></ul><ul id="271c3aed-7a1a-8056-868c-f5fcccd6850e" class="bulleted-list"><li style="list-style-type:disc">Repeatable results — Uniform digital criteria ensure consistent outcomes, eliminating variability between inspectors.</li></ul><ul id="271c3aed-7a1a-80b7-b214-d4312b321097" class="bulleted-list"><li style="list-style-type:disc">Flexible deployment — Works with iPhones and existing cameras, whether handheld for navigating inside complex assemblies or mounted for line operations.</li></ul><ul id="271c3aed-7a1a-8059-baf2-f417b87c53ae" class="bulleted-list"><li style="list-style-type:disc">Proof for compliance — Automatically generates time-stamped evidence and exportable reports to meet ISO/AS9100 and customer requirements.</li></ul><ul id="271c3aed-7a1a-80d7-8533-cbba2205b4b3" class="bulleted-list"><li style="list-style-type:disc">Quick retooling — New part families and/or new configurations are added quickly, keeping inspection aligned with changing production.</li></ul><p id="271c3aed-7a1a-8077-80ac-fc7b0ce0f897" class="">
+</p><p id="271c3aed-7a1a-806c-82f7-fd645e2c383d" class="">
+</p><h2 id="271c3aed-7a1a-807d-8028-d0f078de644c" class="">AVIS Highlights</h2><ul id="271c3aed-7a1a-8052-a9fe-e27e64b268ce" class="bulleted-list"><li style="list-style-type:disc">10 mm positional accuracy</li></ul><ul id="271c3aed-7a1a-80c7-8813-e8ea93121cfa" class="bulleted-list"><li style="list-style-type:disc">No manual labeling</li></ul><ul id="271c3aed-7a1a-80cc-9bd3-df553189b69d" class="bulleted-list"><li style="list-style-type:disc">24-hour set-up time</li></ul><ul id="271c3aed-7a1a-8052-a92d-ea0375a5aaa0" class="bulleted-list"><li style="list-style-type:disc">Available on iPhone</li></ul><ul id="271c3aed-7a1a-8039-af7e-c71ae5a12aa3" class="bulleted-list"><li style="list-style-type:disc">Operates offline</li></ul><ul id="271c3aed-7a1a-8086-a084-c48c73b808f4" class="bulleted-list"><li style="list-style-type:disc">Integration with QMS and PLM</li></ul><p id="271c3aed-7a1a-80e8-b65a-f5492aca0ded" class="">
+</p><h2 id="271c3aed-7a1a-8022-97d7-ce55ce1ea6a5" class="">Not another...</h2><ul id="271c3aed-7a1a-804d-b06d-f5281b7c015e" class="bulleted-list"><li style="list-style-type:disc">pilot that never scales</li></ul><ul id="271c3aed-7a1a-80b7-8243-e724eeafa524" class="bulleted-list"><li style="list-style-type:disc">computer vision model to train from scratch</li></ul><ul id="271c3aed-7a1a-804d-93a6-d46770b13089" class="bulleted-list"><li style="list-style-type:disc">tool locked to one product line</li></ul><ul id="271c3aed-7a1a-8016-9d45-df6113774a29" class="bulleted-list"><li style="list-style-type:disc">multi-million $ scanning machine</li></ul><p id="271c3aed-7a1a-8064-9067-f5100ddbd715" class="">
+</p><p id="271c3aed-7a1a-800d-b3dd-c0851106922d" class="">Our system is powered by a <strong>cascade of computer vision models</strong> that work in sequence to validate assemblies. The first stage identifies and classifies individual components. The second stage aligns these findings with the expected configuration, confirming presence, position, and orientation. A final stage performs higher-order checks such as surface condition and marking validation before delivering a clear, auditable pass/fail decision.</p><p id="271c3aed-7a1a-8041-9055-c69a83c56bd3" class="">To illustrate the principle, we use simplified geometric shapes as a stand-in for real assemblies. The system evaluates the live input against the reference pattern, flags discrepancies when elements are missing or misplaced, and recalculates a correctness score in real time once the pattern is restored.</p><p id="271c3aed-7a1a-8099-80e1-c6f3e48268ef" class="">
+</p><figure id="271c3aed-7a1a-8001-9ceb-fe2244cd99ac"><div class="source"><a href="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/assembly_extended_1-VEED.mp4">attachment:fbfb3686-7985-4e08-89c9-0f891dab0314:assembly_extended_1-VEED.mp4</a></div></figure><p id="271c3aed-7a1a-80ad-ba6d-e9b2c4accdbf" class="">
+</p><p id="271c3aed-7a1a-80bd-9da3-d2aafa5b49a6" class="">The correctness score itself is configurable. By default, it considers the presence of all required items, their dimensions, relative positions, and spacing. Sensitivity thresholds can be tailored to reflect specific tolerances and inspection criteria.</p><p id="271c3aed-7a1a-8062-b66a-cc7d4fd08fb4" class="">
+</p><p id="271c3aed-7a1a-80ee-9fc8-cadf25333f8b" class=""><em><strong>Key steps in the validation workflow</strong></em></p><figure id="271c3aed-7a1a-8047-9062-d1c4a8f61986"><div class="source">https://whimsical.com/assembly1-4ynzqgYA8Z2WpdtsRCE1ap</div></figure><p id="271c3aed-7a1a-80f9-8de7-d8951254c3ff" class=""><br/>Because configuration checks are <strong>invariant to camera angle and tilt</strong>, the system remains flexible and mobile in the operator’s hands. This allows inspections to be carried out not only at fixed stations but also inside complex structures (such as aircraft fuselages) or directly in the field.</p><figure id="271c3aed-7a1a-8001-acc2-fa0e1dc351da"><div class="source"><a href="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/assembly_extended_4-VEED.mp4">attachment:37e53604-b64d-4cb9-b46f-19e0829e4915:assembly_extended_4-VEED.mp4</a></div></figure><p id="271c3aed-7a1a-8005-8c34-f0fa13b109bb" class="">
+</p><h2 id="271c3aed-7a1a-80a5-87db-d75730c54b18" class="">Specs</h2><p id="271c3aed-7a1a-80ca-8206-c4bbb7fe3678" class=""><strong>Accuracy</strong></p><ul id="271c3aed-7a1a-80f2-805e-db72021b5637" class="bulleted-list"><li style="list-style-type:disc">Positional Tolerance: <strong>±10 mm</strong> for component presence and alignment checks.</li></ul><ul id="271c3aed-7a1a-80fc-801f-f9ea1025dc8b" class="bulleted-list"><li style="list-style-type:disc">Component Size: Effective for features as small as <strong>5 mm</strong>.</li></ul><ul id="271c3aed-7a1a-8051-a973-ecba7fc9c615" class="bulleted-list"><li style="list-style-type:disc">Assembly Size: Supports inspections of parts and assemblies up to <strong>5 meters</strong> in scale.</li></ul><ul id="271c3aed-7a1a-808d-83e8-cdc4f17896ed" class="bulleted-list"><li style="list-style-type:disc">Markings: Reliable recognition of text characters down to <strong>3 mm</strong> height.</li></ul><p id="271c3aed-7a1a-8055-bea1-ea463c893ecc" class=""><strong>Setup Speed</strong></p><ul id="271c3aed-7a1a-80db-8e57-e80b92436b73" class="bulleted-list"><li style="list-style-type:disc">New Part Family: Configurable in under <strong>24 hours</strong>.</li></ul><ul id="271c3aed-7a1a-8036-b3f9-cbe94cbaa86d" class="bulleted-list"><li style="list-style-type:disc">New Configuration: Ready in as little as <strong>1 hour</strong>.</li></ul><p id="271c3aed-7a1a-8014-b323-d56463f82c36" class=""><strong>Hardware and Connectivity</strong></p><ul id="271c3aed-7a1a-8022-8b61-d65a10e34be4" class="bulleted-list"><li style="list-style-type:disc">Operates on <strong>iPhones</strong> and <strong>standard HD cameras</strong> — no specialized scanners required.</li></ul><ul id="271c3aed-7a1a-8096-ad14-ee30f366d8a8" class="bulleted-list"><li style="list-style-type:disc">No internet connection is required</li></ul><p id="271c3aed-7a1a-80e3-8e8d-c36c6243869e" class=""><strong>Integration &amp; Compliance</strong></p><ul id="271c3aed-7a1a-80fe-8758-c89f40049df9" class="bulleted-list"><li style="list-style-type:disc">Connects with <strong>ERP, QMS, and PLM systems</strong> for streamlined workflows.</li></ul><ul id="271c3aed-7a1a-800d-a16d-efc47b01ddef" class="bulleted-list"><li style="list-style-type:disc">Every inspection logged with <strong>timestamped, audit-ready records</strong>, designed to support <strong>ISO 9001 / AS9100</strong> standards.</li></ul><p id="271c3aed-7a1a-80dd-b25d-c68c055135fc" class="">
+</p><h2 id="271c3aed-7a1a-80b6-bfad-cc26e5d42ac1" class="">Input Requirements</h2><ul id="271c3aed-7a1a-80a0-b841-f55547f2cd23" class="bulleted-list"><li style="list-style-type:disc">CAD model of the assembly to be inspected</li></ul><ul id="271c3aed-7a1a-8065-9f80-f535884e454a" class="bulleted-list"><li style="list-style-type:disc">Go-around video of the assembly if CAD is missing</li></ul><ul id="271c3aed-7a1a-802c-9c94-f5d6f3f14703" class="bulleted-list"><li style="list-style-type:disc">Articulated acceptance criteria</li></ul><ul id="271c3aed-7a1a-8086-9855-fdcdd0337601" class="bulleted-list"><li style="list-style-type:disc">Lighting of ~800 lux on the shop floor</li></ul><p id="271c3aed-7a1a-80f9-9b41-da013d1a7a44" class="">
+</p><h2 id="271c3aed-7a1a-8078-8e00-c49a8190fe0b" class="">Use Case: Assemblies</h2><p id="271c3aed-7a1a-80e9-9156-dd8bcef00a99" class="">In this proof-of-concept, the goal was to validate both <strong>positional accuracy</strong> and <strong>surface condition</strong> across a mix of components — screws, knobs, and brackets. The assembly was divided into zones, with each zone managed by its own validation model. Zone detection and model hand-off occur automatically, so the transition is seamless to the operator.</p><figure id="271c3aed-7a1a-8033-a203-d804c947f5c1" class="image"><a href="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/photo_2025-09-10_21-00-28.jpg"><img style="width:384px" src="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/photo_2025-09-10_21-00-28.jpg"/></a></figure><p id="271c3aed-7a1a-80cf-92a0-c157f5d0ef2a" class="">
+</p><p id="271c3aed-7a1a-80dc-a31e-e46287e003fe" class="">For example, in Zone 2, the configuration is considered accurate when the left-side knob is present, the right-side knob is absent, the bracket with the larger hole is positioned at the bottom, and no foreign objects appear on the surface.</p><figure id="271c3aed-7a1a-8030-8f39-ec10f1e8466c" class="image"><a href="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/Picture2.png"><img style="width:4400px" src="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/Picture2.png"/></a></figure><p id="271c3aed-7a1a-80c7-adb3-ce0012ed8964" class="">
+</p><p id="271c3aed-7a1a-80ae-9bd0-cd68e6762d45" class="">The video below shows Zone 2 under live analysis, with the system responding immediately to intentional misplacements. Even when components were flipped, swapped, or foreign objects introduced, the deviations were detected in real time. Footage was captured using an iPhone 14 Pro.</p><figure id="271c3aed-7a1a-806e-8cbc-c84824d127d7"><div class="source"><a href="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/video3.mp4">attachment:db2a95a3-ef03-4b21-b6ae-3579537eb975:video3.mp4</a></div></figure><p id="271c3aed-7a1a-8093-80ed-ec9460669944" class="">
+</p><p id="271c3aed-7a1a-80bc-ac80-ec034e67d30a" class="">Video of the full process</p><figure id="271c3aed-7a1a-80ff-a004-f2a4879ec40e"><div class="source"><a href="https://www.veed.io/view/14b110a7-cd4b-4bd6-b064-b4280d5f54ff?source=editor&amp;panel=share">https://www.veed.io/view/14b110a7-cd4b-4bd6-b064-b4280d5f54ff?source=editor&amp;panel=share</a></div></figure><p id="271c3aed-7a1a-80cf-b8b9-d03c5e15457a" class="">
+</p><h3 id="271c3aed-7a1a-809f-906e-e5cc5ac685db" class="">Accuracy Check</h3><p id="271c3aed-7a1a-8011-a9e0-e20605b1bb1c" class="">To illustrate tolerance handling, a simplified shape configuration was used where an error was defined as a <strong>10 mm displacement</strong> of one element.</p><figure id="271c3aed-7a1a-806d-98be-fa552443cf13" class="image"><a href="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/Picture4.png"><img style="width:4400px" src="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/Picture4.png"/></a></figure><p id="271c3aed-7a1a-80e3-8e81-c57527f1696c" class="">
+</p><p id="271c3aed-7a1a-80e2-bd4d-d4a329dd7392" class="">The video demonstrates how the system flags the configuration as incorrect once the shape is displaced, and then restores correctness once it is returned. Tighter tolerances are possible when components are more precisely defined.</p><figure id="271c3aed-7a1a-800b-bf85-ddba84ad9ed4"><div class="source"><a href="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/video4.mp4">attachment:5cde8ed8-bc63-4a66-b518-22bfb7db8199:video4.mp4</a></div></figure><p id="271c3aed-7a1a-8063-8a7f-ca69816ad054" class="">
+</p><p id="271c3aed-7a1a-8011-b34d-d7dd31ee09e8" class="">
+</p><h2 id="271c3aed-7a1a-80c0-810f-f9464c98fdb3" class="">Use Case: Marking</h2><p id="271c3aed-7a1a-80b2-abc6-d81c627c43ed" class="">This example highlights the system’s ability to <strong>validate factory markings</strong>. A variation of a pipe is first detected by a dedicated model, after which the factory-applied label is read using the text recognition functionality. The detected part and its label are then cross-checked to ensure consistency.</p><p id="271c3aed-7a1a-80e4-b4de-effe9466875b" class="">The video below illustrates both outcomes: a <strong>pass</strong> when the label matches the expected specification, and a <strong>fail</strong> when the pipe is incorrectly marked.</p><figure id="271c3aed-7a1a-809c-aa99-e8045098ad98"><div class="source"><a href="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/video9.mp4">attachment:fbc881bc-df3e-4357-9e6e-78bb0e76d486:video9.mp4</a></div></figure><p id="271c3aed-7a1a-8050-86e0-f0c46c36a195" class="">
+</p><h2 id="271c3aed-7a1a-8086-8711-c6e235b7d7fa" class="">Technology in Detail</h2><p id="271c3aed-7a1a-8094-9f62-e670c5daf3c3" class="">The detection models are trained through a <strong>synthetic rendering pipeline</strong>, eliminating the need for manual labeling. This approach enables rapid adaptation, with new part families ready for inspection within 24 hours.</p><figure id="271c3aed-7a1a-80ee-91ff-fa7e31357ed0" class="image"><a href="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/gif1.gif"><img style="width:288px" src="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/gif1.gif"/></a></figure><p id="271c3aed-7a1a-8024-b99a-e730443f9c9c" class=""><br/>Configuration validation models are trained <strong>directly on the shop floor</strong>. Operators demonstrate both correct and incorrect configurations, allowing the system to learn real-world variations and tolerance limits through repeated examples.</p><figure id="271c3aed-7a1a-80d8-9856-e81099df33fc"><div class="source"><a href="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/video7.mp4">attachment:ea3d3136-a63f-4629-b2c8-4cfc5b496779:video7.mp4</a></div></figure><p id="271c3aed-7a1a-80de-a62b-c5ac36f6d8da" class="">
+</p><figure id="271c3aed-7a1a-80f2-8156-ee8c2aeba827"><div class="source"><a href="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/video8.mp4">attachment:04e08093-3d9c-4b4a-adea-9dbc70253590:video8.mp4</a></div></figure><p id="274c3aed-7a1a-80d7-a884-c7cd14225f43" class="">
+</p><p id="274c3aed-7a1a-804e-b7e1-dd82bfdbaa08" class="">
+</p><div id="274c3aed-7a1a-808c-bbcd-fe6b520bc7a6" class="column-list"><div id="274c3aed-7a1a-8083-b550-ca29e03dd532" style="width:50%" class="column"><h3 id="274c3aed-7a1a-80d1-ac99-f9fa97624a9c" class="">The system detects and flags missing or misplaced components, guiding operators to precise corrections.</h3><figure id="274c3aed-7a1a-80dc-8e02-ced306d55c7f" class="image"><a href="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/misplacement_3.gif"><img style="width:336px" src="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/misplacement_3.gif"/></a></figure></div><div id="274c3aed-7a1a-8096-8c07-d66a20ae7a64" style="width:49.99999999999999%" class="column"><h3 id="274c3aed-7a1a-8040-965e-cacc85a7c30f" class="">AVIS instantly verifies correct assembly and highlights all components <br/>that meet template specification.</h3><figure id="274c3aed-7a1a-801a-b291-f29e93fa80c2" class="image"><a href="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/misplacement_2.gif"><img style="width:373.4921875px" src="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/misplacement_2.gif"/></a></figure><p id="274c3aed-7a1a-8050-8fac-c70d5ac2935b" class="">
+</p></div></div><div id="274c3aed-7a1a-8089-8351-d41178ea3915" class="column-list"><div id="274c3aed-7a1a-80ae-b747-c5a2d59d5cce" style="width:50%" class="column"><h3 id="274c3aed-7a1a-8023-8fc8-e85037759003" class="">Real-time inspection overlays provide confidence scores and visual feedback for every step of the process.</h3><figure id="274c3aed-7a1a-803c-b8c3-d010df0f00b3" class="image"><a href="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/misplacement.gif"><img style="width:331.984375px" src="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/misplacement.gif"/></a></figure></div><div id="274c3aed-7a1a-8011-ad52-cb7a43d40d0c" style="width:49.99999999999999%" class="column"><h3 id="274c3aed-7a1a-8024-8a09-e130fe12adb7" class="">AVIS identifies and alerts for foreign objects present in the assembly zone, ensuring safety and compliance.</h3><figure id="274c3aed-7a1a-80a7-9d62-c4e886f566e9" class="image"><a href="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/foreign_object.gif"><img style="width:373.4921875px" src="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/foreign_object.gif"/></a></figure></div></div><h3 id="270c3aed-7a1a-806e-b1cc-e4eb6daf86d5" class="">Onboarding / POC request questionnaire</h3><ol type="1" id="faffd2e1-68dd-4f52-9ff7-5a7a49a7737e" class="numbered-list" start="1"><li>How are inspections performed?<br/>Fixed station (bench or cell)<br/>Mobile (operators moving around the assembly)<br/>Mixed (some fixed, some mobile)</li></ol><ol type="1" id="83772c1c-ace9-46b5-a58d-7b97e1973d49" class="numbered-list" start="2"><li>What digital assets are available?<br/>Complete CAD model<br/>CAD of selected components<br/>2D drawings or PDFs<br/>Photos/videos of the assembly<br/>None</li></ol><ol type="1" id="1f9beef0-97b4-46f2-b596-9a8a643c77f5" class="numbered-list" start="3"><li>How well are acceptance criteria defined?<br/>Fully defined (drawings + tolerances provided)<br/>Partially defined (flexible by design)<br/>Not defined</li></ol><ol type="1" id="5f3abb8e-4187-410a-85e5-83188d2a3edf" class="numbered-list" start="4"><li>What is the size range of components and assemblies?<br/>Smallest component:<br/>&lt;1/4&quot;<br/>1/4&quot;–1&quot;<br/>1&quot;</li></ol><ol type="1" id="0fe3ce62-be39-43a7-928d-e5eff830d811" class="numbered-list" start="5"><li>Complete assembly size:<br/>&lt;10&quot;<br/>10&quot;–30&quot;<br/>30&quot;</li></ol><ol type="1" id="36d226e3-bfae-41ef-861f-b33a5b547fc7" class="numbered-list" start="6"><li>Which defect types should be detected? (multi-select)<br/>Missing components<br/>Misplaced/misaligned components<br/>Surface defects (scratches, dents, coating issues)<br/>Wrong/missing markings or labels<br/>Foreign objects<br/>Other: ________</li></ol><ol type="1" id="be56426a-f72b-4b6b-83e0-9aaf05b0e04b" class="numbered-list" start="7"><li>What positional/offset tolerance is required?<br/>±0.001&quot;<br/>±0.004&quot;<br/>±0.01&quot;<br/>Other: ________</li></ol><ol type="1" id="6d844057-05eb-4d96-bdbf-9bc5ceddd881" class="numbered-list" start="8"><li>Frequency and Volume of Inspections<br/>First Article Inspection only<br/>Batch sampling (e.g., 1 in 10 units)<br/>100% of assemblies, inline or near-line<br/>Other: ________</li></ol><p id="270c3aed-7a1a-80bd-bba1-cc9744ea7b9d" class="">
+</p><p id="270c3aed-7a1a-803e-a5c2-fba1421df14e" class="">
+</p><p id="270c3aed-7a1a-8052-a99f-c5bc232decb4" class="">
+</p><p id="26fc3aed-7a1a-80be-99b8-e9340b5c80f9" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

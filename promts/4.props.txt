@@ -1,0 +1,2 @@
+using as input avis_ladning.json crete suitable props_avis.json with all props in format like in props_update_request_sample.json, 
+taking all props with all possible their values from landing_db.json properties

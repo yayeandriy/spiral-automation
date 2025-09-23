@@ -1,0 +1,1 @@
+look up at src/avis deep inside all content including nested folders and based on that create user guide for AVIS in html, palce it in docs/avis

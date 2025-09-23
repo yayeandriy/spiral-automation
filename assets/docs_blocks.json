@@ -1,0 +1,6056 @@
+[
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-815e-b819-d41ba0666a0f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_1",
+    "heading_1": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "System Overview",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "System Overview",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-814c-a57f-fe47b8838abb",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "AVIS (Automated Visual Inspection System) transforms your smartphone into a precision inspection system for high-mix, low-volume manufacturing environments.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "AVIS (Automated Visual Inspection System) transforms your smartphone into a precision inspection system for high-mix, low-volume manufacturing environments.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8180-8fbc-f6a65a69b191",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "callout",
+    "callout": {
+      "icon": {
+        "type": "emoji",
+        "emoji": "ℹ️"
+      },
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "This portable computer vision solution enables real-time verification of component configuration, markings, and surface conditions using cameras your teams already own.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "This portable computer vision solution enables real-time verification of component configuration, markings, and surface conditions using cameras your teams already own.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81de-9ccc-d76abff36ece",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "What is AVIS?",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "What is AVIS?",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8198-acd1-e5bc86213061",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "AVIS is a cutting-edge computer vision platform that leverages artificial intelligence to provide:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "AVIS is a cutting-edge computer vision platform that leverages artificial intelligence to provide:",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81bb-8f87-ed4ca19d8fa7",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Real-time visual inspection and quality control",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Real-time visual inspection and quality control",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8140-bacc-dc543143625f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Automated component detection and validation",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Automated component detection and validation",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81d6-8a3e-f4308e597cb3",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Foreign object detection and alerting",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Foreign object detection and alerting",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-817f-bb08-e1f5bb1c1423",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Digital documentation and audit trails",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Digital documentation and audit trails",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81e7-af81-f51545ddb443",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Seamless integration with existing manufacturing systems",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Seamless integration with existing manufacturing systems",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8182-973e-f507034fda2a",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "📊 Key Metrics:",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "📊 Key Metrics:",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81db-800e-ee2e3738647d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "• 10mm Positional Accuracy\n• 24hrs Setup Time\n• 8sec Inspection Time\n• 100% Offline Operation",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "• 10mm Positional Accuracy\n• 24hrs Setup Time\n• 8sec Inspection Time\n• 100% Offline Operation",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81d0-a74a-d16bdb0a0fdf",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_1",
+    "heading_1": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Key Features & Performance",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Key Features & Performance",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81ad-be21-d6b27292656d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🎯 Precision Detection",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "🎯 Precision Detection",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81bb-8856-ccd30e9518bf",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Achieve 10mm positional accuracy for component presence and alignment checks, ensuring consistent quality control across all manufacturing processes.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Achieve 10mm positional accuracy for component presence and alignment checks, ensuring consistent quality control across all manufacturing processes.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81ff-98e0-c7709b7b2d57",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "⚡ Rapid Setup",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "⚡ Rapid Setup",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-812e-bbe5-fd7399428903",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Configure new part families in just 24 hours instead of weeks, dramatically reducing time-to-production for new components.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Configure new part families in just 24 hours instead of weeks, dramatically reducing time-to-production for new components.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8186-8e0f-fa937e88a0ac",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🔍 Real-time Inspection",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "🔍 Real-time Inspection",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81f5-a1cf-c6569c418958",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Complete inspections in just 8 seconds versus minutes with manual checking, increasing throughput without compromising quality.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Complete inspections in just 8 seconds versus minutes with manual checking, increasing throughput without compromising quality.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81a3-ab6d-c7a3d081920b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🔒 Reliable Operation",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "🔒 Reliable Operation",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81d5-a8e7-c42da25d85b0",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "100% offline operation with no internet connection required, ensuring consistent performance in any manufacturing environment.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "100% offline operation with no internet connection required, ensuring consistent performance in any manufacturing environment.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-812a-9e98-d3be18e256e7",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "📱 Mobile Integration",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "📱 Mobile Integration",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8173-a11a-d9083ab803bf",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Transform everyday smartphones into powerful quality control tools, leveraging existing hardware investments.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Transform everyday smartphones into powerful quality control tools, leveraging existing hardware investments.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-814e-b8f9-df2ee3e38466",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🤖 AI-Powered Analysis",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "🤖 AI-Powered Analysis",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8119-a4a1-d00bf95f9bb4",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Computer vision models work in sequence to validate assemblies and identify individual components with high accuracy.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Computer vision models work in sequence to validate assemblies and identify individual components with high accuracy.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8107-9788-e54fbffe741e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Core Capabilities",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Core Capabilities",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8139-a83e-f8d6c2ea04ec",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Assembly Detection",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Assembly Detection",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81df-a638-e227fb57fb64",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Identifies missing or extra components, incorrect orientation, and positional misalignment. Ensures accurate matching against expected configuration.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Identifies missing or extra components, incorrect orientation, and positional misalignment. Ensures accurate matching against expected configuration.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81dd-b72f-c7065b59e583",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Surface Analysis",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Surface Analysis",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81bb-bbe5-f537f3e24b10",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Detects scratches, dents, paint pinholes, and coating defects. Validates identification labels, serial numbers, and other text-based markings.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Detects scratches, dents, paint pinholes, and coating defects. Validates identification labels, serial numbers, and other text-based markings.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8110-a803-cba770714e69",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "System Integration",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "System Integration",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-817a-9ec8-e0bffd2b8d5d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Connects with ERP, QMS, and PLM systems for streamlined workflows. Every inspection logged with timestamps and audit-ready records.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Connects with ERP, QMS, and PLM systems for streamlined workflows. Every inspection logged with timestamps and audit-ready records.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8193-8640-e3f2e634a0ff",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_1",
+    "heading_1": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Getting Started",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Getting Started",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-815b-9f78-d77e8daab8f5",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "System Requirements",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "System Requirements",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-813c-b709-d72cdaec3b25",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "callout",
+    "callout": {
+      "icon": {
+        "type": "emoji",
+        "emoji": "ℹ️"
+      },
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Minimum Requirements:",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Minimum Requirements:",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81e7-a878-d6b33bca0e52",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Smartphone with camera (iOS 12+ or Android 8+)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Smartphone with camera (iOS 12+ or Android 8+)",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81f4-8b39-ee653746e4d9",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Stable lighting conditions (recommended: 500-1000 lux)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Stable lighting conditions (recommended: 500-1000 lux)",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-815b-ba7e-fe3ec36f911d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Clear workspace with minimal background interference",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Clear workspace with minimal background interference",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8175-a82a-d08b1ad084fe",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Network connection for initial setup and updates (optional for operation)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Network connection for initial setup and updates (optional for operation)",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81e3-8b25-ede8c53f7e0a",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "What You Need",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "What You Need",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81b2-917d-d0081fbf5758",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Compatible mobile device",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Compatible mobile device",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8140-9349-d785368883c8",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "AVIS application installed",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "AVIS application installed",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81c7-9b55-dfc5b1ba9639",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Component templates configured",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Component templates configured",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-811a-937b-d74869c76074",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Adequate lighting setup",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Adequate lighting setup",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81f9-abd5-c5914b6dca83",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Clean inspection area",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Clean inspection area",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8104-98b5-fa1bff283aa6",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "First Time Setup Checklist",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "First Time Setup Checklist",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-814e-8695-f6a53612ac16",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Install Application - Download and install the AVIS app on your mobile device",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Install Application - Download and install the AVIS app on your mobile device",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-815d-b012-e1eca32d34bd",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Configure Templates - Set up component templates and inspection parameters",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Configure Templates - Set up component templates and inspection parameters",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8121-9a6f-fb6d17559225",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Calibrate System - Perform initial calibration for accurate measurements",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Calibrate System - Perform initial calibration for accurate measurements",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-815b-8047-faf643f2a9fc",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Test & Validate - Run test inspections to ensure proper operation",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Test & Validate - Run test inspections to ensure proper operation",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81f0-93fd-e3dc67df6931",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_1",
+    "heading_1": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Setup Process",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Setup Process",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8165-9a50-cec27bc6303a",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Template Configuration",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Template Configuration",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8117-b204-d1de8140d24d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "AVIS transforms template configurations into real-time detection parameters. The setup process involves creating digital templates that define the expected configuration of your assemblies.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "AVIS transforms template configurations into real-time detection parameters. The setup process involves creating digital templates that define the expected configuration of your assemblies.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81d9-86c3-cae2ed47643e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Define Assembly Zones - Divide your assembly into logical zones, with each zone managed by its own validation model",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Define Assembly Zones - Divide your assembly into logical zones, with each zone managed by its own validation model",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81e4-b3fb-dd4ec5904e4e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Component Mapping - Map individual components within each zone, defining position, orientation, and acceptance criteria",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Component Mapping - Map individual components within each zone, defining position, orientation, and acceptance criteria",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8194-8440-c70131cb47cb",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Quality Parameters - Set quality thresholds for surface condition, markings, and dimensional tolerances",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Quality Parameters - Set quality thresholds for surface condition, markings, and dimensional tolerances",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-812a-baac-d32917d196fd",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Validation Testing - Test the configuration with known good and bad samples to ensure accuracy",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Validation Testing - Test the configuration with known good and bad samples to ensure accuracy",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81d5-800d-fca128c5e85b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "callout",
+    "callout": {
+      "icon": {
+        "type": "emoji",
+        "emoji": "⚠️"
+      },
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Important: Allow 24 hours for initial template configuration. This one-time setup replaces weeks of traditional programming and calibration.",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Important: Allow 24 hours for initial template configuration. This one-time setup replaces weeks of traditional programming and calibration.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-815f-a1f9-e7652483b503",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Lighting Setup",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Lighting Setup",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8165-bd3a-d0563caac136",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Proper lighting is crucial for accurate inspection results:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Proper lighting is crucial for accurate inspection results:",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-813c-bc58-d5311f3bbef5",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Maintain consistent lighting levels (500-1000 lux recommended)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Maintain consistent lighting levels (500-1000 lux recommended)",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81fb-9a06-c0f4820ff62c",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Avoid shadows and reflections on inspection surfaces",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Avoid shadows and reflections on inspection surfaces",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81fa-9155-e9e7ff0072c4",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Use diffused lighting to minimize glare",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Use diffused lighting to minimize glare",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81bc-9397-f406c03533d4",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Consider using LED panels for consistent color temperature",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Consider using LED panels for consistent color temperature",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8139-8a1d-cf672e6d3c94",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_1",
+    "heading_1": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Inspection Types",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Inspection Types",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-816d-83c6-ea11eaebbaaa",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Assembly Verification",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Assembly Verification",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8181-a3e9-e4fe69983918",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "AVIS provides comprehensive assembly verification capabilities:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "AVIS provides comprehensive assembly verification capabilities:",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-817c-b021-d62b123e43a1",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Component Presence Detection",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Component Presence Detection",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-814d-9759-cbd78c8a9bc0",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Identifies missing or extra components",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Identifies missing or extra components",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8115-a8e2-d742c019aa17",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Verifies correct component placement",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Verifies correct component placement",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8130-909a-e9ee23c2d662",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Detects incorrect orientation",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Detects incorrect orientation",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-815a-a4fb-cc0e57bd46eb",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Validates positional alignment within 10mm accuracy",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Validates positional alignment within 10mm accuracy",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8174-95f0-d723b64ead54",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Misplacement Detection",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Misplacement Detection",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81f2-aff6-e6bdff18c730",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "The system detects and flags missing or misplaced components, guiding operators to precise corrections. Real-time inspection overlays provide confidence scores and visual feedback for every step of the process.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "The system detects and flags missing or misplaced components, guiding operators to precise corrections. Real-time inspection overlays provide confidence scores and visual feedback for every step of the process.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-816f-9301-fe65c00fdc7b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Foreign Object Detection",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Foreign Object Detection",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8122-996e-dd30ce812757",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "AVIS identifies and alerts for foreign objects present in the assembly zone, ensuring safety and compliance with manufacturing standards.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "AVIS identifies and alerts for foreign objects present in the assembly zone, ensuring safety and compliance with manufacturing standards.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-819f-adbf-c2f7da649c55",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Surface Quality Analysis",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Surface Quality Analysis",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81e4-9936-d8dd378ba9c2",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Defect Detection",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Defect Detection",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81af-ab3f-ec3c871eecb7",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Identifies scratches, dents, paint pinholes, and coating defects on component surfaces",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Identifies scratches, dents, paint pinholes, and coating defects on component surfaces",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-817d-a24a-f07a4e75711e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Marking Validation",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Marking Validation",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-818f-96a3-fde2941fdf57",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Validates identification labels, serial numbers, barcodes, and other text-based markings using OCR technology",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Validates identification labels, serial numbers, barcodes, and other text-based markings using OCR technology",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8177-bf45-ef2c3bb4b5c5",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Dimensional Checks",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Dimensional Checks",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8179-9d20-e88660948ec8",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Verifies component dimensions and geometric tolerances within specified limits",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Verifies component dimensions and geometric tolerances within specified limits",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8105-baf0-d193d5100cf2",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Use Cases",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Use Cases",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-816d-af47-e74555a124e4",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "High-Mix Manufacturing",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "High-Mix Manufacturing",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81c1-b192-fd103c26b7b4",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Validate both positional accuracy and surface condition across a mix of components - screws, knobs, and brackets. Assembly is divided into zones, with each zone managed by its own validation model.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Validate both positional accuracy and surface condition across a mix of components - screws, knobs, and brackets. Assembly is divided into zones, with each zone managed by its own validation model.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-811f-91fc-f03c099127aa",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Component Marking",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Component Marking",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81ed-9cbc-c8a5bf345dd2",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Leverages machine learning ability to validate factory markings. A validation of a pipe is first detected by a defect-based model, after which the factory-applied label is read using text recognition functionality.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Leverages machine learning ability to validate factory markings. A validation of a pipe is first detected by a defect-based model, after which the factory-applied label is read using text recognition functionality.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81aa-a7d2-f292b0280004",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Quality Documentation",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Quality Documentation",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8124-abab-d7f485a37bb2",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Generate complete digital criteria with uniform standards that ensure consistent outcomes, eliminating variability between inspectors. Automatically generates time-stamped evidence and exportable reports.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Generate complete digital criteria with uniform standards that ensure consistent outcomes, eliminating variability between inspectors. Automatically generates time-stamped evidence and exportable reports.",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81b2-ba73-d017f33179bd",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_1",
+    "heading_1": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "System Integration",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "System Integration",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-815f-9b61-c189274335f0",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Manufacturing System Integration",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Manufacturing System Integration",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-810d-b116-e1115aae075e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "AVIS seamlessly integrates with existing manufacturing systems to provide comprehensive quality control:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "AVIS seamlessly integrates with existing manufacturing systems to provide comprehensive quality control:",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81fb-8166-d189ca561be7",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "ERP Integration",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "ERP Integration",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-811e-9adf-d1a21c33f092",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Connect with Enterprise Resource Planning systems for production tracking and resource management",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Connect with Enterprise Resource Planning systems for production tracking and resource management",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81ba-89d4-e8f3ffca86f8",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "QMS Integration",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "QMS Integration",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81b9-afe3-d3a69b57ed81",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Interface with Quality Management Systems for comprehensive quality data collection and analysis",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Interface with Quality Management Systems for comprehensive quality data collection and analysis",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81b0-b51c-c0c68bb0846b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "PLM Integration",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "PLM Integration",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8133-8807-e221b324159e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Link with Product Lifecycle Management systems for design feedback and continuous improvement",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Link with Product Lifecycle Management systems for design feedback and continuous improvement",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8124-9c27-d0315d3b5b71",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Data Management",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Data Management",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-813f-bea5-f98c344feb0e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Every inspection logged with precise timestamps",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Every inspection logged with precise timestamps",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81da-9f8b-c51113bb3061",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Audit-ready records for compliance requirements",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Audit-ready records for compliance requirements",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81c9-a36d-c5f82b2e53be",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Digital documentation eliminates paper-based processes",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Digital documentation eliminates paper-based processes",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81ba-bff1-ef196c253ad0",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Real-time data analytics and reporting",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Real-time data analytics and reporting",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8178-9381-eeeeb0d28843",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Traceability throughout the manufacturing process",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Traceability throughout the manufacturing process",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81bf-ad37-e0b6fbeb1db8",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Workflow Integration",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Workflow Integration",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-817f-a943-da653bfa35b6",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "AVIS adapts to your existing workflows:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "AVIS adapts to your existing workflows:",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81da-8d73-cadff55d3a0e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Seamless integration with current inspection processes",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Seamless integration with current inspection processes",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81be-b970-d68d1c269b9b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Configurable alerts and notifications",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Configurable alerts and notifications",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8191-a027-d58f57683a1a",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Automatic report generation and distribution",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Automatic report generation and distribution",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8122-a66f-d6564e8e7600",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Role-based access control and permissions",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Role-based access control and permissions",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-810f-9524-f71d33b9ce75",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_1",
+    "heading_1": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Troubleshooting",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Troubleshooting",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81f3-a338-e53f1afeaa68",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Common Issues and Solutions",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Common Issues and Solutions",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8100-a792-c63222d095fd",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Camera and Image Quality",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Camera and Image Quality",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8194-928a-f1ae2a436e8c",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "callout",
+    "callout": {
+      "icon": {
+        "type": "emoji",
+        "emoji": "⚠️"
+      },
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Issue: Blurry or unclear images affecting detection accuracy",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Issue: Blurry or unclear images affecting detection accuracy",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8187-b4fb-e2790a5a5cf8",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Clean camera lens before each inspection session",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Clean camera lens before each inspection session",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8198-8c70-d26d74f8f42a",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Ensure adequate lighting (500-1000 lux)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Ensure adequate lighting (500-1000 lux)",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81ff-8f5f-f62eaa413215",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Maintain steady hand position during capture",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Maintain steady hand position during capture",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-818c-8c51-ea197e68319c",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Check for camera focus issues",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Check for camera focus issues",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-819f-b945-feab3c81e98d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Error Codes",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Error Codes",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81e1-bdf3-cb828178e223",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "code",
+    "code": {
+      "caption": [],
+      "language": "plain text",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "E001: Camera initialization failed - Check camera permissions\nE002: Template not found - Verify template configuration\nE003: Insufficient lighting - Adjust lighting conditions\nE004: Network connection error - Check internet connectivity\nE005: Processing timeout - Reduce image complexity or restart app",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "E001: Camera initialization failed - Check camera permissions\nE002: Template not found - Verify template configuration\nE003: Insufficient lighting - Adjust lighting conditions\nE004: Network connection error - Check internet connectivity\nE005: Processing timeout - Reduce image complexity or restart app",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81dd-867c-f8590d2c5fca",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_1",
+    "heading_1": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Support & Resources",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Support & Resources",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81d1-a893-f6399cd6e7c6",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "is_toggleable": false,
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Getting Help",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Getting Help",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81df-adb2-ece7784028e5",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Spiral Technology provides comprehensive support for AVIS users:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Spiral Technology provides comprehensive support for AVIS users:",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8138-b194-f7dc3bb3b0fd",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "📧 Email Support",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "📧 Email Support",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81df-990e-c8bde40ab041",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Contact our technical support team at ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Contact our technical support team at ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "info@spiral.technology",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "info@spiral.technology",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-812b-af11-f6e00f9abe69",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "📞 Phone Support",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "📞 Phone Support",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8149-9005-cf89fea706ee",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Speak directly with our experts for immediate assistance",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Speak directly with our experts for immediate assistance",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8142-a590-c15be962fa02",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "💬 Live Chat",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "💬 Live Chat",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-8181-bf38-d5ba2088419b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Get real-time support through our online chat system",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Get real-time support through our online chat system",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81b2-b43e-d67d1a4a36e6",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "📚 Documentation",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "📚 Documentation",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-812d-b555-ebe531780039",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Access comprehensive guides, tutorials, and API documentation",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Access comprehensive guides, tutorials, and API documentation",
+          "href": null
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f",
+    "id": "277c3aed-7a1a-81d2-a2f9-d03b9b708723",
+    "parent": {
+      "type": "page_id",
+      "page_id": "276c3aed-7a1a-802b-88d2-d13e6edd564f"
+    },
+    "created_time": "2025-09-23T10:43:00.000Z",
+    "last_edited_time": "2025-09-23T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "c955e718-019b-4cb8-91e1-15082140af99"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "callout",
+    "callout": {
+      "icon": {
+        "type": "emoji",
+        "emoji": "🚀"
+      },
+      "color": "default",
+      "text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Quick Start: Ready to begin? Contact our team to schedule a demo and discuss your specific manufacturing requirements. We'll help you get started with AVIS and ensure optimal performance for your use case.",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Quick Start: Ready to begin? Contact our team to schedule a demo and discuss your specific manufacturing requirements. We'll help you get started with AVIS and ensure optimal performance for your use case.",
+          "href": null
+        }
+      ]
+    }
+  }
+]

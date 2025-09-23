@@ -1,0 +1,8 @@
+now observe avis_src full content, icluding all subfolders, 
+and based on this and follwoing our 
+landing_page_structure_schema.json 
+create a landing for AVIS, 
+choosing best suited confiruation. 
+Output as html with local file linked if 
+need for media or placeholders with 
+desc if needed material not exist.

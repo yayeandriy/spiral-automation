@@ -1,0 +1,3 @@
+generate json file which corresponds this html
+this json will be used as a body request to create notion blocks (see for ref Notion API)
+place it in /dist/docs/roboscope/blocks folder

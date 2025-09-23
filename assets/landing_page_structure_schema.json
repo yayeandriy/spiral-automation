@@ -1,0 +1,518 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Landing Page Structure Schema",
+  "description": "Generalized schema for defining landing page zones, sections, and blocks based on analysis of 18 landing pages",
+  "type": "object",
+  "properties": {
+    "landing_page": {
+      "type": "object",
+      "properties": {
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "page_title": {
+              "type": "string",
+              "description": "Main page title"
+            },
+            "page_type": {
+              "type": "string",
+              "enum": ["saas_b2b", "consumer_hardware", "ai_ml_tools", "creative_tools", "mobile_apps", "development_services"],
+              "description": "Industry category of the landing page"
+            },
+            "layout_pattern": {
+              "type": "string",
+              "enum": ["single_page_scroll", "multi_section_detailed", "demo_focused", "feature_grid"],
+              "description": "Overall layout approach"
+            },
+            "target_audience": {
+              "type": "string",
+              "enum": ["b2b", "b2c", "developer", "enterprise", "consumer"],
+              "description": "Primary target audience"
+            }
+          },
+          "required": ["page_title", "page_type"]
+        },
+        "zones": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 5,
+          "items": {
+            "$ref": "#/definitions/zone"
+          },
+          "description": "Major parts of the landing page (up to 5 zones)"
+        }
+      },
+      "required": ["metadata", "zones"]
+    }
+  },
+  "definitions": {
+    "zone": {
+      "type": "object",
+      "properties": {
+        "zone_id": {
+          "type": "string",
+          "description": "Unique identifier for the zone"
+        },
+        "zone_type": {
+          "type": "string",
+          "enum": ["hero_zone", "features_benefits_zone", "social_proof_zone", "product_showcase_zone", "conversion_zone"],
+          "description": "Type of zone based on primary purpose"
+        },
+        "zone_name": {
+          "type": "string",
+          "description": "Human-readable name for the zone"
+        },
+        "zone_purpose": {
+          "type": "string",
+          "description": "Primary purpose and goal of this zone"
+        },
+        "position": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Order position of zone on the page"
+        },
+        "is_above_fold": {
+          "type": "boolean",
+          "description": "Whether zone appears above the fold"
+        },
+        "sections": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/section"
+          },
+          "description": "Building blocks within the zone"
+        }
+      },
+      "required": ["zone_id", "zone_type", "zone_name", "position", "sections"]
+    },
+    "section": {
+      "type": "object",
+      "properties": {
+        "section_id": {
+          "type": "string",
+          "description": "Unique identifier for the section"
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "hero_section",
+            "navigation_section", 
+            "features_overview_section",
+            "testimonials_section",
+            "pricing_section",
+            "demo_section",
+            "integration_section",
+            "faq_section",
+            "footer_section",
+            "call_to_action_section",
+            "benefits_section",
+            "capabilities_section",
+            "use_cases_section",
+            "customer_logos_section",
+            "case_studies_section",
+            "reviews_section",
+            "product_gallery_section",
+            "specifications_section",
+            "comparison_section",
+            "signup_section",
+            "contact_section"
+          ],
+          "description": "Type of section based on content and purpose"
+        },
+        "section_name": {
+          "type": "string",
+          "description": "Human-readable name for the section"
+        },
+        "section_purpose": {
+          "type": "string",
+          "description": "Primary purpose of this section"
+        },
+        "layout": {
+          "type": "string",
+          "enum": ["single_column", "two_column", "three_column", "grid", "carousel", "accordion", "tabs", "hero_banner", "split_screen"],
+          "description": "Layout structure of the section"
+        },
+        "blocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/block"
+          },
+          "description": "Individual content blocks within the section"
+        }
+      },
+      "required": ["section_id", "section_type", "section_name", "blocks"]
+    },
+    "block": {
+      "type": "object",
+      "properties": {
+        "block_id": {
+          "type": "string",
+          "description": "Unique identifier for the block"
+        },
+        "block_category": {
+          "type": "string",
+          "enum": ["text_blocks", "visual_blocks", "interactive_blocks", "social_proof_blocks"],
+          "description": "High-level category of the block"
+        },
+        "block_type": {
+          "type": "string",
+          "enum": [
+            "headline_primary",
+            "headline_secondary", 
+            "body_text",
+            "list_items",
+            "hero_image",
+            "feature_icons",
+            "product_screenshots",
+            "demo_videos",
+            "customer_photos",
+            "cta_button_primary",
+            "cta_button_secondary",
+            "forms",
+            "navigation_menus",
+            "testimonial_quotes",
+            "company_logos",
+            "statistics",
+            "ratings_reviews",
+            "pricing_table",
+            "feature_comparison",
+            "contact_information",
+            "social_media_links",
+            "legal_links"
+          ],
+          "description": "Specific type of content block"
+        },
+        "content": {
+          "$ref": "#/definitions/block_content",
+          "description": "The actual content of the block"
+        },
+        "styling": {
+          "$ref": "#/definitions/block_styling",
+          "description": "Visual styling properties"
+        },
+        "functionality": {
+          "$ref": "#/definitions/block_functionality",
+          "description": "Interactive functionality if applicable"
+        }
+      },
+      "required": ["block_id", "block_category", "block_type", "content"]
+    },
+    "block_content": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Text content of the block"
+        },
+        "alt_text": {
+          "type": "string",
+          "description": "Alternative text for accessibility"
+        },
+        "media_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for images, videos, or other media"
+        },
+        "media_type": {
+          "type": "string",
+          "enum": ["image", "video", "audio", "svg", "gif"],
+          "description": "Type of media content"
+        },
+        "link_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for clickable elements"
+        },
+        "link_target": {
+          "type": "string",
+          "enum": ["_self", "_blank", "_parent", "_top"],
+          "description": "Link target behavior"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List items for list blocks"
+        },
+        "form_fields": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/form_field"
+          },
+          "description": "Form fields for form blocks"
+        }
+      }
+    },
+    "block_styling": {
+      "type": "object",
+      "properties": {
+        "size": {
+          "type": "string",
+          "enum": ["small", "medium", "large", "extra_large"],
+          "description": "Relative size of the block"
+        },
+        "color_scheme": {
+          "type": "string",
+          "enum": ["primary", "secondary", "accent", "neutral", "success", "warning", "error"],
+          "description": "Color scheme applied to the block"
+        },
+        "font_weight": {
+          "type": "string",
+          "enum": ["light", "normal", "medium", "bold", "extra_bold"],
+          "description": "Font weight for text blocks"
+        },
+        "alignment": {
+          "type": "string",
+          "enum": ["left", "center", "right", "justify"],
+          "description": "Text or content alignment"
+        },
+        "emphasis": {
+          "type": "boolean",
+          "description": "Whether the block should be emphasized"
+        },
+        "background": {
+          "type": "string",
+          "enum": ["transparent", "solid", "gradient", "image"],
+          "description": "Background type"
+        }
+      }
+    },
+    "block_functionality": {
+      "type": "object",
+      "properties": {
+        "interactive": {
+          "type": "boolean",
+          "description": "Whether the block is interactive"
+        },
+        "action_type": {
+          "type": "string",
+          "enum": ["click", "hover", "scroll", "form_submit", "navigation"],
+          "description": "Type of interaction"
+        },
+        "action_target": {
+          "type": "string",
+          "description": "Target of the action (URL, element ID, etc.)"
+        },
+        "tracking": {
+          "type": "object",
+          "properties": {
+            "analytics_event": {
+              "type": "string",
+              "description": "Analytics event name"
+            },
+            "conversion_goal": {
+              "type": "boolean",
+              "description": "Whether this is a conversion goal"
+            }
+          }
+        }
+      }
+    },
+    "form_field": {
+      "type": "object",
+      "properties": {
+        "field_id": {
+          "type": "string",
+          "description": "Unique identifier for the form field"
+        },
+        "field_type": {
+          "type": "string",
+          "enum": ["text", "email", "password", "number", "tel", "url", "textarea", "select", "checkbox", "radio", "file"],
+          "description": "HTML input type"
+        },
+        "label": {
+          "type": "string",
+          "description": "Field label"
+        },
+        "placeholder": {
+          "type": "string",
+          "description": "Placeholder text"
+        },
+        "required": {
+          "type": "boolean",
+          "description": "Whether the field is required"
+        },
+        "validation": {
+          "type": "object",
+          "properties": {
+            "pattern": {
+              "type": "string",
+              "description": "Regex pattern for validation"
+            },
+            "min_length": {
+              "type": "integer",
+              "description": "Minimum length"
+            },
+            "max_length": {
+              "type": "integer",
+              "description": "Maximum length"
+            }
+          }
+        }
+      },
+      "required": ["field_id", "field_type", "label"]
+    }
+  },
+  "zone_type_definitions": {
+    "hero_zone": {
+      "description": "Primary landing zone that captures immediate attention",
+      "typical_sections": ["hero_section", "navigation_section", "call_to_action_section"],
+      "common_blocks": ["headline_primary", "body_text", "hero_image", "cta_button_primary", "navigation_menus"],
+      "purpose": "Capture attention, communicate value proposition, drive initial engagement"
+    },
+    "features_benefits_zone": {
+      "description": "Zone showcasing product capabilities and value propositions",
+      "typical_sections": ["features_overview_section", "benefits_section", "capabilities_section", "use_cases_section"],
+      "common_blocks": ["headline_secondary", "feature_icons", "body_text", "demo_videos", "list_items"],
+      "purpose": "Educate about features, demonstrate value, address use cases"
+    },
+    "social_proof_zone": {
+      "description": "Zone establishing credibility through testimonials, logos, and validation",
+      "typical_sections": ["testimonials_section", "customer_logos_section", "case_studies_section", "reviews_section"],
+      "common_blocks": ["testimonial_quotes", "customer_photos", "company_logos", "statistics", "ratings_reviews"],
+      "purpose": "Build trust, establish credibility, reduce purchase anxiety"
+    },
+    "product_showcase_zone": {
+      "description": "Detailed product demonstration and specifications",
+      "typical_sections": ["product_gallery_section", "specifications_section", "demo_section", "comparison_section"],
+      "common_blocks": ["product_screenshots", "demo_videos", "feature_comparison", "statistics", "headline_secondary"],
+      "purpose": "Demonstrate product capabilities, provide detailed information, enable evaluation"
+    },
+    "conversion_zone": {
+      "description": "Final push for user action with pricing, signup, and contact options",
+      "typical_sections": ["pricing_section", "signup_section", "contact_section", "footer_section"],
+      "common_blocks": ["pricing_table", "forms", "cta_button_primary", "contact_information", "legal_links"],
+      "purpose": "Drive conversion, capture leads, provide contact methods, fulfill legal requirements"
+    }
+  },
+  "industry_specific_extensions": {
+    "saas_b2b": {
+      "required_zones": ["hero_zone", "features_benefits_zone", "social_proof_zone", "conversion_zone"],
+      "recommended_sections": ["integration_section", "demo_section", "pricing_section"],
+      "key_blocks": ["demo_videos", "company_logos", "pricing_table", "cta_button_primary"]
+    },
+    "consumer_hardware": {
+      "required_zones": ["hero_zone", "product_showcase_zone", "social_proof_zone", "conversion_zone"],
+      "recommended_sections": ["specifications_section", "comparison_section"],
+      "key_blocks": ["hero_image", "product_screenshots", "feature_comparison", "statistics"]
+    },
+    "ai_ml_tools": {
+      "required_zones": ["hero_zone", "features_benefits_zone", "conversion_zone"],
+      "recommended_sections": ["capabilities_section", "use_cases_section", "demo_section"],
+      "key_blocks": ["demo_videos", "use_case_examples", "api_documentation_links"]
+    },
+    "creative_tools": {
+      "required_zones": ["hero_zone", "features_benefits_zone", "conversion_zone"],
+      "recommended_sections": ["gallery_section", "templates_section", "collaboration_section"],
+      "key_blocks": ["hero_image", "gallery_images", "template_previews"]
+    },
+    "mobile_apps": {
+      "required_zones": ["hero_zone", "features_benefits_zone", "social_proof_zone"],
+      "recommended_sections": ["app_store_links_section", "feature_preview_section"],
+      "key_blocks": ["app_store_buttons", "mobile_screenshots", "ratings_reviews"]
+    },
+    "development_services": {
+      "required_zones": ["hero_zone", "services_zone", "contact_zone"],
+      "recommended_sections": ["services_overview_section", "portfolio_section", "contact_form_section"],
+      "key_blocks": ["service_descriptions", "portfolio_images", "contact_information"]
+    }
+  },
+  "validation_rules": {
+    "zone_requirements": {
+      "hero_zone": {
+        "must_be_first": true,
+        "required_blocks": ["headline_primary", "cta_button_primary"]
+      },
+      "conversion_zone": {
+        "should_be_last": true,
+        "required_blocks": ["cta_button_primary"]
+      }
+    },
+    "accessibility_requirements": {
+      "all_images_need_alt_text": true,
+      "forms_need_labels": true,
+      "headings_need_hierarchy": true,
+      "links_need_descriptive_text": true
+    },
+    "performance_requirements": {
+      "hero_zone_must_load_fast": true,
+      "images_should_be_optimized": true,
+      "critical_css_above_fold": true
+    }
+  },
+  "examples": [
+    {
+      "name": "Minimal SaaS Landing Page",
+      "description": "Basic example of a SaaS B2B landing page structure",
+      "data": {
+        "landing_page": {
+          "metadata": {
+            "page_title": "Example SaaS Product",
+            "page_type": "saas_b2b",
+            "layout_pattern": "single_page_scroll"
+          },
+          "zones": [
+            {
+              "zone_id": "hero",
+              "zone_type": "hero_zone",
+              "zone_name": "Hero Section",
+              "zone_purpose": "Capture attention and communicate value proposition",
+              "position": 1,
+              "is_above_fold": true,
+              "sections": [
+                {
+                  "section_id": "main_hero",
+                  "section_type": "hero_section",
+                  "section_name": "Main Hero",
+                  "section_purpose": "Primary value proposition and call to action",
+                  "layout": "single_column",
+                  "blocks": [
+                    {
+                      "block_id": "hero_headline",
+                      "block_category": "text_blocks",
+                      "block_type": "headline_primary",
+                      "content": {
+                        "text": "Transform Your Workflow with AI"
+                      },
+                      "styling": {
+                        "size": "extra_large",
+                        "color_scheme": "primary",
+                        "font_weight": "bold",
+                        "alignment": "center"
+                      }
+                    },
+                    {
+                      "block_id": "hero_cta",
+                      "block_category": "interactive_blocks",
+                      "block_type": "cta_button_primary",
+                      "content": {
+                        "text": "Get Started Free",
+                        "link_url": "/signup"
+                      },
+                      "styling": {
+                        "size": "large",
+                        "color_scheme": "accent"
+                      },
+                      "functionality": {
+                        "interactive": true,
+                        "action_type": "click",
+                        "action_target": "/signup",
+                        "tracking": {
+                          "analytics_event": "hero_cta_click",
+                          "conversion_goal": true
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

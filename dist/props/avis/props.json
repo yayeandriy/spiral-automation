@@ -1,0 +1,117 @@
+{
+  "properties": {
+    "title": {
+      "title": [
+        {
+          "text": {
+            "content": "AVIS"
+          }
+        }
+      ]
+    },
+    "desc": {
+      "rich_text": [
+        {
+          "text": {
+            "content": "Revolutionary portable computer vision system for high-mix, low-volume manufacturing. Provides 10mm accuracy with 24-hour setup, iPhone compatibility, and transforms quality control processes for modern manufacturing environments."
+          }
+        }
+      ]
+    },
+    "motto": {
+      "rich_text": [
+        {
+          "text": {
+            "content": "Transform your quality control with precision and portability"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "rich_text": [
+        {
+          "text": {
+            "content": "© 2024 AVIS - Automated Visual Inspection System. All rights reserved. Revolutionizing manufacturing quality control."
+          }
+        }
+      ]
+    },
+    "publish_state": {
+      "select": {
+        "name": "Published"
+      }
+    },
+    "status": {
+      "select": {
+        "name": "Product"
+      }
+    },
+    "precision": {
+      "select": {
+        "name": "4"
+      }
+    },
+    "budget": {
+      "select": {
+        "name": "500"
+      }
+    },
+    "start_date": {
+      "date": {
+        "start": "2025-01-01"
+      }
+    },
+    "timeline": {
+      "multi_select": [
+        {
+          "name": "2024"
+        },
+        {
+          "name": "2025"
+        }
+      ]
+    },
+    "industries": {
+      "multi_select": [
+        {
+          "name": "Manufacturing"
+        },
+        {
+          "name": "Electronics"
+        },
+        {
+          "name": "Construction"
+        },
+        {
+          "name": "Aviation"
+        }
+      ]
+    },
+    "technologies": {
+      "multi_select": [
+        {
+          "name": "Computer Vision"
+        },
+        {
+          "name": "AI Detection"
+        },
+        {
+          "name": "Object detection"
+        }
+      ]
+    },
+    "tools": {
+      "multi_select": [
+        {
+          "name": "High precision lenses"
+        },
+        {
+          "name": "Mobile"
+        },
+        {
+          "name": "DSR camera"
+        }
+      ]
+    }
+  }
+}
