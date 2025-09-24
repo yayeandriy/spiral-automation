@@ -1,3 +1,4 @@
-generate json file which corresponds this html
+generate json file which corresponds this user guide html
 this json will be used as a body request to create notion blocks (see for ref Notion API)
-place it in /dist/docs/roboscope/blocks folder
+place it in /dist/docs/teelscope/blocks folder
+break down response in several files wo pass response length limit

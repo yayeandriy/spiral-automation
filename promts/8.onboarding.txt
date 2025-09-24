@@ -1,0 +1,2 @@
+now lets create onboarding for telescope, format seein  /dist/onboarding/roboscope.md 
+based on source /src/telescope

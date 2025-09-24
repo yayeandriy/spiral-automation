@@ -1,0 +1,576 @@
+{
+  "children": [
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "heading_1",
+                  "heading_1": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🎯 Use Cases & Applications"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": ""
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": ""
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": ""
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": ""
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": ""
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": ""
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": ""
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": ""
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "heading_2",
+                  "heading_2": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "💰 Revenue Recovery"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Identify "
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "unbilled equipment installations"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": " and ensure accurate tenant billing based on actual equipment footprint and tower loading."
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "[Placeholder: Before/after billing comparison showing recovered revenue]"
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "📈"
+                    },
+                    "color": "green"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "heading_2",
+                  "heading_2": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "⚖️ Compliance & Safety"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Maintain accurate "
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "wind load assessments"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": " and ensure regulatory compliance with up-to-date equipment records and structural analysis."
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "[Placeholder: Wind load analysis diagram with safety margins]"
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "🏗️"
+                    },
+                    "color": "orange"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "heading_2",
+                  "heading_2": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "📊 Portfolio Management"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Optimize "
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "tower capacity planning"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": " across your entire portfolio with real-time equipment tracking and space availability analysis."
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "[Placeholder: Portfolio dashboard showing capacity utilization across towers]"
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "🗺️"
+                    },
+                    "color": "blue"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "heading_2",
+                  "heading_2": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🔄 Workflow Integration"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Seamlessly integrate with existing ERP systems like "
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Tarantula"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": " for automated inventory updates and billing workflows."
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Real-time ERP synchronization"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Automated billing updates"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Audit trail maintenance"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "heading_2",
+                  "heading_2": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🚀 Rapid Deployment"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Deploy across your entire portfolio in "
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "weeks, not months"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": " with minimal training and infrastructure requirements."
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "SaaS or private cloud deployment"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Mobile app for field teams"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Web portal for management"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "divider",
+      "divider": {}
+    }
+  ]
+}

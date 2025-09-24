@@ -1,0 +1,692 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Telescope</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(128, 125, 120, 1);
+	fill: rgba(128, 125, 120, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(204, 121, 47, 1);
+	fill: rgba(204, 121, 47, 1);
+}
+.highlight-yellow {
+	color: rgba(195, 148, 67, 1);
+	fill: rgba(195, 148, 67, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(63, 126, 190, 1);
+	fill: rgba(63, 126, 190, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(179, 84, 136, 1);
+	fill: rgba(179, 84, 136, 1);
+}
+.highlight-red {
+	color: rgba(201, 85, 73, 1);
+	fill: rgba(201, 85, 73, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 111, 200, 0.09);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(128, 125, 120, 1);
+	fill: rgba(128, 125, 120, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(204, 121, 47, 1);
+	fill: rgba(204, 121, 47, 1);
+}
+.block-color-yellow {
+	color: rgba(195, 148, 67, 1);
+	fill: rgba(195, 148, 67, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(63, 126, 190, 1);
+	fill: rgba(63, 126, 190, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(179, 84, 136, 1);
+	fill: rgba(179, 84, 136, 1);
+}
+.block-color-red {
+	color: rgba(201, 85, 73, 1);
+	fill: rgba(201, 85, 73, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(232, 242, 250, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 99, 174, 0.172); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="271c3aed-7a1a-802f-b10b-f1a63caa78fc" class="page sans"><header><h1 class="page-title">Telescope</h1><p class="page-description"></p></header><div class="page-body"><p id="271c3aed-7a1a-8090-9f11-cdc8d0bbd26a" class="">Files: <a href="https://drive.google.com/drive/u/1/folders/1pa6sa05jh8St9sYzqhl7_TTiDsFAuD3K">https://drive.google.com/drive/u/1/folders/1pa6sa05jh8St9sYzqhl7_TTiDsFAuD3K</a></p><p id="271c3aed-7a1a-807a-ab96-c90a1cb2142e" class="">
+</p><p id="271c3aed-7a1a-8050-a1fc-dc976b8f33f2" class="">
+</p><h1 id="cfbef7ab-47cc-45fa-af5d-0e14038e17fe" class="">Automated Tower Equipment Inspection</h1><p id="e2068cc3-72d7-49ac-92fc-beea729e0d5b" class="">Use standard ground-level photos to detect and measure your tower equipment in minutes. Telescope provides instant visibility into your installed inventory—for accurate billing and wind load assessment without ever launching a drone.</p><hr id="fda4f8dc-10c4-4d9a-bed9-df528f0c64b5"/><h2 id="7a94dc9e-8910-43c3-a54f-323f30f15c22" class="">TowerCo Challenges</h2><p id="8411ff2d-52d5-4bdd-a04e-e0f2fc578e72" class="">Tenants install new equipment without always notifying you</p><p id="bb50f1e7-f134-4325-b35a-78d2c153b326" class="">Missing equipment records lead to lost revenue and compliance risk.</p><p id="c375fae8-4446-4e77-96c7-8051ef6b60eb" class="">Drone inspections are slow, costly, and logistically complex</p><p id="b2f5236a-d397-4985-b18d-1f8586ee0cf2" class="">Traditional methods require specialized equipment, pilots, and weather coordination.</p><p id="e9827dcf-6374-4680-8f1a-1b61e45d3353" class="">Outdated records prevent tower optimization</p><p id="86079be8-37fa-4762-93e6-8ea699dd9d07" class="">You may think that you have space on the tower but in reality you don&#x27;t, and vice-versa.</p><hr id="50a013ac-1676-45b5-9ad1-ec3551d8ca1c"/><h2 id="ba8c08c5-bf25-493d-8dd3-4b6224ed7efb" class="">How Telescope Works</h2><p id="271c3aed-7a1a-806a-b570-d45083cc29b7" class="">Explainer video <a href="https://www.youtube.com/watch?v=sWplvQV09ig">https://www.youtube.com/watch?v=sWplvQV09ig</a></p><p id="9f4a9372-ba84-4c98-b3d8-31077c6a5766" class="">From photo to inventory—in minutes.</p><p id="e195c2b6-e500-4bed-aaac-74cb8326cd36" class=""><strong>Capture</strong></p><p id="b75225e3-bdc8-4be2-8edd-328d6fae3ade" class="">Take ground-level photos with a smartphone. No drones, pilots, or special equipment required.</p><p id="8bfe0e18-b04e-4773-b2b1-f5a72bbf5f17" class=""><strong>Detect</strong></p><p id="9448a327-3949-4d2e-a9e2-958f8bf97cd2" class="">Our AI identifies and measures over 200 tower components with 2-inch accuracy—even if partially visible.</p><p id="38bc3e93-19bb-44c5-b483-fdb1d2eb04e9" class=""><strong>Reconcile</strong></p><p id="f194ecc4-8793-48f5-9782-ff345a2b1060" class="">Instantly sync results with your ERP system or export detailed reports for billing and compliance.</p><hr id="8bef9151-c5cb-4037-bf2f-9bb033d71f8c"/><h2 id="93a9e581-6e53-44e7-80ac-fbf0a73e9663" class="">Specs</h2><ul id="1aa53954-5920-4695-b7f3-ab24b7cf8504" class="bulleted-list"><li style="list-style-type:disc">2-inch measurement accuracy</li></ul><ul id="2f771b12-7299-4ecb-85ad-ffeeab46a1ce" class="bulleted-list"><li style="list-style-type:disc">No drone flights or pilots required</li></ul><ul id="217f8acf-d844-4e7e-9e0c-876269e5bb38" class="bulleted-list"><li style="list-style-type:disc">7-minute average time on-site</li></ul><ul id="541b4dc3-e622-4f91-9f9f-7ce1330c1033" class="bulleted-list"><li style="list-style-type:disc">Detects 200+ equipment models</li></ul><ul id="ccfffd54-e4a4-4e89-8316-48a60a4eb0a5" class="bulleted-list"><li style="list-style-type:disc">ERP integration with Tarantula and others</li></ul><ul id="40ef497e-89cd-4069-8eec-61e045b51887" class="bulleted-list"><li style="list-style-type:disc">Works across all tower types</li></ul><ul id="fe30125d-139a-4b33-b538-0304327d8524" class="bulleted-list"><li style="list-style-type:disc">Available as SaaS or private deployment</li></ul><ul id="08c892f0-70f1-46f5-b724-bff1483dcd08" class="bulleted-list"><li style="list-style-type:disc">Works for towers as tall as 120 meters (400 ft)</li></ul><hr id="6e19c760-2cc3-4211-8891-ad078f8c59c1"/><h2 id="93463a42-c6e4-404d-ab34-9d49d851e635" class="">Telescope vs Drone-Based Inspections</h2><p id="41eb3e47-250b-4322-b6d3-50c40f087d6b" class="">See why leading TowerCos are switching to Telescope.</p><table id="27938c76-0017-45c5-9a6a-d61839c1817f" class="simple-table"><thead class="simple-table-header"><tr id="6f374215-adaf-4e8a-a639-77d70c621138"><th id="xl&gt;l" class="simple-table-header-color simple-table-header"><strong>Feature</strong></th><th id="&lt;PoI" class="simple-table-header-color simple-table-header"><strong>Telescope</strong></th><th id="zrXP" class="simple-table-header-color simple-table-header"><strong>Drone</strong></th></tr></thead><tbody><tr id="0e519566-866f-43da-9bdd-bf61143436c4"><td id="xl&gt;l" class=""><strong>Setup Time</strong></td><td id="&lt;PoI" class="">✓ Minutes</td><td id="zrXP" class="">✗ Hours</td></tr><tr id="87e0ab14-38e9-4406-b497-52ffbf889781"><td id="xl&gt;l" class=""><strong>Required Gear</strong></td><td id="&lt;PoI" class="">✓ Smartphone or DSLR</td><td id="zrXP" class="">✗ Drone, controller</td></tr><tr id="4cc44106-2fc8-4f3d-aa28-83d36b82e54b"><td id="xl&gt;l" class=""><strong>Image Processing</strong></td><td id="&lt;PoI" class="">✓ Lightweight CV (2D)</td><td id="zrXP" class="">✗ 3D mesh, manual QA</td></tr><tr id="0d2126ef-00b9-4e46-bac4-19746abaf485"><td id="xl&gt;l" class=""><strong>Accuracy</strong></td><td id="&lt;PoI" class="">✓ 2 inches</td><td id="zrXP" class="">✗ Varies</td></tr><tr id="0f481d2c-527b-4d0c-8a15-614d3b8493ec"><td id="xl&gt;l" class=""><strong>Output Format</strong></td><td id="&lt;PoI" class="">✓ ERP-ready report</td><td id="zrXP" class="">✗ Raw media or 3D model</td></tr><tr id="0262164d-edcd-4263-ab6f-f9969acb02a5"><td id="xl&gt;l" class=""><strong>On-Site Safety</strong></td><td id="&lt;PoI" class="">✓ No climb, no flight</td><td id="zrXP" class="">✗ Flight prep + air clearance</td></tr></tbody></table><hr id="598753cf-8440-4f8f-9843-ec7a44d3a745"/><p id="5ae0010e-e692-44d1-8ed6-20a651625770" class="">Do you also want me to <strong>make the comparison table (Telescope vs Drone)</strong> in a proper Notion <em>table block</em> format (copy-paste ready), instead of markdown pipes?</p><figure id="277c3aed-7a1a-8069-bf63-fc0000555c5d" class="image"><a href="Telescope%20271c3aed7a1a802fb10bf1a63caa78fc/image3.png"><img style="width:700px" src="Telescope%20271c3aed7a1a802fb10bf1a63caa78fc/image3.png"/></a></figure><p id="277c3aed-7a1a-8078-9781-c5b28a84feb9" class="">Equipment Inventory Report SBDE68.11</p><table id="277c3aed-7a1a-8065-a0e1-e5cfb222b6ea" class="simple-table"><thead class="simple-table-header"><tr id="277c3aed-7a1a-804c-a91b-c1d3780953e5"><th id="wBoi" class="simple-table-header-color simple-table-header">Site ID</th><th id="|;fX" class="simple-table-header-color simple-table-header">SBDE68.11</th><th id="g&gt;=e" class="simple-table-header-color simple-table-header">Tower type</th><th id="`&gt;x?" class="simple-table-header-color simple-table-header">Guyed lattice quadrant</th></tr></thead><tbody><tr id="277c3aed-7a1a-80b9-9a4b-d2021e45fa0e"><th id="wBoi" class="simple-table-header-color simple-table-header">Date of visit</th><td id="|;fX" class="">2025/04/14</td><td id="g&gt;=e" class="">Equipment, items</td><td id="`&gt;x?" class="">12</td></tr><tr id="277c3aed-7a1a-8084-80db-c04693d064af"><th id="wBoi" class="simple-table-header-color simple-table-header">Inspector</th><td id="|;fX" class="">Heinrich. G.</td><td id="g&gt;=e" class="">Total area</td><td id="`&gt;x?" class="">3.67</td></tr><tr id="277c3aed-7a1a-8075-b488-c19082e668a6"><th id="wBoi" class="simple-table-header-color simple-table-header">Location:</th><td id="|;fX" class="">53° 4&#x27;1.98&quot;N 8°46&#x27;3.67&quot;E</td><td id="g&gt;=e" class=""></td><td id="`&gt;x?" class=""></td></tr><tr id="277c3aed-7a1a-8092-983a-d75c1d0fdf34"><th id="wBoi" class="simple-table-header-color simple-table-header">Comments:</th><td id="|;fX" class=""></td><td id="g&gt;=e" class=""></td><td id="`&gt;x?" class=""></td></tr></tbody></table><p id="277c3aed-7a1a-8020-8e23-d9401b9dda0f" class=""><strong>Site ID</strong> <strong>Equipment</strong></p><p id="277c3aed-7a1a-807a-b192-d18f477ab395" class=""><strong>type</strong> <strong>Equipment model Confidence</strong> <strong>Detection</strong> <strong>Quantity</strong> <strong>Height,</strong></p><p id="277c3aed-7a1a-80f9-a843-eebb6d324ba4" class=""><strong>m</strong></p><p id="277c3aed-7a1a-801c-96f8-c955b2a78298" class=""><strong>Width,</strong></p><p id="277c3aed-7a1a-8094-8651-cbfcb334cc66" class=""><strong>m</strong></p><p id="277c3aed-7a1a-8076-ab7b-fe9952a2361b" class=""><strong>Area,</strong></p><p id="277c3aed-7a1a-8086-8488-d2673525e63f" class=""><strong>m2</strong></p><p id="277c3aed-7a1a-80e2-9ebc-dd47bb1dacd6" class="">SBDE68.11 Panel antenna 742236 - 1800 MHz 2x17.5</p><p id="277c3aed-7a1a-80c0-bf09-d08dfb98e92c" class="">dBi 0-10 El.tilt 0.77 1 1.310 0.320 0.42</p><p id="277c3aed-7a1a-80f5-988d-e5361d83a189" class="">SBDE68.11 Panel antenna A194518R0V01 DCS-</p><p id="277c3aed-7a1a-80e9-ae37-cc49c349663e" class="">UMTS 18 dBi RCU 0.94 1 1.310 0.150 0.20</p><p id="277c3aed-7a1a-809a-a9bc-eff3045d345d" class="">SBDE68.11 Panel antenna A704516R0V06 900 MHz</p><p id="277c3aed-7a1a-8073-86f4-ca7d8f729149" class="">16.4 dBi / Huawei 0.89 1 1.930 0.290 0.56</p><p id="277c3aed-7a1a-8007-83e4-d3c39b7c4186" class="">SBDE68.11 Panel antenna A704516R0V06 900 MHz</p><p id="277c3aed-7a1a-8056-8d55-d9e62f1290fd" class="">16.4 dBi / Huawei 0.9 1 1.930 0.290 0.56</p><p id="277c3aed-7a1a-8094-96cb-c10f65911693" class="">SBDE68.11 Panel antenna TDQ-172718DEI-</p><p id="277c3aed-7a1a-80b3-b665-dfabee13705a" class="">65FT2V01 2x18-26 18 dB 0.76 1 1.360 0.320 0.44</p><p id="277c3aed-7a1a-80f2-918b-fd172dfc2a19" class="">SBDE68.11 Panel antenna TDQ-172720DEI-</p><p id="277c3aed-7a1a-8029-8317-c7152ca2b214" class="">65FT2V01 2x18-26 0.75 1 1.980 0.320 0.63</p><p id="277c3aed-7a1a-80f0-9449-f70b364dad2b" class="">SBDE68.11 RRU Unknown 0.91 1 0.440 0.360 0.16</p><p id="277c3aed-7a1a-805f-8817-d42d6960c6c5" class="">SBDE68.11 RRU Unknown 0.91 1 0.440 0.310 0.14</p><p id="277c3aed-7a1a-80b1-8362-c4183f6c2a9d" class="">SBDE68.11 RRU Unknown 0.86 1 0.440 0.310 0.14</p><p id="277c3aed-7a1a-801b-b8ae-da7cb987c296" class="">SBDE68.11 RRU Unknown 0.81 1 0.440 0.310 0.14</p><p id="277c3aed-7a1a-80ff-9491-c1f32b77e375" class="">SBDE68.11 MW antenna HW52431100/ANT7G06M 0.96 1 0.600 0.28</p><p id="277c3aed-7a1a-801d-900d-c6084d078ca4" class="">SBDE68.11 Filter Unknown 0.6 2 0.150 0.110 0.02</p><figure id="277c3aed-7a1a-8030-bf29-d08ae8ae4657" class="image"><a href="Telescope%20271c3aed7a1a802fb10bf1a63caa78fc/image1.png"><img style="width:700px" src="Telescope%20271c3aed7a1a802fb10bf1a63caa78fc/image1.png"/></a></figure><figure id="277c3aed-7a1a-8002-b425-ee82b724cf90" class="image"><a href="Telescope%20271c3aed7a1a802fb10bf1a63caa78fc/image2.png"><img style="width:68px" src="Telescope%20271c3aed7a1a802fb10bf1a63caa78fc/image2.png"/></a></figure><p id="277c3aed-7a1a-80f8-80f1-d0de12568f14" class=""><em>Detected by Telescope</em></p><p id="277c3aed-7a1a-80c6-bb0f-cef5497658db" class=""><em>2025/04/14 15:17:50</em></p><p id="271c3aed-7a1a-8070-ac6f-e9f848f7a656" class="">Old landing page <a href="https://v0-telescope-landing-git-main-spiralt.vercel.app/">https://v0-telescope-landing-git-main-spiralt.vercel.app/</a></p><figure id="277c3aed-7a1a-80ca-80d8-ce808545e456" class="image"><a href="Telescope%20271c3aed7a1a802fb10bf1a63caa78fc/image1%201.png"><img style="width:117px" src="Telescope%20271c3aed7a1a802fb10bf1a63caa78fc/image1%201.png"/></a></figure><p id="277c3aed-7a1a-800d-accf-d7dc938f3ca1" class="">Telescope</p><p id="277c3aed-7a1a-80af-b5df-d1ceb34601f2" class=""><em><strong>Automated Tower Equipment Inspection for Accurate Billing and Inventory Control</strong></em></p><p id="277c3aed-7a1a-801e-a6fd-f7f0c3c3e396" class="">Tower companies hosting multiple tenants often struggle with incomplete, outdated, or inaccurate equipment records. Tenants install or modify gear—sometimes without disclosure—and billing based on surface area or number of units quickly becomes unreliable.</p><p id="277c3aed-7a1a-8026-8c3e-e544bf69d1eb" class="">Manual audits are resource-intensive. Drone inspections are costly, time-consuming, and require specialized post-processing. The result? Missed revenue, operational inefficiency, and compliance risk.</p><p id="277c3aed-7a1a-80fb-a0b0-c51611e7178b" class=""><strong>Telescope</strong>turns ordinary ground-level photos into billing-ready, ERP-synced tower inventories using advanced AI and computer vision.</p><p id="277c3aed-7a1a-806e-92ef-e24bda4dbdb8" class="">No drones, no delays—just accurate insights from your field teams&#x27; smartphones or cameras.</p><p id="277c3aed-7a1a-80db-98a4-ff3b614a82d2" class=""><strong>Features:</strong></p><p id="277c3aed-7a1a-804a-9c5d-c91c184c13df" class=""><strong>Capture</strong>: Take standard 4K photos from the ground.</p><p id="277c3aed-7a1a-80b9-9309-d19080a37459" class=""><strong>Upload</strong>: Use the web portal or mobile app.</p><figure id="277c3aed-7a1a-809a-823e-e04a10504c09" class="image"><a href="Telescope%20271c3aed7a1a802fb10bf1a63caa78fc/image2%201.png"><img style="width:700px" src="Telescope%20271c3aed7a1a802fb10bf1a63caa78fc/image2%201.png"/></a></figure><p id="277c3aed-7a1a-8082-85a2-fd3014c38821" class=""><em>Data Management Interface</em></p><p id="277c3aed-7a1a-800a-b531-f16c5c70f7b5" class=""><strong>Detect</strong>: Over 200 types of base station equipment—panel antennas, MW antennas, RRUs, and more. <strong>Measure</strong>: Achieve 2-inch precision, even on tall or obscured installations.</p><p id="277c3aed-7a1a-8090-99a9-cd57e95ec4f6" class=""><strong>Reconcile</strong>: Instantly update your ERP (e.g., Tarantula) or generate detailed PDF/CSV reports.</p><p id="277c3aed-7a1a-8065-8071-e0a8e4f0a964" class=""><strong>Why TowerCos Choose Telescope:</strong></p><p id="277c3aed-7a1a-8012-9df3-c690affcdd64" class="">7-Minute Site Time – Fast, efficient inspections from ground level.</p><p id="277c3aed-7a1a-8048-862a-f025bdd83145" class="">Intelligent Detection – Works even with partial visibility or complex tower structures.</p><figure id="277c3aed-7a1a-807f-b64b-f3819ff1310e" class="image"><a href="Telescope%20271c3aed7a1a802fb10bf1a63caa78fc/image3%201.png"><img style="width:364px" src="Telescope%20271c3aed7a1a802fb10bf1a63caa78fc/image3%201.png"/></a></figure><p id="277c3aed-7a1a-8001-bf60-e5f64ff2423e" class="">Accurate Billing – Prevent underbilling with complete, up-to-date inventory.</p><p id="277c3aed-7a1a-8063-b18a-fed902111ef5" class="">ERP Integration – Seamlessly syncs with your existing</p><p id="277c3aed-7a1a-80e1-8730-ebd2a5b50f3b" class="">data stays yours.</p><p id="277c3aed-7a1a-8090-9ef4-f49d5c93133f" class="">and 2-inch accurate results. Precision – No need for 3D modeling—just 2D photos</p><figure id="277c3aed-7a1a-8037-8b2c-c627b355ded0" class="image"><a href="Telescope%20271c3aed7a1a802fb10bf1a63caa78fc/image4.png"><img style="width:700px" src="Telescope%20271c3aed7a1a802fb10bf1a63caa78fc/image4.png"/></a></figure><p id="277c3aed-7a1a-8068-bf06-d7e7148b1ba9" class="">asset management systems.</p><p id="277c3aed-7a1a-80e2-b4e5-c212810c5301" class="">Deployment Options – SaaS or private cloud—your</p><p id="277c3aed-7a1a-8086-a195-ee0806806a6b" class=""><em>Sample detection output</em></p><p id="277c3aed-7a1a-803e-a826-c36105950343" class="">Contact Konstantyn Shyshkin • <strong>k@spiral.technology</strong> • 1.617.915.31.57</p><p id="277c3aed-7a1a-8050-ba17-d631b22deedd" class="">Spiral Science and Technology Inc | 12 Channel Street | Boston MA 02210</p><p id="277c3aed-7a1a-8073-8d51-ed1a8c560caf" class="">2025</p><p id="277c3aed-7a1a-80fe-9858-fe51049e89e2" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

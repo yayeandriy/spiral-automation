@@ -1,0 +1,99 @@
+{
+  "landing_page": {
+    "metadata": {
+      "page_title": "Telescope - Automated Tower Equipment Inspection",
+      "page_type": "saas_b2b",
+      "layout_pattern": "demo_focused",
+      "target_audience": "b2b",
+      "industry": "telecom_infrastructure",
+      "conversion_focus": "demo_scheduling"
+    },
+    "zones": [
+      {
+        "zone_id": "zone_1_hero",
+        "zone_type": "hero_zone",
+        "zone_name": "Hero Section",
+        "zone_description": "Primary value proposition and main CTAs",
+        "file_path": "zone_1_hero.json",
+        "column_variations": ["1 column intro", "2 column CTAs"],
+        "blocks_count": 4
+      },
+      {
+        "zone_id": "zone_2_challenges",
+        "zone_type": "problem_identification_zone",
+        "zone_name": "TowerCo Challenges",
+        "zone_description": "Problem identification and pain points that Telescope solves",
+        "file_path": "zone_2_challenges.json",
+        "column_variations": ["1 column header", "3 column challenges with media placeholders"],
+        "blocks_count": 5
+      },
+      {
+        "zone_id": "zone_3_how_it_works",
+        "zone_type": "solution_demonstration_zone", 
+        "zone_name": "How Telescope Works",
+        "zone_description": "3-step process demonstration with media references and external links",
+        "file_path": "zone_3_how_it_works.json",
+        "column_variations": ["1 column header", "3 column process steps", "2 column resources"],
+        "blocks_count": 8
+      },
+      {
+        "zone_id": "zone_4_features",
+        "zone_type": "features_benefits_zone",
+        "zone_name": "Technical Specifications",
+        "zone_description": "Detailed technical capabilities and integration options",
+        "file_path": "zone_4_features.json",
+        "column_variations": ["1 column header", "4 column specs", "3 column feature categories"],
+        "blocks_count": 6
+      },
+      {
+        "zone_id": "zone_5_comparison",
+        "zone_type": "social_proof_zone",
+        "zone_name": "Telescope vs Drone Comparison",
+        "zone_description": "Competitive advantage demonstration and sample report showcase",
+        "file_path": "zone_5_comparison.json",
+        "column_variations": ["1 column header", "4 column comparison", "3 column advantages", "2 column sample report"],
+        "blocks_count": 7
+      },
+      {
+        "zone_id": "zone_6_use_cases",
+        "zone_type": "applications_zone",
+        "zone_name": "Use Cases & Applications", 
+        "zone_description": "Real-world applications and business value propositions",
+        "file_path": "zone_6_use_cases.json",
+        "column_variations": ["1 column header", "3 column use cases", "2 column implementation details"],
+        "blocks_count": 6
+      },
+      {
+        "zone_id": "zone_7_contact",
+        "zone_type": "conversion_zone",
+        "zone_name": "Contact & Get Started",
+        "zone_description": "Contact information, CTAs, and footer information",
+        "file_path": "zone_7_contact.json", 
+        "column_variations": ["1 column header", "2 column contact info", "2 column CTAs", "4 column footer"],
+        "blocks_count": 5
+      }
+    ],
+    "total_blocks": 41,
+    "design_principles": {
+      "column_layout_only": true,
+      "no_single_columns_in_lists": true,
+      "diverse_column_variations": true,
+      "media_placeholders_included": true,
+      "emoji_categorization": true,
+      "callout_color_coding": true
+    },
+    "content_strategy": {
+      "removed_conversion_zone": false,
+      "expanded_use_cases": true,
+      "breakdown_points_to_columns": true,
+      "media_placeholders_for_missing": true,
+      "file_references_for_existing": true
+    },
+    "notion_compatibility": {
+      "block_structure": "proper_notion_blocks_api",
+      "emoji_icons": "native_notion_emojis",
+      "color_schemes": "notion_callout_colors",
+      "rich_text_formatting": "bold_annotations_applied"
+    }
+  }
+}

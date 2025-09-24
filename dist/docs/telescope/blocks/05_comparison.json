@@ -1,0 +1,416 @@
+{
+  "children": [
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "🆚 Telescope vs Drone-Based Inspections"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "See why leading TowerCos are switching to Telescope."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "type": "table",
+      "table": {
+        "table_width": 3,
+        "has_column_header": true,
+        "has_row_header": false,
+        "children": [
+          {
+            "object": "block",
+            "type": "table_row",
+            "table_row": {
+              "cells": [
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "Feature"
+                    },
+                    "annotations": {
+                      "bold": true
+                    }
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "Telescope"
+                    },
+                    "annotations": {
+                      "bold": true
+                    }
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "Drone"
+                    },
+                    "annotations": {
+                      "bold": true
+                    }
+                  }
+                ]
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "table_row",
+            "table_row": {
+              "cells": [
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "Setup Time"
+                    },
+                    "annotations": {
+                      "bold": true
+                    }
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "✓"
+                    },
+                    "annotations": {
+                      "bold": true,
+                      "color": "green"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": " Minutes"
+                    }
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "✗"
+                    },
+                    "annotations": {
+                      "bold": true,
+                      "color": "red"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": " Hours"
+                    }
+                  }
+                ]
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "table_row",
+            "table_row": {
+              "cells": [
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "Required Gear"
+                    },
+                    "annotations": {
+                      "bold": true
+                    }
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "✓"
+                    },
+                    "annotations": {
+                      "bold": true,
+                      "color": "green"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": " Smartphone or DSLR"
+                    }
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "✗"
+                    },
+                    "annotations": {
+                      "bold": true,
+                      "color": "red"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": " Drone, controller"
+                    }
+                  }
+                ]
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "table_row",
+            "table_row": {
+              "cells": [
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "Image Processing"
+                    },
+                    "annotations": {
+                      "bold": true
+                    }
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "✓"
+                    },
+                    "annotations": {
+                      "bold": true,
+                      "color": "green"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": " Lightweight CV (2D)"
+                    }
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "✗"
+                    },
+                    "annotations": {
+                      "bold": true,
+                      "color": "red"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": " 3D mesh, manual QA"
+                    }
+                  }
+                ]
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "table_row",
+            "table_row": {
+              "cells": [
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "Accuracy"
+                    },
+                    "annotations": {
+                      "bold": true
+                    }
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "✓"
+                    },
+                    "annotations": {
+                      "bold": true,
+                      "color": "green"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": " 2 inches"
+                    }
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "✗"
+                    },
+                    "annotations": {
+                      "bold": true,
+                      "color": "red"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": " Varies"
+                    }
+                  }
+                ]
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "table_row",
+            "table_row": {
+              "cells": [
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "Output Format"
+                    },
+                    "annotations": {
+                      "bold": true
+                    }
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "✓"
+                    },
+                    "annotations": {
+                      "bold": true,
+                      "color": "green"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": " ERP-ready report"
+                    }
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "✗"
+                    },
+                    "annotations": {
+                      "bold": true,
+                      "color": "red"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": " Raw media or 3D model"
+                    }
+                  }
+                ]
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "table_row",
+            "table_row": {
+              "cells": [
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "On-Site Safety"
+                    },
+                    "annotations": {
+                      "bold": true
+                    }
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "✓"
+                    },
+                    "annotations": {
+                      "bold": true,
+                      "color": "green"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": " No climb, no flight"
+                    }
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": "✗"
+                    },
+                    "annotations": {
+                      "bold": true,
+                      "color": "red"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": {
+                      "content": " Flight prep + air clearance"
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

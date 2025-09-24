@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telescope - Automated Tower Equipment Inspection</title>
+    <meta name="description" content="Use standard ground-level photos to detect and measure your tower equipment in minutes. Telescope provides instant visibility into your installed inventory for accurate billing and wind load assessment.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Zone */
+        .hero-zone {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero-zone h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero-zone .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero-zone .description {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.8;
+        }
+        
+        .cta-primary {
+            background: #ff6b6b;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-primary:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+        }
+        
+        .cta-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 13px 38px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-secondary:hover {
+            background: white;
+            color: #667eea;
+        }
+        
+        /* Navigation */
+        .navigation {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #667eea;
+        }
+        
+        /* Features Benefits Zone */
+        .features-zone {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            color: #666;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .challenges-section {
+            margin-bottom: 80px;
+        }
+        
+        .challenges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .challenge-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .challenge-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #ff6b6b;
+        }
+        
+        .process-section {
+            margin-bottom: 80px;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .process-step {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        
+        .process-step h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .specs-section {
+            background: white;
+            padding: 60px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .spec-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .spec-icon {
+            background: #667eea;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+        
+        /* Social Proof Zone */
+        .social-proof-zone {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .comparison-table {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin: 50px 0;
+        }
+        
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .comparison-table th {
+            background: #667eea;
+            color: white;
+            padding: 20px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .checkmark {
+            color: #28a745;
+            font-weight: 600;
+        }
+        
+        .cross {
+            color: #dc3545;
+            font-weight: 600;
+        }
+        
+        .sample-report {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 50px 0;
+        }
+        
+        .report-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        /* Conversion Zone */
+        .conversion-zone {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .conversion-zone h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+        
+        .conversion-zone .description {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 12px;
+            margin: 50px 0;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .contact-details {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .contact-details a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-zone h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-zone .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .challenges-grid,
+            .process-steps,
+            .specs-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-table {
+                overflow-x: auto;
+            }
+        }
+        
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-4 {
+            margin-bottom: 2rem;
+        }
+        
+        .mt-4 {
+            margin-top: 2rem;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Section -->
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#" class="logo">🔭 Telescope</a>
+                <ul class="nav-links">
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#comparison">Comparison</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Zone -->
+    <section class="hero-zone">
+        <div class="container">
+            <h1>Automated Tower Equipment Inspection</h1>
+            <p class="subtitle">For Accurate Billing and Inventory Control</p>
+            <p class="description">
+                Use standard ground-level photos to detect and measure your tower equipment in minutes. 
+                Telescope provides instant visibility into your installed inventory—for accurate billing 
+                and wind load assessment without ever launching a drone.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="cta-primary">Get Started</a>
+                <a href="https://www.youtube.com/watch?v=sWplvQV09ig" target="_blank" class="cta-secondary">Watch Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Benefits Zone -->
+    <section class="features-zone">
+        <div class="container">
+            <!-- TowerCo Challenges Section -->
+            <div class="challenges-section">
+                <h2 class="section-title">TowerCo Challenges</h2>
+                <p class="section-subtitle">Common problems that Telescope solves for tower companies</p>
+                
+                <div class="challenges-grid">
+                    <div class="challenge-card">
+                        <h3>Missing Equipment Records</h3>
+                        <p>Tenants install new equipment without always notifying you. Missing equipment records lead to lost revenue and compliance risk.</p>
+                    </div>
+                    <div class="challenge-card">
+                        <h3>Slow, Costly Inspections</h3>
+                        <p>Drone inspections are slow, costly, and logistically complex. Traditional methods require specialized equipment, pilots, and weather coordination.</p>
+                    </div>
+                    <div class="challenge-card">
+                        <h3>Outdated Records</h3>
+                        <p>Outdated records prevent tower optimization. You may think that you have space on the tower but in reality you don't, and vice-versa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How Telescope Works Section -->
+            <div class="process-section" id="how-it-works">
+                <h2 class="section-title">How Telescope Works</h2>
+                <p class="section-subtitle">From photo to inventory—in minutes</p>
+                
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Capture</h3>
+                        <p>Take ground-level photos with a smartphone. No drones, pilots, or special equipment required.</p>
+                        <!-- Placeholder for capture image -->
+                        <div style="margin-top: 20px; padding: 40px; background: #f0f0f0; border-radius: 8px; color: #666;">
+                            📱 [Image placeholder: Smartphone capturing tower photo from ground level]
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Detect</h3>
+                        <p>Our AI identifies and measures over 200 tower components with 2-inch accuracy—even if partially visible.</p>
+                        <!-- Link to existing detection image -->
+                        <img src="../../src/telescope/Telescope 271c3aed7a1a802fb10bf1a63caa78fc/image3.png" 
+                             alt="Equipment Detection Results" 
+                             style="margin-top: 20px; max-width: 100%; height: auto; border-radius: 8px;">
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>Reconcile</h3>
+                        <p>Instantly sync results with your ERP system or export detailed reports for billing and compliance.</p>
+                        <!-- Link to existing interface image -->
+                        <img src="../../src/telescope/Telescope 271c3aed7a1a802fb10bf1a63caa78fc/image2 1.png" 
+                             alt="Data Management Interface" 
+                             style="margin-top: 20px; max-width: 100%; height: auto; border-radius: 8px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Specifications Section -->
+            <div class="specs-section" id="features">
+                <h2 class="section-title">Technical Specifications</h2>
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <div class="spec-icon">📏</div>
+                        <div>
+                            <strong>2-inch measurement accuracy</strong><br>
+                            Precise detection even on tall installations
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-icon">📱</div>
+                        <div>
+                            <strong>No drone flights required</strong><br>
+                            Just smartphone or DSLR camera
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-icon">⏱️</div>
+                        <div>
+                            <strong>7-minute average site time</strong><br>
+                            Fast, efficient inspections
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-icon">🔍</div>
+                        <div>
+                            <strong>Detects 200+ equipment models</strong><br>
+                            Panel antennas, MW antennas, RRUs, and more
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-icon">🔗</div>
+                        <div>
+                            <strong>ERP integration</strong><br>
+                            Works with Tarantula and other systems
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-icon">🗼</div>
+                        <div>
+                            <strong>All tower types supported</strong><br>
+                            Works for towers up to 120 meters (400 ft)
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-icon">☁️</div>
+                        <div>
+                            <strong>Flexible deployment</strong><br>
+                            Available as SaaS or private cloud
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-icon">🎯</div>
+                        <div>
+                            <strong>Intelligent detection</strong><br>
+                            Works even with partial visibility
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Zone -->
+    <section class="social-proof-zone">
+        <div class="container">
+            <h2 class="section-title" id="comparison">Telescope vs Drone-Based Inspections</h2>
+            <p class="section-subtitle">See why leading TowerCos are switching to Telescope</p>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Telescope</th>
+                            <th>Drone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Setup Time</strong></td>
+                            <td><span class="checkmark">✓ Minutes</span></td>
+                            <td><span class="cross">✗ Hours</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Required Gear</strong></td>
+                            <td><span class="checkmark">✓ Smartphone or DSLR</span></td>
+                            <td><span class="cross">✗ Drone, controller</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Image Processing</strong></td>
+                            <td><span class="checkmark">✓ Lightweight CV (2D)</span></td>
+                            <td><span class="cross">✗ 3D mesh, manual QA</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Accuracy</strong></td>
+                            <td><span class="checkmark">✓ 2 inches</span></td>
+                            <td><span class="cross">✗ Varies</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Output Format</strong></td>
+                            <td><span class="checkmark">✓ ERP-ready report</span></td>
+                            <td><span class="cross">✗ Raw media or 3D model</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>On-Site Safety</strong></td>
+                            <td><span class="checkmark">✓ No climb, no flight</span></td>
+                            <td><span class="cross">✗ Flight prep + air clearance</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Sample Report Section -->
+            <div class="sample-report">
+                <h3 class="text-center mb-4">Sample Equipment Inventory Report</h3>
+                <div class="text-center">
+                    <!-- Link to existing report images -->
+                    <img src="../../src/telescope/Telescope 271c3aed7a1a802fb10bf1a63caa78fc/image1.png" 
+                         alt="Sample Detection Output" 
+                         class="report-image">
+                    <p style="margin-top: 20px; font-style: italic; color: #666;">
+                        Detected by Telescope - Complete equipment inventory with measurements and confidence scores
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conversion Zone -->
+    <section class="conversion-zone" id="contact">
+        <div class="container">
+            <h2>Ready to Transform Your Tower Inspections?</h2>
+            <p class="description">
+                Stop losing revenue to incomplete equipment records. 
+                Get accurate, billing-ready inventory reports in minutes, not days.
+            </p>
+            
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <div class="contact-details">
+                    <p><strong>Konstantyn Shyshkin</strong></p>
+                    <p>📧 <a href="mailto:k@spiral.technology">k@spiral.technology</a></p>
+                    <p>📞 <a href="tel:+16179153157">1.617.915.31.57</a></p>
+                    <p style="margin-top: 20px;">
+                        <strong>Spiral Science and Technology Inc</strong><br>
+                        12 Channel Street<br>
+                        Boston MA 02210
+                    </p>
+                </div>
+            </div>
+            
+            <div class="hero-actions">
+                <a href="mailto:k@spiral.technology?subject=Telescope%20Demo%20Request" class="cta-primary">Schedule Demo</a>
+                <a href="https://drive.google.com/drive/u/1/folders/1pa6sa05jh8St9sYzqhl7_TTiDsFAuD3K" target="_blank" class="cta-secondary">View Files</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Spiral Science and Technology Inc. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="https://v0-telescope-landing-git-main-spiralt.vercel.app/" target="_blank" style="color: #ccc;">Previous Landing Page</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80; // Account for fixed nav
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.navigation');
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                nav.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>

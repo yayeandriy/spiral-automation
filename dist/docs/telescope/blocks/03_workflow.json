@@ -1,0 +1,365 @@
+{
+  "children": [
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "🔄 How Telescope Works"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "From photo to inventory—in minutes."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "📹 Watch the explainer video: "
+            },
+            "annotations": {
+              "bold": true
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://www.youtube.com/watch?v=sWplvQV09ig"
+            },
+            "href": "https://www.youtube.com/watch?v=sWplvQV09ig"
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📹"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "📱"
+                        }
+                      }
+                    ],
+                    "color": "default"
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Capture"
+                        }
+                      }
+                    ],
+                    "color": "default"
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Take ground-level photos with a smartphone. No drones, pilots, or special equipment required."
+                        }
+                      }
+                    ],
+                    "color": "default"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🤖"
+                        }
+                      }
+                    ],
+                    "color": "default"
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Detect"
+                        }
+                      }
+                    ],
+                    "color": "default"
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Our AI identifies and measures over 200 tower components with 2-inch accuracy—even if partially visible."
+                        }
+                      }
+                    ],
+                    "color": "default"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🔄"
+                        }
+                      }
+                    ],
+                    "color": "default"
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Reconcile"
+                        }
+                      }
+                    ],
+                    "color": "default"
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Instantly sync results with your ERP system or export detailed reports for billing and compliance."
+                        }
+                      }
+                    ],
+                    "color": "default"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Detailed Process"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Capture: "
+            },
+            "annotations": {
+              "bold": true
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Take standard 4K photos from the ground"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Upload: "
+            },
+            "annotations": {
+              "bold": true
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Use the web portal or mobile app"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Detect: "
+            },
+            "annotations": {
+              "bold": true
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Over 200 types of base station equipment—panel antennas, MW antennas, RRUs, and more"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Measure: "
+            },
+            "annotations": {
+              "bold": true
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Achieve 2-inch precision, even on tall or obscured installations"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Reconcile: "
+            },
+            "annotations": {
+              "bold": true
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Instantly update your ERP (e.g., Tarantula) or generate detailed PDF/CSV reports"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    }
+  ]
+}

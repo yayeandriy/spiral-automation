@@ -1,0 +1,309 @@
+{
+  "children": [
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "📞 Contact Information"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "📧 Primary Contact"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "type": "emoji",
+                      "emoji": "📧"
+                    },
+                    "color": "blue_background"
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Konstantyn Shyshkin"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "color": "default"
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Email: k@spiral.technology"
+                        }
+                      }
+                    ],
+                    "color": "default"
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Phone: 1.617.915.31.57"
+                        }
+                      }
+                    ],
+                    "color": "default"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🏢 Company Information"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "type": "emoji",
+                      "emoji": "🏢"
+                    },
+                    "color": "blue_background"
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Spiral Science and Technology Inc"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "color": "default"
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "12 Channel Street"
+                        }
+                      }
+                    ],
+                    "color": "default"
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Boston MA 02210"
+                        }
+                      }
+                    ],
+                    "color": "default"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🌐 Resources"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "type": "emoji",
+                      "emoji": "🌐"
+                    },
+                    "color": "blue_background"
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Files & Documentation:"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "color": "default"
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Google Drive Resources"
+                        },
+                        "href": "https://drive.google.com/drive/u/1/folders/1pa6sa05jh8St9sYzqhl7_TTiDsFAuD3K"
+                      }
+                    ],
+                    "color": "default"
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Previous Landing Page:"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "color": "default"
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Demo Version"
+                        },
+                        "href": "https://v0-telescope-landing-git-main-spiralt.vercel.app/"
+                      }
+                    ],
+                    "color": "default"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Ready to get started? "
+            },
+            "annotations": {
+              "bold": true
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Contact us to schedule a demo and see how Telescope can transform your tower inspection and billing processes."
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🚀"
+        },
+        "color": "green_background"
+      }
+    }
+  ]
+}

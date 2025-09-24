@@ -1,4 +1,4 @@
-now lets convert html /landing/roboscope/index.html into notion blocks json
+now lets convert html /dist/landing/telescope/index.html into notion blocks json
 use blocks_structure_to_appned.json
 rules:
 all content should have layuot as a list of columns (notion columns)
@@ -16,15 +16,15 @@ lets improve content representation
 
 lookup on the avis landing /src/avis, learn its strucure and patterns and implement them
 
-save into /zones/roboscope (create)
-also add /zones/roboscope/index.json with structure like in /zones/zones.json
+save into /dist/landings/telescope/json (create)
+also add /dist/landings/telescope/json/index.json with structure like in /dist/landings/zones.json
 
 !!!! expand with more type of zones
 
 Notion blocks JSON format, following all your rules:
 
 ✅ Conversion Complete
-I've created 5 zone files in roboscope:
+I've created 5 zone files in telescope:
 
 📁 File Structure Created:
 🎯 Rules Applied:
@@ -57,7 +57,6 @@ image blocks with proper file paths
 divider for section breaks
 ✅ Content Preservation:
 All original content from HTML preserved
-Media file paths maintained (../../src/roboscope/...)
 Emojis added for visual appeal and categorization
 Bold formatting applied to key terms
 Color coding for callouts (blue, green, orange, red, purple)
@@ -67,26 +66,7 @@ Each zone is self-contained and ready for import
 Descriptive metadata included for each zone
 The JSON files are now ready to be imported into Notion and will create a visually appealing, well-structured landing page that matches the original HTML design while leveraging Notion's native block system!
 
-I can see from the screenshot that there's a validation error when sending to Notion. The error message indicates:
 
-Error 400 - Bad request - please check your parameters
-
-The specific validation error shows:
-
-body.zone_name should be not present, instead was "Hero Zone"
-body.zone_description should be not present, instead was "Primary landing zone with value proposition and call-to-action"
-The issue is that our JSON files include metadata fields (zone_name and zone_description) that Notion's API doesn't expect. Notion only wants the children array with the actual blocks.
-
-Let me fix all the zone files by removing the metadata and keeping only the children array:
-
-zone_1_hero.json+0-2
-zone_2_showcase.json+0-2
-zone_3_features.json+0-2
-zone_4_social_proof.json+0-2
-zone_5_conversion.json+0-2
-Perfect! ✅ Fixed the Notion API error!
-
-🔧 What I Fixed:
 Removed metadata fields that Notion's API doesn't accept:
 
 ❌ zone_name
