@@ -1,0 +1,79 @@
+{
+  "documentation_sections": [
+    {
+      "id": "01",
+      "filename": "01-overview.json",
+      "name": "Overview",
+      "tag": "overview"
+    },
+    {
+      "id": "02",
+      "filename": "02-getting-started.json",
+      "name": "Getting Started",
+      "tag": "getting-started"
+    },
+    {
+      "id": "03",
+      "filename": "03-features.json",
+      "name": "Features",
+      "tag": "features"
+    },
+    {
+      "id": "04",
+      "filename": "04-use-cases.json",
+      "name": "Use Cases",
+      "tag": "use-cases"
+    },
+    {
+      "id": "05",
+      "filename": "05-workflow.json",
+      "name": "Understand Workflow",
+      "tag": "workflow"
+    },
+    {
+      "id": "06",
+      "filename": "06-troubleshooting.json",
+      "name": "Troubleshooting",
+      "tag": "troubleshooting"
+    },
+    {
+      "id": "07",
+      "filename": "07-api-docs.json",
+      "name": "API Documentation",
+      "tag": "api-docs"
+    },
+    {
+      "id": "08",
+      "filename": "08-security-compliance.json",
+      "name": "Security & Compliance",
+      "tag": "security-compliance"
+    },
+    {
+      "id": "09",
+      "filename": "09-administration.json",
+      "name": "Administration",
+      "tag": "administration"
+    },
+    {
+      "id": "10",
+      "filename": "10-integration-guide.json",
+      "name": "Integration Guide",
+      "tag": "integration"
+    },
+    {
+      "id": "11",
+      "filename": "11-training-support.json",
+      "name": "Training & Support",
+      "tag": "training-support"
+    },
+    {
+      "id": "12",
+      "filename": "12-release-notes.json",
+      "name": "Release Notes",
+      "tag": "release-notes"
+    }
+  ],
+  "total_sections": 12,
+  "structure_version": "1.0",
+  "created_date": "2025-09-30"
+}

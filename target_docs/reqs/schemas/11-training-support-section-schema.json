@@ -1,0 +1,172 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://spiral-automation.com/schemas/support-contact-section.json",
+  "title": "Training & Support Section Schema",
+  "description": "Schema for Training & Support section with educational resources and support information",
+  "type": "object",
+  "required": ["name", "tag", "description", "children"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "const": "Training & Support",
+      "description": "Must be 'Training & Support'"
+    },
+    "tag": {
+      "type": "string",
+      "const": "training-support",
+      "description": "Must be 'training-support'"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 500,
+      "description": "Overview of support channels, resources, and contact methods"
+    },
+    "children": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 10,
+      "items": { "$ref": "#/definitions/support_child" }
+    },
+    "metadata": { "$ref": "#/definitions/metadata" }
+  },
+  "definitions": {
+    "support_child": {
+      "type": "object",
+      "required": ["name", "description"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[A-Z][a-zA-Z0-9 \\-&]+$",
+          "minLength": 5,
+          "maxLength": 80,
+          "examples": [
+            "Technical Support",
+            "Customer Service",
+            "Community Forum",
+            "Documentation Resources",
+            "Emergency Contact"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 25,
+          "maxLength": 2000,
+          "description": "Support channel details, availability, and how to access help"
+        },
+        "bullet_points": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 8,
+          "items": {
+            "type": "string",
+            "minLength": 15,
+            "maxLength": 200,
+            "description": "Support options, contact methods, or service details"
+          }
+        },
+        "support_type": {
+          "type": "string",
+          "enum": [
+            "technical",
+            "customer_service",
+            "sales",
+            "billing",
+            "emergency",
+            "community",
+            "documentation",
+            "training"
+          ],
+          "description": "Category of support provided"
+        },
+        "availability": {
+          "type": "object",
+          "properties": {
+            "hours": { "type": "string", "examples": ["24/7", "9 AM - 5 PM EST", "Monday - Friday"] },
+            "timezone": { "type": "string", "examples": ["EST", "UTC", "PST"] },
+            "holidays": { "type": "string", "maxLength": 200 },
+            "response_time": { "type": "string", "examples": ["Within 1 hour", "1-2 business days", "Real-time"] }
+          }
+        },
+        "contact_methods": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["method", "value"],
+            "properties": {
+              "method": {
+                "type": "string",
+                "enum": ["email", "phone", "chat", "form", "portal", "forum", "video_call"]
+              },
+              "value": { "type": "string", "minLength": 5, "maxLength": 150 },
+              "description": { "type": "string", "maxLength": 200 },
+              "availability": { "type": "string", "maxLength": 100 }
+            }
+          }
+        },
+        "service_level": {
+          "type": "string",
+          "enum": ["basic", "standard", "premium", "enterprise"],
+          "description": "Level of support service"
+        },
+        "languages_supported": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "examples": ["English", "Spanish", "French", "German", "Japanese"]
+          }
+        },
+        "escalation_process": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["level", "description"],
+            "properties": {
+              "level": { "type": "integer", "minimum": 1, "maximum": 5 },
+              "description": { "type": "string", "minLength": 15, "maxLength": 300 },
+              "timeframe": { "type": "string", "maxLength": 100 }
+            }
+          }
+        },
+        "links": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/link" }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "support", "contact", "help", "technical", "customer-service",
+              "emergency", "community", "documentation", "training",
+              "24-7", "business-hours", "multilingual"
+            ]
+          }
+        }
+      }
+    },
+    "link": {
+      "type": "object",
+      "required": ["title", "url"],
+      "properties": {
+        "title": { "type": "string", "minLength": 5, "maxLength": 100 },
+        "url": { "type": "string", "format": "uri" },
+        "description": { "type": "string", "maxLength": 200 }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "last_updated": { "type": "string", "format": "date" },
+        "author": { "type": "string", "maxLength": 100 },
+        "priority": { "type": "string", "enum": ["high", "medium", "low"] },
+        "target_audience": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["end-users", "administrators", "developers", "managers"] }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

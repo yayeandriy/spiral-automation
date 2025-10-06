@@ -1,0 +1,633 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/technical-docs-response-schema.json",
+  "title": "Technical Documentation Response Schema",
+  "description": "Comprehensive schema for technical documentation responses including product overviews, setup guides, usage instructions, troubleshooting, integration details, and FAQs",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/responseItem"
+  },
+  "minItems": 1,
+
+  "definitions": {
+    "responseItem": {
+      "type": "object",
+      "description": "Individual response item containing document data and processing metadata",
+      "required": ["success", "extractionMethod", "document"],
+      "properties": {
+        "success": {
+          "type": "boolean",
+          "description": "Whether the extraction was successful"
+        },
+        "extractionMethod": {
+          "type": "string",
+          "description": "Method used to extract the document",
+          "enum": ["markdown_codeblock", "generic_codeblock", "json_structure", "direct_parse", "unescaped_parse"]
+        },
+        "document": {
+          "$ref": "#/definitions/technicalDocument"
+        },
+        "metadata": {
+          "anyOf": [
+            { "type": "null" },
+            { "$ref": "#/definitions/documentMetadata" }
+          ]
+        },
+        "contentAnalysis": {
+          "anyOf": [
+            { "type": "null" },
+            { "$ref": "#/definitions/contentAnalysis" }
+          ]
+        },
+        "validation": {
+          "$ref": "#/definitions/validationResult"
+        },
+        "rawJsonString": {
+          "type": "string",
+          "description": "Raw JSON string of the extracted document"
+        },
+        "processingInfo": {
+          "$ref": "#/definitions/processingInfo"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "technicalDocument": {
+      "type": "object",
+      "description": "Main technical document structure",
+      "required": ["product_name"],
+      "properties": {
+        "product_name": {
+          "type": "string",
+          "description": "Name of the product or system",
+          "minLength": 1,
+          "examples": ["Precision Manufacturing Quality Control (PMQC) System"]
+        },
+        "overview": {
+          "$ref": "#/definitions/overview"
+        },
+        "get_started": {
+          "$ref": "#/definitions/getStarted"
+        },
+        "how_to_use": {
+          "$ref": "#/definitions/howToUse"
+        },
+        "edge_cases_and_troubleshooting": {
+          "type": "array",
+          "description": "List of troubleshooting scenarios",
+          "items": {
+            "$ref": "#/definitions/troubleshootingItem"
+          }
+        },
+        "integration": {
+          "$ref": "#/definitions/integration"
+        },
+        "faq": {
+          "type": "array",
+          "description": "Frequently asked questions",
+          "items": {
+            "$ref": "#/definitions/faqItem"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+
+    "overview": {
+      "type": "object",
+      "description": "Product overview section",
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Detailed product description",
+          "minLength": 1
+        },
+        "key_capabilities": {
+          "type": "array",
+          "description": "List of key product capabilities",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "technical_specifications": {
+          "type": "object",
+          "description": "Technical specifications",
+          "properties": {
+            "precision": {
+              "type": "string",
+              "description": "Precision level"
+            },
+            "multi_dimensional": {
+              "type": "boolean",
+              "description": "Whether multi-dimensional analysis is supported"
+            },
+            "real_time_processing": {
+              "type": "boolean",
+              "description": "Whether real-time processing is supported"
+            },
+            "interface": {
+              "type": "string",
+              "description": "Interface type"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "getStarted": {
+      "type": "object",
+      "description": "Getting started section with prerequisites and setup",
+      "properties": {
+        "prerequisites": {
+          "type": "array",
+          "description": "List of prerequisites for setup",
+          "items": {
+            "$ref": "#/definitions/prerequisite"
+          }
+        },
+        "installation": {
+          "type": "array",
+          "description": "Installation steps",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "first_run": {
+          "type": "array",
+          "description": "First run setup steps",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "prerequisite": {
+      "type": "object",
+      "description": "Individual prerequisite item",
+      "required": ["id", "description"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the prerequisite",
+          "pattern": "^[a-z_]+$"
+        },
+        "description": {
+          "type": "string",
+          "description": "Detailed description of the prerequisite",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "howToUse": {
+      "type": "object",
+      "description": "Usage instructions section",
+      "properties": {
+        "measurement_setup": {
+          "type": "array",
+          "description": "Measurement setup steps",
+          "items": {
+            "$ref": "#/definitions/setupStep"
+          }
+        },
+        "validation_process": {
+          "type": "array",
+          "description": "Validation process steps",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "reporting": {
+          "type": "array",
+          "description": "Reporting procedures",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "dashboard_usage": {
+          "type": "array",
+          "description": "Dashboard usage instructions",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+
+    "setupStep": {
+      "type": "object",
+      "description": "Individual setup step with details",
+      "required": ["step", "description"],
+      "properties": {
+        "step": {
+          "type": "integer",
+          "description": "Step number",
+          "minimum": 1
+        },
+        "description": {
+          "type": "string",
+          "description": "Step description",
+          "minLength": 1
+        },
+        "details": {
+          "type": "array",
+          "description": "Detailed instructions for this step",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "troubleshootingItem": {
+      "type": "object",
+      "description": "Troubleshooting scenario",
+      "required": ["id", "description", "symptoms", "resolution"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the issue",
+          "pattern": "^[a-z_]+$"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the problem",
+          "minLength": 1
+        },
+        "symptoms": {
+          "type": "array",
+          "description": "List of symptoms",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "resolution": {
+          "type": "array",
+          "description": "Resolution steps",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "integration": {
+      "type": "object",
+      "description": "Integration configuration and API details",
+      "properties": {
+        "erp_export": {
+          "$ref": "#/definitions/erpExport"
+        },
+        "qms_integration": {
+          "$ref": "#/definitions/qmsIntegration"
+        },
+        "api_reference": {
+          "$ref": "#/definitions/apiReference"
+        }
+      },
+      "additionalProperties": true
+    },
+
+    "erpExport": {
+      "type": "object",
+      "description": "ERP export configuration",
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Description of ERP export functionality"
+        },
+        "endpoints": {
+          "type": "array",
+          "description": "API endpoints for ERP export",
+          "items": {
+            "$ref": "#/definitions/apiEndpoint"
+          }
+        },
+        "retry_policy": {
+          "$ref": "#/definitions/retryPolicy"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "apiEndpoint": {
+      "type": "object",
+      "description": "API endpoint configuration",
+      "required": ["url", "method"],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "API endpoint URL"
+        },
+        "method": {
+          "type": "string",
+          "enum": ["GET", "POST", "PUT", "DELETE", "PATCH"],
+          "description": "HTTP method"
+        },
+        "auth": {
+          "type": "string",
+          "description": "Authentication method"
+        },
+        "payload": {
+          "type": "object",
+          "description": "Request payload structure",
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "retryPolicy": {
+      "type": "object",
+      "description": "Retry policy configuration",
+      "properties": {
+        "max_attempts": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Maximum number of retry attempts"
+        },
+        "backoff_seconds": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Backoff time in seconds between retries"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "qmsIntegration": {
+      "type": "object",
+      "description": "Quality Management System integration",
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Description of QMS integration"
+        },
+        "methods": {
+          "type": "array",
+          "description": "Integration methods available",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "apiReference": {
+      "type": "object",
+      "description": "API reference information",
+      "properties": {
+        "base_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Base URL for the API"
+        },
+        "endpoints": {
+          "type": "array",
+          "description": "Available API endpoints",
+          "items": {
+            "type": "string",
+            "pattern": "^/"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "faqItem": {
+      "type": "object",
+      "description": "FAQ item with question and answer",
+      "required": ["question", "answer"],
+      "properties": {
+        "question": {
+          "type": "string",
+          "description": "The question",
+          "minLength": 1
+        },
+        "answer": {
+          "type": "string",
+          "description": "The answer",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "documentMetadata": {
+      "type": "object",
+      "description": "Document metadata (when available)",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Document title"
+        },
+        "version": {
+          "type": "string",
+          "description": "Document version"
+        },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp"
+        },
+        "language": {
+          "type": "string",
+          "description": "Document language code"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Document tags"
+        },
+        "tagCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of tags"
+        }
+      },
+      "additionalProperties": true
+    },
+
+    "contentAnalysis": {
+      "type": "object",
+      "description": "Content analysis results (when available)",
+      "properties": {
+        "totalSections": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of sections"
+        },
+        "contentSections": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of content sections"
+        },
+        "figureSections": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of figure sections"
+        },
+        "totalSubsections": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of subsections"
+        },
+        "totalContentBlocks": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of content blocks"
+        },
+        "contentTypes": {
+          "type": "object",
+          "description": "Count of different content types",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "validationResult": {
+      "type": "object",
+      "description": "Validation results",
+      "required": ["isValid"],
+      "properties": {
+        "isValid": {
+          "type": "boolean",
+          "description": "Whether the document structure is valid"
+        },
+        "warnings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Validation warnings"
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Validation errors"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "processingInfo": {
+      "type": "object",
+      "description": "Processing information and statistics",
+      "required": ["inputTextLength", "extractedJsonLength", "processedAt"],
+      "properties": {
+        "inputTextLength": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Length of input text"
+        },
+        "extractedJsonLength": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Length of extracted JSON"
+        },
+        "processedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Processing timestamp"
+        },
+        "compressionRatio": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Compression ratio percentage"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+
+  "examples": [
+    [
+      {
+        "success": true,
+        "extractionMethod": "markdown_codeblock",
+        "document": {
+          "product_name": "Precision Manufacturing Quality Control (PMQC) System",
+          "overview": {
+            "description": "Advanced automated inspection platform for manufacturing precision components.",
+            "key_capabilities": [
+              "Multi-point measurement analysis",
+              "Real-time validation with instant alerts"
+            ],
+            "technical_specifications": {
+              "precision": "Micron-level",
+              "multi_dimensional": true,
+              "real_time_processing": true,
+              "interface": "Web + API"
+            }
+          },
+          "get_started": {
+            "prerequisites": [
+              {
+                "id": "hardware",
+                "description": "Industrial camera (≥12 MP), high-speed optics."
+              }
+            ],
+            "installation": [
+              "Mount the camera on the fixture and connect to power."
+            ],
+            "first_run": [
+              "Open Settings > Calibration and capture reference images."
+            ]
+          },
+          "faq": [
+            {
+              "question": "Can the system run in high-temperature environments?",
+              "answer": "Yes, the camera housing is rated to 60°C."
+            }
+          ]
+        },
+        "metadata": null,
+        "contentAnalysis": null,
+        "validation": {
+          "isValid": false,
+          "warnings": [],
+          "errors": ["Missing \"document\" root object"]
+        },
+        "rawJsonString": "{ ... }",
+        "processingInfo": {
+          "inputTextLength": 8647,
+          "extractedJsonLength": 8635,
+          "processedAt": "2025-09-30T13:46:23.636Z",
+          "compressionRatio": 100
+        }
+      }
+    ]
+  ]
+}

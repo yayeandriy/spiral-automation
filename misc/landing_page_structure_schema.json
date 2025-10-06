@@ -1,0 +1,1058 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Extended Landing Page Structure Schema",
+  "description": "Comprehensive schema for defining modern landing page zones, sections, and blocks based on latest marketing trends and conversion optimization practices",
+  "type": "object",
+  "properties": {
+    "landing_page": {
+      "type": "object",
+      "properties": {
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "page_title": {
+              "type": "string",
+              "description": "Main page title"
+            },
+            "page_type": {
+              "type": "string",
+              "enum": [
+                "saas_b2b", "consumer_hardware", "ai_ml_tools", "creative_tools", 
+                "mobile_apps", "development_services", "fintech", "healthcare", 
+                "edtech", "crypto_web3", "ecommerce", "marketplace", "consulting",
+                "agency", "nonprofit", "media_entertainment", "travel_hospitality",
+                "real_estate", "automotive", "fitness_wellness"
+              ],
+              "description": "Industry category of the landing page"
+            },
+            "layout_pattern": {
+              "type": "string",
+              "enum": [
+                "single_page_scroll", "multi_section_detailed", "demo_focused", 
+                "feature_grid", "story_driven", "video_first", "interactive_showcase",
+                "comparison_focused", "testimonial_heavy", "mobile_first", 
+                "data_driven", "minimalist", "media_rich", "gamified"
+              ],
+              "description": "Overall layout approach"
+            },
+            "target_audience": {
+              "type": "string",
+              "enum": [
+                "b2b", "b2c", "developer", "enterprise", "consumer", "startup",
+                "freelancer", "agency", "investor", "student", "researcher",
+                "creator", "influencer", "community"
+              ],
+              "description": "Primary target audience"
+            },
+            "conversion_strategy": {
+              "type": "string",
+              "enum": [
+                "lead_generation", "direct_sale", "freemium_signup", "demo_request",
+                "consultation_booking", "content_download", "newsletter_signup",
+                "app_install", "community_join", "waitlist_signup", "trial_start"
+              ],
+              "description": "Primary conversion goal"
+            },
+            "design_philosophy": {
+              "type": "string",
+              "enum": [
+                "minimal_clean", "bold_vibrant", "professional_corporate", 
+                "modern_tech", "creative_artistic", "data_visualization",
+                "premium_luxury", "friendly_approachable", "cutting_edge",
+                "trustworthy_secure", "innovative_disruptive"
+              ],
+              "description": "Overall design approach and brand personality"
+            }
+          },
+          "required": ["page_title", "page_type"]
+        },
+        "zones": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 12,
+          "items": {
+            "$ref": "#/definitions/zone"
+          },
+          "description": "Major parts of the landing page (up to 12 zones for comprehensive coverage)"
+        }
+      },
+      "required": ["metadata", "zones"]
+    }
+  },
+  "definitions": {
+    "zone": {
+      "type": "object",
+      "properties": {
+        "zone_id": {
+          "type": "string",
+          "description": "Unique identifier for the zone"
+        },
+        "zone_type": {
+          "type": "string",
+          "enum": [
+            "hero_zone", "features_benefits_zone", "social_proof_zone", 
+            "product_showcase_zone", "conversion_zone", "education_zone",
+            "comparison_zone", "integration_zone", "community_zone",
+            "security_trust_zone", "pricing_value_zone", "resource_zone"
+          ],
+          "description": "Type of zone based on primary purpose"
+        },
+        "zone_name": {
+          "type": "string",
+          "description": "Human-readable name for the zone"
+        },
+        "zone_purpose": {
+          "type": "string",
+          "description": "Primary purpose and goal of this zone"
+        },
+        "position": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Order position of zone on the page"
+        },
+        "is_above_fold": {
+          "type": "boolean",
+          "description": "Whether zone appears above the fold"
+        },
+        "viewport_priority": {
+          "type": "string",
+          "enum": ["critical", "important", "secondary", "optional"],
+          "description": "Loading and rendering priority"
+        },
+        "responsive_behavior": {
+          "type": "string",
+          "enum": ["adaptive", "responsive", "mobile_first", "desktop_optimized"],
+          "description": "How zone adapts to different screen sizes"
+        },
+        "sections": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/section"
+          },
+          "description": "Building blocks within the zone"
+        }
+      },
+      "required": ["zone_id", "zone_type", "zone_name", "position", "sections"]
+    },
+    "section": {
+      "type": "object",
+      "properties": {
+        "section_id": {
+          "type": "string",
+          "description": "Unique identifier for the section"
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "hero_section", "navigation_section", "features_overview_section",
+            "testimonials_section", "pricing_section", "demo_section",
+            "integration_section", "faq_section", "footer_section",
+            "call_to_action_section", "benefits_section", "capabilities_section",
+            "use_cases_section", "customer_logos_section", "case_studies_section",
+            "reviews_section", "product_gallery_section", "specifications_section",
+            "comparison_section", "signup_section", "contact_section",
+            "team_section", "about_section", "mission_section", "values_section",
+            "roadmap_section", "blog_section", "resources_section", "documentation_section",
+            "api_section", "security_section", "compliance_section", "trust_section",
+            "awards_section", "press_section", "investor_section", "career_section",
+            "community_section", "partner_section", "affiliate_section",
+            "onboarding_section", "tutorial_section", "webinar_section",
+            "calculator_section", "quiz_section", "assessment_section",
+            "roi_section", "analytics_section", "metrics_section",
+            "comparison_table_section", "feature_matrix_section",
+            "interactive_demo_section", "video_testimonials_section",
+            "live_chat_section", "support_section", "knowledge_base_section",
+            "changelog_section", "status_section", "uptime_section"
+          ],
+          "description": "Type of section based on content and purpose"
+        },
+        "section_name": {
+          "type": "string",
+          "description": "Human-readable name for the section"
+        },
+        "section_purpose": {
+          "type": "string",
+          "description": "Primary purpose of this section"
+        },
+        "layout": {
+          "type": "string",
+          "enum": [
+            "single_column", "two_column", "three_column", "four_column",
+            "grid", "carousel", "accordion", "tabs", "hero_banner", 
+            "split_screen", "masonry", "timeline", "kanban", "card_deck",
+            "sticky_sidebar", "parallax", "full_width", "centered_content",
+            "asymmetric", "magazine", "dashboard", "mosaic"
+          ],
+          "description": "Layout structure of the section"
+        },
+        "animation_style": {
+          "type": "string",
+          "enum": [
+            "none", "fade_in", "slide_up", "slide_left", "slide_right",
+            "zoom_in", "parallax", "stagger", "typewriter", "counter",
+            "progress_bar", "morphing", "particle_effect", "wave_animation"
+          ],
+          "description": "Animation effects for the section"
+        },
+        "blocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/block"
+          },
+          "description": "Individual content blocks within the section"
+        }
+      },
+      "required": ["section_id", "section_type", "section_name", "blocks"]
+    },
+    "block": {
+      "type": "object",
+      "properties": {
+        "block_id": {
+          "type": "string",
+          "description": "Unique identifier for the block"
+        },
+        "block_category": {
+          "type": "string",
+          "enum": [
+            "text_blocks", "visual_blocks", "interactive_blocks", 
+            "social_proof_blocks", "data_blocks", "media_blocks",
+            "form_blocks", "navigation_blocks", "widget_blocks"
+          ],
+          "description": "High-level category of the block"
+        },
+        "block_type": {
+          "type": "string",
+          "enum": [
+            "headline_primary", "headline_secondary", "headline_tertiary",
+            "body_text", "caption_text", "quote_text", "code_snippet",
+            "list_items", "numbered_list", "bullet_points", "feature_list",
+            "hero_image", "feature_icons", "product_screenshots", "infographics",
+            "demo_videos", "explainer_videos", "testimonial_videos", "webinar_recordings",
+            "customer_photos", "team_photos", "office_photos", "event_photos",
+            "cta_button_primary", "cta_button_secondary", "cta_button_ghost",
+            "forms", "contact_forms", "signup_forms", "survey_forms",
+            "navigation_menus", "breadcrumbs", "pagination", "search_bar",
+            "testimonial_quotes", "company_logos", "certification_badges",
+            "statistics", "counters", "progress_bars", "metrics_dashboard",
+            "ratings_reviews", "star_ratings", "review_cards", "review_aggregator",
+            "pricing_table", "pricing_cards", "pricing_calculator",
+            "feature_comparison", "comparison_matrix", "vs_competitor",
+            "contact_information", "office_locations", "contact_cards",
+            "social_media_links", "social_proof_widgets", "social_feed",
+            "legal_links", "privacy_policy", "terms_of_service", "cookie_notice",
+            "timeline", "roadmap", "milestone_tracker", "process_steps",
+            "accordion", "tabs", "toggle_content", "expandable_cards",
+            "carousel", "image_slider", "content_slider", "testimonial_carousel",
+            "interactive_map", "location_pins", "store_locator",
+            "calculator", "roi_calculator", "pricing_calculator", "savings_calculator",
+            "quiz", "assessment", "questionnaire", "poll",
+            "live_chat", "chatbot", "help_widget", "support_ticket",
+            "newsletter_signup", "email_capture", "lead_magnet", "content_gate",
+            "countdown_timer", "urgency_widget", "scarcity_indicator",
+            "notification_bar", "announcement_banner", "alert_message",
+            "loading_spinner", "skeleton_loader", "placeholder_content",
+            "error_message", "success_message", "validation_message",
+            "tooltip", "popover", "modal", "overlay",
+            "share_buttons", "bookmark_widget", "print_button",
+            "audio_player", "podcast_player", "music_widget",
+            "calendar", "event_scheduler", "booking_widget", "appointment_form",
+            "file_upload", "document_viewer", "pdf_embed",
+            "code_editor", "syntax_highlighter", "api_explorer",
+            "chart", "graph", "data_visualization", "analytics_widget",
+            "weather_widget", "stock_ticker", "news_feed", "rss_feed",
+            "payment_form", "checkout_widget", "shopping_cart", "wishlist",
+            "product_grid", "category_filter", "product_search",
+            "video_background", "image_background", "gradient_background",
+            "particle_animation", "lottie_animation", "gif_animation"
+          ],
+          "description": "Specific type of content block"
+        },
+        "content": {
+          "$ref": "#/definitions/block_content",
+          "description": "The actual content of the block"
+        },
+        "styling": {
+          "$ref": "#/definitions/block_styling",
+          "description": "Visual styling properties"
+        },
+        "functionality": {
+          "$ref": "#/definitions/block_functionality",
+          "description": "Interactive functionality if applicable"
+        },
+        "accessibility": {
+          "$ref": "#/definitions/accessibility_properties",
+          "description": "Accessibility and inclusive design properties"
+        },
+        "seo_properties": {
+          "$ref": "#/definitions/seo_properties",
+          "description": "Search engine optimization properties"
+        }
+      },
+      "required": ["block_id", "block_category", "block_type", "content"]
+    },
+    "block_content": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Text content of the block"
+        },
+        "rich_text": {
+          "type": "string",
+          "description": "HTML or markdown formatted text content"
+        },
+        "alt_text": {
+          "type": "string",
+          "description": "Alternative text for accessibility"
+        },
+        "media_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for images, videos, or other media"
+        },
+        "media_type": {
+          "type": "string",
+          "enum": ["image", "video", "audio", "svg", "gif", "webp", "lottie", "pdf", "document"],
+          "description": "Type of media content"
+        },
+        "media_sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": { "type": "string", "format": "uri" },
+              "format": { "type": "string" },
+              "quality": { "type": "string" },
+              "device": { "type": "string" }
+            }
+          },
+          "description": "Multiple media sources for responsive design"
+        },
+        "link_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for clickable elements"
+        },
+        "link_target": {
+          "type": "string",
+          "enum": ["_self", "_blank", "_parent", "_top"],
+          "description": "Link target behavior"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              { "type": "string" },
+              {
+                "type": "object",
+                "properties": {
+                  "text": { "type": "string" },
+                  "icon": { "type": "string" },
+                  "description": { "type": "string" },
+                  "link": { "type": "string", "format": "uri" },
+                  "badge": { "type": "string" },
+                  "priority": { "type": "string", "enum": ["high", "medium", "low"] }
+                }
+              }
+            ]
+          },
+          "description": "List items for list blocks with enhanced metadata"
+        },
+        "form_fields": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/form_field"
+          },
+          "description": "Form fields for form blocks"
+        },
+        "data_source": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["static", "api", "cms", "database", "real_time"]
+            },
+            "endpoint": { "type": "string", "format": "uri" },
+            "refresh_interval": { "type": "integer" },
+            "cache_duration": { "type": "integer" }
+          },
+          "description": "Dynamic content data source configuration"
+        },
+        "localization": {
+          "type": "object",
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "object",
+              "properties": {
+                "text": { "type": "string" },
+                "media_url": { "type": "string", "format": "uri" },
+                "alt_text": { "type": "string" }
+              }
+            }
+          },
+          "description": "Localized content for different languages/regions"
+        }
+      }
+    },
+    "block_styling": {
+      "type": "object",
+      "properties": {
+        "size": {
+          "type": "string",
+          "enum": ["xs", "small", "medium", "large", "xl", "2xl", "3xl", "fluid"],
+          "description": "Relative size of the block"
+        },
+        "color_scheme": {
+          "type": "string",
+          "enum": [
+            "primary", "secondary", "accent", "neutral", "success", "warning", 
+            "error", "info", "light", "dark", "gradient_primary", "gradient_secondary",
+            "brand_colors", "custom"
+          ],
+          "description": "Color scheme applied to the block"
+        },
+        "font_weight": {
+          "type": "string",
+          "enum": ["thin", "light", "normal", "medium", "semibold", "bold", "extrabold", "black"],
+          "description": "Font weight for text blocks"
+        },
+        "font_family": {
+          "type": "string",
+          "enum": ["primary", "secondary", "heading", "body", "monospace", "custom"],
+          "description": "Font family selection"
+        },
+        "alignment": {
+          "type": "string",
+          "enum": ["left", "center", "right", "justify", "start", "end"],
+          "description": "Text or content alignment"
+        },
+        "emphasis": {
+          "type": "boolean",
+          "description": "Whether the block should be emphasized"
+        },
+        "background": {
+          "type": "string",
+          "enum": [
+            "transparent", "solid", "gradient", "image", "video", "pattern",
+            "blur", "glass_morphism", "neumorphism"
+          ],
+          "description": "Background type"
+        },
+        "border": {
+          "type": "object",
+          "properties": {
+            "style": {
+              "type": "string",
+              "enum": ["none", "solid", "dashed", "dotted", "gradient"]
+            },
+            "width": {
+              "type": "string",
+              "enum": ["thin", "medium", "thick", "custom"]
+            },
+            "radius": {
+              "type": "string",
+              "enum": ["none", "small", "medium", "large", "full", "custom"]
+            }
+          }
+        },
+        "shadow": {
+          "type": "string",
+          "enum": ["none", "small", "medium", "large", "xl", "inner", "custom"],
+          "description": "Drop shadow effect"
+        },
+        "spacing": {
+          "type": "object",
+          "properties": {
+            "margin": {
+              "type": "string",
+              "enum": ["none", "xs", "sm", "md", "lg", "xl", "auto", "custom"]
+            },
+            "padding": {
+              "type": "string",
+              "enum": ["none", "xs", "sm", "md", "lg", "xl", "custom"]
+            }
+          }
+        },
+        "responsive_behavior": {
+          "type": "object",
+          "properties": {
+            "mobile": {
+              "type": "object",
+              "properties": {
+                "hidden": { "type": "boolean" },
+                "size": { "type": "string" },
+                "alignment": { "type": "string" }
+              }
+            },
+            "tablet": {
+              "type": "object",
+              "properties": {
+                "hidden": { "type": "boolean" },
+                "size": { "type": "string" },
+                "alignment": { "type": "string" }
+              }
+            },
+            "desktop": {
+              "type": "object",
+              "properties": {
+                "hidden": { "type": "boolean" },
+                "size": { "type": "string" },
+                "alignment": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "block_functionality": {
+      "type": "object",
+      "properties": {
+        "interactive": {
+          "type": "boolean",
+          "description": "Whether the block is interactive"
+        },
+        "action_type": {
+          "type": "string",
+          "enum": [
+            "click", "hover", "scroll", "form_submit", "navigation", "download",
+            "share", "bookmark", "print", "copy", "expand", "collapse", "toggle",
+            "drag", "drop", "swipe", "pinch", "zoom", "rotate", "voice_command",
+            "gesture", "shake", "tilt", "proximity", "ambient_light"
+          ],
+          "description": "Type of interaction"
+        },
+        "action_target": {
+          "type": "string",
+          "description": "Target of the action (URL, element ID, etc.)"
+        },
+        "micro_interactions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "trigger": { "type": "string" },
+              "animation": { "type": "string" },
+              "duration": { "type": "number" },
+              "delay": { "type": "number" },
+              "easing": { "type": "string" }
+            }
+          },
+          "description": "Small interactive animations and feedback"
+        },
+        "conditional_display": {
+          "type": "object",
+          "properties": {
+            "conditions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "parameter": { "type": "string" },
+                  "operator": { "type": "string", "enum": ["equals", "not_equals", "greater_than", "less_than", "contains"] },
+                  "value": { "type": "string" }
+                }
+              }
+            },
+            "logic": { "type": "string", "enum": ["and", "or"] }
+          },
+          "description": "Conditions for showing/hiding the block"
+        },
+        "personalization": {
+          "type": "object",
+          "properties": {
+            "user_segments": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "geographic_targeting": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "behavioral_triggers": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "description": "Personalization and targeting rules"
+        },
+        "tracking": {
+          "type": "object",
+          "properties": {
+            "analytics_event": {
+              "type": "string",
+              "description": "Analytics event name"
+            },
+            "conversion_goal": {
+              "type": "boolean",
+              "description": "Whether this is a conversion goal"
+            },
+            "heat_mapping": {
+              "type": "boolean",
+              "description": "Track for heat mapping analysis"
+            },
+            "ab_test_variant": {
+              "type": "string",
+              "description": "A/B test variant identifier"
+            },
+            "custom_attributes": {
+              "type": "object",
+              "additionalProperties": { "type": "string" },
+              "description": "Custom tracking attributes"
+            }
+          }
+        }
+      }
+    },
+    "accessibility_properties": {
+      "type": "object",
+      "properties": {
+        "aria_label": {
+          "type": "string",
+          "description": "ARIA label for screen readers"
+        },
+        "aria_describedby": {
+          "type": "string",
+          "description": "ARIA described by reference"
+        },
+        "role": {
+          "type": "string",
+          "description": "ARIA role"
+        },
+        "tabindex": {
+          "type": "integer",
+          "description": "Tab order index"
+        },
+        "keyboard_navigation": {
+          "type": "boolean",
+          "description": "Supports keyboard navigation"
+        },
+        "high_contrast_support": {
+          "type": "boolean",
+          "description": "Optimized for high contrast mode"
+        },
+        "screen_reader_text": {
+          "type": "string",
+          "description": "Additional text for screen readers"
+        },
+        "color_blind_friendly": {
+          "type": "boolean",
+          "description": "Uses color-blind friendly design"
+        }
+      }
+    },
+    "seo_properties": {
+      "type": "object",
+      "properties": {
+        "heading_level": {
+          "type": "string",
+          "enum": ["h1", "h2", "h3", "h4", "h5", "h6"],
+          "description": "Semantic heading level"
+        },
+        "structured_data": {
+          "type": "object",
+          "description": "Schema.org structured data"
+        },
+        "meta_description": {
+          "type": "string",
+          "description": "Meta description for the content"
+        },
+        "keywords": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Target keywords"
+        },
+        "canonical_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Canonical URL reference"
+        }
+      }
+    },
+    "form_field": {
+      "type": "object",
+      "properties": {
+        "field_id": {
+          "type": "string",
+          "description": "Unique identifier for the form field"
+        },
+        "field_type": {
+          "type": "string",
+          "enum": [
+            "text", "email", "password", "number", "tel", "url", "search",
+            "textarea", "select", "checkbox", "radio", "file", "date",
+            "datetime-local", "time", "color", "range", "hidden",
+            "multi_select", "autocomplete", "tags", "rich_text",
+            "signature", "rating", "slider", "toggle", "image_upload"
+          ],
+          "description": "HTML input type or custom field type"
+        },
+        "label": {
+          "type": "string",
+          "description": "Field label"
+        },
+        "placeholder": {
+          "type": "string",
+          "description": "Placeholder text"
+        },
+        "help_text": {
+          "type": "string",
+          "description": "Help text or description"
+        },
+        "required": {
+          "type": "boolean",
+          "description": "Whether the field is required"
+        },
+        "validation": {
+          "type": "object",
+          "properties": {
+            "pattern": {
+              "type": "string",
+              "description": "Regex pattern for validation"
+            },
+            "min_length": {
+              "type": "integer",
+              "description": "Minimum length"
+            },
+            "max_length": {
+              "type": "integer",
+              "description": "Maximum length"
+            },
+            "min_value": {
+              "type": "number",
+              "description": "Minimum numeric value"
+            },
+            "max_value": {
+              "type": "number",
+              "description": "Maximum numeric value"
+            },
+            "custom_validation": {
+              "type": "string",
+              "description": "Custom validation function"
+            }
+          }
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "value": { "type": "string" },
+              "label": { "type": "string" },
+              "disabled": { "type": "boolean" },
+              "selected": { "type": "boolean" }
+            }
+          },
+          "description": "Options for select, radio, or checkbox fields"
+        },
+        "conditional_logic": {
+          "type": "object",
+          "properties": {
+            "show_if": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "field": { "type": "string" },
+                  "condition": { "type": "string" },
+                  "value": { "type": "string" }
+                }
+              }
+            }
+          },
+          "description": "Conditional field display logic"
+        }
+      },
+      "required": ["field_id", "field_type", "label"]
+    }
+  },
+  "zone_type_definitions": {
+    "hero_zone": {
+      "description": "Primary landing zone that captures immediate attention and communicates core value proposition",
+      "typical_sections": [
+        "hero_section", "navigation_section", "call_to_action_section", 
+        "announcement_section", "value_proposition_section"
+      ],
+      "common_blocks": [
+        "headline_primary", "body_text", "hero_image", "cta_button_primary", 
+        "navigation_menus", "video_background", "countdown_timer", "announcement_banner"
+      ],
+      "purpose": "Capture attention, communicate value proposition, drive initial engagement, establish brand presence",
+      "conversion_impact": "Critical - primary conversion driver",
+      "modern_trends": ["Video backgrounds", "Interactive animations", "Personalized messaging", "AI-powered copy"]
+    },
+    "features_benefits_zone": {
+      "description": "Comprehensive showcase of product capabilities, benefits, and unique selling propositions",
+      "typical_sections": [
+        "features_overview_section", "benefits_section", "capabilities_section", 
+        "use_cases_section", "interactive_demo_section", "feature_matrix_section"
+      ],
+      "common_blocks": [
+        "feature_icons", "demo_videos", "interactive_demos", "feature_comparison", 
+        "benefit_cards", "use_case_examples", "calculator", "roi_calculator"
+      ],
+      "purpose": "Educate about features, demonstrate value, address use cases, differentiate from competitors",
+      "conversion_impact": "High - builds understanding and desire",
+      "modern_trends": ["Interactive product tours", "AR/VR demos", "Personalized feature recommendations", "Real-time calculations"]
+    },
+    "social_proof_zone": {
+      "description": "Trust-building zone with testimonials, reviews, certifications, and credibility indicators",
+      "typical_sections": [
+        "testimonials_section", "customer_logos_section", "case_studies_section", 
+        "reviews_section", "awards_section", "certification_section", "video_testimonials_section"
+      ],
+      "common_blocks": [
+        "testimonial_quotes", "customer_photos", "company_logos", "certification_badges", 
+        "ratings_reviews", "case_study_cards", "video_testimonials", "trust_seals"
+      ],
+      "purpose": "Build trust, establish credibility, reduce purchase anxiety, validate product quality",
+      "conversion_impact": "High - reduces friction and builds confidence",
+      "modern_trends": ["Video testimonials", "Real-time reviews", "Social media integration", "Micro-testimonials"]
+    },
+    "product_showcase_zone": {
+      "description": "Detailed product demonstration, specifications, and visual presentation",
+      "typical_sections": [
+        "product_gallery_section", "specifications_section", "demo_section", 
+        "interactive_showcase_section", "360_view_section", "customization_section"
+      ],
+      "common_blocks": [
+        "product_screenshots", "demo_videos", "360_product_view", "interactive_hotspots", 
+        "specification_tables", "customization_tool", "ar_preview", "zoom_gallery"
+      ],
+      "purpose": "Demonstrate product capabilities, provide detailed information, enable product exploration",
+      "conversion_impact": "Medium-High - enables informed decision making",
+      "modern_trends": ["3D product views", "AR try-on", "Interactive configurators", "Real-time customization"]
+    },
+    "conversion_zone": {
+      "description": "Final conversion-focused zone with pricing, signup, and clear calls-to-action",
+      "typical_sections": [
+        "pricing_section", "signup_section", "contact_section", "checkout_section", 
+        "trial_section", "consultation_booking_section"
+      ],
+      "common_blocks": [
+        "pricing_table", "signup_forms", "cta_button_primary", "urgency_indicators", 
+        "guarantee_badges", "payment_options", "contact_forms", "booking_widget"
+      ],
+      "purpose": "Drive conversion, capture leads, facilitate transactions, remove final barriers",
+      "conversion_impact": "Critical - direct conversion driver",
+      "modern_trends": ["One-click signup", "Progressive profiling", "Smart pricing", "Urgency mechanics"]
+    },
+    "education_zone": {
+      "description": "Educational content zone focused on informing and nurturing prospects",
+      "typical_sections": [
+        "tutorial_section", "webinar_section", "blog_section", "resources_section", 
+        "documentation_section", "knowledge_base_section", "academy_section"
+      ],
+      "common_blocks": [
+        "tutorial_videos", "downloadable_guides", "webinar_registration", "blog_cards", 
+        "resource_library", "learning_paths", "quiz_assessments", "progress_trackers"
+      ],
+      "purpose": "Educate prospects, build expertise perception, nurture leads, provide value",
+      "conversion_impact": "Medium - builds trust and authority",
+      "modern_trends": ["Interactive learning", "Personalized content paths", "Micro-learning", "AI tutors"]
+    },
+    "comparison_zone": {
+      "description": "Competitive comparison and differentiation zone",
+      "typical_sections": [
+        "comparison_section", "vs_competitor_section", "feature_matrix_section", 
+        "alternatives_section", "migration_section", "switching_section"
+      ],
+      "common_blocks": [
+        "comparison_matrix", "vs_tables", "feature_checkmarks", "migration_tools", 
+        "cost_comparison", "time_savings_calculator", "switching_guides"
+      ],
+      "purpose": "Differentiate from competitors, address objections, justify premium pricing",
+      "conversion_impact": "Medium-High - overcomes competitive concerns",
+      "modern_trends": ["Dynamic comparisons", "Real-time pricing", "Interactive matrices", "Unbiased third-party data"]
+    },
+    "integration_zone": {
+      "description": "Technical integration and ecosystem compatibility showcase",
+      "typical_sections": [
+        "integration_section", "api_section", "partner_section", "marketplace_section", 
+        "developer_section", "webhook_section", "automation_section"
+      ],
+      "common_blocks": [
+        "integration_logos", "api_explorer", "code_snippets", "webhook_configurator", 
+        "automation_builder", "partner_directory", "app_store_links"
+      ],
+      "purpose": "Demonstrate technical capabilities, show ecosystem fit, enable technical evaluation",
+      "conversion_impact": "Medium - important for technical buyers",
+      "modern_trends": ["No-code integrations", "Visual workflow builders", "Real-time sync demos", "API playgrounds"]
+    },
+    "community_zone": {
+      "description": "Community engagement and user-generated content zone",
+      "typical_sections": [
+        "community_section", "user_showcase_section", "forum_section", 
+        "events_section", "ambassador_section", "social_feed_section"
+      ],
+      "common_blocks": [
+        "community_stats", "user_generated_content", "event_calendar", "forum_highlights", 
+        "ambassador_profiles", "social_media_feed", "community_challenges"
+      ],
+      "purpose": "Build community engagement, showcase user success, create belonging",
+      "conversion_impact": "Medium - builds long-term loyalty",
+      "modern_trends": ["Live community feeds", "Gamification", "Virtual events", "User-generated content contests"]
+    },
+    "security_trust_zone": {
+      "description": "Security, compliance, and trust indicator zone",
+      "typical_sections": [
+        "security_section", "compliance_section", "trust_section", "privacy_section", 
+        "uptime_section", "audit_section", "certification_section"
+      ],
+      "common_blocks": [
+        "security_badges", "compliance_logos", "uptime_stats", "audit_reports", 
+        "privacy_controls", "data_protection_info", "security_features"
+      ],
+      "purpose": "Address security concerns, demonstrate compliance, build institutional trust",
+      "conversion_impact": "High for enterprise - removes adoption barriers",
+      "modern_trends": ["Real-time security dashboards", "Transparency reports", "Privacy controls", "Zero-trust demonstrations"]
+    },
+    "pricing_value_zone": {
+      "description": "Comprehensive pricing, value proposition, and ROI demonstration zone",
+      "typical_sections": [
+        "pricing_section", "value_calculator_section", "roi_section", "savings_section", 
+        "plans_comparison_section", "custom_pricing_section"
+      ],
+      "common_blocks": [
+        "pricing_calculator", "roi_calculator", "savings_estimator", "value_propositions", 
+        "cost_breakdown", "payment_options", "billing_transparency"
+      ],
+      "purpose": "Justify pricing, demonstrate value, calculate ROI, facilitate purchase decisions",
+      "conversion_impact": "Critical - directly impacts purchase decisions",
+      "modern_trends": ["Dynamic pricing", "Usage-based calculators", "Transparent billing", "Value realization tracking"]
+    },
+    "resource_zone": {
+      "description": "Support resources, documentation, and post-purchase value zone",
+      "typical_sections": [
+        "support_section", "documentation_section", "faq_section", "help_center_section", 
+        "training_section", "onboarding_section", "status_section"
+      ],
+      "common_blocks": [
+        "faq_accordion", "help_articles", "video_tutorials", "support_chat", 
+        "status_dashboard", "training_calendar", "onboarding_checklist"
+      ],
+      "purpose": "Reduce support burden, enable self-service, demonstrate ongoing value",
+      "conversion_impact": "Medium - reduces purchase anxiety about support",
+      "modern_trends": ["AI-powered help", "Interactive tutorials", "Contextual help", "Predictive support"]
+    }
+  },
+  "industry_specific_extensions": {
+    "saas_b2b": {
+      "required_zones": ["hero_zone", "features_benefits_zone", "social_proof_zone", "conversion_zone"],
+      "recommended_zones": ["integration_zone", "security_trust_zone", "pricing_value_zone"],
+      "key_sections": ["demo_section", "integration_section", "pricing_section", "security_section"],
+      "conversion_optimizations": ["Free trial emphasis", "ROI calculators", "Security badges", "Integration showcases"]
+    },
+    "fintech": {
+      "required_zones": ["hero_zone", "security_trust_zone", "social_proof_zone", "conversion_zone"],
+      "recommended_zones": ["education_zone", "comparison_zone", "pricing_value_zone"],
+      "key_sections": ["security_section", "compliance_section", "calculator_section", "testimonials_section"],
+      "conversion_optimizations": ["Trust indicators", "Regulatory compliance", "Financial calculators", "Security demonstrations"]
+    },
+    "healthcare": {
+      "required_zones": ["hero_zone", "education_zone", "social_proof_zone", "security_trust_zone"],
+      "recommended_zones": ["resource_zone", "conversion_zone"],
+      "key_sections": ["benefits_section", "testimonials_section", "compliance_section", "support_section"],
+      "conversion_optimizations": ["Patient testimonials", "Clinical evidence", "Privacy assurance", "Professional endorsements"]
+    },
+    "edtech": {
+      "required_zones": ["hero_zone", "education_zone", "social_proof_zone", "conversion_zone"],
+      "recommended_zones": ["community_zone", "resource_zone"],
+      "key_sections": ["demo_section", "success_stories_section", "curriculum_section", "community_section"],
+      "conversion_optimizations": ["Interactive demos", "Learning outcomes", "Student success stories", "Free content"]
+    },
+    "crypto_web3": {
+      "required_zones": ["hero_zone", "education_zone", "security_trust_zone", "community_zone"],
+      "recommended_zones": ["comparison_zone", "resource_zone"],
+      "key_sections": ["whitepaper_section", "roadmap_section", "tokenomics_section", "community_section"],
+      "conversion_optimizations": ["Technical documentation", "Community metrics", "Security audits", "Roadmap transparency"]
+    },
+    "ecommerce": {
+      "required_zones": ["hero_zone", "product_showcase_zone", "social_proof_zone", "conversion_zone"],
+      "recommended_zones": ["comparison_zone", "resource_zone"],
+      "key_sections": ["product_gallery_section", "reviews_section", "shipping_section", "guarantee_section"],
+      "conversion_optimizations": ["Product visualization", "Customer reviews", "Shipping options", "Return policies"]
+    }
+  },
+  "modern_conversion_patterns": {
+    "progressive_disclosure": {
+      "description": "Gradually reveal information to avoid overwhelming users",
+      "implementation": ["Expandable sections", "Step-by-step reveals", "Contextual information"],
+      "best_for": ["Complex products", "Technical audiences", "Multi-feature platforms"]
+    },
+    "social_validation": {
+      "description": "Real-time social proof and peer validation",
+      "implementation": ["Live user counters", "Recent signups", "Peer comparisons"],
+      "best_for": ["Network effects", "Community-driven products", "B2C applications"]
+    },
+    "urgency_scarcity": {
+      "description": "Time-sensitive offers and limited availability",
+      "implementation": ["Countdown timers", "Limited spots", "Flash sales"],
+      "best_for": ["Sales events", "Course enrollments", "Limited releases"]
+    },
+    "personalization": {
+      "description": "Tailored content based on user behavior and preferences",
+      "implementation": ["Dynamic content", "Behavioral triggers", "Segment-specific messaging"],
+      "best_for": ["Returning visitors", "Multi-product companies", "Long sales cycles"]
+    },
+    "micro_commitments": {
+      "description": "Small commitments leading to larger conversions",
+      "implementation": ["Quiz participation", "Email signup", "Free resource download"],
+      "best_for": ["High-consideration purchases", "Lead nurturing", "Trust building"]
+    }
+  },
+  "accessibility_standards": {
+    "wcag_compliance": {
+      "level": "AA",
+      "requirements": [
+        "Alt text for all images",
+        "Keyboard navigation support",
+        "Color contrast ratios",
+        "Focus indicators",
+        "Screen reader compatibility"
+      ]
+    },
+    "inclusive_design": {
+      "principles": [
+        "Multiple ways to access content",
+        "Clear and simple language",
+        "Consistent navigation patterns",
+        "Error prevention and recovery",
+        "Flexible user interface"
+      ]
+    }
+  },
+  "performance_optimization": {
+    "core_web_vitals": {
+      "lcp_target": "< 2.5s",
+      "fid_target": "< 100ms",
+      "cls_target": "< 0.1"
+    },
+    "optimization_strategies": [
+      "Critical CSS inline",
+      "Progressive image loading",
+      "Resource prioritization",
+      "Code splitting",
+      "CDN utilization"
+    ]
+  },
+  "analytics_tracking": {
+    "conversion_funnel": [
+      "Page view",
+      "Scroll depth",
+      "Section engagement",
+      "CTA interactions",
+      "Form starts",
+      "Form completions",
+      "Conversions"
+    ],
+    "user_behavior": [
+      "Heat mapping",
+      "Session recordings",
+      "A/B test tracking",
+      "Cohort analysis",
+      "Attribution modeling"
+    ]
+  }
+}

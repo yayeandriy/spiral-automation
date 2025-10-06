@@ -1,0 +1,425 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Security & Trust Zone Content Schema",
+  "description": "Content zone for security features, compliance information, certifications, and trust indicators",
+  "type": "object",
+  "properties": {
+    "zone_id": {
+      "type": "string",
+      "description": "Unique identifier for the zone"
+    },
+    "zone_type": {
+      "type": "string",
+      "const": "security_trust_zone",
+      "description": "Type of zone - must be security_trust_zone"
+    },
+    "zone_name": {
+      "type": "string",
+      "description": "Human-readable name for the zone"
+    },
+    "zone_purpose": {
+      "type": "string",
+      "description": "Primary purpose and goal of this zone"
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Order position of zone on the page"
+    },
+    "is_above_fold": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether zone appears above the fold"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["high", "medium"],
+      "default": "high",
+      "description": "Content importance priority - security zones are typically high priority"
+    },
+    "content_strategy": {
+      "type": "string",
+      "enum": ["trust_building", "compliance", "security_focused"],
+      "default": "trust_building",
+      "description": "Content strategy for security & trust zones"
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/security_trust_section"
+      },
+      "description": "Content sections within the security & trust zone"
+    }
+  },
+  "required": ["zone_id", "zone_type", "zone_name", "position", "sections"],
+  "definitions": {
+    "security_trust_section": {
+      "type": "object",
+      "properties": {
+        "section_id": {
+          "type": "string",
+          "description": "Unique identifier for the section"
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "security_features_section", "compliance_section", "certifications_section",
+            "privacy_section", "data_protection_section", "trust_indicators_section",
+            "security_policies_section", "audit_reports_section"
+          ],
+          "description": "Type of section - security and trust focused types"
+        },
+        "section_name": {
+          "type": "string",
+          "description": "Human-readable name for the section"
+        },
+        "section_purpose": {
+          "type": "string",
+          "description": "Primary purpose of this section"
+        },
+        "content_structure": {
+          "type": "string",
+          "enum": [
+            "badge_grid", "feature_list", "policy_document", "certification_display", "accordion_layout"
+          ],
+          "description": "Organizational structure - security content layouts"
+        },
+        "content_flow": {
+          "type": "string",
+          "enum": ["grid", "linear", "hierarchical"],
+          "default": "grid",
+          "description": "How content flows within the section"
+        },
+        "blocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/security_trust_block"
+          },
+          "description": "Individual content blocks within the section"
+        }
+      },
+      "required": ["section_id", "section_type", "section_name", "blocks"]
+    },
+    "security_trust_block": {
+      "type": "object",
+      "properties": {
+        "block_id": {
+          "type": "string",
+          "description": "Unique identifier for the block"
+        },
+        "block_category": {
+          "type": "string",
+          "enum": [
+            "certification_content", "security_content", "compliance_content", "policy_content"
+          ],
+          "description": "High-level category of the content block"
+        },
+        "block_type": {
+          "type": "string",
+          "enum": [
+            "certification_badge", "security_feature", "compliance_standard", "privacy_policy",
+            "security_audit", "trust_seal", "data_protection_info", "encryption_details",
+            "access_control", "monitoring_info", "incident_response", "vulnerability_management"
+          ],
+          "description": "Specific type of content block suitable for security & trust zones"
+        },
+        "content": {
+          "$ref": "#/definitions/block_content_data",
+          "description": "The actual content data of the block"
+        },
+        "functionality": {
+          "$ref": "#/definitions/block_functionality",
+          "description": "Interactive functionality and behavior"
+        },
+        "metadata": {
+          "$ref": "#/definitions/content_metadata",
+          "description": "Additional metadata for the content block"
+        }
+      },
+      "required": ["block_id", "block_category", "block_type", "content"]
+    },
+    "block_content_data": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Title of the security or trust element"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the security feature or compliance measure"
+        },
+        "certification_details": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "issuing_body": { "type": "string" },
+            "certification_id": { "type": "string" },
+            "issue_date": { "type": "string", "format": "date" },
+            "expiry_date": { "type": "string", "format": "date" },
+            "scope": { "type": "string" },
+            "badge_url": { "type": "string", "format": "uri" },
+            "certificate_url": { "type": "string", "format": "uri" },
+            "verification_url": { "type": "string", "format": "uri" }
+          },
+          "description": "Certification and compliance details"
+        },
+        "security_features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "feature_name": { "type": "string" },
+              "description": { "type": "string" },
+              "implementation": { "type": "string" },
+              "standards_compliance": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          },
+          "description": "List of security features and implementations"
+        },
+        "compliance_standards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "standard": { 
+                "type": "string",
+                "enum": ["SOC2", "ISO27001", "GDPR", "HIPAA", "PCI_DSS", "FedRAMP", "CCPA"]
+              },
+              "status": {
+                "type": "string",
+                "enum": ["certified", "compliant", "in_progress", "planned"]
+              },
+              "description": { "type": "string" },
+              "evidence_url": { "type": "string", "format": "uri" }
+            }
+          },
+          "description": "Compliance standards and certifications"
+        },
+        "encryption_info": {
+          "type": "object",
+          "properties": {
+            "data_at_rest": { "type": "string" },
+            "data_in_transit": { "type": "string" },
+            "key_management": { "type": "string" },
+            "algorithms": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "description": "Encryption and data protection details"
+        },
+        "access_controls": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "control_type": { "type": "string" },
+              "description": { "type": "string" },
+              "implementation": { "type": "string" }
+            }
+          },
+          "description": "Access control measures"
+        },
+        "audit_information": {
+          "type": "object",
+          "properties": {
+            "audit_firm": { "type": "string" },
+            "last_audit_date": { "type": "string", "format": "date" },
+            "audit_type": { "type": "string" },
+            "report_available": { "type": "boolean" },
+            "report_url": { "type": "string", "format": "uri" },
+            "findings_summary": { "type": "string" }
+          },
+          "description": "Security audit information"
+        },
+        "privacy_policies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "policy_name": { "type": "string" },
+              "last_updated": { "type": "string", "format": "date" },
+              "policy_url": { "type": "string", "format": "uri" },
+              "summary": { "type": "string" }
+            }
+          },
+          "description": "Privacy policies and data handling practices"
+        },
+        "incident_response": {
+          "type": "object",
+          "properties": {
+            "response_time": { "type": "string" },
+            "escalation_process": { "type": "string" },
+            "communication_plan": { "type": "string" },
+            "contact_info": { "type": "string" }
+          },
+          "description": "Security incident response procedures"
+        },
+        "trust_indicators": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "indicator_type": {
+                "type": "string",
+                "enum": ["uptime", "customer_count", "years_operating", "data_centers", "security_team_size"]
+              },
+              "value": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          },
+          "description": "Various trust indicators and metrics"
+        },
+        "media_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for security badges, certificates, or diagrams"
+        },
+        "media_type": {
+          "type": "string",
+          "enum": ["badge", "certificate", "diagram", "logo"],
+          "description": "Type of security media"
+        },
+        "alt_text": {
+          "type": "string",
+          "description": "Alternative text for accessibility"
+        }
+      }
+    },
+    "block_functionality": {
+      "type": "object",
+      "properties": {
+        "interactive": {
+          "type": "boolean",
+          "description": "Whether the block is interactive"
+        },
+        "interaction_type": {
+          "type": "string",
+          "enum": [
+            "click", "expand", "verify", "download", "modal", "external_link"
+          ],
+          "description": "Type of interaction supported"
+        },
+        "verifiable": {
+          "type": "boolean",
+          "description": "Whether certification/compliance can be verified"
+        },
+        "downloadable": {
+          "type": "boolean",
+          "description": "Whether certificates or reports can be downloaded"
+        },
+        "action_target": {
+          "type": "string",
+          "description": "Target for verification, policy documents, or certificates"
+        },
+        "tracking": {
+          "type": "object",
+          "properties": {
+            "analytics_event": {
+              "type": "string",
+              "description": "Analytics event name"
+            },
+            "trust_engagement": {
+              "type": "boolean",
+              "description": "Whether this tracks trust-related engagement"
+            },
+            "policy_views": {
+              "type": "boolean",
+              "description": "Whether to track policy document views"
+            },
+            "certificate_verification": {
+              "type": "boolean",
+              "description": "Whether to track certificate verifications"
+            }
+          }
+        }
+      }
+    },
+    "content_metadata": {
+      "type": "object",
+      "properties": {
+        "created_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Content creation timestamp"
+        },
+        "updated_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp"
+        },
+        "version": {
+          "type": "string",
+          "description": "Content version"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "review", "approved", "published"],
+          "description": "Content status"
+        },
+        "security_level": {
+          "type": "string",
+          "enum": ["basic", "advanced", "enterprise", "government"],
+          "description": "Security level or tier"
+        },
+        "compliance_region": {
+          "type": "array",
+          "items": { 
+            "type": "string",
+            "enum": ["global", "us", "eu", "apac", "canada", "uk"]
+          },
+          "description": "Geographic regions for compliance applicability"
+        },
+        "verification_required": {
+          "type": "boolean",
+          "description": "Whether content requires verification or approval"
+        },
+        "expiry_tracking": {
+          "type": "boolean",
+          "description": "Whether to track expiration dates for certificates"
+        },
+        "accessibility": {
+          "type": "object",
+          "properties": {
+            "aria_label": {
+              "type": "string",
+              "description": "ARIA label for screen readers"
+            },
+            "keyboard_navigation": {
+              "type": "boolean",
+              "description": "Supports keyboard navigation"
+            },
+            "high_contrast_badges": {
+              "type": "boolean",
+              "description": "Supports high contrast for badges"
+            }
+          }
+        }
+      }
+    }
+  },
+  "zone_guidelines": {
+    "description": "Content zone for security features, compliance information, certifications, and trust indicators",
+    "typical_content": [
+      "Security certifications", "Compliance badges", "Privacy policies", "Security features",
+      "Audit reports", "Data protection information", "Trust seals", "Encryption details",
+      "Access controls", "Incident response procedures"
+    ],
+    "content_strategy": "Build trust through transparency about security measures and compliance",
+    "conversion_impact": "High - critical for enterprise customers and regulated industries",
+    "best_practices": [
+      "Display current certifications prominently",
+      "Keep compliance information up to date",
+      "Provide clear explanations of security measures",
+      "Include links to verification and full documents",
+      "Use recognizable certification badges",
+      "Address common security concerns proactively"
+    ]
+  }
+}

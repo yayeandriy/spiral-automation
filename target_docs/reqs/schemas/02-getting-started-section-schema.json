@@ -1,0 +1,123 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://spiral-automation.com/schemas/getting-started-section.json",
+  "title": "Getting Started Section Schema",
+  "description": "Schema for Getting Started documentation section focusing on setup, installation, and initial configuration",
+  "type": "object",
+  "required": ["name", "tag", "description", "children"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "const": "Getting Started",
+      "description": "Must be 'Getting Started'"
+    },
+    "tag": {
+      "type": "string",
+      "const": "getting-started",
+      "description": "Must be 'getting-started'"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 500,
+      "description": "Brief overview focusing on setup and initial user experience"
+    },
+    "children": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 8,
+      "items": { "$ref": "#/definitions/getting_started_child" }
+    },
+    "metadata": { "$ref": "#/definitions/metadata" }
+  },
+  "definitions": {
+    "getting_started_child": {
+      "type": "object",
+      "required": ["name", "description"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "enum": [
+            "Quick Start Guide",
+            "Installation Instructions",
+            "Initial Setup",
+            "First Login",
+            "Basic Configuration",
+            "Prerequisites",
+            "System Preparation",
+            "Environment Setup"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 2000,
+          "description": "Step-by-step instructions and setup guidance"
+        },
+        "bullet_points": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 12,
+          "items": {
+            "type": "string",
+            "minLength": 10,
+            "maxLength": 200,
+            "pattern": "^(?!.*TODO|.*TBD).*",
+            "description": "Actionable steps, requirements, or key points"
+          }
+        },
+        "code_examples": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/code_example" }
+        },
+        "links": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/link" }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["installation", "setup", "configuration", "prerequisites", "quickstart", "tutorial"]
+          }
+        }
+      }
+    },
+    "code_example": {
+      "type": "object",
+      "required": ["title", "code", "language"],
+      "properties": {
+        "title": { "type": "string", "minLength": 5, "maxLength": 100 },
+        "code": { "type": "string", "minLength": 10 },
+        "language": {
+          "type": "string",
+          "enum": ["bash", "powershell", "json", "yaml", "dockerfile", "sql", "javascript", "python"]
+        },
+        "description": { "type": "string", "maxLength": 300 }
+      }
+    },
+    "link": {
+      "type": "object",
+      "required": ["title", "url"],
+      "properties": {
+        "title": { "type": "string", "minLength": 3, "maxLength": 80 },
+        "url": { "type": "string", "format": "uri" },
+        "description": { "type": "string", "maxLength": 150 }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "last_updated": { "type": "string", "format": "date" },
+        "author": { "type": "string", "maxLength": 100 },
+        "priority": { "type": "string", "enum": ["high", "medium", "low"] },
+        "target_audience": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["developers", "administrators", "end-users", "managers"] }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

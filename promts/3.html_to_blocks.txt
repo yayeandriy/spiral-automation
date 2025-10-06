@@ -1,4 +1,5 @@
-now lets convert html /dist/landing/telescope/index.html into notion blocks json
+project=jebs
+now lets convert html /dist/landing/{project}/index.html into notion blocks json
 use blocks_structure_to_appned.json
 rules:
 all content should have layuot as a list of columns (notion columns)
@@ -16,15 +17,15 @@ lets improve content representation
 
 lookup on the avis landing /src/avis, learn its strucure and patterns and implement them
 
-save into /dist/landings/telescope/json (create)
-also add /dist/landings/telescope/json/index.json with structure like in /dist/landings/zones.json
+save into /dist/landings/{project}/json (create)
+also add /dist/landings/{project}/json/index.json with structure like in /dist/landings/zones.json
 
 !!!! expand with more type of zones
 
 Notion blocks JSON format, following all your rules:
 
 ✅ Conversion Complete
-I've created 5 zone files in telescope:
+I've created 5 zone files in {project}:
 
 📁 File Structure Created:
 🎯 Rules Applied:

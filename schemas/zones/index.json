@@ -1,0 +1,462 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Landing Page Content Zones Index",
+  "description": "Catalog and overview of all available landing page content zone schemas",
+  "version": "1.0.0",
+  "created_date": "2025-09-26",
+  "total_zones": 12,
+  "zones_catalog": [
+    {
+      "zone_type": "hero_zone",
+      "schema_file": "hero_zone.json",
+      "title": "Hero Zone Content Schema",
+      "description": "Primary content zone that captures attention and communicates core value proposition",
+      "typical_position": 1,
+      "priority": "critical",
+      "content_strategy": "attention_grabbing",
+      "conversion_impact": "Critical - primary conversion driver",
+      "is_above_fold": true,
+      "typical_content": [
+        "Primary headline",
+        "Value proposition", 
+        "Hero imagery",
+        "Primary CTA",
+        "Navigation elements",
+        "Key benefits summary"
+      ],
+      "common_sections": [
+        "hero_section",
+        "navigation_section", 
+        "call_to_action_section"
+      ],
+      "common_blocks": [
+        "headline_primary",
+        "headline_secondary",
+        "body_text",
+        "hero_image",
+        "cta_button_primary",
+        "navigation_menus"
+      ]
+    },
+    {
+      "zone_type": "features_benefits_zone",
+      "schema_file": "features_benefits_zone.json",
+      "title": "Features & Benefits Zone Content Schema",
+      "description": "Content zone showcasing product features, benefits, and capabilities",
+      "typical_position": 2,
+      "priority": "high",
+      "content_strategy": "informational",
+      "conversion_impact": "High - builds product understanding and desire",
+      "is_above_fold": false,
+      "typical_content": [
+        "Feature descriptions",
+        "Benefit statements",
+        "Capability demonstrations",
+        "Feature comparisons",
+        "Use case examples",
+        "Performance metrics"
+      ],
+      "common_sections": [
+        "features_grid_section",
+        "benefits_section",
+        "capabilities_section",
+        "feature_highlights_section"
+      ],
+      "common_blocks": [
+        "feature_card",
+        "benefit_item",
+        "capability_block",
+        "feature_icon_text",
+        "comparison_table"
+      ]
+    },
+    {
+      "zone_type": "social_proof_zone",
+      "schema_file": "social_proof_zone.json",
+      "title": "Social Proof Zone Content Schema", 
+      "description": "Content zone displaying testimonials, reviews, case studies, and trust indicators",
+      "typical_position": 3,
+      "priority": "high",
+      "content_strategy": "trust_building",
+      "conversion_impact": "High - reduces purchase anxiety and builds confidence",
+      "is_above_fold": false,
+      "typical_content": [
+        "Customer testimonials",
+        "Product reviews",
+        "Case study highlights",
+        "Client company logos",
+        "Awards and certifications",
+        "Usage statistics"
+      ],
+      "common_sections": [
+        "testimonials_section",
+        "reviews_section", 
+        "case_studies_section",
+        "client_logos_section",
+        "social_metrics_section"
+      ],
+      "common_blocks": [
+        "customer_testimonial",
+        "expert_review",
+        "user_review",
+        "client_logo",
+        "award_badge",
+        "social_metric"
+      ]
+    },
+    {
+      "zone_type": "product_showcase_zone",
+      "schema_file": "product_showcase_zone.json",
+      "title": "Product Showcase Zone Content Schema",
+      "description": "Content zone for detailed product demonstrations, screenshots, and visual presentations",
+      "typical_position": 4,
+      "priority": "high",
+      "content_strategy": "demonstrational",
+      "conversion_impact": "High - helps users visualize using the product",
+      "is_above_fold": false,
+      "typical_content": [
+        "Product screenshots",
+        "Demo videos",
+        "Interactive tours",
+        "Feature highlights",
+        "Interface mockups",
+        "Workflow demonstrations"
+      ],
+      "common_sections": [
+        "product_gallery_section",
+        "demo_section",
+        "screenshot_section",
+        "interactive_demo_section"
+      ],
+      "common_blocks": [
+        "product_screenshot",
+        "product_video",
+        "interactive_demo",
+        "product_gallery",
+        "feature_highlight"
+      ]
+    },
+    {
+      "zone_type": "conversion_zone",
+      "schema_file": "conversion_zone.json",
+      "title": "Conversion Zone Content Schema",
+      "description": "Content zone focused on driving conversions with call-to-actions, signup forms, and purchase flows",
+      "typical_position": 5,
+      "priority": "critical",
+      "content_strategy": "conversion_focused",
+      "conversion_impact": "Critical - directly drives business goals",
+      "is_above_fold": false,
+      "typical_content": [
+        "Primary/secondary CTAs",
+        "Signup forms",
+        "Contact forms",
+        "Trial requests",
+        "Download buttons",
+        "Purchase flows"
+      ],
+      "common_sections": [
+        "call_to_action_section",
+        "signup_section",
+        "contact_form_section",
+        "trial_section"
+      ],
+      "common_blocks": [
+        "cta_button_primary",
+        "signup_form",
+        "contact_form",
+        "trial_form",
+        "download_button",
+        "conversion_headline"
+      ]
+    },
+    {
+      "zone_type": "education_zone",
+      "schema_file": "education_zone.json",
+      "title": "Education Zone Content Schema",
+      "description": "Content zone providing educational content, tutorials, guides, and learning resources",
+      "typical_position": 6,
+      "priority": "medium",
+      "content_strategy": "educational",
+      "conversion_impact": "Medium - builds trust and positions as expert, supports conversion indirectly",
+      "is_above_fold": false,
+      "typical_content": [
+        "Step-by-step tutorials",
+        "How-to guides",
+        "FAQs",
+        "Best practices",
+        "Code examples",
+        "Video tutorials"
+      ],
+      "common_sections": [
+        "tutorial_section",
+        "guide_section",
+        "how_to_section",
+        "faq_section"
+      ],
+      "common_blocks": [
+        "tutorial_step",
+        "guide_article",
+        "faq_item",
+        "how_to_step",
+        "code_example",
+        "video_tutorial"
+      ]
+    },
+    {
+      "zone_type": "comparison_zone",
+      "schema_file": "comparison_zone.json",
+      "title": "Comparison Zone Content Schema",
+      "description": "Content zone for competitive comparisons, feature matrices, and alternative evaluations",
+      "typical_position": 7,
+      "priority": "medium",
+      "content_strategy": "competitive_advantage",
+      "conversion_impact": "High - helps users make informed decisions in our favor",
+      "is_above_fold": false,
+      "typical_content": [
+        "Feature comparison tables",
+        "Competitor analysis",
+        "Pricing comparisons",
+        "Performance benchmarks",
+        "Migration guides",
+        "Switching incentives"
+      ],
+      "common_sections": [
+        "competitor_comparison_section",
+        "feature_matrix_section",
+        "pricing_comparison_section",
+        "alternatives_section"
+      ],
+      "common_blocks": [
+        "comparison_table",
+        "feature_comparison",
+        "pricing_comparison",
+        "competitor_card",
+        "vs_banner"
+      ]
+    },
+    {
+      "zone_type": "integration_zone", 
+      "schema_file": "integration_zone.json",
+      "title": "Integration Zone Content Schema",
+      "description": "Content zone showcasing integrations, APIs, partnerships, and ecosystem connections",
+      "typical_position": 8,
+      "priority": "medium",
+      "content_strategy": "ecosystem_building",
+      "conversion_impact": "Medium - shows ecosystem value and reduces integration concerns",
+      "is_above_fold": false,
+      "typical_content": [
+        "Integration marketplace",
+        "Partner logos",
+        "API documentation",
+        "Code examples",
+        "Setup guides",
+        "Webhook configurations"
+      ],
+      "common_sections": [
+        "integrations_gallery_section",
+        "api_section",
+        "partners_section",
+        "marketplace_section"
+      ],
+      "common_blocks": [
+        "integration_card",
+        "partner_logo",
+        "api_endpoint",
+        "webhook_config",
+        "tool_connector"
+      ]
+    },
+    {
+      "zone_type": "community_zone",
+      "schema_file": "community_zone.json", 
+      "title": "Community Zone Content Schema",
+      "description": "Content zone for community engagement, forums, events, and user-generated content",
+      "typical_position": 9,
+      "priority": "medium",
+      "content_strategy": "community_building",
+      "conversion_impact": "Medium - builds trust through community validation and engagement",
+      "is_above_fold": false,
+      "typical_content": [
+        "Forum discussions",
+        "Community events",
+        "User showcases",
+        "Social media feeds",
+        "Community statistics",
+        "Contributor profiles"
+      ],
+      "common_sections": [
+        "forum_section",
+        "events_section",
+        "user_gallery_section",
+        "social_feed_section"
+      ],
+      "common_blocks": [
+        "forum_post",
+        "event_card",
+        "user_spotlight",
+        "social_post",
+        "community_metric"
+      ]
+    },
+    {
+      "zone_type": "security_trust_zone",
+      "schema_file": "security_trust_zone.json",
+      "title": "Security & Trust Zone Content Schema",
+      "description": "Content zone for security features, compliance information, certifications, and trust indicators",
+      "typical_position": 10,
+      "priority": "high",
+      "content_strategy": "trust_building",
+      "conversion_impact": "High - critical for enterprise customers and regulated industries",
+      "is_above_fold": false,
+      "typical_content": [
+        "Security certifications",
+        "Compliance badges",
+        "Privacy policies",
+        "Security features",
+        "Audit reports",
+        "Data protection information"
+      ],
+      "common_sections": [
+        "security_features_section",
+        "compliance_section",
+        "certifications_section",
+        "privacy_section"
+      ],
+      "common_blocks": [
+        "certification_badge",
+        "security_feature",
+        "compliance_standard",
+        "privacy_policy",
+        "trust_seal"
+      ]
+    },
+    {
+      "zone_type": "pricing_value_zone",
+      "schema_file": "pricing_value_zone.json",
+      "title": "Pricing & Value Zone Content Schema", 
+      "description": "Content zone for pricing plans, value propositions, ROI calculations, and cost-benefit information",
+      "typical_position": 11,
+      "priority": "high",
+      "content_strategy": "value_demonstration",
+      "conversion_impact": "Critical - directly impacts purchase decisions and revenue",
+      "is_above_fold": false,
+      "typical_content": [
+        "Pricing plans and tiers",
+        "Value propositions",
+        "ROI calculators",
+        "Cost comparisons",
+        "Free trial offers",
+        "Money-back guarantees"
+      ],
+      "common_sections": [
+        "pricing_plans_section",
+        "value_proposition_section",
+        "roi_calculator_section",
+        "cost_comparison_section"
+      ],
+      "common_blocks": [
+        "pricing_card",
+        "pricing_tier",
+        "roi_calculator",
+        "value_proposition",
+        "cost_savings"
+      ]
+    },
+    {
+      "zone_type": "resource_zone",
+      "schema_file": "resource_zone.json",
+      "title": "Resource Zone Content Schema",
+      "description": "Content zone for additional resources, downloads, documentation, support, and supplementary materials",
+      "typical_position": 12,
+      "priority": "low",
+      "content_strategy": "supportive",
+      "conversion_impact": "Low to Medium - supports decision-making and provides ongoing value",
+      "is_above_fold": false,
+      "typical_content": [
+        "Whitepapers and guides",
+        "Video resources", 
+        "Documentation links",
+        "Support information",
+        "Contact details",
+        "Legal documents"
+      ],
+      "common_sections": [
+        "downloads_section",
+        "documentation_section",
+        "support_section",
+        "contact_section"
+      ],
+      "common_blocks": [
+        "download_link",
+        "documentation_link",
+        "support_article",
+        "contact_info",
+        "legal_document"
+      ]
+    }
+  ],
+  "usage_guidelines": {
+    "schema_selection": "Choose zone schemas based on your landing page content strategy and target audience needs",
+    "zone_ordering": "Zones are typically ordered by conversion priority - critical zones (hero, conversion, pricing) should appear earlier",
+    "customization": "Each zone schema can be customized by modifying the allowed section_types and block_types for your specific use case",
+    "validation": "Use individual zone schemas to validate zone-specific content during development and content management"
+  },
+  "priority_levels": {
+    "critical": {
+      "description": "Essential for conversion and user engagement",
+      "zones": ["hero_zone", "conversion_zone", "pricing_value_zone"]
+    },
+    "high": {
+      "description": "Important for building trust and demonstrating value",
+      "zones": ["features_benefits_zone", "social_proof_zone", "product_showcase_zone", "security_trust_zone"]
+    },
+    "medium": {
+      "description": "Supportive content that builds credibility and addresses specific user needs",
+      "zones": ["education_zone", "comparison_zone", "integration_zone", "community_zone"]
+    },
+    "low": {
+      "description": "Supplementary content and resources",
+      "zones": ["resource_zone"]
+    }
+  },
+  "content_strategies": {
+    "attention_grabbing": "Designed to immediately capture visitor attention and communicate primary value",
+    "informational": "Provides detailed information about features, capabilities, and benefits",
+    "trust_building": "Builds credibility through social proof, security, and transparency",
+    "demonstrational": "Shows the product in action through visuals and interactive content",
+    "conversion_focused": "Optimized to drive specific user actions and conversions",
+    "educational": "Provides learning resources and knowledge to build expertise",
+    "competitive_advantage": "Highlights advantages over alternatives and competitors",
+    "ecosystem_building": "Demonstrates connectivity and partnership ecosystem",
+    "community_building": "Showcases user community and engagement",
+    "value_demonstration": "Quantifies and justifies the value proposition through pricing and ROI",
+    "supportive": "Provides additional resources and support information"
+  },
+  "file_structure": {
+    "base_path": "/schemas/zones/",
+    "naming_convention": "{zone_type}.json",
+    "total_files": 13,
+    "files": [
+      "index.json",
+      "hero_zone.json",
+      "features_benefits_zone.json", 
+      "social_proof_zone.json",
+      "product_showcase_zone.json",
+      "conversion_zone.json",
+      "education_zone.json",
+      "comparison_zone.json",
+      "integration_zone.json",
+      "community_zone.json",
+      "security_trust_zone.json",
+      "pricing_value_zone.json",
+      "resource_zone.json"
+    ]
+  },
+  "metadata": {
+    "json_schema_version": "draft-07",
+    "content_model_version": "1.0.0",
+    "last_updated": "2025-09-26",
+    "total_schema_size": "12 individual zone schemas + 1 index",
+    "compatibility": "Compatible with main landing_content_structure_schema.json"
+  }
+}

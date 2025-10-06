@@ -1,0 +1,15 @@
+{"questions": [
+      {
+        "question_id": "Q1",
+        "question_type": "multiple_choice",
+        "question_text": "What is your primary role?",      
+        "options": [
+          {
+            "option_id": "A1",
+            "option_text": "Quality Inspector (Shop Floor)"            
+          },
+          {
+            "option_id": "A2",
+            "option_text": "Engineering Team Member (Office)"
+          }
+]}]}

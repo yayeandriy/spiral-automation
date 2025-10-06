@@ -1,0 +1,27 @@
+{
+  "name": "Understand Workflow",
+  "tag": "workflow",
+  "description": "Detailed explanation of how processes flow through the system and best practices for optimization",
+  "children": [
+    {
+      "name": "Process Flow Overview",
+      "description": "High-level view of how data and processes move through the system from start to finish"
+    },
+    {
+      "name": "Workflow Configuration",
+      "description": "How to set up, customize, and manage automated workflows and process rules"
+    },
+    {
+      "name": "Automation Rules",
+      "description": "Creating and managing automated actions, triggers, and conditional logic"
+    },
+    {
+      "name": "Approval Processes",
+      "description": "Setting up multi-step approval workflows and review processes"
+    },
+    {
+      "name": "Integration Points",
+      "description": "Key points where the system connects with external tools and services"
+    }
+  ]
+}

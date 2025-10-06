@@ -1,0 +1,417 @@
+[
+  {
+    "sections": [
+      [
+        {
+          "type": "get_started",
+          "section_id": "sec_001",
+          "section_name": "Get Started",
+          "content": {
+            "headline": "Welcome to Telescope",
+            "subheadline": "Turn ground‑level photos into instant, billing‑ready tower inventories",
+            "blocks": [
+              {
+                "block_id": "blk_001_h",
+                "block_type": "headline",
+                "content": {
+                  "text": "New to Telescope?"
+                }
+              },
+              {
+                "block_id": "blk_002_t",
+                "block_type": "text_content",
+                "content": {
+                  "text": "Whether you are a tower operator, a tenant, or an inspections team, Telescope lets you capture a quick 4K photo from the ground, upload it, and receive a fully measured equipment inventory in minutes—no drones, pilots, or special hardware required."
+                }
+              },
+              {
+                "block_id": "blk_003_v",
+                "block_type": "video",
+                "content": {
+                  "title": "How Telescope Works – 2‑minute explainer",
+                  "url": "https://www.youtube.com/watch?v=sWplvQV09ig"
+                }
+              },
+              {
+                "block_id": "blk_004_t",
+                "block_type": "text_content",
+                "content": {
+                  "text": "Follow these three steps to start:\n1️⃣ **Capture** – Use any smartphone or 4K camera to take a clear, ground‑level photo of the tower face.\n2️⃣ **Upload** – Drag‑and‑drop the image on the Telescope web portal or mobile app.\n3️⃣ **Review & Export** – Get the AI‑generated inventory, verify confidence scores, and sync instantly with your ERP (e.g., Tarantula) or download PDF/CSV reports."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "how_it_works",
+          "section_id": "sec_002",
+          "section_name": "How Telescope Works",
+          "content": {
+            "headline": "From Photo to Inventory in Minutes",
+            "subheadline": "AI‑powered detection, measurement & reconciliation",
+            "blocks": [
+              {
+                "block_id": "blk_005_h",
+                "block_type": "headline",
+                "content": {
+                  "text": "Capture"
+                }
+              },
+              {
+                "block_id": "blk_006_t",
+                "block_type": "text_content",
+                "content": {
+                  "text": "Take a standard 4K photo from the ground – no need for a drone flight, specialized rigging, or a licensed pilot. One photo per tower side is enough for the AI to work."
+                }
+              },
+              {
+                "block_id": "blk_007_h",
+                "block_type": "headline",
+                "content": {
+                  "text": "Detect"
+                }
+              },
+              {
+                "block_id": "blk_008_t",
+                "block_type": "text_content",
+                "content": {
+                  "text": "Our computer‑vision model scans the image, recognizes **200+** equipment models (panel antennas, MW antennas, RRUs, filters, etc.) and measures each component with **2‑inch (≈5 cm) accuracy**, even when only partially visible."
+                }
+              },
+              {
+                "block_id": "blk_009_h",
+                "block_type": "headline",
+                "content": {
+                  "text": "Reconcile"
+                }
+              },
+              {
+                "block_id": "blk_010_t",
+                "block_type": "text_content",
+                "content": {
+                  "text": "Results are auto‑populated into a structured inventory table. One‑click sync pushes the data to your ERP (Tarantula, SAP, Oracle, etc.) or you can export a PDF/CSV for manual audit."
+                }
+              },
+              {
+                "block_id": "blk_011_t",
+                "block_type": "text_content",
+                "content": {
+                  "text": "**Key Specs**\n- 2‑inch measurement accuracy\n- Average on‑site time: 7 minutes per tower\n- Works on towers up to 120 m (400 ft)\n- SaaS or private‑cloud deployment options\n- ERP integration via REST API or native Tarantula connector"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "features",
+          "section_id": "sec_003",
+          "section_name": "Key Features & Benefits",
+          "content": {
+            "headline": "Why Tower Companies Choose Telescope",
+            "subheadline": "",
+            "blocks": [
+              {
+                "block_id": "blk_012_list",
+                "block_type": "text_content",
+                "content": {
+                  "text": "- **Speed** – 7‑minute average site time, no flight planning.\n- **Cost‑Effective** – Eliminate drone rental, pilot fees, and weather‑related delays.\n- **Accuracy** – 2‑inch precision eliminates under‑billing and compliance gaps.\n- **Comprehensive Coverage** – Detects >200 equipment models across all tower types.\n- **Seamless ERP Sync** – Immediate reconciliation with Tarantula, SAP, Oracle, etc.\n- **Data Ownership** – All images and results stay on your premises (private deployment).\n- **Scalable** – Supports single‑site pilots to national roll‑outs.\n- **Compliance Ready** – Generates audit‑trail PDFs and CSVs for regulators."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "comparison",
+          "section_id": "sec_004",
+          "section_name": "Telescope vs. Drone‑Based Inspections",
+          "content": {
+            "headline": "Side‑by‑Side Comparison",
+            "subheadline": "",
+            "blocks": [
+              {
+                "block_id": "blk_013_notion_table",
+                "block_type": "notion_table",
+                "content": {
+                  "title": "Telescope vs. Drone",
+                  "columns": [
+                    "Aspect",
+                    "Telescope (Ground‑Photo AI)",
+                    "Drone‑Based Inspection"
+                  ],
+                  "rows": [
+                    [
+                      "Equipment Captured",
+                      "200+ models, 2‑inch accuracy",
+                      "Typically 100–150 models, 3‑5 inch accuracy"
+                    ],
+                    [
+                      "Required Hardware",
+                      "Smartphone/4K camera",
+                      "Drone, pilot, ground station"
+                    ],
+                    [
+                      "Time On‑Site",
+                      "≈7 min per tower",
+                      "30 min – 2 hr (including launch/recovery)"
+                    ],
+                    [
+                      "Weather Dependency",
+                      "Minimal (photo can be taken in light rain)",
+                      "High – wind, rain, visibility limits"
+                    ],
+                    [
+                      "Cost per Inspection",
+                      "Low (cloud compute)",
+                      "High – drone rental + pilot hourly fee"
+                    ],
+                    [
+                      "Safety Risk",
+                      "None – ground crew only",
+                      "Risk of crash, regulatory permits required"
+                    ],
+                    [
+                      "Data Turn‑Around",
+                      "Minutes (AI processing)",
+                      "Hours‑days (post‑flight stitching & analysis)"
+                    ],
+                    [
+                      "Regulatory Burden",
+                      "None",
+                      "FAA/Local flight permits, line‑of‑sight rules"
+                    ],
+                    [
+                      "Scalability",
+                      "Very high – parallel photo capture",
+                      "Limited by fleet size & pilot availability"
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "sample_report",
+          "section_id": "sec_005",
+          "section_name": "Sample Equipment Inventory Report",
+          "content": {
+            "headline": "What a Telescope Report Looks Like",
+            "subheadline": "",
+            "blocks": [
+              {
+                "block_id": "blk_014_table",
+                "block_type": "table",
+                "content": {
+                  "headers": [
+                    "Site ID",
+                    "Equipment Type",
+                    "Model",
+                    "Confidence",
+                    "Qty",
+                    "Height (m)",
+                    "Width (m)",
+                    "Area (m²)"
+                  ],
+                  "rows": [
+                    [
+                      "SBDE68.11",
+                      "Panel antenna",
+                      "742236 - 1800 MHz 2x17.5 dBi",
+                      "0.77",
+                      "1",
+                      "1.310",
+                      "0.320",
+                      "0.42"
+                    ],
+                    [
+                      "SBDE68.11",
+                      "Panel antenna",
+                      "A194518R0V01 DCS‑UMTS 18 dBi RCU",
+                      "0.94",
+                      "1",
+                      "1.310",
+                      "0.150",
+                      "0.20"
+                    ],
+                    [
+                      "SBDE68.11",
+                      "Panel antenna",
+                      "A704516R0V06 900 MHz 16.4 dBi / Huawei",
+                      "0.89",
+                      "1",
+                      "1.930",
+                      "0.290",
+                      "0.56"
+                    ],
+                    [
+                      "SBDE68.11",
+                      "Panel antenna",
+                      "A704516R0V06 900 MHz 16.4 dBi / Huawei",
+                      "0.90",
+                      "1",
+                      "1.930",
+                      "0.290",
+                      "0.56"
+                    ],
+                    [
+                      "SBDE68.11",
+                      "Panel antenna",
+                      "TDQ‑172718DEI‑65FT2V01 2x18‑26 dBi",
+                      "0.76",
+                      "1",
+                      "1.360",
+                      "0.320",
+                      "0.44"
+                    ],
+                    [
+                      "SBDE68.11",
+                      "Panel antenna",
+                      "TDQ‑172720DEI‑65FT2V01 2x18‑26",
+                      "0.75",
+                      "1",
+                      "1.980",
+                      "0.320",
+                      "0.63"
+                    ],
+                    [
+                      "SBDE68.11",
+                      "RRU",
+                      "Unknown",
+                      "0.91",
+                      "1",
+                      "0.440",
+                      "0.360",
+                      "0.16"
+                    ],
+                    [
+                      "SBDE68.11",
+                      "RRU",
+                      "Unknown",
+                      "0.91",
+                      "1",
+                      "0.440",
+                      "0.310",
+                      "0.14"
+                    ],
+                    [
+                      "SBDE68.11",
+                      "RRU",
+                      "Unknown",
+                      "0.86",
+                      "1",
+                      "0.440",
+                      "0.310",
+                      "0.14"
+                    ],
+                    [
+                      "SBDE68.11",
+                      "RRU",
+                      "Unknown",
+                      "0.81",
+                      "1",
+                      "0.440",
+                      "0.310",
+                      "0.14"
+                    ],
+                    [
+                      "SBDE68.11",
+                      "MW antenna",
+                      "HW52431100/ANT7G06M",
+                      "0.96",
+                      "1",
+                      "0.600",
+                      "0.280",
+                      "0.17"
+                    ],
+                    [
+                      "SBDE68.11",
+                      "Filter",
+                      "Unknown",
+                      "0.60",
+                      "2",
+                      "0.150",
+                      "0.110",
+                      "0.02"
+                    ]
+                  ],
+                  "footer_note": "Detected by Telescope on 2025‑04‑14 15:17:50"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "section_id": "sec_006",
+          "section_name": "Frequently Asked Questions",
+          "content": {
+            "headline": "FAQ",
+            "subheadline": "",
+            "blocks": [
+              {
+                "block_id": "blk_015_faq1",
+                "block_type": "text_content",
+                "content": {
+                  "text": "**Q:** Do I need a special camera?\n**A:** No. Any smartphone or 4K camera that can capture a clear, well‑lit image from ground level works."
+                }
+              },
+              {
+                "block_id": "blk_016_faq2",
+                "block_type": "text_content",
+                "content": {
+                  "text": "**Q:** What if my photo only shows part of the antenna?\n**A:** Telescope’s AI is trained for partial‑visibility detection and will still measure the component with 2‑inch accuracy, flagging a lower confidence score for manual review."
+                }
+              },
+              {
+                "block_id": "blk_017_faq3",
+                "block_type": "text_content",
+                "content": {
+                  "text": "**Q:** How does Telescope integrate with my ERP?\n**A:** We provide a REST API and native Tarantula connector. One‑click “Sync” pushes the inventory (including confidence scores and dimensions) into your billing tables."
+                }
+              },
+              {
+                "block_id": "blk_018_faq4",
+                "block_type": "text_content",
+                "content": {
+                  "text": "**Q:** Is my data stored securely?\n**A:** Yes. In SaaS mode data is encrypted at rest & in transit (AES‑256). Private‑cloud deployments keep all images and results on your own infrastructure."
+                }
+              },
+              {
+                "block_id": "blk_019_faq5",
+                "block_type": "text_content",
+                "content": {
+                  "text": "**Q:** What tower heights are supported?\n**A:** The AI has been validated on towers up to **120 m (400 ft)**. For taller structures we recommend a 2‑photo approach (base & mid‑section)."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "contact",
+          "section_id": "sec_007",
+          "section_name": "Get In Touch",
+          "content": {
+            "headline": "Ready to Deploy Telescope?",
+            "subheadline": "",
+            "blocks": [
+              {
+                "block_id": "blk_020_contact",
+                "block_type": "text_content",
+                "content": {
+                  "text": "Reach out to **Konstantyn Shyshkin** for a live demo, pricing, or integration assistance.\n\n- Email: k@spiral.technology\n- Phone: +1 617‑915‑3157\n- Office: 12 Channel Street, Boston, MA 02210"
+                }
+              },
+              {
+                "block_id": "blk_021_link",
+                "block_type": "text_content",
+                "content": {
+                  "text": "Try it now – [Sign‑up for a free trial](https://v0-telescope-landing-git-main-spiralt.vercel.app/)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    ]
+  }
+]

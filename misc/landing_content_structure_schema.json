@@ -1,0 +1,972 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Landing Page Content Structure Schema",
+  "description": "Comprehensive schema for defining landing page content structure focusing on zones, sections, and blocks data without styling dependencies",
+  "type": "object",
+  "properties": {
+    "landing_content": {
+      "type": "object",
+      "properties": {
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "page_title": {
+              "type": "string",
+              "description": "Main page title"
+            },
+            "page_type": {
+              "type": "string",
+              "enum": [
+                "saas_b2b", "consumer_hardware", "ai_ml_tools", "creative_tools", 
+                "mobile_apps", "development_services", "fintech", "healthcare", 
+                "edtech", "crypto_web3", "ecommerce", "marketplace", "consulting",
+                "agency", "nonprofit", "media_entertainment", "travel_hospitality",
+                "real_estate", "automotive", "fitness_wellness"
+              ],
+              "description": "Industry category of the landing page"
+            },
+            "target_audience": {
+              "type": "string",
+              "enum": [
+                "b2b", "b2c", "developer", "enterprise", "consumer", "startup",
+                "freelancer", "agency", "investor", "student", "researcher",
+                "creator", "influencer", "community"
+              ],
+              "description": "Primary target audience"
+            },
+            "conversion_strategy": {
+              "type": "string",
+              "enum": [
+                "lead_generation", "direct_sale", "freemium_signup", "demo_request",
+                "consultation_booking", "content_download", "newsletter_signup",
+                "app_install", "community_join", "waitlist_signup", "trial_start"
+              ],
+              "description": "Primary conversion goal"
+            },
+            "content_language": {
+              "type": "string",
+              "pattern": "^[a-z]{2}(-[A-Z]{2})?$",
+              "description": "Primary content language (ISO 639-1 format)"
+            },
+            "created_date": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Content creation timestamp"
+            },
+            "last_modified": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Last modification timestamp"
+            },
+            "version": {
+              "type": "string",
+              "description": "Content version identifier"
+            }
+          },
+          "required": ["page_title", "page_type", "target_audience", "conversion_strategy"]
+        },
+        "zones": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 12,
+          "items": {
+            "$ref": "#/definitions/content_zone"
+          },
+          "description": "Major content zones of the landing page"
+        }
+      },
+      "required": ["metadata", "zones"]
+    }
+  },
+  "definitions": {
+    "content_zone": {
+      "type": "object",
+      "properties": {
+        "zone_id": {
+          "type": "string",
+          "description": "Unique identifier for the zone"
+        },
+        "zone_type": {
+          "type": "string",
+          "enum": [
+            "hero_zone", "features_benefits_zone", "social_proof_zone", 
+            "product_showcase_zone", "conversion_zone", "education_zone",
+            "comparison_zone", "integration_zone", "community_zone",
+            "security_trust_zone", "pricing_value_zone", "resource_zone"
+          ],
+          "description": "Type of zone based on primary content purpose"
+        },
+        "zone_name": {
+          "type": "string",
+          "description": "Human-readable name for the zone"
+        },
+        "zone_purpose": {
+          "type": "string",
+          "description": "Primary purpose and goal of this zone"
+        },
+        "position": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Order position of zone on the page"
+        },
+        "is_above_fold": {
+          "type": "boolean",
+          "description": "Whether zone appears above the fold"
+        },
+        "priority": {
+          "type": "string",
+          "enum": ["critical", "high", "medium", "low"],
+          "description": "Content importance priority"
+        },
+        "content_strategy": {
+          "type": "string",
+          "enum": [
+            "attention_grabbing", "value_demonstration", "trust_building", 
+            "education", "conversion_focused", "engagement", "support"
+          ],
+          "description": "Content strategy for this zone"
+        },
+        "sections": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/content_section"
+          },
+          "description": "Content sections within the zone"
+        }
+      },
+      "required": ["zone_id", "zone_type", "zone_name", "position", "sections"]
+    },
+    "content_section": {
+      "type": "object",
+      "properties": {
+        "section_id": {
+          "type": "string",
+          "description": "Unique identifier for the section"
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "hero_section", "navigation_section", "features_overview_section",
+            "testimonials_section", "pricing_section", "demo_section",
+            "integration_section", "faq_section", "footer_section",
+            "call_to_action_section", "benefits_section", "capabilities_section",
+            "use_cases_section", "customer_logos_section", "case_studies_section",
+            "reviews_section", "product_gallery_section", "specifications_section",
+            "comparison_section", "signup_section", "contact_section",
+            "team_section", "about_section", "mission_section", "values_section",
+            "roadmap_section", "blog_section", "resources_section", "documentation_section",
+            "api_section", "security_section", "compliance_section", "trust_section",
+            "awards_section", "press_section", "investor_section", "career_section",
+            "community_section", "partner_section", "affiliate_section",
+            "onboarding_section", "tutorial_section", "webinar_section",
+            "calculator_section", "quiz_section", "assessment_section",
+            "roi_section", "analytics_section", "metrics_section",
+            "comparison_table_section", "feature_matrix_section",
+            "interactive_demo_section", "video_testimonials_section",
+            "live_chat_section", "support_section", "knowledge_base_section",
+            "changelog_section", "status_section", "uptime_section"
+          ],
+          "description": "Type of section based on content and purpose"
+        },
+        "section_name": {
+          "type": "string",
+          "description": "Human-readable name for the section"
+        },
+        "section_purpose": {
+          "type": "string",
+          "description": "Primary purpose of this section"
+        },
+        "content_structure": {
+          "type": "string",
+          "enum": [
+            "single_column", "two_column", "three_column", "four_column",
+            "grid", "list", "timeline", "accordion", "tabs", "carousel",
+            "hero_banner", "split_content", "masonry", "dashboard",
+            "comparison_table", "feature_matrix", "card_deck"
+          ],
+          "description": "Organizational structure of content within the section"
+        },
+        "content_flow": {
+          "type": "string",
+          "enum": [
+            "linear", "hierarchical", "branching", "cyclical", "modular",
+            "progressive_disclosure", "parallel", "contextual"
+          ],
+          "description": "How content flows and connects within the section"
+        },
+        "blocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/content_block"
+          },
+          "description": "Individual content blocks within the section"
+        }
+      },
+      "required": ["section_id", "section_type", "section_name", "blocks"]
+    },
+    "content_block": {
+      "type": "object",
+      "properties": {
+        "block_id": {
+          "type": "string",
+          "description": "Unique identifier for the block"
+        },
+        "block_category": {
+          "type": "string",
+          "enum": [
+            "text_content", "visual_content", "interactive_content", 
+            "social_proof_content", "data_content", "media_content",
+            "form_content", "navigation_content", "widget_content",
+            "embedded_content", "generated_content"
+          ],
+          "description": "High-level category of the content block"
+        },
+        "block_type": {
+          "type": "string",
+          "enum": [
+            "headline_primary", "headline_secondary", "headline_tertiary",
+            "body_text", "caption_text", "quote_text", "code_snippet",
+            "list_items", "numbered_list", "bullet_points", "feature_list",
+            "hero_image", "feature_icons", "product_screenshots", "infographics",
+            "demo_videos", "explainer_videos", "testimonial_videos", "webinar_recordings",
+            "customer_photos", "team_photos", "office_photos", "event_photos",
+            "cta_button_primary", "cta_button_secondary", "cta_button_ghost",
+            "forms", "contact_forms", "signup_forms", "survey_forms",
+            "navigation_menus", "breadcrumbs", "pagination", "search_bar",
+            "testimonial_quotes", "company_logos", "certification_badges",
+            "statistics", "counters", "progress_indicators", "metrics_dashboard",
+            "ratings_reviews", "star_ratings", "review_cards", "review_aggregator",
+            "pricing_table", "pricing_cards", "pricing_calculator",
+            "feature_comparison", "comparison_matrix", "vs_competitor",
+            "contact_information", "office_locations", "contact_cards",
+            "social_media_links", "social_proof_widgets", "social_feed",
+            "legal_links", "privacy_policy", "terms_of_service", "cookie_notice",
+            "timeline", "roadmap", "milestone_tracker", "process_steps",
+            "accordion", "tabs", "toggle_content", "expandable_cards",
+            "carousel", "image_slider", "content_slider", "testimonial_carousel",
+            "interactive_map", "location_pins", "store_locator",
+            "calculator", "roi_calculator", "savings_calculator",
+            "quiz", "assessment", "questionnaire", "poll",
+            "live_chat", "chatbot", "help_widget", "support_ticket",
+            "newsletter_signup", "email_capture", "lead_magnet", "content_gate",
+            "countdown_timer", "urgency_widget", "scarcity_indicator",
+            "notification_bar", "announcement_banner", "alert_message",
+            "loading_indicator", "progress_loader", "placeholder_content",
+            "error_message", "success_message", "validation_message",
+            "tooltip", "popover", "modal", "overlay",
+            "share_buttons", "bookmark_widget", "print_button",
+            "audio_player", "podcast_player", "music_widget",
+            "calendar", "event_scheduler", "booking_widget", "appointment_form",
+            "file_upload", "document_viewer", "pdf_embed",
+            "code_editor", "syntax_highlighter", "api_explorer",
+            "chart", "graph", "data_visualization", "analytics_widget",
+            "weather_widget", "stock_ticker", "news_feed", "rss_feed",
+            "payment_form", "checkout_widget", "shopping_cart", "wishlist",
+            "product_grid", "category_filter", "product_search",
+            "video_background", "image_background", "animated_background",
+            "particle_effect", "lottie_animation", "gif_animation"
+          ],
+          "description": "Specific type of content block"
+        },
+        "content": {
+          "$ref": "#/definitions/block_content_data",
+          "description": "The actual content data of the block"
+        },
+        "functionality": {
+          "$ref": "#/definitions/block_functionality",
+          "description": "Interactive functionality and behavior"
+        },
+        "relationships": {
+          "$ref": "#/definitions/content_relationships",
+          "description": "Relationships to other content blocks or external data"
+        },
+        "metadata": {
+          "$ref": "#/definitions/content_metadata",
+          "description": "Additional metadata for the content block"
+        }
+      },
+      "required": ["block_id", "block_category", "block_type", "content"]
+    },
+    "block_content_data": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Plain text content of the block"
+        },
+        "rich_text": {
+          "type": "string",
+          "description": "HTML or markdown formatted text content"
+        },
+        "alt_text": {
+          "type": "string",
+          "description": "Alternative text for accessibility"
+        },
+        "title": {
+          "type": "string",
+          "description": "Title or heading text"
+        },
+        "subtitle": {
+          "type": "string",
+          "description": "Subtitle or secondary heading"
+        },
+        "description": {
+          "type": "string",
+          "description": "Descriptive text or explanation"
+        },
+        "media_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for images, videos, or other media"
+        },
+        "media_type": {
+          "type": "string",
+          "enum": ["image", "video", "audio", "svg", "gif", "webp", "lottie", "pdf", "document", "iframe"],
+          "description": "Type of media content"
+        },
+        "media_sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": { "type": "string", "format": "uri" },
+              "format": { "type": "string" },
+              "quality": { "type": "string", "enum": ["low", "medium", "high", "ultra"] },
+              "device": { "type": "string", "enum": ["mobile", "tablet", "desktop", "all"] },
+              "size": { "type": "string" }
+            },
+            "required": ["url", "format"]
+          },
+          "description": "Multiple media sources for responsive design"
+        },
+        "link_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for clickable elements"
+        },
+        "link_target": {
+          "type": "string",
+          "enum": ["_self", "_blank", "_parent", "_top"],
+          "default": "_self",
+          "description": "Link target behavior"
+        },
+        "link_rel": {
+          "type": "string",
+          "description": "Link relationship attribute"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              { "type": "string" },
+              {
+                "type": "object",
+                "properties": {
+                  "id": { "type": "string", "description": "Unique identifier for the item" },
+                  "text": { "type": "string", "description": "Item text content" },
+                  "description": { "type": "string", "description": "Item description" },
+                  "icon": { "type": "string", "description": "Icon identifier or URL" },
+                  "image": { "type": "string", "format": "uri", "description": "Image URL" },
+                  "link": { "type": "string", "format": "uri", "description": "Item link URL" },
+                  "badge": { "type": "string", "description": "Badge or label text" },
+                  "priority": { "type": "string", "enum": ["high", "medium", "low"] },
+                  "status": { "type": "string", "enum": ["active", "inactive", "pending", "completed"] },
+                  "value": { "type": ["string", "number"], "description": "Item value" },
+                  "metadata": { "type": "object", "description": "Additional item metadata" }
+                },
+                "required": ["id", "text"]
+              }
+            ]
+          },
+          "description": "List items for list-based blocks"
+        },
+        "form_fields": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/form_field"
+          },
+          "description": "Form fields for form blocks"
+        },
+        "data_source": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["static", "api", "cms", "database", "real_time", "user_generated", "computed"]
+            },
+            "endpoint": { "type": "string", "format": "uri" },
+            "method": { "type": "string", "enum": ["GET", "POST", "PUT", "DELETE"] },
+            "headers": { "type": "object", "additionalProperties": { "type": "string" } },
+            "params": { "type": "object", "additionalProperties": { "type": "string" } },
+            "refresh_interval": { "type": "integer", "minimum": 0 },
+            "cache_duration": { "type": "integer", "minimum": 0 },
+            "fallback_content": { "type": "string", "description": "Fallback content if data source fails" }
+          },
+          "required": ["type"],
+          "description": "Dynamic content data source configuration"
+        },
+        "localization": {
+          "type": "object",
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "object",
+              "properties": {
+                "text": { "type": "string" },
+                "rich_text": { "type": "string" },
+                "title": { "type": "string" },
+                "description": { "type": "string" },
+                "media_url": { "type": "string", "format": "uri" },
+                "alt_text": { "type": "string" },
+                "items": { "type": "array" }
+              }
+            }
+          },
+          "description": "Localized content for different languages/regions"
+        },
+        "dynamic_content": {
+          "type": "object",
+          "properties": {
+            "personalization_rules": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "condition": { "type": "string", "description": "Condition expression" },
+                  "content_variant": { "type": "string", "description": "Content variant to show" },
+                  "audience_segment": { "type": "string" },
+                  "priority": { "type": "integer", "minimum": 1 }
+                },
+                "required": ["condition", "content_variant"]
+              }
+            },
+            "a_b_test": {
+              "type": "object",
+              "properties": {
+                "test_id": { "type": "string" },
+                "variants": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "variant_id": { "type": "string" },
+                      "weight": { "type": "number", "minimum": 0, "maximum": 1 },
+                      "content": { "type": "object" }
+                    },
+                    "required": ["variant_id", "weight", "content"]
+                  }
+                }
+              },
+              "required": ["test_id", "variants"]
+            }
+          }
+        }
+      }
+    },
+    "block_functionality": {
+      "type": "object",
+      "properties": {
+        "interactive": {
+          "type": "boolean",
+          "description": "Whether the block is interactive"
+        },
+        "interaction_type": {
+          "type": "string",
+          "enum": [
+            "click", "hover", "scroll", "form_submit", "navigation", "download",
+            "share", "bookmark", "print", "copy", "expand", "collapse", "toggle",
+            "drag", "drop", "swipe", "pinch", "zoom", "rotate", "voice_command",
+            "gesture", "search", "filter", "sort", "paginate"
+          ],
+          "description": "Type of interaction supported"
+        },
+        "action_target": {
+          "type": "string",
+          "description": "Target of the action (URL, element ID, function, etc.)"
+        },
+        "action_data": {
+          "type": "object",
+          "description": "Additional data passed with the action",
+          "additionalProperties": true
+        },
+        "validation_rules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rule_type": { 
+                "type": "string", 
+                "enum": ["required", "email", "phone", "url", "regex", "length", "range", "custom"] 
+              },
+              "rule_value": { "type": ["string", "number", "boolean"] },
+              "error_message": { "type": "string" }
+            },
+            "required": ["rule_type"]
+          },
+          "description": "Validation rules for interactive elements"
+        },
+        "conditional_display": {
+          "type": "object",
+          "properties": {
+            "conditions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "parameter": { "type": "string" },
+                  "operator": { 
+                    "type": "string", 
+                    "enum": ["equals", "not_equals", "greater_than", "less_than", "contains", "starts_with", "ends_with", "exists", "not_exists"] 
+                  },
+                  "value": { "type": ["string", "number", "boolean"] }
+                },
+                "required": ["parameter", "operator", "value"]
+              }
+            },
+            "logic": { "type": "string", "enum": ["and", "or"], "default": "and" }
+          },
+          "description": "Conditions for showing/hiding the block"
+        },
+        "automation": {
+          "type": "object",
+          "properties": {
+            "triggers": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "event": { "type": "string" },
+                  "condition": { "type": "string" },
+                  "action": { "type": "string" },
+                  "delay": { "type": "integer", "minimum": 0 }
+                },
+                "required": ["event", "action"]
+              }
+            }
+          }
+        },
+        "tracking": {
+          "type": "object",
+          "properties": {
+            "analytics_event": {
+              "type": "string",
+              "description": "Analytics event name"
+            },
+            "conversion_goal": {
+              "type": "boolean",
+              "description": "Whether this is a conversion goal"
+            },
+            "custom_attributes": {
+              "type": "object",
+              "additionalProperties": { "type": "string" },
+              "description": "Custom tracking attributes"
+            },
+            "funnel_step": {
+              "type": "string",
+              "description": "Conversion funnel step identifier"
+            }
+          }
+        }
+      }
+    },
+    "content_relationships": {
+      "type": "object",
+      "properties": {
+        "parent_block": {
+          "type": "string",
+          "description": "ID of parent block if this is a child block"
+        },
+        "child_blocks": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "IDs of child blocks"
+        },
+        "related_blocks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "block_id": { "type": "string" },
+              "relationship_type": { 
+                "type": "string", 
+                "enum": ["dependency", "reference", "alternative", "complement", "sequence"] 
+              },
+              "description": { "type": "string" }
+            },
+            "required": ["block_id", "relationship_type"]
+          },
+          "description": "Related content blocks"
+        },
+        "external_references": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "reference_type": { 
+                "type": "string", 
+                "enum": ["api", "cms", "database", "file", "url", "service"] 
+              },
+              "reference_id": { "type": "string" },
+              "reference_url": { "type": "string", "format": "uri" },
+              "description": { "type": "string" }
+            },
+            "required": ["reference_type", "reference_id"]
+          },
+          "description": "External content references"
+        }
+      }
+    },
+    "content_metadata": {
+      "type": "object",
+      "properties": {
+        "created_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Content creation timestamp"
+        },
+        "last_modified": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last modification timestamp"
+        },
+        "author": {
+          "type": "string",
+          "description": "Content author"
+        },
+        "version": {
+          "type": "string",
+          "description": "Content version"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "review", "approved", "published", "archived"],
+          "description": "Content status"
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Content tags for categorization"
+        },
+        "accessibility": {
+          "$ref": "#/definitions/accessibility_properties",
+          "description": "Accessibility properties"
+        },
+        "seo": {
+          "$ref": "#/definitions/seo_properties",
+          "description": "SEO properties"
+        },
+        "performance": {
+          "type": "object",
+          "properties": {
+            "load_priority": { 
+              "type": "string", 
+              "enum": ["critical", "high", "medium", "low"],
+              "description": "Loading priority"
+            },
+            "lazy_load": { 
+              "type": "boolean",
+              "description": "Whether to lazy load this content"
+            },
+            "cache_duration": { 
+              "type": "integer", 
+              "minimum": 0,
+              "description": "Cache duration in seconds"
+            }
+          }
+        },
+        "custom_properties": {
+          "type": "object",
+          "additionalProperties": true,
+          "description": "Custom properties for specific implementations"
+        }
+      }
+    },
+    "accessibility_properties": {
+      "type": "object",
+      "properties": {
+        "aria_label": {
+          "type": "string",
+          "description": "ARIA label for screen readers"
+        },
+        "aria_describedby": {
+          "type": "string",
+          "description": "ARIA described by reference"
+        },
+        "role": {
+          "type": "string",
+          "description": "ARIA role"
+        },
+        "tabindex": {
+          "type": "integer",
+          "description": "Tab order index"
+        },
+        "keyboard_navigation": {
+          "type": "boolean",
+          "description": "Supports keyboard navigation"
+        },
+        "screen_reader_text": {
+          "type": "string",
+          "description": "Additional text for screen readers"
+        },
+        "focus_management": {
+          "type": "object",
+          "properties": {
+            "focusable": { "type": "boolean" },
+            "focus_trap": { "type": "boolean" },
+            "initial_focus": { "type": "string" }
+          }
+        }
+      }
+    },
+    "seo_properties": {
+      "type": "object",
+      "properties": {
+        "heading_level": {
+          "type": "string",
+          "enum": ["h1", "h2", "h3", "h4", "h5", "h6"],
+          "description": "Semantic heading level"
+        },
+        "structured_data": {
+          "type": "object",
+          "description": "Schema.org structured data"
+        },
+        "meta_description": {
+          "type": "string",
+          "description": "Meta description for the content"
+        },
+        "keywords": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Target keywords"
+        },
+        "canonical_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Canonical URL reference"
+        },
+        "og_properties": {
+          "type": "object",
+          "properties": {
+            "title": { "type": "string" },
+            "description": { "type": "string" },
+            "image": { "type": "string", "format": "uri" },
+            "type": { "type": "string" }
+          },
+          "description": "Open Graph properties"
+        },
+        "twitter_card": {
+          "type": "object",
+          "properties": {
+            "card": { "type": "string" },
+            "title": { "type": "string" },
+            "description": { "type": "string" },
+            "image": { "type": "string", "format": "uri" }
+          },
+          "description": "Twitter Card properties"
+        }
+      }
+    },
+    "form_field": {
+      "type": "object",
+      "properties": {
+        "field_id": {
+          "type": "string",
+          "description": "Unique identifier for the form field"
+        },
+        "field_type": {
+          "type": "string",
+          "enum": [
+            "text", "email", "password", "number", "tel", "url", "search",
+            "textarea", "select", "checkbox", "radio", "file", "date",
+            "datetime-local", "time", "color", "range", "hidden",
+            "multi_select", "autocomplete", "tags", "rich_text",
+            "signature", "rating", "slider", "toggle", "image_upload"
+          ],
+          "description": "HTML input type or custom field type"
+        },
+        "label": {
+          "type": "string",
+          "description": "Field label"
+        },
+        "placeholder": {
+          "type": "string",
+          "description": "Placeholder text"
+        },
+        "help_text": {
+          "type": "string",
+          "description": "Help text or description"
+        },
+        "default_value": {
+          "type": ["string", "number", "boolean"],
+          "description": "Default field value"
+        },
+        "required": {
+          "type": "boolean",
+          "description": "Whether the field is required"
+        },
+        "validation": {
+          "type": "object",
+          "properties": {
+            "pattern": {
+              "type": "string",
+              "description": "Regex pattern for validation"
+            },
+            "min_length": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Minimum length"
+            },
+            "max_length": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Maximum length"
+            },
+            "min_value": {
+              "type": "number",
+              "description": "Minimum numeric value"
+            },
+            "max_value": {
+              "type": "number",
+              "description": "Maximum numeric value"
+            },
+            "custom_validation": {
+              "type": "string",
+              "description": "Custom validation function or rule"
+            }
+          }
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "value": { "type": "string" },
+              "label": { "type": "string" },
+              "disabled": { "type": "boolean" },
+              "selected": { "type": "boolean" },
+              "description": { "type": "string" }
+            },
+            "required": ["value", "label"]
+          },
+          "description": "Options for select, radio, or checkbox fields"
+        },
+        "conditional_logic": {
+          "type": "object",
+          "properties": {
+            "show_if": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "field": { "type": "string" },
+                  "condition": { "type": "string" },
+                  "value": { "type": ["string", "number", "boolean"] }
+                },
+                "required": ["field", "condition", "value"]
+              }
+            },
+            "logic": { "type": "string", "enum": ["and", "or"], "default": "and" }
+          },
+          "description": "Conditional field display logic"
+        },
+        "data_source": {
+          "type": "object",
+          "properties": {
+            "type": { "type": "string", "enum": ["static", "api", "computed"] },
+            "endpoint": { "type": "string", "format": "uri" },
+            "depends_on": { "type": "array", "items": { "type": "string" } }
+          },
+          "description": "Dynamic options data source"
+        }
+      },
+      "required": ["field_id", "field_type", "label"]
+    }
+  },
+  "content_zone_definitions": {
+    "hero_zone": {
+      "description": "Primary content zone that captures attention and communicates core value proposition",
+      "typical_content": [
+        "Primary headline", "Value proposition", "Hero imagery", "Primary CTA",
+        "Navigation elements", "Key benefits summary"
+      ],
+      "content_strategy": "Maximum impact with minimal cognitive load",
+      "conversion_impact": "Critical - primary conversion driver"
+    },
+    "features_benefits_zone": {
+      "description": "Comprehensive showcase of product capabilities and benefits",
+      "typical_content": [
+        "Feature descriptions", "Benefit explanations", "Use case examples",
+        "Interactive demos", "Capability matrices", "ROI calculators"
+      ],
+      "content_strategy": "Educational and persuasive content that builds understanding",
+      "conversion_impact": "High - builds understanding and desire"
+    },
+    "social_proof_zone": {
+      "description": "Trust-building content with testimonials and credibility indicators",
+      "typical_content": [
+        "Customer testimonials", "Company logos", "Reviews and ratings",
+        "Case studies", "Certifications", "Awards and recognition"
+      ],
+      "content_strategy": "Third-party validation and trust building",
+      "conversion_impact": "High - reduces friction and builds confidence"
+    },
+    "product_showcase_zone": {
+      "description": "Detailed product demonstration and visual presentation",
+      "typical_content": [
+        "Product galleries", "Feature demonstrations", "Technical specifications",
+        "Interactive tours", "Customization options", "Comparison tools"
+      ],
+      "content_strategy": "Detailed product exploration and evaluation",
+      "conversion_impact": "Medium-High - enables informed decision making"
+    },
+    "conversion_zone": {
+      "description": "Final conversion-focused content with clear calls-to-action",
+      "typical_content": [
+        "Pricing information", "Sign-up forms", "Contact forms",
+        "Urgency indicators", "Guarantee information", "Final CTAs"
+      ],
+      "content_strategy": "Eliminate barriers and drive action",
+      "conversion_impact": "Critical - direct conversion driver"
+    },
+    "education_zone": {
+      "description": "Educational content that informs and nurtures prospects",
+      "typical_content": [
+        "Tutorials and guides", "Documentation", "Best practices",
+        "Industry insights", "Resource libraries", "Learning paths"
+      ],
+      "content_strategy": "Value-first education and thought leadership",
+      "conversion_impact": "Medium - builds trust and authority"
+    }
+  },
+  "content_patterns": {
+    "progressive_disclosure": {
+      "description": "Gradually reveal information to avoid overwhelming users",
+      "implementation": ["Expandable content", "Step-by-step reveals", "Contextual information"],
+      "content_structure": "Hierarchical with increasing detail levels"
+    },
+    "social_validation": {
+      "description": "Real-time social proof and peer validation",
+      "implementation": ["Live metrics", "Recent activity", "Peer testimonials"],
+      "content_structure": "Dynamic and socially-driven"
+    },
+    "personalization": {
+      "description": "Tailored content based on user behavior and preferences",
+      "implementation": ["Dynamic content blocks", "Conditional messaging", "Segment-specific content"],
+      "content_structure": "Adaptive and contextual"
+    }
+  },
+  "validation_rules": {
+    "content_completeness": {
+      "required_zones": ["hero_zone"],
+      "recommended_zones": ["features_benefits_zone", "social_proof_zone", "conversion_zone"],
+      "min_blocks_per_section": 1,
+      "max_blocks_per_section": 20
+    },
+    "content_consistency": {
+      "unique_ids": ["zone_id", "section_id", "block_id"],
+      "required_content_types": ["text", "rich_text", "media_url"],
+      "localization_consistency": true
+    }
+  }
+}

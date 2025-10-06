@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://spiral-automation.com/schemas/section-schemas-index.json",
+  "title": "Documentation Section Schemas Index",
+  "description": "Master index of all available section schemas for documentation validation",
+  "type": "object",
+  "properties": {
+    "schemas": {
+      "type": "object",
+      "description": "Map of section tags to their corresponding schema files",
+      "properties": {
+        "overview": {
+          "type": "string",
+          "const": "./01-overview-section-schema.json",
+          "description": "Schema for Overview section"
+        },
+        "getting-started": {
+          "type": "string",
+          "const": "./02-getting-started-section-schema.json",
+          "description": "Schema for Getting Started section"
+        },
+        "features": {
+          "type": "string",
+          "const": "./03-features-section-schema.json",
+          "description": "Schema for Features section"
+        },
+        "use-cases": {
+          "type": "string",
+          "const": "./04-use-cases-section-schema.json",
+          "description": "Schema for Use Cases section"
+        },
+        "workflow": {
+          "type": "string",
+          "const": "./05-workflow-section-schema.json",
+          "description": "Schema for Workflow section"
+        },
+        "troubleshooting": {
+          "type": "string",
+          "const": "./06-troubleshooting-section-schema.json",
+          "description": "Schema for Troubleshooting section"
+        },
+        "api-docs": {
+          "type": "string",
+          "const": "./07-api-documentation-section-schema.json",
+          "description": "Schema for API Documentation section"
+        },
+        "security-compliance": {
+          "type": "string",
+          "const": "./08-security-compliance-section-schema.json",
+          "description": "Schema for Security & Compliance section"
+        },
+        "administration": {
+          "type": "string",
+          "const": "./09-administration-section-schema.json",
+          "description": "Schema for Administration section"
+        },
+        "integration": {
+          "type": "string",
+          "const": "./10-integration-guide-section-schema.json",
+          "description": "Schema for Integration Guide section"
+        },
+        "training-support": {
+          "type": "string",
+          "const": "./11-training-support-section-schema.json",
+          "description": "Schema for Training & Support section"
+        },
+        "release-notes": {
+          "type": "string",
+          "const": "./12-release-notes-section-schema.json",
+          "description": "Schema for Release Notes section"
+        }
+      },
+      "additionalProperties": false
+    },
+    "validation_info": {
+      "type": "object",
+      "description": "Information about schema validation and usage",
+      "properties": {
+        "schema_version": {
+          "type": "string",
+          "const": "1.0.0",
+          "description": "Version of the schema specification"
+        },
+        "created_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date when schemas were created"
+        },
+        "total_schemas": {
+          "type": "integer",
+          "const": 12,
+          "description": "Total number of section schemas available"
+        },
+        "validator_tool": {
+          "type": "string",
+          "const": "./validate-sections.js",
+          "description": "Path to the validation tool"
+        }
+      }
+    }
+  },
+  "required": ["schemas", "validation_info"],
+  "additionalProperties": false
+}

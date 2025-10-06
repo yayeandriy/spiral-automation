@@ -1,0 +1,161 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://spiral-automation.com/schemas/faq-section.json",
+  "title": "Administration Section Schema",
+  "description": "Schema for Administration section with system management and administrative functions",
+  "type": "object",
+  "required": ["name", "tag", "description", "children"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "const": "Administration",
+      "description": "Must be 'Administration'"
+    },
+    "tag": {
+      "type": "string",
+      "const": "administration",
+      "description": "Must be 'administration'"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 15,
+      "maxLength": 500,
+      "description": "Overview of frequently asked questions and common inquiries"
+    },
+    "children": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 25,
+      "items": { "$ref": "#/definitions/faq_child" }
+    },
+    "metadata": { "$ref": "#/definitions/metadata" }
+  },
+  "definitions": {
+    "faq_child": {
+      "type": "object",
+      "required": ["name", "description"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[A-Z][a-zA-Z0-9 \\-&'?.,!]+\\?$",
+          "minLength": 10,
+          "maxLength": 150,
+          "examples": [
+            "How accurate are the measurements?",
+            "What file formats are supported?",
+            "Can I integrate with my existing systems?",
+            "What happens if there's a connection issue?"
+          ],
+          "description": "Question in proper question format ending with ?"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 25,
+          "maxLength": 1500,
+          "description": "Clear, comprehensive answer to the question"
+        },
+        "bullet_points": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "items": {
+            "type": "string",
+            "minLength": 10,
+            "maxLength": 200,
+            "description": "Key points, steps, or additional details for the answer"
+          }
+        },
+        "faq_category": {
+          "type": "string",
+          "enum": [
+            "general",
+            "technical",
+            "pricing",
+            "features",
+            "setup",
+            "troubleshooting",
+            "integrations",
+            "security",
+            "support"
+          ],
+          "description": "Category of the FAQ question"
+        },
+        "popularity_score": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "How frequently this question is asked (1-10 scale)"
+        },
+        "answer_type": {
+          "type": "string",
+          "enum": ["informational", "instructional", "troubleshooting", "policy"],
+          "description": "Type of answer provided"
+        },
+        "related_questions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 10,
+            "maxLength": 150
+          },
+          "description": "Related questions users might have"
+        },
+        "code_examples": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/code_example" }
+        },
+        "links": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/link" }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "faq", "common", "popular", "technical", "basic",
+              "pricing", "features", "setup", "troubleshooting",
+              "integration", "security", "support"
+            ]
+          }
+        }
+      }
+    },
+    "code_example": {
+      "type": "object",
+      "required": ["title", "code"],
+      "properties": {
+        "title": { "type": "string", "minLength": 5, "maxLength": 100 },
+        "code": { "type": "string", "minLength": 10 },
+        "language": {
+          "type": "string",
+          "enum": ["javascript", "python", "json", "bash", "sql", "yaml", "curl"]
+        },
+        "description": { "type": "string", "maxLength": 200 }
+      }
+    },
+    "link": {
+      "type": "object",
+      "required": ["title", "url"],
+      "properties": {
+        "title": { "type": "string", "minLength": 5, "maxLength": 100 },
+        "url": { "type": "string", "format": "uri" },
+        "description": { "type": "string", "maxLength": 200 }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "last_updated": { "type": "string", "format": "date" },
+        "author": { "type": "string", "maxLength": 100 },
+        "priority": { "type": "string", "enum": ["high", "medium", "low"] },
+        "target_audience": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["end-users", "administrators", "developers", "managers", "support-staff"] }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

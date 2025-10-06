@@ -1,0 +1,27 @@
+{
+  "name": "Getting Started",
+  "tag": "getting-started",
+  "description": "Essential first steps for new users to begin using the product, including setup and initial configuration",
+  "children": [
+    {
+      "name": "Quick Start Guide",
+      "description": "Step-by-step walkthrough to get up and running with the product in the shortest time possible"
+    },
+    {
+      "name": "Installation Instructions",
+      "description": "Detailed installation procedures for different operating systems and deployment environments"
+    },
+    {
+      "name": "Initial Setup",
+      "description": "Configuration steps required after installation to prepare the system for first use"
+    },
+    {
+      "name": "First Login",
+      "description": "Guide for accessing the system for the first time, including credential setup and authentication"
+    },
+    {
+      "name": "Basic Configuration",
+      "description": "Essential settings and preferences that should be configured before regular use"
+    }
+  ]
+}

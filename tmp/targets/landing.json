@@ -1,0 +1,1185 @@
+{
+  "children": [
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Walter Precision Measurement System"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Revolutionize your manufacturing quality control with AI-powered precision measurement technology. Walter delivers automated blade inspection, real-time dimensional analysis, and instant pass/fail validation - eliminating human error and accelerating your production workflow."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "heading_2",
+                  "heading_2": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Automated Quality Control"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Eliminate manual inspection bottlenecks with computer vision technology that measures blade dimensions to micron-level precision. Compare against CAD specifications automatically and receive instant pass/fail validation."
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "heading_2",
+                  "heading_2": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Dual Validation System"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Walter combines photo-based measurements with caliper validation for maximum accuracy. This dual approach ensures measurement reliability while maintaining production speed and traceability."
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "heading_2",
+                  "heading_2": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Real-Time Analytics"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Track measurement trends, identify quality patterns, and generate compliance reports automatically. Complete audit trails with timestamped measurements and blade identification for full traceability."
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Key Benefits for Manufacturing Leaders"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Reduce inspection time by up to 85%"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Eliminate human measurement error"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Achieve micron-level measurement accuracy"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Complete measurement documentation"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "ISO 9001 compliance ready"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Scalable across production lines"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Technical Specifications"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Measurement Capabilities"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Linear dimensions: ±0.01mm accuracy"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Angular measurements: ±0.1° precision"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Multi-point inspection per blade"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Automated vertical offset calculations"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "System Integration"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "CAD file integration for tolerance checking"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Real-time data export capabilities"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "API connectivity for MES systems"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Configurable tolerance parameters"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Data Management"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Timestamped measurement records"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Blade identification tracking"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Automated report generation"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Statistical process control charts"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Measurement Process Workflow"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Blade Positioning: Automated positioning system aligns the blade for optimal measurement accuracy"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Computer Vision Analysis: High-resolution cameras capture blade geometry with sub-pixel accuracy"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "CAD Comparison: Measured dimensions are automatically compared against CAD specifications"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Tolerance Validation: System determines pass/fail status based on configurable tolerance ranges"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Data Recording: Complete measurement data is logged with timestamps and blade identification"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Target Industries and Use Cases"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Aerospace Manufacturing"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Turbine blade inspection for jet engines, helicopter rotors, and aircraft components requiring extreme precision and safety compliance."
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Energy Production"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Wind turbine blade manufacturing, steam turbine components, and power generation equipment requiring high-precision quality control."
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Automotive Industry"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Engine components, transmission parts, and precision automotive tooling where dimensional accuracy directly impacts performance and reliability."
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Tool Manufacturing"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Cutting tools, machine tool components, and industrial tooling where blade geometry directly affects cutting performance and tool life."
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Return on Investment"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Manufacturing companies typically see a complete ROI within 6-12 months through reduced inspection labor costs, eliminated rework, and improved first-pass quality rates."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Labor Cost Reduction: Automate 4-6 hours of daily manual inspection work per production line"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Quality Improvement: Reduce defect rates by 60-80% through consistent, accurate measurements"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Throughput Increase: Process 300-500 parts per hour vs 50-75 with manual inspection"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Compliance Benefits: Automated documentation reduces audit preparation time by 90%"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implementation and Support"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Installation Process"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "numbered_list_item",
+                  "numbered_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Site assessment and system configuration"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "numbered_list_item",
+                  "numbered_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Hardware installation and calibration"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "numbered_list_item",
+                  "numbered_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "CAD integration and tolerance setup"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "numbered_list_item",
+                  "numbered_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Operator training and certification"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Ongoing Support"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "24/7 technical support hotline"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Remote diagnostics and troubleshooting"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Quarterly system health checks"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Software updates and feature enhancements"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Sample Measurement Data Output"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "code",
+      "code": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Blade ID: E8172-12\nMeasurement Point: N\nCAD Specification: 2.43mm ±0.15mm\nPhoto Measurement: 2.33mm\nCaliper Validation: 2.37mm\nTolerance Range: 2.28 - 2.58mm\nStatus: ACCEPTABLE\nTimestamp: 2024-12-03 14:11:10\nOperator: AUTO_SYSTEM\nQuality Grade: A"
+            }
+          }
+        ],
+        "language": "plain text"
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Ready to Transform Your Quality Control?"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Contact our manufacturing solutions team to schedule a Walter demonstration at your facility. See firsthand how automated precision measurement can revolutionize your production quality and efficiency."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Request Demo"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Schedule an on-site demonstration to see Walter in action with your actual parts"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Technical Consultation"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Discuss your specific measurement requirements with our engineering team"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "ROI Calculator"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Get a customized ROI analysis based on your current inspection processes"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Walter Precision Measurement System - Engineered for the future of manufacturing quality control."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

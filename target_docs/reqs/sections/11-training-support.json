@@ -1,0 +1,31 @@
+{
+  "name": "Training & Support",
+  "tag": "training-support",
+  "description": "Resources for user education, training materials, and support channel information",
+  "children": [
+    {
+      "name": "Training Materials",
+      "description": "Educational resources, documentation, guides, and learning materials"
+    },
+    {
+      "name": "Video Tutorials",
+      "description": "Step-by-step video guides, walkthroughs, and instructional content"
+    },
+    {
+      "name": "Webinars & Events",
+      "description": "Live training sessions, educational webinars, and community events"
+    },
+    {
+      "name": "Support Channels",
+      "description": "Available support options, contact methods, and service level agreements"
+    },
+    {
+      "name": "Community Forum",
+      "description": "User community platform for discussions, questions, and knowledge sharing"
+    },
+    {
+      "name": "Professional Services",
+      "description": "Consulting, implementation services, and expert assistance options"
+    }
+  ]
+}

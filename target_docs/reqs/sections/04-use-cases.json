@@ -1,0 +1,27 @@
+{
+  "name": "Use Cases",
+  "tag": "use-cases",
+  "description": "Real-world scenarios and business applications demonstrating how the product solves specific problems",
+  "children": [
+    {
+      "name": "Industry Solutions",
+      "description": "Specific applications and implementations across different industries and verticals"
+    },
+    {
+      "name": "Common Workflows",
+      "description": "Typical processes and procedures that users follow to accomplish routine tasks"
+    },
+    {
+      "name": "Business Scenarios",
+      "description": "Real-world business situations where the product provides value and solves problems"
+    },
+    {
+      "name": "Customer Success Stories",
+      "description": "Case studies and testimonials from actual customers who have achieved success"
+    },
+    {
+      "name": "Implementation Examples",
+      "description": "Practical examples showing how to implement the product in various environments"
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+[
+  {
+    "children": [
+      {
+        "type": "heading_1",
+        "heading_1": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Precision Manufacturing Quality Control (PMQC) System"
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "blue"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "divider",
+        "divider": {}
+      },
+      {
+        "type": "heading_2",
+        "heading_2": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Frequently Asked Questions"
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "heading_3",
+        "heading_3": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Can the system operate in high-temperature manufacturing environments?"
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "paragraph",
+        "paragraph": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Yes, the camera housing and components are rated for operation up to 60°C. For extended high‑temperature operation, additional cooling solutions may be recommended."
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "heading_3",
+        "heading_3": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "What is the typical setup time for a new production line?"
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "paragraph",
+        "paragraph": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Standard installation and calibration typically takes 2‑4 hours, depending on the complexity of the measurement requirements and existing infrastructure."
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "heading_3",
+        "heading_3": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "How does the system handle different component materials and finishes?"
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "paragraph",
+        "paragraph": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "The intelligent segmentation technology adapts to various material properties and surface finishes. Custom calibration profiles can be created for specific material characteristics."
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "heading_3",
+        "heading_3": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "What training is required for operators?"
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "paragraph",
+        "paragraph": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Basic operator training typically takes 2‑3 hours. Advanced configuration and troubleshooting training is available for maintenance personnel."
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "heading_3",
+        "heading_3": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "How is data security and compliance handled?"
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "paragraph",
+        "paragraph": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "The system includes comprehensive audit trails, data encryption, and compliance features meeting industry standards for quality management and regulatory requirements."
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "name": "Features",
+  "tag": "features",
+  "description": "Comprehensive overview of all product capabilities and functionalities available to users",
+  "children": [
+    {
+      "name": "Core Features",
+      "description": "Essential functionalities that form the foundation of the product's capabilities"
+    },
+    {
+      "name": "Advanced Features",
+      "description": "Sophisticated capabilities for power users and complex use cases"
+    },
+    {
+      "name": "Feature Comparison Matrix",
+      "description": "Side-by-side comparison of different feature sets, editions, or competitor alternatives"
+    },
+    {
+      "name": "Feature Roadmap",
+      "description": "Planned future enhancements, upcoming releases, and development timeline"
+    },
+    {
+      "name": "Beta Features",
+      "description": "Experimental or preview functionality available for testing and feedback"
+    }
+  ]
+}

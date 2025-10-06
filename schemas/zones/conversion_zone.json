@@ -1,0 +1,401 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Conversion Zone Content Schema",
+  "description": "Content zone focused on driving conversions with call-to-actions, signup forms, and purchase flows",
+  "type": "object",
+  "properties": {
+    "zone_id": {
+      "type": "string",
+      "description": "Unique identifier for the zone"
+    },
+    "zone_type": {
+      "type": "string",
+      "const": "conversion_zone",
+      "description": "Type of zone - must be conversion_zone"
+    },
+    "zone_name": {
+      "type": "string",
+      "description": "Human-readable name for the zone"
+    },
+    "zone_purpose": {
+      "type": "string",
+      "description": "Primary purpose and goal of this zone"
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Order position of zone on the page"
+    },
+    "is_above_fold": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether zone appears above the fold"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["critical", "high"],
+      "default": "critical",
+      "description": "Content importance priority - conversion zones are typically critical"
+    },
+    "content_strategy": {
+      "type": "string",
+      "enum": ["conversion_focused", "action_driving"],
+      "default": "conversion_focused",
+      "description": "Content strategy for conversion zones"
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/conversion_section"
+      },
+      "description": "Content sections within the conversion zone"
+    }
+  },
+  "required": ["zone_id", "zone_type", "zone_name", "position", "sections"],
+  "definitions": {
+    "conversion_section": {
+      "type": "object",
+      "properties": {
+        "section_id": {
+          "type": "string",
+          "description": "Unique identifier for the section"
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "call_to_action_section", "signup_section", "contact_form_section",
+            "purchase_section", "trial_section", "download_section",
+            "newsletter_section", "demo_request_section", "conversion_banner_section"
+          ],
+          "description": "Type of section - conversion focused types"
+        },
+        "section_name": {
+          "type": "string",
+          "description": "Human-readable name for the section"
+        },
+        "section_purpose": {
+          "type": "string",
+          "description": "Primary purpose of this section"
+        },
+        "content_structure": {
+          "type": "string",
+          "enum": [
+            "centered", "split_content", "banner", "popup", "inline_form", "sticky_bar"
+          ],
+          "description": "Organizational structure - conversion-optimized layouts"
+        },
+        "content_flow": {
+          "type": "string",
+          "enum": ["linear", "form_based", "multi_step"],
+          "default": "form_based",
+          "description": "How content flows within the section"
+        },
+        "blocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/conversion_block"
+          },
+          "description": "Individual content blocks within the section"
+        }
+      },
+      "required": ["section_id", "section_type", "section_name", "blocks"]
+    },
+    "conversion_block": {
+      "type": "object",
+      "properties": {
+        "block_id": {
+          "type": "string",
+          "description": "Unique identifier for the block"
+        },
+        "block_category": {
+          "type": "string",
+          "enum": [
+            "text_content", "form_content", "interactive_content", "visual_content"
+          ],
+          "description": "High-level category of the content block"
+        },
+        "block_type": {
+          "type": "string",
+          "enum": [
+            "cta_button_primary", "cta_button_secondary", "signup_form", "contact_form",
+            "newsletter_form", "trial_form", "download_button", "purchase_button",
+            "demo_request_button", "conversion_headline", "value_proposition_text",
+            "urgency_text", "social_proof_snippet", "guarantee_badge", "security_badge",
+            "form_field", "checkbox", "radio_button", "dropdown", "submit_button"
+          ],
+          "description": "Specific type of content block suitable for conversion zones"
+        },
+        "content": {
+          "$ref": "#/definitions/block_content_data",
+          "description": "The actual content data of the block"
+        },
+        "functionality": {
+          "$ref": "#/definitions/block_functionality",
+          "description": "Interactive functionality and behavior"
+        },
+        "metadata": {
+          "$ref": "#/definitions/content_metadata",
+          "description": "Additional metadata for the content block"
+        }
+      },
+      "required": ["block_id", "block_category", "block_type", "content"]
+    },
+    "block_content_data": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Plain text content of the block"
+        },
+        "button_text": {
+          "type": "string",
+          "description": "Text displayed on buttons or CTAs"
+        },
+        "headline": {
+          "type": "string",
+          "description": "Conversion-focused headline"
+        },
+        "subheadline": {
+          "type": "string",
+          "description": "Supporting headline or value proposition"
+        },
+        "description": {
+          "type": "string",
+          "description": "Descriptive text explaining the offer or action"
+        },
+        "form_fields": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "field_id": { "type": "string" },
+              "field_type": { 
+                "type": "string",
+                "enum": ["text", "email", "password", "tel", "url", "textarea", "select", "checkbox", "radio"]
+              },
+              "label": { "type": "string" },
+              "placeholder": { "type": "string" },
+              "required": { "type": "boolean" },
+              "validation": { "type": "string" },
+              "options": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "required": ["field_id", "field_type", "label"]
+          },
+          "description": "Form field definitions for signup/contact forms"
+        },
+        "offer_details": {
+          "type": "object",
+          "properties": {
+            "offer_type": { 
+              "type": "string",
+              "enum": ["free_trial", "demo", "download", "signup", "consultation", "purchase"]
+            },
+            "offer_value": { "type": "string" },
+            "time_limit": { "type": "string" },
+            "terms": { "type": "string" }
+          },
+          "description": "Details about the conversion offer"
+        },
+        "urgency_elements": {
+          "type": "object",
+          "properties": {
+            "countdown_timer": { "type": "boolean" },
+            "limited_spots": { "type": "string" },
+            "deadline": { "type": "string", "format": "date-time" },
+            "urgency_text": { "type": "string" }
+          },
+          "description": "Urgency-creating elements"
+        },
+        "trust_indicators": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": { 
+                "type": "string",
+                "enum": ["guarantee", "security", "testimonial", "certification", "statistic"]
+              },
+              "text": { "type": "string" },
+              "icon": { "type": "string" },
+              "badge_url": { "type": "string", "format": "uri" }
+            }
+          },
+          "description": "Trust-building elements near conversion points"
+        },
+        "media_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for supporting images or videos"
+        },
+        "alt_text": {
+          "type": "string",
+          "description": "Alternative text for accessibility"
+        },
+        "link_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Target URL for buttons and links"
+        },
+        "form_action": {
+          "type": "string",
+          "format": "uri",
+          "description": "Form submission endpoint"
+        },
+        "success_message": {
+          "type": "string",
+          "description": "Message shown after successful conversion"
+        },
+        "error_message": {
+          "type": "string",
+          "description": "Message shown on form errors"
+        }
+      }
+    },
+    "block_functionality": {
+      "type": "object",
+      "properties": {
+        "interactive": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether the block is interactive - typically true for conversion zones"
+        },
+        "interaction_type": {
+          "type": "string",
+          "enum": [
+            "click", "submit", "input", "select", "toggle", "multi_step",
+            "validation", "ajax_submit"
+          ],
+          "description": "Type of interaction supported"
+        },
+        "validation_rules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "field": { "type": "string" },
+              "rule": { "type": "string" },
+              "message": { "type": "string" }
+            }
+          },
+          "description": "Form validation rules"
+        },
+        "conversion_goal": {
+          "type": "string",
+          "enum": ["signup", "purchase", "download", "demo_request", "contact", "newsletter"],
+          "description": "Primary conversion goal of this block"
+        },
+        "tracking": {
+          "type": "object",
+          "properties": {
+            "analytics_event": {
+              "type": "string",
+              "description": "Analytics event name"
+            },
+            "conversion_tracking": {
+              "type": "boolean",
+              "default": true,
+              "description": "Whether this tracks conversions"
+            },
+            "funnel_step": {
+              "type": "string",
+              "description": "Step in the conversion funnel"
+            },
+            "goal_value": {
+              "type": "number",
+              "description": "Monetary value of the conversion"
+            }
+          }
+        },
+        "a_b_testing": {
+          "type": "object",
+          "properties": {
+            "test_active": { "type": "boolean" },
+            "variant_id": { "type": "string" },
+            "test_name": { "type": "string" }
+          },
+          "description": "A/B testing configuration"
+        }
+      }
+    },
+    "content_metadata": {
+      "type": "object",
+      "properties": {
+        "created_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Content creation timestamp"
+        },
+        "version": {
+          "type": "string",
+          "description": "Content version"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "review", "approved", "published", "testing"],
+          "description": "Content status"
+        },
+        "conversion_priority": {
+          "type": "string",
+          "enum": ["primary", "secondary", "supporting"],
+          "description": "Priority level for conversion optimization"
+        },
+        "target_conversion_rate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Target conversion rate percentage"
+        },
+        "compliance": {
+          "type": "object",
+          "properties": {
+            "gdpr_compliant": { "type": "boolean" },
+            "privacy_policy_linked": { "type": "boolean" },
+            "terms_of_service_linked": { "type": "boolean" }
+          },
+          "description": "Legal compliance information"
+        },
+        "accessibility": {
+          "type": "object",
+          "properties": {
+            "aria_label": {
+              "type": "string",
+              "description": "ARIA label for screen readers"
+            },
+            "keyboard_navigation": {
+              "type": "boolean",
+              "default": true,
+              "description": "Supports keyboard navigation"
+            },
+            "high_contrast_support": {
+              "type": "boolean",
+              "description": "Supports high contrast mode"
+            }
+          }
+        }
+      }
+    }
+  },
+  "zone_guidelines": {
+    "description": "Content zone focused on driving conversions with call-to-actions, signup forms, and purchase flows",
+    "typical_content": [
+      "Primary/secondary CTAs", "Signup forms", "Contact forms", "Trial requests",
+      "Download buttons", "Purchase flows", "Newsletter signups", "Demo requests",
+      "Conversion headlines", "Trust indicators"
+    ],
+    "content_strategy": "Remove friction and drive specific user actions",
+    "conversion_impact": "Critical - directly drives business goals",
+    "best_practices": [
+      "Use clear, action-oriented language",
+      "Minimize form fields to essentials",
+      "Include trust indicators near CTAs",
+      "Test different button colors and copy",
+      "Ensure fast loading and mobile optimization",
+      "Provide clear value proposition for the action"
+    ]
+  }
+}

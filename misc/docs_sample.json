@@ -1,0 +1,27 @@
+{
+    "sections" : [{
+        "type": "get_started",
+        "section_id": "sec_001",
+        "section_name": "Get Started",
+        "content": {
+            "headline": "Welcome to Our Website",
+            "subheadline": "Discover amazing content and features",
+            "blocks": [
+                {
+                    "block_id": "blk_001",
+                    "block_type": "headline",
+                    "content": {
+                        "text": "New To Our Platform?"
+                    }
+                },
+                {
+                    "block_id": "blk_001",
+                    "block_type": "text_content",
+                    "content": {
+                        "text": "Explore our services and offerings tailored just for you."
+                    }
+                }
+            ]
+        }
+    }]
+}

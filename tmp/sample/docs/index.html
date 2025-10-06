@@ -1,0 +1,255 @@
+<section class="content-body grid-75"><div dehydrated="&lt;h2 class=&quot;heading heading-2 header-scroll&quot; align=&quot;&quot;&gt;&lt;div class=&quot;heading-anchor anchor waypoint&quot; id=&quot;using-notions-api-for-integrations&quot;&gt;&lt;/div&gt;&lt;div class=&quot;heading-text&quot;&gt;&lt;div id=&quot;section-using-notions-api-for-integrations&quot; class=&quot;heading-anchor_backwardsCompatibility&quot;&gt;&lt;/div&gt;Using Notion&amp;#x27;s API for Integrations&lt;/div&gt;&lt;a aria-label=&quot;Skip link to Using Notion&amp;#x27;s API for Integrations&quot; class=&quot;heading-anchor-icon fa fa-anchor&quot; href=&quot;#using-notions-api-for-integrations&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A Notion workspace is a collaborative environment where teams can organize work, manage projects, and store information in a highly customizable way. Notion&amp;#x27;s REST API facilitates direct interactions with workspace elements through programming. Key functionalities include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/docs/working-with-page-content&quot; target=&quot;&quot; title=&quot;&quot;&gt;Pages&lt;/a&gt;: Create, update, and retrieve page content. &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/docs/working-with-databases&quot; target=&quot;&quot; title=&quot;&quot;&gt;Databases&lt;/a&gt; and &lt;a href=&quot;/reference/data-sources&quot; target=&quot;&quot; title=&quot;&quot;&gt;Data Sources&lt;/a&gt;: Manage databases, data source properties, entries, and schemas. &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/reference/user&quot; target=&quot;&quot; title=&quot;&quot;&gt;Users&lt;/a&gt;: Access user profiles and permissions.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/docs/working-with-comments&quot; target=&quot;&quot; title=&quot;&quot;&gt;Comments&lt;/a&gt;: Handle page and inline comments.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/reference/post-search&quot; target=&quot;&quot; title=&quot;&quot;&gt;Content Queries&lt;/a&gt;: Search through workspace content. &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/docs/authorization&quot; target=&quot;&quot; title=&quot;&quot;&gt;Authentication&lt;/a&gt;: Secure integrations with OAuth 2.0.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/docs/link-previews&quot; target=&quot;&quot; title=&quot;&quot;&gt;Link Previews&lt;/a&gt;: Customize how links appear when shared.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To make interactions within Notion workspaces programmatically, you must associate these actions with a Notion user. Notion facilitates this by allowing API requests to be linked to a &amp;quot;bot&amp;quot; user. &lt;/p&gt;
+&lt;p&gt;Developers create integrations to define a bot&amp;#x27;s capabilities, including authenticating API requests, deciding when to make requests, and setting the bot&amp;#x27;s read/write permissions. Essentially, using Notion&amp;#x27;s Public API involves creating an integration that outlines how a bot interacts with your workspace and assigns REST API requests to the bot.&lt;/p&gt;
+&lt;p&gt;There are two primary integration types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/docs/getting-started#internal-integrations&quot; target=&quot;&quot; title=&quot;&quot;&gt;Internal&lt;/a&gt;: For private workspace workflows and automations.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/docs/getting-started#public-integrations&quot; target=&quot;&quot; title=&quot;&quot;&gt;Public&lt;/a&gt;: For broader, shareable functionalities, including &lt;a href=&quot;https://developers.notion.com/docs/link-previews&quot; target=&quot;&quot; title=&quot;&quot;&gt;Link Previews&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For further details on integration possibilities and API specifics, proceed with the guide or consult the &lt;a href=&quot;https://developers.notion.com/reference/intro&quot; target=&quot;&quot; title=&quot;&quot;&gt;API reference&lt;/a&gt;. Check out our &lt;a href=&quot;https://developers.notion.com/page/examples&quot; target=&quot;&quot; title=&quot;&quot;&gt;demos&lt;/a&gt; for practical examples.&lt;/p&gt;
+&lt;h2 class=&quot;heading heading-2 header-scroll&quot; align=&quot;&quot;&gt;&lt;div class=&quot;heading-anchor anchor waypoint&quot; id=&quot;what-is-a-notion-integration&quot;&gt;&lt;/div&gt;&lt;div class=&quot;heading-text&quot;&gt;&lt;div id=&quot;section-what-is-a-notion-integration&quot; class=&quot;heading-anchor_backwardsCompatibility&quot;&gt;&lt;/div&gt;What is a Notion Integration?&lt;/div&gt;&lt;a aria-label=&quot;Skip link to What is a Notion Integration?&quot; class=&quot;heading-anchor-icon fa fa-anchor&quot; href=&quot;#what-is-a-notion-integration&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A Notion integration, sometimes referred as a &lt;a href=&quot;https://www.notion.so/help/add-and-manage-connections-with-the-api&quot; target=&quot;&quot; title=&quot;&quot;&gt;connection&lt;/a&gt;, enables developers to programmatically interact with Notion workspaces. These integrations facilitate linking Notion workspace data with other applications or the automation of workflows within Notion.&lt;/p&gt;
+&lt;p&gt;Integrations are installed in Notion workspaces and require &lt;strong&gt;explicit permission&lt;/strong&gt; from users to access Notion pages and databases.&lt;/p&gt;
+&lt;figure&gt;&lt;span aria-label=&quot;1800&quot; class=&quot;img lightbox closed&quot; role=&quot;button&quot; tabindex=&quot;0&quot;&gt;&lt;span class=&quot;lightbox-inner&quot;&gt;&lt;img alt=&quot;1800&quot; loading=&quot;lazy&quot; src=&quot;https://files.readme.io/0f06356-notion_overview.jpg&quot; title=&quot;notion_overview.jpg&quot; align=&quot;center&quot; class=&quot;&quot; caption=&quot;&quot; height=&quot;auto&quot; width=&quot;auto&quot;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;figcaption&gt;&lt;p&gt;Create Notion integrations that unlock new possibilities for teams. &lt;/p&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Notion users have access to a vast &lt;a href=&quot;https://www.notion.so/integrations/all&quot; target=&quot;&quot; title=&quot;&quot;&gt;library&lt;/a&gt; of existing integrations to enrich their experience further. For developers interested in creating custom solutions, Notion supports the development of both internal and public integrations. Both utilize the Notion API for workspace interactions. &lt;/p&gt;
+&lt;p&gt;Let&amp;#x27;s explore internal and public integrations.&lt;/p&gt;
+&lt;h2 class=&quot;heading heading-2 header-scroll&quot; align=&quot;&quot;&gt;&lt;div class=&quot;heading-anchor anchor waypoint&quot; id=&quot;internal-vs-public-integrations&quot;&gt;&lt;/div&gt;&lt;div class=&quot;heading-text&quot;&gt;&lt;div id=&quot;section-internal-vs-public-integrations&quot; class=&quot;heading-anchor_backwardsCompatibility&quot;&gt;&lt;/div&gt;Internal vs. Public Integrations&lt;/div&gt;&lt;a aria-label=&quot;Skip link to Internal vs. Public Integrations&quot; class=&quot;heading-anchor-icon fa fa-anchor&quot; href=&quot;#internal-vs-public-integrations&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Notion integrations come in two types: Internal and Public. Understanding the differences between them helps in choosing the right approach for your development needs.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Internal Integrations&lt;/strong&gt;&nbsp;are exclusive to a single workspace, accessible only to its members. They are ideal for custom workspace automations and workflows.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Public Integrations&lt;/strong&gt;&nbsp;are designed for a wider audience, usable across any Notion workspace. They cater to broad use cases and follow the OAuth 2.0 protocol for workspace access.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote class=&quot;callout callout_default&quot; theme=&quot;🔑&quot;&gt;&lt;h2 class=&quot;callout-heading empty&quot;&gt;&lt;span class=&quot;callout-icon&quot;&gt;🔑&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Public integrations must undergo a Notion security review before publishing.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 class=&quot;heading heading-3 header-scroll&quot; align=&quot;&quot;&gt;&lt;div class=&quot;heading-anchor anchor waypoint&quot; id=&quot;key-differences&quot;&gt;&lt;/div&gt;&lt;div class=&quot;heading-text&quot;&gt;&lt;div id=&quot;section-key-differences&quot; class=&quot;heading-anchor_backwardsCompatibility&quot;&gt;&lt;/div&gt;Key Differences&lt;/div&gt;&lt;a aria-label=&quot;Skip link to Key Differences&quot; class=&quot;heading-anchor-icon fa fa-anchor&quot; href=&quot;#key-differences&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&quot;rdmd-table&quot;&gt;&lt;div class=&quot;rdmd-table-inner&quot;&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align:left&quot;&gt;Feature&lt;/th&gt;&lt;th style=&quot;text-align:left&quot;&gt;Internal Integrations&lt;/th&gt;&lt;th style=&quot;text-align:left&quot;&gt;Public Integrations&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;Scope&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;Confined to a single, specific workspace.&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;Available across multiple, unrelated workspaces.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;User Access&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;Only accessible by members of the workspace where it&amp;#x27;s installed.&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;Accessible by any Notion user, regardless of their workspace.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;Creation&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;Created by Workspace Owners within the integration dashboard.&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;Created by Workspace Owners within the integration dashboard.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;Permissions&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;Workspace members explicitly grant access to their pages or databases via Notion’s UI.&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;Users authorize access to their pages during the OAuth flow, or by sharing pages directly with the integration.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;OAuth Protocol&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;Not applicable, as access is limited to a single workspace.&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;Uses the OAuth 2.0 protocol to securely access information across multiple workspaces.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;Dashboard Visibility&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;Visible to Workspace Owners in the integration dashboard, including integrations created by others.&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 class=&quot;heading heading-2 header-scroll&quot; align=&quot;&quot;&gt;&lt;div class=&quot;heading-anchor anchor waypoint&quot; id=&quot;what-you-can-build-integration-use-cases&quot;&gt;&lt;/div&gt;&lt;div class=&quot;heading-text&quot;&gt;&lt;div id=&quot;section-what-you-can-build-integration-use-cases&quot; class=&quot;heading-anchor_backwardsCompatibility&quot;&gt;&lt;/div&gt;What You Can Build: Integration Use Cases&lt;/div&gt;&lt;a aria-label=&quot;Skip link to What You Can Build: Integration Use Cases&quot; class=&quot;heading-anchor-icon fa fa-anchor&quot; href=&quot;#what-you-can-build-integration-use-cases&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Notion’s REST API opens up a world of possibilities for integrations, ranging from enhancing internal workflow to creating public-facing applications. Here’s a closer look at some of the innovative integrations developers have built with Notion:&lt;/p&gt;
+&lt;h3 class=&quot;heading heading-3 header-scroll&quot; align=&quot;&quot;&gt;&lt;div class=&quot;heading-anchor anchor waypoint&quot; id=&quot;data-integrations&quot;&gt;&lt;/div&gt;&lt;div class=&quot;heading-text&quot;&gt;&lt;div id=&quot;section-data-integrations&quot; class=&quot;heading-anchor_backwardsCompatibility&quot;&gt;&lt;/div&gt;Data Integrations&lt;/div&gt;&lt;a aria-label=&quot;Skip link to Data Integrations&quot; class=&quot;heading-anchor-icon fa fa-anchor&quot; href=&quot;#data-integrations&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Data integrations leverage the Notion API to automate data flow between Notion and other systems. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Automated Notifications:&lt;/strong&gt; Develop integrations that monitor Notion databases for changes. Upon detecting a change, these integrations can automatically send notifications various communication channels.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Github Synchronization&lt;/strong&gt;: Create integrations that keep Notion issues in sync with GitHub issues.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;External Data Import:&lt;/strong&gt; Build integrations that import data from external sources directly into Notion databases. This can include importing customer data, project updates, or any other relevant information.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote class=&quot;callout callout_default&quot; theme=&quot;🔗&quot;&gt;&lt;h2 class=&quot;callout-heading&quot;&gt;&lt;span class=&quot;callout-icon&quot;&gt;🔗&lt;/span&gt;&lt;p&gt;Examples:&lt;/p&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/docs/create-a-notion-integration&quot; target=&quot;&quot; title=&quot;&quot;&gt;Create an integration&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/docs/working-with-comments&quot; target=&quot;&quot; title=&quot;&quot;&gt;Working with comments&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/docs/working-with-databases&quot; target=&quot;&quot; title=&quot;&quot;&gt;Working with databases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/docs/working-with-files-and-media&quot; target=&quot;&quot; title=&quot;&quot;&gt;Working with files and media&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/docs/working-with-page-content&quot; target=&quot;&quot; title=&quot;&quot;&gt;Working with page content&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;h3 class=&quot;heading heading-3 header-scroll&quot; align=&quot;&quot;&gt;&lt;div class=&quot;heading-anchor anchor waypoint&quot; id=&quot;link-preview-integrations&quot;&gt;&lt;/div&gt;&lt;div class=&quot;heading-text&quot;&gt;&lt;div id=&quot;section-link-preview-integrations&quot; class=&quot;heading-anchor_backwardsCompatibility&quot;&gt;&lt;/div&gt;Link Preview Integrations&lt;/div&gt;&lt;a aria-label=&quot;Skip link to Link Preview Integrations&quot; class=&quot;heading-anchor-icon fa fa-anchor&quot; href=&quot;#link-preview-integrations&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Enhance the sharing experience within Notion with Link preview integrations, offering a glimpse into the content of shared links:&lt;/p&gt;
+&lt;figure&gt;&lt;span aria-label=&quot;Link preview of a GitHub PR&quot; class=&quot;img lightbox closed&quot; role=&quot;button&quot; tabindex=&quot;0&quot;&gt;&lt;span class=&quot;lightbox-inner&quot;&gt;&lt;img alt=&quot;Link preview of a GitHub PR&quot; loading=&quot;lazy&quot; src=&quot;https://files.readme.io/ce5daa3-Screen_Shot_2023-06-27_at_3.48.22_PM.png&quot; align=&quot;center&quot; class=&quot;&quot; caption=&quot;&quot; height=&quot;auto&quot; title=&quot;&quot; width=&quot;auto&quot;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;figcaption&gt;&lt;p&gt;Link Preview of a GitHub PR.&lt;/p&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Create integrations that allow for the customization of how shared links are presented in Notion, providing context and enhancing engagement.&lt;/p&gt;
+&lt;blockquote class=&quot;callout callout_default&quot; theme=&quot;🔑&quot;&gt;&lt;h2 class=&quot;callout-heading empty&quot;&gt;&lt;span class=&quot;callout-icon&quot;&gt;🔑&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Link Preview Integrations differ from public integrations. Review the &lt;a href=&quot;https://developers.notion.com/docs/build-a-link-preview-integration&quot; target=&quot;&quot; title=&quot;&quot;&gt;Link Preview guide&lt;/a&gt;.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&quot;callout callout_error&quot; theme=&quot;🛑&quot;&gt;&lt;h2 class=&quot;callout-heading empty&quot;&gt;&lt;span class=&quot;callout-icon&quot;&gt;🛑&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;To build a Link Preview integration, developers must first apply for access to the feature through the &lt;a href=&quot;https://notionup.typeform.com/to/BXheLK4Z?typeform-source=developers.notion.com&quot; target=&quot;&quot; title=&quot;&quot;&gt;Notion Link Preview API request form&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Link Preview integrations published for distribution require a review from Notion&amp;#x27;s platform and security teams.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&quot;callout callout_default&quot; theme=&quot;🔗&quot;&gt;&lt;h2 class=&quot;callout-heading&quot;&gt;&lt;span class=&quot;callout-icon&quot;&gt;🔗&lt;/span&gt;&lt;p&gt;Quick Links&lt;/p&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/docs/link-previews&quot; target=&quot;&quot; title=&quot;&quot;&gt;Introduction to Link Preview integrations&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/docs/build-a-link-preview-integration&quot; target=&quot;&quot; title=&quot;&quot;&gt;Build a Link Preview integration&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/reference/unfurl-attribute-object&quot; target=&quot;&quot; title=&quot;&quot;&gt;API reference docs for the Link Preview unfurl attribute object&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.notion.so/help/guides/notion-api-link-previews-feature&quot; target=&quot;&quot; title=&quot;&quot;&gt;Help Centre&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;h3 class=&quot;heading heading-3 header-scroll&quot; align=&quot;&quot;&gt;&lt;div class=&quot;heading-anchor anchor waypoint&quot; id=&quot;identity-management-integrations-enterprise-plans-only&quot;&gt;&lt;/div&gt;&lt;div class=&quot;heading-text&quot;&gt;&lt;div id=&quot;section-identity-management-integrations-enterprise-plans-only&quot; class=&quot;heading-anchor_backwardsCompatibility&quot;&gt;&lt;/div&gt;Identity Management Integrations (Enterprise Plans ONLY)&lt;/div&gt;&lt;a aria-label=&quot;Skip link to Identity Management Integrations (Enterprise Plans ONLY)&quot; class=&quot;heading-anchor-icon fa fa-anchor&quot; href=&quot;#identity-management-integrations-enterprise-plans-only&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;For enterprise-level workspaces, Notion offers advanced identity management capabilities: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SCIM API for User and Group Management&lt;/strong&gt;: Utilize the SCIM API to automate the provisioning and management of users and groups within enterprise workspaces, streamlining administrative tasks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SAML SSO for Enhanced Security&lt;/strong&gt;: Implement Single Sign-On (SSO) using SAML for a secure and convenient authentication process, simplifying access for users across the enterprise.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote class=&quot;callout callout_default&quot; theme=&quot;🔗&quot;&gt;&lt;h2 class=&quot;callout-heading&quot;&gt;&lt;span class=&quot;callout-icon&quot;&gt;🔗&lt;/span&gt;&lt;p&gt;Quick Links&lt;/p&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.notion.so/help/provision-users-and-groups-with-scim&quot; target=&quot;&quot; title=&quot;&quot;&gt;Provision users and groups with SCIM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.notion.so/help/saml-sso-configuration&quot; target=&quot;&quot; title=&quot;&quot;&gt;SAML SSO configuration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;h2 class=&quot;heading heading-2 header-scroll&quot; align=&quot;&quot;&gt;&lt;div class=&quot;heading-anchor anchor waypoint&quot; id=&quot;starting-your-integration-journey&quot;&gt;&lt;/div&gt;&lt;div class=&quot;heading-text&quot;&gt;&lt;div id=&quot;section-starting-your-integration-journey&quot; class=&quot;heading-anchor_backwardsCompatibility&quot;&gt;&lt;/div&gt;Starting Your Integration Journey&lt;/div&gt;&lt;a aria-label=&quot;Skip link to Starting Your Integration Journey&quot; class=&quot;heading-anchor-icon fa fa-anchor&quot; href=&quot;#starting-your-integration-journey&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Embarking on building an integration with Notion? Begin with our foundational &lt;a href=&quot;https://developers.notion.com/docs/create-a-notion-integration&quot; target=&quot;&quot; title=&quot;&quot;&gt;&lt;em&gt;Build your first integration guide&lt;/em&gt;&lt;/a&gt;. As you become more familiar with the basics, expand your knowledge and skills with in-depth guides on &lt;a href=&quot;https://developers.notion.com/docs/authorization&quot; target=&quot;&quot; title=&quot;&quot;&gt;Authorization&lt;/a&gt;, &lt;a href=&quot;https://developers.notion.com/docs/working-with-page-content&quot; target=&quot;&quot; title=&quot;&quot;&gt;Page content&lt;/a&gt;, and &lt;a href=&quot;https://developers.notion.com/docs/working-with-databases&quot; target=&quot;&quot; title=&quot;&quot;&gt;Databases&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 class=&quot;heading heading-2 header-scroll&quot; align=&quot;&quot;&gt;&lt;div class=&quot;heading-anchor anchor waypoint&quot; id=&quot;key-resources&quot;&gt;&lt;/div&gt;&lt;div class=&quot;heading-text&quot;&gt;&lt;div id=&quot;section-key-resources&quot; class=&quot;heading-anchor_backwardsCompatibility&quot;&gt;&lt;/div&gt;Key resources&lt;/div&gt;&lt;a aria-label=&quot;Skip link to Key resources&quot; class=&quot;heading-anchor-icon fa fa-anchor&quot; href=&quot;#key-resources&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/makenotion/notion-sdk-js&quot; target=&quot;&quot; title=&quot;&quot;&gt;Notion SDK for JavaScript&lt;/a&gt;: Leverage our SDK designed for JavaScript environments to simplify interactions with the REST API, making development more efficient.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.notion.so/technology-partner-program&quot; target=&quot;&quot; title=&quot;&quot;&gt;Technology Partner Program&lt;/a&gt;: Have you developed a public integrations? Join our Technology Partner Program for access to dedicated support, exclusive distribution channels, and marketing opportunities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Explore these resources and join the &lt;a href=&quot;https://join.slack.com/t/notiondevs/shared_invite/zt-20b5996xv-DzJdLiympy6jP0GGzu3AMg&quot; target=&quot;&quot; title=&quot;&quot;&gt;Notion Devs Slack community&lt;/a&gt; to share your projects, gain insights from fellow developers, and discover new ways to enhance Notion with integrations.&lt;/p&gt;
+&lt;blockquote class=&quot;callout callout_default&quot; theme=&quot;🔗&quot;&gt;&lt;h2 class=&quot;callout-heading&quot;&gt;&lt;span class=&quot;callout-icon&quot;&gt;🔗&lt;/span&gt;&lt;p&gt;Quick Links&lt;/p&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/reference/intro&quot; target=&quot;&quot; title=&quot;&quot;&gt;API reference documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/makenotion/notion-sdk-js&quot; target=&quot;&quot; title=&quot;&quot;&gt;Notion SDK for JavaScript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.postman.com/notionhq/&quot; target=&quot;&quot; title=&quot;&quot;&gt;Postman collection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/makenotion/notion-sdk-typescript-starter&quot; target=&quot;&quot; title=&quot;&quot;&gt;TypeScript starter template&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.notion.com/page/frequently-asked-questions&quot; target=&quot;&quot; title=&quot;&quot;&gt;FAQs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://join.slack.com/t/notiondevs/shared_invite/zt-20b5996xv-DzJdLiympy6jP0GGzu3AMg&quot; target=&quot;&quot; title=&quot;&quot;&gt;Notion Devs Slack community&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;" style="margin-left:31px" class="rm-Markdown markdown-body rm-Markdown markdown-body ng-non-bindable" data-testid="RDMD"><h2 class="heading heading-2 header-scroll" align=""><div class="heading-anchor anchor waypoint" id="using-notions-api-for-integrations"></div><div class="heading-text"><div id="section-using-notions-api-for-integrations" class="heading-anchor_backwardsCompatibility"></div>Using Notion's API for Integrations</div><a aria-label="Skip link to Using Notion's API for Integrations" class="heading-anchor-icon fa fa-anchor" href="#using-notions-api-for-integrations"></a></h2>
+<p>A Notion workspace is a collaborative environment where teams can organize work, manage projects, and store information in a highly customizable way. Notion's REST API facilitates direct interactions with workspace elements through programming. Key functionalities include:</p>
+<ul>
+<li><a target="_self" href="/docs/working-with-page-content">Pages</a>: Create, update, and retrieve page content. </li>
+<li><a target="_self" href="/docs/working-with-databases">Databases</a> and <a target="_self" href="/reference/data-sources">Data Sources</a>: Manage databases, data source properties, entries, and schemas. </li>
+<li><a target="_self" href="/reference/user">Users</a>: Access user profiles and permissions.</li>
+<li><a target="_self" href="/docs/working-with-comments">Comments</a>: Handle page and inline comments.</li>
+<li><a target="_self" href="/reference/post-search">Content Queries</a>: Search through workspace content. </li>
+<li><a target="_self" href="/docs/authorization">Authentication</a>: Secure integrations with OAuth 2.0.</li>
+<li><a target="_self" href="/docs/link-previews">Link Previews</a>: Customize how links appear when shared.</li>
+</ul>
+<p>To make interactions within Notion workspaces programmatically, you must associate these actions with a Notion user. Notion facilitates this by allowing API requests to be linked to a "bot" user. </p>
+<p>Developers create integrations to define a bot's capabilities, including authenticating API requests, deciding when to make requests, and setting the bot's read/write permissions. Essentially, using Notion's Public API involves creating an integration that outlines how a bot interacts with your workspace and assigns REST API requests to the bot.</p>
+<p>There are two primary integration types:</p>
+<ul>
+<li><a target="_self" href="/docs/getting-started#internal-integrations">Internal</a>: For private workspace workflows and automations.</li>
+<li><a target="_self" href="/docs/getting-started#public-integrations">Public</a>: For broader, shareable functionalities, including <a target="_self" href="/docs/link-previews">Link Previews</a>.</li>
+</ul>
+<p>For further details on integration possibilities and API specifics, proceed with the guide or consult the <a target="_self" href="/reference/intro">API reference</a>. Check out our <a target="_self" href="/page/examples">demos</a> for practical examples.</p>
+<h2 class="heading heading-2 header-scroll" align=""><div class="heading-anchor anchor waypoint" id="what-is-a-notion-integration"></div><div class="heading-text"><div id="section-what-is-a-notion-integration" class="heading-anchor_backwardsCompatibility"></div>What is a Notion Integration?</div><a aria-label="Skip link to What is a Notion Integration?" class="heading-anchor-icon fa fa-anchor" href="#what-is-a-notion-integration"></a></h2>
+<p>A Notion integration, sometimes referred as a <a target="_self" href="https://www.notion.so/help/add-and-manage-connections-with-the-api">connection</a>, enables developers to programmatically interact with Notion workspaces. These integrations facilitate linking Notion workspace data with other applications or the automation of workflows within Notion.</p>
+<p>Integrations are installed in Notion workspaces and require <strong>explicit permission</strong> from users to access Notion pages and databases.</p>
+<figure><span aria-label="1800" class="img lightbox closed" role="button" tabindex="0"><span class="lightbox-inner"><img alt="1800" loading="lazy" src="https://files.readme.io/0f06356-notion_overview.jpg" title="notion_overview.jpg" align="center" class="" caption="" height="auto" width="auto"></span></span><figcaption><p>Create Notion integrations that unlock new possibilities for teams. </p></figcaption></figure>
+<p>Notion users have access to a vast <a target="_self" href="https://www.notion.so/integrations/all">library</a> of existing integrations to enrich their experience further. For developers interested in creating custom solutions, Notion supports the development of both internal and public integrations. Both utilize the Notion API for workspace interactions. </p>
+<p>Let's explore internal and public integrations.</p>
+<h2 class="heading heading-2 header-scroll" align=""><div class="heading-anchor anchor waypoint" id="internal-vs-public-integrations"></div><div class="heading-text"><div id="section-internal-vs-public-integrations" class="heading-anchor_backwardsCompatibility"></div>Internal vs. Public Integrations</div><a aria-label="Skip link to Internal vs. Public Integrations" class="heading-anchor-icon fa fa-anchor" href="#internal-vs-public-integrations"></a></h2>
+<p>Notion integrations come in two types: Internal and Public. Understanding the differences between them helps in choosing the right approach for your development needs.</p>
+<ul>
+<li><strong>Internal Integrations</strong>&nbsp;are exclusive to a single workspace, accessible only to its members. They are ideal for custom workspace automations and workflows.</li>
+<li><strong>Public Integrations</strong>&nbsp;are designed for a wider audience, usable across any Notion workspace. They cater to broad use cases and follow the OAuth 2.0 protocol for workspace access.</li>
+</ul>
+<blockquote class="callout callout_default" theme="🔑"><h2 class="callout-heading empty"><span class="callout-icon">🔑</span></h2><p>Public integrations must undergo a Notion security review before publishing.</p></blockquote>
+<h3 class="heading heading-3 header-scroll" align=""><div class="heading-anchor anchor waypoint" id="key-differences"></div><div class="heading-text"><div id="section-key-differences" class="heading-anchor_backwardsCompatibility"></div>Key Differences</div><a aria-label="Skip link to Key Differences" class="heading-anchor-icon fa fa-anchor" href="#key-differences"></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rdmd-table"><div class="rdmd-table-inner"><table><thead><tr><th style="text-align:left">Feature</th><th style="text-align:left">Internal Integrations</th><th style="text-align:left">Public Integrations</th></tr></thead><tbody><tr><td style="text-align:left">Scope</td><td style="text-align:left">Confined to a single, specific workspace.</td><td style="text-align:left">Available across multiple, unrelated workspaces.</td></tr><tr><td style="text-align:left">User Access</td><td style="text-align:left">Only accessible by members of the workspace where it's installed.</td><td style="text-align:left">Accessible by any Notion user, regardless of their workspace.</td></tr><tr><td style="text-align:left">Creation</td><td style="text-align:left">Created by Workspace Owners within the integration dashboard.</td><td style="text-align:left">Created by Workspace Owners within the integration dashboard.</td></tr><tr><td style="text-align:left">Permissions</td><td style="text-align:left">Workspace members explicitly grant access to their pages or databases via Notion’s UI.</td><td style="text-align:left">Users authorize access to their pages during the OAuth flow, or by sharing pages directly with the integration.</td></tr><tr><td style="text-align:left">OAuth Protocol</td><td style="text-align:left">Not applicable, as access is limited to a single workspace.</td><td style="text-align:left">Uses the OAuth 2.0 protocol to securely access information across multiple workspaces.</td></tr><tr><td style="text-align:left">Dashboard Visibility</td><td style="text-align:left">Visible to Workspace Owners in the integration dashboard, including integrations created by others.</td><td style="text-align:left">-</td></tr></tbody></table></div></div>
+<h2 class="heading heading-2 header-scroll" align=""><div class="heading-anchor anchor waypoint" id="what-you-can-build-integration-use-cases"></div><div class="heading-text"><div id="section-what-you-can-build-integration-use-cases" class="heading-anchor_backwardsCompatibility"></div>What You Can Build: Integration Use Cases</div><a aria-label="Skip link to What You Can Build: Integration Use Cases" class="heading-anchor-icon fa fa-anchor" href="#what-you-can-build-integration-use-cases"></a></h2>
+<p>Notion’s REST API opens up a world of possibilities for integrations, ranging from enhancing internal workflow to creating public-facing applications. Here’s a closer look at some of the innovative integrations developers have built with Notion:</p>
+<h3 class="heading heading-3 header-scroll" align=""><div class="heading-anchor anchor waypoint" id="data-integrations"></div><div class="heading-text"><div id="section-data-integrations" class="heading-anchor_backwardsCompatibility"></div>Data Integrations</div><a aria-label="Skip link to Data Integrations" class="heading-anchor-icon fa fa-anchor" href="#data-integrations"></a></h3>
+<p>Data integrations leverage the Notion API to automate data flow between Notion and other systems. </p>
+<ul>
+<li><strong>Automated Notifications:</strong> Develop integrations that monitor Notion databases for changes. Upon detecting a change, these integrations can automatically send notifications various communication channels.</li>
+<li><strong>Github Synchronization</strong>: Create integrations that keep Notion issues in sync with GitHub issues.</li>
+<li><strong>External Data Import:</strong> Build integrations that import data from external sources directly into Notion databases. This can include importing customer data, project updates, or any other relevant information.</li>
+</ul>
+<blockquote class="callout callout_default" theme="🔗"><h2 class="callout-heading"><span class="callout-icon">🔗</span><p>Examples:</p></h2><ul>
+<li><a target="_self" href="/docs/create-a-notion-integration">Create an integration</a> </li>
+<li><a target="_self" href="/docs/working-with-comments">Working with comments</a></li>
+<li><a target="_self" href="/docs/working-with-databases">Working with databases</a></li>
+<li><a target="_self" href="/docs/working-with-files-and-media">Working with files and media</a></li>
+<li><a target="_self" href="/docs/working-with-page-content">Working with page content</a></li>
+</ul></blockquote>
+<h3 class="heading heading-3 header-scroll" align=""><div class="heading-anchor anchor waypoint" id="link-preview-integrations"></div><div class="heading-text"><div id="section-link-preview-integrations" class="heading-anchor_backwardsCompatibility"></div>Link Preview Integrations</div><a aria-label="Skip link to Link Preview Integrations" class="heading-anchor-icon fa fa-anchor" href="#link-preview-integrations"></a></h3>
+<p>Enhance the sharing experience within Notion with Link preview integrations, offering a glimpse into the content of shared links:</p>
+<figure><span aria-label="Link preview of a GitHub PR" class="img lightbox closed" role="button" tabindex="0"><span class="lightbox-inner"><img alt="Link preview of a GitHub PR" loading="lazy" src="https://files.readme.io/ce5daa3-Screen_Shot_2023-06-27_at_3.48.22_PM.png" align="center" class="" caption="" height="auto" title="" width="auto"></span></span><figcaption><p>Link Preview of a GitHub PR.</p></figcaption></figure>
+<p>Create integrations that allow for the customization of how shared links are presented in Notion, providing context and enhancing engagement.</p>
+<blockquote class="callout callout_default" theme="🔑"><h2 class="callout-heading empty"><span class="callout-icon">🔑</span></h2><p>Link Preview Integrations differ from public integrations. Review the <a target="_self" href="/docs/build-a-link-preview-integration">Link Preview guide</a>.</p></blockquote>
+<blockquote class="callout callout_error" theme="🛑"><h2 class="callout-heading empty"><span class="callout-icon">🛑</span></h2><p>To build a Link Preview integration, developers must first apply for access to the feature through the <a target="_self" href="https://notionup.typeform.com/to/BXheLK4Z?typeform-source=developers.notion.com">Notion Link Preview API request form</a>.</p><p>Link Preview integrations published for distribution require a review from Notion's platform and security teams.</p></blockquote>
+<blockquote class="callout callout_default" theme="🔗"><h2 class="callout-heading"><span class="callout-icon">🔗</span><p>Quick Links</p></h2><ul>
+<li><a target="_self" href="/docs/link-previews">Introduction to Link Preview integrations</a> </li>
+<li><a target="_self" href="/docs/build-a-link-preview-integration">Build a Link Preview integration</a> </li>
+<li><a target="_self" href="/reference/unfurl-attribute-object">API reference docs for the Link Preview unfurl attribute object</a> </li>
+<li><a target="_self" href="https://www.notion.so/help/guides/notion-api-link-previews-feature">Help Centre</a></li>
+</ul></blockquote>
+<h3 class="heading heading-3 header-scroll" align=""><div class="heading-anchor anchor waypoint" id="identity-management-integrations-enterprise-plans-only"></div><div class="heading-text"><div id="section-identity-management-integrations-enterprise-plans-only" class="heading-anchor_backwardsCompatibility"></div>Identity Management Integrations (Enterprise Plans ONLY)</div><a aria-label="Skip link to Identity Management Integrations (Enterprise Plans ONLY)" class="heading-anchor-icon fa fa-anchor" href="#identity-management-integrations-enterprise-plans-only"></a></h3>
+<p>For enterprise-level workspaces, Notion offers advanced identity management capabilities: </p>
+<ul>
+<li><strong>SCIM API for User and Group Management</strong>: Utilize the SCIM API to automate the provisioning and management of users and groups within enterprise workspaces, streamlining administrative tasks.</li>
+<li><strong>SAML SSO for Enhanced Security</strong>: Implement Single Sign-On (SSO) using SAML for a secure and convenient authentication process, simplifying access for users across the enterprise.</li>
+</ul>
+<blockquote class="callout callout_default" theme="🔗"><h2 class="callout-heading"><span class="callout-icon">🔗</span><p>Quick Links</p></h2><ul>
+<li><a target="_self" href="https://www.notion.so/help/provision-users-and-groups-with-scim">Provision users and groups with SCIM</a></li>
+<li><a target="_self" href="https://www.notion.so/help/saml-sso-configuration">SAML SSO configuration</a></li>
+</ul></blockquote>
+<h2 class="heading heading-2 header-scroll" align=""><div class="heading-anchor anchor waypoint" id="starting-your-integration-journey"></div><div class="heading-text"><div id="section-starting-your-integration-journey" class="heading-anchor_backwardsCompatibility"></div>Starting Your Integration Journey</div><a aria-label="Skip link to Starting Your Integration Journey" class="heading-anchor-icon fa fa-anchor" href="#starting-your-integration-journey"></a></h2>
+<p>Embarking on building an integration with Notion? Begin with our foundational <a target="_self" href="/docs/create-a-notion-integration"><em>Build your first integration guide</em></a>. As you become more familiar with the basics, expand your knowledge and skills with in-depth guides on <a target="_self" href="/docs/authorization">Authorization</a>, <a target="_self" href="/docs/working-with-page-content">Page content</a>, and <a target="_self" href="/docs/working-with-databases">Databases</a>.</p>
+<h2 class="heading heading-2 header-scroll" align=""><div class="heading-anchor anchor waypoint" id="key-resources"></div><div class="heading-text"><div id="section-key-resources" class="heading-anchor_backwardsCompatibility"></div>Key resources</div><a aria-label="Skip link to Key resources" class="heading-anchor-icon fa fa-anchor" href="#key-resources"></a></h2>
+<ul>
+<li><a target="_self" href="https://github.com/makenotion/notion-sdk-js">Notion SDK for JavaScript</a>: Leverage our SDK designed for JavaScript environments to simplify interactions with the REST API, making development more efficient.</li>
+<li><a target="_self" href="https://www.notion.so/technology-partner-program">Technology Partner Program</a>: Have you developed a public integrations? Join our Technology Partner Program for access to dedicated support, exclusive distribution channels, and marketing opportunities.</li>
+</ul>
+<p>Explore these resources and join the <a target="_self" href="https://join.slack.com/t/notiondevs/shared_invite/zt-20b5996xv-DzJdLiympy6jP0GGzu3AMg">Notion Devs Slack community</a> to share your projects, gain insights from fellow developers, and discover new ways to enhance Notion with integrations.</p>
+<blockquote class="callout callout_default" theme="🔗"><h2 class="callout-heading"><span class="callout-icon">🔗</span><p>Quick Links</p></h2><ul>
+<li><a target="_self" href="/reference/intro">API reference documentation</a></li>
+<li><a target="_self" href="https://github.com/makenotion/notion-sdk-js">Notion SDK for JavaScript</a></li>
+<li><a target="_self" href="https://www.postman.com/notionhq/">Postman collection</a></li>
+<li><a target="_self" href="https://github.com/makenotion/notion-sdk-typescript-starter">TypeScript starter template</a></li>
+<li><a target="_self" href="/page/frequently-asked-questions">FAQs</a></li>
+<li><a target="_self" href="https://join.slack.com/t/notiondevs/shared_invite/zt-20b5996xv-DzJdLiympy6jP0GGzu3AMg">Notion Devs Slack community</a></li>
+</ul></blockquote></div><div class="UpdatedAt"><p class="DateLine "><i class="icon icon-watch"></i>Updated<!-- --> <!-- -->24 days ago<!-- --> </p></div><hr class="NextStepsDivider"><nav aria-label="Pagination Controls" class="PaginationControlsjDYuqu8pBMUy rm-Pagination"><a class="PaginationControls-link254uPEbaP92i PaginationControls-link_right5lsfuICZqXYk" aria-label="Next Page: Build your first integration" href="/docs/create-a-notion-integration"><div class="PaginationControls-text3qEXHZU00znD PaginationControls-text_right3EIfWubgRVVP">Build your first integration</div><span class="PaginationControls-iconZbaZ3tgyhNmI icon-arrow-right2"></span></a></nav><div class="rm-PageThumbs PageThumbs"><div class="PageThumbs-helpful">Did this page help you?<div class="PageThumbs-cta"><div class="Dropdown Dropdown_closed" data-testid="dropdown-container"><button aria-haspopup="dialog" class="Button Button_sm PageThumbs-button Dropdown-toggle Button_secondary Button_secondary_text" type="button" aria-expanded="false"><i class="icon icon-thumbs-up-2"></i><span>Yes</span></button></div><div class="Dropdown Dropdown_closed" data-testid="dropdown-container"><button aria-haspopup="dialog" class="Button Button_sm PageThumbs-button Dropdown-toggle Button_secondary Button_secondary_text" type="button" aria-expanded="false"><i class="icon icon-thumbs-down1"></i><span>No</span></button></div></div></div></div></section>

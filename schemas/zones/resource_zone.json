@@ -1,0 +1,422 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Resource Zone Content Schema",
+  "description": "Content zone for additional resources, downloads, documentation, support, and supplementary materials",
+  "type": "object",
+  "properties": {
+    "zone_id": {
+      "type": "string",
+      "description": "Unique identifier for the zone"
+    },
+    "zone_type": {
+      "type": "string",
+      "const": "resource_zone",
+      "description": "Type of zone - must be resource_zone"
+    },
+    "zone_name": {
+      "type": "string",
+      "description": "Human-readable name for the zone"
+    },
+    "zone_purpose": {
+      "type": "string",
+      "description": "Primary purpose and goal of this zone"
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Order position of zone on the page"
+    },
+    "is_above_fold": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether zone appears above the fold"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["medium", "low"],
+      "default": "low",
+      "description": "Content importance priority - resource zones are typically lower priority"
+    },
+    "content_strategy": {
+      "type": "string",
+      "enum": ["supportive", "educational", "supplementary"],
+      "default": "supportive",
+      "description": "Content strategy for resource zones"
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/resource_section"
+      },
+      "description": "Content sections within the resource zone"
+    }
+  },
+  "required": ["zone_id", "zone_type", "zone_name", "position", "sections"],
+  "definitions": {
+    "resource_section": {
+      "type": "object",
+      "properties": {
+        "section_id": {
+          "type": "string",
+          "description": "Unique identifier for the section"
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "downloads_section", "documentation_section", "support_section", "contact_section",
+            "legal_section", "blog_section", "newsletter_section", "footer_links_section",
+            "help_center_section", "resource_library_section"
+          ],
+          "description": "Type of section - resource focused types"
+        },
+        "section_name": {
+          "type": "string",
+          "description": "Human-readable name for the section"
+        },
+        "section_purpose": {
+          "type": "string",
+          "description": "Primary purpose of this section"
+        },
+        "content_structure": {
+          "type": "string",
+          "enum": [
+            "link_list", "card_grid", "download_list", "contact_form", "footer_columns", "accordion"
+          ],
+          "description": "Organizational structure - resource organization layouts"
+        },
+        "content_flow": {
+          "type": "string",
+          "enum": ["linear", "grid", "categorized"],
+          "default": "categorized",
+          "description": "How content flows within the section"
+        },
+        "blocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/resource_block"
+          },
+          "description": "Individual content blocks within the section"
+        }
+      },
+      "required": ["section_id", "section_type", "section_name", "blocks"]
+    },
+    "resource_block": {
+      "type": "object",
+      "properties": {
+        "block_id": {
+          "type": "string",
+          "description": "Unique identifier for the block"
+        },
+        "block_category": {
+          "type": "string",
+          "enum": [
+            "download_content", "link_content", "contact_content", "legal_content", "support_content"
+          ],
+          "description": "High-level category of the content block"
+        },
+        "block_type": {
+          "type": "string",
+          "enum": [
+            "download_link", "documentation_link", "support_article", "contact_info",
+            "legal_document", "blog_post", "newsletter_signup", "help_article",
+            "knowledge_base_link", "template_download", "whitepaper", "case_study_download",
+            "video_resource", "webinar_recording", "toolkit_download"
+          ],
+          "description": "Specific type of content block suitable for resource zones"
+        },
+        "content": {
+          "$ref": "#/definitions/block_content_data",
+          "description": "The actual content data of the block"
+        },
+        "functionality": {
+          "$ref": "#/definitions/block_functionality",
+          "description": "Interactive functionality and behavior"
+        },
+        "metadata": {
+          "$ref": "#/definitions/content_metadata",
+          "description": "Additional metadata for the content block"
+        }
+      },
+      "required": ["block_id", "block_category", "block_type", "content"]
+    },
+    "block_content_data": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Title of the resource or link"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the resource content"
+        },
+        "resource_details": {
+          "type": "object",
+          "properties": {
+            "resource_type": {
+              "type": "string",
+              "enum": ["pdf", "video", "webinar", "template", "whitepaper", "case_study", "guide", "toolkit", "software"]
+            },
+            "file_url": { "type": "string", "format": "uri" },
+            "file_size": { "type": "string" },
+            "file_format": { "type": "string" },
+            "preview_url": { "type": "string", "format": "uri" },
+            "thumbnail_url": { "type": "string", "format": "uri" },
+            "duration": { "type": "string" },
+            "page_count": { "type": "integer" },
+            "language": { "type": "string" },
+            "download_count": { "type": "integer" },
+            "popularity_score": { "type": "integer" }
+          },
+          "description": "Detailed resource information"
+        },
+        "content_summary": {
+          "type": "string",
+          "description": "Brief summary of the resource content"
+        },
+        "key_takeaways": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Key points or benefits from the resource"
+        },
+        "target_audience": {
+          "type": "string",
+          "enum": ["beginners", "intermediate", "advanced", "executives", "developers", "marketers", "all"],
+          "description": "Target audience for the resource"
+        },
+        "link_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for external links or resources"
+        },
+        "link_target": {
+          "type": "string",
+          "enum": ["_self", "_blank"],
+          "default": "_blank",
+          "description": "Link target behavior"
+        },
+        "contact_information": {
+          "type": "object",
+          "properties": {
+            "department": { "type": "string" },
+            "email": { "type": "string", "format": "email" },
+            "phone": { "type": "string" },
+            "address": { "type": "string" },
+            "hours": { "type": "string" },
+            "contact_form_url": { "type": "string", "format": "uri" }
+          },
+          "description": "Contact information details"
+        },
+        "support_info": {
+          "type": "object",
+          "properties": {
+            "support_type": {
+              "type": "string",
+              "enum": ["documentation", "knowledge_base", "community", "ticket_system", "live_chat", "phone"]
+            },
+            "availability": { "type": "string" },
+            "response_time": { "type": "string" },
+            "access_url": { "type": "string", "format": "uri" }
+          },
+          "description": "Support channel information"
+        },
+        "legal_document": {
+          "type": "object",
+          "properties": {
+            "document_type": {
+              "type": "string",
+              "enum": ["privacy_policy", "terms_of_service", "cookie_policy", "security_policy", "sla", "dpa"]
+            },
+            "last_updated": { "type": "string", "format": "date" },
+            "document_url": { "type": "string", "format": "uri" },
+            "version": { "type": "string" },
+            "effective_date": { "type": "string", "format": "date" }
+          },
+          "description": "Legal document information"
+        },
+        "blog_content": {
+          "type": "object",
+          "properties": {
+            "author": { "type": "string" },
+            "publish_date": { "type": "string", "format": "date" },
+            "read_time": { "type": "string" },
+            "category": { "type": "string" },
+            "tags": { "type": "array", "items": { "type": "string" } },
+            "excerpt": { "type": "string" },
+            "featured_image": { "type": "string", "format": "uri" }
+          },
+          "description": "Blog post or article information"
+        },
+        "download_requirements": {
+          "type": "object",
+          "properties": {
+            "registration_required": { "type": "boolean" },
+            "email_required": { "type": "boolean" },
+            "company_info_required": { "type": "boolean" },
+            "terms_acceptance": { "type": "boolean" }
+          },
+          "description": "Requirements for downloading resources"
+        },
+        "access_level": {
+          "type": "string",
+          "enum": ["public", "registered_users", "customers_only", "premium"],
+          "description": "Access level required for the resource"
+        },
+        "media_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for resource thumbnails or preview images"
+        },
+        "alt_text": {
+          "type": "string",
+          "description": "Alternative text for accessibility"
+        },
+        "icon": {
+          "type": "string",
+          "description": "Icon identifier for the resource type"
+        }
+      }
+    },
+    "block_functionality": {
+      "type": "object",
+      "properties": {
+        "interactive": {
+          "type": "boolean",
+          "description": "Whether the block is interactive"
+        },
+        "interaction_type": {
+          "type": "string",
+          "enum": [
+            "download", "click", "form_submit", "email", "phone", "external_link", "modal"
+          ],
+          "description": "Type of interaction supported"
+        },
+        "requires_registration": {
+          "type": "boolean",
+          "description": "Whether resource requires user registration"
+        },
+        "downloadable": {
+          "type": "boolean",
+          "description": "Whether resource can be downloaded"
+        },
+        "searchable": {
+          "type": "boolean",
+          "description": "Whether resource appears in search results"
+        },
+        "action_target": {
+          "type": "string",
+          "description": "Target for resource actions (download URL, contact form, etc.)"
+        },
+        "tracking": {
+          "type": "object",
+          "properties": {
+            "analytics_event": {
+              "type": "string",
+              "description": "Analytics event name"
+            },
+            "resource_engagement": {
+              "type": "boolean",
+              "description": "Whether this tracks resource engagement"
+            },
+            "download_tracking": {
+              "type": "boolean",
+              "description": "Whether to track downloads"
+            },
+            "lead_generation": {
+              "type": "boolean",
+              "description": "Whether this generates leads"
+            }
+          }
+        }
+      }
+    },
+    "content_metadata": {
+      "type": "object",
+      "properties": {
+        "created_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Content creation timestamp"
+        },
+        "updated_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp"
+        },
+        "version": {
+          "type": "string",
+          "description": "Content version"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "review", "approved", "published", "archived"],
+          "description": "Content status"
+        },
+        "resource_category": {
+          "type": "string",
+          "enum": ["getting_started", "advanced", "reference", "templates", "case_studies", "support"],
+          "description": "Category of resource content"
+        },
+        "content_freshness": {
+          "type": "string",
+          "enum": ["current", "needs_update", "outdated"],
+          "description": "Freshness assessment of the resource"
+        },
+        "usage_tracking": {
+          "type": "boolean",
+          "description": "Whether resource usage is tracked"
+        },
+        "seo_optimized": {
+          "type": "boolean",
+          "description": "Whether content is optimized for search"
+        },
+        "internal_notes": {
+          "type": "string",
+          "description": "Internal notes about the resource"
+        },
+        "accessibility": {
+          "type": "object",
+          "properties": {
+            "aria_label": {
+              "type": "string",
+              "description": "ARIA label for screen readers"
+            },
+            "keyboard_navigation": {
+              "type": "boolean",
+              "description": "Supports keyboard navigation"
+            },
+            "screen_reader_compatible": {
+              "type": "boolean",
+              "description": "Resource is screen reader compatible"
+            },
+            "alternative_formats": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Alternative accessible formats available"
+            }
+          }
+        }
+      }
+    }
+  },
+  "zone_guidelines": {
+    "description": "Content zone for additional resources, downloads, documentation, support, and supplementary materials",
+    "typical_content": [
+      "Whitepapers and guides", "Video resources", "Documentation links", "Support information",
+      "Contact details", "Legal documents", "Blog articles", "Templates and toolkits",
+      "Knowledge base links", "Newsletter signups"
+    ],
+    "content_strategy": "Provide comprehensive support and additional value to users",
+    "conversion_impact": "Low to Medium - supports decision-making and provides ongoing value",
+    "best_practices": [
+      "Organize resources by type and audience",
+      "Provide clear descriptions and previews",
+      "Keep resource links current and functional",
+      "Include estimated time to consume content",
+      "Make high-value resources easy to find",
+      "Track resource usage for optimization"
+    ]
+  }
+}

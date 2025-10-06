@@ -1,0 +1,31 @@
+{
+  "name": "API Documentation",
+  "tag": "api-docs",
+  "description": "Technical reference for developers integrating with the product's APIs and webhooks",
+  "children": [
+    {
+      "name": "API Reference",
+      "description": "Complete technical documentation of all available API endpoints, parameters, and responses"
+    },
+    {
+      "name": "Authentication",
+      "description": "API authentication methods, token management, and security best practices"
+    },
+    {
+      "name": "Rate Limits",
+      "description": "API usage limits, throttling policies, and how to handle rate limiting"
+    },
+    {
+      "name": "Webhooks",
+      "description": "Event-driven notifications, webhook setup, and payload formats"
+    },
+    {
+      "name": "SDKs and Libraries",
+      "description": "Official and community-maintained software development kits and code libraries"
+    },
+    {
+      "name": "Code Examples",
+      "description": "Practical code samples, integration examples, and implementation patterns"
+    }
+  ]
+}

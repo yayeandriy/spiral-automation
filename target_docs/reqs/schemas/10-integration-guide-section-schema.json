@@ -1,0 +1,180 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://spiral-automation.com/schemas/integrations-section.json",
+  "title": "Integration Guide Section Schema",
+  "description": "Schema for Integration Guide section covering third-party connections and system interoperability",
+  "type": "object",
+  "required": ["name", "tag", "description", "children"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "const": "Integration Guide",
+      "description": "Must be 'Integration Guide'"
+    },
+    "tag": {
+      "type": "string",
+      "const": "integration",
+      "description": "Must be 'integration'"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 500,
+      "description": "Overview of available integrations and connectivity options"
+    },
+    "children": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 15,
+      "items": { "$ref": "#/definitions/integration_child" }
+    },
+    "metadata": { "$ref": "#/definitions/metadata" }
+  },
+  "definitions": {
+    "integration_child": {
+      "type": "object",
+      "required": ["name", "description"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[A-Z][a-zA-Z0-9 \\-&.]+$",
+          "minLength": 5,
+          "maxLength": 80,
+          "examples": [
+            "REST API Integration",
+            "Webhook Notifications",
+            "Database Connectors",
+            "Third-Party Analytics Tools"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 30,
+          "maxLength": 2000,
+          "description": "Integration capabilities, setup process, and data flow"
+        },
+        "bullet_points": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 10,
+          "items": {
+            "type": "string",
+            "minLength": 15,
+            "maxLength": 200,
+            "description": "Integration features, supported platforms, or setup steps"
+          }
+        },
+        "integration_type": {
+          "type": "string",
+          "enum": [
+            "api",
+            "webhook",
+            "database",
+            "file_sync",
+            "sso",
+            "messaging",
+            "analytics",
+            "crm",
+            "erp",
+            "custom"
+          ],
+          "description": "Category of integration"
+        },
+        "supported_platforms": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "examples": ["Salesforce", "Microsoft Teams", "Slack", "PostgreSQL", "MySQL", "Azure AD"]
+          },
+          "description": "List of supported third-party platforms"
+        },
+        "setup_complexity": {
+          "type": "string",
+          "enum": ["simple", "moderate", "complex"],
+          "description": "Difficulty level of setting up this integration"
+        },
+        "authentication_methods": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["api_key", "oauth2", "basic_auth", "bearer_token", "certificate", "custom"]
+          }
+        },
+        "data_flow": {
+          "type": "string",
+          "enum": ["bidirectional", "inbound_only", "outbound_only"],
+          "description": "Direction of data synchronization"
+        },
+        "code_examples": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/integration_code_example" }
+        },
+        "configuration_steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["step", "instruction"],
+            "properties": {
+              "step": { "type": "integer", "minimum": 1 },
+              "instruction": { "type": "string", "minLength": 20, "maxLength": 400 },
+              "screenshot_url": { "type": "string", "format": "uri" },
+              "notes": { "type": "string", "maxLength": 200 }
+            }
+          }
+        },
+        "links": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/link" }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "integration", "api", "webhook", "sso", "database",
+              "third-party", "automation", "sync", "enterprise",
+              "cloud", "on-premise", "real-time"
+            ]
+          }
+        }
+      }
+    },
+    "integration_code_example": {
+      "type": "object",
+      "required": ["title", "code", "language"],
+      "properties": {
+        "title": { "type": "string", "minLength": 8, "maxLength": 120 },
+        "code": { "type": "string", "minLength": 30 },
+        "language": {
+          "type": "string",
+          "enum": ["javascript", "python", "curl", "json", "yaml", "xml", "sql", "bash"]
+        },
+        "description": { "type": "string", "maxLength": 400 },
+        "integration_step": { "type": "string", "maxLength": 100 }
+      }
+    },
+    "link": {
+      "type": "object",
+      "required": ["title", "url"],
+      "properties": {
+        "title": { "type": "string", "minLength": 5, "maxLength": 100 },
+        "url": { "type": "string", "format": "uri" },
+        "description": { "type": "string", "maxLength": 200 }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "last_updated": { "type": "string", "format": "date" },
+        "author": { "type": "string", "maxLength": 100 },
+        "priority": { "type": "string", "enum": ["high", "medium", "low"] },
+        "target_audience": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["developers", "administrators", "managers", "technical-writers"] }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

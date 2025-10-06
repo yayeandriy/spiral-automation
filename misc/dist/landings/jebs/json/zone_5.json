@@ -1,0 +1,876 @@
+{
+  "blocks": [
+    {
+      "object": "block",
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "🚀 Ready to Revolutionize Your Quality Control?"
+            },
+            "annotations": {
+              "bold": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Join aerospace manufacturers worldwide who trust JEBS for "
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "precision blade inspection"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": ". Get started with a personalized demonstration."
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": []
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "📅 Schedule Demo"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\nSee JEBS in action with your blade samples"
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\n📧 demo@jebs-systems.com"
+                        },
+                        "annotations": {
+                          "code": true
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "📅"
+                    },
+                    "color": "blue"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🛠️ Technical Support"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\nGet expert assistance with integration"
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\n📧 support@jebs-systems.com"
+                        },
+                        "annotations": {
+                          "code": true
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "🛠️"
+                    },
+                    "color": "green"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "💼 Custom Solutions"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\nTailored measurement systems for your needs"
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\n📧 sales@jebs-systems.com"
+                        },
+                        "annotations": {
+                          "code": true
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "💼"
+                    },
+                    "color": "orange"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "📝 Request Information"
+            },
+            "annotations": {
+              "bold": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "👤 Contact Details"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\n• Your Name\n• Your Email\n• Company Name"
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "👤"
+                    },
+                    "color": "blue"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🔍 Requirements"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\nTell us about your blade inspection requirements, volume, precision needs, and timeline"
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "🔍"
+                    },
+                    "color": "green"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": []
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "📞 Quick Response"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\nWe will contact you within 24 hours to discuss your blade inspection requirements"
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "📞"
+                    },
+                    "color": "purple"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🚀 Send Request"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\nReady to get started? Contact us now!"
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "🚀"
+                    },
+                    "color": "red"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": []
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "🏢 JEBS Systems"
+            },
+            "annotations": {
+              "bold": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Precision jet engine blade inspection systems for "
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "aerospace manufacturing excellence"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "."
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "📞 +1 (555) 123-4567"
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\n📧 sales@jebs-systems.com\n⏰ Available 24/7"
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "📞"
+                    },
+                    "color": "gray"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": []
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🔗 Product"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Features"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Technology"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Specifications"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🛠️ Support"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Documentation"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Training"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Technical Support"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "📧 Contact"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "sales@jebs-systems.com"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "support@jebs-systems.com"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "+1 (555) 123-4567"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🌐 Social"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🐦 Twitter"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "💼 LinkedIn"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "📺 YouTube"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": []
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "© 2024 JEBS Systems. All rights reserved. | "
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Precision Measurement Technology for Aerospace Excellence"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": []
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

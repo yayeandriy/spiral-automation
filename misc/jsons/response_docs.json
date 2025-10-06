@@ -1,0 +1,245 @@
+[
+  {
+    "output": [
+      {
+        "product_name": "Precision Manufacturing Quality Control (PMQC) System",
+        "description": "Advanced automated inspection platform for manufacturing precision components with micron-level accuracy measurement and real-time quality validation. The system provides photo-based measurement with caliper validation, intelligent image segmentation, and comprehensive quality control dashboard capabilities.",
+        "key_capabilities": [
+          "Multi-point measurement analysis",
+          "Angular and dimensional measurements",
+          "CAD comparison validation",
+          "Statistical process control integration",
+          "Real-time validation with instant alerts",
+          "Intelligent image segmentation",
+          "Dual validation system (photo measurement + caliper)",
+          "Automated data export to ERP and quality management systems"
+        ],
+        "technical_specifications": {
+          "precision": "Micron-level",
+          "multi_dimensional": true,
+          "real_time_processing": true,
+          "interface": "Web + API",
+          "measurement_accuracy": "99.7%",
+          "inspection_time_reduction": "85%"
+        },
+        "prerequisites": [
+          {
+            "id": "hardware_requirements",
+            "description": "Industrial camera (≥12 MP), high-speed optics, proper lighting setup, and stable mounting fixture"
+          },
+          {
+            "id": "software_requirements",
+            "description": "Compatible operating system, network connectivity, and sufficient storage for measurement data"
+          },
+          {
+            "id": "environmental_conditions",
+            "description": "Controlled lighting environment, stable temperature conditions, and vibration‑free mounting"
+          }
+        ],
+        "installation": [
+          "Mount the industrial camera on the inspection fixture using proper alignment tools",
+          "Connect camera to power and ensure stable network connectivity",
+          "Install PMQC software following the provided installation wizard",
+          "Configure camera settings and calibration parameters",
+          "Verify system connectivity and basic functionality"
+        ],
+        "first_run": [
+          "Launch the PMQC application and complete initial setup wizard",
+          "Navigate to Settings > Calibration section",
+          "Capture reference images using standardized components",
+          "Configure measurement points and tolerance ranges",
+          "Perform initial test measurements to validate system accuracy",
+          "Set up user accounts and access permissions"
+        ],
+        "measurement_setup": [
+          {
+            "step": 1,
+            "description": "Component Positioning",
+            "details": [
+              "Place the component on the inspection fixture ensuring proper alignment",
+              "Verify lighting conditions are optimal for accurate imaging",
+              "Ensure no obstructions or shadows affect the measurement area"
+            ]
+          },
+          {
+            "step": 2,
+            "description": "Image Capture Configuration",
+            "details": [
+              "Select appropriate camera settings based on component material and size",
+              "Configure image resolution and capture frequency",
+              "Set up automatic triggering if using conveyor system integration"
+            ]
+          },
+          {
+            "step": 3,
+            "description": "Measurement Point Definition",
+            "details": [
+              "Define critical measurement points using the graphical interface",
+              "Set tolerance ranges for each measurement parameter",
+              "Configure multi‑point analysis for complex geometries"
+            ]
+          }
+        ],
+        "validation_process": [
+          "Capture high‑resolution images of the component from predefined angles",
+          "Automated segmentation identifies critical measurement points",
+          "System performs dimensional and angular measurements against defined tolerances",
+          "Dual validation compares photo measurements with caliper validation data",
+          "Real‑time pass/fail determination with immediate status feedback",
+          "Results are logged with timestamps and component identifiers"
+        ],
+        "reporting": [
+          "Access comprehensive measurement logs from the dashboard interface",
+          "Generate batch quality reports with statistical analysis",
+          "Export data to ERP systems for production tracking",
+          "Create compliance documentation with complete audit trails",
+          "Schedule automated report generation for regular quality reviews"
+        ],
+        "dashboard_usage": [
+          "Monitor real‑time production quality metrics on the main dashboard",
+          "View detailed measurement results for individual components",
+          "Access historical data trends and statistical process control charts",
+          "Configure alert thresholds for out‑of‑specification conditions",
+          "Manage user permissions and system configuration settings"
+        ],
+        "troubleshooting": [
+          {
+            "id": "poor_image_quality",
+            "description": "Issues with image capture affecting measurement accuracy",
+            "symptoms": [
+              "Inconsistent measurement results",
+              "Failed segmentation of critical points",
+              "High variation between repeated measurements"
+            ],
+            "resolution": [
+              "Verify camera focus and lighting conditions",
+              "Clean camera lens and component surfaces",
+              "Adjust camera settings for better contrast",
+              "Recalibrate system using reference components"
+            ]
+          },
+          {
+            "id": "calibration_drift",
+            "description": "Gradual loss of measurement accuracy over time",
+            "symptoms": [
+              "Systematic measurement errors",
+              "Consistent deviation from known standards",
+              "Increasing false positive/false negative rates"
+            ],
+            "resolution": [
+              "Perform regular calibration using certified reference standards",
+              "Check environmental conditions affecting measurement stability",
+              "Verify fixture alignment and camera mounting",
+              "Update calibration parameters in system settings"
+            ]
+          },
+          {
+            "id": "integration_failures",
+            "description": "Issues with data export to external systems",
+            "symptoms": [
+              "Failed ERP data exports",
+              "Missing quality records in QMS",
+              "Network connectivity errors during data transfer"
+            ],
+            "resolution": [
+              "Verify network connectivity and firewall settings",
+              "Check API endpoint configurations and authentication",
+              "Review data format compatibility with target systems",
+              "Monitor system logs for specific error messages"
+            ]
+          },
+          {
+            "id": "high_temperature_operation",
+            "description": "Performance issues in elevated temperature environments",
+            "symptoms": [
+              "Camera performance degradation",
+              "Increased measurement variability",
+              "System instability during extended operation"
+            ],
+            "resolution": [
+              "Ensure camera housing is rated for operating temperature range",
+              "Implement cooling solutions for extended operation",
+              "Adjust measurement frequency to reduce thermal load",
+              "Monitor system temperature during operation"
+            ]
+          }
+        ],
+        "integration": {
+          "erp_export": {
+            "description": "Automated export of quality data to Enterprise Resource Planning systems for production tracking and compliance documentation",
+            "endpoints": [
+              {
+                "url": "/api/v1/erp/quality-data",
+                "method": "POST",
+                "auth": "Bearer token",
+                "payload": {
+                  "component_id": "string",
+                  "measurement_results": "array",
+                  "timestamp": "datetime",
+                  "batch_id": "string",
+                  "quality_status": "string"
+                }
+              },
+              {
+                "url": "/api/v1/erp/batch-summary",
+                "method": "POST",
+                "auth": "Bearer token",
+                "payload": {
+                  "batch_id": "string",
+                  "total_components": "integer",
+                  "acceptance_rate": "float",
+                  "quality_metrics": "object"
+                }
+              }
+            ],
+            "retry_policy": {
+              "max_attempts": 3,
+              "backoff_seconds": 30
+            }
+          },
+          "qms_integration": {
+            "description": "Seamless integration with Quality Management Systems for compliance documentation and audit trails",
+            "methods": [
+              "REST API integration",
+              "Batch file export (CSV, XML)",
+              "Real‑time webhook notifications",
+              "Database direct connection"
+            ]
+          },
+          "api_reference": {
+            "base_url": "https://api.pmqc-system.com",
+            "endpoints": [
+              "/api/v1/measurements",
+              "/api/v1/components",
+              "/api/v1/calibration",
+              "/api/v1/reports",
+              "/api/v1/system/status"
+            ]
+          }
+        },
+        "faq": [
+          {
+            "question": "Can the system operate in high-temperature manufacturing environments?",
+            "answer": "Yes, the camera housing and components are rated for operation up to 60°C. For extended high‑temperature operation, additional cooling solutions may be recommended."
+          },
+          {
+            "question": "What is the typical setup time for a new production line?",
+            "answer": "Standard installation and calibration typically takes 2‑4 hours, depending on the complexity of the measurement requirements and existing infrastructure."
+          },
+          {
+            "question": "How does the system handle different component materials and finishes?",
+            "answer": "The intelligent segmentation technology adapts to various material properties and surface finishes. Custom calibration profiles can be created for specific material characteristics."
+          },
+          {
+            "question": "What training is required for operators?",
+            "answer": "Basic operator training typically takes 2‑3 hours. Advanced configuration and troubleshooting training is available for maintenance personnel."
+          },
+          {
+            "question": "How is data security and compliance handled?",
+            "answer": "The system includes comprehensive audit trails, data encryption, and compliance features meeting industry standards for quality management and regulatory requirements."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,140 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://spiral-automation.com/schemas/user-guides-section.json",
+  "title": "Workflow Section Schema",
+  "description": "Schema for Workflow section with process flows and system workflow documentation",
+  "type": "object",
+  "required": ["name", "tag", "description", "children"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "const": "Understand Workflow",
+      "description": "Must be 'Understand Workflow'"
+    },
+    "tag": {
+      "type": "string",
+      "const": "workflow",
+      "description": "Must be 'workflow'"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 500,
+      "description": "Overview of available user guides and tutorials"
+    },
+    "children": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 12,
+      "items": { "$ref": "#/definitions/guide_child" }
+    },
+    "metadata": { "$ref": "#/definitions/metadata" }
+  },
+  "definitions": {
+    "guide_child": {
+      "type": "object",
+      "required": ["name", "description"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[A-Z][a-zA-Z0-9 \\-&:]+$",
+          "minLength": 8,
+          "maxLength": 100,
+          "examples": [
+            "Creating Your First Project",
+            "Setting Up Measurements",
+            "Working with Reports",
+            "Managing User Permissions"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 30,
+          "maxLength": 2000,
+          "description": "Step-by-step tutorial content and workflow guidance"
+        },
+        "bullet_points": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 12,
+          "items": {
+            "type": "string",
+            "minLength": 15,
+            "maxLength": 200,
+            "description": "Sequential steps, tips, or key workflow points"
+          }
+        },
+        "difficulty_level": {
+          "type": "string",
+          "enum": ["beginner", "intermediate", "advanced"],
+          "description": "Complexity level of the guide"
+        },
+        "estimated_time": {
+          "type": "string",
+          "pattern": "^\\d+(-\\d+)? (minutes?|hours?)$",
+          "examples": ["5 minutes", "10-15 minutes", "1 hour", "2-3 hours"]
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 100
+          },
+          "description": "Required knowledge or setup before following this guide"
+        },
+        "workflow_steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["step", "action"],
+            "properties": {
+              "step": { "type": "integer", "minimum": 1 },
+              "action": { "type": "string", "minLength": 10, "maxLength": 300 },
+              "screenshot": { "type": "string", "format": "uri" },
+              "notes": { "type": "string", "maxLength": 200 }
+            }
+          }
+        },
+        "links": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/link" }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "tutorial", "workflow", "setup", "configuration",
+              "beginner", "intermediate", "advanced",
+              "dashboard", "reporting", "measurements", "permissions"
+            ]
+          }
+        }
+      }
+    },
+    "link": {
+      "type": "object",
+      "required": ["title", "url"],
+      "properties": {
+        "title": { "type": "string", "minLength": 5, "maxLength": 100 },
+        "url": { "type": "string", "format": "uri" },
+        "description": { "type": "string", "maxLength": 200 }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "last_updated": { "type": "string", "format": "date" },
+        "author": { "type": "string", "maxLength": 100 },
+        "priority": { "type": "string", "enum": ["high", "medium", "low"] },
+        "target_audience": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["end-users", "administrators", "managers", "support-staff"] }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,329 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Social Proof Zone Content Schema",
+  "description": "Content zone displaying testimonials, reviews, case studies, and trust indicators",
+  "type": "object",
+  "properties": {
+    "zone_id": {
+      "type": "string",
+      "description": "Unique identifier for the zone"
+    },
+    "zone_type": {
+      "type": "string",
+      "const": "social_proof_zone",
+      "description": "Type of zone - must be social_proof_zone"
+    },
+    "zone_name": {
+      "type": "string",
+      "description": "Human-readable name for the zone"
+    },
+    "zone_purpose": {
+      "type": "string",
+      "description": "Primary purpose and goal of this zone"
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Order position of zone on the page"
+    },
+    "is_above_fold": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether zone appears above the fold"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["high", "medium"],
+      "default": "high",
+      "description": "Content importance priority - social proof is typically high priority"
+    },
+    "content_strategy": {
+      "type": "string",
+      "enum": ["trust_building", "credibility"],
+      "default": "trust_building",
+      "description": "Content strategy for social proof zones"
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/social_proof_section"
+      },
+      "description": "Content sections within the social proof zone"
+    }
+  },
+  "required": ["zone_id", "zone_type", "zone_name", "position", "sections"],
+  "definitions": {
+    "social_proof_section": {
+      "type": "object",
+      "properties": {
+        "section_id": {
+          "type": "string",
+          "description": "Unique identifier for the section"
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "testimonials_section", "reviews_section", "case_studies_section",
+            "client_logos_section", "social_metrics_section", "awards_section",
+            "media_mentions_section", "user_generated_content_section"
+          ],
+          "description": "Type of section - social proof focused types"
+        },
+        "section_name": {
+          "type": "string",
+          "description": "Human-readable name for the section"
+        },
+        "section_purpose": {
+          "type": "string",
+          "description": "Primary purpose of this section"
+        },
+        "content_structure": {
+          "type": "string",
+          "enum": [
+            "carousel", "grid_layout", "masonry", "single_column", "logo_grid"
+          ],
+          "description": "Organizational structure - common layouts for social proof"
+        },
+        "content_flow": {
+          "type": "string",
+          "enum": ["linear", "grid", "rotating"],
+          "default": "grid",
+          "description": "How content flows within the section"
+        },
+        "blocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/social_proof_block"
+          },
+          "description": "Individual content blocks within the section"
+        }
+      },
+      "required": ["section_id", "section_type", "section_name", "blocks"]
+    },
+    "social_proof_block": {
+      "type": "object",
+      "properties": {
+        "block_id": {
+          "type": "string",
+          "description": "Unique identifier for the block"
+        },
+        "block_category": {
+          "type": "string",
+          "enum": [
+            "testimonial_content", "review_content", "metric_content", 
+            "logo_content", "media_content", "case_study_content"
+          ],
+          "description": "High-level category of the content block"
+        },
+        "block_type": {
+          "type": "string",
+          "enum": [
+            "customer_testimonial", "expert_review", "user_review", "case_study_summary",
+            "client_logo", "partner_logo", "award_badge", "certification_badge",
+            "social_metric", "usage_statistic", "media_quote", "press_mention",
+            "star_rating", "review_score", "recommendation", "endorsement"
+          ],
+          "description": "Specific type of content block suitable for social proof zones"
+        },
+        "content": {
+          "$ref": "#/definitions/block_content_data",
+          "description": "The actual content data of the block"
+        },
+        "functionality": {
+          "$ref": "#/definitions/block_functionality",
+          "description": "Interactive functionality and behavior"
+        },
+        "metadata": {
+          "$ref": "#/definitions/content_metadata",
+          "description": "Additional metadata for the content block"
+        }
+      },
+      "required": ["block_id", "block_category", "block_type", "content"]
+    },
+    "block_content_data": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Plain text content of the block"
+        },
+        "quote": {
+          "type": "string",
+          "description": "Testimonial or review quote"
+        },
+        "title": {
+          "type": "string",
+          "description": "Title of testimonial, case study, or review"
+        },
+        "author": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "title": { "type": "string" },
+            "company": { "type": "string" },
+            "avatar_url": { "type": "string", "format": "uri" },
+            "linkedin_url": { "type": "string", "format": "uri" }
+          },
+          "description": "Author information for testimonials and reviews"
+        },
+        "rating": {
+          "type": "object",
+          "properties": {
+            "score": { "type": "number", "minimum": 0, "maximum": 5 },
+            "max_score": { "type": "number", "default": 5 },
+            "review_count": { "type": "integer", "minimum": 0 }
+          },
+          "description": "Rating information"
+        },
+        "metrics": {
+          "type": "object",
+          "properties": {
+            "value": { "type": "string" },
+            "unit": { "type": "string" },
+            "label": { "type": "string" },
+            "trend": { "type": "string", "enum": ["up", "down", "stable"] }
+          },
+          "description": "Social proof metrics and statistics"
+        },
+        "media_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for company logos, photos, or other media"
+        },
+        "media_type": {
+          "type": "string",
+          "enum": ["logo", "avatar", "image", "video"],
+          "description": "Type of media content"
+        },
+        "alt_text": {
+          "type": "string",
+          "description": "Alternative text for accessibility"
+        },
+        "link_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for full case study, review page, or company website"
+        },
+        "verification": {
+          "type": "object",
+          "properties": {
+            "verified": { "type": "boolean" },
+            "verification_source": { "type": "string" },
+            "verification_date": { "type": "string", "format": "date" }
+          },
+          "description": "Verification status of the social proof"
+        },
+        "platform": {
+          "type": "string",
+          "enum": ["google", "trustpilot", "g2", "capterra", "internal", "linkedin", "twitter"],
+          "description": "Platform where the review or testimonial originated"
+        }
+      }
+    },
+    "block_functionality": {
+      "type": "object",
+      "properties": {
+        "interactive": {
+          "type": "boolean",
+          "description": "Whether the block is interactive"
+        },
+        "interaction_type": {
+          "type": "string",
+          "enum": ["click", "hover", "modal", "expand", "carousel_navigation"],
+          "description": "Type of interaction supported"
+        },
+        "expandable": {
+          "type": "boolean",
+          "description": "Whether content can be expanded to show full testimonial"
+        },
+        "action_target": {
+          "type": "string",
+          "description": "Target of the action (full case study URL, review page, etc.)"
+        },
+        "tracking": {
+          "type": "object",
+          "properties": {
+            "analytics_event": {
+              "type": "string",
+              "description": "Analytics event name"
+            },
+            "social_proof_engagement": {
+              "type": "boolean",
+              "description": "Whether this tracks social proof engagement"
+            }
+          }
+        }
+      }
+    },
+    "content_metadata": {
+      "type": "object",
+      "properties": {
+        "created_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Content creation timestamp"
+        },
+        "testimonial_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date when testimonial or review was given"
+        },
+        "version": {
+          "type": "string",
+          "description": "Content version"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "review", "approved", "published"],
+          "description": "Content status"
+        },
+        "credibility_score": {
+          "type": "string",
+          "enum": ["high", "medium", "low"],
+          "description": "Internal credibility assessment"
+        },
+        "industry": {
+          "type": "string",
+          "description": "Industry of the customer providing testimonial"
+        },
+        "company_size": {
+          "type": "string",
+          "enum": ["startup", "sme", "enterprise", "fortune500"],
+          "description": "Size category of the customer company"
+        },
+        "accessibility": {
+          "type": "object",
+          "properties": {
+            "aria_label": {
+              "type": "string",
+              "description": "ARIA label for screen readers"
+            },
+            "keyboard_navigation": {
+              "type": "boolean",
+              "description": "Supports keyboard navigation"
+            }
+          }
+        }
+      }
+    }
+  },
+  "zone_guidelines": {
+    "description": "Content zone displaying testimonials, reviews, case studies, and trust indicators",
+    "typical_content": [
+      "Customer testimonials", "Product reviews", "Case study highlights",
+      "Client company logos", "Awards and certifications", "Usage statistics",
+      "Media mentions", "Expert endorsements"
+    ],
+    "content_strategy": "Build trust and credibility through third-party validation",
+    "conversion_impact": "High - reduces purchase anxiety and builds confidence",
+    "best_practices": [
+      "Use real, verifiable testimonials",
+      "Include author credentials and photos",
+      "Mix different types of social proof",
+      "Keep testimonials specific and benefit-focused",
+      "Update content regularly for freshness"
+    ]
+  }
+}

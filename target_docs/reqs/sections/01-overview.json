@@ -1,0 +1,61 @@
+{
+  "name": "Overview",
+  "tag": "overview",
+  "description": "High-level introduction to the product, its purpose, and key value propositions for business users",
+  "children": [
+    {
+      "name": "Product Introduction",
+      "description": "Comprehensive introduction to the product, its core purpose, target markets, and primary value proposition for businesses",
+      "bullet_points": [
+        "Advanced automated inspection solution for precision manufacturing",
+        "Micron-level accuracy measurement with real-time quality validation",
+        "Photo-based measurement technology combined with caliper validation",
+        "Machine learning algorithms for automatic measurement point identification",
+        "Seamless integration with existing production workflows",
+        "Built for modern manufacturing environments requiring highest precision standards"
+      ]
+    },
+    {
+      "name": "Key Benefits",
+      "description": "Main advantages and benefits that users gain from implementing the product, including efficiency improvements and cost savings",
+      "bullet_points": [
+        "85% reduction in manual inspection time while maintaining accuracy",
+        "99.7% measurement accuracy for critical dimensional analysis",
+        "Real-time validation with instant pass/fail status decisions",
+        "Comprehensive reporting with timestamps and complete traceability",
+        "Automated data export to ERP and quality management systems",
+        "Significant cost savings through increased throughput and efficiency",
+        "Dual validation approach ensuring measurement reliability and confidence"
+      ]
+    },
+    {
+      "name": "Target Audience",
+      "description": "Primary user groups, roles, and organizations that will benefit most from using the product",
+      "bullet_points": [
+        "Quality control managers in precision manufacturing environments",
+        "Production supervisors overseeing dimensional accuracy requirements",
+        "Manufacturing engineers in aerospace, automotive, and medical device industries",
+        "Inspection technicians working with precision machining processes",
+        "Organizations facing regulatory compliance requirements",
+        "Companies seeking to reduce manual inspection costs and scale production",
+        "Manufacturing facilities transitioning to automated quality control systems"
+      ]
+    },
+    {
+      "name": "System Requirements",
+      "description": "Technical prerequisites, hardware specifications, software dependencies, and infrastructure requirements",
+      "bullet_points": [
+        "Industrial-grade processing units for continuous manufacturing operation",
+        "High-resolution imaging systems compatible with automated segmentation",
+        "Precision calibration equipment for measurement validation",
+        "Network connectivity for ERP and manufacturing system integration",
+        "Compatible operating systems optimized for industrial applications",
+        "Database management capabilities for measurement logging and reporting",
+        "API connectivity for quality management system integration",
+        "Adequate lighting and vibration-isolated mounting for consistency",
+        "Environmental controls to maintain calibration accuracy",
+        "Network security protocols compliant with industrial cybersecurity standards"
+      ]
+    }
+  ]
+}

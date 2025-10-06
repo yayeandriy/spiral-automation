@@ -1,0 +1,204 @@
+[
+  {
+    "object": "database",
+    "id": "282c3aed-7a1a-8065-8455-d81d10832ab7",
+    "cover": null,
+    "icon": null,
+    "created_time": "2025-10-04T10:18:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_time": "2025-10-06T12:02:00.000Z",
+    "title": [
+      {
+        "type": "text",
+        "text": {
+          "content": "Request my KPI quote",
+          "link": null
+        },
+        "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+        },
+        "plain_text": "Request my KPI quote",
+        "href": null
+      }
+    ],
+    "description": [],
+    "is_inline": true,
+    "properties": {
+      "company": {
+        "id": "%3CTE%40",
+        "name": "company",
+        "description": null,
+        "type": "rich_text",
+        "rich_text": {}
+      },
+      "deployment": {
+        "id": "%3CwMu",
+        "name": "deployment",
+        "description": null,
+        "type": "rich_text",
+        "rich_text": {}
+      },
+      "need_nda": {
+        "id": "AL%60k",
+        "name": "need_nda",
+        "description": null,
+        "type": "checkbox",
+        "checkbox": {}
+      },
+      "goals_kpis": {
+        "id": "EjPT",
+        "name": "goals_kpis",
+        "description": null,
+        "type": "rich_text",
+        "rich_text": {}
+      },
+      "subscribed": {
+        "id": "Mi%3BJ",
+        "name": "subscribed",
+        "description": null,
+        "type": "checkbox",
+        "checkbox": {}
+      },
+      "budget": {
+        "id": "Ns%7Ba",
+        "name": "budget",
+        "description": null,
+        "type": "rich_text",
+        "rich_text": {}
+      },
+      "segment": {
+        "id": "PPDB",
+        "name": "segment",
+        "description": null,
+        "type": "select",
+        "select": {
+          "options": [
+            {
+              "id": "95ca5bd9-cf04-4c44-a697-f36592c4ac92",
+              "name": "startup",
+              "color": "purple",
+              "description": null
+            },
+            {
+              "id": "82a22b35-4b5f-4d45-955e-0d7bb00a86cd",
+              "name": "medium_business",
+              "color": "gray",
+              "description": null
+            },
+            {
+              "id": "d1e7f7fa-2a02-4f50-b48f-cf442ee2db88",
+              "name": "enterprise",
+              "color": "default",
+              "description": null
+            }
+          ]
+        }
+      },
+      "timeline": {
+        "id": "ZC~R",
+        "name": "timeline",
+        "description": null,
+        "type": "rich_text",
+        "rich_text": {}
+      },
+      "email": {
+        "id": "Z%7BpD",
+        "name": "email",
+        "description": null,
+        "type": "email",
+        "email": {}
+      },
+      "name": {
+        "id": "%5BYul",
+        "name": "name",
+        "description": null,
+        "type": "rich_text",
+        "rich_text": {}
+      },
+      "_action/api/form/get-kpi-based-quote": {
+        "id": "_nrs",
+        "name": "_action/api/form/get-kpi-based-quote",
+        "description": null,
+        "type": "rich_text",
+        "rich_text": {}
+      },
+      "notes": {
+        "id": "czNP",
+        "name": "notes",
+        "description": null,
+        "type": "rich_text",
+        "rich_text": {}
+      },
+      "industry": {
+        "id": "h%3CuK",
+        "name": "industry",
+        "description": null,
+        "type": "select",
+        "select": {
+          "options": [
+            {
+              "id": "43a1c280-271f-4887-941d-ff7e0185cdfb",
+              "name": "energy",
+              "color": "purple",
+              "description": null
+            },
+            {
+              "id": "73b9cd14-5f87-4432-b2a9-248bd1aeac4a",
+              "name": "manufacturing",
+              "color": "blue",
+              "description": null
+            },
+            {
+              "id": "3ad962cf-17cf-40b9-badd-96ae2eaa1004",
+              "name": "aviation",
+              "color": "yellow",
+              "description": null
+            }
+          ]
+        }
+      },
+      "data_volume": {
+        "id": "u%3DUf",
+        "name": "data_volume",
+        "description": null,
+        "type": "rich_text",
+        "rich_text": {}
+      },
+      "_success_page/static/form-success": {
+        "id": "%7C%3Bl%3E",
+        "name": "_success_page/static/form-success",
+        "description": null,
+        "type": "rich_text",
+        "rich_text": {}
+      },
+      "_name": {
+        "id": "title",
+        "name": "_name",
+        "description": null,
+        "type": "title",
+        "title": {}
+      }
+    },
+    "parent": {
+      "type": "page_id",
+      "page_id": "282c3aed-7a1a-8008-9f26-fc8722e9a9e9"
+    },
+    "url": "https://www.notion.so/282c3aed7a1a80658455d81d10832ab7",
+    "public_url": null,
+    "archived": false,
+    "in_trash": false,
+    "request_id": "9a550b4d-5a47-4c65-b880-f6a417e36b2a"
+  }
+]

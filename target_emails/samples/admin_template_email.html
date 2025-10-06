@@ -1,0 +1,235 @@
+<!--
+Spiral Technology – "KPI‑Based Quote" notification email
+Style: light theme (#fdf7fa), square section borders, fully‑rounded buttons
+Tokens: {{created_at}}, {{email}}, {{name}}, {{code}}, {{id}}, {{code_expired_at}}, {{segment}}, {{goals_kpis}}, {{data_volume}}, {{deployment}}, {{timeline}}, {{budget}}, {{notes}}, {{need_nda}}, {{subscribed}}, {{industry}}, {{company}}
+-->
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New KPI‑based quote request</title>
+    <!--[if mso]>
+      <xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml>
+    <![endif]-->
+    <style>
+      /* Base resets for email */
+      body{margin:0!important;padding:0!important;background:#fdf7fa;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+      table,td{border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;}
+      img{border:0;height:auto;line-height:100%;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;}
+      a{color:inherit;text-decoration:none;}
+      /* Typography */
+      .font{font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;}
+      /* Layout */
+      .container{width:100%;max-width:680px;margin:0 auto;background:#ffffff;}
+      .px{padding-left:24px;padding-right:24px;}
+      .py{padding-top:24px;padding-bottom:24px;}
+      .section{border:1px solid #eadbe2;background:#fdf7fa;}
+      .divider{border-top:1px solid #eadbe2;}
+      /* Text colors */
+      .muted{color:#6b7280;} /* neutral-500 */
+      .heading{color:#0b0b0c;} /* near-black */
+      .text{color:#111827;} /* neutral-900 */
+      /* Badges */
+      .badge{display:inline-block;padding:4px 10px;border:1px solid #eadbe2;border-radius:9999px;font-size:12px;line-height:1;color:#111827;background:#ffffff;}
+      .badge-ok{background:#111827;color:#ffffff;border-color:#111827;}
+      /* Button (bulletproof-ish) */
+      .btn{display:inline-block;background:#111827;color:#ffffff;border-radius:9999px;padding:12px 18px;font-weight:600;border:1px solid #111827;}
+      /* Grid-like rows */
+      .row{padding:14px 0;}
+      .label{width:38%;font-size:13px;color:#6b7280;}
+      .value{width:62%;font-size:14px;color:#111827;text-align:right;}
+      @media (max-width:600px){
+        .px{padding-left:16px;padding-right:16px;}
+        .label,.value{display:block;width:100%;text-align:left;}
+        .row{padding:12px 0;}
+      }
+    </style>
+  </head>
+  <body class="font" style="background:#fdf7fa;">
+    <center role="article" aria-roledescription="email" lang="en" style="width:100%;background:#fdf7fa;">
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#fdf7fa;">
+        <tr>
+          <td align="center" style="padding:32px 12px;">
+            <!-- Header -->
+            <table role="presentation" class="container" cellspacing="0" cellpadding="0" border="0" style="background:#ffffff;">
+              <tr>
+                <td class="px py" style="padding:20px 24px;border:1px solid #eadbe2;border-bottom:none;background:#ffffff;">
+                  <table role="presentation" width="100%">
+                    <tr>
+                      <td align="left" class="text heading font" style="font-weight:600;">Spiral Technology</td>
+                      <td align="right" class="muted font" style="font-size:12px;">New KPI‑based quote</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- Title / Summary -->
+              <tr>
+                <td class="px py section" style="padding:24px;border:1px solid #eadbe2;background:#fdf7fa;">
+                  <div class="font heading" style="font-size:20px;font-weight:600;">New request: KPI‑based quote</div>
+                  <div class="font muted" style="margin-top:6px;font-size:13px;">Received <span>{{created_at}}</span></div>
+                  <div style="margin-top:12px;">
+                    <span class="badge font">Segment: <strong>{{segment}}</strong></span>
+                    <span class="badge font" style="margin-left:8px;">Industry: <strong>{{industry}}</strong></span>
+                    <span class="badge font" style="margin-left:8px;">ID: {{id}}</span>
+                  </div>
+                </td>
+              </tr>
+              <!-- Key details grid -->
+              <tr>
+                <td class="px" style="padding:0 24px;">
+                  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#ffffff;">
+                    <tr><td class="divider" style="border-top:1px solid #eadbe2;line-height:0;font-size:0;">&nbsp;</td></tr>
+                    <tr>
+                      <td class="row" style="padding:14px 0;">
+                        <table role="presentation" width="100%">
+                          <tr>
+                            <td class="label font muted">Name</td>
+                            <td class="value font text" align="right">{{name}}</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr><td class="divider" style="border-top:1px solid #eadbe2;line-height:0;">&nbsp;</td></tr>
+                    <tr>
+                      <td class="row">
+                        <table role="presentation" width="100%">
+                          <tr>
+                            <td class="label font muted">Email</td>
+                            <td class="value font text" align="right"><a href="mailto:{{email}}">{{email}}</a></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr><td class="divider" style="border-top:1px solid #eadbe2;line-height:0;">&nbsp;</td></tr>
+                    <tr>
+                      <td class="row">
+                        <table role="presentation" width="100%">
+                          <tr>
+                            <td class="label font muted">Company</td>
+                            <td class="value font text" align="right">{{company}}</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr><td class="divider" style="border-top:1px solid #eadbe2;line-height:0;">&nbsp;</td></tr>
+                    <tr>
+                      <td class="row">
+                        <table role="presentation" width="100%">
+                          <tr>
+                            <td class="label font muted">Industry</td>
+                            <td class="value font text" align="right">{{industry}}</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr><td class="divider" style="border-top:1px solid #eadbe2;line-height:0;">&nbsp;</td></tr>
+                    <tr>
+                      <td class="row">
+                        <table role="presentation" width="100%">
+                          <tr>
+                            <td class="label font muted">Segment</td>
+                            <td class="value font text" align="right">{{segment}}</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr><td class="divider" style="border-top:1px solid #eadbe2;line-height:0;">&nbsp;</td></tr>
+                    <tr>
+                      <td class="row">
+                        <table role="presentation" width="100%">
+                          <tr>
+                            <td class="label font muted">NDA required</td>
+                            <td class="value font text" align="right">{{need_nda}}</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr><td class="divider" style="border-top:1px solid #eadbe2;line-height:0;">&nbsp;</td></tr>
+                    <tr>
+                      <td class="row">
+                        <table role="presentation" width="100%">
+                          <tr>
+                            <td class="label font muted">Subscribed</td>
+                            <td class="value font text" align="right">{{subscribed}}</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr><td class="divider" style="border-top:1px solid #eadbe2;line-height:0;">&nbsp;</td></tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- KPI & Notes -->
+              <tr>
+                <td class="px py" style="padding:24px;">
+                  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td class="section" style="border:1px solid #eadbe2;background:#fdf7fa;padding:18px;">
+                        <div class="font heading" style="font-size:16px;font-weight:600;">Goals / KPIs</div>
+                        <div class="font text" style="margin-top:8px;font-size:14px;white-space:pre-line;">{{goals_kpis}}</div>
+                      </td>
+                    </tr>
+                    <tr><td height="12"></td></tr>
+                    <tr>
+                      <td class="section" style="border:1px solid #eadbe2;background:#fdf7fa;padding:18px;">
+                        <div class="font heading" style="font-size:16px;font-weight:600;">Operational context</div>
+                        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin-top:8px;">
+                          <tr>
+                            <td class="label font muted" style="padding:6px 0;">Data volume</td>
+                            <td class="value font text" style="padding:6px 0;" align="right">{{data_volume}}</td>
+                          </tr>
+                          <tr>
+                            <td class="label font muted" style="padding:6px 0;">Deployment</td>
+                            <td class="value font text" style="padding:6px 0;" align="right">{{deployment}}</td>
+                          </tr>
+                          <tr>
+                            <td class="label font muted" style="padding:6px 0;">Timeline</td>
+                            <td class="value font text" style="padding:6px 0;" align="right">{{timeline}}</td>
+                          </tr>
+                          <tr>
+                            <td class="label font muted" style="padding:6px 0;">Budget</td>
+                            <td class="value font text" style="padding:6px 0;" align="right">{{budget}}</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr><td height="12"></td></tr>
+                    <tr>
+                      <td class="section" style="border:1px solid #eadbe2;background:#fdf7fa;padding:18px;">
+                        <div class="font heading" style="font-size:16px;font-weight:600;">Notes</div>
+                        <div class="font text" style="margin-top:8px;font-size:14px;white-space:pre-line;">{{notes}}</div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- CTA / Footer -->
+              <tr>
+                <td class="px py" style="padding:24px;">
+                  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td align="center" style="padding-top:4px;padding-bottom:12px;">
+                        <a href="{{admin_url}}" class="btn font">Open in CRM</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" class="muted font" style="font-size:12px;">You are receiving this because you are on the Spiral pricing notifications list.</td>
+                    </tr>
+                    <tr>
+                      <td align="center" class="muted font" style="font-size:12px;">Spiral Technology · AI • Vision • AR/MR for Industry</td>
+                    </tr>
+                    <tr><td height="8"></td></tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>

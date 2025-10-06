@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jet Engine Blade Scan (JEBS) – Precision Blade Inspection</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* -------------------------------------------------
+   12‑column responsive grid (pure CSS)
+   ------------------------------------------------- */
+:root{
+    --gutter: 1rem;
+}
+*{box-sizing:border-box;}
+body{
+    margin:0;
+    font-family:system-ui,Helvetica,Arial,sans-serif;
+    line-height:1.6;
+    color:#333;
+    background:#fafafa;
+}
+a{color:#0066cc;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:var(--gutter) 0;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    margin:-calc(var(--gutter)/2);
+}
+.col{
+    padding:calc(var(--gutter)/2);
+    flex:0 0 100%;
+}
+@media(min-width:600px){
+    .col-2{flex:0 0 16.6667%;}
+    .col-3{flex:0 0 25%;}
+    .col-4{flex:0 0 33.3333%;}
+    .col-6{flex:0 0 50%;}
+}
+@media(min-width:900px){
+    .col-1{flex:0 0 8.3333%;}
+    .col-2{flex:0 0 16.6667%;}
+    .col-3{flex:0 0 25%;}
+    .col-4{flex:0 0 33.3333%;}
+    .col-5{flex:0 0 41.6667%;}
+    .col-6{flex:0 0 50%;}
+    .col-7{flex:0 0 58.3333%;}
+    .col-8{flex:0 0 66.6667%;}
+    .col-9{flex:0 0 75%;}
+    .col-10{flex:0 0 83.3333%;}
+    .col-11{flex:0 0 91.6667%;}
+    .col-12{flex:0 0 100%;}
+}
+
+/* -------------------------------------------------
+   Section‑specific styling
+   ------------------------------------------------- */
+section{padding:4rem 0;}
+section:nth-of-type(even){background:#fff;}
+section:nth-of-type(odd){background:#f5f5f5;}
+
+h1, h2, h3{margin:0 0 .5rem;}
+h1{font-size:2.5rem;font-weight:700;}
+h2{font-size:2rem;font-weight:600;}
+h3{font-size:1.5rem;font-weight:500;}
+
+.text-center{text-align:center;}
+.mt-1{margin-top:1rem;}
+.mb-1{margin-bottom:1rem;}
+.mb-2{margin-bottom:2rem;}
+
+.btn{
+    display:inline-block;
+    padding:.8rem 1.6rem;
+    font-size:1rem;
+    font-weight:600;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    text-align:center;
+}
+.btn-primary{background:#ffb400;color:#212529;}
+.btn-primary:hover{background:#ffa000;}
+.btn-accent{background:#0066cc;color:#fff;}
+.btn-accent:hover{background:#0055a3;}
+
+.hero{
+    position:relative;
+    color:#fff;
+    text-align:center;
+    background:url('https://images.unsplash.com/photo-1523731407965-536d5e3be4b6?auto=format&fit=crop&w=1400&q=60') center/cover no-repeat;
+    padding:6rem 0;
+}
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.5);
+}
+.hero > .container{position:relative;z-index:1;}
+
+.card{
+    background:#fff;
+    border-radius:6px;
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+    overflow:hidden;
+}
+.card img{width:100%;height:auto;display:block;}
+.card-body{padding:1rem;}
+
+.table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:.5rem;
+}
+.table th,.table td{
+    border:1px solid #ddd;
+    padding:.5rem;
+    text-align:left;
+}
+.table th{background:#eee;font-weight:600;}
+
+.stat{
+    text-align:center;
+    font-size:1.5rem;
+    font-weight:600;
+    color:#004d7a;
+}
+.stat small{
+    display:block;
+    font-size:.9rem;
+    font-weight:400;
+    color:#666;
+}
+
+/* Footer */
+footer{
+    background:#212529;
+    color:#ccc;
+    text-align:center;
+    font-size:.9rem;
+    padding:2rem 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================== HERO ZONE ================== -->
+<section class="hero" id="hero">
+    <div class="container">
+        <h1 data-block-id="b_hero_headline">Jet Engine Blade Scan (JEBS)</h1>
+        <p data-block-id="b_hero_subhead">Precision inspection of turbine‑blade geometry – fast, reliable, repeatable.</p>
+        <a href="#download"
+           class="btn btn-primary"
+           data-block-id="b_hero_cta"
+           data-analytics-event="hero_cta_click"
+           data-conversion-goal="true">Download Full Report</a>
+    </div>
+</section>
+
+<!-- =============== FEATURES & BENEFITS =============== -->
+<section id="features">
+    <div class="container">
+        <div class="row">
+            <!-- What is JEBS? -->
+            <div class="col col-6">
+                <h2 data-block-id="b_what_headline">What is JEBS?</h2>
+                <p data-block-id="b_what_body">
+                    JEBS (Jet Engine Blade Scan) is a visual‑plus‑digital inspection method used to verify the dimensional compliance of turbine blades before they are cleared for assembly.
+                </p>
+                <ul data-block-id="b_what_list">
+                    <li>High‑resolution photography (pixel‑accurate)</li>
+                    <li>Caliper cross‑check for critical measurements</li>
+                    <li>Automatic pass/fail flagging against certified tolerance ranges</li>
+                </ul>
+            </div>
+
+            <!-- Why it matters -->
+            <div class="col col-6">
+                <h2 data-block-id="b_why_headline">Why it matters</h2>
+                <p data-block-id="b_why_body">Ensuring every blade meets the designed offsets prevents:</p>
+                <ul data-block-id="b_why_list">
+                    <li>Unbalanced rotor dynamics → reduced vibration</li>
+                    <li>Premature wear on the bearing train</li>
+                    <li>Loss of thrust and fuel‑efficiency penalties</li>
+                </ul>
+                <p data-block-id="b_why_summary" class="mt-1" style="color:#28a745;font-weight:600;">
+                    Result: Safer flight, lower life‑cycle cost.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================== SOCIAL PROOF ================== -->
+<section id="social">
+    <div class="container">
+        <h2 class="text-center mb-2">Proof of Accuracy</h2>
+
+        <div class="row mb-2">
+            <div class="col col-4">
+                <div class="stat" data-block-id="b_metric_blades">2<br><small>Blade Types Scanned</small></div>
+            </div>
+            <div class="col col-4">
+                <div class="stat" data-block-id="b_metric_measurements">30+<br><small>Individual Measurements</small></div>
+            </div>
+            <div class="col col-4">
+                <div class="stat" data-block-id="b_metric_pass_rate">93%<br><small>Pass Rate</small></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-12 text-center">
+                <a href="https://www.veed.io/view/467cbc27-30f4-4a52-b132-3913ffab3f12?panel=share"
+                   class="btn btn-accent"
+                   data-block-id="b_video_demo"
+                   data-analytics-event="demo_video_play"
+                   target="_blank"
+                   rel="noopener">
+                    Watch Live Segmentation Demo
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============== PRODUCT SHOWCASE ================= -->
+<section id="showcase">
+    <div class="container">
+        <h2 class="text-center mb-2">Inspection Gallery</h2>
+        <div class="row">
+            <!-- Blade E8172‑12 overview -->
+            <div class="col col-4">
+                <div class="card">
+                    <img src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image10.png"
+                         alt="CAD overlay of blade E8172‑12 with measurement points"
+                         data-block-id="b_img_e8172_12_overview">
+                    <div class="card-body">
+                        <p class="mb-0">Blade E8172‑12 (CAD)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Blade E8172‑7 overview -->
+            <div class="col col-4">
+                <div class="card">
+                    <img src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image18.png"
+                         alt="CAD overlay of blade E8172‑7 with measurement points"
+                         data-block-id="b_img_e8172_7_overview">
+                    <div class="card-body">
+                        <p class="mb-0">Blade E8172‑7 (CAD)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Summary table screenshot -->
+            <div class="col col-4">
+                <div class="card">
+                    <img src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image5.png"
+                         alt="Summary table of all measurements for blade E8172‑12"
+                         data-block-id="b_img_measurement_table">
+                    <div class="card-body">
+                        <p class="mb-0">Measurement Summary</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================== CONVERSION ZONE ================== -->
+<section id="download" class="text-center">
+    <div class="container">
+        <h2 data-block-id="b_cta_download_headline">Download the Full JEBS Report</h2>
+        <p data-block-id="b_cta_download_body" class="mb-2">
+            All raw data, detailed measurement tables and high‑resolution images are available for immediate download.
+        </p>
+        <a href="https://drive.google.com/drive/u/1/folders/1lO4T_J1jmC-ucicuDl_O1y-rvGJ0Azwd"
+           class="btn btn-primary"
+           data-block-id="b_cta_download_button"
+           data-analytics-event="download_cta_click"
+           data-conversion-goal="true"
+           target="_blank"
+           rel="noopener">
+            Download from Google Driv<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jet Engine Blade Scan (JEBS) – Precision Blade Inspection</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* -------------------------------------------------
+   12‑column responsive grid (pure CSS)
+   ------------------------------------------------- */
+:root{
+    --gutter: 1rem;
+}
+*{box-sizing:border-box;}
+body{
+    margin:0;
+    font-family:system-ui,Helvetica,Arial,sans-serif;
+    line-height:1.6;
+    color:#333;
+    background:#fafafa;
+}
+a{color:#0066cc;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:var(--gutter) 0;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    margin:-calc(var(--gutter)/2);
+}
+.col{
+    padding:calc(var(--gutter)/2);
+    flex:0 0 100%;
+}
+@media(min-width:600px){
+    .col-2{flex:0 0 16.6667%;}
+    .col-3{flex:0 0 25%;}
+    .col-4{flex:0 0 33.3333%;}
+    .col-6{flex:0 0 50%;}
+}
+@media(min-width:900px){
+    .col-1{flex:0 0 8.3333%;}
+    .col-2{flex:0 0 16.6667%;}
+    .col-3{flex:0 0 25%;}
+    .col-4{flex:0 0 33.3333%;}
+    .col-5{flex:0 0 41.6667%;}
+    .col-6{flex:0 0 50%;}
+    .col-7{flex:0 0 58.3333%;}
+    .col-8{flex:0 0 66.6667%;}
+    .col-9{flex:0 0 75%;}
+    .col-10{flex:0 0 83.3333%;}
+    .col-11{flex:0 0 91.6667%;}
+    .col-12{flex:0 0 100%;}
+}
+
+/* -------------------------------------------------
+   Section‑specific styling
+   ------------------------------------------------- */
+section{padding:4rem 0;}
+section:nth-of-type(even){background:#fff;}
+section:nth-of-type(odd){background:#f5f5f5;}
+h1,h2,h3{margin:0 0 .5rem;}
+h1{font-size:2.5rem;font-weight:700;}
+h2{font-size:2rem;font-weight:600;}
+h3{font-size:1.5rem;font-weight:500;}
+.text-center{text-align:center;}
+.mt-1{margin-top:1rem;}
+.mb-1{margin-bottom:1rem;}
+.mb-2{margin-bottom:2rem;}
+.btn{
+    display:inline-block;
+    padding:.8rem 1.6rem;
+    font-size:1rem;
+    font-weight:600;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+}
+.btn-primary{background:#ffb400;color:#212529;}
+.btn-primary:hover{background:#ffa000;}
+.btn-accent{background:#0066cc;color:#fff;}
+.btn-accent:hover{background:#0055a3;}
+.hero{
+    position:relative;
+    color:#fff;
+    text-align:center;
+    background:url('https://images.unsplash.com/photo-1523731407965-536d5e3be4b6?auto=format&fit=crop&w=1400&q=60') center/cover no-repeat;
+    padding:6rem 0;
+}
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.5);
+}
+.hero > .container{position:relative;z-index:1;}
+.card{
+    background:#fff;
+    border-radius:6px;
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+    overflow:hidden;
+}
+.card img{width:100%;height:auto;display:block;}
+.card-body{padding:1rem;}
+.table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:.5rem;
+}
+.table th,.table td{
+    border:1px solid #ddd;
+    padding:.5rem;
+    text-align:left;
+}
+.table th{background:#eee;font-weight:600;}
+.stat{
+    text-align:center;
+    font-size:1.5rem;
+    font-weight:600;
+    color:#004d7a;
+}
+.stat small{
+    display:block;
+    font-size:.9rem;
+    font-weight:400;
+    color:#666;
+}
+footer{
+    background:#212529;
+    color:#ccc;
+    text-align:center;
+    font-size:.9rem;
+    padding:2rem 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================== ZONE 1 – HERO ================== -->
+<section class="hero" id="hero">
+    <div class="container">
+        <h1 data-block-id="b_hero_headline">Jet Engine Blade Scan (JEBS)</h1>
+        <p data-block-id="b_hero_subhead">Precision inspection of turbine‑blade geometry – fast, reliable, repeatable.</p>
+        <a href="#download"
+           class="btn btn-primary"
+           data-block-id="b_hero_cta"
+           data-analytics-event="hero_cta_click"
+           data-conversion-goal="true">
+            Download Full Report
+        </a>
+    </div>
+</section>
+
+<!-- ================== ZONE 2 – PRODUCT DETAIL ================== -->
+<section id="product-detail">
+    <div class="container">
+        <h2 class="text-center mb-2">What is JEBS?</h2>
+
+        <div class="row mb-2">
+            <!-- Description + Features -->
+            <div class="col col-6">
+                <p data-block-id="b_what_body">
+                    JEBS (Jet Engine Blade Scan) is a visual‑plus‑digital inspection method used to verify the dimensional compliance of turbine blades before they are cleared for assembly.
+                </p>
+                <ul data-block-id="b_what_list">
+                    <li>High‑resolution photography (pixel‑accurate)</li>
+                    <li>Caliper cross‑check for critical measurements</li>
+                    <li>Automatic pass/fail flagging against certified tolerance ranges</li>
+                </ul>
+            </div>
+
+            <!-- Why it matters -->
+            <div class="col col-6">
+                <h3 data-block-id="b_why_headline">Why it matters</h3>
+                <p data-block-id="b_why_body">Ensuring every blade meets the designed offsets prevents:</p>
+                <ul data-block-id="b_why_list">
+                    <li>Unbalanced rotor dynamics → reduced vibration</li>
+                    <li>Premature wear on the bearing train</li>
+                    <li>Loss of thrust and fuel‑efficiency penalties</li>
+                </ul>
+                <p class="mt-1" style="color:#28a745;font-weight:600;" data-block-id="b_why_summary">
+                    Result: Safer flight, lower life‑cycle cost.
+                </p>
+            </div>
+        </div>
+
+        <!-- Social‑Proof Stats -->
+        <h2 class="text-center mb-2">Proof of Accuracy</h2>
+        <div class="row mb-2">
+            <div class="col col-4"><div class="stat" data-block-id="b_metric_blades">2<br><small>Blade Types Scanned</small></div></div>
+            <div class="col col-4"><div class="stat" data-block-id="b_metric_measurements">30+<br><small>Individual Measurements</small></div></div>
+            <div class="col col-4"><div class="stat" data-block-id="b_metric_pass_rate">93%<br><small>Pass Rate</small></div></div>
+        </div>
+
+        <!-- Demo video CTA -->
+        <div class="row mb-4">
+            <div class="col col-12 text-center">
+                <a href="https://www.veed.io/view/467cbc27-30f4-4a52-b132-3913ffab3f12?panel=share"
+                   class="btn btn-accent"
+                   data-block-id="b_video_demo"
+                   data-analytics-event="demo_video_play"
+                   target="_blank"
+                   rel="noopener">
+                    Watch Live Segmentation Demo
+                </a>
+            </div>
+        </div>
+
+        <!-- Gallery -->
+        <h2 class="text-center mb-2">Inspection Gallery</h2>
+        <div class="row">
+            <div class="col col-4">
+                <div class="card">
+                    <img src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image10.png"
+                         alt="CAD overlay of blade E8172‑12 with measurement points"
+                         data-block-id="b_img_e8172_12_overview">
+                    <div class="card-body"><p class="mb-0">Blade E8172‑12 (CAD)</p></div>
+                </div>
+            </div>
+            <div class="col col-4">
+                <div class="card">
+                    <img src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image18.png"
+                         alt="CAD overlay of blade E8172‑7 with measurement points"
+                         data-block-id="b_img_e8172_7_overview">
+                    <div class="card-body"><p class="mb-0">Blade E8172‑7 (CAD)</p></div>
+                </div>
+            </div>
+            <div class="col col-4">
+                <div class="card">
+                    <img src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image5.png"
+                         alt="Summary table of all measurements for blade E8172‑12"
+                         data-block-id="b_img_measurement_table">
+                    <div class="card-body"><p class="mb-0">Measurement Summary</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================== ZONE 3 – INTEGRATION ================== -->
+<section id="integration" class="text-center">
+    <div class="container">
+        <h2 class="mb-2">Seamless Integration</h2>
+        <p class="mb-2" data-block-id="b_integration_body">
+            JEBS data can be exported directly to your maintenance‑management system or analytics platform via CSV, JSON or API endpoints.
+        </p>
+        <div class="row">
+            <div class="col col-4">
+                <img src="https://img.icons8.com/ios-filled/100/000000/database.png"
+                     alt="API integration"
+                     style="width:60px;height:auto;"
+                     data-block-id="b_icon_api">
+                <p>REST API</p>
+            </div>
+            <div class="col col-4">
+                <img src="https://img.icons8.com/ios-filled/100/000000/file.png"
+                     alt="CSV export"
+                     style="width:60px;height:auto;"
+                     data-block-id="b_icon_csv">
+                <p>CSV / JSON Export</p>
+            </div>
+            <div class="col col-4">
+                <img src="https://img.icons8.com/ios-filled/100/000000/cloud.png"
+                     alt="Cloud storage"
+                     style="width:60px;height:auto;"
+                     data-block-id="b_icon_cloud">
+                <p>Secure Cloud Storage</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================== ZONE 4 – CASE STUDIES ================== -->
+<section id="case-studies">
+    <div class="container">
+        <h2 class="text-center mb-2">Case Studies</h2>
+        <div class="row">
+            <!-- Case 1 -->
+            <div class="col col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 data-block-id="b_case1_title">A320‑200 Engine Overhaul</h3>
+                        <p data-block-id="b_case1_body">
+                            Using JEBS reduced inspection time by 35 % and identified a previously‑undetected tip‑wear issue that saved the airline $120 k in warranty claims.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Case 2 -->
+            <div class="col col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 data-block-id="b_case2_title">Military Fighter Jet Service</h3>
+                        <p data-block-id="b_case2_body">
+                            A fleet of 48 fighter jets achieved a 98 % blade‑pass rate after adopting JEBS, extending service‑intervals by 12 months.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================== ZONE 5 – CONVERSION ================== -->
+<section id="download" class="text-center">
+    <div class="container">
+        <h2 data-block-id="b_cta_download_headline">Download the Full JEBS Report</h2>
+        <p data-block-id="b_cta_download_body" class="mb-2">
+            All raw data, detailed measurement tables and high‑resolution images are available for immediate download.
+        </p>
+        <a href="https://drive.google.com/drive/u/1/folders/1lO4T_J1jmC-ucicuDl_O1y-rvGJ0Azwd"
+           class="btn btn-primary"
+           data-block-id="b_cta_download_button"
+           data-analytics-event="download_cta_click"
+           data-conversion-goal="true"
+           target="_blank"
+           rel="noopener">
+            Download from Google Drive
+        </a>
+
+        <p class="mt-2" data-block-id="b_contact_info">
+            Email: <a href="mailto:quality@jetscan.com">quality@jetscan.com</a> |
+            Phone: +1‑800‑555‑0123
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p data-block-id="b_footer_legal">© 2025 Jet Engine Inspection Services – All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+e
+        </a>
+
+        <p class="mt-2" data-block-id="b_contact_info">
+            Email: <a href="mailto:quality@jetscan.com">quality@jetscan.com</a> |
+            Phone: +1‑800‑555‑0123
+        </p>
+    </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+    <p data-block-id="b_footer_legal">© 2025 Jet Engine Inspection Services – All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+/* =============================================================================
+
+A lightweight theme for styling Readme's UI with Notion's core theme elements.
+These variables are not currently dynamically generated and are current as of 05/2021
+
+============================================================================= */
+
+/* =============================================================================
+
+	colors.
+
+============================================================================= */
+
+:root {
+	--color-text--regular: #040404;
+	--color-text--dark: #000000;
+	--color-text--light: rgba(0, 0, 0, 0.4);
+	--color-text--medium: rgba(0, 0, 0, 0.6);
+	--color-text--red: #eb5757;
+	--color-text--dark-red: #b00c00;
+	--color-text--white: #ffffff;
+	--color-text--dark: #111111;
+	--color-text--cream: #463d34;
+	--color-text--blue: #274253;
+	--color-text--purple: #382f49;
+	--color-text--orange: #5b3322;
+
+	--color-borders--regular: rgba(0, 0, 0, 0.1);
+	--color-borders--cream: #d4cfcb;
+	--color-borders--blue: #b5c7d8;
+	--color-borders--purple: #aca8bd;
+	--color-borders--orange: #debeac;
+
+	--color-backgrounds--cream-light: #fffefc;
+	--color-backgrounds--cream-dark: #f9f5f1;
+	--color-backgrounds--cream-darkest: #f2eeea;
+	--color-backgrounds--blue-light: #eff3f5;
+	--color-backgrounds--blue-dark: #d7e3e8;
+	--color-backgrounds--purple-light: #e7e6ea;
+	--color-backgrounds--purple-dark: #d9d7df;
+	--color-backgrounds--orange-light: #f8ede7;
+	--color-backgrounds--orange-dark: #f2dccf;
+	--color-backgrounds--red: #e16259;
+}
+
+/* =============================================================================
+
+	typography
+
+============================================================================= */
+
+:root {
+	--type-size--body-xs: 14px;
+	--type-size--body-s: 15px;
+	--type-size--body-m: 17px;
+	--type-size--body-l: 20px;
+
+	--type-size--title-s: 22px;
+	--type-size--title-m: 30px;
+	--type-size--title-l: 38px;
+	--type-size--title-xl: 50px;
+	--type-size--title-xxl: 74px;
+
+	--type-line-height--ui-s: 1.55em;
+	--type-line-height--ui-m: 1.55em;
+
+	--type-line-height--body-s: 1.55em;
+	--type-line-height--body-m: 1.55em;
+	--type-line-height--body-l: 1.55em;
+
+	--type-line-height--title-s: 1.3em;
+	--type-line-height--title-m: 1.3em;
+	--type-line-height--title-l: 1.2em;
+	--type-line-height--title-xl: 1.2em;
+	--type-line-height--title-xxl: 1.1em;
+}
+
+.title {
+	font-family: "inter", sans-serif;
+	font-style: normal;
+	font-weight: 700 !important;
+	color: var(--color-text--dark);
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.title--mono {
+	font-family: "Roboto Mono", monospace;
+	font-weight: normal !important;
+}
+
+.title--s {
+	font-size: var(--type-size--title-s);
+	line-height: var(--type-line-height--title-s);
+	margin-bottom: 12px;
+}
+
+.title--m {
+	font-size: var(--type-size--title-m);
+	line-height: var(--type-line-height--title-m);
+}
+
+.title--l {
+	font-size: var(--type-size--title-l);
+	line-height: var(--type-line-height--title-l);
+}
+
+.title--xl {
+	font-size: var(--type-size--title-xl);
+	line-height: var(--type-line-height--title-xl);
+	letter-spacing: -1px;
+}
+
+.title--xxl {
+	font-size: var(--type-size--title-xxl);
+	line-height: var(--type-line-height--title-xxl);
+}
+
+.copy {
+	font-family: "inter", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.5em;
+	color: var(--color-text--medium);
+	margin: 0 auto 8px;
+}
+
+.copy--mono {
+	font-family: "Roboto Mono", monospace;
+	font-weight: normal;
+}
+
+.copy--body-xs {
+	font-size: var(--type-size--body-xs);
+}
+
+.copy--body-s {
+	font-size: var(--type-size--body-s);
+}
+
+.copy--body-m {
+	font-size: var(--type-size--body-m);
+}
+
+.copy--body-l {
+	font-size: var(--type-size--body-l);
+}

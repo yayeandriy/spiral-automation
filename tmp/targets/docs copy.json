@@ -1,0 +1,4060 @@
+{
+  "children": [
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spectre: Complete B2B User Guide"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The complete enterprise guide for implementing augmented reality facilities maintenance workflows with Spectre by Spiral. Designed for defense facilities, critical infrastructure, and complex industrial environments."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Platform Overview"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spectre is a cutting-edge augmented reality platform developed by Spiral for technicians who carry out preventative maintenance of defense facilities. Operating on the HoloLens 2 headset, Spectre provides essential tools and actionable insights to ensure critical systems such as utilities and temperature control systems are maintained efficiently during both scheduled and emergency situations."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Target Audience and Applications"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spectre was initially developed as a prototype for Tindall Air Force Base to streamline complex maintenance procedures and is positioned as the point of conversion of all data stored in the digital twin."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Primary Users"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Field technicians responsible for preventative maintenance of critical defense facilities and infrastructure"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Use Scenarios"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Scheduled maintenance and emergency response situations requiring on-site access at equipment locations"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Why Modern Facilities Need Spectre"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Modern facilities, industrial plants, and defense infrastructures face constant challenges with dozens of maintenance tasks that must be coordinated daily. Traditional methods like paper checklists, scattered spreadsheets, and disconnected inventory systems lead to delays, errors, and high costs."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Technicians in the field need real-time instructions, history, and logistics support"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Planners must translate engineering documents into actionable workflows"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Complex maintenance coordination requires precise spatial awareness"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Critical systems like HVAC, utilities, and temperature control demand zero-error maintenance"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spectre solves this by connecting the planning office with field execution through a spatial, interactive, and intelligent workflow built on mixed reality technology."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Getting Started Guide"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "System Requirements"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Hardware Requirements"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Primary Platform"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Microsoft HoloLens 2 with enterprise management capabilities and spatial tracking"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Network Infrastructure"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Reliable WiFi connectivity for digital twin synchronization and cloud data processing"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial Setup and Deployment"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Install Spectre application on HoloLens devices through enterprise deployment"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Configure digital twin data integration and spatial reference mapping"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Set up user authentication and role-based access controls"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Conduct field validation tests with known maintenance procedures"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User Training Framework"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spectre requires structured training to ensure technicians can effectively navigate AR interfaces and execute maintenance workflows."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Basic Operators"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Hand menu navigation, window management, and basic maintenance task execution"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Advanced Technicians"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Complex workflow management, inventory ordering, and documentation procedures"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "System Administrators"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Digital twin integration, system configuration, and enterprise deployment management"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Core Features and Capabilities"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Maintenance Ticket Execution and Workflow"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The platform allows technicians to execute maintenance tickets through the dedicated maintenance spots window, launched directly from the hand menu. This comprehensive workflow system provides complete task management capabilities."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Read complete task descriptions with detailed instructions and requirements"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Review attached documents necessary for task completion including technical specifications"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Mark items on checklists upon completion with automatic progress tracking"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Move seamlessly between tasks or switch between current active maintenance items"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integrated Logistics and Inventory Management"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Efficiency is maximized through integrated logistics tools that connect field operations directly with supply chain management systems."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Inventory Catalog Access"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Complete inventory catalog available within the maintenance menu for immediate parts lookup"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Direct Parts Ordering"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Technicians can order parts directly from the AR interface with automatic approval workflows"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Advanced Documentation and Historical Insight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spectre transforms documentation by linking physical actions to digital records, providing unprecedented historical context and visual documentation capabilities."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Historical Context"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "View pictures from previous maintenance sessions to understand current conditions and changes"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Real-time Capture"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Snapshot feature for immediate record creation with 2-3 second processing time"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "code",
+      "code": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Snapshot Procedure:\n1. Press the snapshot button in AR interface\n2. Look at the desired capture area\n3. Perform air tap gesture to capture\n4. Picture appears in documentation list within 2-3 seconds"
+            }
+          }
+        ],
+        "language": "plain text"
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User Interface and AR Controls"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The user interface is intuitive and tailored for hands-free AR operation, enabling technicians to work efficiently while maintaining focus on physical maintenance tasks."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Menu Access: Main menu accessed by looking at the left hand"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Window Management: Move windows by grabbing them by the sidebar with gesture controls"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Following Mode: Press unpin button to allow windows to follow when moving far away"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Fixed Positioning: Press pin button to freeze windows in specific locations"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Visibility Control: Toggle object families on/off by pressing icons next to respective equipment groups"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Business Use Cases and Value Proposition"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Core Applications"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spectre integrates planning and field execution into one comprehensive MR platform with multiple high-impact applications."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Execute Planned Maintenance"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Technicians open MR tasks directly in the field with spatial context"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Task descriptions, documents, and as-built drawings spatially anchored at equipment"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Step-by-step checklist workflow ensures consistent execution across all technicians"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Plan Smarter with Digital Twins"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Planners upload spreadsheets, builder models, or as-built drawings for automatic integration"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Automatic mapping into digital twin environment accessible through MR interfaces"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Complex facilities become interactive 3D workspaces for both office and field staff"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Value for Stakeholders"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Technicians"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Hands-free workflows, fewer errors, faster execution with comprehensive historical context"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Planners"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Seamless conversion of office data into MR tasks with automated workflow generation"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Managers"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Real-time visibility into task progress, inventory status, and historical maintenance logs"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Enterprises"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Reduced downtime, improved compliance, lower total cost of ownership"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Defense Facility Case Study"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "At Tyndall Air Force Base, complex utilities and temperature control systems required frequent maintenance. Using Spectre, technicians could access maintenance spots windows directly in the field, view previous session photos before beginning work, and execute comprehensive maintenance procedures with unprecedented efficiency and accuracy."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implementation Workflow"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Standard Maintenance Workflow"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spectre provides a structured approach to maintenance execution that ensures consistency, accuracy, and comprehensive documentation across all operations."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Launch Application: Access Spectre from HoloLens main menu"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Open Maintenance Window: Launch maintenance spots window from hand menu"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Review Historical Context: View pictures from previous maintenance sessions"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Execute Tasks: Read descriptions, review documents, complete checklists"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Document Progress: Capture snapshots for current maintenance session"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Complete Documentation: Finalize records and sync with digital twin"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Digital Twin Integration"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spectre serves as the operational layer of the digital twin, converting all stored facility data into actionable AR experiences. This integration provides seamless data flow between planning systems and field execution."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Troubleshooting and Support"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Common Technical Issues"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spatial Tracking Problems"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "If AR objects appear misaligned or tracking seems inconsistent, verify environmental conditions and recalibrate spatial anchors. Ensure adequate lighting and clear sight lines to reference markers."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "code",
+      "code": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Troubleshooting Steps:\n1. Verify adequate ambient lighting conditions\n2. Check for environmental changes since last calibration\n3. Recalibrate spatial reference points\n4. Restart HoloLens application if tracking issues persist"
+            }
+          }
+        ],
+        "language": "plain text"
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Connectivity Issues"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Network connectivity problems can affect digital twin synchronization and data access. Verify network configuration and ensure reliable WiFi connectivity for optimal performance."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Support Resources"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Technical Support"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Enterprise support with dedicated response times for critical defense facility operations"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Training Programs"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Comprehensive certification programs for technicians, planners, and system administrators"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Security and Compliance"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Enterprise Security Framework"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spectre implements enterprise-grade security measures designed specifically for defense facilities and critical infrastructure environments, ensuring sensitive maintenance data and operational information remain protected."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "End-to-end encryption for all data transmission and storage operations"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Role-based access control with multi-factor authentication for technician verification"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Comprehensive audit logging for regulatory compliance and security monitoring"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Data residency and sovereignty controls for sensitive defense applications"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Defense and Infrastructure Compliance"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Defense Standards"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Compliance with DoD cybersecurity requirements and military facility maintenance standards"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Data Governance"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Enterprise data governance framework with privacy controls and retention policies"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "System Administration"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Enterprise Deployment Management"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "System administrators require comprehensive tools to manage Spectre deployments across multiple facilities and user groups while maintaining security and operational efficiency."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Centralized device management for HoloLens fleet deployment and updates"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User role management with granular permission controls for different technician levels"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Digital twin configuration and spatial mapping management for facility layouts"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integration configuration for ERP, CMMS, and other enterprise systems"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Performance Monitoring and Analytics"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Comprehensive monitoring capabilities provide insights into system usage, maintenance efficiency, and operational performance across the entire Spectre deployment."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integration Guide"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Enterprise System Integration"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spectre provides robust integration capabilities designed to connect seamlessly with existing enterprise systems, ensuring minimal disruption to current workflows while maximizing the value of existing data investments."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ERP System Integration: Connect with enterprise resource planning systems for parts ordering and inventory management"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "CMMS Integration: Synchronize with computerized maintenance management systems for work order processing"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Digital Twin Platforms: Interface with existing digital twin solutions and facility management systems"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Document Management: Connect with enterprise document repositories for technical drawings and procedures"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "API and Data Exchange Standards"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spectre supports industry-standard APIs and data formats to ensure compatibility with diverse enterprise environments and future-proof integration capabilities."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "code",
+      "code": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integration Standards:\n- RESTful APIs for real-time data exchange\n- Standard data formats: JSON, XML, CSV\n- Industry protocols: OPC-UA, MQTT for IoT integration\n- Authentication: OAuth 2.0, SAML, Active Directory"
+            }
+          }
+        ],
+        "language": "json"
+      }
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Training and Support"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Comprehensive Training Programs"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Successful Spectre implementation requires structured training programs tailored to different user roles and technical proficiency levels within the organization."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Field Technician Training"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Hands-on AR navigation, maintenance workflow execution, and documentation procedures"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Administrator Training"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "System configuration, digital twin management, and enterprise integration setup"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Ongoing Support Services"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spiral provides comprehensive support services to ensure optimal Spectre performance and maximize return on investment throughout the deployment lifecycle."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "24/7 technical support for critical defense facility operations"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Regular system updates and feature enhancements"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Performance optimization and system tuning services"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Custom integration development for specialized requirements"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Release Notes and Updates"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Current Version Features"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The latest version of Spectre includes enhanced capabilities based on field deployment experience and user feedback from defense facility implementations."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Improved spatial tracking accuracy for complex industrial environments"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Enhanced inventory integration with real-time availability checking"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Advanced documentation capabilities with automated report generation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Expanded digital twin integration supporting multiple facility management platforms"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Roadmap and Future Enhancements"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spiral continues to enhance Spectre based on evolving defense facility requirements and emerging AR technology capabilities, ensuring long-term value and competitive advantage."
+            }
+          }
+        ]
+      }
+    }
+  ]
+},
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Core Platform Components"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Spotter AR Collect"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Real-time sensor data capture with AR guidance for precise spatial positioning"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Spotter AR Visualize"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Advanced visualization platform for analyzing and overlaying completed NDT results in physical space"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Target Industries and Applications"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Aerospace: Turbine blade inspection, fuselage integrity checks, composite structure evaluation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Power Generation: Boiler tube assessment, pressure vessel monitoring, weld seam verification"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Oil & Gas: Pipeline corrosion mapping, offshore platform structural integrity, refinery equipment monitoring"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Manufacturing: Quality control integration, production line inspection automation, component validation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Infrastructure: Bridge deck evaluation, railway track assessment, building structural monitoring"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Getting Started Guide"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "System Requirements"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Hardware Prerequisites"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "AR Headset Requirements"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Microsoft HoloLens 2, Magic Leap 2, or compatible mixed reality device with spatial tracking capabilities"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "NDT Equipment Integration"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Compatible ultrasonic, eddy current, phased array, or thermographic inspection equipment with digital output"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Network Infrastructure"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Minimum 100 Mbps network connection for real-time data synchronization and cloud processing capabilities. Enterprise-grade WiFi 6 recommended for optimal performance in industrial environments."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Initial Setup Process"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Install Spotter applications on designated AR devices through enterprise app distribution"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Configure sensor integration protocols and calibrate equipment-specific parameters"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Establish spatial reference points using AprilTag markers or SLAM-based positioning"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Conduct system validation tests with known reference standards"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "User Training Requirements"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Level 1 Operators"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Basic AR navigation and data collection procedures"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Level 2 Technicians"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Advanced visualization and analysis capabilities"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Level 3 Engineers"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "System administration and integration management"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Core Features and Capabilities"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spotter AR Collect Features"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Digital Spatial Grid Overlay"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Projects precision coordinate meshes directly onto inspection surfaces, enabling accurate spatial encoding of sensor measurements. Grid alignment automatically adapts to part geometry, ensuring consistent reference positioning across inspection sessions."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "code",
+      "code": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Grid Precision: <1.5mm positioning accuracy\nAlignment Methods: AprilTag markers, SLAM tracking\nUpdate Rate: 30 fps real-time overlay\nCompatibility: Curved and complex geometries"
+            }
+          }
+        ],
+        "language": "plain text"
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "AR-Anchored Probe Positioning"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Real-time visual feedback system that tracks probe location through optical sensors and inertial measurement units. Provides immediate confirmation of measurement positioning with visual highlighting of sampling zones."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Optical tracking via integrated cameras and marker systems"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Inertial sensor fusion for enhanced positioning accuracy"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Real-time visual confirmation of probe placement"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Automated quality control for measurement positioning"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Live Data Synchronization"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Streams measurement values directly into AR visualization with minimal latency. Supports multiple NDT modalities simultaneously, enabling comprehensive multi-sensor inspections."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spotter AR Visualize Features"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Geo-Registered Result Overlays"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Imports and displays NDT scan data as precise overlays on physical structures. Color-coded visualization system indicates defect severity, material thickness variations, and structural anomalies."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Defect Visualization"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Crack indications appear as colored overlays with depth annotations and severity classifications"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Material Properties"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Thickness maps and material property variations displayed through heat map visualization"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Cross-Section Analysis"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Interactive slicing capabilities for volumetric scan data, revealing subsurface defect planes and internal structure analysis. Particularly valuable for phased array and tomographic inspection results."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Business Use Cases and ROI"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Primary Use Case Scenarios"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Preventive Maintenance Programs"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Enables condition-based maintenance strategies through progressive damage monitoring. Historical comparison capabilities allow engineering teams to track defect growth rates and predict maintenance intervals more accurately."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Reduced unplanned downtime through early defect detection"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Optimized maintenance scheduling based on actual condition data"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Enhanced asset lifecycle management through comprehensive tracking"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Improved regulatory compliance with detailed inspection records"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Quality Control Integration"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Seamlessly integrates into manufacturing quality control workflows, providing real-time feedback on production quality and enabling immediate corrective actions when defects are detected."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Remote Expert Consultation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Enables subject matter experts to provide guidance remotely through shared AR visualization. Reduces travel costs and accelerates decision-making for critical inspection scenarios."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Quantifiable Business Benefits"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Inspection Efficiency"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "25-40% reduction in inspection time through guided workflows and eliminated rework"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Data Quality"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "90% improvement in spatial accuracy and measurement traceability"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Cost Reduction"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "15-30% reduction in overall inspection costs through process optimization"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Implementation Workflow"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Standard Inspection Workflow"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Pre-Inspection Planning: Load inspection plans and configure spatial reference points"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "AR Grid Deployment: Project coordinate mesh onto target inspection surface"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Guided Data Collection: Execute sensor measurements with real-time AR positioning feedback"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Data Processing: Automated spatial indexing and defect analysis algorithms"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Visualization Analysis: Deploy AR overlays for comprehensive result interpretation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Documentation Export: Generate compliance reports with spatial metadata integration"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integration Points"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spotter integrates with existing enterprise systems through standardized APIs and industry-standard data formats. Common integration points include:"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Enterprise Asset Management (EAM) systems for maintenance workflow integration"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Manufacturing Execution Systems (MES) for production quality monitoring"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Document Management Systems for regulatory compliance reporting"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Business Intelligence platforms for inspection analytics and trending"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Troubleshooting and Support"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Common Technical Issues"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "AR Tracking Accuracy"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "If spatial alignment appears inconsistent, verify AprilTag marker positioning and ensure adequate lighting conditions. Recalibrate spatial reference points if tracking drift exceeds 2mm tolerance."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "code",
+      "code": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Troubleshooting Steps:\n1. Check marker visibility and condition\n2. Verify adequate ambient lighting (>500 lux)\n3. Recalibrate spatial anchors\n4. Restart tracking subsystem if necessary"
+            }
+          }
+        ],
+        "language": "plain text"
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Sensor Integration Problems"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Verify communication protocols and ensure sensor firmware compatibility. Check data streaming rates and buffer configurations for optimal performance."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Support Resources"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Technical Support"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "24/7 enterprise support with guaranteed response times for critical production environments"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Training Programs"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Comprehensive certification programs for operators, technicians, and system administrators"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Security and Compliance"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Data Security Framework"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spotter implements enterprise-grade security measures to protect sensitive inspection data and ensure regulatory compliance across multiple industry standards."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "End-to-end encryption for data transmission and storage"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Role-based access control with multi-factor authentication"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Comprehensive audit logging for regulatory compliance"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Data residency controls for international deployment"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Regulatory Compliance"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Industry Standards"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "ASME, ASTM, AWS, and ISO compliance for NDT documentation requirements"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Data Governance"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "GDPR and industry-specific privacy regulations compliance framework"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Integration and API Reference"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "API Integration Overview"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Spotter provides RESTful APIs for seamless integration with existing enterprise systems. All endpoints support JSON data exchange with comprehensive error handling and status reporting."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "code",
+      "code": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Base URL: https://api.spotter.enterprise/v1\nAuthentication: OAuth 2.0 / API Key\nRate Limits: 1000 requests/hour (enterprise tier)\nData Formats: JSON, XML (legacy support)"
+            }
+          }
+        ],
+        "language": "json"
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Core API Endpoints"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Inspection Management: Create, update, and retrieve inspection sessions"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Data Export: Retrieve spatial measurement data and analysis results"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Asset Management: Integrate with digital twin and asset registry systems"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Reporting Interface: Generate compliance reports and audit documentation"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

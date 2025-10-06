@@ -1,0 +1,43 @@
+/* =============================================================================
+
+Scaffolding for /examples page
+These styles are not currently dynamically generated and are current as of 05/2021
+
+============================================================================= */
+
+.examples-page {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (max-width: 1160px) {
+	.examples-page {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+.examples-page-header {
+	margin-bottom: 30px;
+}
+
+.examples-page-content .title:not(.title--xs),
+.examples-page-content .copy,
+.examples-page-content .examples-page-media {
+	margin-bottom: 23px;
+}
+
+.examples-page-content .title--xs {
+	margin-bottom: 0;
+}
+
+.examples-page-media {
+	display: block;
+}
+
+.examples-page-media img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}

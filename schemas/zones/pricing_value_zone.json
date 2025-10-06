@@ -1,0 +1,487 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Pricing & Value Zone Content Schema",
+  "description": "Content zone for pricing plans, value propositions, ROI calculations, and cost-benefit information",
+  "type": "object",
+  "properties": {
+    "zone_id": {
+      "type": "string",
+      "description": "Unique identifier for the zone"
+    },
+    "zone_type": {
+      "type": "string",
+      "const": "pricing_value_zone",
+      "description": "Type of zone - must be pricing_value_zone"
+    },
+    "zone_name": {
+      "type": "string",
+      "description": "Human-readable name for the zone"
+    },
+    "zone_purpose": {
+      "type": "string",
+      "description": "Primary purpose and goal of this zone"
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Order position of zone on the page"
+    },
+    "is_above_fold": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether zone appears above the fold"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["critical", "high"],
+      "default": "high",
+      "description": "Content importance priority - pricing zones are typically high priority"
+    },
+    "content_strategy": {
+      "type": "string",
+      "enum": ["value_demonstration", "pricing_transparency", "cost_justification"],
+      "default": "value_demonstration",
+      "description": "Content strategy for pricing & value zones"
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/pricing_value_section"
+      },
+      "description": "Content sections within the pricing & value zone"
+    }
+  },
+  "required": ["zone_id", "zone_type", "zone_name", "position", "sections"],
+  "definitions": {
+    "pricing_value_section": {
+      "type": "object",
+      "properties": {
+        "section_id": {
+          "type": "string",
+          "description": "Unique identifier for the section"
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "pricing_plans_section", "value_proposition_section", "roi_calculator_section",
+            "cost_comparison_section", "pricing_faq_section", "enterprise_pricing_section",
+            "free_trial_section", "money_back_guarantee_section"
+          ],
+          "description": "Type of section - pricing and value focused types"
+        },
+        "section_name": {
+          "type": "string",
+          "description": "Human-readable name for the section"
+        },
+        "section_purpose": {
+          "type": "string",
+          "description": "Primary purpose of this section"
+        },
+        "content_structure": {
+          "type": "string",
+          "enum": [
+            "pricing_cards", "comparison_table", "calculator", "value_grid", "faq_accordion"
+          ],
+          "description": "Organizational structure - pricing presentation layouts"
+        },
+        "content_flow": {
+          "type": "string",
+          "enum": ["side_by_side", "tiered", "calculator_based"],
+          "default": "side_by_side",
+          "description": "How content flows within the section"
+        },
+        "blocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/pricing_value_block"
+          },
+          "description": "Individual content blocks within the section"
+        }
+      },
+      "required": ["section_id", "section_type", "section_name", "blocks"]
+    },
+    "pricing_value_block": {
+      "type": "object",
+      "properties": {
+        "block_id": {
+          "type": "string",
+          "description": "Unique identifier for the block"
+        },
+        "block_category": {
+          "type": "string",
+          "enum": [
+            "pricing_content", "value_content", "calculation_content", "guarantee_content"
+          ],
+          "description": "High-level category of the content block"
+        },
+        "block_type": {
+          "type": "string",
+          "enum": [
+            "pricing_card", "pricing_tier", "roi_calculator", "value_proposition",
+            "cost_savings", "pricing_comparison", "guarantee_badge", "trial_offer",
+            "enterprise_contact", "pricing_faq", "discount_banner", "payment_options"
+          ],
+          "description": "Specific type of content block suitable for pricing & value zones"
+        },
+        "content": {
+          "$ref": "#/definitions/block_content_data",
+          "description": "The actual content data of the block"
+        },
+        "functionality": {
+          "$ref": "#/definitions/block_functionality",
+          "description": "Interactive functionality and behavior"
+        },
+        "metadata": {
+          "$ref": "#/definitions/content_metadata",
+          "description": "Additional metadata for the content block"
+        }
+      },
+      "required": ["block_id", "block_category", "block_type", "content"]
+    },
+    "block_content_data": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Title of the pricing plan or value proposition"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the pricing plan or value offering"
+        },
+        "pricing_plan": {
+          "type": "object",
+          "properties": {
+            "plan_name": { "type": "string" },
+            "plan_type": {
+              "type": "string",
+              "enum": ["free", "starter", "professional", "enterprise", "custom"]
+            },
+            "price": {
+              "type": "object",
+              "properties": {
+                "amount": { "type": "number" },
+                "currency": { "type": "string", "default": "USD" },
+                "billing_period": {
+                  "type": "string",
+                  "enum": ["monthly", "yearly", "one_time", "per_user", "per_usage"]
+                },
+                "display_price": { "type": "string" }
+              }
+            },
+            "discount": {
+              "type": "object",
+              "properties": {
+                "percentage": { "type": "number" },
+                "original_price": { "type": "number" },
+                "discount_label": { "type": "string" },
+                "expires": { "type": "string", "format": "date" }
+              }
+            },
+            "features": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "feature": { "type": "string" },
+                  "included": { "type": "boolean" },
+                  "limit": { "type": "string" },
+                  "description": { "type": "string" }
+                }
+              }
+            },
+            "limits": {
+              "type": "object",
+              "properties": {
+                "users": { "type": "string" },
+                "storage": { "type": "string" },
+                "api_calls": { "type": "string" },
+                "projects": { "type": "string" }
+              }
+            },
+            "popular": { "type": "boolean" },
+            "recommended": { "type": "boolean" },
+            "cta_text": { "type": "string" },
+            "cta_url": { "type": "string", "format": "uri" }
+          },
+          "description": "Detailed pricing plan information"
+        },
+        "value_propositions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "value_statement": { "type": "string" },
+              "quantified_benefit": { "type": "string" },
+              "proof_point": { "type": "string" },
+              "icon": { "type": "string" }
+            }
+          },
+          "description": "Value propositions and benefits"
+        },
+        "roi_calculator": {
+          "type": "object",
+          "properties": {
+            "input_fields": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "field_name": { "type": "string" },
+                  "field_type": { "type": "string" },
+                  "default_value": { "type": "string" },
+                  "min_value": { "type": "number" },
+                  "max_value": { "type": "number" },
+                  "unit": { "type": "string" }
+                }
+              }
+            },
+            "calculation_formula": { "type": "string" },
+            "result_display": {
+              "type": "object",
+              "properties": {
+                "savings_per_month": { "type": "string" },
+                "savings_per_year": { "type": "string" },
+                "payback_period": { "type": "string" },
+                "roi_percentage": { "type": "string" }
+              }
+            }
+          },
+          "description": "ROI calculator configuration"
+        },
+        "cost_comparison": {
+          "type": "object",
+          "properties": {
+            "comparison_type": {
+              "type": "string",
+              "enum": ["competitors", "in_house", "status_quo", "alternatives"]
+            },
+            "scenarios": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "scenario_name": { "type": "string" },
+                  "cost": { "type": "number" },
+                  "hidden_costs": { "type": "array", "items": { "type": "string" } },
+                  "time_investment": { "type": "string" },
+                  "total_cost_ownership": { "type": "number" }
+                }
+              }
+            }
+          },
+          "description": "Cost comparison data"
+        },
+        "guarantees": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "guarantee_type": {
+                "type": "string",
+                "enum": ["money_back", "uptime", "satisfaction", "results"]
+              },
+              "period": { "type": "string" },
+              "conditions": { "type": "string" },
+              "badge_url": { "type": "string", "format": "uri" }
+            }
+          },
+          "description": "Guarantees and risk-reduction offers"
+        },
+        "trial_offers": {
+          "type": "object",
+          "properties": {
+            "trial_type": {
+              "type": "string",
+              "enum": ["free_trial", "freemium", "pilot_program", "poc"]
+            },
+            "duration": { "type": "string" },
+            "limitations": { "type": "array", "items": { "type": "string" } },
+            "full_access": { "type": "boolean" },
+            "credit_card_required": { "type": "boolean" },
+            "upgrade_path": { "type": "string" }
+          },
+          "description": "Free trial and evaluation offers"
+        },
+        "payment_options": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "method": {
+                "type": "string",
+                "enum": ["credit_card", "paypal", "bank_transfer", "invoice", "purchase_order"]
+              },
+              "accepted_cards": { "type": "array", "items": { "type": "string" } },
+              "currencies": { "type": "array", "items": { "type": "string" } },
+              "security_info": { "type": "string" }
+            }
+          },
+          "description": "Accepted payment methods"
+        },
+        "enterprise_info": {
+          "type": "object",
+          "properties": {
+            "custom_pricing": { "type": "boolean" },
+            "volume_discounts": { "type": "boolean" },
+            "dedicated_support": { "type": "boolean" },
+            "sla_available": { "type": "boolean" },
+            "contact_sales": { "type": "string" },
+            "minimum_commitment": { "type": "string" }
+          },
+          "description": "Enterprise pricing and features"
+        },
+        "media_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for pricing graphics, badges, or comparison charts"
+        },
+        "alt_text": {
+          "type": "string",
+          "description": "Alternative text for accessibility"
+        }
+      }
+    },
+    "block_functionality": {
+      "type": "object",
+      "properties": {
+        "interactive": {
+          "type": "boolean",
+          "description": "Whether the block is interactive"
+        },
+        "interaction_type": {
+          "type": "string",
+          "enum": [
+            "click", "calculate", "select_plan", "toggle_billing", "contact_sales", "start_trial"
+          ],
+          "description": "Type of interaction supported"
+        },
+        "dynamic_pricing": {
+          "type": "boolean",
+          "description": "Whether pricing updates based on user selections"
+        },
+        "currency_conversion": {
+          "type": "boolean",
+          "description": "Whether multiple currencies are supported"
+        },
+        "billing_toggle": {
+          "type": "boolean",
+          "description": "Whether users can toggle between monthly/yearly billing"
+        },
+        "action_target": {
+          "type": "string",
+          "description": "Target for pricing actions (checkout, contact sales, trial signup)"
+        },
+        "tracking": {
+          "type": "object",
+          "properties": {
+            "analytics_event": {
+              "type": "string",
+              "description": "Analytics event name"
+            },
+            "pricing_engagement": {
+              "type": "boolean",
+              "description": "Whether this tracks pricing engagement"
+            },
+            "plan_selection": {
+              "type": "boolean",
+              "description": "Whether to track plan selections"
+            },
+            "calculator_usage": {
+              "type": "boolean",
+              "description": "Whether to track calculator usage"
+            },
+            "conversion_value": {
+              "type": "number",
+              "description": "Value associated with this pricing action"
+            }
+          }
+        }
+      }
+    },
+    "content_metadata": {
+      "type": "object",
+      "properties": {
+        "created_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Content creation timestamp"
+        },
+        "updated_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp"
+        },
+        "version": {
+          "type": "string",
+          "description": "Content version"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "review", "approved", "published"],
+          "description": "Content status"
+        },
+        "pricing_strategy": {
+          "type": "string",
+          "enum": ["value_based", "competitive", "cost_plus", "freemium"],
+          "description": "Pricing strategy being employed"
+        },
+        "target_market": {
+          "type": "string",
+          "enum": ["smb", "mid_market", "enterprise", "consumer"],
+          "description": "Target market segment"
+        },
+        "price_testing": {
+          "type": "object",
+          "properties": {
+            "ab_test_active": { "type": "boolean" },
+            "test_variant": { "type": "string" },
+            "test_name": { "type": "string" }
+          },
+          "description": "A/B testing information for pricing"
+        },
+        "regional_pricing": {
+          "type": "boolean",
+          "description": "Whether pricing varies by region"
+        },
+        "accessibility": {
+          "type": "object",
+          "properties": {
+            "aria_label": {
+              "type": "string",
+              "description": "ARIA label for screen readers"
+            },
+            "keyboard_navigation": {
+              "type": "boolean",
+              "description": "Supports keyboard navigation"
+            },
+            "screen_reader_pricing": {
+              "type": "string",
+              "description": "Screen reader optimized pricing description"
+            }
+          }
+        }
+      }
+    }
+  },
+  "zone_guidelines": {
+    "description": "Content zone for pricing plans, value propositions, ROI calculations, and cost-benefit information",
+    "typical_content": [
+      "Pricing plans and tiers", "Value propositions", "ROI calculators", "Cost comparisons",
+      "Free trial offers", "Money-back guarantees", "Enterprise pricing", "Payment options",
+      "Discount offers", "Feature comparisons by plan"
+    ],
+    "content_strategy": "Demonstrate clear value and justify pricing through transparent cost-benefit analysis",
+    "conversion_impact": "Critical - directly impacts purchase decisions and revenue",
+    "best_practices": [
+      "Make pricing transparent and easy to understand",
+      "Highlight most popular or recommended plans",
+      "Include annual billing discounts",
+      "Provide clear feature comparison between tiers",
+      "Offer risk-free trials or guarantees",
+      "Show total cost of ownership benefits"
+    ]
+  }
+}

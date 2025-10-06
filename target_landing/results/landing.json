@@ -1,0 +1,3741 @@
+[
+  {
+    "data": {
+      "children": [
+        {
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Spectre: The AR Platform Empowering Critical Facilities Maintenance"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Transform your maintenance workflows with augmented reality technology. Spectre gives technicians superpowers through hands-free digital twin integration, real-time task execution, and seamless data management on Microsoft HoloLens 2."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_2",
+                      "heading_2": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Who Is This For?"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Defense Facilities Managers"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Industrial Plant Operations Teams"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Field Maintenance Technicians"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Critical Infrastructure Operators"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_2",
+                      "heading_2": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Key Benefits"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Reduce maintenance errors by 40%"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Accelerate task completion times"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Eliminate paper-based workflows"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Ensure consistent documentation"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Core Capabilities"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Digital Twin Integration"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Convert facility data from spreadsheets, CAD drawings, and building models into interactive 3D environments. All facility information converges into one spatially-aware platform accessible through mixed reality."
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Automatic data conversion from existing systems"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Real-time facility model updates"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Spatial anchoring of equipment data"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Task Execution System"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Execute maintenance tickets through dedicated AR interfaces. Access task descriptions, attached documents, and step-by-step checklists directly at equipment locations with hands-free navigation."
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Interactive maintenance windows"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Dynamic checklist management"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Multi-task workflow switching"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Integrated Logistics"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Access inventory catalogs and order parts directly through the AR interface. Real-time inventory visibility eliminates delays and ensures technicians have required components when needed."
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "In-field inventory management"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Direct parts ordering system"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "ERP system synchronization"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Advanced Documentation & Historical Context"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Transform documentation workflows by linking physical actions to digital records. Access historical maintenance data and capture new documentation seamlessly within the AR environment."
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "View previous maintenance session photos"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Hands-free snapshot capture with air tap"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Automatic timestamping and geo-tagging"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "callout",
+                      "callout": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Snapshot Feature: Press the snapshot button, look at the desired capture area, and perform an air tap. Pictures appear in the documentation list within 2-3 seconds."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "User Experience & Interface"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Intuitive AR Controls"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Access main menu by looking at left hand"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Move windows by grabbing sidebar"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Pin/unpin windows to follow or stay fixed"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Toggle object visibility by system type"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Hands-Free Operation"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Designed for technicians who need both hands free for maintenance work. All interactions use voice commands, eye tracking, and gesture controls optimized for field environments."
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Voice-activated commands"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Eye tracking navigation"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Air tap gestures"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Use Cases & Applications"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Preventative Maintenance"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Scheduled inspection cycles"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "HVAC system maintenance"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Utility system checks"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Temperature control systems"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Emergency Response"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Rapid failure diagnosis"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Emergency procedure access"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Critical system isolation"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Heat management systems"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Planning & Management"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Task sequence definition"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Resource allocation planning"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Progress monitoring"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Compliance reporting"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Proven Success: Tyndall Air Force Base Case Study"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Spectre was initially developed as a prototype for Tyndall Air Force Base to streamline complex maintenance procedures for defense facilities. The implementation successfully demonstrated:"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Significant reduction in maintenance time"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Improved technician confidence and efficiency"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Enhanced documentation accuracy"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Streamlined emergency response procedures"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "callout",
+                      "callout": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Challenge: Complex utilities and temperature control systems required frequent maintenance with multiple documentation requirements and coordination between planning office and field execution."
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "callout",
+                      "callout": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Solution: Spectre provided technicians with maintenance spots windows directly in the field, access to historical photos, and seamless task switching capabilities."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Technical Specifications"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Platform Requirements"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Microsoft HoloLens 2 headsets"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Windows Mixed Reality platform"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Network connectivity for data sync"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Integration with existing ERP systems"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Data Integration"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "CAD drawing import and conversion"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Spreadsheet and database connectivity"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Building Information Modeling (BIM)"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Real-time data synchronization"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Value Proposition by Role"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "For Technicians"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Hands-free access to all task information"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Reduced errors through guided workflows"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Faster task completion times"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Enhanced safety through better visibility"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "For Planners"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Seamless office-to-field data conversion"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Automated workflow creation"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Real-time task progress visibility"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Improved resource allocation"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "For Managers"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Comprehensive maintenance analytics"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Reduced facility downtime"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Enhanced compliance documentation"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Lower total cost of ownership"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Implementation & Support"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Deployment Process"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "numbered_list_item",
+                      "numbered_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Facility assessment and data audit"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "numbered_list_item",
+                      "numbered_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Digital twin model creation"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "numbered_list_item",
+                      "numbered_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "System integration and testing"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "numbered_list_item",
+                      "numbered_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Technician training and certification"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "numbered_list_item",
+                      "numbered_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Pilot deployment and optimization"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Ongoing Support"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "24/7 technical support"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Regular software updates"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Performance monitoring and optimization"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Continuous training programs"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "bulleted_list_item",
+                      "bulleted_list_item": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Feature enhancement requests"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Transform Your Maintenance Operations Today"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Ready to revolutionize your facilities maintenance with augmented reality? Spectre delivers measurable improvements in efficiency, accuracy, and cost reduction while ensuring your critical systems remain operational."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "callout",
+                      "callout": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Schedule a demonstration to see Spectre in action at your facility. Experience firsthand how augmented reality transforms maintenance workflows."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "callout",
+                      "callout": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Contact our team for a customized assessment of your facility needs and implementation timeline. Get started with a pilot program today."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Developed by Spiral - Leading the future of industrial augmented reality solutions."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "BAR Borescope Assistant Reporter"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Modernizing borescope inspections with AI-powered reporting for aircraft engine maintenance."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Hero Product Interface Mockup - Clean dashboard showing AI analysis results with highlighted defects and AMM reference citations in sidebar"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Transform tedious 60-minute manual inspections into precise 5-minute automated reports with full CFM56 AMM compliance. BAR eliminates inspection inconsistencies while reducing AOG exposure."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Before/After Process Comparison - Side-by-side visual showing traditional manual documentation vs BAR automated workflow with time stamps"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "The Challenge"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Time-consuming: 30-60 minutes per blade documentation"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Subjective: Inconsistent defect classification between inspectors"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Costly delays: $25,000+ per aircraft per day AOG penalties"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "The BAR Solution"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "AI-powered image analysis with automated defect detection"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Automated AMM reference validation and compliance checking"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Structured PDF reports with audit trails ready in minutes"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Proven Results"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "80% faster reporting turnaround time"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "$120,000+ saved in first quarter implementation"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Consistent findings across all inspection teams"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "How BAR Works"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Process Flow Diagram - Four-step visual workflow from image upload through AI analysis to report generation and MRO integration"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Step 1: Upload Images"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Upload borescope images of hot section blades, compressor vanes, or combustion liners. System supports standard inspection formats and multi-angle captures."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Step 2: AI Analysis"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "AI engine detects chord-wise cracks, erosion, corrosion, burn spots, and FOD. Every detection cross-checked against CFM56 AMM Feb 2021 reference thresholds."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Step 3: Report Generation"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Structured reports include finding type, AMM reference codes, severity levels, and recommended actions. Export-ready PDFs with traceable audit metadata."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Step 4: System Integration"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Instant delivery via PDF downloads, MRO platform sync with AMOS, Ramco, and Trax, or API integration into airline maintenance ecosystems."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Product Interface Screenshot - BAR analysis view showing borescope image with red overlay highlighting trailing edge crack detection"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Analysis Panel Detail - Right sidebar displaying AMM reference 72-00-00 Fig. 5 with serviceable recommendation for 250-cycle extension"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "AI Detection Capabilities"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Defect Types Matrix - Visual grid showing different anomaly categories with example images and detection accuracy rates"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Crack Detection"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Chord-wise and span-wise crack identification with precise measurement capabilities"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Surface Analysis"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Erosion patterns at leading and trailing edges plus comprehensive corrosion assessment"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Thermal Damage"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Burn spots, thermal discoloration, and foreign object damage detection with severity classification"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Why BAR Matters"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Benefits Overview Chart - Visual grid showing safety, efficiency, consistency, and cost advantages with supporting metrics"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Safety First"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Every finding linked to authoritative OEM-approved manuals, reducing risk of undocumented or misclassified defects."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Consistency at Scale"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "BAR ensures 10 different inspectors produce identical report structure for the same defect across all locations."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Enterprise Integration"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "API integration connects BAR seamlessly to your existing digital maintenance pipeline, not as standalone software."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Time and Cost Reduction"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Average inspection time drops from 45 minutes to 5 minutes, dramatically reducing AOG exposure and maintenance costs."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Data Security Standards"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "AES-256 encryption at upload with ISO/IEC 27001 and GDPR compliant processing for complete data protection."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Customer Success"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Customer Testimonial Card - European airline case study with company logo and key performance metrics in clean layout"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "We cut borescope inspection analysis time in half. What once took nearly an hour now takes under 5 minutes, and our engineers get consistent AMM references every time."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Lead Engineer, European Airline"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Regional Operator Case Study"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "300+ inspections completed in 6 months"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "80% faster reporting turnaround achieved"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Performance Metrics Infographic - Clean visual showing inspection volume growth, time savings, and cost reduction data"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Consistent findings across 12-person inspection team"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "$120,000+ AOG cost savings in first quarter alone"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Target Markets"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Industry Sectors Grid - Professional icons representing airlines, MRO providers, and licensed inspection services"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Airlines"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Reduce aircraft downtime, standardize maintenance procedures across entire fleets, and eliminate hidden AOG costs."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "MRO Service Providers"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Scale inspection capacity without workforce expansion. Ensure consistent quality standards across multiple service locations."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Licensed Inspectors"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Focus on critical decision-making rather than report documentation. BAR handles paperwork while preserving professional judgment authority."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Pricing Options"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Pricing Tiers Table - Clean three-column comparison showing Starter, Pro, and Enterprise plans with feature highlights"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Starter BAR"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "$199 per month"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Up to 50 inspections monthly"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "PDF export functionality"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Email support included"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "BAR Professional"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "$599 per month"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Up to 300 inspections monthly"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Full API integration capabilities"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Priority technical support"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "BAR Enterprise"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Custom pricing available"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Unlimited inspection capacity"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Direct AMOS, Ramco, Trax integrations"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Dedicated customer success manager"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "All pricing plans include 14-day free trial period plus 30-day money-back guarantee for risk-free evaluation."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Call-to-Action Button - Start Your Free Trial Today with prominent styling and contact information"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "ROI Calculator"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Interactive ROI Tool - Calculator interface showing potential savings based on fleet size and current inspection frequency"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Mid-Size Fleet Operator"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Save 40+ engineering hours monthly through consistent inspection documentation and reduced manual reporting work."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Large MRO Organization"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Standardize hundreds of inspections across multiple client accounts with unified reporting and quality standards."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "AOG Prevention Value"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Up to $25,000 daily savings per aircraft through faster inspection turnaround and reduced ground time exposure."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Integration Capabilities"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "System Architecture Diagram - Clean visual showing BAR connections to major MRO platforms and airline maintenance systems"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "MRO Platform Sync"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Direct integration with AMOS, Ramco Aviation, and Trax maintenance management systems"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "API Connectivity"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "RESTful API with webhook support for seamless data flow into existing airline digital maintenance ecosystems"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_4",
+                      "heading_4": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Report Export Options"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "PDF downloads with audit metadata, structured data formats, and customizable report templates for compliance"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "heading_3",
+                      "heading_3": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Digital Transformation in Aviation"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "Evolution Timeline - Visual progression from manual paper-based inspections to AI-powered digital compliance systems"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "column_list",
+          "column_list": {
+            "children": [
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "BAR represents the evolution of aircraft maintenance from reactive to predictive. It empowers inspectors with AI assistance while maintaining human oversight and professional accountability."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "column",
+                "column": {
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "paragraph": {
+                        "rich_text": [
+                          {
+                            "type": "text",
+                            "text": {
+                              "content": "In aviation where regulatory traceability is paramount, BAR functions as your digital assistant that maintains perfect AMM reference accuracy and comprehensive inspection documentation."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+]

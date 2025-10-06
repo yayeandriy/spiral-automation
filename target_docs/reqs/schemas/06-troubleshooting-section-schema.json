@@ -1,0 +1,166 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://spiral-automation.com/schemas/troubleshooting-section.json",
+  "title": "Troubleshooting Section Schema",
+  "description": "Schema for Troubleshooting section with problem resolution and debugging guidance",
+  "type": "object",
+  "required": ["name", "tag", "description", "children"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "const": "Troubleshooting",
+      "description": "Must be 'Troubleshooting'"
+    },
+    "tag": {
+      "type": "string",
+      "const": "troubleshooting",
+      "description": "Must be 'troubleshooting'"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 500,
+      "description": "Overview of troubleshooting resources and problem resolution"
+    },
+    "children": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 15,
+      "items": { "$ref": "#/definitions/troubleshooting_child" }
+    },
+    "metadata": { "$ref": "#/definitions/metadata" }
+  },
+  "definitions": {
+    "troubleshooting_child": {
+      "type": "object",
+      "required": ["name", "description"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[A-Z][a-zA-Z0-9 \\-&:?]+$",
+          "minLength": 8,
+          "maxLength": 120,
+          "examples": [
+            "Connection Issues",
+            "Measurement Accuracy Problems",
+            "Login & Authentication Errors",
+            "Performance & Speed Issues"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 25,
+          "maxLength": 2000,
+          "description": "Problem description and resolution guidance"
+        },
+        "bullet_points": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 10,
+          "items": {
+            "type": "string",
+            "minLength": 15,
+            "maxLength": 250,
+            "description": "Troubleshooting steps, solutions, or diagnostic information"
+          }
+        },
+        "problem_category": {
+          "type": "string",
+          "enum": [
+            "connectivity",
+            "performance",
+            "authentication",
+            "configuration",
+            "hardware",
+            "software",
+            "data_accuracy",
+            "user_interface"
+          ],
+          "description": "Category of the problem being addressed"
+        },
+        "severity": {
+          "type": "string",
+          "enum": ["critical", "high", "medium", "low"],
+          "description": "Impact level of the issue"
+        },
+        "common_causes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 10,
+            "maxLength": 200
+          },
+          "description": "Typical root causes of this problem"
+        },
+        "solution_steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["step", "instruction"],
+            "properties": {
+              "step": { "type": "integer", "minimum": 1 },
+              "instruction": { "type": "string", "minLength": 15, "maxLength": 400 },
+              "warning": { "type": "string", "maxLength": 200 },
+              "expected_result": { "type": "string", "maxLength": 200 }
+            }
+          }
+        },
+        "code_examples": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/code_example" }
+        },
+        "links": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/link" }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "debugging", "error-resolution", "connectivity", "performance",
+              "authentication", "configuration", "hardware", "software",
+              "critical", "common-issue", "known-bug"
+            ]
+          }
+        }
+      }
+    },
+    "code_example": {
+      "type": "object",
+      "required": ["title", "code"],
+      "properties": {
+        "title": { "type": "string", "minLength": 8, "maxLength": 100 },
+        "code": { "type": "string", "minLength": 10 },
+        "language": {
+          "type": "string",
+          "enum": ["bash", "javascript", "python", "sql", "json", "yaml", "powershell", "cmd"]
+        },
+        "description": { "type": "string", "maxLength": 300 }
+      }
+    },
+    "link": {
+      "type": "object",
+      "required": ["title", "url"],
+      "properties": {
+        "title": { "type": "string", "minLength": 5, "maxLength": 100 },
+        "url": { "type": "string", "format": "uri" },
+        "description": { "type": "string", "maxLength": 200 }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "last_updated": { "type": "string", "format": "date" },
+        "author": { "type": "string", "maxLength": 100 },
+        "priority": { "type": "string", "enum": ["high", "medium", "low"] },
+        "target_audience": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["developers", "administrators", "end-users", "support-staff"] }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

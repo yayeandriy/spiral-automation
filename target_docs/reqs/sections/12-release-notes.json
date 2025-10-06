@@ -1,0 +1,27 @@
+{
+  "name": "Release Notes",
+  "tag": "release-notes",
+  "description": "Information about product updates, new features, bug fixes, and version history",
+  "children": [
+    {
+      "name": "Latest Updates",
+      "description": "Most recent product updates, new features, and improvements"
+    },
+    {
+      "name": "Version History",
+      "description": "Complete changelog of all product versions and their respective updates"
+    },
+    {
+      "name": "Breaking Changes",
+      "description": "Important changes that may affect existing implementations or require updates"
+    },
+    {
+      "name": "Deprecation Notices",
+      "description": "Features being phased out, timeline for deprecation, and migration guidance"
+    },
+    {
+      "name": "Upgrade Instructions",
+      "description": "Step-by-step procedures for upgrading to newer versions safely"
+    }
+  ]
+}

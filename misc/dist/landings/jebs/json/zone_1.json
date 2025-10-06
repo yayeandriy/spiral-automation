@@ -1,0 +1,404 @@
+{
+  "blocks": [
+    {
+      "object": "block",
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "🚀 JEBS - Precision Jet Engine Blade Inspection"
+            },
+            "annotations": {
+              "bold": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Advanced AI-powered measurement system delivering "
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "micron-level accuracy"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": " for aerospace manufacturing quality control. Automate your blade inspection process with confidence."
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": ""
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🎬 Watch Demo"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "🎬"
+                    },
+                    "color": "blue"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "📞 Request Quote"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "📞"
+                    },
+                    "color": "green"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "📊 Key Performance Metrics"
+            },
+            "annotations": {
+              "bold": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "±0.01mm"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\nMeasurement Precision"
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "🎯"
+                    },
+                    "color": "blue"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "8+"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\nMeasurement Points"
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "📍"
+                    },
+                    "color": "green"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "99.7%"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\nAccuracy Rate"
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "✅"
+                    },
+                    "color": "green"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "5min"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\nInspection Time"
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "⚡"
+                    },
+                    "color": "orange"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🖼️ Hero Image Placeholder"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\n"
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "File: assets/blade-measurement-hero.jpg"
+                        },
+                        "annotations": {
+                          "code": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\nHigh-resolution image showing jet engine blade being measured with measurement points overlay and JEBS system interface"
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "🖼️"
+                    },
+                    "color": "gray"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": ""
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

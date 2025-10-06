@@ -1,0 +1,368 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Product Showcase Zone Content Schema",
+  "description": "Content zone for detailed product demonstrations, screenshots, and visual presentations",
+  "type": "object",
+  "properties": {
+    "zone_id": {
+      "type": "string",
+      "description": "Unique identifier for the zone"
+    },
+    "zone_type": {
+      "type": "string",
+      "const": "product_showcase_zone",
+      "description": "Type of zone - must be product_showcase_zone"
+    },
+    "zone_name": {
+      "type": "string",
+      "description": "Human-readable name for the zone"
+    },
+    "zone_purpose": {
+      "type": "string",
+      "description": "Primary purpose and goal of this zone"
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Order position of zone on the page"
+    },
+    "is_above_fold": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether zone appears above the fold"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["high", "medium"],
+      "default": "high",
+      "description": "Content importance priority - product showcase is typically high priority"
+    },
+    "content_strategy": {
+      "type": "string",
+      "enum": ["demonstrational", "visual_storytelling"],
+      "default": "demonstrational",
+      "description": "Content strategy for product showcase zones"
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/product_showcase_section"
+      },
+      "description": "Content sections within the product showcase zone"
+    }
+  },
+  "required": ["zone_id", "zone_type", "zone_name", "position", "sections"],
+  "definitions": {
+    "product_showcase_section": {
+      "type": "object",
+      "properties": {
+        "section_id": {
+          "type": "string",
+          "description": "Unique identifier for the section"
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "product_gallery_section", "demo_section", "screenshot_section",
+            "product_video_section", "interactive_demo_section", "product_tour_section",
+            "interface_showcase_section", "workflow_demonstration_section"
+          ],
+          "description": "Type of section - product showcase focused types"
+        },
+        "section_name": {
+          "type": "string",
+          "description": "Human-readable name for the section"
+        },
+        "section_purpose": {
+          "type": "string",
+          "description": "Primary purpose of this section"
+        },
+        "content_structure": {
+          "type": "string",
+          "enum": [
+            "gallery", "carousel", "tab_layout", "split_view", "fullscreen", 
+            "interactive_demo", "step_by_step"
+          ],
+          "description": "Organizational structure - visual presentation layouts"
+        },
+        "content_flow": {
+          "type": "string",
+          "enum": ["linear", "interactive", "user_controlled"],
+          "default": "interactive",
+          "description": "How content flows within the section"
+        },
+        "blocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/product_showcase_block"
+          },
+          "description": "Individual content blocks within the section"
+        }
+      },
+      "required": ["section_id", "section_type", "section_name", "blocks"]
+    },
+    "product_showcase_block": {
+      "type": "object",
+      "properties": {
+        "block_id": {
+          "type": "string",
+          "description": "Unique identifier for the block"
+        },
+        "block_category": {
+          "type": "string",
+          "enum": [
+            "visual_content", "interactive_content", "media_content", "demo_content"
+          ],
+          "description": "High-level category of the content block"
+        },
+        "block_type": {
+          "type": "string",
+          "enum": [
+            "product_screenshot", "product_video", "interactive_demo", "product_gallery",
+            "feature_highlight", "interface_mockup", "workflow_diagram", "before_after",
+            "product_tour_step", "demo_annotation", "zoom_detail", "product_comparison_visual",
+            "use_case_demo", "integration_visual", "dashboard_preview"
+          ],
+          "description": "Specific type of content block suitable for product showcase zones"
+        },
+        "content": {
+          "$ref": "#/definitions/block_content_data",
+          "description": "The actual content data of the block"
+        },
+        "functionality": {
+          "$ref": "#/definitions/block_functionality",
+          "description": "Interactive functionality and behavior"
+        },
+        "metadata": {
+          "$ref": "#/definitions/content_metadata",
+          "description": "Additional metadata for the content block"
+        }
+      },
+      "required": ["block_id", "block_category", "block_type", "content"]
+    },
+    "block_content_data": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Title or caption for the showcase item"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of what's being shown"
+        },
+        "media_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for images, videos, or interactive demos"
+        },
+        "media_type": {
+          "type": "string",
+          "enum": ["image", "video", "gif", "interactive", "svg", "webp"],
+          "description": "Type of media content"
+        },
+        "thumbnail_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Thumbnail image for videos or galleries"
+        },
+        "alt_text": {
+          "type": "string",
+          "description": "Alternative text for accessibility"
+        },
+        "annotations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "x": { "type": "number" },
+              "y": { "type": "number" },
+              "label": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          },
+          "description": "Interactive annotations or hotspots on the image/demo"
+        },
+        "demo_steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "step_number": { "type": "integer" },
+              "title": { "type": "string" },
+              "description": { "type": "string" },
+              "media_url": { "type": "string", "format": "uri" },
+              "duration": { "type": "integer" }
+            }
+          },
+          "description": "Steps for guided product tours or demos"
+        },
+        "zoom_regions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "region_id": { "type": "string" },
+              "x": { "type": "number" },
+              "y": { "type": "number" },
+              "width": { "type": "number" },
+              "height": { "type": "number" },
+              "zoom_media_url": { "type": "string", "format": "uri" },
+              "description": { "type": "string" }
+            }
+          },
+          "description": "Zoomable regions for detailed views"
+        },
+        "comparison_data": {
+          "type": "object",
+          "properties": {
+            "before_media": { "type": "string", "format": "uri" },
+            "after_media": { "type": "string", "format": "uri" },
+            "comparison_points": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "description": "Before/after comparison content"
+        },
+        "interactive_elements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "element_id": { "type": "string" },
+              "element_type": { "type": "string" },
+              "trigger": { "type": "string" },
+              "action": { "type": "string" }
+            }
+          },
+          "description": "Interactive elements within the showcase"
+        }
+      }
+    },
+    "block_functionality": {
+      "type": "object",
+      "properties": {
+        "interactive": {
+          "type": "boolean",
+          "description": "Whether the block is interactive"
+        },
+        "interaction_type": {
+          "type": "string",
+          "enum": [
+            "click", "hover", "zoom", "pan", "play", "pause", "navigate",
+            "annotate", "compare", "step_through"
+          ],
+          "description": "Type of interaction supported"
+        },
+        "auto_play": {
+          "type": "boolean",
+          "description": "Whether videos or demos auto-play"
+        },
+        "controls_visible": {
+          "type": "boolean",
+          "description": "Whether media controls are visible"
+        },
+        "fullscreen_capable": {
+          "type": "boolean",
+          "description": "Whether content can be viewed in fullscreen"
+        },
+        "action_target": {
+          "type": "string",
+          "description": "Target of the action (demo URL, full gallery, etc.)"
+        },
+        "tracking": {
+          "type": "object",
+          "properties": {
+            "analytics_event": {
+              "type": "string",
+              "description": "Analytics event name"
+            },
+            "demo_engagement": {
+              "type": "boolean",
+              "description": "Whether this tracks demo engagement"
+            },
+            "view_duration": {
+              "type": "boolean",
+              "description": "Whether to track viewing duration"
+            }
+          }
+        }
+      }
+    },
+    "content_metadata": {
+      "type": "object",
+      "properties": {
+        "created_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Content creation timestamp"
+        },
+        "product_version": {
+          "type": "string",
+          "description": "Product version shown in showcase"
+        },
+        "version": {
+          "type": "string",
+          "description": "Content version"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "review", "approved", "published"],
+          "description": "Content status"
+        },
+        "showcase_type": {
+          "type": "string",
+          "enum": ["overview", "feature_specific", "workflow", "integration"],
+          "description": "Type of product showcase"
+        },
+        "target_audience": {
+          "type": "string",
+          "enum": ["general", "technical", "business", "developers"],
+          "description": "Primary audience for this showcase"
+        },
+        "device_context": {
+          "type": "string",
+          "enum": ["desktop", "mobile", "tablet", "responsive"],
+          "description": "Device context for the showcase"
+        },
+        "accessibility": {
+          "type": "object",
+          "properties": {
+            "aria_label": {
+              "type": "string",
+              "description": "ARIA label for screen readers"
+            },
+            "keyboard_navigation": {
+              "type": "boolean",
+              "description": "Supports keyboard navigation"
+            },
+            "screen_reader_description": {
+              "type": "string",
+              "description": "Detailed description for screen readers"
+            }
+          }
+        }
+      }
+    }
+  },
+  "zone_guidelines": {
+    "description": "Content zone for detailed product demonstrations, screenshots, and visual presentations",
+    "typical_content": [
+      "Product screenshots", "Demo videos", "Interactive tours", "Feature highlights",
+      "Interface mockups", "Workflow demonstrations", "Before/after comparisons",
+      "Detailed product galleries"
+    ],
+    "content_strategy": "Show don't tell - visual demonstration of product value",
+    "conversion_impact": "High - helps users visualize using the product",
+    "best_practices": [
+      "Use high-quality, recent screenshots",
+      "Keep demos focused and concise",
+      "Highlight key features prominently",
+      "Ensure fast loading for media content",
+      "Provide alternative formats for accessibility"
+    ]
+  }
+}

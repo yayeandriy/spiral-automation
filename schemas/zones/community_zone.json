@@ -1,0 +1,417 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Community Zone Content Schema",
+  "description": "Content zone for community engagement, forums, events, and user-generated content",
+  "type": "object",
+  "properties": {
+    "zone_id": {
+      "type": "string",
+      "description": "Unique identifier for the zone"
+    },
+    "zone_type": {
+      "type": "string",
+      "const": "community_zone",
+      "description": "Type of zone - must be community_zone"
+    },
+    "zone_name": {
+      "type": "string",
+      "description": "Human-readable name for the zone"
+    },
+    "zone_purpose": {
+      "type": "string",
+      "description": "Primary purpose and goal of this zone"
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Order position of zone on the page"
+    },
+    "is_above_fold": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether zone appears above the fold"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["medium", "low"],
+      "default": "medium",
+      "description": "Content importance priority - community zones are typically medium priority"
+    },
+    "content_strategy": {
+      "type": "string",
+      "enum": ["community_building", "engagement", "social_proof"],
+      "default": "community_building",
+      "description": "Content strategy for community zones"
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/community_section"
+      },
+      "description": "Content sections within the community zone"
+    }
+  },
+  "required": ["zone_id", "zone_type", "zone_name", "position", "sections"],
+  "definitions": {
+    "community_section": {
+      "type": "object",
+      "properties": {
+        "section_id": {
+          "type": "string",
+          "description": "Unique identifier for the section"
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "forum_section", "events_section", "user_gallery_section", "social_feed_section",
+            "community_stats_section", "contributor_section", "discussion_section",
+            "showcase_section", "meetups_section"
+          ],
+          "description": "Type of section - community focused types"
+        },
+        "section_name": {
+          "type": "string",
+          "description": "Human-readable name for the section"
+        },
+        "section_purpose": {
+          "type": "string",
+          "description": "Primary purpose of this section"
+        },
+        "content_structure": {
+          "type": "string",
+          "enum": [
+            "feed_layout", "card_grid", "timeline", "forum_threads", "event_calendar", "gallery_grid"
+          ],
+          "description": "Organizational structure - community content layouts"
+        },
+        "content_flow": {
+          "type": "string",
+          "enum": ["chronological", "grid", "threaded", "activity_based"],
+          "default": "activity_based",
+          "description": "How content flows within the section"
+        },
+        "blocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/community_block"
+          },
+          "description": "Individual content blocks within the section"
+        }
+      },
+      "required": ["section_id", "section_type", "section_name", "blocks"]
+    },
+    "community_block": {
+      "type": "object",
+      "properties": {
+        "block_id": {
+          "type": "string",
+          "description": "Unique identifier for the block"
+        },
+        "block_category": {
+          "type": "string",
+          "enum": [
+            "social_content", "event_content", "user_content", "metric_content"
+          ],
+          "description": "High-level category of the content block"
+        },
+        "block_type": {
+          "type": "string",
+          "enum": [
+            "forum_post", "event_card", "user_spotlight", "social_post", "community_metric",
+            "discussion_thread", "user_gallery_item", "contributor_profile", "meetup_event",
+            "community_news", "success_story", "feature_request", "poll_question"
+          ],
+          "description": "Specific type of content block suitable for community zones"
+        },
+        "content": {
+          "$ref": "#/definitions/block_content_data",
+          "description": "The actual content data of the block"
+        },
+        "functionality": {
+          "$ref": "#/definitions/block_functionality",
+          "description": "Interactive functionality and behavior"
+        },
+        "metadata": {
+          "$ref": "#/definitions/content_metadata",
+          "description": "Additional metadata for the content block"
+        }
+      },
+      "required": ["block_id", "block_category", "block_type", "content"]
+    },
+    "block_content_data": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Title of the community content"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description or summary of the content"
+        },
+        "content_text": {
+          "type": "string",
+          "description": "Main text content of posts or discussions"
+        },
+        "author": {
+          "type": "object",
+          "properties": {
+            "username": { "type": "string" },
+            "display_name": { "type": "string" },
+            "avatar_url": { "type": "string", "format": "uri" },
+            "profile_url": { "type": "string", "format": "uri" },
+            "badge": { "type": "string" },
+            "reputation_score": { "type": "integer" },
+            "join_date": { "type": "string", "format": "date" }
+          },
+          "description": "Author/user information"
+        },
+        "event_details": {
+          "type": "object",
+          "properties": {
+            "event_name": { "type": "string" },
+            "event_type": {
+              "type": "string",
+              "enum": ["webinar", "meetup", "conference", "workshop", "hackathon", "virtual", "in_person"]
+            },
+            "date": { "type": "string", "format": "date-time" },
+            "location": { "type": "string" },
+            "capacity": { "type": "integer" },
+            "registered_count": { "type": "integer" },
+            "registration_url": { "type": "string", "format": "uri" },
+            "description": { "type": "string" },
+            "speakers": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "title": { "type": "string" },
+                  "bio": { "type": "string" },
+                  "avatar_url": { "type": "string", "format": "uri" }
+                }
+              }
+            }
+          },
+          "description": "Event-specific information"
+        },
+        "discussion_data": {
+          "type": "object",
+          "properties": {
+            "topic": { "type": "string" },
+            "category": { "type": "string" },
+            "replies_count": { "type": "integer" },
+            "views_count": { "type": "integer" },
+            "last_activity": { "type": "string", "format": "date-time" },
+            "tags": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "solved": { "type": "boolean" },
+            "pinned": { "type": "boolean" }
+          },
+          "description": "Discussion thread information"
+        },
+        "community_metrics": {
+          "type": "object",
+          "properties": {
+            "total_members": { "type": "integer" },
+            "active_members": { "type": "integer" },
+            "posts_this_month": { "type": "integer" },
+            "events_this_month": { "type": "integer" },
+            "growth_rate": { "type": "string" }
+          },
+          "description": "Community statistics and metrics"
+        },
+        "user_showcase": {
+          "type": "object",
+          "properties": {
+            "project_name": { "type": "string" },
+            "project_description": { "type": "string" },
+            "project_url": { "type": "string", "format": "uri" },
+            "screenshot_url": { "type": "string", "format": "uri" },
+            "technologies_used": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "likes_count": { "type": "integer" },
+            "comments_count": { "type": "integer" }
+          },
+          "description": "User project showcase information"
+        },
+        "social_media_posts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "platform": {
+                "type": "string",
+                "enum": ["twitter", "linkedin", "discord", "slack", "reddit"]
+              },
+              "post_id": { "type": "string" },
+              "content": { "type": "string" },
+              "timestamp": { "type": "string", "format": "date-time" },
+              "engagement": {
+                "type": "object",
+                "properties": {
+                  "likes": { "type": "integer" },
+                  "shares": { "type": "integer" },
+                  "comments": { "type": "integer" }
+                }
+              }
+            }
+          },
+          "description": "Social media feed content"
+        },
+        "media_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for community images, videos, or content"
+        },
+        "media_type": {
+          "type": "string",
+          "enum": ["image", "video", "avatar", "project_screenshot"],
+          "description": "Type of community media"
+        },
+        "alt_text": {
+          "type": "string",
+          "description": "Alternative text for accessibility"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the content was created or last updated"
+        }
+      }
+    },
+    "block_functionality": {
+      "type": "object",
+      "properties": {
+        "interactive": {
+          "type": "boolean",
+          "description": "Whether the block is interactive"
+        },
+        "interaction_type": {
+          "type": "string",
+          "enum": [
+            "click", "like", "comment", "share", "join", "follow", "vote", "reply", "register"
+          ],
+          "description": "Type of interaction supported"
+        },
+        "user_generated": {
+          "type": "boolean",
+          "description": "Whether content is user-generated"
+        },
+        "moderated": {
+          "type": "boolean",
+          "description": "Whether content is moderated"
+        },
+        "real_time": {
+          "type": "boolean",
+          "description": "Whether content updates in real-time"
+        },
+        "action_target": {
+          "type": "string",
+          "description": "Target for community actions (forum URL, event registration, etc.)"
+        },
+        "tracking": {
+          "type": "object",
+          "properties": {
+            "analytics_event": {
+              "type": "string",
+              "description": "Analytics event name"
+            },
+            "community_engagement": {
+              "type": "boolean",
+              "description": "Whether this tracks community engagement"
+            },
+            "event_registration": {
+              "type": "boolean",
+              "description": "Whether to track event registrations"
+            },
+            "social_sharing": {
+              "type": "boolean",
+              "description": "Whether to track social sharing"
+            }
+          }
+        }
+      }
+    },
+    "content_metadata": {
+      "type": "object",
+      "properties": {
+        "created_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Content creation timestamp"
+        },
+        "updated_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp"
+        },
+        "version": {
+          "type": "string",
+          "description": "Content version"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "review", "approved", "published", "archived"],
+          "description": "Content status"
+        },
+        "community_category": {
+          "type": "string",
+          "enum": ["general", "technical", "events", "showcase", "feedback"],
+          "description": "Category of community content"
+        },
+        "engagement_level": {
+          "type": "string",
+          "enum": ["high", "medium", "low"],
+          "description": "Level of community engagement"
+        },
+        "moderation_status": {
+          "type": "string",
+          "enum": ["pending", "approved", "flagged", "removed"],
+          "description": "Moderation status of user-generated content"
+        },
+        "featured": {
+          "type": "boolean",
+          "description": "Whether content is featured prominently"
+        },
+        "accessibility": {
+          "type": "object",
+          "properties": {
+            "aria_label": {
+              "type": "string",
+              "description": "ARIA label for screen readers"
+            },
+            "keyboard_navigation": {
+              "type": "boolean",
+              "description": "Supports keyboard navigation"
+            }
+          }
+        }
+      }
+    }
+  },
+  "zone_guidelines": {
+    "description": "Content zone for community engagement, forums, events, and user-generated content",
+    "typical_content": [
+      "Forum discussions", "Community events", "User showcases", "Social media feeds",
+      "Community statistics", "Contributor profiles", "Event calendars", "Discussion threads",
+      "Success stories", "User galleries"
+    ],
+    "content_strategy": "Foster community engagement and showcase vibrant user ecosystem",
+    "conversion_impact": "Medium - builds trust through community validation and engagement",
+    "best_practices": [
+      "Highlight active community engagement",
+      "Showcase diverse community members",
+      "Keep event information current",
+      "Moderate user-generated content appropriately",
+      "Encourage participation with clear calls-to-action",
+      "Display community metrics to show vitality"
+    ]
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Education Zone Content Schema",
+  "description": "Content zone providing educational content, tutorials, guides, and learning resources",
+  "type": "object",
+  "properties": {
+    "zone_id": {
+      "type": "string",
+      "description": "Unique identifier for the zone"
+    },
+    "zone_type": {
+      "type": "string",
+      "const": "education_zone",
+      "description": "Type of zone - must be education_zone"
+    },
+    "zone_name": {
+      "type": "string",
+      "description": "Human-readable name for the zone"
+    },
+    "zone_purpose": {
+      "type": "string",
+      "description": "Primary purpose and goal of this zone"
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Order position of zone on the page"
+    },
+    "is_above_fold": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether zone appears above the fold"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["medium", "low"],
+      "default": "medium",
+      "description": "Content importance priority - education zones are typically medium priority"
+    },
+    "content_strategy": {
+      "type": "string",
+      "enum": ["educational", "informational", "tutorial"],
+      "default": "educational",
+      "description": "Content strategy for education zones"
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/education_section"
+      },
+      "description": "Content sections within the education zone"
+    }
+  },
+  "required": ["zone_id", "zone_type", "zone_name", "position", "sections"],
+  "definitions": {
+    "education_section": {
+      "type": "object",
+      "properties": {
+        "section_id": {
+          "type": "string",
+          "description": "Unique identifier for the section"
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "tutorial_section", "guide_section", "how_to_section", "faq_section",
+            "knowledge_base_section", "learning_path_section", "resource_library_section",
+            "documentation_section", "best_practices_section"
+          ],
+          "description": "Type of section - education focused types"
+        },
+        "section_name": {
+          "type": "string",
+          "description": "Human-readable name for the section"
+        },
+        "section_purpose": {
+          "type": "string",
+          "description": "Primary purpose of this section"
+        },
+        "content_structure": {
+          "type": "string",
+          "enum": [
+            "step_by_step", "accordion", "tab_layout", "article_list", 
+            "card_grid", "tree_structure", "timeline"
+          ],
+          "description": "Organizational structure - educational content layouts"
+        },
+        "content_flow": {
+          "type": "string",
+          "enum": ["linear", "hierarchical", "modular", "sequential"],
+          "default": "sequential",
+          "description": "How content flows within the section"
+        },
+        "blocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/education_block"
+          },
+          "description": "Individual content blocks within the section"
+        }
+      },
+      "required": ["section_id", "section_type", "section_name", "blocks"]
+    },
+    "education_block": {
+      "type": "object",
+      "properties": {
+        "block_id": {
+          "type": "string",
+          "description": "Unique identifier for the block"
+        },
+        "block_category": {
+          "type": "string",
+          "enum": [
+            "text_content", "media_content", "interactive_content", "reference_content"
+          ],
+          "description": "High-level category of the content block"
+        },
+        "block_type": {
+          "type": "string",
+          "enum": [
+            "tutorial_step", "guide_article", "faq_item", "how_to_step", "code_example",
+            "video_tutorial", "infographic", "checklist", "tip_box", "warning_box",
+            "note_box", "resource_link", "download_resource", "related_article",
+            "learning_objective", "quiz_question", "exercise", "case_study_example"
+          ],
+          "description": "Specific type of content block suitable for education zones"
+        },
+        "content": {
+          "$ref": "#/definitions/block_content_data",
+          "description": "The actual content data of the block"
+        },
+        "functionality": {
+          "$ref": "#/definitions/block_functionality",
+          "description": "Interactive functionality and behavior"
+        },
+        "metadata": {
+          "$ref": "#/definitions/content_metadata",
+          "description": "Additional metadata for the content block"
+        }
+      },
+      "required": ["block_id", "block_category", "block_type", "content"]
+    },
+    "block_content_data": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Title of the educational content"
+        },
+        "subtitle": {
+          "type": "string",
+          "description": "Subtitle or section heading"
+        },
+        "text": {
+          "type": "string",
+          "description": "Main educational text content"
+        },
+        "rich_text": {
+          "type": "string",
+          "description": "HTML or markdown formatted educational content"
+        },
+        "summary": {
+          "type": "string",
+          "description": "Brief summary or overview"
+        },
+        "learning_objectives": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "What users will learn from this content"
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Required knowledge before consuming this content"
+        },
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "step_number": { "type": "integer" },
+              "title": { "type": "string" },
+              "description": { "type": "string" },
+              "code_example": { "type": "string" },
+              "media_url": { "type": "string", "format": "uri" }
+            }
+          },
+          "description": "Step-by-step instructions or tutorial steps"
+        },
+        "code_examples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "language": { "type": "string" },
+              "code": { "type": "string" },
+              "description": { "type": "string" },
+              "filename": { "type": "string" }
+            }
+          },
+          "description": "Code examples and snippets"
+        },
+        "media_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for educational videos, images, or diagrams"
+        },
+        "media_type": {
+          "type": "string",
+          "enum": ["video", "image", "diagram", "infographic", "pdf", "interactive"],
+          "description": "Type of educational media"
+        },
+        "alt_text": {
+          "type": "string",
+          "description": "Alternative text for accessibility"
+        },
+        "resources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": { "type": "string" },
+              "url": { "type": "string", "format": "uri" },
+              "type": { 
+                "type": "string",
+                "enum": ["documentation", "tutorial", "tool", "template", "download"]
+              },
+              "description": { "type": "string" }
+            }
+          },
+          "description": "Additional learning resources and references"
+        },
+        "quiz_data": {
+          "type": "object",
+          "properties": {
+            "question": { "type": "string" },
+            "type": { 
+              "type": "string",
+              "enum": ["multiple_choice", "true_false", "fill_blank", "short_answer"]
+            },
+            "options": { 
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "correct_answer": { "type": "string" },
+            "explanation": { "type": "string" }
+          },
+          "description": "Quiz or assessment content"
+        },
+        "difficulty_level": {
+          "type": "string",
+          "enum": ["beginner", "intermediate", "advanced", "expert"],
+          "description": "Difficulty level of the educational content"
+        },
+        "estimated_time": {
+          "type": "string",
+          "description": "Estimated time to complete or read"
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Topic tags for categorization"
+        }
+      }
+    },
+    "block_functionality": {
+      "type": "object",
+      "properties": {
+        "interactive": {
+          "type": "boolean",
+          "description": "Whether the block is interactive"
+        },
+        "interaction_type": {
+          "type": "string",
+          "enum": [
+            "expand", "collapse", "tab_switch", "quiz", "code_copy", 
+            "bookmark", "progress_tracking", "note_taking"
+          ],
+          "description": "Type of interaction supported"
+        },
+        "progress_trackable": {
+          "type": "boolean",
+          "description": "Whether progress can be tracked for this content"
+        },
+        "bookmarkable": {
+          "type": "boolean",
+          "description": "Whether content can be bookmarked"
+        },
+        "searchable": {
+          "type": "boolean",
+          "description": "Whether content is included in search"
+        },
+        "tracking": {
+          "type": "object",
+          "properties": {
+            "analytics_event": {
+              "type": "string",
+              "description": "Analytics event name"
+            },
+            "engagement_tracking": {
+              "type": "boolean",
+              "description": "Whether this tracks learning engagement"
+            },
+            "completion_tracking": {
+              "type": "boolean",
+              "description": "Whether this tracks completion"
+            },
+            "time_tracking": {
+              "type": "boolean",
+              "description": "Whether to track time spent"
+            }
+          }
+        }
+      }
+    },
+    "content_metadata": {
+      "type": "object",
+      "properties": {
+        "created_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Content creation timestamp"
+        },
+        "updated_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp"
+        },
+        "version": {
+          "type": "string",
+          "description": "Content version"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "review", "approved", "published", "archived"],
+          "description": "Content status"
+        },
+        "author": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "title": { "type": "string" },
+            "bio": { "type": "string" },
+            "avatar_url": { "type": "string", "format": "uri" }
+          },
+          "description": "Content author information"
+        },
+        "content_type": {
+          "type": "string",
+          "enum": ["tutorial", "guide", "reference", "faq", "best_practice"],
+          "description": "Type of educational content"
+        },
+        "target_audience": {
+          "type": "string",
+          "enum": ["beginner", "intermediate", "advanced", "all_levels"],
+          "description": "Target skill level"
+        },
+        "learning_path": {
+          "type": "string",
+          "description": "Associated learning path or curriculum"
+        },
+        "certification_eligible": {
+          "type": "boolean",
+          "description": "Whether content contributes to certification"
+        },
+        "accessibility": {
+          "type": "object",
+          "properties": {
+            "aria_label": {
+              "type": "string",
+              "description": "ARIA label for screen readers"
+            },
+            "keyboard_navigation": {
+              "type": "boolean",
+              "description": "Supports keyboard navigation"
+            },
+            "transcript_available": {
+              "type": "boolean",
+              "description": "Video transcript available"
+            },
+            "captions_available": {
+              "type": "boolean",
+              "description": "Video captions available"
+            }
+          }
+        }
+      }
+    }
+  },
+  "zone_guidelines": {
+    "description": "Content zone providing educational content, tutorials, guides, and learning resources",
+    "typical_content": [
+      "Step-by-step tutorials", "How-to guides", "FAQs", "Best practices",
+      "Code examples", "Video tutorials", "Learning resources", "Documentation links",
+      "Knowledge base articles", "Tips and tricks"
+    ],
+    "content_strategy": "Provide valuable educational content that builds expertise and trust",
+    "conversion_impact": "Medium - builds trust and positions as expert, supports conversion indirectly",
+    "best_practices": [
+      "Structure content logically with clear steps",
+      "Include practical examples and code snippets",
+      "Use multiple content formats (text, video, images)",
+      "Provide downloadable resources when helpful",
+      "Keep content updated and accurate",
+      "Include difficulty levels and time estimates"
+    ]
+  }
+}

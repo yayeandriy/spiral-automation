@@ -1,0 +1,92 @@
+{
+  "type": "landing_page_requirements_template",
+  "timestamp": "2025-09-26",
+  "source": "1758885461211_zone.json",
+  "content": {
+    "message": "Sure thing! To create a landing‑page definition that follows the schema, I just need a bit of context about the page you have in mind. Could you let me know:",
+    "requirements_checklist": [
+      {
+        "id": 1,
+        "category": "Industry & Product",
+        "question": "Industry / product type",
+        "examples": ["SaaS B2B", "e‑commerce", "fintech", "etc."],
+        "required": true,
+        "schema_impact": "Influences zone selection and content strategy"
+      },
+      {
+        "id": 2,
+        "category": "Conversion Goals",
+        "question": "Primary conversion goal",
+        "examples": ["lead gen", "demo request", "trial sign‑up", "etc."],
+        "required": true,
+        "schema_impact": "Determines conversion zone configuration and CTA placement"
+      },
+      {
+        "id": 3,
+        "category": "Target Audience",
+        "question": "Target audience",
+        "examples": ["enterprise", "SMB", "developers", "etc."],
+        "required": true,
+        "schema_impact": "Affects content complexity, messaging tone, and feature prioritization"
+      },
+      {
+        "id": 4,
+        "category": "Design Philosophy",
+        "question": "Preferred design philosophy",
+        "examples": ["minimal", "bold", "professional", "etc."],
+        "required": true,
+        "schema_impact": "Influences visual content blocks and layout structure"
+      },
+      {
+        "id": 5,
+        "category": "Zone Emphasis",
+        "question": "Any specific zones or sections you want to emphasize",
+        "examples": ["hero", "features", "pricing", "testimonials", "etc."],
+        "required": false,
+        "schema_impact": "Determines zone priority and positioning in page structure"
+      },
+      {
+        "id": 6,
+        "category": "Brand Assets",
+        "question": "Optional: any brand colors, fonts, or content snippets you already have",
+        "examples": ["#hex colors", "font families", "existing copy", "etc."],
+        "required": false,
+        "schema_impact": "Populates content blocks with actual brand-specific data"
+      }
+    ],
+    "outcome": "Once I have that, I'll generate a JSON structure that fits the schema and gives you a solid starting point for your landing page."
+  },
+  "schema_mapping": {
+    "industry_product_type": {
+      "maps_to": ["zone selection", "content_strategy", "block_types"],
+      "influences": "Overall landing page architecture and messaging approach"
+    },
+    "conversion_goal": {
+      "maps_to": ["conversion_zone", "cta_placement", "form_configuration"],
+      "influences": "Primary and secondary CTA positioning and functionality"
+    },
+    "target_audience": {
+      "maps_to": ["content_complexity", "messaging_tone", "feature_prioritization"],
+      "influences": "Content depth, technical language use, and social proof selection"
+    },
+    "design_philosophy": {
+      "maps_to": ["visual_content_blocks", "layout_structure", "media_types"],
+      "influences": "Visual hierarchy, color schemes, and interactive elements"
+    },
+    "zone_emphasis": {
+      "maps_to": ["zone_priority", "zone_positioning", "content_allocation"],
+      "influences": "Above-fold placement and content distribution across zones"
+    },
+    "brand_assets": {
+      "maps_to": ["content_population", "visual_consistency", "brand_alignment"],
+      "influences": "Actual content within blocks rather than structure"
+    }
+  },
+  "next_steps": [
+    "Collect requirements using the checklist above",
+    "Map requirements to appropriate zone schemas",
+    "Generate landing page JSON structure",
+    "Populate with specific content based on provided assets",
+    "Validate against landing page content schema"
+  ]
+}

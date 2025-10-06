@@ -1,0 +1,344 @@
+{
+  "documentation_structure": [
+    {
+      "name": "Overview",
+      "tag": "overview",
+      "description": "High-level introduction to the product, its purpose, and key value propositions for business users",
+      "children": [
+        {
+          "name": "Product Introduction",
+          "description": "Comprehensive introduction to the product, its core purpose, target markets, and primary value proposition for businesses"
+        },
+        {
+          "name": "Key Benefits",
+          "description": "Main advantages and benefits that users gain from implementing the product, including efficiency improvements and cost savings"
+        },
+        {
+          "name": "Target Audience",
+          "description": "Primary user groups, roles, and organizations that will benefit most from using the product"
+        },
+        {
+          "name": "System Requirements",
+          "description": "Technical prerequisites, hardware specifications, software dependencies, and infrastructure requirements"
+        }
+      ]
+    },
+    {
+      "name": "Getting Started",
+      "tag": "getting-started",
+      "description": "Essential first steps for new users to begin using the product, including setup and initial configuration",
+      "children": [
+        {
+          "name": "Quick Start Guide",
+          "description": "Step-by-step walkthrough to get up and running with the product in the shortest time possible"
+        },
+        {
+          "name": "Installation Instructions",
+          "description": "Detailed installation procedures for different operating systems and deployment environments"
+        },
+        {
+          "name": "Initial Setup",
+          "description": "Configuration steps required after installation to prepare the system for first use"
+        },
+        {
+          "name": "First Login",
+          "description": "Guide for accessing the system for the first time, including credential setup and authentication"
+        },
+        {
+          "name": "Basic Configuration",
+          "description": "Essential settings and preferences that should be configured before regular use"
+        }
+      ]
+    },
+    {
+      "name": "Features",
+      "tag": "features",
+      "description": "Comprehensive overview of all product capabilities and functionalities available to users",
+      "children": [
+        {
+          "name": "Core Features",
+          "description": "Essential functionalities that form the foundation of the product's capabilities"
+        },
+        {
+          "name": "Advanced Features",
+          "description": "Sophisticated capabilities for power users and complex use cases"
+        },
+        {
+          "name": "Feature Comparison Matrix",
+          "description": "Side-by-side comparison of different feature sets, editions, or competitor alternatives"
+        },
+        {
+          "name": "Feature Roadmap",
+          "description": "Planned future enhancements, upcoming releases, and development timeline"
+        },
+        {
+          "name": "Beta Features",
+          "description": "Experimental or preview functionality available for testing and feedback"
+        }
+      ]
+    },
+    {
+      "name": "Use Cases",
+      "tag": "use-cases",
+      "description": "Real-world scenarios and business applications demonstrating how the product solves specific problems",
+      "children": [
+        {
+          "name": "Industry Solutions",
+          "description": "Specific applications and implementations across different industries and verticals"
+        },
+        {
+          "name": "Common Workflows",
+          "description": "Typical processes and procedures that users follow to accomplish routine tasks"
+        },
+        {
+          "name": "Business Scenarios",
+          "description": "Real-world business situations where the product provides value and solves problems"
+        },
+        {
+          "name": "Customer Success Stories",
+          "description": "Case studies and testimonials from actual customers who have achieved success"
+        },
+        {
+          "name": "Implementation Examples",
+          "description": "Practical examples showing how to implement the product in various environments"
+        }
+      ]
+    },
+    {
+      "name": "Understand Workflow",
+      "tag": "workflow",
+      "description": "Detailed explanation of how processes flow through the system and best practices for optimization",
+      "children": [
+        {
+          "name": "Process Flow Overview",
+          "description": "High-level view of how data and processes move through the system from start to finish"
+        },
+        {
+          "name": "Workflow Configuration",
+          "description": "How to set up, customize, and manage automated workflows and process rules"
+        },
+        {
+          "name": "Automation Rules",
+          "description": "Creating and managing automated actions, triggers, and conditional logic"
+        },
+        {
+          "name": "Approval Processes",
+          "description": "Setting up multi-step approval workflows and review processes"
+        },
+        {
+          "name": "Integration Points",
+          "description": "Key points where the system connects with external tools and services"
+        }
+      ]
+    },
+    {
+      "name": "Troubleshooting",
+      "tag": "troubleshooting",
+      "description": "Common issues, error messages, and their solutions to help users resolve problems quickly",
+      "children": [
+        {
+          "name": "Common Issues",
+          "description": "Frequently encountered problems and their step-by-step solutions"
+        },
+        {
+          "name": "Error Messages",
+          "description": "Explanation of error codes, warning messages, and their resolution steps"
+        },
+        {
+          "name": "Diagnostic Tools",
+          "description": "Built-in and external tools for identifying, analyzing, and resolving system issues"
+        },
+        {
+          "name": "Performance Issues",
+          "description": "Identifying and resolving performance bottlenecks, slow response times, and optimization"
+        },
+        {
+          "name": "Known Limitations",
+          "description": "Current system limitations, workarounds, and planned improvements"
+        }
+      ]
+    },
+    {
+      "name": "API Documentation",
+      "tag": "api-docs",
+      "description": "Technical reference for developers integrating with the product's APIs and webhooks",
+      "children": [
+        {
+          "name": "API Reference",
+          "description": "Complete technical documentation of all available API endpoints, parameters, and responses"
+        },
+        {
+          "name": "Authentication",
+          "description": "API authentication methods, token management, and security best practices"
+        },
+        {
+          "name": "Rate Limits",
+          "description": "API usage limits, throttling policies, and how to handle rate limiting"
+        },
+        {
+          "name": "Webhooks",
+          "description": "Event-driven notifications, webhook setup, and payload formats"
+        },
+        {
+          "name": "SDKs and Libraries",
+          "description": "Official and community-maintained software development kits and code libraries"
+        },
+        {
+          "name": "Code Examples",
+          "description": "Practical code samples, integration examples, and implementation patterns"
+        }
+      ]
+    },
+    {
+      "name": "Security & Compliance",
+      "tag": "security-compliance",
+      "description": "Information about security measures, compliance standards, and data protection features",
+      "children": [
+        {
+          "name": "Security Overview",
+          "description": "Comprehensive overview of security architecture, measures, and best practices"
+        },
+        {
+          "name": "Compliance Certifications",
+          "description": "Industry standards compliance, certifications, and regulatory requirements met"
+        },
+        {
+          "name": "Data Privacy",
+          "description": "Data protection measures, privacy controls, and GDPR/CCPA compliance features"
+        },
+        {
+          "name": "Access Controls",
+          "description": "User authentication, authorization, role-based permissions, and access management"
+        },
+        {
+          "name": "Audit Logs",
+          "description": "System activity tracking, audit trail capabilities, and compliance reporting"
+        },
+        {
+          "name": "Backup & Recovery",
+          "description": "Data backup procedures, disaster recovery plans, and business continuity measures"
+        }
+      ]
+    },
+    {
+      "name": "Administration",
+      "tag": "administration",
+      "description": "Guidance for system administrators on managing users, permissions, and system settings",
+      "children": [
+        {
+          "name": "User Management",
+          "description": "Creating, modifying, and managing user accounts, profiles, and access permissions"
+        },
+        {
+          "name": "Role-Based Access Control",
+          "description": "Defining roles, assigning permissions, and managing access control policies"
+        },
+        {
+          "name": "System Configuration",
+          "description": "Core system settings, global configurations, and administrative preferences"
+        },
+        {
+          "name": "Monitoring & Analytics",
+          "description": "System monitoring tools, performance metrics, and usage analytics dashboards"
+        },
+        {
+          "name": "Maintenance Tasks",
+          "description": "Regular maintenance procedures, system updates, and housekeeping operations"
+        },
+        {
+          "name": "Backup Procedures",
+          "description": "Administrative backup processes, schedule management, and recovery procedures"
+        }
+      ]
+    },
+    {
+      "name": "Integration Guide",
+      "tag": "integration",
+      "description": "Instructions for connecting the product with other business systems and third-party tools",
+      "children": [
+        {
+          "name": "Supported Integrations",
+          "description": "Complete list of supported third-party systems, platforms, and integration capabilities"
+        },
+        {
+          "name": "Setup Instructions",
+          "description": "Step-by-step guides for configuring integrations with external systems"
+        },
+        {
+          "name": "Data Mapping",
+          "description": "Field mapping, data transformation rules, and synchronization configurations"
+        },
+        {
+          "name": "Sync Configuration",
+          "description": "Data synchronization settings, scheduling, and conflict resolution policies"
+        },
+        {
+          "name": "Custom Integrations",
+          "description": "Building custom integrations using APIs, webhooks, and development frameworks"
+        },
+        {
+          "name": "Migration Tools",
+          "description": "Data migration utilities, import/export tools, and legacy system transition"
+        }
+      ]
+    },
+    {
+      "name": "Training & Support",
+      "tag": "training-support",
+      "description": "Resources for user education, training materials, and support channel information",
+      "children": [
+        {
+          "name": "Training Materials",
+          "description": "Educational resources, documentation, guides, and learning materials"
+        },
+        {
+          "name": "Video Tutorials",
+          "description": "Step-by-step video guides, walkthroughs, and instructional content"
+        },
+        {
+          "name": "Webinars & Events",
+          "description": "Live training sessions, educational webinars, and community events"
+        },
+        {
+          "name": "Support Channels",
+          "description": "Available support options, contact methods, and service level agreements"
+        },
+        {
+          "name": "Community Forum",
+          "description": "User community platform for discussions, questions, and knowledge sharing"
+        },
+        {
+          "name": "Professional Services",
+          "description": "Consulting, implementation services, and expert assistance options"
+        }
+      ]
+    },
+    {
+      "name": "Release Notes",
+      "tag": "release-notes",
+      "description": "Information about product updates, new features, bug fixes, and version history",
+      "children": [
+        {
+          "name": "Latest Updates",
+          "description": "Most recent product updates, new features, and improvements"
+        },
+        {
+          "name": "Version History",
+          "description": "Complete changelog of all product versions and their respective updates"
+        },
+        {
+          "name": "Breaking Changes",
+          "description": "Important changes that may affect existing implementations or require updates"
+        },
+        {
+          "name": "Deprecation Notices",
+          "description": "Features being phased out, timeline for deprecation, and migration guidance"
+        },
+        {
+          "name": "Upgrade Instructions",
+          "description": "Step-by-step procedures for upgrading to newer versions safely"
+        }
+      ]
+    }
+  ]
+}

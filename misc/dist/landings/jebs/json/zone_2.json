@@ -1,0 +1,669 @@
+{
+  "blocks": [
+    {
+      "object": "block",
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "🔬 Advanced Measurement Capabilities"
+            },
+            "annotations": {
+              "bold": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "JEBS combines "
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "computer vision, AI analysis, and precision measurement"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": " technology to deliver comprehensive blade inspection solutions."
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": ""
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "📊 Multi-Point Measurement"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Simultaneous measurement of critical blade dimensions including "
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "F, G, H, J, K, L, M, and N points"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": " with automatic pass/fail determination."
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Vertical offset measurements"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Angular measurements"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "CAD comparison"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "👁️ Computer Vision AI"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Advanced machine learning algorithms automatically detect measurement points and calculate precise dimensions from digital imagery."
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Automated feature detection"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Sub-pixel accuracy"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Adaptive lighting compensation"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "heading_3",
+                  "heading_3": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "✅ Quality Assurance"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Automated acceptance criteria validation with configurable tolerances and comprehensive reporting for quality control documentation."
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Configurable tolerance ranges"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Automated pass/fail status"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Traceability documentation"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "🎯 Precision Measurement Technology"
+            },
+            "annotations": {
+              "bold": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "paragraph",
+                  "paragraph": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "JEBS leverages cutting-edge computer vision and measurement algorithms to deliver "
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "aerospace-grade precision"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": " in blade inspection."
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🖼️ Measurement Point Analysis"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\n"
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "Files: measurement-point-f.png, measurement-point-k.png, blade-profile.png"
+                        },
+                        "annotations": {
+                          "code": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "\nVisual analysis of measurement points F and K with overlay graphics, plus complete blade profile with all measurement points labeled"
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "🖼️"
+                    },
+                    "color": "blue"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "✅ F: 1.35mm (Pass)"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "✅"
+                    },
+                    "color": "green"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "✅ K: 1.96mm (Pass)"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "✅"
+                    },
+                    "color": "green"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "❌ H: 1.26mm (Fail)"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "❌"
+                    },
+                    "color": "red"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "callout",
+                  "callout": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "✅ G: 19.49mm (Pass)"
+                        },
+                        "annotations": {
+                          "bold": true
+                        }
+                      }
+                    ],
+                    "icon": {
+                      "emoji": "✅"
+                    },
+                    "color": "green"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "column_list",
+      "column_list": {
+        "children": [
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "🔄 Real-time measurement processing"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "📐 CAD model comparison"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "column",
+            "column": {
+              "children": [
+                {
+                  "object": "block",
+                  "type": "bulleted_list_item",
+                  "bulleted_list_item": {
+                    "rich_text": [
+                      {
+                        "type": "text",
+                        "text": {
+                          "content": "✅ Automated quality validation"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

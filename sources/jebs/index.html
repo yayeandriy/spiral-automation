@@ -1,0 +1,695 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Jet Engine Blade Scan [JEBS]</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(128, 125, 120, 1);
+	fill: rgba(128, 125, 120, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(204, 121, 47, 1);
+	fill: rgba(204, 121, 47, 1);
+}
+.highlight-yellow {
+	color: rgba(195, 148, 67, 1);
+	fill: rgba(195, 148, 67, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(63, 126, 190, 1);
+	fill: rgba(63, 126, 190, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(179, 84, 136, 1);
+	fill: rgba(179, 84, 136, 1);
+}
+.highlight-red {
+	color: rgba(201, 85, 73, 1);
+	fill: rgba(201, 85, 73, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 111, 200, 0.09);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(128, 125, 120, 1);
+	fill: rgba(128, 125, 120, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(204, 121, 47, 1);
+	fill: rgba(204, 121, 47, 1);
+}
+.block-color-yellow {
+	color: rgba(195, 148, 67, 1);
+	fill: rgba(195, 148, 67, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(63, 126, 190, 1);
+	fill: rgba(63, 126, 190, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(179, 84, 136, 1);
+	fill: rgba(179, 84, 136, 1);
+}
+.block-color-red {
+	color: rgba(201, 85, 73, 1);
+	fill: rgba(201, 85, 73, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(232, 242, 250, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 99, 174, 0.172); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="271c3aed-7a1a-80c9-8990-d21e587812bf" class="page sans"><header><h1 class="page-title">Jet Engine Blade Scan [JEBS]</h1><p class="page-description"></p></header><div class="page-body"><p id="271c3aed-7a1a-80dd-835d-c87380251612" class="">Files: <a href="https://drive.google.com/drive/u/1/folders/1lO4T_J1jmC-ucicuDl_O1y-rvGJ0Azwd">https://drive.google.com/drive/u/1/folders/1lO4T_J1jmC-ucicuDl_O1y-rvGJ0Azwd</a></p><p id="271c3aed-7a1a-80aa-a185-ce553c175acf" class="">
+</p><p id="271c3aed-7a1a-8088-a60b-d7e838681197" class="">
+</p><p id="271c3aed-7a1a-8048-8867-eedba3d98b50" class="">Video of segmentation in Walter <a href="https://www.veed.io/view/467cbc27-30f4-4a52-b132-3913ffab3f12?panel=share">https://www.veed.io/view/467cbc27-30f4-4a52-b132-3913ffab3f12?panel=share</a></p><p id="278c3aed-7a1a-8088-8d1c-f24bf25da4b1" class="">
+</p><figure id="278c3aed-7a1a-80e4-9cc5-e01558d4f5fc" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image1.png"><img style="width:297px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image1.png"/></a></figure><figure id="278c3aed-7a1a-8038-a9f6-c6b9aa17e29c" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image2.png"><img style="width:265px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image2.png"/></a></figure><figure id="278c3aed-7a1a-808d-86c5-e4a7452394c5" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image3.png"><img style="width:304px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image3.png"/></a></figure><figure id="278c3aed-7a1a-808e-86f5-debe5ad75349" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image4.png"><img style="width:405px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image4.png"/></a></figure><figure id="278c3aed-7a1a-80ab-91ca-f5b4bab8ec5e" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image5.png"><img style="width:631px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image5.png"/></a></figure><figure id="278c3aed-7a1a-80fe-9714-e9915bd927bd" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image6.png"><img style="width:595px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image6.png"/></a></figure><figure id="278c3aed-7a1a-806b-8740-ed6a63eac401" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image7.png"><img style="width:348px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image7.png"/></a></figure><figure id="278c3aed-7a1a-80ab-ab04-d7e3c53213a2" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image8.png"><img style="width:327px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image8.png"/></a></figure><figure id="278c3aed-7a1a-806b-8121-db149b3ecb23" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image9.png"><img style="width:414px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image9.png"/></a></figure><figure id="278c3aed-7a1a-80cc-82b0-dd0fd2ff4b36" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image10.png"><img style="width:700px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image10.png"/></a></figure><p id="278c3aed-7a1a-80bc-a5b9-f6c0573ec373" class="">Blade: E8172-12 CAD</p><p id="278c3aed-7a1a-804b-b964-f388ac9e831e" class="">Measurement: N Actual Vertical offset: 1.40 mm</p><p id="278c3aed-7a1a-8034-b0e1-c27af4c77d5d" class="">Measured (photo): 2.33 mm</p><p id="278c3aed-7a1a-80f4-924e-d7c5db72ad24" class="">Measured (caliper):</p><p id="278c3aed-7a1a-806f-9a94-cf092100ceeb" class="">2.37 mm Acceptable Range: 2.28 - 2.58 mm</p><p id="278c3aed-7a1a-80c4-908f-cd69bb4c658f" class="">Status: Acceptable ●</p><p id="278c3aed-7a1a-8020-9a63-f1680f44d42c" class="">2024/12/03 14:11:10</p><p id="278c3aed-7a1a-809b-a745-cd8f119d534b" class="">Blade: E8172-12</p><p id="278c3aed-7a1a-80dc-ab5b-c996a578678d" class="">Measurement: F</p><p id="278c3aed-7a1a-800f-a635-d7da49ddb850" class="">Vertical offset: 1.40 mm</p><p id="278c3aed-7a1a-806d-b6d2-d72118ee5ba8" class="">Measured (photo): 1.33 mm</p><p id="278c3aed-7a1a-808a-991c-f87ae8adedac" class="">Measured (caliper): 1.47 mm</p><p id="278c3aed-7a1a-806c-99fc-c9366195ff00" class="">Acceptable Range: 1.27 - 1.57 mm</p><p id="278c3aed-7a1a-80cf-82d3-ce0e19d459b9" class="">Status: Acceptable ●</p><p id="278c3aed-7a1a-80fa-a77e-f4c0a56397c3" class="">2024/12/03 14:11:15</p><p id="278c3aed-7a1a-80fd-8920-f785f8d7f120" class="">Blade: E8172-12</p><p id="278c3aed-7a1a-807f-9b28-cce2efe2ee14" class="">Measurement: K</p><p id="278c3aed-7a1a-80a5-b889-fe5189e93c78" class="">Vertical offset: 1.40 mm</p><p id="278c3aed-7a1a-8035-9651-c388e3eec8ec" class="">Measured (photo): 2.20 mm</p><p id="278c3aed-7a1a-8003-968b-e85e2e4b5cdc" class="">Measured (caliper): 2.17 mm</p><p id="278c3aed-7a1a-8070-bddf-ddcff456ab26" class="">Acceptable Range: 1.95 - 2.25 mm</p><p id="278c3aed-7a1a-805e-b6b7-fe8514d1b027" class="">Status: Acceptable ●</p><p id="278c3aed-7a1a-8006-b0b5-d3e2dc3c01b4" class="">2024/12/03 14:11:23</p><p id="278c3aed-7a1a-8041-aa20-dcbdc68cf9f4" class="">Blade: E8172-12</p><p id="278c3aed-7a1a-8019-8381-fbce123b3ae1" class="">Measurement: H</p><p id="278c3aed-7a1a-80a1-aae8-e4967d9c35f4" class="">Vertical offset: 1.40 mm</p><p id="278c3aed-7a1a-804c-9e7f-ebc668938f9c" class="">Measured (photo): 1.32 mm</p><p id="278c3aed-7a1a-80eb-8175-ccf523f3573b" class="">Measured (caliper): 1.26 mm</p><p id="278c3aed-7a1a-80ae-bbdb-d41565c5066a" class="">Acceptable Range: 0.95 - 1.25 mm</p><p id="278c3aed-7a1a-800d-8fa7-d7f24a1c2f24" class="">Status: Not Acceptable ●</p><p id="278c3aed-7a1a-80c2-8b86-dde78c7dd24c" class="">2024/12/03 14:11:28</p><p id="278c3aed-7a1a-80df-9ae2-cccea93d19bc" class="">Blade: E8172-12</p><p id="278c3aed-7a1a-802d-8aaa-de56e0c51b3c" class="">Measurement: G</p><p id="278c3aed-7a1a-80a1-9942-c44123daff22" class="">Vertical offset:</p><p id="278c3aed-7a1a-8088-9ae9-e4920333afd1" class="">Measured (photo): 19.54 mm</p><p id="278c3aed-7a1a-80b8-8455-d8afaa269368" class="">Acceptable Range:</p><p id="278c3aed-7a1a-8036-9548-ee0c31ce241a" class="">19.26 - 19.56 mm Status: Acceptable ●</p><p id="278c3aed-7a1a-8057-9e67-d3e90fb42d17" class="">2024/12/03 14:11:32</p><p id="278c3aed-7a1a-806d-89b1-d900f857d40e" class="">Blade: E8172-12</p><p id="278c3aed-7a1a-80b3-83d1-f322a41c890f" class="">Measurement: L</p><p id="278c3aed-7a1a-80cc-8b9a-c1b7526513e0" class="">Vertical offset:</p><p id="278c3aed-7a1a-808c-a45c-e59b83ab22f4" class="">Measured (photo): 4.71 mm</p><p id="278c3aed-7a1a-809e-be02-fa933ef5632f" class="">Acceptable Range:</p><p id="278c3aed-7a1a-80c7-a636-e90dfba102bb" class="">4.12 - 4.42 mm Status: Not Acceptable ●</p><p id="278c3aed-7a1a-80dd-a9ca-dd590d9178db" class="">2024/12/03 14:11:39</p><p id="278c3aed-7a1a-809f-86ca-fcb646b23f3f" class="">Blade: E8172-12</p><p id="278c3aed-7a1a-804b-a8ff-d151c81ac225" class="">Measurement: M</p><p id="278c3aed-7a1a-805f-a15f-fc8ae9bd6d52" class="">Vertical offset:</p><p id="278c3aed-7a1a-8008-a6ec-fd2ff44b4b3e" class="">Measured (photo): 1.22 mm</p><p id="278c3aed-7a1a-802b-88f3-e116ded492d0" class="">Acceptable Range:</p><p id="278c3aed-7a1a-80db-889e-d3a2ce6cdd0f" class="">1.10 - 1.30 mm Status: Acceptable ●</p><p id="278c3aed-7a1a-803c-b3f0-e1926d9b702a" class="">2024/12/03 14:11:41</p><p id="278c3aed-7a1a-8099-a3b2-ebac4363a7f8" class="">Blade: E8172-12</p><p id="278c3aed-7a1a-80ca-834c-c810bc477e5c" class="">Measurement: J</p><p id="278c3aed-7a1a-805a-af72-d01823a5c26b" class="">Vertical offset:</p><p id="278c3aed-7a1a-8085-9585-dd3a760985d2" class="">Measured (photo): 13.2°</p><p id="278c3aed-7a1a-8037-ac12-fcb778dd0e4c" class="">Acceptable Range:</p><p id="278c3aed-7a1a-805b-a79a-fb68d8d09920" class="">12.0° - 14.0°Status: Acceptable ●</p><p id="278c3aed-7a1a-80e1-9399-fd4b0d449bfe" class="">2024/12/03 14:11:46</p><figure id="278c3aed-7a1a-806e-bcd8-e842c38af05f" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image11.png"><img style="width:455px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image11.png"/></a></figure><figure id="278c3aed-7a1a-80cd-8914-da0de20a9516" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image12.png"><img style="width:631px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image12.png"/></a></figure><figure id="278c3aed-7a1a-8029-8166-d06887421ee0" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image13.png"><img style="width:242px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image13.png"/></a></figure><figure id="278c3aed-7a1a-80a7-aa0f-ed0cbc5f6cde" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image14.png"><img style="width:416px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image14.png"/></a></figure><figure id="278c3aed-7a1a-8039-b024-ddbf5b1372fa" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image15.png"><img style="width:233px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image15.png"/></a></figure><figure id="278c3aed-7a1a-80df-aafe-e802f2d90887" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image16.png"><img style="width:629px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image16.png"/></a></figure><figure id="278c3aed-7a1a-80bc-909d-dcd02bb5939a" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image17.png"><img style="width:357px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image17.png"/></a></figure><figure id="278c3aed-7a1a-809d-b59e-e2cf9882257a" class="image"><a href="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image18.png"><img style="width:700px" src="Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image18.png"/></a></figure><p id="278c3aed-7a1a-8095-ba53-c28245dfe7f9" class="">Blade: E8172-7 CAD</p><p id="278c3aed-7a1a-80d2-93f0-f10c91954154" class="">Measurement: N Actual Vertical offset: 1.40 mm</p><p id="278c3aed-7a1a-806b-81f1-d5ca654a0236" class="">Measured (photo): 2.30 mm</p><p id="278c3aed-7a1a-800b-b8a3-e3836288c63d" class="">Measured (caliper):</p><p id="278c3aed-7a1a-80fd-93ad-c5ba37a17208" class="">2.31 mm Acceptable Range: 2.28 - 2.58 mm</p><p id="278c3aed-7a1a-8080-aa95-ec647327869f" class="">Status: Acceptable ●</p><p id="278c3aed-7a1a-8099-b1b3-d8ffd5db9fbd" class="">2024/12/03 14:23:49</p><p id="278c3aed-7a1a-8029-b22c-ed9d3cd11396" class="">Blade: E8172-7</p><p id="278c3aed-7a1a-8066-8f78-d69e634e00b4" class="">Measurement: F</p><p id="278c3aed-7a1a-8018-9b2a-c6166a2db7f9" class="">Vertical offset: 1.40 mm</p><p id="278c3aed-7a1a-8089-9224-dba15a486fcb" class="">Measured (photo): 1.35 mm</p><p id="278c3aed-7a1a-80c5-b161-f9524399d005" class="">Measured (caliper): 1.45 mm</p><p id="278c3aed-7a1a-80a8-8c9d-f5ddb20738d5" class="">Acceptable Range: 1.27 - 1.57 mm</p><p id="278c3aed-7a1a-80b8-8296-e2d7f87cfcca" class="">Status: Acceptable ●</p><p id="278c3aed-7a1a-80d8-9f9f-d56b046426ad" class="">2024/12/03 14:23:54</p><p id="278c3aed-7a1a-80d2-bad1-cf11cf5371b1" class="">Blade: E8172-7</p><p id="278c3aed-7a1a-80dd-95f5-fe6a3da03438" class="">Measurement: K</p><p id="278c3aed-7a1a-8031-8092-d90503b920bd" class="">Vertical offset: 1.40 mm</p><p id="278c3aed-7a1a-8097-ae40-e28793cd24b2" class="">Measured (photo): 1.96 mm</p><p id="278c3aed-7a1a-80f5-ac7a-d68914b58255" class="">Measured (caliper): 1.97 mm</p><p id="278c3aed-7a1a-8002-973c-f0fc81edbb06" class="">Acceptable Range: 1.95 - 2.25 mm</p><p id="278c3aed-7a1a-8015-82ab-daa90fd1940c" class="">Status: Acceptable ●</p><p id="278c3aed-7a1a-80c5-8f14-cfd4188a0a80" class="">2024/12/03 14:23:58</p><p id="278c3aed-7a1a-8001-8e1a-c2df6fe63a1b" class="">Blade: E8172-7</p><p id="278c3aed-7a1a-8008-9060-c207b4a18194" class="">Measurement: H</p><p id="278c3aed-7a1a-8020-99d2-cd9122e3768b" class="">Vertical offset: 1.40 mm</p><p id="278c3aed-7a1a-800f-844a-f8d58e68dc1b" class="">Measured (photo): 1.23 mm</p><p id="278c3aed-7a1a-8098-ba81-cd6c7178952f" class="">Measured (caliper): 1.21 mm</p><p id="278c3aed-7a1a-8097-8f3c-df2abf028c30" class="">Acceptable Range: 0.95 - 1.25 mm</p><p id="278c3aed-7a1a-8056-b619-db8861502085" class="">Status: Acceptable ●</p><p id="278c3aed-7a1a-80dc-a51d-e5f19ba9a135" class="">2024/12/03 14:24:01</p><p id="278c3aed-7a1a-8091-9491-ff8041cefc18" class="">Blade: E8172-7</p><p id="278c3aed-7a1a-8015-b93e-dbf164c102ba" class="">Measurement: G</p><p id="278c3aed-7a1a-8078-b3d7-eedd8ab68655" class="">Vertical offset:</p><p id="278c3aed-7a1a-804f-bb13-dd16b91ade51" class="">Measured (photo): 19.49 mm</p><p id="278c3aed-7a1a-80a2-957b-eb9bf7660a98" class="">Acceptable Range:</p><p id="278c3aed-7a1a-804a-8c90-d271d842ecf0" class="">19.26 - 19.56 mm Status: Acceptable ●</p><p id="278c3aed-7a1a-80d7-a405-e323069f7afd" class="">2024/12/03 14:24:06</p><p id="278c3aed-7a1a-802c-899a-cdc8811b29c8" class="">Blade: E8172-7</p><p id="278c3aed-7a1a-80c7-b82b-fa74a47a5880" class="">Measurement: L</p><p id="278c3aed-7a1a-801b-99fe-e064297dd46e" class="">Vertical offset:</p><p id="278c3aed-7a1a-8066-a871-caa61503961e" class="">Measured (photo): 4.76 mm</p><p id="278c3aed-7a1a-809f-a64b-e34ff909d2bf" class="">Acceptable Range:</p><p id="278c3aed-7a1a-80fc-8966-e7af925d1b19" class="">4.12 - 4.42 mm Status: Not Acceptable ●</p><p id="278c3aed-7a1a-800a-8fa9-cdaf174478b1" class="">2024/12/03 14:24:10</p><p id="278c3aed-7a1a-80d7-9102-e9fa05524cb1" class="">Blade: E8172-7</p><p id="278c3aed-7a1a-8091-a065-e94a23c870f5" class="">Measurement: M</p><p id="278c3aed-7a1a-8046-a7d0-e73eba99a7b0" class="">Vertical offset:</p><p id="278c3aed-7a1a-8020-8b42-e9897897bc18" class="">Measured (photo): 1.25 mm</p><p id="278c3aed-7a1a-80d4-ac2f-dfcc6410a31c" class="">Acceptable Range:</p><p id="278c3aed-7a1a-8054-b277-f20ce82359fa" class="">1.10 - 1.30 mm Status: Acceptable ●</p><p id="278c3aed-7a1a-80a7-8153-fc64d240493a" class="">2024/12/03 14:24:19</p><p id="278c3aed-7a1a-807a-bade-ce473a7e325a" class="">Blade: E8172-7</p><p id="278c3aed-7a1a-80db-839c-ea838fbe76f0" class="">Measurement: J</p><p id="278c3aed-7a1a-80e5-a470-fef308407990" class="">Vertical offset:</p><p id="278c3aed-7a1a-80db-9e3d-f4cf8aa452ef" class="">Measured (photo): 13.9°</p><p id="278c3aed-7a1a-80da-99f8-de5cad5ad74c" class="">Acceptable Range:</p><p id="278c3aed-7a1a-8028-822e-e98c39b3cc44" class="">12.0° - 14.0°Status: Acceptable ●</p><p id="278c3aed-7a1a-802a-bfa6-f5cd6e74a319" class="">2024/12/03 14:24:23</p><p id="278c3aed-7a1a-80cf-a89e-efe5d51c3759" class="">
+</p><p id="278c3aed-7a1a-8021-b400-d8948cb8c662" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

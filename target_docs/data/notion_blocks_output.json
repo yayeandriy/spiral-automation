@@ -1,0 +1,821 @@
+[
+  {
+    "notion_blocks": {
+      "children": [
+        {
+          "object": "block",
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "📚 Product Documentation",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "📚 Product Documentation",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "is_toggleable": false
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Comprehensive documentation covering all aspects of the product, from getting started to advanced features and integrations.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Comprehensive documentation covering all aspects of the product, from getting started to advanced features and integrations.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "🏠 Overview",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "🏠 Overview",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "is_toggleable": false
+          }
+        },
+        {
+          "object": "block",
+          "type": "callout",
+          "callout": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "High-level introduction to the Precision Manufacturing Quality Control system, its purpose, and key value propositions for manufacturing and quality assurance teams",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "High-level introduction to the Precision Manufacturing Quality Control system, its purpose, and key value propositions for manufacturing and quality assurance teams",
+                "href": null
+              }
+            ],
+            "icon": {
+              "type": "emoji",
+              "emoji": "ℹ️"
+            },
+            "color": "blue_background"
+          }
+        },
+        {
+          "object": "block",
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "🚀 Getting Started",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "🚀 Getting Started",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "is_toggleable": false
+          }
+        },
+        {
+          "object": "block",
+          "type": "callout",
+          "callout": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Essential first steps for implementing the Precision Manufacturing Quality Control system, including hardware setup, software installation, and initial configuration",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Essential first steps for implementing the Precision Manufacturing Quality Control system, including hardware setup, software installation, and initial configuration",
+                "href": null
+              }
+            ],
+            "icon": {
+              "type": "emoji",
+              "emoji": "ℹ️"
+            },
+            "color": "blue_background"
+          }
+        },
+        {
+          "object": "block",
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "⚡ Features",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "⚡ Features",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "is_toggleable": false
+          }
+        },
+        {
+          "object": "block",
+          "type": "callout",
+          "callout": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Comprehensive overview of all Precision Manufacturing Quality Control system capabilities and functionalities",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Comprehensive overview of all Precision Manufacturing Quality Control system capabilities and functionalities",
+                "href": null
+              }
+            ],
+            "icon": {
+              "type": "emoji",
+              "emoji": "ℹ️"
+            },
+            "color": "blue_background"
+          }
+        },
+        {
+          "object": "block",
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "💼 Use Cases",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "💼 Use Cases",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "is_toggleable": false
+          }
+        },
+        {
+          "object": "block",
+          "type": "callout",
+          "callout": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Real-world manufacturing scenarios and business applications demonstrating how the system solves specific quality control problems",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Real-world manufacturing scenarios and business applications demonstrating how the system solves specific quality control problems",
+                "href": null
+              }
+            ],
+            "icon": {
+              "type": "emoji",
+              "emoji": "ℹ️"
+            },
+            "color": "blue_background"
+          }
+        },
+        {
+          "object": "block",
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "🔄 Understand Workflow",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "🔄 Understand Workflow",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "is_toggleable": false
+          }
+        },
+        {
+          "object": "block",
+          "type": "callout",
+          "callout": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Detailed explanation of quality control processes flow through the system and best practices for optimization",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Detailed explanation of quality control processes flow through the system and best practices for optimization",
+                "href": null
+              }
+            ],
+            "icon": {
+              "type": "emoji",
+              "emoji": "ℹ️"
+            },
+            "color": "blue_background"
+          }
+        },
+        {
+          "object": "block",
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "🔧 Troubleshooting",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "🔧 Troubleshooting",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "is_toggleable": false
+          }
+        },
+        {
+          "object": "block",
+          "type": "callout",
+          "callout": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Common issues, error messages, and their solutions to help users resolve problems quickly in the quality control system",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Common issues, error messages, and their solutions to help users resolve problems quickly in the quality control system",
+                "href": null
+              }
+            ],
+            "icon": {
+              "type": "emoji",
+              "emoji": "ℹ️"
+            },
+            "color": "blue_background"
+          }
+        },
+        {
+          "object": "block",
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "📡 API Documentation",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "📡 API Documentation",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "is_toggleable": false
+          }
+        },
+        {
+          "object": "block",
+          "type": "callout",
+          "callout": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Technical reference for developers integrating with the Precision Quality Control system's APIs and webhooks",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Technical reference for developers integrating with the Precision Quality Control system's APIs and webhooks",
+                "href": null
+              }
+            ],
+            "icon": {
+              "type": "emoji",
+              "emoji": "ℹ️"
+            },
+            "color": "blue_background"
+          }
+        },
+        {
+          "object": "block",
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "🔒 Security & Compliance",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "🔒 Security & Compliance",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "is_toggleable": false
+          }
+        },
+        {
+          "object": "block",
+          "type": "callout",
+          "callout": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Information about security measures, compliance standards, and data protection features for manufacturing quality data",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Information about security measures, compliance standards, and data protection features for manufacturing quality data",
+                "href": null
+              }
+            ],
+            "icon": {
+              "type": "emoji",
+              "emoji": "ℹ️"
+            },
+            "color": "blue_background"
+          }
+        },
+        {
+          "object": "block",
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "⚙️ Administration",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "⚙️ Administration",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "is_toggleable": false
+          }
+        },
+        {
+          "object": "block",
+          "type": "callout",
+          "callout": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Guidance for system administrators on managing users, permissions, and system settings for the quality control system",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Guidance for system administrators on managing users, permissions, and system settings for the quality control system",
+                "href": null
+              }
+            ],
+            "icon": {
+              "type": "emoji",
+              "emoji": "ℹ️"
+            },
+            "color": "blue_background"
+          }
+        },
+        {
+          "object": "block",
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "🔗 Integration Guide",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "🔗 Integration Guide",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "is_toggleable": false
+          }
+        },
+        {
+          "object": "block",
+          "type": "callout",
+          "callout": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Instructions for connecting the Precision Quality Control system with other business systems and manufacturing tools",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Instructions for connecting the Precision Quality Control system with other business systems and manufacturing tools",
+                "href": null
+              }
+            ],
+            "icon": {
+              "type": "emoji",
+              "emoji": "ℹ️"
+            },
+            "color": "blue_background"
+          }
+        },
+        {
+          "object": "block",
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "🎓 Training & Support",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "🎓 Training & Support",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "is_toggleable": false
+          }
+        },
+        {
+          "object": "block",
+          "type": "callout",
+          "callout": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Resources for user education, training materials, and support channel information for quality control system users",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Resources for user education, training materials, and support channel information for quality control system users",
+                "href": null
+              }
+            ],
+            "icon": {
+              "type": "emoji",
+              "emoji": "ℹ️"
+            },
+            "color": "blue_background"
+          }
+        },
+        {
+          "object": "block",
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "📋 Release Notes",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "📋 Release Notes",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "is_toggleable": false
+          }
+        },
+        {
+          "object": "block",
+          "type": "callout",
+          "callout": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Information about product updates, new features, bug fixes, and version history for the Precision Quality Control system",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Information about product updates, new features, bug fixes, and version history for the Precision Quality Control system",
+                "href": null
+              }
+            ],
+            "icon": {
+              "type": "emoji",
+              "emoji": "ℹ️"
+            },
+            "color": "blue_background"
+          }
+        }
+      ]
+    },
+    "statistics": {
+      "total_blocks": 38,
+      "sections_processed": 12,
+      "block_types": {
+        "heading_1": 1,
+        "paragraph": 1,
+        "divider": 12,
+        "heading_2": 12,
+        "callout": 12
+      }
+    },
+    "processing_info": {
+      "input_item_index": 0,
+      "timestamp": "2025-09-30T18:03:39.668Z",
+      "source_sections": 12
+    }
+  }
+]

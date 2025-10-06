@@ -1,0 +1,31 @@
+{
+  "name": "Integration Guide",
+  "tag": "integration",
+  "description": "Instructions for connecting the product with other business systems and third-party tools",
+  "children": [
+    {
+      "name": "Supported Integrations",
+      "description": "Complete list of supported third-party systems, platforms, and integration capabilities"
+    },
+    {
+      "name": "Setup Instructions",
+      "description": "Step-by-step guides for configuring integrations with external systems"
+    },
+    {
+      "name": "Data Mapping",
+      "description": "Field mapping, data transformation rules, and synchronization configurations"
+    },
+    {
+      "name": "Sync Configuration",
+      "description": "Data synchronization settings, scheduling, and conflict resolution policies"
+    },
+    {
+      "name": "Custom Integrations",
+      "description": "Building custom integrations using APIs, webhooks, and development frameworks"
+    },
+    {
+      "name": "Migration Tools",
+      "description": "Data migration utilities, import/export tools, and legacy system transition"
+    }
+  ]
+}

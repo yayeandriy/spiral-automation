@@ -1,0 +1,186 @@
+{
+  "type": "object",
+  "properties": {
+    "children": {
+      "type": "array",
+      "description": "An array of block objects to append as children.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "object": {
+            "type": "string",
+            "enum": ["block"]
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "paragraph",
+              "heading_1",
+              "heading_2",
+              "heading_3",
+              "bulleted_list_item",
+              "numbered_list_item",
+              "to_do",
+              "toggle",
+              "child_page",
+              "child_database",
+              "embed",
+              "image",
+              "video",
+              "file",
+              "pdf",
+              "bookmark",
+              "callout",
+              "quote",
+              "equation",
+              "divider",
+              "table_of_contents",
+              "breadcrumb",
+              "column",
+              "column_list",
+              "link_preview",
+              "synced_block",
+              "table",
+              "table_row",
+              "code"
+            ]
+          },
+
+          "paragraph": {
+            "type": "object",
+            "properties": {
+              "rich_text": { "$ref": "#/definitions/rich_text_array" },
+              "color": { "type": "string" },
+              "children": { "type": "array" }
+            }
+          },
+
+          "heading_1": {
+            "type": "object",
+            "properties": {
+              "rich_text": { "$ref": "#/definitions/rich_text_array" },
+              "color": { "type": "string" },
+              "is_toggleable": { "type": "boolean" }
+            }
+          },
+
+          "heading_2": {
+            "type": "object",
+            "properties": {
+              "rich_text": { "$ref": "#/definitions/rich_text_array" },
+              "color": { "type": "string" },
+              "is_toggleable": { "type": "boolean" }
+            }
+          },
+
+          "heading_3": {
+            "type": "object",
+            "properties": {
+              "rich_text": { "$ref": "#/definitions/rich_text_array" },
+              "color": { "type": "string" },
+              "is_toggleable": { "type": "boolean" }
+            }
+          },
+
+          "bulleted_list_item": {
+            "type": "object",
+            "properties": {
+              "rich_text": { "$ref": "#/definitions/rich_text_array" },
+              "color": { "type": "string" },
+              "children": { "type": "array" }
+            }
+          },
+
+          "numbered_list_item": {
+            "type": "object",
+            "properties": {
+              "rich_text": { "$ref": "#/definitions/rich_text_array" },
+              "color": { "type": "string" },
+              "children": { "type": "array" }
+            }
+          },
+
+          "to_do": {
+            "type": "object",
+            "properties": {
+              "rich_text": { "$ref": "#/definitions/rich_text_array" },
+              "checked": { "type": "boolean" },
+              "color": { "type": "string" },
+              "children": { "type": "array" }
+            }
+          },
+
+          "toggle": {
+            "type": "object",
+            "properties": {
+              "rich_text": { "$ref": "#/definitions/rich_text_array" },
+              "color": { "type": "string" },
+              "children": { "type": "array" }
+            }
+          },
+
+          "code": {
+            "type": "object",
+            "properties": {
+              "rich_text": { "$ref": "#/definitions/rich_text_array" },
+              "caption": { "$ref": "#/definitions/rich_text_array" },
+              "language": { "type": "string" }
+            }
+          },
+
+          "quote": {
+            "type": "object",
+            "properties": {
+              "rich_text": { "$ref": "#/definitions/rich_text_array" },
+              "color": { "type": "string" },
+              "children": { "type": "array" }
+            }
+          },
+
+          "callout": {
+            "type": "object",
+            "properties": {
+              "rich_text": { "$ref": "#/definitions/rich_text_array" },
+              "icon": { "type": "object" },
+              "color": { "type": "string" },
+              "children": { "type": "array" }
+            }
+          },
+
+          "divider": { "type": "object", "properties": {} },
+          "equation": {
+            "type": "object",
+            "properties": {
+              "expression": { "type": "string" }
+            }
+          },
+          "bookmark": {
+            "type": "object",
+            "properties": {
+              "url": { "type": "string" },
+              "caption": { "$ref": "#/definitions/rich_text_array" }
+            }
+          },
+          "image": {
+            "type": "object",
+            "properties": {
+              "caption": { "$ref": "#/definitions/rich_text_array" },
+              "type": { "type": "string" },
+              "external": {
+                "type": "object",
+                "properties": { "url": { "type": "string" } }
+              },
+              "file": {
+                "type": "object",
+                "properties": { "url": { "type": "string" }, "expiry_time": { "type": "string" } }
+              }
+            }
+          }
+          // ... and similarly for video, file, pdf, table, synced_block, etc.
+        },
+        "required": ["object", "type"]
+      }
+    }
+  },
+  "required": ["children"]
+}

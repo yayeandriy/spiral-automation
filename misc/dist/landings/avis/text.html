@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AVIS – Automated Visual Inspection System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* -------------------------------------------------
+   12‑column responsive grid (pure CSS)
+   ------------------------------------------------- */
+:root{
+    --gutter:1rem;
+}
+*{box-sizing:border-box;}
+body{
+    margin:0;
+    font-family:system-ui,Helvetica,Arial,sans-serif;
+    line-height:1.6;
+    color:#333;
+    background:#fafafa;
+}
+a{color:#0066cc;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.container{width:90%;max-width:1200px;margin:0 auto;padding:var(--gutter) 0;}
+.row{display:flex;flex-wrap:wrap;margin:-calc(var(--gutter)/2);}
+.col{padding:calc(var(--gutter)/2);flex:0 0 100%;}
+@media(min-width:600px){
+    .col-2{flex:0 0 16.6667%;}
+    .col-3{flex:0 0 25%;}
+    .col-4{flex:0 0 33.3333%;}
+    .col-6{flex:0 0 50%;}
+}
+@media(min-width:900px){
+    .col-1{flex:0 0 8.3333%;}
+    .col-2{flex:0 0 16.6667%;}
+    .col-3{flex:0 0 25%;}
+    .col-4{flex:0 0 33.3333%;}
+    .col-5{flex:0 0 41.6667%;}
+    .col-6{flex:0 0 50%;}
+    .col-7{flex:0 0 58.3333%;}
+    .col-8{flex:0 0 66.6667%;}
+    .col-9{flex:0 0 75%;}
+    .col-10{flex:0 0 83.3333%;}
+    .col-11{flex:0 0 91.6667%;}
+    .col-12{flex:0 0 100%;}
+}
+
+/* -------------------------------------------------
+   Common styling
+   ------------------------------------------------- */
+section{padding:4rem 0;}
+section:nth-of-type(even){background:#fff;}
+section:nth-of-type(odd){background:#f5f5f5;}
+h1,h2,h3{margin:0 0 .5rem;}
+h1{font-size:2.5rem;font-weight:700;}
+h2{font-size:2rem;font-weight:600;}
+h3{font-size:1.5rem;font-weight:500;}
+p{margin:0 0 1rem;}
+.text-center{text-align:center;}
+.mb-2{margin-bottom:2rem;}
+.btn{
+    display:inline-block;
+    padding:.8rem 1.6rem;
+    font-size:1rem;
+    font-weight:600;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+}
+.btn-primary{background:#ffb400;color:#212529;}
+.btn-primary:hover{background:#ffa000;}
+.btn-accent{background:#0066cc;color:#fff;}
+.btn-accent:hover{background:#0055a3;}
+
+/* Hero */
+.hero{
+    position:relative;
+    color:#fff;
+    text-align:center;
+    background:url('https://images.unsplash.com/photo-1518779578993-ec3579fee39e?auto=format&fit=crop&w=1400&q=60') center/cover no-repeat;
+    padding:6rem 0;
+}
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.5);
+}
+.hero .container{position:relative;z-index:1;}
+
+/* Card */
+.card{
+    background:#fff;
+    border-radius:6px;
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+    overflow:hidden;
+}
+.card img{width:100%;height:auto;display:block;}
+.card-body{padding:1rem;}
+
+/* Table */
+.table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:.5rem;
+}
+.table th,.table td{
+    border:1px solid #ddd;
+    padding:.5rem;
+    text-align:left;
+}
+.table th{background:#eee;font-weight:600;}
+
+/* Form */
+form{max-width:600px;margin:0 auto;}
+form label{display:block;margin-bottom:.3rem;font-weight:500;}
+form input,form textarea{
+    width:100%;
+    padding:.5rem;
+    margin-bottom:1rem;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+form button{background:#ffb400;color:#212529;font-weight:600;}
+
+/* Footer */
+footer{
+    background:#212529;
+    color:#ccc;
+    text-align:center;
+    font-size:.9rem;
+    padding:2rem 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ==================== ZONE 1 – HERO ==================== -->
+<section class="hero" id="hero">
+    <div class="container">
+        <h1 data-block-id="b_hero_headline">AVIS – Automated Visual Inspection System</h1>
+        <p data-block-id="b_hero_subhead">
+            Portable computer‑vision for high‑mix, low‑volume manufacturing. Verify component configuration, markings, and surface condition in real‑time – using the cameras your teams already own.
+        </p>
+        <a href="#download"
+           class="btn btn-primary"
+           data-block-id="b_hero_cta"
+           data-analytics-event="hero_cta_click"
+           data-conversion-goal="true">
+            Request a Demo
+        </a>
+    </div>
+</section>
+
+<!-- ==================== ZONE 2 – FEATURES & BENEFITS ==================== -->
+<section id="features-benefits">
+    <div class="container">
+        <h2 class="text-center mb-2">Why AVIS Is a Game‑Changer</h2>
+        <div class="row">
+
+            <!-- Short value proposition -->
+            <div class="col col-6">
+                <h3 data-block-id="b_short_vp_headline">Short Value Proposition</h3>
+                <ul data-block-id="b_short_vp_list">
+                    <li>Your Smartphone is Now a Precision Inspection System</li>
+                    <li>Inspect Complex Assemblies in Seconds, Not Minutes</li>
+                    <li>Real‑Time Assembly Verification at Production Speed</li>
+                    <li>The Assembly Inspector That Never Blinks</li>
+                </ul>
+            </div>
+
+            <!-- Longer value proposition -->
+            <div class="col col-6">
+                <h3 data-block-id="b_long_vp_headline">Longer Value Proposition</h3>
+                <ul data-block-id="b_long_vp_list">
+                    <li>Millimeter‑level verification using any smartphone or tablet.</li>
+                    <li>Deploy in days, not months – no programming, no special hardware.</li>
+                    <li>Instant pass/fail decisions with complete digital documentation.</li>
+                    <li>AI‑driven inspection that adapts to high‑mix, low‑volume production.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Benefits -->
+        <div class="row mt-2">
+            <div class="col col-6">
+                <h3 data-block-id="b_benefits_headline">Key Benefits</h3>
+                <ul data-block-id="b_benefits_list">
+                    <li>Operational accuracy – eliminates re‑work and escapes.</li>
+                    <li>Faster decisions – keep the line moving.</li>
+                    <li>Repeatable results – no inspector‑to‑inspector variance.</li>
+                    <li>Flexible deployment – works handheld or mounted.</li>
+                    <li>Proof for compliance – audit‑ready, timestamped reports.</li>
+                    <li>Quick re‑tooling – new part families added in under 24 h.</li>
+                </ul>
+            </div>
+
+            <!-- Highlights -->
+            <div class="col col-6">
+                <h3 data-block-id="b_highlights_headline">AVIS Highlights</h3>
+                <ul data-block-id="b_highlights_list">
+                    <li>10 mm positional accuracy</li>
+                    <li>No manual labeling required</li>
+                    <li>24‑hour set‑up time</li>
+                    <li>Available on iPhone & standard HD cameras</li>
+                    <li>Operates offline</li>
+                    <li>Integrates with QMS, ERP & PLM</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ZONE 3 – PRODUCT SHOWCASE ==================== -->
+<section id="product-showcase">
+    <div class="container">
+        <h2 class="text-center mb-2">Product Demonstrations</h2>
+
+        <!-- Demo video carousel (two videos) -->
+        <div class="row">
+            <div class="col col-6">
+                <h3 data-block-id="b_demo1_headline">Assembly Validation Demo</h3>
+                <video controls width="100%" data-block-id="b_demo1_video"
+                       data-analytics-event="demo_video_play"
+                       data-conversion-goal="false">
+                    <source src="https://www.veed.io/view/14b110a7-cd4b-4bd6-b064-b4280d5f54ff?source=editor&amp;panel=share"
+                            type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <p>Live inspection of a mixed‑component assembly – the system flags misplacements instantly.</p>
+            </div>
+
+            <div class="col col-6">
+                <h3 data-block-id="b_demo2_headline">Marking Verification Demo</h3>
+                <video controls width="100%" data-block-id="b_demo2_video"
+                       data-analytics-event="demo_video_play"
+                       data-conversion-goal="false">
+                    <source src="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/video9.mp4"
+                            type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <p>Pass/fail detection of factory‑applied labels on pipe sections.</p>
+            </div>
+        </div>
+
+        <!-- Image gallery (3 key screenshots) -->
+        <h3 class="mt-2 text-center" data-block-id="b_gallery_headline">Image Gallery</h3>
+        <div class="row">
+            <div class="col col-4">
+                <div class="card" data-block-id="b_gallery_img1">
+                    <img src="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/Picture1.png"
+                         alt="AVIS UI showing real‑time pass/fail overlay">
+                    <div class="card-body"><p>Real‑time overlay with confidence scores.</p></div>
+                </div>
+            </div>
+            <div class="col col-4">
+                <div class="card" data-block-id="b_gallery_img2">
+                    <img src="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/Picture2.png"
+                         alt="Zone‑2 configuration validation example">
+                    <div class="card-body"><p>Zone‑2 detailed validation (knob, bracket, foreign object).</p></div>
+                </div>
+            </div>
+            <div class="col col-4">
+                <div class="card" data-block-id="b_gallery_img3">
+                    <img src="AVIS%20src%2026fc3aed7a1a80d89e25c23cae375015/foreign_object.gif"
+                         alt="Foreign object detection in an assembly zone">
+                    <div class="card-body"><p>Instant foreign‑object alert.</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Specs table -->
+        <h3 class="mt-2 text-center" data-block-id="b_specs_headline">Technical Specs</h3>
+        <table class="table" data-block-id="b_specs_table">
+            <thead>
+                <tr>
+                    <th>Parameter</th><th>Specification</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Positional Tolerance</td><td>±10 mm</td></tr>
+                <tr><td>Minimum Detectable Feature</td><td>5 mm</td></tr>
+                <tr><td>Maximum Assembly Size</td><td>5 m</td></tr>
+                <tr><td>Marking Recognition</td><td>3 mm character height</td></tr>
+                <tr><td>Setup Speed – New Part Family</td><td>≤ 24 h</td></tr>
+                <tr><td>Setup Speed – New Configuration</td><td>≈ 1 h</td></tr>
+                <tr><td>Hardware</td><td>iPhone / Standard HD camera (no special scanner)</td></tr>
+                <tr><td>Connectivity</td><td>Offline capable</td></tr>
+                <tr><td>Integration</td><td>ERP, QMS, PLM (API / CSV export)</td></tr>
+                <tr><td>Compliance</td><td>ISO 9001 / AS9100 audit‑ready logs</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ==================== ZONE 4 – SOCIAL PROOF ==================== -->
+<section id="social-proof">
+    <div class="container">
+        <h2 class="text-center mb-2">Proven Impact in HMLV Manufacturing</h2>
+
+        <!-- Statistics -->
+        <div class="row text-center">
+            <div class="col col-4">
+                <div class="stat" data-block-id="b_stat1"><strong>10 mm</strong><br><small>Positional Accuracy</small></div>
+            </div>
+            <div class="col col-4">
+                <div class="stat" data-block-id="b_stat2"><strong>24 h</strong><br><small>Setup Time for New Part Family</small></div>
+            </div>
+            <div class="col col-4">
+                <div class="stat" data-block-id="b_stat3"><strong>100 %</strong><br><small>Offline Operation</small></div>
+            </div>
+        </div>
+
+        <!-- Customer quote (testimonial) -->
+        <div class="row mt-2">
+            <div class="col col-8 offset-2">
+                <blockquote data-block-id="b_testimonial_quote">
+                    “AVIS let us inspect mixed‑product assemblies on the shop floor with the same phone we use for documentation. We cut inspection time from 15 min to under a minute per unit without sacrificing quality.”
+                    <br><cite>– Lead Quality Engineer, AeroParts Inc.</cite>
+                </blockquote>
+            </div>
+        </div>
+
+        <!-- Logos (placeholder) -->
+        <div class="row mt-2">
+            <div class="col col-3 text-center"><img src="https://via.placeholder.com/120x60?text=Logo+1" alt="Customer Logo 1" data-block-id="b_logo1"></div>
+            <div class="col col-3 text-center"><img src="https://via.placeholder.com/120x60?text=Logo+2" alt="Customer Logo 2" data-block-id="b_logo2"></div>
+            <div class="col col-3 text-center"><img src="https://via.placeholder.com/120x60?text=Logo+3" alt="Customer Logo 3" data-block-id="b_logo3"></div>
+            <div class="col col-3 text-center"><img src="https://via.placeholder.com/120x60?text=Logo+4" alt="Customer Logo 4" data-block-id="b_logo4"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ZONE 5 – CONVERSION ==================== -->
+<section id="conversion" class="text-center">
+    <div class="container">
+        <h2 data-block-id="b_cta_headline">Ready to Transform Your Inspection Process?</h2>
+        <p data-block-id="b_cta_body">
+            Fill out the quick questionnaire below and a specialist will contact you within 24 hours to schedule a live demo.
+        </p>
+
+        <!-- Primary CTA button -->
+        <a href="#contact-form"
+           class="btn btn-primary mb-2"
+           data-block-id="b_cta_button"
+           data-analytics-event="conversion_cta_click"
+           data-conversion-goal="true">
+            Request a Live Demo
+        </a>
+
+        <!-- Contact / questionnaire form -->
+        <form id="contact-form" data-block-id="b_contact_form">
+            <label for="name">Name<span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email<span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Your company">
+
+            <label for="need">Primary inspection need (short description)</label>
+            <textarea id="need" name="need" rows="3" placeholder="e.g., high‑mix, low‑volume assembly verification"></textarea>
+
+            <button type="submit" class="btn btn-primary" data-analytics-event="form_submit" data-conversion-goal="true">
+                Submit Request
+            </button>
+        </form>
+
+        <p class="mt-2"><small>We respect your privacy – your data will only be used to respond to your inquiry.</small></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 AVIS – Automated Visual Inspection System. All rights reserved.</p>
+    <p>Contact: <a href="mailto:info@avisinspections.com">info@avisinspections.com</a> | +1‑800‑555‑0199</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+[
+  {
+    "data": {
+      "questions": [
+        {
+          "question_id": "Q1",
+          "question_type": "multiple_choice",
+          "question_text": "What is your primary role in the manufacturing process?",
+          "options": [
+            {
+              "option_id": "A1",
+              "option_text": "Quality Inspector (Shop Floor)"
+            },
+            {
+              "option_id": "A2",
+              "option_text": "Engineering Team Member (Office-based)"
+            },
+            {
+              "option_id": "A3",
+              "option_text": "Manufacturing Technician"
+            },
+            {
+              "option_id": "A4",
+              "option_text": "Production Supervisor"
+            },
+            {
+              "option_id": "A5",
+              "option_text": "Quality Assurance Manager"
+            }
+          ]
+        },
+        {
+          "question_id": "Q2",
+          "question_type": "multiple_choice",
+          "question_text": "How do you currently conduct quality inspections and measurements?",
+          "options": [
+            {
+              "option_id": "B1",
+              "option_text": "Manual measurements with calipers and visual inspection only"
+            },
+            {
+              "option_id": "B2",
+              "option_text": "Photo-based measurement tools with some manual verification"
+            },
+            {
+              "option_id": "B3",
+              "option_text": "Automated measurement systems with digital documentation"
+            },
+            {
+              "option_id": "B4",
+              "option_text": "Mixed approach - combination of manual and digital tools"
+            },
+            {
+              "option_id": "B5",
+              "option_text": "No systematic measurement process currently in place"
+            }
+          ]
+        },
+        {
+          "question_id": "Q3",
+          "question_type": "multiple_choice",
+          "question_text": "What is your biggest challenge with current measurement accuracy and consistency?",
+          "options": [
+            {
+              "option_id": "C1",
+              "option_text": "Inconsistent measurements between different inspectors"
+            },
+            {
+              "option_id": "C2",
+              "option_text": "Time-consuming manual measurement processes"
+            },
+            {
+              "option_id": "C3",
+              "option_text": "Difficulty in documenting and tracking measurement data"
+            },
+            {
+              "option_id": "C4",
+              "option_text": "Lack of real-time feedback on quality status"
+            },
+            {
+              "option_id": "C5",
+              "option_text": "Limited ability to detect defects early in the process"
+            }
+          ]
+        },
+        {
+          "question_id": "Q4",
+          "question_type": "multiple_choice",
+          "question_text": "How do you currently handle documentation and reporting of quality data?",
+          "options": [
+            {
+              "option_id": "D1",
+              "option_text": "Paper-based forms and manual record keeping"
+            },
+            {
+              "option_id": "D2",
+              "option_text": "Excel spreadsheets with manual data entry"
+            },
+            {
+              "option_id": "D3",
+              "option_text": "Digital quality management system with some automation"
+            },
+            {
+              "option_id": "D4",
+              "option_text": "Automated data capture with integrated reporting"
+            },
+            {
+              "option_id": "D5",
+              "option_text": "No systematic documentation process"
+            }
+          ]
+        },
+        {
+          "question_id": "Q5",
+          "question_type": "multiple_choice",
+          "question_text": "What level of precision tolerance management do you currently maintain?",
+          "options": [
+            {
+              "option_id": "E1",
+              "option_text": "Basic pass/fail criteria without detailed tolerance tracking"
+            },
+            {
+              "option_id": "E2",
+              "option_text": "Defined tolerance ranges but manual verification process"
+            },
+            {
+              "option_id": "E3",
+              "option_text": "Automated tolerance checking with real-time alerts"
+            },
+            {
+              "option_id": "E4",
+              "option_text": "Statistical process control with trend analysis"
+            },
+            {
+              "option_id": "E5",
+              "option_text": "No formal tolerance management system"
+            }
+          ]
+        },
+        {
+          "question_id": "Q6",
+          "question_type": "multiple_choice",
+          "question_text": "How do you currently handle non-conforming parts and quality issues?",
+          "options": [
+            {
+              "option_id": "F1",
+              "option_text": "Manual identification and physical segregation"
+            },
+            {
+              "option_id": "F2",
+              "option_text": "Digital flagging with workflow notifications"
+            },
+            {
+              "option_id": "F3",
+              "option_text": "Automated rejection with full traceability"
+            },
+            {
+              "option_id": "F4",
+              "option_text": "Root cause analysis with corrective action tracking"
+            },
+            {
+              "option_id": "F5",
+              "option_text": "No systematic non-conformance management"
+            }
+          ]
+        },
+        {
+          "question_id": "Q7",
+          "question_type": "multiple_choice",
+          "question_text": "What would be your top priority for improving your current quality inspection workflow?",
+          "options": [
+            {
+              "option_id": "G1",
+              "option_text": "Increase measurement speed and efficiency"
+            },
+            {
+              "option_id": "G2",
+              "option_text": "Improve measurement accuracy and repeatability"
+            },
+            {
+              "option_id": "G3",
+              "option_text": "Better integration between measurement tools and documentation"
+            },
+            {
+              "option_id": "G4",
+              "option_text": "Real-time quality monitoring and alerts"
+            },
+            {
+              "option_id": "G5",
+              "option_text": "Enhanced traceability and audit capabilities"
+            },
+            {
+              "option_id": "G6",
+              "option_text": "Automated defect detection and classification"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "type": { "type": "string", "enum": ["text", "mention", "equation"] },
+      "text": {
+        "type": "object",
+        "properties": {
+          "content": { "type": "string" },
+          "link": { "type": ["null", "object"], "properties": { "url": { "type": "string" } } }
+        }
+      },
+      "annotations": {
+        "type": "object",
+        "properties": {
+          "bold": { "type": "boolean" },
+          "italic": { "type": "boolean" },
+          "strikethrough": { "type": "boolean" },
+          "underline": { "type": "boolean" },
+          "code": { "type": "boolean" },
+          "color": { "type": "string" }
+        }
+      },
+      "plain_text": { "type": "string" },
+      "href": { "type": ["null", "string"] }
+    }
+  }
+}

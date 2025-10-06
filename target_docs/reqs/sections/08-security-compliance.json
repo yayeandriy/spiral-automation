@@ -1,0 +1,31 @@
+{
+  "name": "Security & Compliance",
+  "tag": "security-compliance",
+  "description": "Information about security measures, compliance standards, and data protection features",
+  "children": [
+    {
+      "name": "Security Overview",
+      "description": "Comprehensive overview of security architecture, measures, and best practices"
+    },
+    {
+      "name": "Compliance Certifications",
+      "description": "Industry standards compliance, certifications, and regulatory requirements met"
+    },
+    {
+      "name": "Data Privacy",
+      "description": "Data protection measures, privacy controls, and GDPR/CCPA compliance features"
+    },
+    {
+      "name": "Access Controls",
+      "description": "User authentication, authorization, role-based permissions, and access management"
+    },
+    {
+      "name": "Audit Logs",
+      "description": "System activity tracking, audit trail capabilities, and compliance reporting"
+    },
+    {
+      "name": "Backup & Recovery",
+      "description": "Data backup procedures, disaster recovery plans, and business continuity measures"
+    }
+  ]
+}

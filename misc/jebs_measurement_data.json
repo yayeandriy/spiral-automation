@@ -1,0 +1,184 @@
+{
+  "zoneName": "Jet Engine Blade Scan [JEBS]",
+  "description": "",
+  "files": [
+    "https://drive.google.com/drive/u/1/folders/1lO4T_J1jmC-ucicuDl_O1y-rvGJ0Azwd"
+  ],
+  "videos": [
+    "https://www.veed.io/view/467cbc27-30f4-4a52-b132-3913ffab3f12?panel=share"
+  ],
+  "images": [
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image1.png",
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image2.png",
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image3.png",
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image4.png",
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image5.png",
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image6.png",
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image7.png",
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image8.png",
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image9.png",
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image10.png",
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image11.png",
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image12.png",
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image13.png",
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image14.png",
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image15.png",
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image16.png",
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image17.png",
+    "Jet%20Engine%20Blade%20Scan%20%5BJEBS%5D%20271c3aed7a1a80c98990d21e587812bf/image18.png"
+  ],
+  "measurements": [
+    {
+      "blade": "E8172-12",
+      "measurementType": "N",
+      "verticalOffset": "1.40 mm",
+      "measuredPhoto": "2.33 mm",
+      "measuredCaliper": "2.37 mm",
+      "acceptableRange": "2.28 - 2.58 mm",
+      "status": "Acceptable",
+      "timestamp": "2024-12-03T14:11:10"
+    },
+    {
+      "blade": "E8172-12",
+      "measurementType": "F",
+      "verticalOffset": "1.40 mm",
+      "measuredPhoto": "1.33 mm",
+      "measuredCaliper": "1.47 mm",
+      "acceptableRange": "1.27 - 1.57 mm",
+      "status": "Acceptable",
+      "timestamp": "2024-12-03T14:11:15"
+    },
+    {
+      "blade": "E8172-12",
+      "measurementType": "K",
+      "verticalOffset": "1.40 mm",
+      "measuredPhoto": "2.20 mm",
+      "measuredCaliper": "2.17 mm",
+      "acceptableRange": "1.95 - 2.25 mm",
+      "status": "Acceptable",
+      "timestamp": "2024-12-03T14:11:23"
+    },
+    {
+      "blade": "E8172-12",
+      "measurementType": "H",
+      "verticalOffset": "1.40 mm",
+      "measuredPhoto": "1.32 mm",
+      "measuredCaliper": "1.26 mm",
+      "acceptableRange": "0.95 - 1.25 mm",
+      "status": "Not Acceptable",
+      "timestamp": "2024-12-03T14:11:28"
+    },
+    {
+      "blade": "E8172-12",
+      "measurementType": "G",
+      "verticalOffset": "1.40 mm",
+      "measuredPhoto": "19.54 mm",
+      "acceptableRange": "19.26 - 19.56 mm",
+      "status": "Acceptable",
+      "timestamp": "2024-12-03T14:11:32"
+    },
+    {
+      "blade": "E8172-12",
+      "measurementType": "L",
+      "verticalOffset": "1.40 mm",
+      "measuredPhoto": "4.71 mm",
+      "acceptableRange": "4.12 - 4.42 mm",
+      "status": "Not Acceptable",
+      "timestamp": "2024-12-03T14:11:39"
+    },
+    {
+      "blade": "E8172-12",
+      "measurementType": "M",
+      "verticalOffset": "1.40 mm",
+      "measuredPhoto": "1.22 mm",
+      "acceptableRange": "1.10 - 1.30 mm",
+      "status": "Acceptable",
+      "timestamp": "2024-12-03T14:11:41"
+    },
+    {
+      "blade": "E8172-12",
+      "measurementType": "J",
+      "verticalOffset": "1.40 mm",
+      "measuredPhoto": "13.2°",
+      "acceptableRange": "12.0° - 14.0°",
+      "status": "Acceptable",
+      "timestamp": "2024-12-03T14:11:46"
+    },
+    {
+      "blade": "E8172-7",
+      "measurementType": "N",
+      "verticalOffset": "1.40 mm",
+      "measuredPhoto": "2.30 mm",
+      "measuredCaliper": "2.31 mm",
+      "acceptableRange": "2.28 - 2.58 mm",
+      "status": "Acceptable",
+      "timestamp": "2024-12-03T14:23:49"
+    },
+    {
+      "blade": "E8172-7",
+      "measurementType": "F",
+      "verticalOffset": "1.40 mm",
+      "measuredPhoto": "1.35 mm",
+      "measuredCaliper": "1.45 mm",
+      "acceptableRange": "1.27 - 1.57 mm",
+      "status": "Acceptable",
+      "timestamp": "2024-12-03T14:23:54"
+    },
+    {
+      "blade": "E8172-7",
+      "measurementType": "K",
+      "verticalOffset": "1.40 mm",
+      "measuredPhoto": "1.96 mm",
+      "measuredCaliper": "1.97 mm",
+      "acceptableRange": "1.95 - 2.25 mm",
+      "status": "Acceptable",
+      "timestamp": "2024-12-03T14:23:58"
+    },
+    {
+      "blade": "E8172-7",
+      "measurementType": "H",
+      "verticalOffset": "1.40 mm",
+      "measuredPhoto": "1.23 mm",
+      "measuredCaliper": "1.21 mm",
+      "acceptableRange": "0.95 - 1.25 mm",
+      "status": "Acceptable",
+      "timestamp": "2024-12-03T14:24:01"
+    },
+    {
+      "blade": "E8172-7",
+      "measurementType": "G",
+      "verticalOffset": "1.40 mm",
+      "measuredPhoto": "19.49 mm",
+      "acceptableRange": "19.26 - 19.56 mm",
+      "status": "Acceptable",
+      "timestamp": "2024-12-03T14:24:06"
+    },
+    {
+      "blade": "E8172-7",
+      "measurementType": "L",
+      "verticalOffset": "1.40 mm",
+      "measuredPhoto": "4.76 mm",
+      "acceptableRange": "4.12 - 4.42 mm",
+      "status": "Not Acceptable",
+      "timestamp": "2024-12-03T14:24:10"
+    },
+    {
+      "blade": "E8172-7",
+      "measurementType": "M",
+      "verticalOffset": "1.40 mm",
+      "measuredPhoto": "1.25 mm",
+      "acceptableRange": "1.10 - 1.30 mm",
+      "status": "Acceptable",
+      "timestamp": "2024-12-03T14:24:19"
+    },
+    {
+      "blade": "E8172-7",
+      "measurementType": "J",
+      "verticalOffset": "1.40 mm",
+      "measuredPhoto": "13.9°",
+      "acceptableRange": "12.0° - 14.0°",
+      "status": "Acceptable",
+      "timestamp": "2024-12-03T14:24:23"
+    }
+  ]
+}

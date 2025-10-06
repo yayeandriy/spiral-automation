@@ -1,0 +1,380 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Notion Page Blocks Update Schema",
+  "description": "Schema for updating blocks in a Notion page via API",
+  "type": "object",
+  "properties": {
+    "children": {
+      "type": "array",
+      "description": "Array of block objects to add or update",
+      "items": {
+        "$ref": "#/definitions/block"
+      }
+    }
+  },
+  "required": ["children"],
+  "definitions": {
+    "block": {
+      "type": "object",
+      "properties": {
+        "object": {
+          "type": "string",
+          "enum": ["block"]
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "paragraph",
+            "heading_1",
+            "heading_2", 
+            "heading_3",
+            "bulleted_list_item",
+            "numbered_list_item",
+            "to_do",
+            "toggle",
+            "code",
+            "quote",
+            "callout",
+            "image",
+            "video",
+            "file",
+            "bookmark",
+            "equation",
+            "divider",
+            "table_of_contents",
+            "breadcrumb",
+            "column_list",
+            "column",
+            "link_preview",
+            "synced_block",
+            "template",
+            "link_to_page",
+            "table",
+            "table_row",
+            "embed",
+            "pdf",
+            "audio"
+          ]
+        }
+      },
+      "required": ["type"],
+      "allOf": [
+        {
+          "if": {
+            "properties": { "type": { "const": "paragraph" } }
+          },
+          "then": {
+            "properties": {
+              "paragraph": {
+                "$ref": "#/definitions/richTextBlock"
+              }
+            },
+            "required": ["paragraph"]
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "pattern": "^heading_[123]$" } }
+          },
+          "then": {
+            "properties": {
+              "heading_1": { "$ref": "#/definitions/richTextBlock" },
+              "heading_2": { "$ref": "#/definitions/richTextBlock" },
+              "heading_3": { "$ref": "#/definitions/richTextBlock" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "bulleted_list_item" } }
+          },
+          "then": {
+            "properties": {
+              "bulleted_list_item": {
+                "$ref": "#/definitions/listItem"
+              }
+            },
+            "required": ["bulleted_list_item"]
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "numbered_list_item" } }
+          },
+          "then": {
+            "properties": {
+              "numbered_list_item": {
+                "$ref": "#/definitions/listItem"
+              }
+            },
+            "required": ["numbered_list_item"]
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "to_do" } }
+          },
+          "then": {
+            "properties": {
+              "to_do": {
+                "allOf": [
+                  { "$ref": "#/definitions/richTextBlock" },
+                  {
+                    "properties": {
+                      "checked": {
+                        "type": "boolean"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "required": ["to_do"]
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "code" } }
+          },
+          "then": {
+            "properties": {
+              "code": {
+                "type": "object",
+                "properties": {
+                  "rich_text": {
+                    "$ref": "#/definitions/richText"
+                  },
+                  "language": {
+                    "type": "string",
+                    "enum": [
+                      "javascript", "typescript", "python", "java", "c", "cpp", 
+                      "csharp", "php", "ruby", "go", "rust", "kotlin", "swift",
+                      "html", "css", "sql", "shell", "powershell", "dockerfile",
+                      "yaml", "json", "xml", "markdown", "plain_text"
+                    ]
+                  },
+                  "caption": {
+                    "$ref": "#/definitions/richText"
+                  }
+                },
+                "required": ["rich_text"]
+              }
+            },
+            "required": ["code"]
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "image" } }
+          },
+          "then": {
+            "properties": {
+              "image": {
+                "$ref": "#/definitions/fileObject"
+              }
+            },
+            "required": ["image"]
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "callout" } }
+          },
+          "then": {
+            "properties": {
+              "callout": {
+                "allOf": [
+                  { "$ref": "#/definitions/richTextBlock" },
+                  {
+                    "properties": {
+                      "icon": {
+                        "$ref": "#/definitions/icon"
+                      },
+                      "color": {
+                        "$ref": "#/definitions/color"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "required": ["callout"]
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "divider" } }
+          },
+          "then": {
+            "properties": {
+              "divider": {
+                "type": "object"
+              }
+            },
+            "required": ["divider"]
+          }
+        }
+      ]
+    },
+    "richTextBlock": {
+      "type": "object",
+      "properties": {
+        "rich_text": {
+          "$ref": "#/definitions/richText"
+        },
+        "color": {
+          "$ref": "#/definitions/color"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/block"
+          }
+        }
+      },
+      "required": ["rich_text"]
+    },
+    "listItem": {
+      "allOf": [
+        { "$ref": "#/definitions/richTextBlock" },
+        {
+          "properties": {
+            "children": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/block"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "richText": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["text", "mention", "equation"]
+          },
+          "text": {
+            "type": "object",
+            "properties": {
+              "content": {
+                "type": "string"
+              },
+              "link": {
+                "type": "object",
+                "properties": {
+                  "url": {
+                    "type": "string",
+                    "format": "uri"
+                  }
+                }
+              }
+            },
+            "required": ["content"]
+          },
+          "annotations": {
+            "type": "object",
+            "properties": {
+              "bold": { "type": "boolean" },
+              "italic": { "type": "boolean" },
+              "strikethrough": { "type": "boolean" },
+              "underline": { "type": "boolean" },
+              "code": { "type": "boolean" },
+              "color": { "$ref": "#/definitions/color" }
+            }
+          },
+          "plain_text": {
+            "type": "string"
+          },
+          "href": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": ["type"]
+      }
+    },
+    "fileObject": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["file", "external"]
+        },
+        "file": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "expiry_time": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        },
+        "external": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "required": ["url"]
+        },
+        "caption": {
+          "$ref": "#/definitions/richText"
+        }
+      },
+      "required": ["type"]
+    },
+    "icon": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["emoji", "external", "file"]
+        },
+        "emoji": {
+          "type": "string"
+        },
+        "external": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "required": ["url"]
+        },
+        "file": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        }
+      },
+      "required": ["type"]
+    },
+    "color": {
+      "type": "string",
+      "enum": [
+        "default", "gray", "brown", "orange", "yellow", "green", 
+        "blue", "purple", "pink", "red", "gray_background", 
+        "brown_background", "orange_background", "yellow_background", 
+        "green_background", "blue_background", "purple_background", 
+        "pink_background", "red_background"
+      ]
+    }
+  }
+}

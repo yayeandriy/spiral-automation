@@ -1,0 +1,277 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://spiral-automation.com/schemas/documentation-section.json",
+  "title": "Documentation Section Schema",
+  "description": "Schema for individual documentation section files containing structured content for technical documentation",
+  "type": "object",
+  "required": [
+    "name",
+    "tag",
+    "description",
+    "children"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Section Name",
+      "description": "Human-readable name of the documentation section",
+      "minLength": 1,
+      "maxLength": 100,
+      "examples": [
+        "Overview",
+        "Getting Started",
+        "API Documentation"
+      ]
+    },
+    "tag": {
+      "type": "string",
+      "title": "Section Tag",
+      "description": "URL-friendly identifier for the section, used for routing and references",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "minLength": 1,
+      "maxLength": 50,
+      "examples": [
+        "overview",
+        "getting-started",
+        "api-docs",
+        "security-compliance"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "title": "Section Description",
+      "description": "Brief overview of what this section covers and its purpose",
+      "minLength": 10,
+      "maxLength": 500,
+      "examples": [
+        "High-level introduction to the product, its purpose, and key value propositions for business users",
+        "Essential first steps for new users to begin using the product, including setup and initial configuration"
+      ]
+    },
+    "children": {
+      "type": "array",
+      "title": "Section Children",
+      "description": "Array of subsections or topics within this main section",
+      "minItems": 1,
+      "maxItems": 20,
+      "items": {
+        "$ref": "#/definitions/child"
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "title": "Section Metadata",
+      "description": "Optional metadata for the section",
+      "properties": {
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Semantic version of the section content",
+          "examples": ["1.0.0", "2.1.3"]
+        },
+        "last_updated": {
+          "type": "string",
+          "format": "date",
+          "description": "Date when the section was last updated (YYYY-MM-DD format)"
+        },
+        "author": {
+          "type": "string",
+          "description": "Author or team responsible for this section",
+          "maxLength": 100
+        },
+        "priority": {
+          "type": "string",
+          "enum": ["high", "medium", "low"],
+          "description": "Priority level for content updates and maintenance"
+        },
+        "target_audience": {
+          "type": "array",
+          "description": "Intended audience for this section",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developers",
+              "administrators",
+              "end-users",
+              "managers",
+              "technical-writers",
+              "support-staff"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "child": {
+      "type": "object",
+      "title": "Child Section",
+      "description": "A subsection or topic within the main documentation section",
+      "required": [
+        "name",
+        "description"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Child Name",
+          "description": "Name of the subsection or topic",
+          "minLength": 1,
+          "maxLength": 100,
+          "examples": [
+            "Product Introduction",
+            "Installation Instructions",
+            "API Reference"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "title": "Child Description",
+          "description": "Detailed description of what this subsection covers",
+          "minLength": 10,
+          "maxLength": 2000,
+          "examples": [
+            "Comprehensive introduction to the product, its core purpose, target markets, and primary value proposition for businesses"
+          ]
+        },
+        "bullet_points": {
+          "type": "array",
+          "title": "Key Points",
+          "description": "Array of key points or highlights for this subsection",
+          "minItems": 1,
+          "maxItems": 15,
+          "items": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 200,
+            "description": "Individual bullet point highlighting key information"
+          },
+          "examples": [
+            [
+              "Advanced automated inspection solution for precision manufacturing",
+              "Micron-level accuracy measurement with real-time quality validation",
+              "Photo-based measurement technology combined with caliper validation"
+            ]
+          ]
+        },
+        "links": {
+          "type": "array",
+          "title": "Related Links",
+          "description": "Optional array of related links or references",
+          "items": {
+            "$ref": "#/definitions/link"
+          }
+        },
+        "code_examples": {
+          "type": "array",
+          "title": "Code Examples",
+          "description": "Optional array of code examples for technical sections",
+          "items": {
+            "$ref": "#/definitions/code_example"
+          }
+        },
+        "tags": {
+          "type": "array",
+          "title": "Content Tags",
+          "description": "Optional tags for categorizing and filtering content",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "maxLength": 30
+          },
+          "examples": [
+            ["installation", "setup", "configuration"],
+            ["api", "reference", "technical"]
+          ]
+        }
+      }
+    },
+    "link": {
+      "type": "object",
+      "title": "Reference Link",
+      "description": "A related link or external reference",
+      "required": ["title", "url"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Display title for the link",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the referenced resource"
+        },
+        "description": {
+          "type": "string",
+          "description": "Optional description of what the link contains",
+          "maxLength": 200
+        }
+      }
+    },
+    "code_example": {
+      "type": "object",
+      "title": "Code Example",
+      "description": "A code snippet or example for technical documentation",
+      "required": ["title", "code"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Title or description of the code example",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "code": {
+          "type": "string",
+          "description": "The actual code content",
+          "minLength": 1
+        },
+        "language": {
+          "type": "string",
+          "description": "Programming language for syntax highlighting",
+          "examples": [
+            "javascript",
+            "python",
+            "json",
+            "bash",
+            "sql",
+            "yaml"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "description": "Optional explanation of what the code does",
+          "maxLength": 500
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "name": "Overview",
+      "tag": "overview",
+      "description": "High-level introduction to the product, its purpose, and key value propositions for business users",
+      "children": [
+        {
+          "name": "Product Introduction",
+          "description": "Comprehensive introduction to the product, its core purpose, target markets, and primary value proposition for businesses",
+          "bullet_points": [
+            "Advanced automated inspection solution for precision manufacturing",
+            "Micron-level accuracy measurement with real-time quality validation",
+            "Photo-based measurement technology combined with caliper validation"
+          ],
+          "tags": ["introduction", "overview", "product"]
+        }
+      ],
+      "metadata": {
+        "version": "1.0.0",
+        "last_updated": "2025-09-30",
+        "author": "Documentation Team",
+        "priority": "high",
+        "target_audience": ["developers", "managers", "end-users"]
+      }
+    }
+  ],
+  "additionalProperties": false
+}

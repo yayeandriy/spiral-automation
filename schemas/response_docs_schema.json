@@ -1,0 +1,582 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/response-docs-schema.json",
+  "title": "Response Documentation Schema",
+  "description": "Comprehensive schema for structured documentation responses with metadata, hierarchical sections, rich content blocks, and navigation elements",
+  "type": "object",
+  "required": ["document"],
+  "properties": {
+    "document": {
+      "type": "object",
+      "description": "Root document object containing all documentation structure",
+      "required": ["metadata", "sections"],
+      "properties": {
+        "metadata": {
+          "$ref": "#/definitions/documentMetadata"
+        },
+        "sections": {
+          "type": "array",
+          "description": "Array of main document sections",
+          "items": {
+            "$ref": "#/definitions/section"
+          },
+          "minItems": 1
+        },
+        "navigation": {
+          "$ref": "#/definitions/navigation"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  
+  "definitions": {
+    "documentMetadata": {
+      "type": "object",
+      "description": "Document metadata including title, version, tags and language",
+      "required": ["title"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Document title",
+          "minLength": 1,
+          "examples": ["Precision Manufacturing Quality Control – User Guide"]
+        },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp of last update",
+          "examples": ["2025-09-30T00:00:00Z"]
+        },
+        "version": {
+          "type": "string",
+          "description": "Document version",
+          "pattern": "^\\d+\\.\\d+(\\.\\d+)?$",
+          "examples": ["1.0", "2.1.3"]
+        },
+        "tags": {
+          "type": "array",
+          "description": "Array of document tags for categorization",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "examples": [["quality-control", "manufacturing", "measurement"]]
+        },
+        "language": {
+          "type": "string",
+          "description": "Document language code",
+          "pattern": "^[a-z]{2}(-[A-Z]{2})?$",
+          "examples": ["en", "en-US", "fr-FR"]
+        },
+        "author": {
+          "type": "string",
+          "description": "Document author"
+        },
+        "description": {
+          "type": "string",
+          "description": "Document description or summary"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "section": {
+      "type": "object",
+      "description": "Document section with heading, content and optional subsections",
+      "required": ["id", "type"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique section identifier",
+          "pattern": "^[a-z0-9-]+$",
+          "minLength": 1,
+          "examples": ["precision-manufacturing-quality-control"]
+        },
+        "type": {
+          "type": "string",
+          "description": "Section type",
+          "enum": ["content", "figure", "table", "callout", "code", "navigation"],
+          "examples": ["content", "figure"]
+        },
+        "heading": {
+          "$ref": "#/definitions/heading"
+        },
+        "content": {
+          "type": "array",
+          "description": "Array of content blocks within the section",
+          "items": {
+            "$ref": "#/definitions/contentBlock"
+          }
+        },
+        "subsections": {
+          "type": "array",
+          "description": "Array of nested subsections",
+          "items": {
+            "$ref": "#/definitions/section"
+          }
+        },
+        "attributes": {
+          "$ref": "#/definitions/attributes"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "heading": {
+      "type": "object",
+      "description": "Section heading with level, text and anchor information",
+      "required": ["level", "text"],
+      "properties": {
+        "level": {
+          "type": "integer",
+          "description": "Heading level (1-6)",
+          "minimum": 1,
+          "maximum": 6,
+          "examples": [1, 2, 3, 4]
+        },
+        "text": {
+          "type": "string",
+          "description": "Heading text content",
+          "minLength": 1,
+          "examples": ["Precision Manufacturing Quality Control"]
+        },
+        "anchor": {
+          "type": "boolean",
+          "description": "Whether heading should have an anchor link",
+          "examples": [true, false]
+        },
+        "id": {
+          "type": "string",
+          "description": "Heading identifier for anchoring",
+          "pattern": "^[a-z0-9-]+$",
+          "examples": ["precision-manufacturing-quality-control"]
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "contentBlock": {
+      "type": "object",
+      "description": "Individual content block within a section",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Type of content block",
+          "enum": [
+            "paragraph",
+            "plain_text", 
+            "bullet_list",
+            "numbered_list",
+            "definition_list",
+            "table",
+            "code_block",
+            "callout",
+            "quote",
+            "figure",
+            "divider",
+            "heading"
+          ]
+        },
+        "content": {
+          "description": "Content of the block, structure varies by type",
+          "oneOf": [
+            {"$ref": "#/definitions/richText"},
+            {"$ref": "#/definitions/listContent"},
+            {"$ref": "#/definitions/tableContent"},
+            {"$ref": "#/definitions/codeContent"},
+            {"$ref": "#/definitions/calloutContent"},
+            {"$ref": "#/definitions/figureContent"},
+            {"type": "string"}
+          ]
+        },
+        "attributes": {
+          "$ref": "#/definitions/attributes"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "richText": {
+      "type": "array",
+      "description": "Array of rich text elements",
+      "items": {
+        "$ref": "#/definitions/textElement"
+      }
+    },
+
+    "textElement": {
+      "type": "object",
+      "description": "Individual text element with formatting",
+      "required": ["type", "content"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Type of text element",
+          "enum": ["text", "link", "bold", "italic", "code", "strikethrough", "underline"]
+        },
+        "content": {
+          "type": "string",
+          "description": "Text content",
+          "examples": ["Advanced automated inspection system"]
+        },
+        "href": {
+          "type": "string",
+          "description": "Link URL for link elements",
+          "format": "uri"
+        },
+        "attributes": {
+          "$ref": "#/definitions/attributes"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "listContent": {
+      "type": "object",
+      "description": "List content structure",
+      "required": ["listType", "items"],
+      "properties": {
+        "listType": {
+          "type": "string",
+          "description": "Type of list",
+          "enum": ["ordered", "unordered", "definition"]
+        },
+        "items": {
+          "type": "array",
+          "description": "List items",
+          "items": {
+            "$ref": "#/definitions/listItem"
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "listItem": {
+      "type": "object",
+      "description": "Individual list item",
+      "required": ["content"],
+      "properties": {
+        "content": {
+          "$ref": "#/definitions/richText"
+        },
+        "children": {
+          "type": "array",
+          "description": "Nested list items",
+          "items": {
+            "$ref": "#/definitions/listItem"
+          }
+        },
+        "term": {
+          "type": "string",
+          "description": "Term for definition list items"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "tableContent": {
+      "type": "object",
+      "description": "Table content structure",
+      "required": ["rows"],
+      "properties": {
+        "caption": {
+          "type": "string",
+          "description": "Table caption"
+        },
+        "headers": {
+          "type": "array",
+          "description": "Table header row",
+          "items": {
+            "$ref": "#/definitions/tableCell"
+          }
+        },
+        "rows": {
+          "type": "array",
+          "description": "Table data rows",
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/tableCell"
+            }
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "tableCell": {
+      "type": "object",
+      "description": "Individual table cell",
+      "properties": {
+        "content": {
+          "$ref": "#/definitions/richText"
+        },
+        "colspan": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Number of columns to span"
+        },
+        "rowspan": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Number of rows to span"
+        },
+        "attributes": {
+          "$ref": "#/definitions/attributes"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "codeContent": {
+      "type": "object",
+      "description": "Code block content",
+      "required": ["code"],
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "Code content"
+        },
+        "language": {
+          "type": "string",
+          "description": "Programming language",
+          "examples": ["javascript", "python", "json", "html"]
+        },
+        "filename": {
+          "type": "string",
+          "description": "Associated filename"
+        },
+        "lineNumbers": {
+          "type": "boolean",
+          "description": "Whether to show line numbers"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "calloutContent": {
+      "type": "object",
+      "description": "Callout/alert box content",
+      "required": ["content"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Callout type",
+          "enum": ["info", "warning", "error", "success", "note", "tip"],
+          "default": "info"
+        },
+        "title": {
+          "type": "string",
+          "description": "Callout title"
+        },
+        "content": {
+          "$ref": "#/definitions/richText"
+        },
+        "icon": {
+          "type": "string",
+          "description": "Icon identifier or emoji"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "figureContent": {
+      "type": "object",
+      "description": "Figure/image content",
+      "properties": {
+        "src": {
+          "type": "string",
+          "description": "Image source URL or path",
+          "format": "uri"
+        },
+        "alt": {
+          "type": "string",
+          "description": "Alternative text for accessibility"
+        },
+        "caption": {
+          "$ref": "#/definitions/richText"
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Image width in pixels"
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Image height in pixels"
+        },
+        "placeholder": {
+          "type": "string",
+          "description": "Placeholder text when image is not available",
+          "examples": ["⚠️ Image placeholder – replace with product interface screenshot."]
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "attributes": {
+      "type": "object",
+      "description": "Additional attributes for styling or metadata",
+      "properties": {
+        "style": {
+          "type": "string",
+          "description": "Inline CSS styles",
+          "examples": ["color: green;", "font-weight: bold;"]
+        },
+        "class": {
+          "type": "string",
+          "description": "CSS class names"
+        },
+        "id": {
+          "type": "string",
+          "description": "Element ID"
+        },
+        "data": {
+          "type": "object",
+          "description": "Data attributes",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+
+    "navigation": {
+      "type": "object",
+      "description": "Document navigation elements",
+      "properties": {
+        "previousPage": {
+          "$ref": "#/definitions/navigationLink"
+        },
+        "nextPage": {
+          "$ref": "#/definitions/navigationLink"
+        },
+        "breadcrumbs": {
+          "type": "array",
+          "description": "Breadcrumb navigation",
+          "items": {
+            "$ref": "#/definitions/navigationLink"
+          }
+        },
+        "tableOfContents": {
+          "type": "array",
+          "description": "Table of contents entries",
+          "items": {
+            "$ref": "#/definitions/tocEntry"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "navigationLink": {
+      "type": "object",
+      "description": "Navigation link element",
+      "required": ["text", "href"],
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Link text",
+          "minLength": 1,
+          "examples": ["Overview", "Advanced Features"]
+        },
+        "href": {
+          "type": "string",
+          "description": "Link URL",
+          "examples": ["/docs/overview", "/docs/advanced-features"]
+        },
+        "title": {
+          "type": "string",
+          "description": "Link title attribute"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "tocEntry": {
+      "type": "object",
+      "description": "Table of contents entry",
+      "required": ["text", "href", "level"],
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "TOC entry text",
+          "minLength": 1
+        },
+        "href": {
+          "type": "string",
+          "description": "TOC entry link"
+        },
+        "level": {
+          "type": "integer",
+          "description": "Heading level",
+          "minimum": 1,
+          "maximum": 6
+        },
+        "children": {
+          "type": "array",
+          "description": "Nested TOC entries",
+          "items": {
+            "$ref": "#/definitions/tocEntry"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+
+  "examples": [
+    {
+      "document": {
+        "metadata": {
+          "title": "Precision Manufacturing Quality Control – User Guide",
+          "lastUpdated": "2025-09-30T00:00:00Z",
+          "version": "1.0",
+          "tags": ["quality-control", "manufacturing", "measurement", "visualization"],
+          "language": "en"
+        },
+        "sections": [
+          {
+            "id": "precision-manufacturing-quality-control",
+            "type": "content",
+            "heading": {
+              "level": 3,
+              "text": "Precision Manufacturing Quality Control",
+              "anchor": true,
+              "id": "precision-manufacturing-quality-control"
+            },
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "content": "Advanced automated inspection system for manufacturing precision components with micron-level accuracy measurement and real‑time quality validation."
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "navigation": {
+          "previousPage": {
+            "text": "Overview",
+            "href": "/docs/overview"
+          },
+          "nextPage": {
+            "text": "Advanced Features", 
+            "href": "/docs/advanced-features"
+          }
+        }
+      }
+    }
+  ]
+}

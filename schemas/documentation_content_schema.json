@@ -1,0 +1,573 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Documentation Content Schema",
+  "description": "Comprehensive schema for structured documentation content that can represent HTML documentation in JSON format",
+  "type": "object",
+  "properties": {
+    "document": {
+      "$ref": "#/definitions/documentRoot"
+    }
+  },
+  "required": ["document"],
+  "definitions": {
+    "documentRoot": {
+      "type": "object",
+      "title": "Document Root",
+      "description": "Root container for the entire documentation",
+      "properties": {
+        "metadata": {
+          "$ref": "#/definitions/documentMetadata"
+        },
+        "sections": {
+          "type": "array",
+          "title": "Document Sections",
+          "description": "Array of main content sections",
+          "items": {
+            "$ref": "#/definitions/section"
+          }
+        },
+        "navigation": {
+          "$ref": "#/definitions/navigationInfo"
+        }
+      },
+      "required": ["sections"],
+      "additionalProperties": false
+    },
+    "documentMetadata": {
+      "type": "object",
+      "title": "Document Metadata",
+      "description": "Information about the document",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Document title"
+        },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp"
+        },
+        "version": {
+          "type": "string",
+          "description": "Document version"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Document tags or categories"
+        },
+        "language": {
+          "type": "string",
+          "default": "en",
+          "description": "Document language code"
+        }
+      }
+    },
+    "navigationInfo": {
+      "type": "object",
+      "title": "Navigation Information",
+      "description": "Document navigation and pagination",
+      "properties": {
+        "previousPage": {
+          "$ref": "#/definitions/linkReference"
+        },
+        "nextPage": {
+          "$ref": "#/definitions/linkReference"
+        },
+        "breadcrumbs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/linkReference"
+          }
+        }
+      }
+    },
+    "section": {
+      "type": "object",
+      "title": "Content Section",
+      "description": "A major section of documentation content",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique section identifier"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["content", "callout", "table", "figure", "code_block", "list", "navigation"],
+          "description": "Type of section content"
+        },
+        "heading": {
+          "$ref": "#/definitions/heading"
+        },
+        "content": {
+          "type": "array",
+          "description": "Array of content blocks within the section",
+          "items": {
+            "$ref": "#/definitions/contentBlock"
+          }
+        },
+        "subsections": {
+          "type": "array",
+          "description": "Nested subsections",
+          "items": {
+            "$ref": "#/definitions/section"
+          }
+        }
+      },
+      "required": ["type", "content"]
+    },
+    "heading": {
+      "type": "object",
+      "title": "Heading Element",
+      "description": "Document heading with level and anchor",
+      "properties": {
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 6,
+          "description": "Heading level (1-6, like h1-h6)"
+        },
+        "text": {
+          "type": "string",
+          "description": "Heading text content"
+        },
+        "id": {
+          "type": "string",
+          "description": "Heading anchor ID for linking"
+        },
+        "anchor": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether heading has an anchor link"
+        }
+      },
+      "required": ["level", "text"]
+    },
+    "contentBlock": {
+      "type": "object",
+      "title": "Content Block",
+      "description": "Individual content element within a section",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "paragraph",
+            "heading",
+            "list",
+            "table",
+            "code_block",
+            "quote",
+            "callout",
+            "figure",
+            "divider",
+            "link_collection",
+            "raw_html"
+          ],
+          "description": "Type of content block"
+        },
+        "content": {
+          "description": "Content based on block type",
+          "oneOf": [
+            {"$ref": "#/definitions/richText"},
+            {"$ref": "#/definitions/heading"},
+            {"$ref": "#/definitions/listContent"},
+            {"$ref": "#/definitions/tableContent"},
+            {"$ref": "#/definitions/codeContent"},
+            {"$ref": "#/definitions/calloutContent"},
+            {"$ref": "#/definitions/figureContent"},
+            {"$ref": "#/definitions/linkCollectionContent"},
+            {"type": "string"}
+          ]
+        },
+        "attributes": {
+          "type": "object",
+          "description": "Additional attributes (class, id, style, etc.)",
+          "additionalProperties": true
+        }
+      },
+      "required": ["type", "content"]
+    },
+    "richText": {
+      "type": "array",
+      "title": "Rich Text Content",
+      "description": "Array of text elements with formatting",
+      "items": {
+        "$ref": "#/definitions/textElement"
+      }
+    },
+    "textElement": {
+      "type": "object",
+      "title": "Text Element",
+      "description": "Individual text element with formatting",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["text", "link", "code", "strong", "emphasis", "break"],
+          "description": "Type of text element"
+        },
+        "content": {
+          "type": "string",
+          "description": "Text content"
+        },
+        "href": {
+          "type": "string",
+          "description": "URL for link elements"
+        },
+        "target": {
+          "type": "string",
+          "enum": ["_self", "_blank", "_parent", "_top"],
+          "description": "Link target attribute"
+        },
+        "title": {
+          "type": "string",
+          "description": "Link title or tooltip"
+        },
+        "formatting": {
+          "type": "object",
+          "description": "Text formatting options",
+          "properties": {
+            "bold": {"type": "boolean"},
+            "italic": {"type": "boolean"},
+            "underline": {"type": "boolean"},
+            "strikethrough": {"type": "boolean"},
+            "code": {"type": "boolean"},
+            "color": {"type": "string"},
+            "backgroundColor": {"type": "string"}
+          }
+        }
+      },
+      "required": ["type", "content"]
+    },
+    "listContent": {
+      "type": "object",
+      "title": "List Content",
+      "description": "Structured list content",
+      "properties": {
+        "listType": {
+          "type": "string",
+          "enum": ["ordered", "unordered", "definition"],
+          "description": "Type of list"
+        },
+        "items": {
+          "type": "array",
+          "description": "List items",
+          "items": {
+            "$ref": "#/definitions/listItem"
+          }
+        }
+      },
+      "required": ["listType", "items"]
+    },
+    "listItem": {
+      "type": "object",
+      "title": "List Item",
+      "description": "Individual list item",
+      "properties": {
+        "content": {
+          "$ref": "#/definitions/richText"
+        },
+        "nestedList": {
+          "$ref": "#/definitions/listContent"
+        }
+      },
+      "required": ["content"]
+    },
+    "tableContent": {
+      "type": "object",
+      "title": "Table Content",
+      "description": "Structured table data",
+      "properties": {
+        "caption": {
+          "type": "string",
+          "description": "Table caption"
+        },
+        "headers": {
+          "type": "array",
+          "description": "Table header row",
+          "items": {
+            "$ref": "#/definitions/tableCell"
+          }
+        },
+        "rows": {
+          "type": "array",
+          "description": "Table data rows",
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/tableCell"
+            }
+          }
+        },
+        "hasHeaders": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether table has header row"
+        }
+      },
+      "required": ["rows"]
+    },
+    "tableCell": {
+      "type": "object",
+      "title": "Table Cell",
+      "description": "Individual table cell",
+      "properties": {
+        "content": {
+          "$ref": "#/definitions/richText"
+        },
+        "colspan": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 1
+        },
+        "rowspan": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 1
+        },
+        "alignment": {
+          "type": "string",
+          "enum": ["left", "center", "right", "justify"]
+        },
+        "isHeader": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "required": ["content"]
+    },
+    "codeContent": {
+      "type": "object",
+      "title": "Code Content",
+      "description": "Code block or inline code",
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "Code content"
+        },
+        "language": {
+          "type": "string",
+          "description": "Programming language"
+        },
+        "inline": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether code is inline or block"
+        },
+        "caption": {
+          "type": "string",
+          "description": "Code block caption"
+        },
+        "lineNumbers": {
+          "type": "boolean",
+          "default": false
+        },
+        "highlight": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "description": "Line numbers to highlight"
+        }
+      },
+      "required": ["code"]
+    },
+    "calloutContent": {
+      "type": "object",
+      "title": "Callout Content",
+      "description": "Special callout or alert box",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["info", "warning", "error", "success", "note", "tip", "default"],
+          "description": "Callout type/theme"
+        },
+        "icon": {
+          "type": "string",
+          "description": "Callout icon (emoji or icon class)"
+        },
+        "title": {
+          "type": "string",
+          "description": "Callout title"
+        },
+        "content": {
+          "type": "array",
+          "description": "Callout content blocks",
+          "items": {
+            "$ref": "#/definitions/contentBlock"
+          }
+        }
+      },
+      "required": ["type", "content"]
+    },
+    "figureContent": {
+      "type": "object",
+      "title": "Figure Content",
+      "description": "Image, diagram, or media with caption",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["image", "video", "audio", "embed", "diagram"],
+          "description": "Type of media"
+        },
+        "src": {
+          "type": "string",
+          "description": "Media source URL"
+        },
+        "alt": {
+          "type": "string",
+          "description": "Alternative text"
+        },
+        "caption": {
+          "$ref": "#/definitions/richText"
+        },
+        "title": {
+          "type": "string",
+          "description": "Media title"
+        },
+        "width": {
+          "type": ["string", "number"],
+          "description": "Media width"
+        },
+        "height": {
+          "type": ["string", "number"],
+          "description": "Media height"
+        },
+        "alignment": {
+          "type": "string",
+          "enum": ["left", "center", "right", "full"]
+        },
+        "lightbox": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether media opens in lightbox"
+        }
+      },
+      "required": ["type", "src"]
+    },
+    "linkCollectionContent": {
+      "type": "object",
+      "title": "Link Collection Content",
+      "description": "Collection of related links",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Collection title"
+        },
+        "description": {
+          "type": "string",
+          "description": "Collection description"
+        },
+        "links": {
+          "type": "array",
+          "description": "Array of links",
+          "items": {
+            "$ref": "#/definitions/linkReference"
+          }
+        }
+      },
+      "required": ["links"]
+    },
+    "linkReference": {
+      "type": "object",
+      "title": "Link Reference",
+      "description": "Link with metadata",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Link text"
+        },
+        "href": {
+          "type": "string",
+          "description": "Link URL"
+        },
+        "title": {
+          "type": "string",
+          "description": "Link title attribute"
+        },
+        "target": {
+          "type": "string",
+          "enum": ["_self", "_blank", "_parent", "_top"]
+        },
+        "description": {
+          "type": "string",
+          "description": "Link description"
+        },
+        "icon": {
+          "type": "string",
+          "description": "Link icon"
+        },
+        "category": {
+          "type": "string",
+          "description": "Link category or type"
+        }
+      },
+      "required": ["text", "href"]
+    }
+  },
+  "examples": [
+    {
+      "document": {
+        "metadata": {
+          "title": "Using Notion's API for Integrations",
+          "lastUpdated": "2025-01-06T00:00:00Z",
+          "version": "1.0",
+          "language": "en",
+          "tags": ["api", "integration", "documentation"]
+        },
+        "sections": [
+          {
+            "id": "using-notions-api-for-integrations",
+            "type": "content",
+            "heading": {
+              "level": 2,
+              "text": "Using Notion's API for Integrations",
+              "id": "using-notions-api-for-integrations",
+              "anchor": true
+            },
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "content": "A Notion workspace is a collaborative environment where teams can organize work, manage projects, and store information in a highly customizable way."
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "content": {
+                  "listType": "unordered",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "link",
+                          "content": "Pages",
+                          "href": "/docs/working-with-page-content",
+                          "target": "_self"
+                        },
+                        {
+                          "type": "text",
+                          "content": ": Create, update, and retrieve page content."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "navigation": {
+          "nextPage": {
+            "text": "Build your first integration",
+            "href": "/docs/create-a-notion-integration"
+          }
+        }
+      }
+    }
+  ]
+}

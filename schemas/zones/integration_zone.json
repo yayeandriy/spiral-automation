@@ -1,0 +1,427 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Integration Zone Content Schema", 
+  "description": "Content zone showcasing integrations, APIs, partnerships, and ecosystem connections",
+  "type": "object",
+  "properties": {
+    "zone_id": {
+      "type": "string",
+      "description": "Unique identifier for the zone"
+    },
+    "zone_type": {
+      "type": "string",
+      "const": "integration_zone",
+      "description": "Type of zone - must be integration_zone"
+    },
+    "zone_name": {
+      "type": "string",
+      "description": "Human-readable name for the zone"
+    },
+    "zone_purpose": {
+      "type": "string",
+      "description": "Primary purpose and goal of this zone"
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Order position of zone on the page"
+    },
+    "is_above_fold": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether zone appears above the fold"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["medium", "low"],
+      "default": "medium",
+      "description": "Content importance priority - integration zones are typically medium priority"
+    },
+    "content_strategy": {
+      "type": "string",
+      "enum": ["ecosystem_building", "connectivity", "partnership"],
+      "default": "ecosystem_building",
+      "description": "Content strategy for integration zones"
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/integration_section"
+      },
+      "description": "Content sections within the integration zone"
+    }
+  },
+  "required": ["zone_id", "zone_type", "zone_name", "position", "sections"],
+  "definitions": {
+    "integration_section": {
+      "type": "object",
+      "properties": {
+        "section_id": {
+          "type": "string",
+          "description": "Unique identifier for the section"
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "integrations_gallery_section", "api_section", "partners_section",
+            "marketplace_section", "ecosystem_section", "webhooks_section",
+            "developer_tools_section", "third_party_section"
+          ],
+          "description": "Type of section - integration focused types"
+        },
+        "section_name": {
+          "type": "string",
+          "description": "Human-readable name for the section"
+        },
+        "section_purpose": {
+          "type": "string",
+          "description": "Primary purpose of this section"
+        },
+        "content_structure": {
+          "type": "string",
+          "enum": [
+            "logo_grid", "card_layout", "category_tabs", "search_grid", "directory_layout"
+          ],
+          "description": "Organizational structure - integration display layouts"
+        },
+        "content_flow": {
+          "type": "string",
+          "enum": ["grid", "categorized", "searchable"],
+          "default": "grid",
+          "description": "How content flows within the section"
+        },
+        "blocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/integration_block"
+          },
+          "description": "Individual content blocks within the section"
+        }
+      },
+      "required": ["section_id", "section_type", "section_name", "blocks"]
+    },
+    "integration_block": {
+      "type": "object",
+      "properties": {
+        "block_id": {
+          "type": "string",
+          "description": "Unique identifier for the block"
+        },
+        "block_category": {
+          "type": "string",
+          "enum": [
+            "integration_content", "api_content", "partner_content", "tool_content"
+          ],
+          "description": "High-level category of the content block"
+        },
+        "block_type": {
+          "type": "string",
+          "enum": [
+            "integration_card", "partner_logo", "api_endpoint", "webhook_config",
+            "tool_connector", "marketplace_item", "developer_resource", "integration_guide",
+            "code_snippet", "authentication_method", "rate_limit_info", "sdk_reference"
+          ],
+          "description": "Specific type of content block suitable for integration zones"
+        },
+        "content": {
+          "$ref": "#/definitions/block_content_data",
+          "description": "The actual content data of the block"
+        },
+        "functionality": {
+          "$ref": "#/definitions/block_functionality",
+          "description": "Interactive functionality and behavior"
+        },
+        "metadata": {
+          "$ref": "#/definitions/content_metadata",
+          "description": "Additional metadata for the content block"
+        }
+      },
+      "required": ["block_id", "block_category", "block_type", "content"]
+    },
+    "block_content_data": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Title of the integration or partner"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the integration or partnership"
+        },
+        "integration_details": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "category": { 
+              "type": "string",
+              "enum": ["crm", "marketing", "analytics", "payment", "storage", "communication", "productivity", "security", "other"]
+            },
+            "logo_url": { "type": "string", "format": "uri" },
+            "website_url": { "type": "string", "format": "uri" },
+            "documentation_url": { "type": "string", "format": "uri" },
+            "setup_difficulty": {
+              "type": "string",
+              "enum": ["easy", "medium", "advanced"]
+            },
+            "setup_time": { "type": "string" },
+            "popular": { "type": "boolean" },
+            "featured": { "type": "boolean" }
+          },
+          "description": "Details about the integration"
+        },
+        "api_details": {
+          "type": "object",
+          "properties": {
+            "endpoint": { "type": "string" },
+            "method": { 
+              "type": "string",
+              "enum": ["GET", "POST", "PUT", "DELETE", "PATCH"]
+            },
+            "authentication": {
+              "type": "string",
+              "enum": ["api_key", "oauth", "basic_auth", "bearer_token"]
+            },
+            "rate_limits": {
+              "type": "object",
+              "properties": {
+                "requests_per_minute": { "type": "integer" },
+                "requests_per_hour": { "type": "integer" },
+                "requests_per_day": { "type": "integer" }
+              }
+            },
+            "parameters": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "type": { "type": "string" },
+                  "required": { "type": "boolean" },
+                  "description": { "type": "string" }
+                }
+              }
+            }
+          },
+          "description": "API specification details"
+        },
+        "code_examples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "language": { "type": "string" },
+              "code": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          },
+          "description": "Code examples for integration"
+        },
+        "partner_info": {
+          "type": "object",
+          "properties": {
+            "company_name": { "type": "string" },
+            "partnership_type": {
+              "type": "string",
+              "enum": ["technology", "channel", "strategic", "integration"]
+            },
+            "tier": {
+              "type": "string",
+              "enum": ["platinum", "gold", "silver", "bronze", "certified"]
+            },
+            "logo_url": { "type": "string", "format": "uri" },
+            "website_url": { "type": "string", "format": "uri" },
+            "contact_info": { "type": "string" }
+          },
+          "description": "Partner company information"
+        },
+        "setup_guide": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "step_number": { "type": "integer" },
+              "title": { "type": "string" },
+              "description": { "type": "string" },
+              "screenshot_url": { "type": "string", "format": "uri" }
+            }
+          },
+          "description": "Step-by-step setup instructions"
+        },
+        "benefits": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Benefits of this integration"
+        },
+        "use_cases": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": { "type": "string" },
+              "description": { "type": "string" },
+              "example": { "type": "string" }
+            }
+          },
+          "description": "Common use cases for the integration"
+        },
+        "pricing": {
+          "type": "object",
+          "properties": {
+            "free_tier": { "type": "boolean" },
+            "pricing_model": {
+              "type": "string",
+              "enum": ["free", "freemium", "paid", "enterprise"]
+            },
+            "pricing_details": { "type": "string" }
+          },
+          "description": "Pricing information for the integration"
+        },
+        "media_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for integration logos, screenshots, or diagrams"
+        },
+        "alt_text": {
+          "type": "string",
+          "description": "Alternative text for accessibility"
+        }
+      }
+    },
+    "block_functionality": {
+      "type": "object",
+      "properties": {
+        "interactive": {
+          "type": "boolean",
+          "description": "Whether the block is interactive"
+        },
+        "interaction_type": {
+          "type": "string",
+          "enum": [
+            "click", "expand", "filter", "search", "connect", "configure", "test_connection"
+          ],
+          "description": "Type of interaction supported"
+        },
+        "searchable": {
+          "type": "boolean",
+          "description": "Whether integration can be found through search"
+        },
+        "filterable": {
+          "type": "boolean",
+          "description": "Whether integration can be filtered by category"
+        },
+        "connectable": {
+          "type": "boolean",
+          "description": "Whether integration can be connected directly"
+        },
+        "testable": {
+          "type": "boolean",
+          "description": "Whether integration connection can be tested"
+        },
+        "action_target": {
+          "type": "string",
+          "description": "Target URL for setup, documentation, or connection"
+        },
+        "tracking": {
+          "type": "object",
+          "properties": {
+            "analytics_event": {
+              "type": "string",
+              "description": "Analytics event name"
+            },
+            "integration_interest": {
+              "type": "boolean",
+              "description": "Whether this tracks integration interest"
+            },
+            "setup_tracking": {
+              "type": "boolean",
+              "description": "Whether to track setup attempts"
+            }
+          }
+        }
+      }
+    },
+    "content_metadata": {
+      "type": "object",
+      "properties": {
+        "created_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Content creation timestamp"
+        },
+        "updated_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp"
+        },
+        "version": {
+          "type": "string",
+          "description": "Content version"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "review", "approved", "published", "deprecated"],
+          "description": "Content status"
+        },
+        "integration_status": {
+          "type": "string",
+          "enum": ["active", "beta", "coming_soon", "deprecated"],
+          "description": "Current status of the integration"
+        },
+        "api_version": {
+          "type": "string",
+          "description": "API version for this integration"
+        },
+        "last_tested": {
+          "type": "string",
+          "format": "date",
+          "description": "When integration was last tested"
+        },
+        "popularity_score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Popularity score for ordering"
+        },
+        "technical_complexity": {
+          "type": "string",
+          "enum": ["low", "medium", "high"],
+          "description": "Technical complexity of integration"
+        },
+        "accessibility": {
+          "type": "object",
+          "properties": {
+            "aria_label": {
+              "type": "string",
+              "description": "ARIA label for screen readers"
+            },
+            "keyboard_navigation": {
+              "type": "boolean",
+              "description": "Supports keyboard navigation"
+            }
+          }
+        }
+      }
+    }
+  },
+  "zone_guidelines": {
+    "description": "Content zone showcasing integrations, APIs, partnerships, and ecosystem connections",
+    "typical_content": [
+      "Integration marketplace", "Partner logos", "API documentation", "Code examples",
+      "Setup guides", "Webhook configurations", "SDK references", "Developer tools",
+      "Third-party connectors", "Authentication methods"
+    ],
+    "content_strategy": "Demonstrate extensive ecosystem and easy connectivity",
+    "conversion_impact": "Medium - shows ecosystem value and reduces integration concerns",
+    "best_practices": [
+      "Organize integrations by category",
+      "Provide clear setup instructions",
+      "Include popular/featured integrations prominently",
+      "Show real code examples",
+      "Keep integration status updated",
+      "Make it easy to search and filter integrations"
+    ]
+  }
+}

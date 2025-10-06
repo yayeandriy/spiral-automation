@@ -1,0 +1,230 @@
+/* =============================================================================
+
+Page specific CSS for Readme's Changelog page.
+Readme advises to use their exact compound selectors verbatim
+and to override attributes already defined via !important. The focus goes from most global
+to page level to component level.
+These styles are not currently dynamically generated and are current as of 12/2021
+
+============================================================================= */
+
+.rm-Changelog .rm-Container > div:first-child {
+	padding-top: 40px;
+}
+
+.rm-Changelog .rm-Container > div {
+	padding: 0;
+	border-bottom: none;
+	margin-bottom: 60px;
+}
+
+.rm-Changelog h1 {
+	padding-top: 0 !important;
+}
+
+.rm-Changelog h1 {
+	font-size: var(--type-size--title-m);
+	line-height: var(--type-line-height--title-m);
+	font-weight: 700 !important;
+	margin-top: 0 !important;
+	margin-bottom: 12px !important;
+	max-width: 100% !important;
+	border-bottom: none !important;
+}
+
+.rm-Changelog h1 a {
+	color: var(--color-text--dark);
+}
+
+.rm-Changelog .DateLine {
+	padding: 0 !important;
+	margin: 0 0 16px 0 !important;
+	color: var(--color-text--medium) !important;
+	font-size: var(--type-size--body-s);
+	line-height: var(--type-line-height--body-s);
+	font-weight: 400 !important;
+}
+
+.rm-Changelog .markdown-body {
+	padding: 0 !important;
+	margin: 0 !important;
+	color: var(--color-text--regular) !important;
+	font-size: var(--type-size--body-m) !important;
+	line-height: var(--type-line-height--body-m);
+}
+
+/* misc */
+.rm-Changelog .icon-check1,
+.rm-Changelog .icon-plus1,
+.rm-Changelog .icon-alert-triangle,
+.rm-Changelog .icon-heart1 {
+	display: none;
+}
+
+/* =============================================================================
+
+CSS before Readme's redesign current of 05/2021
+
+============================================================================= */
+
+.hub-changelog-list,
+#hub-changelog {
+	margin: 45px 0 45px 0 !important;
+	width: 100% !important;
+	max-width: calc(635px + 180px) !important;
+	padding: 0 90px !important;
+	box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+	.hub-changelog-list,
+	#hub-changelog {
+		padding: 0 !important;
+	}
+
+	.hub-changelog-list {
+		padding: 0 20px !important;
+	}
+}
+
+@media (max-width: 1024px) {
+	.hub-changelog-post {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.hub-changelog-post #content-container,
+	section#hub-content .hub-changelog-post #hub-changelog header#content-head,
+	.hub-changelog-post #hub-changelog #content-head {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+}
+
+@media (max-width: 1024px) {
+	.hub-changelog-post .changelog-back-button {
+		margin-top: 45px;
+		text-align: left;
+		padding-left: 0;
+	}
+}
+
+.hub-changelog-list .changelog-post:first-child {
+	padding-top: 0 !important;
+}
+
+.hub-changelog-list .changelog-post {
+	padding: 0;
+	border-bottom: none;
+	margin-bottom: 60px;
+}
+
+section#hub-content header h1 {
+	margin-bottom: 20px !important;
+}
+
+section#hub-content header h1,
+section#hub-content header h2 {
+	font-weight: 700 !important;
+	color: var(--color-text--dark) !important;
+}
+
+.hub-changelog-list .changelog-post h3,
+#hub-container section#hub-content header#content-head,
+section#hub-content header#content-head {
+	font-size: var(--type-size--title-m);
+	line-height: var(--type-line-height--title-m);
+	font-weight: 700 !important;
+	margin-top: 0 !important;
+	margin-bottom: 12px !important;
+	max-width: 100% !important;
+	border-bottom: none !important;
+}
+
+.hub-changelog-list .changelog-post h3 {
+	padding-top: 0 !important;
+}
+
+section#hub-content #content-container {
+	padding-top: 20px !important;
+}
+
+.field-description,
+.markdown-body {
+	margin-left: 0 !important;
+	font-size: var(--type-size--body-m);
+}
+
+.hub-changelog-list .changelog-post h3 a {
+	color: var(--color-text--dark);
+}
+
+.changelog-info,
+.hub-changelog-list .changelog-post .changelog-info {
+	padding: 0 !important;
+	margin: 0 0 16px 0 !important;
+	color: var(--color-text--medium) !important;
+	font-size: var(--type-size--body-s);
+	line-height: var(--type-line-height--body-s);
+	font-weight: 400 !important;
+}
+
+.changelog-info .fa {
+	display: none !important;
+}
+
+.hub-changelog-post a[ui-sref="changelog"] {
+	color: var(--color-text--medium) !important;
+}
+
+.hub-changelog-post a[ui-sref="changelog"] .fa {
+	display: none !important;
+}
+
+.hub-changelog-post a[ui-sref="changelog"]::before {
+	font: inherit;
+	content: "← ";
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.hub-changelog-list .changelog-post .markdown-body {
+	padding: 0 !important;
+	margin: 0 !important;
+	color: var(--color-text--regular) !important;
+	font-size: var(--type-size--body-m) !important;
+	line-height: var(--type-line-height--body-m);
+}
+
+.hub-changelog-post .markdown-body {
+	font-size: var(--type-size--body-m) !important;
+}
+
+/* misc */
+#changelog-type-icon {
+	display: none;
+}
+
+#changelog-type-text + #content-head {
+	margin-top: 20px;
+}
+
+#changelog-type-text {
+	padding: 2px 3px 2px 4px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 125%;
+	letter-spacing: 0.1em;
+	color: #ffffff;
+	text-transform: uppercase;
+	border-radius: 3px;
+	margin-bottom: 12px;
+	background-color: var(--color-text--regular);
+}
+
+.cl-added + #changelog-type-text {
+	background-color: #75c387;
+}

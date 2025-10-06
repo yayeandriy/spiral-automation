@@ -1,0 +1,27 @@
+{
+  "name": "Troubleshooting",
+  "tag": "troubleshooting",
+  "description": "Common issues, error messages, and their solutions to help users resolve problems quickly",
+  "children": [
+    {
+      "name": "Common Issues",
+      "description": "Frequently encountered problems and their step-by-step solutions"
+    },
+    {
+      "name": "Error Messages",
+      "description": "Explanation of error codes, warning messages, and their resolution steps"
+    },
+    {
+      "name": "Diagnostic Tools",
+      "description": "Built-in and external tools for identifying, analyzing, and resolving system issues"
+    },
+    {
+      "name": "Performance Issues",
+      "description": "Identifying and resolving performance bottlenecks, slow response times, and optimization"
+    },
+    {
+      "name": "Known Limitations",
+      "description": "Current system limitations, workarounds, and planned improvements"
+    }
+  ]
+}

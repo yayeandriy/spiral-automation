@@ -1,0 +1,319 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Features & Benefits Zone Content Schema",
+  "description": "Content zone showcasing product features, benefits, and capabilities",
+  "type": "object",
+  "properties": {
+    "zone_id": {
+      "type": "string",
+      "description": "Unique identifier for the zone"
+    },
+    "zone_type": {
+      "type": "string",
+      "const": "features_benefits_zone",
+      "description": "Type of zone - must be features_benefits_zone"
+    },
+    "zone_name": {
+      "type": "string",
+      "description": "Human-readable name for the zone"
+    },
+    "zone_purpose": {
+      "type": "string",
+      "description": "Primary purpose and goal of this zone"
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Order position of zone on the page"
+    },
+    "is_above_fold": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether zone appears above the fold - typically false for features zones"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["high", "medium"],
+      "default": "high",
+      "description": "Content importance priority - features zones are typically high priority"
+    },
+    "content_strategy": {
+      "type": "string",
+      "enum": ["informational", "educational"],
+      "default": "informational",
+      "description": "Content strategy for features zones"
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/features_section"
+      },
+      "description": "Content sections within the features & benefits zone"
+    }
+  },
+  "required": ["zone_id", "zone_type", "zone_name", "position", "sections"],
+  "definitions": {
+    "features_section": {
+      "type": "object",
+      "properties": {
+        "section_id": {
+          "type": "string",
+          "description": "Unique identifier for the section"
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "features_grid_section", "benefits_section", "capabilities_section",
+            "feature_highlights_section", "value_proposition_section"
+          ],
+          "description": "Type of section - features and benefits focused types"
+        },
+        "section_name": {
+          "type": "string",
+          "description": "Human-readable name for the section"
+        },
+        "section_purpose": {
+          "type": "string",
+          "description": "Primary purpose of this section"
+        },
+        "content_structure": {
+          "type": "string",
+          "enum": [
+            "grid_layout", "card_layout", "list_layout", "tab_layout", "accordion_layout"
+          ],
+          "description": "Organizational structure - common layouts for features content"
+        },
+        "content_flow": {
+          "type": "string",
+          "enum": ["linear", "grid", "hierarchical"],
+          "default": "grid",
+          "description": "How content flows within the section"
+        },
+        "blocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/features_block"
+          },
+          "description": "Individual content blocks within the section"
+        }
+      },
+      "required": ["section_id", "section_type", "section_name", "blocks"]
+    },
+    "features_block": {
+      "type": "object",
+      "properties": {
+        "block_id": {
+          "type": "string",
+          "description": "Unique identifier for the block"
+        },
+        "block_category": {
+          "type": "string",
+          "enum": [
+            "text_content", "visual_content", "interactive_content", "media_content"
+          ],
+          "description": "High-level category of the content block"
+        },
+        "block_type": {
+          "type": "string",
+          "enum": [
+            "feature_card", "benefit_item", "capability_block", "feature_icon_text",
+            "benefit_badge", "feature_image", "benefit_diagram", "comparison_table",
+            "feature_video", "process_step", "specification_list", "advantage_point",
+            "use_case_example", "outcome_metric"
+          ],
+          "description": "Specific type of content block suitable for features zones"
+        },
+        "content": {
+          "$ref": "#/definitions/block_content_data",
+          "description": "The actual content data of the block"
+        },
+        "functionality": {
+          "$ref": "#/definitions/block_functionality",
+          "description": "Interactive functionality and behavior"
+        },
+        "metadata": {
+          "$ref": "#/definitions/content_metadata",
+          "description": "Additional metadata for the content block"
+        }
+      },
+      "required": ["block_id", "block_category", "block_type", "content"]
+    },
+    "block_content_data": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Plain text content of the block"
+        },
+        "rich_text": {
+          "type": "string",
+          "description": "HTML or markdown formatted text content"
+        },
+        "title": {
+          "type": "string",
+          "description": "Feature or benefit title"
+        },
+        "subtitle": {
+          "type": "string",
+          "description": "Supporting headline or category"
+        },
+        "description": {
+          "type": "string",
+          "description": "Detailed explanation of feature or benefit"
+        },
+        "benefit_statement": {
+          "type": "string",
+          "description": "Clear benefit statement or value proposition"
+        },
+        "feature_details": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "List of feature details or specifications"
+        },
+        "media_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for images, videos, or other media"
+        },
+        "media_type": {
+          "type": "string",
+          "enum": ["image", "video", "svg", "gif", "diagram", "icon"],
+          "description": "Type of media content"
+        },
+        "icon": {
+          "type": "string",
+          "description": "Icon identifier or name for feature representation"
+        },
+        "alt_text": {
+          "type": "string",
+          "description": "Alternative text for accessibility"
+        },
+        "metrics": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string",
+              "description": "Numeric value or statistic"
+            },
+            "unit": {
+              "type": "string",
+              "description": "Unit of measurement"
+            },
+            "label": {
+              "type": "string",
+              "description": "Description of the metric"
+            }
+          },
+          "description": "Performance metrics or statistics"
+        },
+        "comparison_data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "aspect": { "type": "string" },
+              "our_value": { "type": "string" },
+              "competitor_value": { "type": "string" }
+            }
+          },
+          "description": "Comparison data for competitive analysis"
+        }
+      }
+    },
+    "block_functionality": {
+      "type": "object",
+      "properties": {
+        "interactive": {
+          "type": "boolean",
+          "description": "Whether the block is interactive"
+        },
+        "interaction_type": {
+          "type": "string",
+          "enum": ["click", "hover", "expand", "tab_switch", "modal"],
+          "description": "Type of interaction supported"
+        },
+        "expandable": {
+          "type": "boolean",
+          "description": "Whether content can be expanded for more details"
+        },
+        "action_target": {
+          "type": "string",
+          "description": "Target of the action (URL, element ID, function, etc.)"
+        },
+        "tracking": {
+          "type": "object",
+          "properties": {
+            "analytics_event": {
+              "type": "string",
+              "description": "Analytics event name"
+            },
+            "feature_engagement": {
+              "type": "boolean",
+              "description": "Whether this tracks feature engagement"
+            }
+          }
+        }
+      }
+    },
+    "content_metadata": {
+      "type": "object",
+      "properties": {
+        "created_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Content creation timestamp"
+        },
+        "version": {
+          "type": "string",
+          "description": "Content version"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "review", "approved", "published"],
+          "description": "Content status"
+        },
+        "feature_category": {
+          "type": "string",
+          "enum": ["core", "advanced", "premium", "enterprise"],
+          "description": "Feature tier or category"
+        },
+        "priority_level": {
+          "type": "string",
+          "enum": ["primary", "secondary", "supporting"],
+          "description": "Priority level of this feature or benefit"
+        },
+        "accessibility": {
+          "type": "object",
+          "properties": {
+            "aria_label": {
+              "type": "string",
+              "description": "ARIA label for screen readers"
+            },
+            "keyboard_navigation": {
+              "type": "boolean",
+              "description": "Supports keyboard navigation"
+            }
+          }
+        }
+      }
+    }
+  },
+  "zone_guidelines": {
+    "description": "Content zone showcasing product features, benefits, and capabilities", 
+    "typical_content": [
+      "Feature descriptions", "Benefit statements", "Capability demonstrations",
+      "Feature comparisons", "Use case examples", "Performance metrics"
+    ],
+    "content_strategy": "Clear explanation of value delivered through features",
+    "conversion_impact": "High - builds product understanding and desire",
+    "best_practices": [
+      "Focus on benefits over features",
+      "Use clear visual hierarchy",
+      "Include supporting visuals or icons",
+      "Group related features together",
+      "Quantify benefits when possible"
+    ]
+  }
+}

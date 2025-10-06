@@ -1,0 +1,106 @@
+{
+  "title": "JEBS Landing Page - Notion Blocks",
+  "description": "Complete Notion API blocks for JEBS (Jet Engine Blade Scan) precision measurement system landing page",
+  "created": "2025-09-24",
+  "total_files": 5,
+  "files": [
+    {
+      "filename": "zone_1.json",
+      "section": "Hero Section",
+      "description": "Main title, value proposition, key metrics, and hero image placeholder with CTA buttons",
+      "blocks_count": 8,
+      "contains": ["heading_1", "paragraph", "column_list", "callout", "divider"]
+    },
+    {
+      "filename": "zone_2.json",
+      "section": "Technology Showcase",
+      "description": "Advanced measurement capabilities with 3-column feature layout and real measurement data",
+      "blocks_count": 12,
+      "contains": ["heading_1", "heading_2", "heading_3", "paragraph", "column_list", "callout", "bulleted_list_item", "divider"]
+    },
+    {
+      "filename": "zone_3.json",
+      "section": "Product Showcase",
+      "description": "Technical specifications, demo video section with blade model information and system requirements",
+      "blocks_count": 9,
+      "contains": ["heading_1", "heading_2", "heading_3", "paragraph", "column_list", "callout", "divider"]
+    },
+    {
+      "filename": "zone_4.json",
+      "section": "Social Proof",
+      "description": "Real measurement results from E8172 blade series with quality scores and industry applications",
+      "blocks_count": 8,
+      "contains": ["heading_1", "heading_2", "heading_3", "paragraph", "column_list", "callout", "divider"]
+    },
+    {
+      "filename": "zone_5.json",
+      "section": "Conversion",
+      "description": "Contact information, lead generation forms, company details and comprehensive footer with social links",
+      "blocks_count": 15,
+      "contains": ["heading_1", "heading_2", "heading_3", "paragraph", "column_list", "callout", "bulleted_list_item", "divider"]
+    }
+  ],
+  "usage_instructions": {
+    "api_endpoint": "https://api.notion.com/v1/blocks/{block_id}/children",
+    "method": "PATCH",
+    "headers": {
+      "Authorization": "Bearer YOUR_INTEGRATION_TOKEN",
+      "Content-Type": "application/json",
+      "Notion-Version": "2022-06-28"
+    },
+    "notes": [
+      "Each file contains a 'blocks' array that can be used directly as the request body",
+      "Files are organized as landing page zones for sequential import",
+      "All column_list structures have 2-4 columns with diverse layouts",
+      "Media placeholders include file references and descriptions for later replacement",
+      "Rich text includes proper annotations for bold formatting and emoji icons",
+      "Real measurement data from JEBS source content included",
+      "Color-coded callouts for visual categorization and user engagement"
+    ]
+  },
+  "content_overview": {
+    "total_zones": 5,
+    "key_features": [
+      "Diverse column layouts (2-4 columns per section)",
+      "Color-coded callouts with emojis",
+      "Real measurement data integration",
+      "Media placeholders with file references",
+      "Professional aerospace branding",
+      "Lead generation contact forms",
+      "Technical specifications and demo content",
+      "Industry application examples"
+    ],
+    "block_types_used": [
+      "heading_1",
+      "heading_2", 
+      "heading_3",
+      "paragraph",
+      "callout",
+      "column_list",
+      "column",
+      "bulleted_list_item",
+      "divider"
+    ],
+    "target_audience": "B2B aerospace manufacturers",
+    "industry_focus": "Precision measurement and quality control",
+    "measurement_data": {
+      "blade_series": "E8172",
+      "measurement_points": ["F", "G", "H", "J", "K", "L", "M", "N"],
+      "precision": "±0.01mm",
+      "accuracy_rate": "99.7%",
+      "inspection_time": "< 5 minutes"
+    },
+    "media_files": [
+      "blade-measurement-hero.jpg",
+      "measurement-point-f.png", 
+      "measurement-point-k.png",
+      "blade-profile.png"
+    ],
+    "contact_info": {
+      "sales": "sales@jebs-systems.com",
+      "support": "support@jebs-systems.com", 
+      "demo": "demo@jebs-systems.com",
+      "phone": "+1 (555) 123-4567"
+    }
+  }
+}

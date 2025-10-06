@@ -1,0 +1,31 @@
+{
+  "name": "Administration",
+  "tag": "administration",
+  "description": "Guidance for system administrators on managing users, permissions, and system settings",
+  "children": [
+    {
+      "name": "User Management",
+      "description": "Creating, modifying, and managing user accounts, profiles, and access permissions"
+    },
+    {
+      "name": "Role-Based Access Control",
+      "description": "Defining roles, assigning permissions, and managing access control policies"
+    },
+    {
+      "name": "System Configuration",
+      "description": "Core system settings, global configurations, and administrative preferences"
+    },
+    {
+      "name": "Monitoring & Analytics",
+      "description": "System monitoring tools, performance metrics, and usage analytics dashboards"
+    },
+    {
+      "name": "Maintenance Tasks",
+      "description": "Regular maintenance procedures, system updates, and housekeeping operations"
+    },
+    {
+      "name": "Backup Procedures",
+      "description": "Administrative backup processes, schedule management, and recovery procedures"
+    }
+  ]
+}

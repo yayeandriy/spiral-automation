@@ -1,0 +1,247 @@
+[
+  {
+    "success": true,
+    "extractionMethod": "markdown_codeblock",
+    "document": {
+      "product_name": "Precision Manufacturing Quality Control (PMQC) System",
+      "overview": {
+        "description": "The PMQC System is an advanced automated inspection platform that delivers micron‑level precision for dimensional, angular and surface quality validation. It combines photo‑based measurement, intelligent segmentation, real‑time pass/fail logic, and statistical process control (SPC) integration to give manufacturers instant quality decisions and full audit trail compliance.",
+        "key_capabilities": [
+          "Multi‑point measurement analysis",
+          "Angular and dimensional measurements",
+          "CAD comparison verification",
+          "Statistical Process Control integration",
+          "Intelligent image segmentation (85 % manual time reduction)",
+          "Real‑time validation with instant alerts",
+          "Integrated quality‑control dashboard",
+          "Seamless ERP & QMS data export",
+          "Customizable compliance reporting"
+        ],
+        "technical_specifications": {
+          "precision": "Micron‑level",
+          "multi_dimensional": true,
+          "real_time_processing": true,
+          "interface": "Web + API"
+        }
+      },
+      "get_started": {
+        "prerequisites": [
+          {
+            "id": "hardware",
+            "description": "Industrial camera (≥12 MP), high‑speed optics, vibration‑isolated mounting plate."
+          },
+          {
+            "id": "software",
+            "description": "Operating System: Windows 10/11 or Red Hat Enterprise Linux 8+, .NET 6 SDK or .NET Core 6 runtime."
+          },
+          {
+            "id": "network",
+            "description": "LAN or Wi‑Fi connectivity to ERP/QMS, firewall rules: TCP 8000‑8001 allowed."
+          },
+          {
+            "id": "calibration",
+            "description": "Calibration fixture (micrometer scale) and test part for first‑time set‑up."
+          }
+        ],
+        "installation": [
+          "Mount the camera on the fixture and connect to power.",
+          "Plug the Ethernet cable into the PC and into the network switch.",
+          "Run the Install_Batch.exe (or use the silent installer: `Install_Batch.exe /S`).",
+          "Follow on‑screen prompts: accept EULA, specify camera IP, set calibration fixture coordinates.",
+          "After installation, launch the PMQC desktop client."
+        ],
+        "first_run": [
+          "Open Settings > Calibration. Load the calibration fixture and capture 5 reference images.",
+          "Run the auto‑tilt correction sub‑routine to compensate for any mounting tilt.",
+          "Select a sample component and run a full scan to verify measurement parameters.",
+          "Confirm that the real‑time validation logic flags the component correctly.",
+          "Generate a test report and verify all data fields populate correctly.",
+          "Schedule a daily export to the test ERP database for compliance verification."
+        ]
+      },
+      "how_to_use": {
+        "measurement_setup": [
+          {
+            "step": 1,
+            "description": "Define Measurement Profiles (Profile Manager).",
+            "details": [
+              "Specify critical dimensions, tolerances, and acceptable ranges.",
+              "Add angular measurement jobs (e.g., Angle J = ± 0.5°).",
+              "Enable CAD comparison: load reference CAD file, align via surface matching."
+            ]
+          },
+          {
+            "step": 2,
+            "description": "Configure Image Segmentation.",
+            "details": [
+              "Enable Intelligent Segmentation to let the ML model auto‑detect measurement points.",
+              "If automatic detection is unreliable, manually annotate at least 3 guide points to retrain the segmenter."
+            ]
+          },
+          {
+            "step": 3,
+            "description": "Set Validation Rules.",
+            "details": [
+              "Pass/Fail threshold set to ± 0.02 mm for dimensional checks.",
+              "Define alert escalation: email to supervisor, stop line if cumulative out‑of‑spec > 5 %."
+            ]
+          },
+          {
+            "step": 4,
+            "description": "Queue the part for inspection.",
+            "details": [
+              "Scan with the camera; system captures image, applies segmentation, computes measurements.",
+              "Displays results: Measurement N, Status, Comparison to CAD, timestamp."
+            ]
+          }
+        ],
+        "validation_process": [
+          "Real‑time comparison to tolerances occurs immediately after measurement.",
+          "If pass, the component proceeds to the next station; if fail, the system writes the component to a non‑conforming bin.",
+          "Operator may override a fail status after manual review; system logs a reason code."
+        ],
+        "reporting": [
+          "All scans are stored in a structured log with time‑stamp, operator ID, and machine ID.",
+          "Generate batch report: File > Export > Batch Report (CSV/JSON/XML).",
+          "Dashboard analytics: View quality trends, SPC charts, and out‑of‑spec heat maps."
+        ],
+        "dashboard_usage": [
+          "Immediate alerts: pop‑up and email for out‑of‑spec components.",
+          "Trend monitoring: click ‘Batch Trends’ to see historical QC metrics over the last 30 days.",
+          "Compliance view: export a PDF audit trail with signed attestations."
+        ]
+      },
+      "edge_cases_and_troubleshooting": [
+        {
+          "id": "segmentation_error",
+          "description": "Model fails to detect key measurement points.",
+          "symptoms": [
+            "Blank measurement fields",
+            "High variance in repeated scans"
+          ],
+          "resolution": [
+            "Refresh the segmentation model via Settings > ML > Retrain.",
+            "Add manual reference points in the segmentation editor.",
+            "Verify camera alignment and illumination."
+          ]
+        },
+        {
+          "id": "camera_misalignment",
+          "description": "Measured values drift due to sensor tilt.",
+          "symptoms": [
+            "Consistent offset from expected CAD values"
+          ],
+          "resolution": [
+            "Run the Tilt‑Correction wizard.",
+            "Re‑mount the camera and perform a new calibration."
+          ]
+        },
+        {
+          "id": "calibration_drift",
+          "description": "Long‑term drift after several hours of operation.",
+          "symptoms": [
+            "Increasing out‑of‑spec rate after 6 h",
+            "Time‑stamp mismatch in logs"
+          ],
+          "resolution": [
+            "Schedule automatic calibration checks every 4 h.",
+            "Use the built‑in auto‑calibration feature."
+          ]
+        },
+        {
+          "id": "network_failure",
+          "description": "Loss of connectivity to ERP during export.",
+          "symptoms": [
+            "Export errors, “Network Unreachable” dialog"
+          ],
+          "resolution": [
+            "Verify switch health, ensure port is active.",
+            "Confirm firewall not blocking port 8001.",
+            "Use the background export queue; it will retry automatically."
+          ]
+        },
+        {
+          "id": "operator_override",
+          "description": "Manual override of a fail status.",
+          "symptoms": [
+            "Component proceeds after “Fail” status"
+          ],
+          "resolution": [
+            "Always enter reason code; system logs justification for audit.",
+            "If overrides exceed 10 % of total parts, trigger manager review."
+          ]
+        }
+      ],
+      "integration": {
+        "erp_export": {
+          "description": "Real‑time push of inspection data to ERP.",
+          "endpoints": [
+            {
+              "url": "https://erp.company.com/api/inspection",
+              "method": "POST",
+              "auth": "OAuth2.0 bearer",
+              "payload": {
+                "batch_id": "string",
+                "timestamp": "ISO8601",
+                "results": [
+                  {
+                    "part_id": "string",
+                    "measurement_n": "float",
+                    "status": "PASS/FAIL",
+                    "raw_image_url": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "retry_policy": {
+            "max_attempts": 5,
+            "backoff_seconds": 30
+          }
+        },
+        "qms_integration": {
+          "description": "Export of audit trail and SPC data to the Quality Management System.",
+          "methods": [
+            "Export CSV via File > Export > QMS Export",
+            "Webhooks: POST to QMS webhook URL configured under Settings > Integration > QMS"
+          ]
+        },
+        "api_reference": {
+          "base_url": "https://api.pmqc.company.com/v1",
+          "endpoints": [
+            "/profiles",
+            "/measurements",
+            "/reports",
+            "/alerts"
+          ]
+        }
+      },
+      "faq": [
+        {
+          "question": "Can the system run in a high‑temperature environment?",
+          "answer": "Yes. The camera housing is rated to 60 °C and the software supports external temperature sensor input for adaptive lens compensation."
+        },
+        {
+          "question": "What compliance standards does PMQC meet?",
+          "answer": "ISO 9001:2015, ISO 14224 for equipment, and FDA 21CFR Part 820 audit trail requirements."
+        }
+      ]
+    },
+    "metadata": null,
+    "contentAnalysis": null,
+    "validation": {
+      "isValid": false,
+      "warnings": [],
+      "errors": [
+        "Missing \"document\" root object"
+      ]
+    },
+    "rawJsonString": "{\n  \"product_name\": \"Precision Manufacturing Quality Control (PMQC) System\",\n  \"overview\": {\n    \"description\": \"The PMQC System is an advanced automated inspection platform that delivers micron‑level precision for dimensional, angular and surface quality validation. It combines photo‑based measurement, intelligent segmentation, real‑time pass/fail logic, and statistical process control (SPC) integration to give manufacturers instant quality decisions and full audit trail compliance.\",\n    \"key_capabilities\": [\n      \"Multi‑point measurement analysis\",\n      \"Angular and dimensional measurements\",\n      \"CAD comparison verification\",\n      \"Statistical Process Control integration\",\n      \"Intelligent image segmentation (85 % manual time reduction)\",\n      \"Real‑time validation with instant alerts\",\n      \"Integrated quality‑control dashboard\",\n      \"Seamless ERP & QMS data export\",\n      \"Customizable compliance reporting\"\n    ],\n    \"technical_specifications\": {\n      \"precision\": \"Micron‑level\",\n      \"multi_dimensional\": true,\n      \"real_time_processing\": true,\n      \"interface\": \"Web + API\"\n    }\n  },\n\n  \"get_started\": {\n    \"prerequisites\": [\n      {\n        \"id\": \"hardware\",\n        \"description\": \"Industrial camera (≥12 MP), high‑speed optics, vibration‑isolated mounting plate.\"\n      },\n      {\n        \"id\": \"software\",\n        \"description\": \"Operating System: Windows 10/11 or Red Hat Enterprise Linux 8+, .NET 6 SDK or .NET Core 6 runtime.\"\n      },\n      {\n        \"id\": \"network\",\n        \"description\": \"LAN or Wi‑Fi connectivity to ERP/QMS, firewall rules: TCP 8000‑8001 allowed.\"\n      },\n      {\n        \"id\": \"calibration\",\n        \"description\": \"Calibration fixture (micrometer scale) and test part for first‑time set‑up.\"\n      }\n    ],\n    \"installation\": [\n      \"Mount the camera on the fixture and connect to power.\",\n      \"Plug the Ethernet cable into the PC and into the network switch.\",\n      \"Run the Install_Batch.exe (or use the silent installer: `Install_Batch.exe /S`).\",\n      \"Follow on‑screen prompts: accept EULA, specify camera IP, set calibration fixture coordinates.\",\n      \"After installation, launch the PMQC desktop client.\"\n    ],\n    \"first_run\": [\n      \"Open Settings > Calibration. Load the calibration fixture and capture 5 reference images.\",\n      \"Run the auto‑tilt correction sub‑routine to compensate for any mounting tilt.\",\n      \"Select a sample component and run a full scan to verify measurement parameters.\",\n      \"Confirm that the real‑time validation logic flags the component correctly.\",\n      \"Generate a test report and verify all data fields populate correctly.\",\n      \"Schedule a daily export to the test ERP database for compliance verification.\"\n    ]\n  },\n\n  \"how_to_use\": {\n    \"measurement_setup\": [\n      {\n        \"step\": 1,\n        \"description\": \"Define Measurement Profiles (Profile Manager).\",\n        \"details\": [\n          \"Specify critical dimensions, tolerances, and acceptable ranges.\",\n          \"Add angular measurement jobs (e.g., Angle J = ± 0.5°).\",\n          \"Enable CAD comparison: load reference CAD file, align via surface matching.\"\n        ]\n      },\n      {\n        \"step\": 2,\n        \"description\": \"Configure Image Segmentation.\",\n        \"details\": [\n          \"Enable Intelligent Segmentation to let the ML model auto‑detect measurement points.\",\n          \"If automatic detection is unreliable, manually annotate at least 3 guide points to retrain the segmenter.\"\n        ]\n      },\n      {\n        \"step\": 3,\n        \"description\": \"Set Validation Rules.\",\n        \"details\": [\n          \"Pass/Fail threshold set to ± 0.02 mm for dimensional checks.\",\n          \"Define alert escalation: email to supervisor, stop line if cumulative out‑of‑spec > 5 %.\"\n        ]\n      },\n      {\n        \"step\": 4,\n        \"description\": \"Queue the part for inspection.\",\n        \"details\": [\n          \"Scan with the camera; system captures image, applies segmentation, computes measurements.\",\n          \"Displays results: Measurement N, Status, Comparison to CAD, timestamp.\"\n        ]\n      }\n    ],\n    \"validation_process\": [\n      \"Real‑time comparison to tolerances occurs immediately after measurement.\",\n      \"If pass, the component proceeds to the next station; if fail, the system writes the component to a non‑conforming bin.\",\n      \"Operator may override a fail status after manual review; system logs a reason code.\"\n    ],\n    \"reporting\": [\n      \"All scans are stored in a structured log with time‑stamp, operator ID, and machine ID.\",\n      \"Generate batch report: File > Export > Batch Report (CSV/JSON/XML).\",\n      \"Dashboard analytics: View quality trends, SPC charts, and out‑of‑spec heat maps.\"\n    ],\n    \"dashboard_usage\": [\n      \"Immediate alerts: pop‑up and email for out‑of‑spec components.\",\n      \"Trend monitoring: click ‘Batch Trends’ to see historical QC metrics over the last 30 days.\",\n      \"Compliance view: export a PDF audit trail with signed attestations.\"\n    ]\n  },\n\n  \"edge_cases_and_troubleshooting\": [\n    {\n      \"id\": \"segmentation_error\",\n      \"description\": \"Model fails to detect key measurement points.\",\n      \"symptoms\": [\n        \"Blank measurement fields\",\n        \"High variance in repeated scans\"\n      ],\n      \"resolution\": [\n        \"Refresh the segmentation model via Settings > ML > Retrain.\",\n        \"Add manual reference points in the segmentation editor.\",\n        \"Verify camera alignment and illumination.\"\n      ]\n    },\n    {\n      \"id\": \"camera_misalignment\",\n      \"description\": \"Measured values drift due to sensor tilt.\",\n      \"symptoms\": [\n        \"Consistent offset from expected CAD values\"\n      ],\n      \"resolution\": [\n        \"Run the Tilt‑Correction wizard.\",\n        \"Re‑mount the camera and perform a new calibration.\"\n      ]\n    },\n    {\n      \"id\": \"calibration_drift\",\n      \"description\": \"Long‑term drift after several hours of operation.\",\n      \"symptoms\": [\n        \"Increasing out‑of‑spec rate after 6 h\",\n        \"Time‑stamp mismatch in logs\"\n      ],\n      \"resolution\": [\n        \"Schedule automatic calibration checks every 4 h.\",\n        \"Use the built‑in auto‑calibration feature.\"\n      ]\n    },\n    {\n      \"id\": \"network_failure\",\n      \"description\": \"Loss of connectivity to ERP during export.\",\n      \"symptoms\": [\n        \"Export errors, “Network Unreachable” dialog\"\n      ],\n      \"resolution\": [\n        \"Verify switch health, ensure port is active.\",\n        \"Confirm firewall not blocking port 8001.\",\n        \"Use the background export queue; it will retry automatically.\"\n      ]\n    },\n    {\n      \"id\": \"operator_override\",\n      \"description\": \"Manual override of a fail status.\",\n      \"symptoms\": [\n        \"Component proceeds after “Fail” status\"\n      ],\n      \"resolution\": [\n        \"Always enter reason code; system logs justification for audit.\",\n        \"If overrides exceed 10 % of total parts, trigger manager review.\"\n      ]\n    }\n  ],\n\n  \"integration\": {\n    \"erp_export\": {\n      \"description\": \"Real‑time push of inspection data to ERP.\",\n      \"endpoints\": [\n        {\n          \"url\": \"https://erp.company.com/api/inspection\",\n          \"method\": \"POST\",\n          \"auth\": \"OAuth2.0 bearer\",\n          \"payload\": {\n            \"batch_id\": \"string\",\n            \"timestamp\": \"ISO8601\",\n            \"results\": [\n              {\n                \"part_id\": \"string\",\n                \"measurement_n\": \"float\",\n                \"status\": \"PASS/FAIL\",\n                \"raw_image_url\": \"string\"\n              }\n            ]\n          }\n        }\n      ],\n      \"retry_policy\": {\n        \"max_attempts\": 5,\n        \"backoff_seconds\": 30\n      }\n    },\n    \"qms_integration\": {\n      \"description\": \"Export of audit trail and SPC data to the Quality Management System.\",\n      \"methods\": [\n        \"Export CSV via File > Export > QMS Export\",\n        \"Webhooks: POST to QMS webhook URL configured under Settings > Integration > QMS\"\n      ]\n    },\n    \"api_reference\": {\n      \"base_url\": \"https://api.pmqc.company.com/v1\",\n      \"endpoints\": [\n        \"/profiles\",\n        \"/measurements\",\n        \"/reports\",\n        \"/alerts\"\n      ]\n    }\n  },\n\n  \"faq\": [\n    {\n      \"question\": \"Can the system run in a high‑temperature environment?\",\n      \"answer\": \"Yes. The camera housing is rated to 60 °C and the software supports external temperature sensor input for adaptive lens compensation.\"\n    },\n    {\n      \"question\": \"What compliance standards does PMQC meet?\",\n      \"answer\": \"ISO 9001:2015, ISO 14224 for equipment, and FDA 21CFR Part 820 audit trail requirements.\"\n    }\n  ]\n}",
+    "processingInfo": {
+      "inputTextLength": 8647,
+      "extractedJsonLength": 8635,
+      "processedAt": "2025-09-30T13:46:23.636Z",
+      "compressionRatio": 100
+    }
+  }
+]
