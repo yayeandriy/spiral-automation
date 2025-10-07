@@ -1,0 +1,1668 @@
+[
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-8055-b5d9-e89120922c3c",
+    "created_time": "2025-10-07T09:10:00.000Z",
+    "last_edited_time": "2025-10-07T10:04:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "publish_date": {
+        "id": "Lx%7Cp",
+        "type": "date",
+        "date": {
+          "start": "2019-07-29",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "tag": {
+        "id": "Xlw%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "reactor--mixed-reality-platform-for-aviation-maintenance",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "reactor--mixed-reality-platform-for-aviation-maintenance",
+            "href": null
+          }
+        ]
+      },
+      "author": {
+        "id": "gKtT",
+        "type": "people",
+        "people": [
+          {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded",
+            "name": "Andriy Yeroshevych",
+            "avatar_url": null,
+            "type": "person",
+            "person": {
+              "email": "yayeandriy.com@gmail.com"
+            }
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Reactor — Mixed Reality platform for aviation maintenance",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Reactor — Mixed Reality platform for aviation maintenance",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Reactor-Mixed-Reality-platform-for-aviation-maintenance-285c3aed7a1a8055b5d9e89120922c3c",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-80b6-874f-c54333127e8b",
+    "created_time": "2025-10-07T09:10:00.000Z",
+    "last_edited_time": "2025-10-07T10:03:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "publish_date": {
+        "id": "Lx%7Cp",
+        "type": "date",
+        "date": {
+          "start": "2019-09-04",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "tag": {
+        "id": "Xlw%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "mixed-reality-for-borescope-inspection",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "mixed-reality-for-borescope-inspection",
+            "href": null
+          }
+        ]
+      },
+      "author": {
+        "id": "gKtT",
+        "type": "people",
+        "people": [
+          {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded",
+            "name": "Andriy Yeroshevych",
+            "avatar_url": null,
+            "type": "person",
+            "person": {
+              "email": "yayeandriy.com@gmail.com"
+            }
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Mixed Reality for Borescope Inspection",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Mixed Reality for Borescope Inspection",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Mixed-Reality-for-Borescope-Inspection-285c3aed7a1a80b6874fc54333127e8b",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-808a-9052-c231f4e9567b",
+    "created_time": "2025-10-07T09:10:00.000Z",
+    "last_edited_time": "2025-10-07T10:03:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "publish_date": {
+        "id": "Lx%7Cp",
+        "type": "date",
+        "date": {
+          "start": "2019-09-22",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "tag": {
+        "id": "Xlw%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "reactor-platform-to-go-deeper-into-aviation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "reactor-platform-to-go-deeper-into-aviation",
+            "href": null
+          }
+        ]
+      },
+      "author": {
+        "id": "gKtT",
+        "type": "people",
+        "people": [
+          {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded",
+            "name": "Andriy Yeroshevych",
+            "avatar_url": null,
+            "type": "person",
+            "person": {
+              "email": "yayeandriy.com@gmail.com"
+            }
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Reactor platform to go deeper into aviation",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Reactor platform to go deeper into aviation",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Reactor-platform-to-go-deeper-into-aviation-285c3aed7a1a808a9052c231f4e9567b",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-8037-8f1b-dc1cc929aba4",
+    "created_time": "2025-10-07T09:09:00.000Z",
+    "last_edited_time": "2025-10-07T10:03:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "publish_date": {
+        "id": "Lx%7Cp",
+        "type": "date",
+        "date": {
+          "start": "2025-01-16",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "tag": {
+        "id": "Xlw%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "navigation-and-minimap-in-mixed-reality-app",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "navigation-and-minimap-in-mixed-reality-app",
+            "href": null
+          }
+        ]
+      },
+      "author": {
+        "id": "gKtT",
+        "type": "people",
+        "people": [
+          {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded",
+            "name": "Andriy Yeroshevych",
+            "avatar_url": null,
+            "type": "person",
+            "person": {
+              "email": "yayeandriy.com@gmail.com"
+            }
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Navigation and minimap in Mixed Reality app",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Navigation and minimap in Mixed Reality app",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Navigation-and-minimap-in-Mixed-Reality-app-285c3aed7a1a80378f1bdc1cc929aba4",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-805f-9c33-ccb4a8da7ebb",
+    "created_time": "2025-10-07T09:08:00.000Z",
+    "last_edited_time": "2025-10-07T10:04:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "publish_date": {
+        "id": "Lx%7Cp",
+        "type": "date",
+        "date": {
+          "start": "2024-02-26",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "tag": {
+        "id": "Xlw%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "can-you-digitize-quality-inspection-paperwork-in-aircraft-heavy-maintenance-in-2024",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "can-you-digitize-quality-inspection-paperwork-in-aircraft-heavy-maintenance-in-2024",
+            "href": null
+          }
+        ]
+      },
+      "author": {
+        "id": "gKtT",
+        "type": "people",
+        "people": [
+          {
+            "object": "user",
+            "id": "26e5d70c-e66d-4116-9bd1-2bac63502e9f",
+            "name": "Kosta Shyshkin",
+            "avatar_url": null,
+            "type": "person",
+            "person": {
+              "email": "k@spiral.technology"
+            }
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Can you digitize quality inspection paperwork in aircraft heavy maintenance in 2024?",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Can you digitize quality inspection paperwork in aircraft heavy maintenance in 2024?",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Can-you-digitize-quality-inspection-paperwork-in-aircraft-heavy-maintenance-in-2024-285c3aed7a1a805f9c33ccb4a8da7ebb",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-806c-8685-f6663e9d80bd",
+    "created_time": "2025-10-07T09:08:00.000Z",
+    "last_edited_time": "2025-10-07T10:04:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "publish_date": {
+        "id": "Lx%7Cp",
+        "type": "date",
+        "date": {
+          "start": "2024-03-25",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "tag": {
+        "id": "Xlw%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "what-is-industrial-ar-and-why-should-you-still-care-in-2024",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "what-is-industrial-ar-and-why-should-you-still-care-in-2024",
+            "href": null
+          }
+        ]
+      },
+      "author": {
+        "id": "gKtT",
+        "type": "people",
+        "people": [
+          {
+            "object": "user",
+            "id": "26e5d70c-e66d-4116-9bd1-2bac63502e9f",
+            "name": "Kosta Shyshkin",
+            "avatar_url": null,
+            "type": "person",
+            "person": {
+              "email": "k@spiral.technology"
+            }
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "What is industrial AR and why should you still care in 2024?",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "What is industrial AR and why should you still care in 2024?",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/What-is-industrial-AR-and-why-should-you-still-care-in-2024-285c3aed7a1a806c8685f6663e9d80bd",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-8022-a4bf-deeb9e795860",
+    "created_time": "2025-10-07T09:07:00.000Z",
+    "last_edited_time": "2025-10-07T10:03:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "publish_date": {
+        "id": "Lx%7Cp",
+        "type": "date",
+        "date": {
+          "start": "2024-03-25",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "tag": {
+        "id": "Xlw%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "augmented-reality-is-a-game-changer-for-nondestructive-testing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "augmented-reality-is-a-game-changer-for-nondestructive-testing",
+            "href": null
+          }
+        ]
+      },
+      "author": {
+        "id": "gKtT",
+        "type": "people",
+        "people": [
+          {
+            "object": "user",
+            "id": "26e5d70c-e66d-4116-9bd1-2bac63502e9f",
+            "name": "Kosta Shyshkin",
+            "avatar_url": null,
+            "type": "person",
+            "person": {
+              "email": "k@spiral.technology"
+            }
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Augmented Reality is a Game-Changer for Nondestructive Testing",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Augmented Reality is a Game-Changer for Nondestructive Testing",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Augmented-Reality-is-a-Game-Changer-for-Nondestructive-Testing-285c3aed7a1a8022a4bfdeeb9e795860",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-803e-9d96-e8a2eeffb7ef",
+    "created_time": "2025-10-07T09:07:00.000Z",
+    "last_edited_time": "2025-10-07T10:03:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "publish_date": {
+        "id": "Lx%7Cp",
+        "type": "date",
+        "date": {
+          "start": "2024-04-08",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "tag": {
+        "id": "Xlw%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ndt-sensors-for-augmented-reality",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ndt-sensors-for-augmented-reality",
+            "href": null
+          }
+        ]
+      },
+      "author": {
+        "id": "gKtT",
+        "type": "people",
+        "people": [
+          {
+            "object": "user",
+            "id": "26e5d70c-e66d-4116-9bd1-2bac63502e9f",
+            "name": "Kosta Shyshkin",
+            "avatar_url": null,
+            "type": "person",
+            "person": {
+              "email": "k@spiral.technology"
+            }
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "NDT sensors for augmented reality",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "NDT sensors for augmented reality",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/NDT-sensors-for-augmented-reality-285c3aed7a1a803e9d96e8a2eeffb7ef",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-8095-a589-f1103dc6fa95",
+    "created_time": "2025-10-07T09:06:00.000Z",
+    "last_edited_time": "2025-10-07T10:03:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "publish_date": {
+        "id": "Lx%7Cp",
+        "type": "date",
+        "date": {
+          "start": "2024-04-22",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "tag": {
+        "id": "Xlw%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "digital-grid-for-ultrasonic-testing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "digital-grid-for-ultrasonic-testing",
+            "href": null
+          }
+        ]
+      },
+      "author": {
+        "id": "gKtT",
+        "type": "people",
+        "people": [
+          {
+            "object": "user",
+            "id": "26e5d70c-e66d-4116-9bd1-2bac63502e9f",
+            "name": "Kosta Shyshkin",
+            "avatar_url": null,
+            "type": "person",
+            "person": {
+              "email": "k@spiral.technology"
+            }
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Digital grid for ultrasonic testing",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Digital grid for ultrasonic testing",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Digital-grid-for-ultrasonic-testing-285c3aed7a1a8095a589f1103dc6fa95",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-805d-8c53-ed2eb6c49f6e",
+    "created_time": "2025-10-07T09:05:00.000Z",
+    "last_edited_time": "2025-10-07T10:03:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "publish_date": {
+        "id": "Lx%7Cp",
+        "type": "date",
+        "date": {
+          "start": "2024-05-05",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "tag": {
+        "id": "Xlw%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "we-put-data-from-the-real-world-into-ar",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "we-put-data-from-the-real-world-into-ar",
+            "href": null
+          }
+        ]
+      },
+      "author": {
+        "id": "gKtT",
+        "type": "people",
+        "people": [
+          {
+            "object": "user",
+            "id": "26e5d70c-e66d-4116-9bd1-2bac63502e9f",
+            "name": "Kosta Shyshkin",
+            "avatar_url": null,
+            "type": "person",
+            "person": {
+              "email": "k@spiral.technology"
+            }
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We put data from the real world into AR",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We put data from the real world into AR",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/We-put-data-from-the-real-world-into-AR-285c3aed7a1a805d8c53ed2eb6c49f6e",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-80a8-994b-c8f2baaf0968",
+    "created_time": "2025-10-07T09:05:00.000Z",
+    "last_edited_time": "2025-10-07T10:04:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "publish_date": {
+        "id": "Lx%7Cp",
+        "type": "date",
+        "date": {
+          "start": "2024-08-22",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "tag": {
+        "id": "Xlw%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "developing-a-ui-in-mixed-reality-spot-panel",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "developing-a-ui-in-mixed-reality-spot-panel",
+            "href": null
+          }
+        ]
+      },
+      "author": {
+        "id": "gKtT",
+        "type": "people",
+        "people": [
+          {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded",
+            "name": "Andriy Yeroshevych",
+            "avatar_url": null,
+            "type": "person",
+            "person": {
+              "email": "yayeandriy.com@gmail.com"
+            }
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Developing a UI in Mixed Reality: Spot Panel",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Developing a UI in Mixed Reality: Spot Panel",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Developing-a-UI-in-Mixed-Reality-Spot-Panel-285c3aed7a1a80a8994bc8f2baaf0968",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-808f-8cac-cede1a884d11",
+    "created_time": "2025-10-07T09:04:00.000Z",
+    "last_edited_time": "2025-10-07T10:03:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "publish_date": {
+        "id": "Lx%7Cp",
+        "type": "date",
+        "date": {
+          "start": "2024-09-20",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "tag": {
+        "id": "Xlw%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "narrowing-down-the-use-case",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "narrowing-down-the-use-case",
+            "href": null
+          }
+        ]
+      },
+      "author": {
+        "id": "gKtT",
+        "type": "people",
+        "people": [
+          {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded",
+            "name": "Andriy Yeroshevych",
+            "avatar_url": null,
+            "type": "person",
+            "person": {
+              "email": "yayeandriy.com@gmail.com"
+            }
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Narrowing Down the Use Case",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Narrowing Down the Use Case",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Narrowing-Down-the-Use-Case-285c3aed7a1a808f8caccede1a884d11",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-807e-9d06-c749b99ec7d9",
+    "created_time": "2025-10-07T09:04:00.000Z",
+    "last_edited_time": "2025-10-07T10:03:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "publish_date": {
+        "id": "Lx%7Cp",
+        "type": "date",
+        "date": {
+          "start": "2024-10-14",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "tag": {
+        "id": "Xlw%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "marking-in-mixed-reality",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "marking-in-mixed-reality",
+            "href": null
+          }
+        ]
+      },
+      "author": {
+        "id": "gKtT",
+        "type": "people",
+        "people": [
+          {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded",
+            "name": "Andriy Yeroshevych",
+            "avatar_url": null,
+            "type": "person",
+            "person": {
+              "email": "yayeandriy.com@gmail.com"
+            }
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Marking in Mixed Reality",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Marking in Mixed Reality",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Marking-in-Mixed-Reality-285c3aed7a1a807e9d06c749b99ec7d9",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-8069-9f49-f8b3f7e30d48",
+    "created_time": "2025-10-07T09:03:00.000Z",
+    "last_edited_time": "2025-10-07T10:04:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "publish_date": {
+        "id": "Lx%7Cp",
+        "type": "date",
+        "date": {
+          "start": "2025-10-04",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "tag": {
+        "id": "Xlw%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "the-roadmap-for-inspection-what-comes-next",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "the-roadmap-for-inspection-what-comes-next",
+            "href": null
+          }
+        ]
+      },
+      "author": {
+        "id": "gKtT",
+        "type": "people",
+        "people": [
+          {
+            "object": "user",
+            "id": "26e5d70c-e66d-4116-9bd1-2bac63502e9f",
+            "name": "Kosta Shyshkin",
+            "avatar_url": null,
+            "type": "person",
+            "person": {
+              "email": "k@spiral.technology"
+            }
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The Roadmap for Inspection: What Comes Next",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The Roadmap for Inspection: What Comes Next",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/The-Roadmap-for-Inspection-What-Comes-Next-285c3aed7a1a80699f49f8b3f7e30d48",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-8061-a648-dee312fb6680",
+    "created_time": "2025-10-07T09:02:00.000Z",
+    "last_edited_time": "2025-10-07T10:04:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "publish_date": {
+        "id": "Lx%7Cp",
+        "type": "date",
+        "date": {
+          "start": "2025-10-06",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "tag": {
+        "id": "Xlw%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "agile-quality-control-inspection-that-keeps-pace-with-production",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "agile-quality-control-inspection-that-keeps-pace-with-production",
+            "href": null
+          }
+        ]
+      },
+      "author": {
+        "id": "gKtT",
+        "type": "people",
+        "people": [
+          {
+            "object": "user",
+            "id": "26e5d70c-e66d-4116-9bd1-2bac63502e9f",
+            "name": "Kosta Shyshkin",
+            "avatar_url": null,
+            "type": "person",
+            "person": {
+              "email": "k@spiral.technology"
+            }
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Agile Quality Control: Inspection That Keeps Pace with Production",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Agile Quality Control: Inspection That Keeps Pace with Production",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Agile-Quality-Control-Inspection-That-Keeps-Pace-with-Production-285c3aed7a1a8061a648dee312fb6680",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-8058-9c3f-d63632a3cb2f",
+    "created_time": "2025-10-07T09:01:00.000Z",
+    "last_edited_time": "2025-10-07T10:03:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "publish_date": {
+        "id": "Lx%7Cp",
+        "type": "date",
+        "date": {
+          "start": "2025-10-07",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "tag": {
+        "id": "Xlw%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "quality-where-work-happens",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "quality-where-work-happens",
+            "href": null
+          }
+        ]
+      },
+      "author": {
+        "id": "gKtT",
+        "type": "people",
+        "people": [
+          {
+            "object": "user",
+            "id": "26e5d70c-e66d-4116-9bd1-2bac63502e9f",
+            "name": "Kosta Shyshkin",
+            "avatar_url": null,
+            "type": "person",
+            "person": {
+              "email": "k@spiral.technology"
+            }
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Quality Where Work Happens",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Quality Where Work Happens",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Quality-Where-Work-Happens-285c3aed7a1a80589c3fd63632a3cb2f",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+    "created_time": "2025-10-07T09:00:00.000Z",
+    "last_edited_time": "2025-10-07T10:04:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "publish_date": {
+        "id": "Lx%7Cp",
+        "type": "date",
+        "date": {
+          "start": "2025-10-10",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "tag": {
+        "id": "Xlw%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "navigating-the-complexities-of-high-mix-low-volume-hmlv-inspection",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "navigating-the-complexities-of-high-mix-low-volume-hmlv-inspection",
+            "href": null
+          }
+        ]
+      },
+      "author": {
+        "id": "gKtT",
+        "type": "people",
+        "people": [
+          {
+            "object": "user",
+            "id": "26e5d70c-e66d-4116-9bd1-2bac63502e9f",
+            "name": "Kosta Shyshkin",
+            "avatar_url": null,
+            "type": "person",
+            "person": {
+              "email": "k@spiral.technology"
+            }
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Navigating the Complexities of High-Mix Low-Volume (HMLV) Inspection",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Navigating the Complexities of High-Mix Low-Volume (HMLV) Inspection",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Navigating-the-Complexities-of-High-Mix-Low-Volume-HMLV-Inspection-285c3aed7a1a80e0a6acec6db1ce90c0",
+    "public_url": null
+  }
+]

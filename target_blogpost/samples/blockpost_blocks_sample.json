@@ -1,0 +1,2274 @@
+[
+  {
+    "meta_data": {
+      "object": "page",
+      "id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+      "created_time": "2025-10-07T09:00:00.000Z",
+      "last_edited_time": "2025-10-07T12:04:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "14ed872b-594c-81cc-8a88-00029897cded"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "14ed872b-594c-81cc-8a88-00029897cded"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "285c3aed-7a1a-801b-98ed-feb3445ce770"
+      },
+      "archived": false,
+      "in_trash": false,
+      "is_locked": false,
+      "properties": {
+        "publish_date": {
+          "id": "Lx%7Cp",
+          "type": "date",
+          "date": {
+            "start": "2025-10-10",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "tag": {
+          "id": "Xlw%3E",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "navigating-the-complexities-of-high-mix-low-volume-hmlv-inspection",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "navigating-the-complexities-of-high-mix-low-volume-hmlv-inspection",
+              "href": null
+            }
+          ]
+        },
+        "author": {
+          "id": "gKtT",
+          "type": "people",
+          "people": [
+            {
+              "object": "user",
+              "id": "26e5d70c-e66d-4116-9bd1-2bac63502e9f",
+              "name": "Kosta Shyshkin",
+              "avatar_url": null,
+              "type": "person",
+              "person": {
+                "email": "k@spiral.technology"
+              }
+            }
+          ]
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Navigating the Complexities of High-Mix Low-Volume (HMLV) Inspection",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Navigating the Complexities of High-Mix Low-Volume (HMLV) Inspection",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Navigating-the-Complexities-of-High-Mix-Low-Volume-HMLV-Inspection-285c3aed7a1a80e0a6acec6db1ce90c0",
+      "public_url": null
+    },
+    "content": [
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-80ce-b290-f8edb5dc818b",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T12:04:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "is_toggleable": false,
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "HMLV manufacturing presents too much variation for traditional machine vision and too much inconsistency in manual inspection — creating a gap that only flexible, software-first approaches can close.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "HMLV manufacturing presents too much variation for traditional machine vision and too much inconsistency in manual inspection — creating a gap that only flexible, software-first approaches can close.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 1
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-80fd-9f53-f3c5ed1de62b",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "For the past 7 years, our team at Spiral Technology has worked on quality control solutions across industrial manufacturing — from aerospace composites and wind turbine blades to precision machine components and non-destructive testing. We’ve seen firsthand how OEMs navigate the tradeoffs between accuracy, efficiency, and the organizational challenges of digitizing legacy processes.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "For the past 7 years, our team at Spiral Technology has worked on quality control solutions across industrial manufacturing — from aerospace composites and wind turbine blades to precision machine components and non-destructive testing. We’ve seen firsthand how OEMs navigate the tradeoffs between accuracy, efficiency, and the organizational challenges of digitizing legacy processes.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 2
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8092-a3f6-c1f98305791c",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "is_toggleable": false,
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Reality of HMLV",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Reality of HMLV",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 3
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-80f0-8792-d1faecede942",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "High-mix, low-volume manufacturing is where complexity meets precision. Instead of producing tens of thousands of identical units, these factories switch rapidly between products, often building just a few hundred — or even a few dozen — of each. Aerospace components, medical devices, and specialized electronics all fall into this category. What unites them is variety: more SKUs, shorter runs, and constant design change.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "High-mix, low-volume manufacturing is where complexity meets precision. Instead of producing tens of thousands of identical units, these factories switch rapidly between products, often building just a few hundred — or even a few dozen — of each. Aerospace components, medical devices, and specialized electronics all fall into this category. What unites them is variety: more SKUs, shorter runs, and constant design change.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 4
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-80d0-b338-f1c6d4f6f345",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "AVIS — Automated Visual Inspection System",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "AVIS — Automated Visual Inspection System",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 5
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-801d-9118-f2a36051c0cb",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "That variety drives opportunity, but also strain. Changeovers eat into productive time, unit costs stay stubbornly high, and scheduling becomes a daily puzzle. Suppliers struggle to keep pace with unpredictable orders, while operators must adapt to new processes with little repetition to fall back on. In this environment, efficiency is fragile — every inefficiency magnifies. And nowhere is this tension more visible than in inspection and quality assurance.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "That variety drives opportunity, but also strain. Changeovers eat into productive time, unit costs stay stubbornly high, and scheduling becomes a daily puzzle. Suppliers struggle to keep pace with unpredictable orders, while operators must adapt to new processes with little repetition to fall back on. In this environment, efficiency is fragile — every inefficiency magnifies. And nowhere is this tension more visible than in inspection and quality assurance.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 6
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-806f-bf75-c23b1af82b54",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Press enter or click to view image in full size",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Press enter or click to view image in full size",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 7
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-808f-ad1d-f8ead1399112",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "image",
+          "image": {
+            "caption": [],
+            "type": "external",
+            "external": {
+              "url": "https://miro.medium.com/v2/resize:fit:1400/1*hmrH_jUGXYaJtbwsozDerA.png"
+            }
+          }
+        },
+        "pairedItem": {
+          "item": 8
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-800d-9cc4-d72c32e67d5b",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Serial vs semi-automated manufacturing, illustrative",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Serial vs semi-automated manufacturing, illustrative",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 9
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8007-9f41-de9e8cd87aec",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Automated inspection works well in mass production, where long runs justify the cost of fixtures, custom programming, and lengthy setup. In those settings, machine vision delivers speed, repeatability, and solid returns.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Automated inspection works well in mass production, where long runs justify the cost of fixtures, custom programming, and lengthy setup. In those settings, machine vision delivers speed, repeatability, and solid returns.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 10
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-80c6-9fb6-c8c2ad2da0f5",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "But in high-mix, low-volume manufacturing, short runs and constant variation make that model impractical. Batch sizes of 50 to 500 units, frequent design changes, and rapid transitions are the norm in aerospace, defense, medical devices, and contract manufacturing — not the exception.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "But in high-mix, low-volume manufacturing, short runs and constant variation make that model impractical. Batch sizes of 50 to 500 units, frequent design changes, and rapid transitions are the norm in aerospace, defense, medical devices, and contract manufacturing — not the exception.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 11
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-806f-b4ac-c79a8e099021",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Defects per Million Opportunities (DPMO) is a common quality metric. While reliable cross-industry comparisons are scarce, ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Defects per Million Opportunities (DPMO) is a common quality metric. While reliable cross-industry comparisons are scarce, ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "6sigma.us reports",
+                  "link": {
+                    "url": "https://www.6sigma.us/process-improvement/six-sigma-defects-per-million/"
+                  }
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "6sigma.us reports",
+                "href": "https://www.6sigma.us/process-improvement/six-sigma-defects-per-million/"
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " an automated LMHV (low-mix-high-volume) line with integrated inspection may average around 30,000 DPMO, while a manual HMLV process can reach closer to 90,000.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " an automated LMHV (low-mix-high-volume) line with integrated inspection may average around 30,000 DPMO, while a manual HMLV process can reach closer to 90,000.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 12
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-80ed-a2a8-fb51c1dcce9a",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Press enter or click to view image in full size",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Press enter or click to view image in full size",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 13
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8075-8202-ddc4d273b64d",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "image",
+          "image": {
+            "caption": [],
+            "type": "external",
+            "external": {
+              "url": "https://miro.medium.com/v2/resize:fit:1400/0*EsM2xhH59cBuyaMQ"
+            }
+          }
+        },
+        "pairedItem": {
+          "item": 14
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8088-888d-eb9cb5667a0f",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Relative quality performance: LMHV vs HMLV",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Relative quality performance: LMHV vs HMLV",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 15
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-80df-8f70-ec9b7f22a3dd",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "is_toggleable": false,
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The Mismatch",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The Mismatch",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 16
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-80cb-9ed5-c800b5181436",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Traditional machine vision requires heavy upfront engineering: CAD-to-algorithm mapping, fixture design, lighting calibration, integration testing. That process can take weeks or months — longer than the production window itself. For a 300-unit run, setup time alone can exceed the build. The ROI never closes.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Traditional machine vision requires heavy upfront engineering: CAD-to-algorithm mapping, fixture design, lighting calibration, integration testing. That process can take weeks or months — longer than the production window itself. For a 300-unit run, setup time alone can exceed the build. The ROI never closes.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 17
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8044-9f88-c6e4d104e938",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Manual inspection offers flexibility but falters on consistency and scale. Skilled inspectors bring invaluable judgment, but that knowledge is unevenly distributed. Senior staff become bottlenecks, and their eventual departure creates risk. Paper checklists and clipboards still dominate, leaving traceability to audits months later that feel like forensic exercises.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Manual inspection offers flexibility but falters on consistency and scale. Skilled inspectors bring invaluable judgment, but that knowledge is unevenly distributed. Senior staff become bottlenecks, and their eventual departure creates risk. Paper checklists and clipboards still dominate, leaving traceability to audits months later that feel like forensic exercises.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 18
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-80ed-ab6c-fe9c65cc79f3",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The result is a gap: manufacturers are forced to choose between over-engineered automation that can’t adapt, or manual processes that can’t guarantee uniformity or compliance.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The result is a gap: manufacturers are forced to choose between over-engineered automation that can’t adapt, or manual processes that can’t guarantee uniformity or compliance.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 19
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8079-a514-e0158d492c5c",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "is_toggleable": false,
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Where It Breaks Down",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Where It Breaks Down",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 20
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8019-ade6-f43742e3815f",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "1. Setup Overhead.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "1. Setup Overhead.",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Configuring vision systems takes time — lighting, algorithms, validation. In HMLV, the run may finish before setup does, turning FAI into a bottleneck instead of a safeguard.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Configuring vision systems takes time — lighting, algorithms, validation. In HMLV, the run may finish before setup does, turning FAI into a bottleneck instead of a safeguard.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 21
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-803f-9f1d-dd1b92ad632d",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "2. Inconsistent Outcomes.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "2. Inconsistent Outcomes.",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Inspectors often disagree. Standards exist, but interpretation varies with experience and conditions, making uniform results across shifts or sites hard to guarantee.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Inspectors often disagree. Standards exist, but interpretation varies with experience and conditions, making uniform results across shifts or sites hard to guarantee.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 22
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8067-939e-eb619a85a785",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "3. Documentation Drag.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "3. Documentation Drag.",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " ISO 9001 and AS9100 require detailed records. In manual workflows that means transcription, which consumes time, introduces errors, and adds little real value.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " ISO 9001 and AS9100 require detailed records. In manual workflows that means transcription, which consumes time, introduces errors, and adds little real value.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 23
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-80b9-bfa6-d5e13b779e08",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Workarounds like extra staff or training address symptoms, not the core issue: systems built for volume don’t fit environments defined by variation and speed.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Workarounds like extra staff or training address symptoms, not the core issue: systems built for volume don’t fit environments defined by variation and speed.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 24
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8090-be97-f8f0d760e80d",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "is_toggleable": false,
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Closing the Gap",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Closing the Gap",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 25
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-802e-97be-cacf3fbd71eb",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "A solution proportional to the HMLV challenge must reconfigure quickly, operate at the point of work, and generate compliance documentation automatically.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "A solution proportional to the HMLV challenge must reconfigure quickly, operate at the point of work, and generate compliance documentation automatically.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 26
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8079-a7aa-d9d73b127fbe",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Press enter or click to view image in full size",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Press enter or click to view image in full size",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 27
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-80e2-a694-ea0d0d30a786",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "image",
+          "image": {
+            "caption": [],
+            "type": "external",
+            "external": {
+              "url": "https://miro.medium.com/v2/resize:fit:1400/1*Vjso2uTdb4gudWmlMGQ_Pg.png"
+            }
+          }
+        },
+        "pairedItem": {
+          "item": 28
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8081-ad17-e3c789828d4a",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "AVIS — Automated Visual Inspection System",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "AVIS — Automated Visual Inspection System",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 29
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8039-9430-f3d96253e121",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Two technological shifts make this possible:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Two technological shifts make this possible:",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 30
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8013-910a-c37ca2d68503",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Mobility",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Mobility",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": ". Advances in computer vision and the growing power of smartphones now make it possible to run robust neural networks on-edge with enterprise-grade accuracy. Instead of moving assemblies to fixed stations, operators can inspect complex structures in place — inside enclosures, around large assemblies, or even in the field.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": ". Advances in computer vision and the growing power of smartphones now make it possible to run robust neural networks on-edge with enterprise-grade accuracy. Instead of moving assemblies to fixed stations, operators can inspect complex structures in place — inside enclosures, around large assemblies, or even in the field.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 31
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-80da-be46-dbc15e00844b",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Software-First Configuration",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Software-First Configuration",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": ". Carefully engineered pipeline allows to reconfigure through digital assets — CAD models, engineering drawings, or on-floor training. Setup compresses from weeks to hours. Engineering rigor isn’t lost; it becomes reusable and adaptable as configurations change.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": ". Carefully engineered pipeline allows to reconfigure through digital assets — CAD models, engineering drawings, or on-floor training. Setup compresses from weeks to hours. Engineering rigor isn’t lost; it becomes reusable and adaptable as configurations change.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 32
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-809b-a85a-e96b74b96a83",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Press enter or click to view image in full size",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Press enter or click to view image in full size",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 33
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-80e6-8ed8-cb5f5735f35b",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "image",
+          "image": {
+            "caption": [],
+            "type": "external",
+            "external": {
+              "url": "https://miro.medium.com/v2/resize:fit:1400/0*iAJCMzbcbdEFBOaP"
+            }
+          }
+        },
+        "pairedItem": {
+          "item": 34
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8095-bbdc-f73c43637f6b",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Synthetic data generation",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Synthetic data generation",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 35
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8092-b0a3-c3b3ac6f9b28",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "When inspection can adapt at production speed, changeovers shrink. When acceptance criteria are digitally defined and applied uniformly, outcomes become consistent. When every inspection produces structured, timestamped records, compliance becomes an operational byproduct, not a paperwork chore.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "When inspection can adapt at production speed, changeovers shrink. When acceptance criteria are digitally defined and applied uniformly, outcomes become consistent. When every inspection produces structured, timestamped records, compliance becomes an operational byproduct, not a paperwork chore.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 36
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8097-8d54-cff01f498e73",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "This doesn’t eliminate the need for skilled inspectors or sound process discipline. But it changes the economics of quality control in environments where the mix is wide, volumes are modest, and speed matters as much as precision.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "This doesn’t eliminate the need for skilled inspectors or sound process discipline. But it changes the economics of quality control in environments where the mix is wide, volumes are modest, and speed matters as much as precision.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 37
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8075-a98b-d15f33cba88c",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "is_toggleable": false,
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Conclusion",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Conclusion",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 38
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-80ed-ae48-e3eb59e2ef78",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The path forward is inspection that adapts at the pace of production — delivered at the point of work, with setup compressed from weeks to hours, and compliance built into the process rather than added afterward. Future articles will look deeper into the “what,” “how,” and “why” of this shift.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The path forward is inspection that adapts at the pace of production — delivered at the point of work, with setup compressed from weeks to hours, and compliance built into the process rather than added afterward. Future articles will look deeper into the “what,” “how,” and “why” of this shift.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 39
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-806a-9061-efb1ed8d53a5",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "In the meantime, I’d welcome thoughts on which other industries, beyond aerospace and medical devices, face the same high-mix, low-volume challenges.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "In the meantime, I’d welcome thoughts on which other industries, beyond aerospace and medical devices, face the same high-mix, low-volume challenges.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 40
+        }
+      },
+      {
+        "json": {
+          "object": "block",
+          "parent_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0",
+          "id": "285c3aed-7a1a-8046-9087-fbabd7104024",
+          "parent": {
+            "type": "page_id",
+            "page_id": "285c3aed-7a1a-80e0-a6ac-ec6db1ce90c0"
+          },
+          "created_time": "2025-10-07T09:00:00.000Z",
+          "last_edited_time": "2025-10-07T09:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "14ed872b-594c-81cc-8a88-00029897cded"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "color": "default",
+            "text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Learn more about AVIS",
+                  "link": {
+                    "url": "https://www.spiral.technology/project/avis"
+                  }
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": true,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Learn more about AVIS",
+                "href": "https://www.spiral.technology/project/avis"
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": true,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "— ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "— ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "portable computer vision for high-mix, low-volume manufacturing. Verify component configuration, markings, and surface condition in real time using cameras your teams already own.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": true,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "portable computer vision for high-mix, low-volume manufacturing. Verify component configuration, markings, and surface condition in real time using cameras your teams already own.",
+                "href": null
+              }
+            ]
+          }
+        },
+        "pairedItem": {
+          "item": 41
+        }
+      }
+    ]
+  }
+]
