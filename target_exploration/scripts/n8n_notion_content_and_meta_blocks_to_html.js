@@ -42,7 +42,7 @@ function generateMetadataHeader(metadata) {
   // Title/Name
   if (metadata.property_name || metadata.name) {
     const title = metadata.property_name || metadata.name;
-    headerHtml += `<a class="button button-main" href="/static/explorations">Explorations</a>`;
+    headerHtml += `<a class="button button-main" href="/collection/explorations">Explorations</a>`;
     headerHtml += `<h1>${escapeHtml(title)}</h1>`;
   }
   

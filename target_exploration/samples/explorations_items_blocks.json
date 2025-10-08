@@ -1,0 +1,680 @@
+[
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-804d-bb4c-eda5e407a6d6",
+    "created_time": "2025-10-07T18:44:00.000Z",
+    "last_edited_time": "2025-10-07T18:47:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-80b8-b491-ccd9582ea541"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "timeline": {
+        "id": "JjzS",
+        "type": "date",
+        "date": {
+          "start": "2025-05-07",
+          "end": "2025-10-07",
+          "time_zone": null
+        }
+      },
+      "update_url": {
+        "id": "QRCi",
+        "type": "url",
+        "url": "https://primary-production-8152.up.railway.app/webhook/exploration?tag=ndt-digital-grid"
+      },
+      "areas": {
+        "id": "%60bKX",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "93434b3d-fd2e-4a27-b017-c0f0f7a428dc",
+            "name": "AR",
+            "color": "red"
+          },
+          {
+            "id": "b29dfbff-3d61-454e-9893-be65d2a57699",
+            "name": "AI",
+            "color": "pink"
+          },
+          {
+            "id": "3f55e526-c72e-4219-8878-ffc81b2be172",
+            "name": "Industry QC",
+            "color": "orange"
+          },
+          {
+            "id": "1b3acb47-d158-434b-bb9e-1bca2e6b6c64",
+            "name": "Computer Vision",
+            "color": "yellow"
+          }
+        ]
+      },
+      "tag": {
+        "id": "oa%5Dk",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ndt-digital-grid",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ndt-digital-grid",
+            "href": null
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "NDT Digital Grid – UT Traceability",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "NDT Digital Grid – UT Traceability",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/NDT-Digital-Grid-UT-Traceability-285c3aed7a1a804dbb4ceda5e407a6d6",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-8003-93d3-cabf3d2266c8",
+    "created_time": "2025-10-07T18:44:00.000Z",
+    "last_edited_time": "2025-10-07T18:47:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-80b8-b491-ccd9582ea541"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "timeline": {
+        "id": "JjzS",
+        "type": "date",
+        "date": {
+          "start": "2025-05-07",
+          "end": "2025-10-07",
+          "time_zone": null
+        }
+      },
+      "update_url": {
+        "id": "QRCi",
+        "type": "url",
+        "url": "https://primary-production-8152.up.railway.app/webhook/exploration?tag=bar-reporter"
+      },
+      "areas": {
+        "id": "%60bKX",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "93434b3d-fd2e-4a27-b017-c0f0f7a428dc",
+            "name": "AR",
+            "color": "red"
+          },
+          {
+            "id": "b29dfbff-3d61-454e-9893-be65d2a57699",
+            "name": "AI",
+            "color": "pink"
+          },
+          {
+            "id": "3f55e526-c72e-4219-8878-ffc81b2be172",
+            "name": "Industry QC",
+            "color": "orange"
+          },
+          {
+            "id": "1b3acb47-d158-434b-bb9e-1bca2e6b6c64",
+            "name": "Computer Vision",
+            "color": "yellow"
+          }
+        ]
+      },
+      "tag": {
+        "id": "oa%5Dk",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "bar-reporter",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "bar-reporter",
+            "href": null
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "BAR – Borescope Assistant Reporter",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "BAR – Borescope Assistant Reporter",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/BAR-Borescope-Assistant-Reporter-285c3aed7a1a800393d3cabf3d2266c8",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-808c-8fa1-f79f66d97220",
+    "created_time": "2025-10-07T18:40:00.000Z",
+    "last_edited_time": "2025-10-07T18:47:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-80b8-b491-ccd9582ea541"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "timeline": {
+        "id": "JjzS",
+        "type": "date",
+        "date": {
+          "start": "2025-05-07",
+          "end": "2025-10-07",
+          "time_zone": null
+        }
+      },
+      "update_url": {
+        "id": "QRCi",
+        "type": "url",
+        "url": "https://primary-production-8152.up.railway.app/webhook/exploration?tag=field-inspect-ar"
+      },
+      "areas": {
+        "id": "%60bKX",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "93434b3d-fd2e-4a27-b017-c0f0f7a428dc",
+            "name": "AR",
+            "color": "red"
+          },
+          {
+            "id": "b29dfbff-3d61-454e-9893-be65d2a57699",
+            "name": "AI",
+            "color": "pink"
+          },
+          {
+            "id": "3f55e526-c72e-4219-8878-ffc81b2be172",
+            "name": "Industry QC",
+            "color": "orange"
+          },
+          {
+            "id": "1b3acb47-d158-434b-bb9e-1bca2e6b6c64",
+            "name": "Computer Vision",
+            "color": "yellow"
+          }
+        ]
+      },
+      "tag": {
+        "id": "oa%5Dk",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "field-inspect-ar",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "field-inspect-ar",
+            "href": null
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Field Inspect – Airfield AR Assistant",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Field Inspect – Airfield AR Assistant",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Field-Inspect-Airfield-AR-Assistant-285c3aed7a1a808c8fa1f79f66d97220",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-8016-85f5-dd2f2cc03adb",
+    "created_time": "2025-10-07T18:40:00.000Z",
+    "last_edited_time": "2025-10-07T18:47:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-80b8-b491-ccd9582ea541"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "timeline": {
+        "id": "JjzS",
+        "type": "date",
+        "date": {
+          "start": "2025-05-07",
+          "end": "2025-10-07",
+          "time_zone": null
+        }
+      },
+      "update_url": {
+        "id": "QRCi",
+        "type": "url",
+        "url": "https://primary-production-8152.up.railway.app/webhook/exploration?tag=planner-digital-twin"
+      },
+      "areas": {
+        "id": "%60bKX",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "93434b3d-fd2e-4a27-b017-c0f0f7a428dc",
+            "name": "AR",
+            "color": "red"
+          },
+          {
+            "id": "b29dfbff-3d61-454e-9893-be65d2a57699",
+            "name": "AI",
+            "color": "pink"
+          },
+          {
+            "id": "3f55e526-c72e-4219-8878-ffc81b2be172",
+            "name": "Industry QC",
+            "color": "orange"
+          },
+          {
+            "id": "1b3acb47-d158-434b-bb9e-1bca2e6b6c64",
+            "name": "Computer Vision",
+            "color": "yellow"
+          }
+        ]
+      },
+      "tag": {
+        "id": "oa%5Dk",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "planner-digital-twin",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "planner-digital-twin",
+            "href": null
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Planner – Digital Twin & Spatial Anchors",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Planner – Digital Twin & Spatial Anchors",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Planner-Digital-Twin-Spatial-Anchors-285c3aed7a1a801685f5dd2f2cc03adb",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-8053-b79b-f722d6407b5d",
+    "created_time": "2025-10-07T18:39:00.000Z",
+    "last_edited_time": "2025-10-07T18:46:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-80b8-b491-ccd9582ea541"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "timeline": {
+        "id": "JjzS",
+        "type": "date",
+        "date": {
+          "start": "2025-05-07",
+          "end": "2025-10-07",
+          "time_zone": null
+        }
+      },
+      "update_url": {
+        "id": "QRCi",
+        "type": "url",
+        "url": "https://primary-production-8152.up.railway.app/webhook/exploration?tag=telescope-tower"
+      },
+      "areas": {
+        "id": "%60bKX",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "93434b3d-fd2e-4a27-b017-c0f0f7a428dc",
+            "name": "AR",
+            "color": "red"
+          },
+          {
+            "id": "b29dfbff-3d61-454e-9893-be65d2a57699",
+            "name": "AI",
+            "color": "pink"
+          },
+          {
+            "id": "3f55e526-c72e-4219-8878-ffc81b2be172",
+            "name": "Industry QC",
+            "color": "orange"
+          },
+          {
+            "id": "1b3acb47-d158-434b-bb9e-1bca2e6b6c64",
+            "name": "Computer Vision",
+            "color": "yellow"
+          }
+        ]
+      },
+      "tag": {
+        "id": "oa%5Dk",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "telescope-tower",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "telescope-tower",
+            "href": null
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Telescope – Tower Equipment Inventory",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Telescope – Tower Equipment Inventory",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Telescope-Tower-Equipment-Inventory-285c3aed7a1a8053b79bf722d6407b5d",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "285c3aed-7a1a-8087-849a-caee3c59208c",
+    "created_time": "2025-10-07T15:19:00.000Z",
+    "last_edited_time": "2025-10-07T17:59:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "285c3aed-7a1a-80b8-b491-ccd9582ea541"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "timeline": {
+        "id": "JjzS",
+        "type": "date",
+        "date": {
+          "start": "2025-05-07",
+          "end": "2025-10-07",
+          "time_zone": null
+        }
+      },
+      "update_url": {
+        "id": "QRCi",
+        "type": "url",
+        "url": "https://primary-production-8152.up.railway.app/webhook/exploration?tag=dynamic-thermal-filtering"
+      },
+      "areas": {
+        "id": "%60bKX",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "93434b3d-fd2e-4a27-b017-c0f0f7a428dc",
+            "name": "AR",
+            "color": "red"
+          },
+          {
+            "id": "b29dfbff-3d61-454e-9893-be65d2a57699",
+            "name": "AI",
+            "color": "pink"
+          },
+          {
+            "id": "3f55e526-c72e-4219-8878-ffc81b2be172",
+            "name": "Industry QC",
+            "color": "orange"
+          },
+          {
+            "id": "1b3acb47-d158-434b-bb9e-1bca2e6b6c64",
+            "name": "Computer Vision",
+            "color": "yellow"
+          }
+        ]
+      },
+      "tag": {
+        "id": "oa%5Dk",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "dynamic-thermal-filtering",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "dynamic-thermal-filtering",
+            "href": null
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Dynamic Thermal Filtering for Wind‑Turbine Blade QA",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Dynamic Thermal Filtering for Wind‑Turbine Blade QA",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Dynamic-Thermal-Filtering-for-Wind-Turbine-Blade-QA-285c3aed7a1a8087849acaee3c59208c",
+    "public_url": null
+  }
+]

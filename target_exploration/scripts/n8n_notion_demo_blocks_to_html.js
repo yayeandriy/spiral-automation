@@ -25,6 +25,23 @@ function extractTitle(properties) {
   return '';
 }
 
+// Helper: Extract description from Notion page properties
+function extractDescription(properties) {
+  if (!properties) return '';
+  
+  // Look for common description property names
+  const descriptionKeys = ['Description', 'description', 'Summary', 'summary', 'Excerpt', 'excerpt'];
+  
+  for (const key of descriptionKeys) {
+    const prop = properties[key];
+    if (prop && prop.type === 'rich_text' && Array.isArray(prop.rich_text)) {
+      return prop.rich_text.map(t => t.plain_text || '').join('');
+    }
+  }
+  
+  return '';
+}
+
 // Helper: Extract media files from Notion page properties
 function extractMediaFiles(properties) {
   if (!properties) return [];
@@ -71,6 +88,11 @@ function detectMediaType(url) {
     return 'loom';
   }
   
+  // Veed.io
+  if (lowerUrl.includes('veed.io')) {
+    return 'veed';
+  }
+  
   // Image formats
   if (lowerUrl.match(/\.(jpg|jpeg|png|gif|webp|svg)(\?|$)/i)) {
     return 'image';
@@ -112,6 +134,36 @@ function getLoomEmbedUrl(url) {
   return url;
 }
 
+// Helper: Convert Veed.io URL to embed URL
+function getVeedEmbedUrl(url) {
+  // Extract video ID from Veed.io URL
+  // Supports multiple formats:
+  // - https://www.veed.io/view/aa5e7a5a-0c6f-4d1e-9b2d-c7ad423fe5b7?panel=share
+  // - https://veed.io/view/abc123
+  // - https://www.veed.io/embed/abc123 (already embed format)
+  
+  // Check if already in embed format
+  if (url.includes('/embed/')) {
+    return url;
+  }
+  
+  // Extract from /view/ format (supports UUIDs and other ID formats)
+  // Pattern matches: alphanumeric, hyphens, and underscores
+  const viewMatch = url.match(/veed\.io\/view\/([a-zA-Z0-9_-]+)/);
+  if (viewMatch && viewMatch[1]) {
+    return `https://www.veed.io/embed/${viewMatch[1]}`;
+  }
+  
+  // Try to extract any ID-like pattern after veed.io/
+  const genericMatch = url.match(/veed\.io\/([a-zA-Z0-9_-]+)/);
+  if (genericMatch && genericMatch[1] && genericMatch[1] !== 'view' && genericMatch[1] !== 'embed') {
+    return `https://www.veed.io/embed/${genericMatch[1]}`;
+  }
+  
+  // Return original URL if no pattern matches
+  return url;
+}
+
 // Helper: Generate media viewer HTML
 function generateMediaViewer(mediaUrl, mediaType) {
   switch (mediaType) {
@@ -125,6 +177,10 @@ function generateMediaViewer(mediaUrl, mediaType) {
     case 'loom':
       const loomEmbedUrl = getLoomEmbedUrl(mediaUrl);
       return `<iframe src="${escapeHtml(loomEmbedUrl)}" frameborder="0" allowfullscreen></iframe>`;
+    
+    case 'veed':
+      const veedEmbedUrl = getVeedEmbedUrl(mediaUrl);
+      return `<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe src="${escapeHtml(veedEmbedUrl)}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>`;
     
     case 'image':
       return `<img src="${escapeHtml(mediaUrl)}" alt="Demo image">`;
@@ -141,6 +197,7 @@ function generateMediaViewer(mediaUrl, mediaType) {
 function processPage(page) {
   const properties = page.properties || {};
   const title = extractTitle(properties);
+  const description = extractDescription(properties);
   const mediaFiles = extractMediaFiles(properties);
   
   // Get the first media file if available
@@ -150,6 +207,7 @@ function processPage(page) {
   return {
     id: page.id,
     title: title || 'Untitled',
+    description: description || '',
     mediaUrl: primaryMedia ? primaryMedia.url : null,
     mediaType: mediaType,
     mediaFiles: mediaFiles
@@ -175,128 +233,35 @@ function convertNotionPagesToDemo(pages) {
   // Build HTML
   const html = [];
   html.push('<section class="demo-section">');
-  // html.push('  <header>');
-  // html.push('  </header>');
+  
+  // Container for side-by-side layout
+  html.push('  <div class="demo-container">');
   
   // Main demo viewer (show first item by default)
-  html.push('  <div class="demo-viewer" id="demo-viewer">');
+  html.push('    <div class="demo-viewer" id="demo-viewer">');
   if (demoItems[0].mediaUrl) {
-    html.push(`    ${generateMediaViewer(demoItems[0].mediaUrl, demoItems[0].mediaType)}`);
+    html.push(`      ${generateMediaViewer(demoItems[0].mediaUrl, demoItems[0].mediaType)}`);
   } else {
-    html.push('    <p>Embed your mp4 / YouTube / Loom demo here</p>');
+    html.push('      <p>Embed your mp4 / YouTube / Loom demo here</p>');
   }
-  html.push('  </div>');
+  html.push('    </div>');
   
-  // Tabs for each demo item
-  if (demoItems.length > 1) {
-    html.push('  <nav class="demo-tabs">');
-    for (let i = 0; i < demoItems.length; i++) {
-      const item = demoItems[i];
-      const isActive = i === 0 ? ' active' : '';
-      html.push(`    <button class="demo-tab${isActive}" data-demo-id="${escapeHtml(item.id)}" data-media-url="${escapeHtml(item.mediaUrl || '')}" data-media-type="${escapeHtml(item.mediaType)}">`);
-      html.push(`      <span>${escapeHtml(item.title)}</span>`);
-      html.push('    </button>');
+  // Tabs sidebar with title and description
+  html.push('    <nav class="demo-tabs">');
+  for (let i = 0; i < demoItems.length; i++) {
+    const item = demoItems[i];
+    const isActive = i === 0 ? ' active' : '';
+    html.push(`      <button class="demo-tab${isActive}" data-demo-id="${escapeHtml(item.id)}" data-media-url="${escapeHtml(item.mediaUrl || '')}" data-media-type="${escapeHtml(item.mediaType)}">`);
+    html.push(`        <h4>${escapeHtml(item.title)}</h4>`);
+    if (item.description) {
+      html.push(`        <p>${escapeHtml(item.description)}</p>`);
     }
-    html.push('  </nav>');
+    html.push('      </button>');
   }
+  html.push('    </nav>');
   
+  html.push('  </div>');
   html.push('</section>');
-  
-  // Add JavaScript for tab switching and YouTube control
-  html.push('<script>');
-  html.push('(function() {');
-  html.push('  // Get all demo tabs');
-  html.push('  const demoTabs = document.querySelectorAll(".demo-tab");');
-  html.push('  const demoViewer = document.getElementById("demo-viewer");');
-  html.push('  ');
-  html.push('  if (!demoViewer || demoTabs.length === 0) return;');
-  html.push('  ');
-  html.push('  // Track YouTube player state');
-  html.push('  let isYoutubePlaying = true;');
-  html.push('  ');
-  html.push('  // Setup click handler for YouTube pause/play');
-  html.push('  function setupYouTubeClick() {');
-  html.push('    const iframe = demoViewer.querySelector("#youtube-player");');
-  html.push('    if (!iframe) return;');
-  html.push('    ');
-  html.push('    iframe.style.cursor = "pointer";');
-  html.push('    iframe.addEventListener("click", function() {');
-  html.push('      const iframeSrc = iframe.src;');
-  html.push('      if (isYoutubePlaying) {');
-  html.push('        // Pause by removing autoplay');
-  html.push('        iframe.src = iframeSrc.replace("autoplay=1", "autoplay=0");');
-  html.push('      } else {');
-  html.push('        // Play by adding autoplay');
-  html.push('        iframe.src = iframeSrc.replace("autoplay=0", "autoplay=1");');
-  html.push('      }');
-  html.push('      isYoutubePlaying = !isYoutubePlaying;');
-  html.push('    });');
-  html.push('  }');
-  html.push('  ');
-  html.push('  // Media viewer generator function');
-  html.push('  function generateMediaViewer(url, type) {');
-  html.push('    switch(type) {');
-  html.push('      case "youtube":');
-  html.push('        const youtubeMatch = url.match(/(?:youtube\\.com\\/watch\\?v=|youtu\\.be\\/)([^&?\\/\\s]+)/);');
-  html.push('        const youtubeId = youtubeMatch ? youtubeMatch[1] : "";');
-  html.push('        if (youtubeId) {');
-  html.push('          const origin = encodeURIComponent(window.location.origin);');
-  html.push('          const enhancedUrl = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playsinline=1&enablejsapi=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=1&vq=hd720&fs=0&color=white&origin=${origin}`;');
-  html.push('          return `<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe id="youtube-player" src="${enhancedUrl}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; pointer-events: auto;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`;');
-  html.push('        }');
-  html.push('        break;');
-  html.push('      case "loom":');
-  html.push('        const loomMatch = url.match(/loom\\.com\\/share\\/([^?\\/\\s]+)/);');
-  html.push('        const loomId = loomMatch ? loomMatch[1] : "";');
-  html.push('        if (loomId) {');
-  html.push('          return `<iframe src="https://www.loom.com/embed/${loomId}" frameborder="0" allowfullscreen></iframe>`;');
-  html.push('        }');
-  html.push('        break;');
-  html.push('      case "image":');
-  html.push('        return `<img src="${url}" alt="Demo image">`;');
-  html.push('      case "video":');
-  html.push('        return `<video controls><source src="${url}" type="video/mp4">Your browser does not support the video tag.</video>`;');
-  html.push('      default:');
-  html.push('        return "<p>Embed your mp4 / YouTube / Loom demo here</p>";');
-  html.push('    }');
-  html.push('    return "<p>Media not available</p>";');
-  html.push('  }');
-  html.push('  ');
-  html.push('  // Add click handler to each tab');
-  html.push('  demoTabs.forEach(function(tab) {');
-  html.push('    tab.addEventListener("click", function() {');
-  html.push('      // Remove active class from all tabs');
-  html.push('      demoTabs.forEach(function(t) {');
-  html.push('        t.classList.remove("active");');
-  html.push('      });');
-  html.push('      ');
-  html.push('      // Add active class to clicked tab');
-  html.push('      tab.classList.add("active");');
-  html.push('      ');
-  html.push('      // Get media data from tab');
-  html.push('      const mediaUrl = tab.getAttribute("data-media-url");');
-  html.push('      const mediaType = tab.getAttribute("data-media-type");');
-  html.push('      ');
-  html.push('      // Update viewer content');
-  html.push('      if (mediaUrl && mediaType) {');
-  html.push('        demoViewer.innerHTML = generateMediaViewer(mediaUrl, mediaType);');
-  html.push('        // Reset YouTube state and setup click handler if YouTube video');
-  html.push('        if (mediaType === "youtube") {');
-  html.push('          isYoutubePlaying = true;');
-  html.push('          setTimeout(setupYouTubeClick, 100);');
-  html.push('        }');
-  html.push('      } else {');
-  html.push('        demoViewer.innerHTML = "<p>Embed your mp4 / YouTube / Loom demo here</p>";');
-  html.push('      }');
-  html.push('    });');
-  html.push('  });');
-  html.push('  ');
-  html.push('  // Setup YouTube click handler for initial load');
-  html.push('  if (demoViewer.querySelector("#youtube-player")) {');
-  html.push('    setTimeout(setupYouTubeClick, 100);');
-  html.push('  }');
-  html.push('})();');
-  html.push('</script>');
   
   return html.join('\n');
 }
