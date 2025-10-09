@@ -1,14 +1,14 @@
 [
   {
     "object": "block",
-    "parent_id": "282c3aed-7a1a-8008-9f26-fc8722e9a9e9",
-    "id": "282c3aed-7a1a-8065-8455-d81d10832ab7",
+    "parent_id": "287c3aed-7a1a-8025-aa3b-c0657651e041",
+    "id": "287c3aed-7a1a-813a-a313-e1c5aa89513d",
     "parent": {
       "type": "page_id",
-      "page_id": "282c3aed-7a1a-8008-9f26-fc8722e9a9e9"
+      "page_id": "287c3aed-7a1a-8025-aa3b-c0657651e041"
     },
-    "created_time": "2025-10-04T10:18:00.000Z",
-    "last_edited_time": "2025-10-04T10:29:00.000Z",
+    "created_time": "2025-10-09T10:43:00.000Z",
+    "last_edited_time": "2025-10-09T10:43:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14ed872b-594c-81cc-8a88-00029897cded"
@@ -17,24 +17,48 @@
       "object": "user",
       "id": "14ed872b-594c-81cc-8a88-00029897cded"
     },
-    "has_children": false,
+    "has_children": true,
     "archived": false,
     "in_trash": false,
-    "type": "child_database",
-    "child_database": {
-      "title": "form"
+    "type": "column_list",
+    "column_list": {}
+  },
+  {
+    "object": "block",
+    "parent_id": "287c3aed-7a1a-813a-a313-e1c5aa89513d",
+    "id": "287c3aed-7a1a-8136-bd70-c2dd22d16edb",
+    "parent": {
+      "type": "block_id",
+      "block_id": "287c3aed-7a1a-813a-a313-e1c5aa89513d"
+    },
+    "created_time": "2025-10-09T10:43:00.000Z",
+    "last_edited_time": "2025-10-09T10:49:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "column",
+    "column": {
+      "width_ratio": 0.5
     }
   },
   {
     "object": "block",
-    "parent_id": "282c3aed-7a1a-8008-9f26-fc8722e9a9e9",
-    "id": "282c3aed-7a1a-8046-94b4-f7230d3473a2",
+    "parent_id": "287c3aed-7a1a-8136-bd70-c2dd22d16edb",
+    "id": "287c3aed-7a1a-81ed-8189-cf3daedb643f",
     "parent": {
-      "type": "page_id",
-      "page_id": "282c3aed-7a1a-8008-9f26-fc8722e9a9e9"
+      "type": "block_id",
+      "block_id": "287c3aed-7a1a-8136-bd70-c2dd22d16edb"
     },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
+    "created_time": "2025-10-09T10:43:00.000Z",
+    "last_edited_time": "2025-10-09T10:44:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14ed872b-594c-81cc-8a88-00029897cded"
@@ -54,7 +78,7 @@
         {
           "type": "text",
           "text": {
-            "content": "Value / Risk / Outcome",
+            "content": "Recognitions & Mentions",
             "link": null
           },
           "annotations": {
@@ -65,7 +89,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "Value / Risk / Outcome",
+          "plain_text": "Recognitions & Mentions",
           "href": null
         }
       ]
@@ -73,14 +97,14 @@
   },
   {
     "object": "block",
-    "parent_id": "282c3aed-7a1a-8008-9f26-fc8722e9a9e9",
-    "id": "282c3aed-7a1a-8043-a618-c4938d212918",
+    "parent_id": "287c3aed-7a1a-8136-bd70-c2dd22d16edb",
+    "id": "287c3aed-7a1a-80c1-94ee-df16a016f520",
     "parent": {
-      "type": "page_id",
-      "page_id": "282c3aed-7a1a-8008-9f26-fc8722e9a9e9"
+      "type": "block_id",
+      "block_id": "287c3aed-7a1a-8136-bd70-c2dd22d16edb"
     },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
+    "created_time": "2025-10-09T10:49:00.000Z",
+    "last_edited_time": "2025-10-09T10:49:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14ed872b-594c-81cc-8a88-00029897cded"
@@ -95,37 +119,105 @@
     "type": "paragraph",
     "paragraph": {
       "color": "default",
-      "text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Align investment to measurable impact. Start lean with discovery, build with milestones, and share upside on results.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Align investment to measurable impact. Start lean with discovery, build with milestones, and share upside on results.",
-          "href": null
-        }
-      ]
+      "text": []
     }
   },
   {
     "object": "block",
-    "parent_id": "282c3aed-7a1a-8008-9f26-fc8722e9a9e9",
-    "id": "282c3aed-7a1a-80fc-855e-f2dcfbe8345b",
+    "parent_id": "287c3aed-7a1a-813a-a313-e1c5aa89513d",
+    "id": "287c3aed-7a1a-81a5-93fe-fcd23c7cb47a",
+    "parent": {
+      "type": "block_id",
+      "block_id": "287c3aed-7a1a-813a-a313-e1c5aa89513d"
+    },
+    "created_time": "2025-10-09T10:43:00.000Z",
+    "last_edited_time": "2025-10-09T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "column",
+    "column": {
+      "width_ratio": 0.5
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "287c3aed-7a1a-81a5-93fe-fcd23c7cb47a",
+    "id": "287c3aed-7a1a-81df-9128-d5834da4e9b2",
+    "parent": {
+      "type": "block_id",
+      "block_id": "287c3aed-7a1a-81a5-93fe-fcd23c7cb47a"
+    },
+    "created_time": "2025-10-09T10:43:00.000Z",
+    "last_edited_time": "2025-10-09T10:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": []
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "287c3aed-7a1a-8025-aa3b-c0657651e041",
+    "id": "287c3aed-7a1a-80db-92b9-ccb3d8cf6b19",
     "parent": {
       "type": "page_id",
-      "page_id": "282c3aed-7a1a-8008-9f26-fc8722e9a9e9"
+      "page_id": "287c3aed-7a1a-8025-aa3b-c0657651e041"
     },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
+    "created_time": "2025-10-09T10:49:00.000Z",
+    "last_edited_time": "2025-10-09T10:58:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "callout",
+    "callout": {
+      "icon": {
+        "type": "external",
+        "external": {
+          "url": "https://www.notion.so/icons/asterisk_green.svg"
+        }
+      },
+      "color": "gray_background",
+      "text": []
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "287c3aed-7a1a-80db-92b9-ccb3d8cf6b19",
+    "id": "287c3aed-7a1a-8083-84b8-e695055538a5",
+    "parent": {
+      "type": "block_id",
+      "block_id": "287c3aed-7a1a-80db-92b9-ccb3d8cf6b19"
+    },
+    "created_time": "2025-10-09T10:49:00.000Z",
+    "last_edited_time": "2025-10-09T10:52:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14ed872b-594c-81cc-8a88-00029897cded"
@@ -142,14 +234,14 @@
   },
   {
     "object": "block",
-    "parent_id": "282c3aed-7a1a-80fc-855e-f2dcfbe8345b",
-    "id": "282c3aed-7a1a-8027-a5d1-d1ccfd545089",
+    "parent_id": "287c3aed-7a1a-8083-84b8-e695055538a5",
+    "id": "287c3aed-7a1a-808c-ad14-e1cd37ee0805",
     "parent": {
       "type": "block_id",
-      "block_id": "282c3aed-7a1a-80fc-855e-f2dcfbe8345b"
+      "block_id": "287c3aed-7a1a-8083-84b8-e695055538a5"
     },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
+    "created_time": "2025-10-09T10:49:00.000Z",
+    "last_edited_time": "2025-10-09T10:58:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14ed872b-594c-81cc-8a88-00029897cded"
@@ -162,18 +254,20 @@
     "archived": false,
     "in_trash": false,
     "type": "column",
-    "column": {}
+    "column": {
+      "width_ratio": 0.9375
+    }
   },
   {
     "object": "block",
-    "parent_id": "282c3aed-7a1a-8027-a5d1-d1ccfd545089",
-    "id": "282c3aed-7a1a-8033-9282-d26de4f1f45e",
+    "parent_id": "287c3aed-7a1a-808c-ad14-e1cd37ee0805",
+    "id": "287c3aed-7a1a-80f5-b6cf-c63c22479a99",
     "parent": {
       "type": "block_id",
-      "block_id": "282c3aed-7a1a-8027-a5d1-d1ccfd545089"
+      "block_id": "287c3aed-7a1a-808c-ad14-e1cd37ee0805"
     },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
+    "created_time": "2025-10-09T10:49:00.000Z",
+    "last_edited_time": "2025-10-09T10:53:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14ed872b-594c-81cc-8a88-00029897cded"
@@ -185,15 +279,15 @@
     "has_children": false,
     "archived": false,
     "in_trash": false,
-    "type": "heading_3",
-    "heading_3": {
+    "type": "heading_2",
+    "heading_2": {
       "is_toggleable": false,
       "color": "default",
       "text": [
         {
           "type": "text",
           "text": {
-            "content": "KPI‑driven",
+            "content": "Spiral joins the Northrop Grumman Technology Accelerator",
             "link": null
           },
           "annotations": {
@@ -204,7 +298,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "KPI‑driven",
+          "plain_text": "Spiral joins the Northrop Grumman Technology Accelerator",
           "href": null
         }
       ]
@@ -212,14 +306,41 @@
   },
   {
     "object": "block",
-    "parent_id": "282c3aed-7a1a-8027-a5d1-d1ccfd545089",
-    "id": "282c3aed-7a1a-80da-bb01-c586511ee202",
+    "parent_id": "287c3aed-7a1a-808c-ad14-e1cd37ee0805",
+    "id": "287c3aed-7a1a-8035-b3c6-e3d8fee26b3e",
     "parent": {
       "type": "block_id",
-      "block_id": "282c3aed-7a1a-8027-a5d1-d1ccfd545089"
+      "block_id": "287c3aed-7a1a-808c-ad14-e1cd37ee0805"
     },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
+    "created_time": "2025-10-09T10:50:00.000Z",
+    "last_edited_time": "2025-10-09T10:52:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "color": "default",
+      "text": []
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "287c3aed-7a1a-808c-ad14-e1cd37ee0805",
+    "id": "287c3aed-7a1a-804a-bb9b-f3028d6b9183",
+    "parent": {
+      "type": "block_id",
+      "block_id": "287c3aed-7a1a-808c-ad14-e1cd37ee0805"
+    },
+    "created_time": "2025-10-09T10:50:00.000Z",
+    "last_edited_time": "2025-10-09T10:52:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14ed872b-594c-81cc-8a88-00029897cded"
@@ -238,7 +359,7 @@
         {
           "type": "text",
           "text": {
-            "content": "transparent metrics",
+            "content": "Jul 16, 2024",
             "link": null
           },
           "annotations": {
@@ -249,7 +370,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "transparent metrics",
+          "plain_text": "Jul 16, 2024",
           "href": null
         }
       ]
@@ -257,38 +378,14 @@
   },
   {
     "object": "block",
-    "parent_id": "282c3aed-7a1a-80fc-855e-f2dcfbe8345b",
-    "id": "282c3aed-7a1a-8015-b629-d679515bfe0b",
+    "parent_id": "287c3aed-7a1a-808c-ad14-e1cd37ee0805",
+    "id": "287c3aed-7a1a-801d-a94c-ed506c72c5fb",
     "parent": {
       "type": "block_id",
-      "block_id": "282c3aed-7a1a-80fc-855e-f2dcfbe8345b"
+      "block_id": "287c3aed-7a1a-808c-ad14-e1cd37ee0805"
     },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "has_children": true,
-    "archived": false,
-    "in_trash": false,
-    "type": "column",
-    "column": {}
-  },
-  {
-    "object": "block",
-    "parent_id": "282c3aed-7a1a-8015-b629-d679515bfe0b",
-    "id": "282c3aed-7a1a-801e-9e76-cf6f529557ac",
-    "parent": {
-      "type": "block_id",
-      "block_id": "282c3aed-7a1a-8015-b629-d679515bfe0b"
-    },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
+    "created_time": "2025-10-09T10:51:00.000Z",
+    "last_edited_time": "2025-10-09T10:58:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14ed872b-594c-81cc-8a88-00029897cded"
@@ -300,41 +397,22 @@
     "has_children": false,
     "archived": false,
     "in_trash": false,
-    "type": "heading_3",
-    "heading_3": {
-      "is_toggleable": false,
+    "type": "paragraph",
+    "paragraph": {
       "color": "default",
-      "text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Risk‑sharing",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Risk‑sharing",
-          "href": null
-        }
-      ]
+      "text": []
     }
   },
   {
     "object": "block",
-    "parent_id": "282c3aed-7a1a-8015-b629-d679515bfe0b",
-    "id": "282c3aed-7a1a-8001-80f5-eb8c6ce75fd5",
+    "parent_id": "287c3aed-7a1a-808c-ad14-e1cd37ee0805",
+    "id": "287c3aed-7a1a-8076-90f1-c4ff128a3254",
     "parent": {
       "type": "block_id",
-      "block_id": "282c3aed-7a1a-8015-b629-d679515bfe0b"
+      "block_id": "287c3aed-7a1a-808c-ad14-e1cd37ee0805"
     },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
+    "created_time": "2025-10-09T10:50:00.000Z",
+    "last_edited_time": "2025-10-09T10:52:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14ed872b-594c-81cc-8a88-00029897cded"
@@ -353,18 +431,54 @@
         {
           "type": "text",
           "text": {
-            "content": "bonus on outcomes",
+            "content": "Spiral ",
             "link": null
           },
           "annotations": {
-            "bold": false,
+            "bold": true,
             "italic": false,
             "strikethrough": false,
             "underline": false,
             "code": false,
             "color": "default"
           },
-          "plain_text": "bonus on outcomes",
+          "plain_text": "Spiral ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "selected",
+            "link": {
+              "url": "https://www.linkedin.com/feed/update/urn:li:activity:7237565173119557633/"
+            }
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "selected",
+          "href": "https://www.linkedin.com/feed/update/urn:li:activity:7237565173119557633/"
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " into accelerator program for AI-enabled AR inspection, a fast track to collaborate with Northrop Grumman, opening doors to funded pilots, investments, and strategic partnerships.",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " into accelerator program for AI-enabled AR inspection, a fast track to collaborate with Northrop Grumman, opening doors to funded pilots, investments, and strategic partnerships.",
           "href": null
         }
       ]
@@ -372,313 +486,103 @@
   },
   {
     "object": "block",
-    "parent_id": "282c3aed-7a1a-8008-9f26-fc8722e9a9e9",
-    "id": "282c3aed-7a1a-800c-bfbc-f3deaacbbfc4",
+    "parent_id": "287c3aed-7a1a-8083-84b8-e695055538a5",
+    "id": "287c3aed-7a1a-8034-8cab-fdbcaa8930b6",
+    "parent": {
+      "type": "block_id",
+      "block_id": "287c3aed-7a1a-8083-84b8-e695055538a5"
+    },
+    "created_time": "2025-10-09T10:49:00.000Z",
+    "last_edited_time": "2025-10-09T10:58:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "column",
+    "column": {
+      "width_ratio": 0.5625
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "287c3aed-7a1a-8034-8cab-fdbcaa8930b6",
+    "id": "287c3aed-7a1a-8052-8363-d5e718832508",
+    "parent": {
+      "type": "block_id",
+      "block_id": "287c3aed-7a1a-8034-8cab-fdbcaa8930b6"
+    },
+    "created_time": "2025-10-09T10:52:00.000Z",
+    "last_edited_time": "2025-10-09T10:52:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "callout",
+    "callout": {
+      "icon": {
+        "type": "external",
+        "external": {
+          "url": "https://www.notion.so/icons/light-bulb_green.svg"
+        }
+      },
+      "color": "gray_background",
+      "text": []
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "287c3aed-7a1a-8052-8363-d5e718832508",
+    "id": "287c3aed-7a1a-802b-a05a-d7058dedb684",
+    "parent": {
+      "type": "block_id",
+      "block_id": "287c3aed-7a1a-8052-8363-d5e718832508"
+    },
+    "created_time": "2025-10-09T10:52:00.000Z",
+    "last_edited_time": "2025-10-09T10:52:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14ed872b-594c-81cc-8a88-00029897cded"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "image",
+    "image": {
+      "caption": [],
+      "type": "file",
+      "file": {
+        "url": "https://cu3f8xt6egjctmrf.public.blob.vercel-storage.com/80af61835d166175264e012ngas_1-6nZf11QopUG8PB1kkpjg0JbXjgJX1D.webp?download=1"
+      }
+    }
+  },
+  {
+    "object": "block",
+    "parent_id": "287c3aed-7a1a-8025-aa3b-c0657651e041",
+    "id": "287c3aed-7a1a-8055-93f8-ea6ac22ed563",
     "parent": {
       "type": "page_id",
-      "page_id": "282c3aed-7a1a-8008-9f26-fc8722e9a9e9"
+      "page_id": "287c3aed-7a1a-8025-aa3b-c0657651e041"
     },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "has_children": true,
-    "archived": false,
-    "in_trash": false,
-    "type": "column_list",
-    "column_list": {}
-  },
-  {
-    "object": "block",
-    "parent_id": "282c3aed-7a1a-800c-bfbc-f3deaacbbfc4",
-    "id": "282c3aed-7a1a-80ff-a5fb-dabee3fd8f9c",
-    "parent": {
-      "type": "block_id",
-      "block_id": "282c3aed-7a1a-800c-bfbc-f3deaacbbfc4"
-    },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "has_children": true,
-    "archived": false,
-    "in_trash": false,
-    "type": "column",
-    "column": {}
-  },
-  {
-    "object": "block",
-    "parent_id": "282c3aed-7a1a-80ff-a5fb-dabee3fd8f9c",
-    "id": "282c3aed-7a1a-80b3-9465-f4b279cb3dc7",
-    "parent": {
-      "type": "block_id",
-      "block_id": "282c3aed-7a1a-80ff-a5fb-dabee3fd8f9c"
-    },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_3",
-    "heading_3": {
-      "is_toggleable": false,
-      "color": "default",
-      "text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Operational",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Operational",
-          "href": null
-        }
-      ]
-    }
-  },
-  {
-    "object": "block",
-    "parent_id": "282c3aed-7a1a-80ff-a5fb-dabee3fd8f9c",
-    "id": "282c3aed-7a1a-8098-a436-f1f0d458df9b",
-    "parent": {
-      "type": "block_id",
-      "block_id": "282c3aed-7a1a-80ff-a5fb-dabee3fd8f9c"
-    },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "color": "default",
-      "text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "monitoring & SLAs",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "monitoring & SLAs",
-          "href": null
-        }
-      ]
-    }
-  },
-  {
-    "object": "block",
-    "parent_id": "282c3aed-7a1a-800c-bfbc-f3deaacbbfc4",
-    "id": "282c3aed-7a1a-8092-93d8-d7e01a7fe7be",
-    "parent": {
-      "type": "block_id",
-      "block_id": "282c3aed-7a1a-800c-bfbc-f3deaacbbfc4"
-    },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "has_children": true,
-    "archived": false,
-    "in_trash": false,
-    "type": "column",
-    "column": {}
-  },
-  {
-    "object": "block",
-    "parent_id": "282c3aed-7a1a-8092-93d8-d7e01a7fe7be",
-    "id": "282c3aed-7a1a-80e8-97ca-f88bf8941970",
-    "parent": {
-      "type": "block_id",
-      "block_id": "282c3aed-7a1a-8092-93d8-d7e01a7fe7be"
-    },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_3",
-    "heading_3": {
-      "is_toggleable": false,
-      "color": "default",
-      "text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Scalable",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Scalable",
-          "href": null
-        }
-      ]
-    }
-  },
-  {
-    "object": "block",
-    "parent_id": "282c3aed-7a1a-8092-93d8-d7e01a7fe7be",
-    "id": "282c3aed-7a1a-8009-a436-cd953d11ebc4",
-    "parent": {
-      "type": "block_id",
-      "block_id": "282c3aed-7a1a-8092-93d8-d7e01a7fe7be"
-    },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "color": "default",
-      "text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "from pilot → plant",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "from pilot → plant",
-          "href": null
-        }
-      ]
-    }
-  },
-  {
-    "object": "block",
-    "parent_id": "282c3aed-7a1a-8008-9f26-fc8722e9a9e9",
-    "id": "282c3aed-7a1a-808b-be84-d0302a62ed3d",
-    "parent": {
-      "type": "page_id",
-      "page_id": "282c3aed-7a1a-8008-9f26-fc8722e9a9e9"
-    },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "14ed872b-594c-81cc-8a88-00029897cded"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "color": "default",
-      "text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "BUTTON: (main, Get KPI‑based quote →,/get-quote) BUTTON: (secondary, 📃 Sample contract,/sample-contract)",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "BUTTON: (main, Get KPI‑based quote →,/get-quote) BUTTON: (secondary, 📃 Sample contract,/sample-contract)",
-          "href": null
-        }
-      ]
-    }
-  },
-  {
-    "object": "block",
-    "parent_id": "282c3aed-7a1a-8008-9f26-fc8722e9a9e9",
-    "id": "282c3aed-7a1a-80b9-84f2-fde8e962a28a",
-    "parent": {
-      "type": "page_id",
-      "page_id": "282c3aed-7a1a-8008-9f26-fc8722e9a9e9"
-    },
-    "created_time": "2025-10-04T10:27:00.000Z",
-    "last_edited_time": "2025-10-04T10:27:00.000Z",
+    "created_time": "2025-10-09T10:49:00.000Z",
+    "last_edited_time": "2025-10-09T10:49:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14ed872b-594c-81cc-8a88-00029897cded"

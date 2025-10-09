@@ -153,10 +153,21 @@ function renderBlock(block, level = 0) {
       const calloutData = block.callout;
       const calloutText = extractRichText(calloutData?.rich_text || calloutData?.text);
       const icon = calloutData?.icon?.emoji || '';
+      
+      // Extract icon name from URL if available
+      let iconClass = '';
+      if (calloutData?.icon?.external?.url) {
+        const iconUrl = calloutData.icon.external.url;
+        const match = iconUrl.match(/\/icons\/([^.]+)\./);
+        if (match && match[1]) {
+          iconClass = ` callout-${match[1]}`;
+        }
+      }
+      
       let calloutContent = `${icon ? icon + ' ' : ''}${calloutText}`;
       
       // Convert callout to div with class static-callout
-      html = `<div class="static-callout">${calloutContent}</div>`;
+      html = `<div class="static-callout${iconClass}">${calloutContent}</div>`;
       break;
       
     case 'image':
@@ -194,6 +205,16 @@ function renderBlock(block, level = 0) {
       html = `<em style="border-left: 3px solid #ddd; padding-left: 10px; display: block;">${quoteText}</em>`;
       break;
       
+    case 'table':
+      // Tables are handled by processTable function, this is just a fallback
+      html = '<!-- Table block should be processed by processTable -->';
+      break;
+      
+    case 'table_row':
+      // Table rows are handled within processTable, skip standalone
+      html = '';
+      break;
+      
     case 'child_database':
       html = '<form-placeholder/>';
       break;
@@ -210,6 +231,16 @@ function processCallout(allBlocks, startIndex) {
   // Get the direct text content of the callout
   const calloutText = extractRichText(calloutData?.rich_text || calloutData?.text);
   const icon = calloutData?.icon?.emoji || '';
+  
+  // Extract icon name from URL if available
+  let iconClass = '';
+  if (calloutData?.icon?.external?.url) {
+    const iconUrl = calloutData.icon.external.url;
+    const match = iconUrl.match(/\/icons\/([^.]+)\./);
+    if (match && match[1]) {
+      iconClass = ` callout-${match[1]}`;
+    }
+  }
   
   // Build callout content
   let calloutContent = '';
@@ -234,7 +265,7 @@ function processCallout(allBlocks, startIndex) {
   }
   
   // Generate callout HTML
-  const calloutHtml = `<div class="static-callout">${calloutContent}</div>`;
+  const calloutHtml = `<div class="static-callout${iconClass}">${calloutContent}</div>`;
   
   return { html: calloutHtml, nextIndex: nextIndex };
 }
@@ -253,7 +284,12 @@ function processNestedBlocks(allBlocks, parentId) {
     return indexA - indexB;
   });
   
-  for (const childBlock of directChildren) {
+  const processedIndices = new Set();
+  
+  for (let idx = 0; idx < directChildren.length; idx++) {
+    if (processedIndices.has(idx)) continue;
+    
+    const childBlock = directChildren[idx];
     if (childBlock.type === 'column_list') {
       // Process column_list structure
       const columnListId = childBlock.id;
@@ -304,13 +340,75 @@ function processNestedBlocks(allBlocks, parentId) {
       const nestedCalloutText = extractRichText(nestedCalloutData?.rich_text || nestedCalloutData?.text);
       const nestedIcon = nestedCalloutData?.icon?.emoji || '';
       
+      // Extract icon name from URL if available
+      let nestedIconClass = '';
+      if (nestedCalloutData?.icon?.external?.url) {
+        const iconUrl = nestedCalloutData.icon.external.url;
+        const match = iconUrl.match(/\/icons\/([^.]+)\./);
+        if (match && match[1]) {
+          nestedIconClass = ` callout-${match[1]}`;
+        }
+      }
+      
       let nestedCalloutContent = '';
       if (nestedIcon || nestedCalloutText) {
         nestedCalloutContent += `${nestedIcon ? nestedIcon + ' ' : ''}${nestedCalloutText}`;
       }
       
       nestedCalloutContent += processNestedBlocks(allBlocks, childBlock.id);
-      content += `<div class="static-callout">${nestedCalloutContent}</div>`;
+      content += `<div class="static-callout${nestedIconClass}">${nestedCalloutContent}</div>`;
+    } else if (childBlock.type === 'table') {
+      // Process table - find all table_row children
+      const tableId = childBlock.id;
+      const tableData = childBlock.table;
+      const hasColumnHeader = tableData?.has_column_header || false;
+      const hasRowHeader = tableData?.has_row_header || false;
+      
+      const tableRows = allBlocks.filter(block => 
+        block.type === 'table_row' && block.parent_id === tableId
+      );
+      
+      if (tableRows.length > 0) {
+        let tableHtml = '<div class="inline-table">';
+        
+        for (let rowIndex = 0; rowIndex < tableRows.length; rowIndex++) {
+          const row = tableRows[rowIndex];
+          const cells = row.table_row?.cells || [];
+          const isHeaderRow = hasColumnHeader && rowIndex === 0;
+          
+          const rowClass = isHeaderRow ? 'table-row table-header' : 'table-row';
+          tableHtml += `<div class="${rowClass}">`;
+          
+          for (let cellIndex = 0; cellIndex < cells.length; cellIndex++) {
+            const cellContent = cells[cellIndex];
+            const isHeaderCell = hasRowHeader && cellIndex === 0 && !isHeaderRow;
+            const cellClass = (isHeaderRow || isHeaderCell) ? 'table-cell table-cell-header' : 'table-cell';
+            
+            const cellText = extractRichText(cellContent);
+            tableHtml += `<div class="${cellClass}">${cellText || '&nbsp;'}</div>`;
+          }
+          
+          tableHtml += '</div>';
+        }
+        
+        tableHtml += '</div>';
+        content += tableHtml;
+      }
+    } else if (childBlock.type === 'numbered_list_item') {
+      // Process numbered list - group consecutive items
+      let listHtml = '<ol>';
+      let j = idx;
+      
+      while (j < directChildren.length && directChildren[j].type === 'numbered_list_item') {
+        const listItem = directChildren[j];
+        const itemText = extractRichText(listItem.numbered_list_item?.rich_text || listItem.numbered_list_item?.text);
+        listHtml += `<li>${itemText}</li>`;
+        processedIndices.add(j);
+        j++;
+      }
+      
+      listHtml += '</ol>';
+      content += listHtml;
     } else {
       // Regular block - render it normally
       const blockHtml = renderBlock(childBlock);
@@ -387,6 +485,90 @@ function isDescendantOf(allBlocks, block, ancestorId) {
   }
   
   return false;
+}
+
+function processTable(allBlocks, startIndex) {
+  const tableBlock = allBlocks[startIndex];
+  const tableId = tableBlock.id;
+  const tableData = tableBlock.table;
+  
+  const hasColumnHeader = tableData?.has_column_header || false;
+  const hasRowHeader = tableData?.has_row_header || false;
+  
+  // Find all table_row children of this table
+  const tableRows = [];
+  let i = startIndex + 1;
+  
+  while (i < allBlocks.length) {
+    const block = allBlocks[i];
+    if (block.type === 'table_row' && block.parent_id === tableId) {
+      tableRows.push(block);
+      i++;
+    } else {
+      break;
+    }
+  }
+  
+  if (tableRows.length === 0) {
+    return { html: '', nextIndex: startIndex + 1 };
+  }
+  
+  // Generate table HTML using divs
+  let tableHtml = '<div class="inline-table">';
+  
+  // Process rows
+  for (let rowIndex = 0; rowIndex < tableRows.length; rowIndex++) {
+    const row = tableRows[rowIndex];
+    const cells = row.table_row?.cells || [];
+    const isHeaderRow = hasColumnHeader && rowIndex === 0;
+    
+    const rowClass = isHeaderRow ? 'table-row table-header' : 'table-row';
+    tableHtml += `<div class="${rowClass}">`;
+    
+    for (let cellIndex = 0; cellIndex < cells.length; cellIndex++) {
+      const cellContent = cells[cellIndex];
+      const isHeaderCell = hasRowHeader && cellIndex === 0 && !isHeaderRow;
+      const cellClass = (isHeaderRow || isHeaderCell) ? 'table-cell table-cell-header' : 'table-cell';
+      
+      const cellText = extractRichText(cellContent);
+      tableHtml += `<div class="${cellClass}">${cellText || '&nbsp;'}</div>`;
+    }
+    
+    tableHtml += '</div>';
+  }
+  
+  tableHtml += '</div>';
+  
+  return { html: tableHtml, nextIndex: i };
+}
+
+function processNumberedList(allBlocks, startIndex) {
+  const firstItem = allBlocks[startIndex];
+  const parentId = firstItem.parent_id;
+  
+  // Collect all consecutive numbered_list_item blocks with the same parent
+  const listItems = [];
+  let i = startIndex;
+  
+  while (i < allBlocks.length) {
+    const block = allBlocks[i];
+    if (block.type === 'numbered_list_item' && block.parent_id === parentId) {
+      listItems.push(block);
+      i++;
+    } else {
+      break;
+    }
+  }
+  
+  // Generate ordered list HTML
+  let listHtml = '<ol>';
+  for (const item of listItems) {
+    const itemText = extractRichText(item.numbered_list_item?.rich_text || item.numbered_list_item?.text);
+    listHtml += `<li>${itemText}</li>`;
+  }
+  listHtml += '</ol>';
+  
+  return { html: listHtml, nextIndex: i };
 }
 
 function processColumnList(allBlocks, startIndex) {
@@ -507,6 +689,35 @@ function convertBlocksToHtml(blocksData) {
       }
       
       i = result.nextIndex;
+    } else if (block.type === 'table') {
+      // Process table and all its rows
+      const result = processTable(blocksData, i);
+      html += `<table><colgroup><col style="width: 100%;"></colgroup><tr><td>${result.html}</td></tr></table>`;
+      
+      // Mark table and all rows as processed
+      processedBlockIds.add(block.id);
+      for (let j = i + 1; j < result.nextIndex; j++) {
+        const processedBlock = blocksData[j];
+        if (processedBlock && processedBlock.id) {
+          processedBlockIds.add(processedBlock.id);
+        }
+      }
+      
+      i = result.nextIndex;
+    } else if (block.type === 'numbered_list_item') {
+      // Process numbered list - group consecutive items
+      const result = processNumberedList(blocksData, i);
+      html += `<table><colgroup><col style="width: 100%;"></colgroup><tr><td>${result.html}</td></tr></table>`;
+      
+      // Mark all list items as processed
+      for (let j = i; j < result.nextIndex; j++) {
+        const processedBlock = blocksData[j];
+        if (processedBlock && processedBlock.id) {
+          processedBlockIds.add(processedBlock.id);
+        }
+      }
+      
+      i = result.nextIndex;
     } else if (block.type === 'column') {
       // Skip standalone columns (they should be processed by column_list)
       processedBlockIds.add(block.id);
@@ -523,7 +734,12 @@ function convertBlocksToHtml(blocksData) {
         block.parent_id === otherBlock.id
       );
       
-      if (!isColumnChild && !isCalloutChild) {
+      const isTableChild = blocksData.some(otherBlock => 
+        otherBlock.type === 'table' && 
+        block.parent_id === otherBlock.id
+      );
+      
+      if (!isColumnChild && !isCalloutChild && !isTableChild) {
         // Process regular blocks
         const blockContent = renderBlock(block);
         if (blockContent.trim()) {
